@@ -1,0 +1,429 @@
+{
+    "Changes": [
+	{
+		"LogName": "making the flowers visable",
+		"Action": "Load",
+		"Target": "sunflora/flower, sunflora/seed, sunflora/shinyflower, sunflora/shinyseed, sunflora/shopicon, sunflora/flowermayo, sunflora/grasstm, sunflora/sash, sunflora/floweregg, sunflora/cobaberry",
+		"FromFile": "assets/sunflora/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "growing sunflowers",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"flower": {
+				"DisplayName": "{{i18n: sunflora}}",
+				"Gender": "MaleorFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"ShopTexture": "sunflora/shopicon",
+				"ShopDescription": "{{i18n: sunflora.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: sunflora.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "5",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 1250,
+				"SellPrice": 1250,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_floweregg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "421"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "431"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 50,
+						"ItemId": "{{ModId}}_floweregg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_sash"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_petaldancetm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "sunflora/flower",
+				"Sound": "{{ModId}}_flowercry",
+				"BabyTexture": "sunflora/seed",
+				"BabySound": "{{ModId}}_seedcry",
+				"SpriteWidth": "29",
+				"SpriteHeight": "29",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "ID": "ShinyFlower",
+                        "Texture": "sunflora/shinyflower",
+						"BabyTexture": "sunflora/shinyseed",
+                        "Weight": 0.1
+                    }
+                ],
+                "AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.25",
+						"AnimalIds": [
+							"seed"
+						]
+					}
+                  ]
+			}
+		}
+	},
+	{
+		"LogName": "finding seeds",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"seed": {
+				"DisplayName": "{{i18n: sunkern}}",
+				"Gender": "MaleorFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "3",
+				"DaysToProduce": "2",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 1250,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_seedegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "431"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 50,
+						"ItemId": "{{ModId}}_floweregg"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 50,
+						"ItemId": "{{ModId}}_seedegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_cobaberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_seedbombtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }				
+					],
+				"SleepFrame": "16",
+				"Texture": "sunflora/seed",
+				"Sound": "{{ModId}}_seedcry",
+				"SpriteWidth": "29",
+				"SpriteHeight": "29",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "ID": "ShinySeed",
+                        "Texture": "sunflora/shinyseed",
+						"BabyTexture": "sunflora/shinyseed",
+                        "Weight": 0.1
+                    }
+				]
+			}
+		}
+	},
+	{
+		"LogName": "the flowers have mouths and they WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_flowercry": {
+				"ID": "{{ModId}}_flowercry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/sunflora/flowercry.wav}}" ]
+			},
+			"{{ModId}}_seedcry": {
+				"ID": "{{ModId}}_seedcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/sunflora/seedcry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_cobaberry": {
+				"Name": "{{ModId}}_cobaberry",
+				"DisplayName": "{{i18n: coba}}",
+				"Description": "{{i18n: coba.d}}",
+				"Texture": "sunflora/cobaberry",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -79,
+				"Edibility": 18,
+				"Price": 500,
+				"ContextTags": [
+					"color_cyan"
+				]
+			},
+			"{{ModId}}_sash": {
+				"Name": "{{ModId}}_sash",
+				"DisplayName": "{{i18n: sash}}",
+				"Description": "{{i18n: sash.d}}",
+				"Texture": "sunflora/sash",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 500,
+				"ContextTags": [
+					"color_white"
+				]
+			},
+			"{{ModId}}_petaldancetm": {
+				"Name": "{{ModId}}_petaldancetm",
+				"DisplayName": "{{i18n: petaldancetm}}",
+				"Description": "{{i18n: petaldancetm.d}}",
+				"Texture": "sunflora/grasstm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 1000,
+				"ContextTags": [
+					"color_lime"
+				]
+			},
+			"{{ModId}}_seedbombtm": {
+				"Name": "{{ModId}}_seedbombtm",
+				"DisplayName": "{{i18n: seedbombtm}}",
+				"Description": "{{i18n: seedbombtm.d}}",
+				"Texture": "sunflora/grasstm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 1000,
+				"ContextTags": [
+					"color_lime"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "leaving flowers at the daycare...or maybe the greenhouse?",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_floweregg": {
+				"Name": "{{ModId}}_floweregg",
+				"DisplayName": "{{i18n: sunfloraegg}}",
+				"Description": "{{i18n: sunfloraegg.d}}",
+				"Texture": "sunflora/floweregg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 150,
+				"ContextTags": [
+					"color_yellow"
+				]
+			},
+			"{{ModId}}_seedegg": {
+				"Name": "{{ModId}}_seedegg",
+				"DisplayName": "{{i18n: seedegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "sunflora/floweregg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 150,
+				"ContextTags": [
+					"color_yellow"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_flowermayo": {
+				"Name": "{{ModId}}_flowermayo",
+				"DisplayName": "{{i18n: sunfloramayo}}",
+				"Description": "{{i18n: sunfloramayo.d}}",
+				"Texture": "sunflora/flowermayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 600,
+				"ContextTags": [
+					"color_sand"
+				]
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_flowermayon": {
+                "Id": "{{ModId}}_flowermayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_floweregg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_flowermayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching flowers to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "flower": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"seed": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

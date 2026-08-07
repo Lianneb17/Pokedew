@@ -1,0 +1,728 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting them a physical presence",
+		"Action": "Load",
+		"Target": "vulpix/vulpix, vulpix/shinyvulpix, vulpix/tails, vulpix/shinytails, vulpix/alovulpix, vulpix/shinyalovulpix, vulpix/alotails, vulpix/shinyalotails, vulpix/goldleaf, vulpix/charcoal, vulpix/snowball, vulpix/icetm, vulpix/firetm, vulpix/shopicon, vulpix/aloshopicon, vulpix/vulpixegg, vulpix/vulpixmayo, vulpix/alovulpixegg, vulpix/alovulpixmayo",
+		"FromFile": "assets/vulpix/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "firing foxes",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"vulpix": {
+				"DisplayName": "{{i18n: vulpix}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"ShopTexture": "vulpix/shopicon",
+				"ShopDescription": "{{i18n: vulpix.d}}",
+				"ShopMissingBuildingDescription": "vulpix.md",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "4",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": false,
+				"EggItemIds": [
+					"{{ModId}}_vulpixegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_vulpixegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_charcoal"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_infernotm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "vulpix/vulpix",
+				"Sound": "{{ModId}}_vulpixcry",
+				"SpriteWidth": "36",
+				"SpriteHeight": "30",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyvulpix",
+                        "Texture": "vulpix/shinyvulpix",
+						"BabyTexture": "vulpix/shinyvulpix",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.25",
+						"AnimalIds": [
+						"tails"
+						]
+					}
+                ]
+			},
+			"tails": {
+				"DisplayName": "{{i18n: tails}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": false,
+				"EggItemIds": [
+					"{{ModId}}_tailsegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_vulpixegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_goldleaf"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_charcoal"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_burningtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "vulpix/tails",
+				"Sound": "{{ModId}}_tailscry",
+				"BabyTexture": "vulpix/vulpix",
+				"BabySound": "{{ModId}}_vulpixcry",
+				"SpriteWidth": "36",
+				"SpriteHeight": "30",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinytails",
+                        "Texture": "vulpix/shinytails",
+						"BabyTexture": "vulpix/shinyvulpix",
+                        "Weight": 0.1
+                    }
+                ]
+			}
+		}
+	},
+	{
+		"LogName": "icing foxes? this joke doesnt work as well",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"alovulpix": {
+				"DisplayName": "{{i18n: alovulpix}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"ShopTexture": "vulpix/aloshopicon",
+				"ShopDescription": "{{i18n: alovulpix.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: alovulpix.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "4",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": false,
+				"EggItemIds": [
+					"{{ModId}}_alovulpixegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_alovulpixegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_snowball"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_blizzardtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "vulpix/alovulpix",
+				"Sound": "{{ModId}}_vulpixcry",
+				"SpriteWidth": "36",
+				"SpriteHeight": "30",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyvulpix",
+                        "Texture": "vulpix/shinyalovulpix",
+						"BabyTexture": "vulpix/shinyalovulpix",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.25",
+						"AnimalIds": [
+						"alotails"
+						]
+					}
+                  ]
+			},
+			"alotails": {
+				"DisplayName": "{{i18n: alotails}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": false,
+				"EggItemIds": [
+					"{{ModId}}_alotailsegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_alovulpixegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_goldleaf"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_snowball"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_icicletm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "vulpix/alotails",
+				"Sound": "{{ModId}}_tailscry",
+				"BabyTexture": "vulpix/alovulpix",
+				"BabySound": "{{ModId}}_vulpixcry",
+				"SpriteWidth": "36",
+				"SpriteHeight": "30",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinytails",
+                        "Texture": "vulpix/shinyalotails",
+						"BabyTexture": "vulpix/shinyalovulpix",
+                        "Weight": 0.1
+                    }
+                ]
+			}
+		}
+	},
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_vulpixcry": {
+				"ID": "{{ModId}}_vulpixcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/vulpix/vulpixcry.wav}}" ]
+			},
+			"{{ModId}}_tailscry": {
+				"ID": "{{ModId}}_tailscry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/vulpix/tailscry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving vulpix and ninetales at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_vulpixegg": {
+				"Name": "{{ModId}}_vulpixegg",
+				"DisplayName": "{{i18n: vulpixegg}}",
+				"Description": "{{i18n: vulpixegg.d}}",
+				"Texture": "vulpix/vulpixegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300,
+				"ContextTags": [
+					"color_orange"
+				]
+			},
+			"{{ModId}}_alovulpixegg": {
+				"Name": "{{ModId}}_alovulpixegg",
+				"DisplayName": "{{i18n: alovulpixegg}}",
+				"Description": "{{i18n: alovulpixegg.d}}",
+				"Texture": "vulpix/alovulpixegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300,
+				"ContextTags": [
+					"color_light_cyan"
+				]
+			},
+			"{{ModId}}_tailsegg": {
+				"Name": "{{ModId}}_vulpixegg",
+				"DisplayName": "{{i18n: tailsegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "vulpix/vulpixegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			},
+			"{{ModId}}_alotailsegg": {
+				"Name": "{{ModId}}_alovulpixegg",
+				"DisplayName": "{{i18n: alotailsegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "vulpix/alovulpixegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_goldleaf": {
+				"Name": "{{ModId}}_goldleaf",
+				"DisplayName": "{{i18n: goldleaf}}",
+				"Description": "{{i18n: goldleaf.d}}",
+				"Texture": "vulpix/goldleaf",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 1000,
+				"ContextTags": [
+					"color_gold"
+				]
+			},
+			"{{ModId}}_charcoal": {
+				"Name": "{{ModId}}_charcoal",
+				"DisplayName": "{{i18n: charcoal}}",
+				"Description": "{{i18n: charcoal.d}}",
+				"Texture": "vulpix/charcoal",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 1000,
+				"ContextTags": [
+					"color_black"
+				]
+			},
+			"{{ModId}}_snowball": {
+				"Name": "{{ModId}}_snowball",
+				"DisplayName": "{{i18n: snowball}}",
+				"Description": "{{i18n: snowball.d}}",
+				"Texture": "vulpix/snowball",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 1000,
+				"ContextTags": [
+					"color_white"
+				]
+			},
+			"{{ModId}}_infernotm": {
+				"Name": "{{ModId}}_infernotm",
+				"DisplayName": "{{i18n: infernotm}}",
+				"Description": "{{i18n: infernotm.d}}",
+				"Texture": "vulpix/firetm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_red"
+				]
+			},
+			"{{ModId}}_blizzardtm": {
+				"Name": "{{ModId}}_blizzardtm",
+				"DisplayName": "{{i18n: blizzardtm}}",
+				"Description": "{{i18n: blizzardtm.d}}",
+				"Texture": "vulpix/icetm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_light_cyan"
+				]
+			},
+			"{{ModId}}_burningtm": {
+				"Name": "{{ModId}}_burningtm",
+				"DisplayName": "{{i18n: burningtm}}",
+				"Description": "{{i18n: burningtm.d}}",
+				"Texture": "vulpix/firetm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_red"
+				]
+			}, 			
+			"{{ModId}}_icicletm": {
+				"Name": "{{ModId}}_icicletm",
+				"DisplayName": "{{i18n: icicletm}}",
+				"Description": "{{i18n: icicletm.d}}",
+				"Texture": "vulpix/icetm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_light_cyan"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_vulpixmayo": {
+				"Name": "{{ModId}}_vulpixmayo",
+				"DisplayName": "{{i18n: vulpixmayo}}",
+				"Description": "{{i18n: vulpixmayo.d}}",
+				"Texture": "vulpix/vulpixmayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200,
+				"ContextTags": [
+					"color_sand"
+				]
+			},
+			"{{ModId}}_alovulpixmayo": {
+				"Name": "{{ModId}}_alovulpixmayo",
+				"DisplayName": "{{i18n: alovulpixmayo}}",
+				"Description": "{{i18n: alovulpixmayo.d}}",
+				"Texture": "vulpix/alovulpixmayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200,
+				"ContextTags": [
+					"color_light_cyan"
+				]
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_vulpixmayon": {
+                "Id": "{{ModId}}_vulpixmayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_vulpixegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_vulpixmayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            },
+			"{{ModId}}_alovulpixmayon": {
+                "Id": "{{ModId}}_alovulpixmayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_alovulpixegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_alovulpixmayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching vulpix to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "vulpix": {
+				"MalePercentage": 0.25,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"alovulpix": {
+				"MalePercentage": 0.25,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"tails": {
+				"MalePercentage": 0.25,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"alotails": {
+				"MalePercentage": 0.25,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

@@ -1,0 +1,1060 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting pikachu a physical presence",
+		"Action": "Load",
+		"Target": "pikachu/pichuegg, pikachu/fpikachu, pikachu/shinyfpikachu, pikachu/mpikachu, pikachu/shinympikachu, pikachu/pichu, pikachu/shinypichu, pikachu/frai, pikachu/shinyfrai, pikachu/mrai, pikachu/shinymrai, pikachu/alorai, pikachu/shopicon, pikachu/pichumayo, pikachu/eletm, pikachu/psytm, pikachu/ghosttm, pikachu/items, pikachu/doll, pikachu/mim, pikachu/shinymim, pikachu/mimikyuegg, pikachu/mimikyumayo",
+		"FromFile": "assets/pikachu/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "manifesting pichu",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"fpikachu": {
+				"DisplayName": "{{i18n: pikachu}}",
+				"Gender": "Female",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"ShopTexture": "pikachu/shopicon",
+				"ShopDescription": "{{i18n: pikachu.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: pikachu.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "5",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_fpikachuegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_pichuegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_lumberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_lightball"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_thunderbolttm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "pikachu/fpikachu",
+				"BabyTexture": "pikachu/pichu",
+				"Sound": "{{ModId}}_pikachucry",
+				"SpriteWidth": "42",
+				"SpriteHeight": "38",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyfpikachu",
+                        "Texture": "pikachu/shinyfpikachu",
+						"BabyTexture": "pikachu/shinypichu",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+							"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.05",
+						"AnimalIds": [
+							"mimikyu"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.5",
+						"AnimalIds": [
+							"fpikachu",
+							"mpikachu"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.5",
+						"AnimalIds": [
+							"pichu",
+							"fraichu",
+							"mraichu",
+							"aloraichu"
+						]
+					}
+                ]
+			}
+		}
+	},
+	{
+		"LogName": "manifesting pikachus",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"pichu": {
+				"DisplayName": "{{i18n: pichu}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "3",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_pichuegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_pichuegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_shucaberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_nuzzletm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "pikachu/pichu",
+				"Sound": "{{ModId}}_pichucry",
+				"SpriteWidth": "42",
+				"SpriteHeight": "38",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinypichu",
+                        "Texture": "pikachu/shinypichu",
+						"BabyTexture": "pikachu/shinypichu",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"mpikachu": {
+				"DisplayName": "{{i18n: pikachu}}",
+				"Gender": "Male",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "5",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_mpikachuegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_pichuegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_lumberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_lightball"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_thunderbolttm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "pikachu/mpikachu",
+				"BabyTexture": "pikachu/pichu",
+				"Sound": "{{ModId}}_pikachucry",
+				"SpriteWidth": "42",
+				"SpriteHeight": "38",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinympikachu",
+                        "Texture": "pikachu/shinympikachu",
+						"BabyTexture": "pikachu/shinypichu",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"fraichu": {
+				"DisplayName": "{{i18n: raichu}}",
+				"Gender": "Female",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_fraichuegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_pichuegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_leppaberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_thunderpunchtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "pikachu/frai",
+				"BabyTexture": "pikachu/pichu",
+				"Sound": "{{ModId}}_raichucry",
+				"SpriteWidth": "42",
+				"SpriteHeight": "38",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyfrai",
+                        "Texture": "pikachu/shinyfrai",
+						"BabyTexture": "pikachu/shinypichu",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"mraichu": {
+				"DisplayName": "{{i18n: raichu}}",
+				"Gender": "Male",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_mraichuegg"
+					],
+				"ProduceItemIds": [
+					{
+					"Id": "Default",
+					"Condition": null,
+					"MinimumFriendship": 0,
+					"ItemId": "{{ModId}}_pichuegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_leppaberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_thunderpunchtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "pikachu/mrai",
+				"BabyTexture": "pikachu/pichu",
+				"Sound": "{{ModId}}_pikachucry",
+				"SpriteWidth": "42",
+				"SpriteHeight": "38",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinymrai",
+                        "Texture": "pikachu/shinymrai",
+						"BabyTexture": "pikachu/shinypichu",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"aloraichu": {
+				"DisplayName": "{{i18n: raichu}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_aloraichuegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_pichuegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_leppaberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_psychictm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "pikachu/alorai",
+				"BabyTexture": "pikachu/pichu",
+				"Sound": "{{ModId}}_pikachucry",
+				"SpriteWidth": "42",
+				"SpriteHeight": "38",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyalorai",
+                        "Texture": "pikachu/shinyalorai",
+						"BabyTexture": "pikachu/shinypichu",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"mimikyu": {
+				"DisplayName": "{{i18n: mimikyu}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "5",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_mimikyuegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_mimikyuegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_pokedoll"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_shadowsneaktm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "pikachu/mim",
+				"Sound": "{{ModId}}_mimikyucry",
+				"SpriteWidth": "42",
+				"SpriteHeight": "38",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinymimikyu",
+                        "Texture": "pikachu/shinymim",
+						"BabyTexture": "pikachu/shinymim",
+                        "Weight": 0.1
+                    }
+                ]
+			}
+		}
+	},
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_pichucry": {
+				"ID": "{{ModId}}_pichucry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/pikachu/pichucry.wav}}" ]
+			},
+			"{{ModId}}_pikachucry": {
+				"ID": "{{ModId}}_pikachucry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/pikachu/pikachucry.wav}}" ]
+			},
+			"{{ModId}}_raichucry": {
+				"ID": "{{ModId}}_raichucry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/pikachu/raichucry.wav}}" ]
+			},
+			"{{ModId}}_mimikyucry": {
+				"ID": "{{ModId}}_mimikyucry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/pikachu/mimikyucry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving pikachu at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_pichuegg": {
+				"Name": "{{ModId}}_pichuegg",
+				"DisplayName": "{{i18n: pichuegg}}",
+				"Description": "{{i18n: pichuegg.d}}",
+				"Texture": "pikachu/pichuegg",
+				"Type": "Basic",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			},
+			"{{ModId}}_mpikachuegg": {
+				"Name": "{{ModId}}_mpikachuegg",
+				"DisplayName": "{{i18n: mpikachuegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "pikachu/pichuegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			},
+			"{{ModId}}_fpikachuegg": {
+				"Name": "{{ModId}}_fpikachuegg",
+				"DisplayName": "{{i18n: fpikachuegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "pikachu/pichuegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			},
+			"{{ModId}}_fraichuegg": {
+				"Name": "{{ModId}}_fraichuegg",
+				"DisplayName": "{{i18n: fraichuegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "pikachu/pichuegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			},
+			"{{ModId}}_mraichuegg": {
+				"Name": "{{ModId}}_mraichuegg",
+				"DisplayName": "{{i18n: mraichuegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "pikachu/pichuegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			},
+			"{{ModId}}_aloraichuegg": {
+				"Name": "{{ModId}}_aloraichuegg",
+				"DisplayName": "{{i18n: aloraichuegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "pikachu/pichuegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			},
+			"{{ModId}}_mimikyuegg": {
+				"Name": "{{ModId}}_mimikyuegg",
+				"DisplayName": "{{i18n: mimikyuegg}}",
+				"Description": "{{i18n: mimikyuegg.d}}",
+				"Texture": "pikachu/mimikyuegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_pokedoll": {
+				"Name": "{{ModId}}_pokedoll",
+				"DisplayName": "{{i18n: pokedoll}}",
+				"Description": "{{i18n: pokedoll.d}}",
+				"Texture": "pikachu/doll",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 1000
+			},
+			"{{ModId}}_lumberry": {
+				"Name": "{{ModId}}_lumberry",
+				"DisplayName": "{{i18n: lumberry}}",
+				"Description": "{{i18n: lumberry.d}}",
+				"Texture": "pikachu/items",
+				"SpriteIndex": 2,
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 1000
+			},
+			"{{ModId}}_shucaberry": {
+				"Name": "{{ModId}}_shucaberry",
+				"DisplayName": "{{i18n: shucaberry}}",
+				"Description": "{{i18n: shucaberry.d}}",
+				"Texture": "pikachu/items",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"SpriteIndex": 1,
+				"Category": -17,
+				"Price": 1000
+			},
+			"{{ModId}}_leppaberry": {
+				"Name": "{{ModId}}_leppaberry",
+				"DisplayName": "{{i18n: leppaberry}}",
+				"Description": "{{i18n: leppaberry.d}}",
+				"Texture": "pikachu/items",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"SpriteIndex": 0,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000
+			},
+			"{{ModId}}_lightball": {
+				"Name": "{{ModId}}_lightball",
+				"DisplayName": "{{i18n: lightball}}",
+				"Description": "{{i18n: lightball.d}}",
+				"Texture": "pikachu/items",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"SpriteIndex": 3,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000
+			},
+			"{{ModId}}_nuzzletm": {
+				"Name": "{{ModId}}_nuzzletm",
+				"DisplayName": "{{i18n: nuzzletm}}",
+				"Description": "{{i18n: nuzzletm.d}}",
+				"Texture": "pikachu/eletm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000
+			},
+			"{{ModId}}_thunderbolttm": {
+				"Name": "{{ModId}}_thunderbolttm",
+				"DisplayName": "{{i18n: thunderbolttm}}",
+				"Description": "{{i18n: thunderbolttm.d}}",
+				"Texture": "pikachu/eletm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000
+			},
+			"{{ModId}}_thunderpunchtm": {
+				"Name": "{{ModId}}_thunderpunchtm",
+				"DisplayName": "{{i18n: thunderpunchtm}}",
+				"Description": "{{i18n: thunderpunchtm.d}}",
+				"Texture": "pikachu/eletm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000
+			},
+			"{{ModId}}_psychictm": {
+				"Name": "{{ModId}}_psychictm",
+				"DisplayName": "{{i18n: psychictm}}",
+				"Description": "{{i18n: psychictm.d}}",
+				"Texture": "pikachu/psytm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000
+			},
+			"{{ModId}}_shadowsneaktm": {
+				"Name": "{{ModId}}_shadowsneaktm",
+				"DisplayName": "{{i18n: shadowsneaktm}}",
+				"Description": "{{i18n: shadowsneaktm.d}}",
+				"Texture": "pikachu/ghosttm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_pichumayo": {
+				"Name": "{{ModId}}_pichumayo",
+				"DisplayName": "{{i18n: pichumayo}}",
+				"Description": "{{i18n: pichumayo.d}}",
+				"Texture": "pikachu/pichumayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200
+			},
+			"{{ModId}}_mimikyumayo": {
+				"Name": "{{ModId}}_mimikyumayo",
+				"DisplayName": "{{i18n: mimikyumayo}}",
+				"Description": "{{i18n: mimikyumayo.d}}",
+				"Texture": "pikachu/mimikyumayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_pichumayon": {
+                "Id": "{{ModId}}_pichumayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_pichuegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_pichumayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            },
+			"{{ModId}}_mimikyumayon": {
+                "Id": "{{ModId}}_mimikyumayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_mimikyuegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_mimikyumayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching pikachu to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "pichu": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"fpikachu": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"mpikachu": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"mraichu": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"fraichu": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"aloraichu": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"mimikyu": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

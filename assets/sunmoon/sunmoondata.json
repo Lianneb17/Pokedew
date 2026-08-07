@@ -1,0 +1,458 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting them a physical presence",
+		"Action": "Load",
+		"Target": "sunmoon/solrock, sunmoon/lunatone, sunmoon/shinysolrock, sunmoon/shinylunatone, sunmoon/rocktm, sunmoon/psytm, sunmoon/stardust, sunmoon/lunatoneegg, sunmoon/lunatonemayo, sunmoon/solrockegg, sunmoon/solrockmayo, sunmoon/shopicon",
+		"FromFile": "assets/sunmoon/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "manifesting the sun",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"solrock": {
+				"DisplayName": "{{i18n: solrock}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"ShopTexture": "sunmoon/shopicon",
+				"ShopDescription": "{{i18n: sunmoon.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: sunmoon.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "2",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 5000,
+				"SellPrice": 5000,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": false,
+				"EggItemIds": [
+					"{{ModId}}_solrockegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "768"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_solrockegg"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_stardust"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_meteorbeamtm"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_cosmicpowertm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "sunmoon/solrock",
+				"Sound": "{{ModId}}_solrockcry",
+				"SpriteWidth": "32",
+				"SpriteHeight": "32",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinysolrock",
+                        "Texture": "sunmoon/shinysolrock",
+						"BabyTexture": "sunmoon/shinysolrock",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"AnimalIds": [
+						"lunatone",
+						"solrock"
+						]
+					}
+                  ]
+			}
+				
+		}
+	},
+	{
+		"LogName": "manifesting the moon",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"lunatone": {
+				"DisplayName": "{{i18n: lunatone}}",
+				"Gender": "MaleorFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "2",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 5000,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": false,
+				"EggItemIds": [
+					"{{ModId}}_lunatoneegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "769"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_lunatoneegg"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_stardust"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_meteorbeamtm"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_psychicterraintm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"Skins": [
+                    {
+                        "id": "shinylunatone",
+                        "Texture": "sunmoon/shinylunatone",
+						"BabyTexture": "sunmoon/shinylunatone",
+                        "Weight": 0.1
+                    }
+                ],
+				"SleepFrame": "16",
+				"Texture": "sunmoon/lunatone",
+				"Sound": "{{ModId}}_lunatonecry",
+				"SpriteWidth": "32",
+				"SpriteHeight": "32",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true
+			}
+		}
+	},
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_solrockcry": {
+				"ID": "{{ModId}}_solrockcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/sunmoon/solrockcry.wav}}" ]
+			},
+			"{{ModId}}_lunatonecry": {
+				"ID": "{{ModId}}_lunatonecry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/sunmoon/lunatonecry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving solrock and lunatone at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_solrockegg": {
+				"Name": "{{ModId}}_solrockegg",
+				"DisplayName": "{{i18n: solrockegg}}",
+				"Description": "{{i18n: solrockegg.d}}",
+				"Texture": "sunmoon/solrockegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 600,
+				"ContextTags": [
+					"color_orange"
+				]
+			},
+			"{{ModId}}_lunatoneegg": {
+				"Name": "{{ModId}}_lunatoneegg",
+				"DisplayName": "{{i18n: lunatoneegg}}",
+				"Description": "{{i18n: lunatoneegg.d}}",
+				"Texture": "sunmoon/lunatoneegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 600,
+				"ContextTags": [
+					"color_gray"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_stardust": {
+				"Name": "{{ModId}}_stardust",
+				"DisplayName": "{{i18n: stardust}}",
+				"Description": "{{i18n: stardust.d}}",
+				"Texture": "sunmoon/stardust",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_pink"
+				]
+			},
+			"{{ModId}}_meteorbeamtm": {
+				"Name": "{{ModId}}_meteorbeamtm",
+				"DisplayName": "{{i18n: meteorbeamtm}}",
+				"Description": "{{i18n: meteorbeamtm.d}}",
+				"Texture": "sunmoon/rocktm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 4000,
+				"ContextTags": [
+					"color_sand"
+				]
+			},
+			"{{ModId}}_cosmicpowertm": {
+				"Name": "{{ModId}}_cosmicpowertm",
+				"DisplayName": "{{i18n: cosmicpowertm}}",
+				"Description": "{{i18n: cosmicpowertm.d}}",
+				"Texture": "sunmoon/psytm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 4000,
+				"ContextTags": [
+					"color_dark_pink"
+				]
+			},
+			"{{ModId}}_psychicterraintm": {
+				"Name": "{{ModId}}_psychicterraintm",
+				"DisplayName": "{{i18n: phychicterraintm}}",
+				"Description": "{{i18n: psychicterraintm.d}}",
+				"Texture": "sunmoon/psytm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 4000,
+				"ContextTags": [
+					"color_dark_pink"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_solrockmayo": {
+				"Name": "{{ModId}}_solrockmayo",
+				"DisplayName": "{{i18n: solrockmayo}}",
+				"Description": "{{i18n: solrockmayo.d}}",
+				"Texture": "sunmoon/solrockmayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1600,
+				"ContextTags": [
+					"color_orange"
+				]
+			},
+			"{{ModId}}_lunatonemayo": {
+				"Name": "{{ModId}}_lunatonemayo",
+				"DisplayName": "{{i18n: lunatonemayo}}",
+				"Description": "{{i18n: lunatonemayo.d}}",
+				"Texture": "sunmoon/lunatonemayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1600,
+				"ContextTags": [
+					"color_sand"
+				]
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_solrockmayon": {
+                "Id": "{{ModId}}_solrockmayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_solrockegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_solrockmayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            },
+			"{{ModId}}_lunatonemayon": {
+                "Id": "{{ModId}}_lunatonemayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_lunatoneegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_lunatonemayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching them to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "lunatone": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"solrock": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

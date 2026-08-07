@@ -1,0 +1,503 @@
+{
+    "Changes": [
+	{
+		"LogName": "writing out the alphabet",
+		"Action": "Load",
+		"Target": "unown/report, unown/normaltm, unown/shopicon, unown/a, unown/b, unown/c, unown/d, unown/e, unown/f, unown/g, unown/h, unown/i, unown/j, unown/k, unown/l, unown/m, unown/n, unown/o, unown/p, unown/q, unown/r, unown/s, unown/t, unown/u, unown/v, unown/w, unown/x, unown/y, unown/z, unown/ex, unown/que, unown/shinya, unown/shinyb, unown/shinyc, unown/shinyd, unown/shinye, unown/shinyf, unown/shinyg, unown/shinyh, unown/shinyi, unown/shinyj, unown/shinyk, unown/shinyl, unown/shinym, unown/shinyn, unown/shinyo, unown/shinyp, unown/shinyq, unown/shinyr, unown/shinys, unown/shinyt, unown/shinyu, unown/shinyv, unown/shinyw, unown/shinyx, unown/shinyy, unown/shinyz, unown/shinyex, unown/shinyque,",
+		"FromFile": "assets/unown/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "locating letters",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"unown": {
+				"DisplayName": "{{i18n: unown}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"ShopTexture": "unown/shopicon",
+				"ShopDescription": "{{i18n: unown.md}}",
+				"ShopMissingBuildingDescription": "{{i18n: unown.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "7",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 10000,
+				"SellPrice": 10000,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "SkillBook_0"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "SkillBook_1"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "SkillBook_2"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "SkillBook_3"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "SkillBook_4"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+					    "Id": "Default",
+					    "Condition": null,
+					    "MinimumFriendship": 250,
+					    "ItemId": "{{ModId}}_report"
+					},
+					{
+					    "Id": "Default",
+					    "Condition": null,
+					    "MinimumFriendship": 750,
+					    "ItemId": "{{ModId}}_hiddenpowertm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "unown/a",
+				"Sound": "{{ModId}}_unowncry",
+				"SpriteWidth": "24",
+				"SpriteHeight": "24",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "ID": "a",
+                        "Texture": "unown/a",
+						"BabyTexture": "unown/a"
+                    },                    
+					{
+                        "ID": "b",
+                        "Texture": "unown/b",
+						"BabyTexture": "unown/b"
+                    },
+					{
+                        "ID": "c",
+                        "Texture": "unown/c",
+						"BabyTexture": "unown/c"
+                    },                    
+					{
+                        "ID": "d",
+                        "Texture": "unown/d",
+						"BabyTexture": "unown/d"
+                    },                    
+					{
+                        "ID": "e",
+                        "Texture": "unown/e",
+						"BabyTexture": "unown/e"
+                    },                    
+					{
+                        "ID": "f",
+                        "Texture": "unown/f",
+						"BabyTexture": "unown/f"
+                    },
+					{
+                        "ID": "g",
+                        "Texture": "unown/g",
+						"BabyTexture": "unown/g"
+                    },                    
+					{
+                        "ID": "h",
+                        "Texture": "unown/h",
+						"BabyTexture": "unown/h"
+                    },
+					{
+                        "ID": "i",
+                        "Texture": "unown/i",
+						"BabyTexture": "unown/i"
+                    },                    
+					{
+                        "ID": "j",
+                        "Texture": "unown/j",
+						"BabyTexture": "unown/j"
+                    },
+					{
+                        "ID": "k",
+                        "Texture": "unown/k",
+						"BabyTexture": "unown/k"
+                    },                    
+					{
+                        "ID": "l",
+                        "Texture": "unown/l",
+						"BabyTexture": "unown/l"
+                    },
+					{
+                        "ID": "m",
+                        "Texture": "unown/m",
+						"BabyTexture": "unown/m"
+                    },                    
+					{
+                        "ID": "n",
+                        "Texture": "unown/n",
+						"BabyTexture": "unown/n"
+                    },                    
+					{
+                        "ID": "o",
+                        "Texture": "unown/o",
+						"BabyTexture": "unown/o"
+                    },                    
+					{
+                        "ID": "p",
+                        "Texture": "unown/p",
+						"BabyTexture": "unown/p"
+                    },
+					{
+                        "ID": "q",
+                        "Texture": "unown/q",
+						"BabyTexture": "unown/q"
+                    },                    
+					{
+                        "ID": "r",
+                        "Texture": "unown/r",
+						"BabyTexture": "unown/r"
+                    },
+					{
+                        "ID": "s",
+                        "Texture": "unown/s",
+						"BabyTexture": "unown/s"
+                    },                    
+					{
+                        "ID": "t",
+                        "Texture": "unown/t",
+						"BabyTexture": "unown/t"
+                    },
+					{
+                        "ID": "u",
+                        "Texture": "unown/u",
+						"BabyTexture": "unown/u"
+                    },                    
+					{
+                        "ID": "v",
+                        "Texture": "unown/v",
+						"BabyTexture": "unown/v"
+                    },
+					{
+                        "ID": "w",
+                        "Texture": "unown/w",
+						"BabyTexture": "unown/w"
+                    },                    
+					{
+                        "ID": "x",
+                        "Texture": "unown/x",
+						"BabyTexture": "unown/x"
+                    },                    
+					{
+                        "ID": "y",
+                        "Texture": "unown/y",
+						"BabyTexture": "unown/y"
+                    },                    
+					{
+                        "ID": "z",
+                        "Texture": "unown/z",
+						"BabyTexture": "unown/z"
+                    },
+					{
+                        "ID": "ex",
+                        "Texture": "unown/ex",
+						"BabyTexture": "unown/ex"
+                    },                    
+					{
+                        "ID": "que",
+                        "Texture": "unown/que",
+						"BabyTexture": "unown/que"
+                    },
+					{
+                        "ID": "shinya",
+                        "Texture": "unown/shinya",
+						"BabyTexture": "unown/shinya",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyb",
+                        "Texture": "unown/shinyb",
+						"BabyTexture": "unown/shinyb",
+                        "Weight": 0.1
+                    },
+					{
+                        "ID": "shinyc",
+                        "Texture": "unown/shinyc",
+						"BabyTexture": "unown/shinyc",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyd",
+                        "Texture": "unown/shinyd",
+						"BabyTexture": "unown/shinyd",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinye",
+                        "Texture": "unown/shinye",
+						"BabyTexture": "unown/shinye",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyf",
+                        "Texture": "unown/shinyf",
+						"BabyTexture": "unown/shinyf",
+                        "Weight": 0.1
+                    },
+					{
+                        "ID": "shinyg",
+                        "Texture": "unown/shinyg",
+						"BabyTexture": "unown/shinyg",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyh",
+                        "Texture": "unown/shinyh",
+						"BabyTexture": "unown/shinyh",
+                        "Weight": 0.1
+                    },
+					{
+                        "ID": "shinyi",
+                        "Texture": "unown/shinyi",
+						"BabyTexture": "unown/shinyi",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyj",
+                        "Texture": "unown/shinyj",
+						"BabyTexture": "unown/shinyj",
+                        "Weight": 0.1
+                    },
+					{
+                        "ID": "shinyk",
+                        "Texture": "unown/shinyk",
+						"BabyTexture": "unown/shinyk",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyl",
+                        "Texture": "unown/shinyl",
+						"BabyTexture": "unown/shinyl",
+                        "Weight": 0.1
+                    },
+					{
+                        "ID": "shinym",
+                        "Texture": "unown/shinym",
+						"BabyTexture": "unown/shinym",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyn",
+                        "Texture": "unown/shinyn",
+						"BabyTexture": "unown/shinyn",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyo",
+                        "Texture": "unown/shinyo",
+						"BabyTexture": "unown/shinyo",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyp",
+                        "Texture": "unown/shinyp",
+						"BabyTexture": "unown/shinyp",
+                        "Weight": 0.1
+                    },
+					{
+                        "ID": "shinyq",
+                        "Texture": "unown/shinyq",
+						"BabyTexture": "unown/shinyq",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyr",
+                        "Texture": "unown/shinyr",
+						"BabyTexture": "unown/shinyr",
+                        "Weight": 0.1
+                    },
+					{
+                        "ID": "shinys",
+                        "Texture": "unown/shinys",
+						"BabyTexture": "unown/shinys",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyt",
+                        "Texture": "unown/shinyt",
+						"BabyTexture": "unown/shinyt",
+                        "Weight": 0.1
+                    },
+					{
+                        "ID": "shinyu",
+                        "Texture": "unown/shinyu",
+						"BabyTexture": "unown/shinyu",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyv",
+                        "Texture": "unown/shinyv",
+						"BabyTexture": "unown/shinyv",
+                        "Weight": 0.1
+                    },
+					{
+                        "ID": "shinyw",
+                        "Texture": "unown/shinyw",
+						"BabyTexture": "unown/shinyw",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyx",
+                        "Texture": "unown/shinyx",
+						"BabyTexture": "unown/shinyx",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyy",
+                        "Texture": "unown/shinyy",
+						"BabyTexture": "unown/shinyy",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyz",
+                        "Texture": "unown/shinyz",
+						"BabyTexture": "unown/shinyz",
+                        "Weight": 0.1
+                    },
+					{
+                        "ID": "shinyex",
+                        "Texture": "unown/shinyex",
+						"BabyTexture": "unown/shinyex",
+                        "Weight": 0.1
+                    },                    
+					{
+                        "ID": "shinyque",
+                        "Texture": "unown/shinyque",
+						"BabyTexture": "unown/shinyque",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					}
+                ],
+				"UnlockCondition": "IS_COMMUNITY_CENTER_COMPLETE"
+				}
+		}
+	},
+	{
+		"LogName": "they lack a mouth but WILL scream nonetheless",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_unowncry": {
+				"ID": "{{ModId}}_unowncry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/unown/unowncry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "writing reports",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_report": {
+				"Name": "{{ModId}}_report",
+				"DisplayName": "{{i18n: report}}",
+				"Description": "{{i18n: report.d}}",
+				"Texture": "unown/report",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 4000,
+				"ContextTags": [
+					"color_dark_blue"
+				]
+			},
+			"{{ModId}}_hiddenpowertm": {
+				"Name": "{{ModId}}_hiddenpowertm",
+				"DisplayName": "{{i18n: hiddenpowertm}}",
+				"Description": "{{i18n: hiddenpowertm.d}}",
+				"Texture": "unown/normaltm",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 8000,
+				"ContextTags": [
+					"color_iron"
+				]
+			}
+		}
+	},
+    {
+        "LogName": "teaching unown to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "unown": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

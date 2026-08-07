@@ -1,0 +1,394 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting wooloo a physical presence",
+		"Action": "Load",
+		"Target": "wooloo/woolooegg, wooloo/wooloo, wooloo/shinywooloo, wooloo/woolwooloo, wooloo/woolshinywooloo, wooloo/graywoolwooloo, wooloo/graywoolshinywooloo, wooloo/shopicon, wooloo/wooloomayo, wooloo/grasstm, wooloo/wooloowool, wooloo/wooloocloth,  wooloo/graywooloowool, wooloo/graywooloocloth, wooloo/wooloomeat, wooloo/cookedwooloomeat",
+		"FromFile": "assets/wooloo/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "manifesting wooloo",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"wooloo": {
+				"DisplayName": "{{i18n: wooloo}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"ShopTexture": "wooloo/shopicon",
+				"ShopDescription": "{{i18n: wooloo.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: wooloo.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "5",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "4",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_woolooegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_wooloowool"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 100,
+						"ItemId": "{{ModId}}_woolooegg"
+					}
+					
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_graywooloowool"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_cottontm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "wooloo/wooloo",
+				"Sound": "{{ModId}}_wooloocry",
+				"SpriteWidth": "28",
+				"SpriteHeight": "28",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"CustomFields": {
+					"meatIndex": "{{ModId}}_wooloomeat"
+				},
+				"Skins": [
+                    {
+                        "id": "Shinywooloo",
+                        "Texture": "wooloo/shinywooloo",
+						"BabyTexture": "wooloo/shinywooloo",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					}
+                ]
+				}
+		}
+	},
+	{
+        "LogName": "shear the wooloo",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "wooloo": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_wooloowool": {
+						"HarvestTool": "Shears",
+						"ProduceTexture": "wooloo/woolwooloo",
+						"SkinProduceTexture": {
+							"Shinywooloo": "wooloo/woolshinywooloo"
+						}
+                    },
+					"(O){{ModId}}_graywooloowool": {
+						"HarvestTool": "Shears",
+						"ProduceTexture": "wooloo/graywoolwooloo",
+						"SkinProduceTexture": {
+							"Shinywooloo": "wooloo/graywoolshinywooloo"
+						}
+                    }
+                }
+            }
+        }
+    },
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_wooloocry": {
+				"ID": "{{ModId}}_wooloocry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/wooloo/wooloocry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving wooloo at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_woolooegg": {
+				"Name": "{{ModId}}_woolooegg",
+				"DisplayName": "{{i18n: woolooegg}}",
+				"Description": "{{i18n: woolooegg.d}}",
+				"Texture": "wooloo/woolooegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300,
+				"ContextTags": [
+					"color_white"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_wooloowool": {
+				"Name": "{{ModId}}_wooloowool",
+				"DisplayName": "{{i18n: wooloowool}}",
+				"Description": "{{i18n: wooloowool.d}}",
+				"Texture": "wooloo/wooloowool",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -18,
+				"Price": 500,
+				"ContextTags": [
+					"color_white"
+				]
+			},
+			"{{ModId}}_graywooloowool": {
+				"Name": "{{ModId}}_graywooloowool",
+				"DisplayName": "{{i18n: graywooloowool}}",
+				"Description": "{{i18n: graywooloowool.d}}",
+				"Texture": "wooloo/graywooloowool",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -18,
+				"Price": 1000,
+				"ContextTags": [
+					"color_gray"
+				]
+			},
+			"{{ModId}}_wooloocloth": {
+				"Name": "{{ModId}}_wooloocloth",
+				"DisplayName": "{{i18n: wooloocloth}}",
+				"Description": "{{i18n: wooloocloth.d}}",
+				"Texture": "wooloo/wooloocloth",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -26,
+				"Price": 750,
+				"ContextTags": [
+					"color_white"
+				]
+			},
+			"{{ModId}}_graywooloocloth": {
+				"Name": "{{ModId}}_graywooloocloth",
+				"DisplayName": "{{i18n: graywooloocloth}}",
+				"Description": "{{i18n: graywooloocloth.d}}",
+				"Texture": "wooloo/graywooloocloth",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -26,
+				"Price": 1500,
+				"ContextTags": [
+					"color_gray"
+				]
+			},
+			"{{ModId}}_cottontm": {
+				"Name": "{{ModId}}_cottontm",
+				"DisplayName": "{{i18n: cottontm}}",
+				"Description": "{{i18n: cottontm.d}}",
+				"Texture": "wooloo/grasstm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_lime"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_wooloomayo": {
+				"Name": "{{ModId}}_wooloomayo",
+				"DisplayName": "{{i18n: wooloomayo}}",
+				"Description": "{{i18n: wooloomayo.d}}",
+				"Texture": "wooloo/wooloomayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200,
+				"ContextTags": [
+					"color_white"
+				]
+			}
+		}
+    },
+	{
+		"LogName": "doing even worse things to wooloo",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"When": {"HasMod|contains=DIGUS.ANIMALHUSBANDRYMOD": true, "AHM Meat": true},
+		"Entries": {
+			"{{ModId}}_wooloomeat": {
+				"Name": "{{ModId}}_wooloomeat",
+				"DisplayName": "{{i18n: wooloomeat}}",
+				"Description": "{{i18n: wooloomeat.d}}",
+				"Texture": "wooloo/wooloomeat",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+                "Edibility": 10,
+				"Category": -14,
+				"Price": 800,
+				"ContextTags": [
+					"color_pink"
+				]
+			},
+			"{{ModID}}_cookedwooloomeat": {
+				"Name": "{{Modid}}_wooloomeat",
+				"DisplayName": "{{i18n: cookedwooloomeat}}",
+				"Description": "{{i18n: cookedwooloomeat.d}}",
+				"Texture": "wooloo/cookedwooloomeat",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+                "Edibility": 30,
+				"Category": -7,
+				"Price": 1200,
+				"ContextTags": [
+					"color_copper"
+				]
+			}
+		}
+	},
+	{
+        "LogName": "cooking the wooloo",
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",
+		"When": {"HasMod|contains=DIGUS.ANIMALHUSBANDRYMOD": true, "AHM Meat": true},
+        "Entries": {
+            "cookedwooloomeat":"{{ModId}}_wooloomeat 1 247 1/9999 9999/{{ModId}}_cookedwooloomeat 1/default"
+        }
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_wooloomayon": {
+                "Id": "{{ModId}}_wooloomayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_woolooegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_wooloomayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)17", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_woolooclothr": {
+                "Id": "{{ModId}}_woolooclothr",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_wooloowool",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_wooloocloth",
+                        "CopyQuality": true
+                    }
+                    ],
+                "MinutesUntilReady": 240
+            },
+			"{{ModId}}_graywoolooclothr": {
+                "Id": "{{ModId}}_graywoolooclothr",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_graywooloowool",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_graywooloocloth",
+                        "CopyQuality": true
+                    }
+                    ],
+                "MinutesUntilReady": 320
+            }
+        }
+    }
+    ]
+}

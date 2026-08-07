@@ -1,0 +1,196 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting ditto a physical presence",
+		"Action": "Load",
+		"Target": "ditto/ditto, ditto/shinyditto, ditto/basicegg, ditto/normaltm, ditto/metal, ditto/quick",
+		"FromFile": "assets/ditto/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "manifesting ditto",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"ditto": {
+				"DisplayName": "{{i18n: ditto}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"ShopMissingBuildingDescription": "{{i18n: ditto.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 10000,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_dittoegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": "selph.ExtraAnimalConfig_ANIMAL_HOUSE_COUNT Here minccino 0 1 12",
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_dittoegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_metalpowder"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_quickpowder"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_transformtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "ditto/ditto",
+				"Sound": "{{ModId}}_dittocry",
+				"SpriteWidth": "33",
+				"SpriteHeight": "29",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyditto",
+                        "Texture": "ditto/shinyditto",
+						"BabyTexture": "ditto/shinyditto",
+                        "Weight": 0.1
+                    }
+                ]
+				}
+		}
+	},
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_dittocry": {
+				"ID": "{{ModId}}_dittocry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/ditto/dittocry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving ditto at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_dittoegg": {
+				"Name": "{{ModId}}_dittoegg",
+				"DisplayName": "{{i18n: dittoegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "ditto/basicegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_metalpowder": {
+				"Name": "{{ModId}}_metalpowder",
+				"DisplayName": "{{i18n: metalpowder}}",
+				"Description": "{{i18n: metalpowder.d}}",
+				"Texture": "ditto/metal",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 4000
+			},
+			"{{ModId}}_quickpowder": {
+				"Name": "{{ModId}}_quickpowder",
+				"DisplayName": "{{i18n: quickpowder}}",
+				"Description": "{{i18n: quickpowder.d}}",
+				"Texture": "ditto/quick",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 4000
+			},
+			"{{ModId}}_transformtm": {
+				"Name": "{{ModId}}_transformtm",
+				"DisplayName": "{{i18n: transformtm}}",
+				"Description": "{{i18n: transformtm.d}}",
+				"Texture": "ditto/normaltm",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 8000
+			}
+		}
+	},
+	{
+        "LogName": "teaching ditto to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "ditto": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

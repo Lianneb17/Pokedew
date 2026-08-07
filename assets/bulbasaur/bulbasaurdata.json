@@ -1,0 +1,609 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting bulbasaur a physical presence",
+		"Action": "Load",
+		"Target": "bulbasaur/bulbasauregg, bulbasaur/bulbasaur, bulbasaur/shinybulbasaur, bulbasaur/mvenusaur, bulbasaur/shinymvenusaur, bulbasaur/fvenusaur, bulbasaur/shinyfvenusaur, bulbasaur/shopicon, bulbasaur/bulbasaurmayo, bulbasaur/grasstm, bulbasaur/poisontm, bulbasaur/ivysaur, bulbasaur/shinyivysaur",
+		"FromFile": "assets/bulbasaur/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "manifesting bulbasaur",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"bulbasaur": {
+				"DisplayName": "{{i18n: bulbasaur}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"ShopTexture": "bulbasaur/shopicon",
+				"ShopDescription": "{{i18n: bulbasaur.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: bulbasaur.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "5",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_bulbasauregg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_bulbasauregg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_oranberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_vinewhiptm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "bulbasaur/bulbasaur",
+				"Sound": "{{ModId}}_bulbasaurcry",
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinybulbasaur",
+                        "Texture": "bulbasaur/shinybulbasaur",
+						"BabyTexture": "bulbasaur/shinybulbasaur",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.5",
+						"AnimalIds": [
+						"ivysaur"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.4",
+						"AnimalIds": [
+						"fvenusaur",
+						"mvenusaur"
+						]
+					}
+                  ]
+			},
+			"ivysaur": {
+				"DisplayName": "{{i18n: ivysaur}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_ivysauregg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_bulbasauregg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_sitrusberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_poisonpowdertm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "bulbasaur/ivysaur",
+            	"BabyTexture": "bulbasaur/bulbasaur",
+				"Sound": "{{ModId}}_ivysaurcry",
+                "BabySound": "{{ModId}}_bulbasaurcry",
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyivysaur",
+                        "Texture": "bulbasaur/shinyivysaur",
+						"BabyTexture": "bulbasaur/shinybulbasaur",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"fvenusaur": {
+				"DisplayName": "{{i18n: venusaur}}",
+				"Gender": "Female",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "9",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_fvenusauregg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_bulbasauregg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_miracleseed"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_poisonbarb"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_petalblizzardtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "bulbasaur/fvenusaur",
+            	"BabyTexture": "bulbasaur/bulbasaur",
+				"Sound": "{{ModId}}_venusaurcry",
+                "BabySound": "{{ModId}}_bulbasaurcry",
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyvenusaur",
+                        "Texture": "bulbasaur/shinyfvenusaur",
+						"BabyTexture": "bulbasaur/shinybulbasaur",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"mvenusaur": {
+				"DisplayName": "{{i18n: venusaur}}",
+				"Gender": "Male",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "9",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_mvenusauregg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_bulbasauregg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_miracleseed"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_poisonbarb"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_petalblizzardtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "bulbasaur/mvenusaur",
+            	"BabyTexture": "bulbasaur/bulbasaur",
+				"Sound": "{{ModId}}_venusaurcry",
+                "BabySound": "{{ModId}}_bulbasaurcry",
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyvenusaur",
+                        "Texture": "bulbasaur/shinymvenusaur",
+						"BabyTexture": "bulbasaur/shinybulbasaur",
+                        "Weight": 0.1
+                    }
+                ]
+			}
+		}
+	},
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_bulbasaurcry": {
+				"ID": "{{ModId}}_bulbasaurcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/bulbasaur/bulbasaurcry.wav}}" ]
+			},
+			"{{ModId}}_ivysaurcry": {
+				"ID": "{{ModId}}_ivysaurcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/bulbasaur/ivysaurcry.wav}}" ]
+			},
+			"{{ModId}}_venusaurcry": {
+				"ID": "{{ModId}}_venusaurcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/bulbasaur/venusaurcry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving bulbasaur at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_bulbasauregg": {
+				"Name": "{{ModId}}_bulbasauregg",
+				"DisplayName": "{{i18n: bulbasauregg}}",
+				"Description": "{{i18n: bulbasauregg.d}}",
+				"Texture": "bulbasaur/bulbasauregg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300,
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_ivysauregg": {
+		    	"Name": "{{ModId}}_ivysauregg",
+		    	"DisplayName": "{{i18n: ivysauregg}}",
+		    	"Description": "{{i18n: internalitem}}",
+		    	"Texture": "bulbasaur/bulbasauregg",
+		    	"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+		    	"Category": -5,                
+				"Edibility": 5,
+		    	"Price": 300,
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_venusauregg": {
+		    	"Name": "{{ModId}}_venusauregg",
+		    	"DisplayName": "{{i18n: venusauregg}}",
+		    	"Description": "{{i18n: internalitem}}",
+		    	"Texture": "bulbasaur/bulbasauregg",
+		    	"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+		    	"Category": -5,                
+				"Edibility": 5,
+		    	"Price": 300,
+				"ContextTags": [
+					"color_blue"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_vinewhiptm": {
+				"Name": "{{ModId}}_vinewhiptm",
+				"DisplayName": "{{i18n: vinewhiptm}}",
+				"Description": "{{i18n: vinewhiptm.d}}",
+				"Texture": "bulbasaur/grasstm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_green"
+				]
+			},
+			"{{ModId}}_poisonpowdertm": {
+				"Name": "{{ModId}}_poisonpowdertm",
+				"DisplayName": "{{i18n: poisonpowdertm}}",
+				"Description": "{{i18n: poisonpowdertm.d}}",
+				"Texture": "bulbasaur/poisontm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_purple"
+				]
+			},
+			"{{ModId}}_petalblizzardtm": {
+				"Name": "{{ModId}}_petalblizzardtm",
+				"DisplayName": "{{i18n: petalblizzardtm}}",
+				"Description": "{{i18n: petalblizzardtm.d}}",
+				"Texture": "bulbasaur/grasstm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_green"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_bulbasaurmayo": {
+				"Name": "{{ModId}}_bulbasaurmayo",
+				"DisplayName": "{{i18n: bulbasaurmayo}}",
+				"Description": "{{i18n: bulbasaurmayo.d}}",
+				"Texture": "bulbasaur/bulbasaurmayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200,
+				"ContextTags": [
+					"color_light_cyan"
+				]
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_bulbasaurmayon": {
+                "Id": "{{ModId}}_bulbasaurmayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_bulbasauregg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_bulbasaurmayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching them to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "bulbasaur": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"ivysaur": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"venusaur": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

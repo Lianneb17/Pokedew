@@ -1,0 +1,524 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting squirtle a physical presence",
+		"Action": "Load",
+		"Target": "squirtle/squirtleegg, squirtle/squirtle, squirtle/shinysquirtle, squirtle/blastoise, squirtle/shinyblastoise, squirtle/shopicon, squirtle/squirtlemayo, squirtle/watertm, squirtle/steeltm, squirtle/wartortle, squirtle/shinywartortle",
+		"FromFile": "assets/squirtle/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "manifesting squirtle",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"squirtle": {
+				"DisplayName": "{{i18n: squirtle}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"ShopTexture": "squirtle/shopicon",
+				"ShopDescription": "{{i18n: squirtle.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: squirtle.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "5",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": true,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_squirtleegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_squirtleegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_oranberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_waterpulsetm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "squirtle/squirtle",
+				"Sound": "{{ModId}}_squirtlecry",
+				"SpriteWidth": 36,
+				"SpriteHeight": 36,
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"SwimOffset": {
+					"X": 0,
+					"Y": 0
+				},
+				"Skins": [
+                    {
+                        "id": "Shinysquirtle",
+                        "Texture": "squirtle/shinysquirtle",
+						"BabyTexture": "squirtle/shinysquirtle",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.5",
+						"AnimalIds": [
+						"wartortle"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.4",
+						"AnimalIds": [
+						"blastoise"
+						]
+					}
+                  ]
+			},
+			"wartortle": {
+				"DisplayName": "{{i18n: wartortle}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": true,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_wartortleegg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_squirtleegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_sitrusberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_aquatailtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "squirtle/wartortle",
+            	"BabyTexture": "squirtle/squirtle",
+				"Sound": "{{ModId}}_wartortlecry",
+                "BabySound": "{{ModId}}_squirtlecry",
+				"SpriteWidth": 36,
+				"SpriteHeight": 36,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"SwimOffset": {
+					"X": 0,
+					"Y": 0
+				},
+				"Skins": [
+                    {
+                        "id": "Shinywartortle",
+                        "Texture": "squirtle/shinywartortle",
+						"BabyTexture": "squirtle/shinysquirtle",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"blastoise": {
+				"DisplayName": "{{i18n: blastoise}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "9",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": true,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_blastoiseegg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_squirtleegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_mysticwater"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_flashcannon"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "squirtle/blastoise",
+            	"BabyTexture": "squirtle/squirtle",
+				"Sound": "{{ModId}}_blastoisecry",
+                "BabySound": "{{ModId}}_squirtlecry",
+				"SpriteWidth": 36,
+				"SpriteHeight": 36,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"SwimOffset": {
+					"X": 0,
+					"Y": 0
+				},
+				"Skins": [
+                    {
+                        "id": "Shinyblastoise",
+                        "Texture": "squirtle/shinyblastoise",
+						"BabyTexture": "squirtle/shinysquirtle",
+                        "Weight": 0.1
+                    }
+                ]
+			}
+		}
+	},
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_squirtlecry": {
+				"ID": "{{ModId}}_squirtlecry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/squirtle/squirtlecry.wav}}" ]
+			},
+			"{{ModId}}_wartortlecry": {
+				"ID": "{{ModId}}_wartortlecry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/squirtle/wartortlecry.wav}}" ]
+			},
+			"{{ModId}}_blastoisecry": {
+				"ID": "{{ModId}}_blastoisecry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/squirtle/blastoisecry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving squirtle at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_squirtleegg": {
+				"Name": "{{ModId}}_squirtleegg",
+				"DisplayName": "{{i18n: squirtleegg}}",
+				"Description": "{{i18n: squirtleegg.d}}",
+				"Texture": "squirtle/squirtleegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300,
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_wartortleegg": {
+		    	"Name": "{{ModId}}_wartortleegg",
+		    	"DisplayName": "{{i18n: wartortleegg}}",
+		    	"Description": "{{i18n: internalitem}}",
+		    	"Texture": "squirtle/squirtleegg",
+		    	"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+		    	"Category": -5,                
+				"Edibility": 5,
+		    	"Price": 300,
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_blastoiseegg": {
+		    	"Name": "{{ModId}}_blastoiseegg",
+		    	"DisplayName": "{{i18n: blastoiseegg}}",
+		    	"Description": "{{i18n: internalitem}}",
+		    	"Texture": "squirtle/squirtleegg",
+		    	"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+		    	"Category": -5,                
+				"Edibility": 5,
+		    	"Price": 300,
+				"ContextTags": [
+					"color_blue"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_waterpulsetm": {
+				"Name": "{{ModId}}_waterpulsetm",
+				"DisplayName": "{{i18n: waterpulsetm}}",
+				"Description": "{{i18n: waterpulsetm.d}}",
+				"Texture": "squirtle/watertm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_aquatailtm": {
+				"Name": "{{ModId}}_aquatailtm",
+				"DisplayName": "{{i18n: aquatailtm}}",
+				"Description": "{{i18n: aquatailtm.d}}",
+				"Texture": "squirtle/watertm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_flashcannontm": {
+				"Name": "{{ModId}}_flashcannontm",
+				"DisplayName": "{{i18n: flashcannontm}}",
+				"Description": "{{i18n: flashcannontm.d}}",
+				"Texture": "squirtle/steeltm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_blue"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_squirtlemayo": {
+				"Name": "{{ModId}}_squirtlemayo",
+				"DisplayName": "{{i18n: squirtlemayo}}",
+				"Description": "{{i18n: squirtlemayo.d}}",
+				"Texture": "squirtle/squirtlemayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200,
+				"ContextTags": [
+					"color_light_cyan"
+				]
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_squirtlemayon": {
+                "Id": "{{ModId}}_squirtlemayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_squirtleegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_squirtlemayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching them to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "squirtle": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"wartortle": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"blastoise": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

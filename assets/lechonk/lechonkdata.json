@@ -1,0 +1,456 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting lechonk a physical presence",
+		"Action": "Load",
+		"Target": "lechonk/lechonkegg, lechonk/lechonk, lechonk/shinylechonk, lechonk/shopicon, lechonk/lechonkmayo, lechonk/groundtm, lechonk/energyroot, lechonk/revherb, lechonk/lechonkmeat",
+		"FromFile": "assets/lechonk/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "manifesting lechonk",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"lechonk": {
+				"DisplayName": "{{i18n: lechonk}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"ShopTexture": "lechonk/shopicon",
+				"ShopDescription": "{{i18n: lechonk.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: lechonk.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "5",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "4",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_lechonkegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_lechonkegg"
+					},
+					{
+						"Id": "horseradish",
+						"Condition": "SEASON spring",
+						"MinimumFriendship": 0,
+						"ItemId": "16"
+					},
+					{
+						"Id": "daffodil",
+						"Condition": "SEASON spring",
+						"MinimumFriendship": 0,
+						"ItemId": "18"
+					},
+					{
+						"Id": "leek",
+						"Condition": "SEASON spring",
+						"MinimumFriendship": 0,
+						"ItemId": "20"
+					},
+					{
+						"Id": "dandelion",
+						"Condition": "SEASON spring",
+						"MinimumFriendship": 0,
+						"ItemId": "22"
+					},
+					{
+						"Id": "spring onion",
+						"Condition": "SEASON spring",
+						"MinimumFriendship": 0,
+						"ItemId": "399"
+					},
+					{
+						"Id": "mushroom",
+						"Condition": "SEASON spring, summer, fall RANDOM 0.5",
+						"MinimumFriendship": 0,
+						"ItemId": "404"
+					},
+					{
+						"Id": "morel",
+						"Condition": "SEASON spring RANDOM 0.2",
+						"MinimumFriendship": 0,
+						"ItemId": "257"
+					},
+					{
+						"Id": "salmonberry",
+						"Condition": "SEASON spring DAY 15, 16, 17, 18",
+						"MinimumFriendship": 0,
+						"ItemId": "296"
+					},
+					{
+						"Id": "fiddlehead",
+						"Condition": "SEASON summer RANDOM 0.2",
+						"MinimumFriendship": 0,
+						"ItemId": "259"
+					},
+					{
+						"Id": "grape",
+						"Condition": "SEASON summer",
+						"MinimumFriendship": 0,
+						"ItemId": "398"
+					},
+					{
+						"Id": "red shroom",
+						"Condition": "SEASON summer, fall",
+						"MinimumFriendship": 0,
+						"ItemId": "420"
+					},
+					{
+						"Id": "spice berry",
+						"Condition": "SEASON summer",
+						"MinimumFriendship": 0,
+						"ItemId": "396"
+					},
+					{
+						"Id": "sweet pea",
+						"Condition": "SEASON summer",
+						"MinimumFriendship": 0,
+						"ItemId": "402"
+					},
+					{
+						"Id": "blackberry",
+						"Condition": "SEASON fall DAY 8 9 10 11",
+						"MinimumFriendship": 0,
+						"ItemId": "410"
+					},
+					{
+						"Id": "chanterelle",
+						"Condition": "SEASON fall RANDOM 0.5",
+						"MinimumFriendship": 0,
+						"ItemId": "281"
+					},
+					{
+						"Id": "hazelnut",
+						"Condition": "SEASON fall",
+						"MinimumFriendship": 0,
+						"ItemId": "408"
+					},
+					{
+						"Id": "wild plum",
+						"Condition": "SEASON fall",
+						"MinimumFriendship": 0,
+						"ItemId": "406"
+					},
+					{
+						"Id": "purple shroom",
+						"Condition": "SEASON fall RANDOM 0.5",
+						"MinimumFriendship": 0,
+						"ItemId": "422"
+					},
+					{
+						"Id": "crocus",
+						"Condition": "SEASON winter",
+						"MinimumFriendship": 0,
+						"ItemId": "418"
+					},
+					{
+						"Id": "crystal fruit",
+						"Condition": "SEASON winter",
+						"MinimumFriendship": 0,
+						"ItemId": "414"
+					},
+					{
+						"Id": "holly",
+						"Condition": "SEASON winter",
+						"MinimumFriendship": 0,
+						"ItemId": "283"
+					},
+					{
+						"Id": "snow yam",
+						"Condition": "SEASON winter",
+						"MinimumFriendship": 0,
+						"ItemId": "416"
+					},
+					{
+						"Id": "winter root",
+						"Condition": "SEASON winter",
+						"MinimumFriendship": 0,
+						"ItemId": "412"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_revherb"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_energyroot"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_digtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "lechonk/lechonk",
+				"Sound": "{{ModId}}_lechonkcry",
+				"SpriteWidth": "25",
+				"SpriteHeight": "25",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"CustomFields": {
+					"meatIndex": "{{ModId}}_lechonkmeat"
+				},
+				"Skins": [
+                    {
+                        "id": "Shinylechonk",
+                        "Texture": "lechonk/shinylechonk",
+						"BabyTexture": "lechonk/shinylechonk",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					}
+                ]
+				}
+		}
+	},
+	{
+        "LogName": "shear the lechonk",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "lechonk": {
+				"OutsideForager": true,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    },
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_lechonkcry": {
+				"ID": "{{ModId}}_lechonkcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/lechonk/lechonkcry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving lechonk at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_lechonkegg": {
+				"Name": "{{ModId}}_lechonkegg",
+				"DisplayName": "{{i18n: lechonkegg}}",
+				"Description": "{{i18n: lechonkegg.d}}",
+				"Texture": "lechonk/lechonkegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300,
+				"ContextTags": [
+					"color_white"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_energyroot": {
+				"Name": "{{ModId}}_energyroot",
+				"DisplayName": "{{i18n: energyroot}}",
+				"Description": "{{i18n: energyroot.d}}",
+				"Texture": "lechonk/energyroot",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -18,
+				"Price": 500,
+				"Edibility": 50,
+				"ContextTags": [
+					"color_green"
+				]
+			},
+			"{{ModId}}_revherb": {
+				"Name": "{{ModId}}_revherb",
+				"DisplayName": "{{i18n: revherb}}",
+				"Description": "{{i18n: revherb.d}}",
+				"Texture": "lechonk/revherb",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -18,
+				"Price": 1000,
+				"Edibility": 100,
+				"ContextTags": [
+					"color_sand"
+				]
+			},
+			"{{ModId}}_digtm": {
+				"Name": "{{ModId}}_digtm",
+				"DisplayName": "{{i18n: digtm}}",
+				"Description": "{{i18n: digtm.d}}",
+				"Texture": "lechonk/grasstm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_brown"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_lechonkmayo": {
+				"Name": "{{ModId}}_lechonkmayo",
+				"DisplayName": "{{i18n: lechonkmayo}}",
+				"Description": "{{i18n: lechonkmayo.d}}",
+				"Texture": "lechonk/lechonkmayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200,
+				"ContextTags": [
+					"color_white"
+				]
+			}
+		}
+    },
+	{
+		"LogName": "doing even worse things to lechonk",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"When": {"HasMod|contains=DIGUS.ANIMALHUSBANDRYMOD": true, "AHM Meat": true},
+		"Entries": {
+			"{{ModId}}_lechonkmeat": {
+				"Name": "{{ModId}}_lechonkmeat",
+				"DisplayName": "{{i18n: lechonkmeat}}",
+				"Description": "{{i18n: lechonkmeat.d}}",
+				"Texture": "lechonk/lechonkmeat",
+				"SpriteIndex": 0,
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+                "Edibility": 10,
+				"Category": -14,
+				"Price": 800,
+				"ContextTags": [
+					"color_pink"
+				]
+			},
+			"{{ModID}}_cookedlechonkmeat": {
+				"Name": "{{Modid}}_lechonkmeat",
+				"DisplayName": "{{i18n: cookedlechonkmeat}}",
+				"Description": "{{i18n: cookedlechonkmeat.d}}",
+				"Texture": "lechonk/lechonkmeat",
+				"SpriteIndex": 1,
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+                "Edibility": 30,
+				"Category": -7,
+				"Price": 1200,
+				"ContextTags": [
+					"color_copper"
+				]
+			}
+		}
+	},
+	{
+        "LogName": "cooking the lechonk",
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",
+		"When": {"HasMod|contains=DIGUS.ANIMALHUSBANDRYMOD": true, "AHM Meat": true},
+        "Entries": {
+            "cookedlechonkmeat":"{{ModId}}_lechonkmeat 1 247 1/9999 9999/{{ModId}}_cookedlechonkmeat 1/default"
+        }
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_lechonkmayon": {
+                "Id": "{{ModId}}_lechonkmayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_lechonkegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_lechonkmayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    }
+    ]
+}

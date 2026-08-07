@@ -1,0 +1,2859 @@
+{
+	"Changes": [
+	{
+		"LogName": "loading assorted nonsense",
+		"Action": "Load",
+		"Target": "assorted/shirts, assorted/incubator, assorted/gummis, assorted/bows, assorted/treasure, assorted/glasses, assorted/bows{{Bow Appearance}}",
+		"FromFile": "assets/assorted/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "building special coops and barns",
+		"Action": "EditData",
+		"Target": "Data/Buildings",
+		"Entries": {
+			"PokeCoop": {
+				"Name": "{{i18n: pkcoop}}",
+				"Description": "{{i18n: pkcoop.d}}",
+				"Texture": "Buildings\\Coop",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "2, 2",
+				"UpgradeSignHeight": 18.0,
+				"Size": {
+				  "X": 6,
+				  "Y": 3
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 96,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 3,
+				"BuildCost": 4000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 300
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 100
+				  }
+				],
+				"BuildingToUpgrade": null,
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 2
+				},
+				"AnimalDoor": {
+				  "X": 1,
+				  "Y": 1,
+				  "Width": 3,
+				  "Height": 3
+				},
+				"AnimalDoorOpenDuration": 0.3125,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.3125,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Coop",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 4,
+				"ValidOccupantTypes": [
+				  "PokeCoop"
+				],
+				"AllowAnimalPregnancy": false,
+				"IndoorItemMoves": null,
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 3,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -13
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 16,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			},
+			"BigPokeCoop": {
+				"Name": "{{i18n: bpkcoop}}",
+				"Description": "{{i18n: bpkcoop.d}}",
+				"Texture": "Buildings\\Big Coop",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "2, 2",
+				"UpgradeSignHeight": 18.0,
+				"Size": {
+				  "X": 6,
+				  "Y": 3
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 96,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 2,
+				"BuildCost": 10000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 400
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 150
+				  }
+				],
+				"BuildingToUpgrade": "PokeCoop",
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 2
+				},
+				"AnimalDoor": {
+				  "X": 1,
+				  "Y": 1,
+				  "Width": 3,
+				  "Height": 3
+				},
+				"AnimalDoorOpenDuration": 0.3125,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.3125,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Coop2",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 8,
+				"ValidOccupantTypes": [
+				  "PokeCoop"
+				],
+				"AllowAnimalPregnancy": false,
+				"IndoorItemMoves": [
+				  {
+					"Id": "Default_ClearSpot_pokeIncubator",
+					"Source": {
+					  "X": 2,
+					  "Y": 3
+					},
+					"Destination": {
+					  "X": 14,
+					  "Y": 8
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": "(BC)PokemonIncubator"
+				  },
+				  {
+					"Id": "Default_ClearSpot_Pillar",
+					"Source": {
+					  "X": 1,
+					  "Y": 3
+					},
+					"Destination": {
+					  "X": 14,
+					  "Y": 7
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall",
+					"Source": {
+					  "X": 10,
+					  "Y": 4
+					},
+					"Destination": {
+					  "X": 14,
+					  "Y": 4
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  }
+				],
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 3,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 2,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -13
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 16,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			},
+			"DeluxePokeCoop": {
+				"Name": "{{i18n: dpkcoop}}",
+				"Description": "{{i18n: dpkcoop.d}}",
+				"Texture": "Buildings\\Deluxe Coop",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "2, 2",
+				"UpgradeSignHeight": 18.0,
+				"Size": {
+				  "X": 6,
+				  "Y": 3
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 96,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 2,
+				"BuildCost": 20000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 500
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 200
+				  }
+				],
+				"BuildingToUpgrade": "BigPokeCoop",
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 2
+				},
+				"AnimalDoor": {
+				  "X": 1,
+				  "Y": 1,
+				  "Width": 3,
+				  "Height": 3
+				},
+				"AnimalDoorOpenDuration": 0.3125,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.3125,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Coop3",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 12,
+				"ValidOccupantTypes": [
+				  "PokeCoop"
+				],
+				"AllowAnimalPregnancy": false,
+				"IndoorItemMoves": [
+				  {
+					"Id": "Default_KeepAlongWall_Top",
+					"Source": {
+					  "X": 14,
+					  "Y": 4
+					},
+					"Destination": {
+					  "X": 20,
+					  "Y": 4
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall_Middle",
+					"Source": {
+					  "X": 14,
+					  "Y": 7
+					},
+					"Destination": {
+					  "X": 21,
+					  "Y": 7
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall_Bottom",
+					"Source": {
+					  "X": 14,
+					  "Y": 8
+					},
+					"Destination": {
+					  "X": 21,
+					  "Y": 8
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  }
+				],
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 3,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 2,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 4,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -13
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 16,
+					  "Y": 112,
+					  "Width": 16,
+					  "Height": 16
+					},
+					"DrawPosition": "32, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			},
+			"PokeBarn": {
+				"Name": "{{i18n: pkbarn}}",
+				"Description": "{{i18n: pkbarn.d}}",
+				"Texture": "Buildings\\Barn",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "3, 3",
+				"UpgradeSignHeight": 31.0,
+				"Size": {
+				  "X": 7,
+				  "Y": 4
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 112,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 3,
+				"BuildCost": 6000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 350
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 150
+				  }
+				],
+				"BuildingToUpgrade": null,
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 3
+				},
+				"AnimalDoor": {
+				  "X": 2,
+				  "Y": 2,
+				  "Width": 4,
+				  "Height": 4
+				},
+				"AnimalDoorOpenDuration": 0.4,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.6,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Barn",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 4,
+				"ValidOccupantTypes": [
+				  "PokeBarn"
+				],
+				"AllowAnimalPregnancy": false,
+				"IndoorItemMoves": null,
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 6,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "48, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 12
+					},
+					"DrawPosition": "48, 84",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 32,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "48, 80",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 64,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "48, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			},
+			"BigPokeBarn": {
+				"Name": "{{i18n: bpkbarn}}",
+				"Description": "{{i18n: bpkbarn.d}}",
+				"Texture": "Buildings\\Big Barn",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "3, 3",
+				"UpgradeSignHeight": 31.0,
+				"Size": {
+				  "X": 7,
+				  "Y": 4
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 112,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 2,
+				"BuildCost": 12000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 450
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 200
+				  }
+				],
+				"BuildingToUpgrade": "PokeBarn",
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 3
+				},
+				"AnimalDoor": {
+				  "X": 3,
+				  "Y": 2,
+				  "Width": 4,
+				  "Height": 4
+				},
+				"AnimalDoorOpenDuration": 0.4,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.6,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Barn2",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 8,
+				"ValidOccupantTypes": [
+				  "PokeBarn"
+				],
+				"AllowAnimalPregnancy": true,
+				"IndoorItemMoves": [
+				  {
+					"Id": "Default_ClearSpace_WaterTrough_Left",
+					"Source": {
+					  "X": 15,
+					  "Y": 3
+					},
+					"Destination": {
+					  "X": 18,
+					  "Y": 13
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_ClearSpace_WaterTrough_Left",
+					"Source": {
+					  "X": 16,
+					  "Y": 3
+					},
+					"Destination": {
+					  "X": 19,
+					  "Y": 13
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_ClearSpace_Barrel",
+					"Source": {
+					  "X": 1,
+					  "Y": 4
+					},
+					"Destination": {
+					  "X": 20,
+					  "Y": 3
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall",
+					"Source": {
+					  "X": 16,
+					  "Y": 4
+					},
+					"Destination": {
+					  "X": 20,
+					  "Y": 4
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 9
+					},
+					"UnlessItemId": null
+				  }
+				],
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 6,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 5,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 12
+					},
+					"DrawPosition": "64, 84",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 32,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 80",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 64,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			},
+			"DeluxePokeBarn": {
+				"Name": "{{i18n: dpkbarn}}",
+				"Description": "{{i18n: dpkbarn.d}}",
+				"Texture": "Buildings\\Deluxe Barn",
+				"Skins": [],
+				"DrawShadow": true,
+				"UpgradeSignTile": "4.5, 2",
+				"UpgradeSignHeight": 31.0,
+				"Size": {
+				  "X": 7,
+				  "Y": 4
+				},
+				"FadeWhenBehind": true,
+				"SourceRect": {
+				  "X": 0,
+				  "Y": 0,
+				  "Width": 112,
+				  "Height": 112
+				},
+				"SeasonOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"DrawOffset": "0, 0",
+				"SortTileOffset": 0.0,
+				"CollisionMap": null,
+				"AdditionalPlacementTiles": null,
+				"BuildingType": null,
+				"Builder": "Robin",
+				"BuildCondition": null,
+				"BuildDays": 2,
+				"BuildCost": 25000,
+				"BuildMaterials": [
+				  {
+					"ItemId": "(O)388",
+					"Amount": 550
+				  },
+				  {
+					"ItemId": "(O)390",
+					"Amount": 300
+				  }
+				],
+				"BuildingToUpgrade": "BigPokeBarn",
+				"MagicalConstruction": false,
+				"BuildMenuDrawOffset": {
+				  "X": 0,
+				  "Y": 0
+				},
+				"HumanDoor": {
+				  "X": 1,
+				  "Y": 3
+				},
+				"AnimalDoor": {
+				  "X": 3,
+				  "Y": 2,
+				  "Width": 4,
+				  "Height": 4
+				},
+				"AnimalDoorOpenDuration": 0.4,
+				"AnimalDoorOpenSound": "doorCreak",
+				"AnimalDoorCloseDuration": 0.6,
+				"AnimalDoorCloseSound": "doorCreakReverse",
+				"NonInstancedIndoorLocation": null,
+				"IndoorMap": "Barn3",
+				"IndoorMapType": "StardewValley.AnimalHouse",
+				"MaxOccupants": 12,
+				"ValidOccupantTypes": [
+				  "PokeBarn"
+				],
+				"AllowAnimalPregnancy": true,
+				"IndoorItemMoves": [
+				  {
+					"Id": "Default_ClearSpace_Barrel",
+					"Source": {
+					  "X": 20,
+					  "Y": 3
+					},
+					"Destination": {
+					  "X": 1,
+					  "Y": 4
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall_Top",
+					"Source": {
+					  "X": 20,
+					  "Y": 5
+					},
+					"Destination": {
+					  "X": 21,
+					  "Y": 13
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_KeepAlongWall_Middle",
+					"Source": {
+					  "X": 20,
+					  "Y": 6
+					},
+					"Destination": {
+					  "X": 23,
+					  "Y": 6
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 6
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_ClearSpace_Bucket",
+					"Source": {
+					  "X": 20,
+					  "Y": 4
+					},
+					"Destination": {
+					  "X": 20,
+					  "Y": 13
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  },
+				  {
+					"Id": "Default_ShiftSpace_NextToBarrel",
+					"Source": {
+					  "X": 20,
+					  "Y": 12
+					},
+					"Destination": {
+					  "X": 22,
+					  "Y": 13
+					},
+					"Size": {
+					  "X": 1,
+					  "Y": 1
+					},
+					"UnlessItemId": null
+				  }
+				],
+				"IndoorItems": [
+				  {
+					"Id": "Default_FeedHopper",
+					"ItemId": "(BC)99",
+					"Tile": {
+					  "X": 6,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 5,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  },
+				  {
+					"Id": "inc",
+					"ItemId": "(BC)PokemonIncubator",
+					"Tile": {
+					  "X": 4,
+					  "Y": 3
+					},
+					"Indestructible": true
+				  }
+				],
+				"AddMailOnBuild": null,
+				"Metadata": {},
+				"ModData": {},
+				"HayCapacity": 0,
+				"Chests": null,
+				"DefaultAction": null,
+				"AdditionalTilePropertyRadius": 0,
+				"AllowsFlooringUnderneath": true,
+				"ActionTiles": [],
+				"TileProperties": [],
+				"ItemConversions": null,
+				"DrawLayers": [
+				  {
+					"Id": "Default_AnimalDoor_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 0,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 12
+					},
+					"DrawPosition": "64, 84",
+					"DrawInBackground": false,
+					"SortTileOffset": 0.02,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": -19
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Top",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 32,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 80",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  },
+				  {
+					"Id": "Default_AnimalDoor_Open_Bottom",
+					"Texture": null,
+					"SourceRect": {
+					  "X": 64,
+					  "Y": 112,
+					  "Width": 32,
+					  "Height": 16
+					},
+					"DrawPosition": "64, 96",
+					"DrawInBackground": false,
+					"SortTileOffset": 1.0,
+					"OnlyDrawIfChestHasContents": null,
+					"FrameDuration": 90,
+					"FrameCount": 1,
+					"FramesPerRow": -1,
+					"AnimalDoorOffset": {
+					  "X": 0,
+					  "Y": 0
+					}
+				  }
+				],
+				"CustomFields": null
+			}
+		}
+	},
+	{
+        "LogName": "finally making eggs work as intended",
+            "Action": "EditData",
+            "Target": "selph.ExtraAnimalConfig/EggExtensionData",
+            "Entries": {
+                "(O){{ModId}}_eeveeegg": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "flareon",
+                            "AnimalId": "flareon",
+                            "Condition": "RANDOM 0.111"
+                        },
+                        {
+                            "Id": "vaporeon",
+                            "AnimalId": "vaporeon",
+                            "Condition": "RANDOM 0.125"
+                        },
+                        {
+                            "Id": "jolteon",
+                            "AnimalId": "jolteon",
+                            "Condition": "RANDOM 0.143"
+                        },
+                        {
+                            "Id": "glaceon",
+                            "AnimalId": "glaceon",
+                            "Condition": "RANDOM 0.167"
+                        },
+                        {
+                            "Id": "leafeon",
+                            "AnimalId": "leafeon",
+                            "Condition": "RANDOM 0.2"
+                        },
+                        {
+                            "Id": "espeon",
+                            "AnimalId": "espeon",
+                            "Condition": "RANDOM 0.25"
+                        },
+                        {
+                            "Id": "umbreon",
+                            "AnimalId": "umbreon",
+                            "Condition": "RANDOM 0.333"
+                        },
+                        {
+                            "Id": "sylveon",
+                            "AnimalId": "sylveon",
+                            "Condition": "RANDOM 0.5"
+                        },
+                        {
+                            "Id": "eevee",
+                            "AnimalId": "eevee"
+                        }
+                    ]
+                },
+                "(O){{ModId}}_combeeegg": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "combeef",
+                            "AnimalId": "combeef",
+                            "Condition": "RANDOM 0.2"
+                        },
+                        {
+                            "Id": "queen",
+                            "AnimalId": "queen",
+                            "Condition": "RANDOM 0.1"
+                        },
+						{
+                            "Id": "combeem",
+                            "AnimalId": "combeem"
+                        }
+                    ]
+                },
+                "(O){{ModId}}_vulpixegg": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "ninetails",
+                            "AnimalId": "tails",
+                            "Condition": "RANDOM 0.25"
+                        },
+                        {
+                            "Id": "vulpix",
+                            "AnimalId": "vulpix"
+                        }
+                    ]
+                },
+                "(O){{ModId}}_alovulpixegg": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "aloninetails",
+                            "AnimalId": "alotails",
+                            "Condition": "RANDOM 0.25"
+                        },
+                        {
+                            "Id": "alovulpix",
+                            "AnimalId": "alovulpix"
+                        }
+                    ]
+                },
+                "(O){{ModId}}_piplupegg": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "piplup",
+                            "AnimalId": "piplup",
+                            "Condition": "RANDOM 0.25"
+                        },
+						{
+                            "Id": "empoleon",
+                            "AnimalId": "empoleon",
+                            "Condition": "RANDOM 0.25"
+                        },
+                        {
+                            "Id": "prinplup",
+                            "AnimalId": "prinplup"
+                        }
+                    ]
+                },
+				"(O){{ModId}}_chimcharegg": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "chimchar",
+                            "AnimalId": "chimchar",
+                            "Condition": "RANDOM 0.25"
+                        },
+						{
+                            "Id": "infernape",
+                            "AnimalId": "infernape",
+                            "Condition": "RANDOM 0.25"
+                        },
+                        {
+                            "Id": "monferno",
+                            "AnimalId": "monferno"
+                        }
+                    ]
+                },
+				"(O){{ModId}}_turtwigegg": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "turtwig",
+                            "AnimalId": "turtwig",
+                            "Condition": "RANDOM 0.25"
+                        },
+						{
+                            "Id": "torterra",
+                            "AnimalId": "torterra",
+                            "Condition": "RANDOM 0.25"
+                        },
+                        {
+                            "Id": "grotle",
+                            "AnimalId": "grotle"
+                        }
+                    ]
+                },
+				"(O){{ModId}}_floweregg": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "seed",
+                            "AnimalId": "seed",
+                            "Condition": "RANDOM 0.2"
+                        },
+                        {
+                            "Id": "flower",
+                            "AnimalId": "flower"
+                        }
+                    ]
+                },
+				"(O){{ModId}}_pichuegg": {
+                    "AnimalSpawnList": [
+						{
+                            "Id": "fpika",
+                            "AnimalId": "fpikachu",
+							"Condition": "RANDOM 0.25"
+                        },
+						{
+                            "Id": "mpika",
+                            "AnimalId": "mpikachu",
+							"Condition": "RANDOM 0.33"
+                        },
+                        {
+                            "Id": "pichu",
+                            "AnimalId": "pichu",
+                            "Condition": "RANDOM 0.25"
+                        },
+                        {
+                            "Id": "fraichu",
+                            "AnimalId": "fraichu",
+							"Condition": "RANDOM 0.33"
+                        },
+						{
+                            "Id": "mraichu",
+                            "AnimalId": "mraichu",
+							"Condition": "RANDOM 0.5"
+                        },
+						{
+                            "Id": "alolan raichu",
+                            "AnimalId": "aloraichu"
+                        }
+                    ]
+                }
+            }
+    },
+	{
+		"LogName": "making incubators function",
+		"Action": "EditData",
+		"Target": "Data/Machines",
+		"Entries": {
+			"(BC)PokemonIncubator": {
+				"HasInput": false,
+				"HasOutput": false,
+				"InteractMethod": null,
+				"OutputRules": [
+				  {
+					"Id": "Default",
+					"Triggers": [
+					  {
+						"Id": "ItemPlacedInMachine",
+						"Trigger": "ItemPlacedInMachine",
+						"RequiredItemId": null,
+						"RequiredTags": null,
+						"RequiredCount": 1,
+						"Condition": null
+					  }
+					],
+					"UseFirstValidOutput": false,
+					"OutputItem": [
+					  {
+						"CustomData": null,
+						"OutputMethod": "StardewValley.Object, Stardew Valley: OutputIncubator",
+						"CopyColor": false,
+						"CopyPrice": false,
+						"CopyQuality": false,
+						"PreserveType": null,
+						"PreserveId": null,
+						"IncrementMachineParentSheetIndex": 0,
+						"PriceModifiers": null,
+						"PriceModifierMode": "Stack",
+						"Condition": null,
+						"Id": "Default",
+						"ItemId": null,
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					],
+					"MinutesUntilReady": 9000,
+					"DaysUntilReady": -1,
+					"InvalidCountMessage": null,
+					"RecalculateOnCollect": false
+				  }
+				],
+				"AdditionalConsumedItems": null,
+				"PreventTimePass": null,
+				"ReadyTimeModifiers": [
+				  {
+					"Id": "Coopmaster",
+					"Condition": "PLAYER_HAS_PROFESSION Target 2",
+					"Modification": "Multiply",
+					"Amount": 0.5,
+					"RandomAmount": null
+				  }
+				],
+				"ReadyTimeModifierMode": "Stack",
+				"InvalidItemMessage": null,
+				"InvalidItemMessageCondition": null,
+				"InvalidCountMessage": null,
+				"LoadEffects": [
+				  {
+					"Id": "Default",
+					"Condition": null,
+					"Sounds": [
+					  {
+						"Id": "coin",
+						"Delay": 0
+					  }
+					],
+					"Interval": 100,
+					"Frames": null,
+					"ShakeDuration": -1,
+					"TemporarySprites": null
+				  }
+				],
+				"WorkingEffects": null,
+				"WorkingEffectChance": 0.33,
+				"AllowLoadWhenFull": false,
+				"WobbleWhileWorking": true,
+				"LightWhileWorking": null,
+				"ShowNextIndexWhileWorking": false,
+				"ShowNextIndexWhenReady": false,
+				"AllowFairyDust": false,
+				"IsIncubator": true,
+				"OnlyCompleteOvernight": true,
+				"ClearContentsOvernightCondition": null,
+				"StatsToIncrementWhenLoaded": null,
+				"StatsToIncrementWhenHarvested": null,
+				"ExperienceGainOnHarvest": null,
+				"CustomFields": null
+			}
+		}
+	},
+	{
+		"LogName": "telling the incubators how to do their jobs",
+		"Action": "EditData",
+		"Target": "Data/BigCraftables",
+		"Entries": {
+			"PokemonIncubator": {
+				"Name": "PokemonIncubator",
+				"DisplayName": "{{i18n: pokemonincubator}}",
+				"Description": "{{i18n: pokemonincubator.d}}",
+				"Fragility": 0,
+				"CanBePlacedOutdoors": true,
+				"CanBePlacedIndoors": false,
+				"Texture": "assorted/incubator"
+			}
+		}
+	},
+	{
+		"LogName": "building incubators",
+		"Action": "EditData",
+		"Target": "Data/CraftingRecipes",
+		"Entries": {
+			"PokemonIncubator":"336 5 338 5 440 3/Field/PokemonIncubator/true/default/"
+		}
+	},
+	{
+		"LogName": "sewing team rocket uniforms",
+		"Action": "EditData",
+		"Target": "Data/Shirts",
+		"Entries": {
+			"trshirt": {
+				"Name": "trshirt",
+				"DisplayName": "Team Rocket Shirt",
+				"Description": "A uniform shirt declaring your allegiance to Team Rocket!",
+				"Texture": "assorted/shirts",
+				"SpriteIndex": "0"
+			},
+			"trcrop": {
+				"Name": "trcrop",
+				"DisplayName": "Cropped Team Rocket Shirt",
+				"Description": "A uniform shirt declaring your allegiance to Team Rocket! This one appears to have been cropped!",
+				"Texture": "assorted/shirts",
+				"SpriteIndex": "1"
+			}
+		}
+	},
+	{
+		"LogName": "making gummis",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_redgummi": {
+				"Name": "{{ModId}}_redgummi",
+				"DisplayName": "{{i18n: redgummi}}",
+				"Description": "{{i18n: redgummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 0,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_red"
+				]
+			},
+			"{{ModId}}_orangegummi": {
+				"Name": "{{ModId}}_orangegummi",
+				"DisplayName": "{{i18n: orangegummi}}",
+				"Description": "{{i18n: orangegummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 1,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_orange"
+				]
+			},
+			"{{ModId}}_yellowgummi": {
+				"Name": "{{ModId}}_yellowgummi",
+				"DisplayName": "{{i18n: yellowgummi}}",
+				"Description": "{{i18n: yellowgummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 2,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_yellow"
+				]
+			},
+			"{{ModId}}_grassgummi": {
+				"Name": "{{ModId}}_grassgummi",
+				"DisplayName": "{{i18n: grassgummi}}",
+				"Description": "{{i18n: grassgummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 3,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_lime"
+				]
+			},
+			"{{ModId}}_greengummi": {
+				"Name": "{{ModId}}_greengummi",
+				"DisplayName": "{{i18n: greengummi}}",
+				"Description": "{{i18n: greengummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 4,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_green"
+				]
+			},
+			"{{ModId}}_skygummi": {
+				"Name": "{{ModId}}_skygummi",
+				"DisplayName": "{{i18n: skygummi}}",
+				"Description": "{{i18n: skygummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 5,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_cyan"
+				]
+			},
+			"{{ModId}}_bluegummi": {
+				"Name": "{{ModId}}_bluegummi",
+				"DisplayName": "{{i18n: bluegummi}}",
+				"Description": "{{i18n: bluegummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 6,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_royalgummi": {
+				"Name": "{{ModId}}_royalgummi",
+				"DisplayName": "{{i18n: royalgummi}}",
+				"Description": "{{i18n: royalgummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 7,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_dark_blue"
+				]
+			},
+			"{{ModId}}_purplegummi": {
+				"Name": "{{ModId}}_purplegummi",
+				"DisplayName": "{{i18n: purplegummi}}",
+				"Description": "{{i18n: purplegummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 8,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_dark_purple"
+				]
+			},
+			"{{ModId}}_pinkgummi": {
+				"Name": "{{ModId}}_pinkgummi",
+				"DisplayName": "{{i18n: pinkgummi}}",
+				"Description": "{{i18n: pinkgummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 9,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_pink"
+				]
+			},
+			"{{ModId}}_rosegummi": {
+				"Name": "{{ModId}}_rosegummi",
+				"DisplayName": "{{i18n: rosegummi}}",
+				"Description": "{{i18n: rosegummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 18,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_pink"
+				]
+			},
+			"{{ModId}}_blackgummi": {
+				"Name": "{{ModId}}_blackgummi",
+				"DisplayName": "{{i18n: blackgummi}}",
+				"Description": "{{i18n: blackgummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 10,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_black"
+				]
+			},
+			"{{ModId}}_browngummi": {
+				"Name": "{{ModId}}_browngummi",
+				"DisplayName": "{{i18n: browngummi}}",
+				"Description": "{{i18n: browngummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 11,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_copper"
+				]
+			},
+			"{{ModId}}_whitegummi": {
+				"Name": "{{ModId}}_whitegummi",
+				"DisplayName": "{{i18n: whitegummi}}",
+				"Description": "{{i18n: whitegummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 12,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_white"
+				]
+			},
+			"{{ModId}}_silvergummi": {
+				"Name": "{{ModId}}_silvergummi",
+				"DisplayName": "{{i18n: silvergummi}}",
+				"Description": "{{i18n: silvergummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 13,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_iron"
+				]
+			},
+			"{{ModId}}_cleargummi": {
+				"Name": "{{ModId}}_cleargummi",
+				"DisplayName": "{{i18n: cleargummi}}",
+				"Description": "{{i18n: cleargummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 14,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_white"
+				]
+			},
+			"{{ModId}}_wondergummi": {
+				"Name": "{{ModId}}_wondergummi",
+				"DisplayName": "{{i18n: wondergummi}}",
+				"Description": "{{i18n: wondergummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 15,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_dark_pink"
+				]
+			},
+			"{{ModId}}_goldgummi": {
+				"Name": "{{ModId}}_gummi",
+				"DisplayName": "{{i18n: goldgummi}}",
+				"Description": "{{i18n: goldgummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 16,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 15,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_gold"
+				]
+			},
+			"{{ModId}}_prismaticgummi": {
+				"Name": "{{ModId}}_prismaticgummi",
+				"DisplayName": "{{i18n: prismaticgummi}}",
+				"Description": "{{i18n: prismaticgummi.d}}",
+				"Texture": "assorted/gummis",
+				"SpriteIndex": 17,
+				"Type": "Basic",
+				"Category": -17,
+				"Edibility": 30,
+				"Price": 2000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_prismatic"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "making bows",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_redbow": {
+				"Name": "{{ModId}}_redbow",
+				"DisplayName": "{{i18n: redbow}}",
+				"Description": "{{i18n: redbow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 0,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_red"
+				]
+			},
+			"{{ModId}}_brownbow": {
+				"Name": "{{ModId}}_brownbow",
+				"DisplayName": "{{i18n: brownbow}}",
+				"Description": "{{i18n: brownbow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 1,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_copper"
+				]
+			},
+			"{{ModId}}_orangebow": {
+				"Name": "{{ModId}}_orangebow",
+				"DisplayName": "{{i18n: orangebow}}",
+				"Description": "{{i18n: orangebow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 2,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_orange"
+				]
+			},
+			"{{ModId}}_yellowbow": {
+				"Name": "{{ModId}}_yellowbow",
+				"DisplayName": "{{i18n: yellowbow}}",
+				"Description": "{{i18n: yellowbow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 3,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_yellow"
+				]
+			},
+			"{{ModId}}_limebow": {
+				"Name": "{{ModId}}_limebow",
+				"DisplayName": "{{i18n: limebow}}",
+				"Description": "{{i18n: limebow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 4,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_lime"
+				]
+			},
+			"{{ModId}}_greenbow": {
+				"Name": "{{ModId}}_greenbow",
+				"DisplayName": "{{i18n: greenbow}}",
+				"Description": "{{i18n: greenbow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 5,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_dark_green"
+				]
+			},
+			"{{ModId}}_viridianbow": {
+				"Name": "{{ModId}}_viridianbow",
+				"DisplayName": "{{i18n: viridianbow}}",
+				"Description": "{{i18n: viridianbow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 6,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_sea_green"
+				]
+			},
+			"{{ModId}}_mintybow": {
+				"Name": "{{ModId}}_mintybow",
+				"DisplayName": "{{i18n: mintybow}}",
+				"Description": "{{i18n: mintybow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 7,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_aqua"
+				]
+			},
+			"{{ModId}}_skybluebow": {
+				"Name": "{{ModId}}_skybluebow",
+				"DisplayName": "{{i18n: skybluebow}}",
+				"Description": "{{i18n: skybluebow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 8,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_light_cyan"
+				]
+			},
+			"{{ModId}}_bluebow": {
+				"Name": "{{ModId}}_bluebow",
+				"DisplayName": "{{i18n: bluebow}}",
+				"Description": "{{i18n: bluebow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 9,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_cobaltbow": {
+				"Name": "{{ModId}}_cobaltbow",
+				"DisplayName": "{{i18n: cobaltbow}}",
+				"Description": "{{i18n: cobaltbow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 10,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_dark_blue"
+				]
+			},
+			"{{ModId}}_violetbow": {
+				"Name": "{{ModId}}_violetbow",
+				"DisplayName": "{{i18n: violetbow}}",
+				"Description": "{{i18n: violetbow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 11,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_dark_purple"
+				]
+			},
+			"{{ModId}}_purplebow": {
+				"Name": "{{ModId}}_purplebow",
+				"DisplayName": "{{i18n: purplebow}}",
+				"Description": "{{i18n: purplebow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 12,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_poppyseed"
+				]
+			},
+			"{{ModId}}_pinkbow": {
+				"Name": "{{ModId}}_pinkbow",
+				"DisplayName": "{{i18n: pinkbow}}",
+				"Description": "{{i18n: pinkbow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 13,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_pink"
+				]
+			},
+			"{{ModId}}_fuchsiabow": {
+				"Name": "{{ModId}}_fuchsiabow",
+				"DisplayName": "{{i18n: fuchsiabow}}",
+				"Description": "{{i18n: fuchsiabow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 14,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_dark_pink"
+				]
+			},
+			"{{ModId}}_silverbow": {
+				"Name": "{{ModId}}_silverbow",
+				"DisplayName": "{{i18n: silverbow}}",
+				"Description": "{{i18n: silverbow.d}}",
+				"Texture": "assorted/bows",
+				"SpriteIndex": 15,
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+				"ContextTags": [
+					"color_gray"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "sewing bows and fixing shades",
+		"Action": "EditData",
+		"Target": "Data/Hats",
+		"Entries": {
+			"{{ModId}}_redbowhat": "redbowhat/{{i18n: redbowhat.d}}/true/false//{{i18n: redbow}}/0/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_brownbowhat": "brownbowhat/{{i18n: brownbowhat.d}}/true/false//{{i18n: brownbow}}/1/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_orangebowhat": "orangebowhat/{{i18n: orangebowhat.d}}/true/false//{{i18n: orangebow}}/2/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_yellowbowhat": "yellowbowhat/{{i18n: yellowbowhat.d}}/true/false//{{i18n: yellowbow}}/3/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_limebowhat": "limebowhat/{{i18n: limebowhat.d}}/true/false//{{i18n: limebow}}/4/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_greenbowhat": "greenbowhat/{{i18n: greenbowhat.d}}/true/false//{{i18n: greenbow}}/5/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_viridianbowhat": "viridianbowhat/{{i18n: viridianbowhat.d}}/true/false//{{i18n: viridianbow}}/6/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_mintybowhat": "mintybowhat/{{i18n: mintybowhat.d}}/true/false//{{i18n: mintybow}}/7/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_skybluebowhat": "skybluebowhat/{{i18n: skybluebowhat.d}}/true/false//{{i18n: skybluebow}}/8/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_bluebowhat": "bluebowhat/{{i18n: bluebowhat.d}}/true/false//{{i18n: bluebow}}/9/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_cobaltbowhat": "cobaltbowhat/{{i18n: cobaltbowhat.d}}/true/false//{{i18n: cobaltbow}}/10/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_violetbowhat": "violetbowhat/{{i18n: violetbowhat.d}}/true/false//{{i18n: violetbow}}/11/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_purplebowhat": "purplebowhat/{{i18n: purplebowhat.d}}/true/false//{{i18n: purplebow}}/12/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_pinkbowhat": "pinkbowhat/{{i18n: pinkbowhat.d}}/true/false//{{i18n: pinkbow}}/13/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_fuchsiabowhat": "fuchsiabowhat/{{i18n: fuchsiabowhat.d}}/true/false//{{i18n: fuchsiabow}}/14/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_silverbowhat": "silverbowhat/{{i18n: silverbowhat.d}}/true/false//{{i18n: silverbow}}/15/assorted\\bows{{Bow Appearance}}",
+			"{{ModId}}_lightshadeshat": "lightshadeshat/{{i18n: lightshadeshat.d}}/true/false//{{i18n: lightshades}}/0/assorted\\glasses",
+			"{{ModId}}_darkshadeshat": "darkshadeshat/{{i18n: darkshadeshat.d}}/true/false//{{i18n: darkshades}}/1/assorted\\glasses"
+		}
+	},
+	{
+		"LogName": "giving bows and shades to the hat mouse",
+		"Action": "EditData",
+		"Target": "Data/Shops",
+		"TargetField": [ "HatMouse", "Items" ],
+		"Entries": {
+			"redbowhat": {
+				"Id": "redbowhat",
+				"ItemId": "(H){{ModId}}_redbowhat",
+				"TradeItemId": "(O){{ModId}}_redbow"
+			},
+			"brownbowhat": {
+				"Id": "brownbowhat",
+				"ItemId": "(H){{ModId}}_brownbowhat",
+				"TradeItemId": "(O){{ModId}}_brownbow"
+			},
+			"orangebowhat": {
+				"Id": "orangebowhat",
+				"ItemId": "(H){{ModId}}_orangebowhat",
+				"TradeItemId": "(O){{ModId}}_orangebow"
+			},
+			"yellowbowhat": {
+				"Id": "yellowbowhat",
+				"ItemId": "(H){{ModId}}_yellowbowhat",
+				"TradeItemId": "(O){{ModId}}_yellowbow"
+			},
+			"limebowhat": {
+				"Id": "limebowhat",
+				"ItemId": "(H){{ModId}}_limebowhat",
+				"TradeItemId": "(O){{ModId}}_limebow"
+			},
+			"greenbowhat": {
+				"Id": "greenbowhat",
+				"ItemId": "(H){{ModId}}_greenbowhat",
+				"TradeItemId": "(O){{ModId}}_greenbow"
+			},
+			"viridianbowhat": {
+				"Id": "viridianbowhat",
+				"ItemId": "(H){{ModId}}_viridianbowhat",
+				"TradeItemId": "(O){{ModId}}_viridianbow"
+			},
+			"mintybowhat": {
+				"Id": "mintybowhat",
+				"ItemId": "(H){{ModId}}_mintybowhat",
+				"TradeItemId": "(O){{ModId}}_mintybow"
+			},
+			"skybluebowhat": {
+				"Id": "skybluebowhat",
+				"ItemId": "(H){{ModId}}_skybluebowhat",
+				"TradeItemId": "(O){{ModId}}_skybluebow"
+			},
+			"bluebowhat": {
+				"Id": "bluebowhat",
+				"ItemId": "(H){{ModId}}_bluebowhat",
+				"TradeItemId": "(O){{ModId}}_bluebow"
+			},
+			"cobaltbowhat": {
+				"Id": "cobaltbowhat",
+				"ItemId": "(H){{ModId}}_cobaltbowhat",
+				"TradeItemId": "(O){{ModId}}_cobaltbow"
+			},
+			"violetbowhat": {
+				"Id": "violetbowhat",
+				"ItemId": "(H){{ModId}}_violetbowhat",
+				"TradeItemId": "(O){{ModId}}_violetbow"
+			},
+			"purplebowhat": {
+				"Id": "purplebowhat",
+				"ItemId": "(H){{ModId}}_purplebowhat",
+				"TradeItemId": "(O){{ModId}}_purplebow"
+			},
+			"pinkbowhat": {
+				"Id": "pinkbowhat",
+				"ItemId": "(H){{ModId}}_pinkbowhat",
+				"TradeItemId": "(O){{ModId}}_pinkbow"
+			},
+			"fuchsiabowhat": {
+				"Id": "fuchsiabowhat",
+				"ItemId": "(H){{ModId}}_fuchsiabowhat",
+				"TradeItemId": "(O){{ModId}}_fuchsiabow"
+			},
+			"silverbowhat": {
+				"Id": "silverbowhat",
+				"ItemId": "(H){{ModId}}_silverbowhat",
+				"TradeItemId": "(O){{ModId}}_silverbow"
+			},
+			"lightshadeshat": {
+				"Id": "lightshadeshat",
+				"ItemId": "(H){{ModId}}_lightshadeshat",
+				"TradeItemId": "(O){{ModId}}_lightshades"
+			},
+			"darkshadeshat": {
+				"Id": "darkshadeshat",
+				"ItemId": "(H){{ModId}}_darkshadeshat",
+				"TradeItemId": "(O){{ModId}}_darkshades"
+			}
+		}
+	},
+	{
+		"LogName": "finding treasure",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_gummitreasurebox": {
+				"Name": "{{ModId}}_gummitreasurebox",
+				"DisplayName": "{{i18n: sweetbox}}",
+				"Description": "{{i18n: sweetbox.d}}",
+				"Type": "Minerals",
+				"Texture": "assorted/treasure",
+				"SpriteIndex": 1,
+				"Price": 500,
+				"ContextTags": [
+					"not_museum_donatable"
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": [
+					{
+						"Chance": 1,
+						"Id": "Default",
+						"RandomItemId": [
+							"(O){{ModId}}_redgummi",
+							"(O){{ModId}}_orangegummi",
+							"(O){{ModId}}_yellowgummi",
+							"(O){{ModId}}_grassgummi",
+							"(O){{ModId}}_greengummi",
+							"(O){{ModId}}_skygummi",
+							"(O){{ModId}}_bluegummi",
+							"(O){{ModId}}_royalgummi",
+							"(O){{ModId}}_purplegummi",
+							"(O){{ModId}}_pinkgummi",
+							"(O){{ModId}}_rosegummi",
+							"(O){{ModId}}_blackgummi",
+							"(O){{ModId}}_browngummi",
+							"(O){{ModId}}_whitegummi",
+							"(O){{ModId}}_silvergummi",
+							"(O){{ModId}}_goldgummi",
+							"(O){{ModId}}_cleargummi"
+						]
+					},
+					{
+						"Chance": 0.5,
+						"Id": "special",
+						"ItemId": "(O){{ModId}}_wondergummi"
+					},
+					{
+						"Chance": 0.2,
+						"Id": "morespecial",
+						"ItemId": "(O){{ModId}}_prismaticgummi"
+					}
+				]
+			}
+		}
+	},
+	{
+		"LogName": "finding treasure...two!",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_bowtreasurebox": {
+				"Name": "{{ModId}}_bowtreasurebox",
+				"DisplayName": "{{i18n: cutebox}}",
+				"Description": "{{i18n: cutebox.d}}",
+				"Type": "Minerals",
+				"Texture": "assorted/treasure",
+				"SpriteIndex": 0,
+				"Price": 500,
+				"ContextTags": [
+					"not_museum_donatable"
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": [
+					{
+						"Chance": 1,
+						"Id": "Default",
+						"RandomItemId": [
+							"(O){{ModId}}_redbow",
+							"(O){{ModId}}_brownbow",
+							"(O){{ModId}}_orangebow",
+							"(O){{ModId}}_yellowbow",
+							"(O){{ModId}}_limebow",
+							"(O){{ModId}}_greenbow",
+							"(O){{ModId}}_viridianbow",
+							"(O){{ModId}}_mintybow",
+							"(O){{ModId}}_skybluebow",
+							"(O){{ModId}}_bluebow",
+							"(O){{ModId}}_cobaltbow",
+							"(O){{ModId}}_violetbow",
+							"(O){{ModId}}_purplebow",
+							"(O){{ModId}}_pinkbow",
+							"(O){{ModId}}_fuchsiabow",
+							"(O){{ModId}}_silverbow"
+						]
+					}
+				]
+			}
+		}
+	},
+	{
+		"LogName": "hiding rare candy in boxes",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_candytreasurebox": {
+				"Name": "{{ModId}}_candytreasurebox",
+				"DisplayName": "{{i18n: candybox}}",
+				"Description": "{{i18n: candybox.d}}",
+				"Type": "Minerals",
+				"Texture": "assorted/treasure",
+				"SpriteIndex": 2,
+				"Price": 750,
+				"ContextTags": [
+					"not_museum_donatable"
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": [
+					{
+						"Chance": 1,
+						"Id": "Default",
+						"RandomItemId": [
+							"(O){{ModId}}_farmcandy",
+							"(O){{ModId}}_fishcandy",
+							"(O){{ModId}}_foragecandy",
+							"(O){{ModId}}_luckcandy",
+							"(O){{ModId}}_minecandy",
+							"(O){{ModId}}_fightcandy",
+							"(O){{ModId}}_energycandy",
+							"(O){{ModId}}_defcandy"
+						]
+					},
+					{
+						"Chance": 0.05,
+						"Id": "Default",
+						"RandomItemId": [
+							"(O){{ModId}}_prismaticcandy"
+						]
+					}
+				]
+			}
+		}
+	},
+	{
+		"LogName": "the last treasure box (probably)",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_deluxetreasurebox": {
+				"Name": "{{ModId}}_deluxetreasurebox",
+				"DisplayName": "{{i18n: deluxebox}}",
+				"Description": "{{i18n: deluxebox.d}}",
+				"Type": "Minerals",
+				"Texture": "assorted/treasure",
+				"SpriteIndex": 2,
+				"Price": 750,
+				"ContextTags": [
+					"not_museum_donatable"
+				],
+				"GeodeDropsDefaultItems": false,
+				"GeodeDrops": [
+					{
+						"Chance": 0.75,
+						"Id": "Default",
+						"RandomItemId": [
+							"(O){{ModId}}_cookie",
+							"(O){{ModId}}_chocolate",
+							"(O){{ModId}}_chestnut",
+							"(O){{ModId}}_minidonut"
+						]
+					},
+					{
+						"Chance": 0.5,
+						"Id": "Default",
+						"RandomItemId": [
+							"(O){{ModId}}_lightshades",
+							"(O){{ModId}}_darkshades",
+							"(O){{ModId}}_silverpoke",
+							"(O){{ModId}}_chestnut",
+							"(O){{ModId}}_donut"
+						]
+					},
+					{
+						"Chance": 0.25,
+						"Id": "Default",
+						"RandomItemId": [
+							"(O){{ModId}}_poke",
+							"(O){{ModId}}_calcium",
+							"(O){{ModId}}_hugeapple",
+							"(O){{ModId}}_megadonut"
+						]
+					},
+					{
+						"Chance": 0.2,
+						"Id": "Default",
+						"RandomItemId": [
+							"(O){{ModId}}_perfectapple"
+						]
+					},
+					{
+						"Chance": 0.1,
+						"Id": "Default",
+						"RandomItemId": [
+							"(O){{ModId}}_goldbanana",
+							"(O){{ModId}}_goldapple",
+							"(O){{ModId}}_scale"
+						]
+					},
+					{
+						"Chance": 0.05,
+						"Id": "Default",
+						"RandomItemId": [
+							"(O){{ModId}}_hiddengold"
+						]
+					}
+				]
+			}
+		}
+	},
+	{
+		"LogName": "fabricating assorted treasure items",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+		"{{ModId}}_hiddengold": {
+			"Name": "{{ModId}}_hiddengold",
+			"DisplayName": "{{i18n: hiddengold}}",
+			"Description": "{{i18n: hiddengold.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 3,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 5000,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_gold"
+			]
+		},
+		"{{ModId}}_poke": {
+			"Name": "{{ModId}}_poke",
+			"DisplayName": "{{i18n: poke}}",
+			"Description": "{{i18n: poke.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 4,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 1500,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_gold"
+			]
+		},
+		"{{ModId}}_silverpoke": {
+			"Name": "{{ModId}}_silverpoke",
+			"DisplayName": "{{i18n: silverpoke}}",
+			"Description": "{{i18n: silverpoke.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 5,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 750,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_iron"
+			]
+		},
+		"{{ModId}}_lightshades": {
+			"Name": "{{ModId}}_lightshades",
+			"DisplayName": "{{i18n: lightshades}}",
+			"Description": "{{i18n: lightshades.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 6,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 1000,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_cyan"
+			]
+		},
+		"{{ModId}}_darkshades": {
+			"Name": "{{ModId}}_darkshades",
+			"DisplayName": "{{i18n: darkshades}}",
+			"Description": "{{i18n: darkshades.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 7,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 1000,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_dark_blue"
+			]
+		},
+		"{{ModId}}_calcium": {
+			"Name": "{{ModId}}_calcium",
+			"DisplayName": "{{i18n: calcium}}",
+			"Description": "{{i18n: calcium.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 8,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 1250,
+			"Edibility": 75,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_sand"
+			],
+			"Buffs": [
+				{
+				"Duration": "1000",
+				"CustomAttributes": {
+					"Attack": 1
+				}
+			}
+			]
+		},
+		"{{ModId}}_scale": {
+			"Name": "{{ModId}}_scale",
+			"DisplayName": "{{i18n: scale}}",
+			"Description": "{{i18n: scale.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 9,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 2500,
+			"Edibility": 100,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_blue"
+			],
+			"Buffs": [
+				{
+				"Duration": "1200",
+				"CustomAttributes": {
+					"Defense": 1
+				}
+			}
+			]
+		},
+		"{{ModId}}_hugeapple": {
+			"Name": "{{ModId}}_hugeapple",
+			"DisplayName": "{{i18n: hugeapple}}",
+			"Description": "{{i18n: hugeapple.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 10,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 1500,
+			"Edibility": 30,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_red"
+			]
+		},
+		"{{ModId}}_perfectapple": {
+			"Name": "{{ModId}}_perfectapple",
+			"DisplayName": "{{i18n: perfectapple}}",
+			"Description": "{{i18n: perfectapple.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 11,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 2000,
+			"Edibility": 50,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_red"
+			]
+		},
+		"{{ModId}}_goldapple": {
+			"Name": "{{ModId}}_goldapple",
+			"DisplayName": "{{i18n: goldapple}}",
+			"Description": "{{i18n: goldapple.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 12,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 3000,
+			"Edibility": 70,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_gold"
+			]
+		},
+		"{{ModId}}_goldbanana": {
+			"Name": "{{ModId}}_goldbanana",
+			"DisplayName": "{{i18n: goldbanana}}",
+			"Description": "{{i18n: goldbanana.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 13,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 3000,
+			"Edibility": 70,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_gold"
+			]
+		},
+		"{{ModId}}_cookie": {
+			"Name": "{{ModId}}_cookie",
+			"DisplayName": "{{i18n: cookie}}",
+			"Description": "{{i18n: cookie.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 14,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 750,
+			"Edibility": 20,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_sand"
+			]
+		},
+		"{{ModId}}_chocolate": {
+			"Name": "{{ModId}}_chocolate",
+			"DisplayName": "{{i18n: chocolate}}",
+			"Description": "{{i18n: chocolate.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 15,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 750,
+			"Edibility": 20,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_crown"
+			]
+		},
+		"{{ModId}}_minidonut": {
+			"Name": "{{ModId}}_minidonut",
+			"DisplayName": "{{i18n: minidonut}}",
+			"Description": "{{i18n: minidonut.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 16,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 1500,
+			"Edibility": 20,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_copper"
+			]
+		},
+		"{{ModId}}_donut": {
+			"Name": "{{ModId}}_donut",
+			"DisplayName": "{{i18n: donut}}",
+			"Description": "{{i18n: donut.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 17,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 2000,
+			"Edibility": 30,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_orange"
+			]
+		},
+		"{{ModId}}_megadonut": {
+			"Name": "{{ModId}}_megadonut",
+			"DisplayName": "{{i18n: megadonut}}",
+			"Description": "{{i18n: megadonut.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 18,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 2500,
+			"Edibility": 50,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_dark_yellow"
+			]
+		},
+		"{{ModId}}_chestnut": {
+			"Name": "{{ModId}}_chestnut",
+			"DisplayName": "{{i18n: chestnut}}",
+			"Description": "{{i18n: chestnut.d}}",
+			"Texture": "assorted/treasure",
+			"SpriteIndex": 19,
+			"Type": "Basic",
+			"Category": -17,
+			"Price": 1000,
+			"Edibility": 20,
+			"ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+			"ContextTags": [
+				"color_copper"
+			]
+		}
+		}
+	},
+	{
+		"LogName": "gifting items",
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Universal_Love"],
+				"Value": "{{ModId}}_prismaticgummi {{ModId}}_hiddengold {{ModId}}_prismaticcandy",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Entries", "Universal_Like"],
+				"Value": "{{ModId}}_wondergummi {{ModId}}_poke {{ModId}}_cookie {{ModId}}_chocolate {{ModId}}_minidonut {{ModId}}_donut {{ModId}}_megadonut",
+				"Delimiter": " "
+			},
+			{
+			
+				"Operation": "Append",
+				"Target": ["Fields", "Jas", 1],
+				"Value": "{{ModId}}_pokedoll {{ModId}}_cookie {{ModId}}_chocolate {{ModId}}_farmcandy {{ModId}}_fishcandy {{ModId}}_foragecandy {{ModId}}_luckcandy {{ModId}}_minecandy {{ModId}}_fightcandy {{ModId}}_defcandy {{ModId}}_energycandy {{ModId}}_redgummi {{ModId}}_orangegummi {{ModId}}_yellowgummi {{ModId}}_grassgummi {{ModId}}_greengummi {{ModId}}_skygummi {{ModId}}_bluegummi {{ModId}}_royalgummi {{ModId}}_purplegummi {{ModId}}_pinkgummi {{ModId}}_blackgummi {{ModId}}_browngummi {{ModId}}_whitegummi {{ModId}}_silvergummi {{ModId}}_cleargummi {{ModId}}_goldgummi {{ModId}}_wondergummi {{ModId}}_redbow {{ModId}}_brownbow {{ModId}}_orangebow {{ModId}}_yellowbow {{ModId}}_limebow {{ModId}}_greenbow {{ModId}}_viridianbow {{ModId}}_mintybow {{ModId}}_skybluebow {{ModId}}_bluebow {{ModId}}_cobaltbow {{ModId}}_violetbow {{ModId}}_purplebow {{ModId}}_pinkbow {{ModId}}_fuchsiabow {{ModId}}_silverbow",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", 1],
+				"Value": "{{ModId}}_lightball {{ModId}}_cookie {{ModId}}_chocolate {{ModId}}_farmcandy {{ModId}}_fishcandy {{ModId}}_foragecandy {{ModId}}_luckcandy {{ModId}}_minecandy {{ModId}}_fightcandy {{ModId}}_defcandy {{ModId}}_energycandy {{ModId}}_redgummi {{ModId}}_orangegummi {{ModId}}_yellowgummi {{ModId}}_grassgummi {{ModId}}_greengummi {{ModId}}_skygummi {{ModId}}_bluegummi {{ModId}}_royalgummi {{ModId}}_purplegummi {{ModId}}_pinkgummi {{ModId}}_blackgummi {{ModId}}_browngummi {{ModId}}_whitegummi {{ModId}}_silvergummi {{ModId}}_cleargummi {{ModId}}_goldgummi {{ModId}}_wondergummi",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Emily", 1],
+				"Value": "{{ModId}}_wooloowool {{ModId}}_wooloocloth {{ModId}}_graywooloowool {{ModId}}_graywooloocloth {{ModId}}_redbow {{ModId}}_brownbow {{ModId}}_orangebow {{ModId}}_yellowbow {{ModId}}_limebow {{ModId}}_greenbow {{ModId}}_viridianbow {{ModId}}_mintybow {{ModId}}_skybluebow {{ModId}}_bluebow {{ModId}}_cobaltbow {{ModId}}_violetbow {{ModId}}_purplebow {{ModId}}_pinkbow {{ModId}}_fuchsiabow {{ModId}}_silverbow {{ModId}}_redbowhat {{ModId}}_brownbowhat {{ModId}}_orangebowhat {{ModId}}_yellowbowhat {{ModId}}_limebowhat {{ModId}}_greenbowhat {{ModId}}_viridianbowhat {{ModId}}_mintybowhat {{ModId}}_skybluebowhat {{ModId}}_bluebowhat {{ModId}}_cobaltbowhat {{ModId}}_violetbowhat {{ModId}}_purplebowhat {{ModId}}_pinkbowhat {{ModId}}_fuchsiabowhat {{ModId}}_silverbowhat",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Haley", 1],
+				"Value": "{{ModId}}_redbow {{ModId}}_brownbow {{ModId}}_orangebow {{ModId}}_yellowbow {{ModId}}_limebow {{ModId}}_greenbow {{ModId}}_viridianbow {{ModId}}_mintybow {{ModId}}_skybluebow {{ModId}}_bluebow {{ModId}}_cobaltbow {{ModId}}_violetbow {{ModId}}_purplebow {{ModId}}_pinkbow {{ModId}}_fuchsiabow {{ModId}}_silverbow",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Sandy", 3],
+				"Value": "{{ModId}}_wooloowool {{ModId}}_graywooloowool",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Harvey", 1],
+				"Value": "{{ModId}}_goldapple {{ModId}}_perfectapple {{ModId}}_scale {{ModId}}_calcium",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Sam", 1],
+				"Value": "{{ModId}}_darkshades {{ModId}}_lightshades",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Clint", 1],
+				"Value": "{{ModId}}_poke {{ModId}}_silverpoke",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leo", 1],
+				"Value": "{{ModId}}_leekegg {{ModId}}_piplupegg",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Marnie", 3],
+				"Value": "{{ModId}}_woolooegg {{ModId}}_miltankegg",
+				"Delimiter": " "
+			}
+		]
+	},
+	{
+		"LogName": "swapping farm animals for dittos",
+		"Action": "EditData",
+		"Target": "Data/",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Entries", ""],
+				"Value": "",
+				"Delimiter": " "
+			}
+		]
+	}
+	]
+}

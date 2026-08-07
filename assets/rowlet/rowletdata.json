@@ -1,0 +1,539 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting rowlet a physical presence",
+		"Action": "Load",
+		"Target": "rowlet/rowletegg, rowlet/rowlet, rowlet/shinyrowlet, rowlet/decidueye, rowlet/shinydecidueye, rowlet/shopicon, rowlet/rowletmayo, rowlet/grasstm, rowlet/flyingtm, rowlet/ghosttm, rowlet/dartrix, rowlet/shinydartrix, rowlet/spelltag",
+		"FromFile": "assets/rowlet/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "manifesting rowlet",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"rowlet": {
+				"DisplayName": "{{i18n: rowlet}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"ShopTexture": "rowlet/shopicon",
+				"ShopDescription": "{{i18n: rowlet.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: rowlet.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "5",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": true,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_rowletegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_rowletegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_oranberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_leafagetm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "rowlet/rowlet",
+				"Sound": "{{ModId}}_rowletcry",
+				"SpriteWidth": 35,
+				"SpriteHeight": 30,
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyrowlet",
+                        "Texture": "rowlet/shinyrowlet",
+						"BabyTexture": "rowlet/shinyrowlet",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.5",
+						"AnimalIds": [
+						"dartrix"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.4",
+						"AnimalIds": [
+						"decidueye"
+						]
+					}
+                  ]
+			},
+			"dartrix": {
+				"DisplayName": "{{i18n: dartrix}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": true,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_dartrixegg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_rowletegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_sitrusberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_plucktm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "rowlet/dartrix",
+            	"BabyTexture": "rowlet/rowlet",
+				"Sound": "{{ModId}}_dartrixcry",
+                "BabySound": "{{ModId}}_rowletcry",
+				"SpriteWidth": 35,
+				"SpriteHeight": 30,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"SwimOffset": {
+					"X": 0,
+					"Y": 230
+				},
+				"Skins": [
+                    {
+                        "id": "Shinydartrix",
+                        "Texture": "rowlet/shinydartrix",
+						"BabyTexture": "rowlet/shinyrowlet",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"decidueye": {
+				"DisplayName": "{{i18n: decidueye}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "9",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": true,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_decidueyeegg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_rowletegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_miracleseed"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_spelltag"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_spiritshackletm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "rowlet/decidueye",
+            	"BabyTexture": "rowlet/rowlet",
+				"Sound": "{{ModId}}_decidueyecry",
+                "BabySound": "{{ModId}}_rowletcry",
+				"SpriteWidth": 35,
+				"SpriteHeight": 30,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"SwimOffset": {
+					"X": 0,
+					"Y": 230
+				},
+				"Skins": [
+                    {
+                        "id": "Shinydecidueye",
+                        "Texture": "rowlet/shinydecidueye",
+						"BabyTexture": "rowlet/shinyrowlet",
+                        "Weight": 0.1
+                    }
+                ]
+			}
+		}
+	},
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_rowletcry": {
+				"ID": "{{ModId}}_rowletcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/rowlet/rowletcry.wav}}" ]
+			},
+			"{{ModId}}_dartrixcry": {
+				"ID": "{{ModId}}_dartrixcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/rowlet/dartrixcry.wav}}" ]
+			},
+			"{{ModId}}_decidueyecry": {
+				"ID": "{{ModId}}_decidueyecry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/rowlet/decidueyecry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving rowlet at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_rowletegg": {
+				"Name": "{{ModId}}_rowletegg",
+				"DisplayName": "{{i18n: rowletegg}}",
+				"Description": "{{i18n: rowletegg.d}}",
+				"Texture": "rowlet/rowletegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300,
+				"ContextTags": [
+					"color_tan"
+				]
+			},
+			"{{ModId}}_dartrixegg": {
+		    	"Name": "{{ModId}}_dartrixegg",
+		    	"DisplayName": "{{i18n: dartrixegg}}",
+		    	"Description": "{{i18n: internalitem}}",
+		    	"Texture": "rowlet/rowletegg",
+		    	"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+		    	"Category": -5,                
+				"Edibility": 5,
+		    	"Price": 300,
+				"ContextTags": [
+					"color_tan"
+				]
+			},
+			"{{ModId}}_decidueyeegg": {
+		    	"Name": "{{ModId}}_decidueyeegg",
+		    	"DisplayName": "{{i18n: decidueyeegg}}",
+		    	"Description": "{{i18n: internalitem}}",
+		    	"Texture": "rowlet/rowletegg",
+		    	"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+		    	"Category": -5,                
+				"Edibility": 5,
+		    	"Price": 300,
+				"ContextTags": [
+					"color_tan"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_leafagetm": {
+				"Name": "{{ModId}}_leafagetm",
+				"DisplayName": "{{i18n: leafagetm}}",
+				"Description": "{{i18n: leafagetm.d}}",
+				"Texture": "rowlet/grasstm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_green"
+				]
+			},
+			"{{ModId}}_plucktm": {
+				"Name": "{{ModId}}_plucktm",
+				"DisplayName": "{{i18n: plucktm}}",
+				"Description": "{{i18n: plucktm.d}}",
+				"Texture": "rowlet/flyingtm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_spiritshackletm": {
+				"Name": "{{ModId}}_spiritshackletm",
+				"DisplayName": "{{i18n: spiritshackletm}}",
+				"Description": "{{i18n: spiritshackletm.d}}",
+				"Texture": "rowlet/ghosttm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_purple"
+				]
+			},
+			"{{ModId}}_spelltag": {
+				"Name": "{{ModId}}_spelltag",
+				"DisplayName": "{{i18n: spelltag }}",
+				"Description": "{{i18n: spelltag.d}}",
+				"Texture": "rowlet/spelltag",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 1000,
+				"ContextTags": [
+					"color_gray"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_rowletmayo": {
+				"Name": "{{ModId}}_rowletmayo",
+				"DisplayName": "{{i18n: rowletmayo}}",
+				"Description": "{{i18n: rowletmayo.d}}",
+				"Texture": "rowlet/rowletmayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200,
+				"ContextTags": [
+					"color_tan"
+				]
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_rowletmayon": {
+                "Id": "{{ModId}}_rowletmayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_rowletegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_rowletmayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching them to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "rowlet": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"dartrix": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"decidueye": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

@@ -1,0 +1,531 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting charmander a physical presence",
+		"Action": "Load",
+		"Target": "charmander/charmanderegg, charmander/charmander, charmander/shinycharmander, charmander/charizard, charmander/shinycharizard, charmander/shopicon, charmander/charmandermayo, charmander/flyingtm, charmander/firetm, charmander/sharpbeak, charmander/charmeleon, charmander/shinycharmeleon",
+		"FromFile": "assets/charmander/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "manifesting charmander",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"charmander": {
+				"DisplayName": "{{i18n: charmander}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"ShopTexture": "charmander/shopicon",
+				"ShopDescription": "{{i18n: charmander.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: charmander.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "5",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_charmanderegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_charmanderegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_oranberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_firefangtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "charmander/charmander",
+				"Sound": "{{ModId}}_charmandercry",
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinycharmander",
+                        "Texture": "charmander/shinycharmander",
+						"BabyTexture": "charmander/shinycharmander",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.5",
+						"AnimalIds": [
+						"charmeleon"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.4",
+						"AnimalIds": [
+						"charizard"
+						]
+					}
+                  ]
+			},
+			"charmeleon": {
+				"DisplayName": "{{i18n: charmeleon}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_charmeleonegg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_charmanderegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_sitrusberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_flamethrowertm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "charmander/charmeleon",
+            	"BabyTexture": "charmander/charmander",
+				"Sound": "{{ModId}}_charmeleoncry",
+                "BabySound": "{{ModId}}_charmandercry",
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinycharmeleon",
+                        "Texture": "charmander/shinycharmeleon",
+						"BabyTexture": "charmander/shinycharmander",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"charizard": {
+				"DisplayName": "{{i18n: charizard}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "9",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_charizardegg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_charmanderegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_charcoal"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_sharpbeak"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_airslash"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "charmander/charizard",
+            	"BabyTexture": "charmander/charmander",
+				"Sound": "{{ModId}}_charizardcry",
+                "BabySound": "{{ModId}}_charmandercry",
+				"SpriteWidth": 32,
+				"SpriteHeight": 32,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinycharizard",
+                        "Texture": "charmander/shinycharizard",
+						"BabyTexture": "charmander/shinycharmander",
+                        "Weight": 0.1
+                    }
+                ]
+			}
+		}
+	},
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_charmandercry": {
+				"ID": "{{ModId}}_charmandercry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/charmander/charmandercry.wav}}" ]
+			},
+			"{{ModId}}_charmeleoncry": {
+				"ID": "{{ModId}}_charmeleoncry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/charmander/charmeleoncry.wav}}" ]
+			},
+			"{{ModId}}_charizardcry": {
+				"ID": "{{ModId}}_charizardcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/charmander/charizardcry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving charmander at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_charmanderegg": {
+				"Name": "{{ModId}}_charmanderegg",
+				"DisplayName": "{{i18n: charmanderegg}}",
+				"Description": "{{i18n: charmanderegg.d}}",
+				"Texture": "charmander/charmanderegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300,
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_charmeleonegg": {
+		    	"Name": "{{ModId}}_charmeleonegg",
+		    	"DisplayName": "{{i18n: charmeleonegg}}",
+		    	"Description": "{{i18n: internalitem}}",
+		    	"Texture": "charmander/charmanderegg",
+		    	"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+		    	"Category": -5,                
+				"Edibility": 5,
+		    	"Price": 300,
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_charizardegg": {
+		    	"Name": "{{ModId}}_charizardegg",
+		    	"DisplayName": "{{i18n: charizardegg}}",
+		    	"Description": "{{i18n: internalitem}}",
+		    	"Texture": "charmander/charmanderegg",
+		    	"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+		    	"Category": -5,                
+				"Edibility": 5,
+		    	"Price": 300,
+				"ContextTags": [
+					"color_blue"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_firefangtm": {
+				"Name": "{{ModId}}_firefangtm",
+				"DisplayName": "{{i18n: firefangtm}}",
+				"Description": "{{i18n: firefangtm.d}}",
+				"Texture": "charmander/firetm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_red"
+				]
+			},
+			"{{ModId}}_flamethrowertm": {
+				"Name": "{{ModId}}_flamethrowertm",
+				"DisplayName": "{{i18n: flamethrowertm}}",
+				"Description": "{{i18n: flamethrowertm.d}}",
+				"Texture": "charmander/firetm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_red"
+				]
+			},
+			"{{ModId}}_airslashtm": {
+				"Name": "{{ModId}}_airslashtm",
+				"DisplayName": "{{i18n: airslashtm}}",
+				"Description": "{{i18n: airslashtm.d}}",
+				"Texture": "charmander/flyingtm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_gray"
+				]
+			},
+			"{{ModId}}_sharpbeak": {
+				"Name": "{{ModId}}_sharpbeak",
+				"DisplayName": "{{i18n: sharpbeak}}",
+				"Description": "{{i18n: sharpbeak.d}}",
+				"Texture": "charmander/sharpbeak",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 1000,
+				"ContextTags": [
+					"color_yellow"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_charmandermayo": {
+				"Name": "{{ModId}}_charmandermayo",
+				"DisplayName": "{{i18n: charmandermayo}}",
+				"Description": "{{i18n: charmandermayo.d}}",
+				"Texture": "charmander/charmandermayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200,
+				"ContextTags": [
+					"color_light_cyan"
+				]
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_charmandermayon": {
+                "Id": "{{ModId}}_charmandermayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_charmanderegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_charmandermayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching them to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "charmander": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"charmeleon": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"charizard": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

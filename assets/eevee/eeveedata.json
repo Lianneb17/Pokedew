@@ -1,0 +1,1662 @@
+    {
+    "Changes": [
+    {
+        "LogName": "providing them with skin",
+        "Action": "Load",
+        "Target": "eevee/eeveeegg, eevee/eeveeshopicon, eevee/eevee_Ranger, eevee/espeon_Ranger, eevee/flareon_Ranger_Modern, eevee/flareon_Ranger_Retro, eevee/glaceon_Ranger, eevee/jolteon_Ranger, eevee/leafeon_Ranger, eevee/umbreon_Ranger, eevee/vaporeon_Ranger, eevee/sylveon, eevee/shinysylveon, eevee/bluesylveon, eevee/pinksylveon, eevee/shinyeevee_Ranger, eevee/shinyespeon_Ranger, eevee/shinyflareon_Ranger_Retro, eevee/shinyflareon_Ranger_Modern, eevee/shinyglaceon_Ranger, eevee/shinyjolteon_Ranger, eevee/shinyleafeon_Ranger, eevee/shinyumbreon_Ranger, eevee/shinyvaporeon_Ranger, eevee/eeveemayo, eevee/watertm, eevee/psytm, eevee/darktm, eevee/eletm, eevee/normaltm, eevee/grasstm, eevee/firetm, eevee/icetm, eevee/fairytm, eevee/goldrazz, eevee/silverrazz, eevee/orangerazz, eevee/pinkrazz, eevee/haban, eevee/persim, eevee/eevee_Dungeon, eevee/espeon_Dungeon, eevee/flareon_Dungeon_Modern, eevee/flareon_Dungeon_Retro, eevee/glaceon_Dungeon, eevee/jolteon_Dungeon, eevee/leafeon_Dungeon, eevee/umbreon_Dungeon, eevee/vaporeon_Dungeon, eevee/shinyeevee_Dungeon, eevee/shinyespeon_Dungeon, eevee/shinyflareon_Dungeon_Retro, eevee/shinyflareon_Dungeon_Modern, eevee/shinyglaceon_Dungeon, eevee/shinyjolteon_Dungeon, eevee/shinyleafeon_Dungeon, eevee/shinyumbreon_Dungeon, eevee/shinyvaporeon_Dungeon",
+        "FromFile": "assets/eevee/{{TargetWithoutPath}}.png"
+    },
+	{
+		"LogName": "hatching eevees",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"eevee": {
+				"DisplayName": "{{i18n: eevee}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"ShopTexture": "eevee/eeveeshopicon",
+				"ShopDescription": "{{i18n: eevee.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: eevee.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "3",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 3750,
+				"SellPrice": 3750,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_eeveeegg"
+					],
+				"ProduceItemIds": [
+					{
+					    "Id": "Default",
+	    				"Condition": null,
+		    			"MinimumFriendship": 0,
+			    		"ItemId": "{{ModId}}_eeveeegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+					    "Condition": null,
+					    "MinimumFriendship": 750,
+					    "ItemId": "{{ModId}}_tailwhiptm"
+					},
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_persim"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_haban"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_pinkrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_orangerazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 300,
+                        "ItemId": "{{ModId}}_silverrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 400,
+                        "ItemId": "{{ModId}}_goldrazz"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "eevee/eevee_{{Eevee Texture}}",
+				"Sound": "{{ModId}}_eeveecry",
+				"SpriteWidth": "{{eeveewidth}}",
+				"SpriteHeight": "36",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+                "Skins": [
+                    {
+                        "id": "ShinyEevee",
+                        "Texture": "eevee/shinyeevee_{{Eevee Texture}}",
+                        "BabyTexture": "eevee/shinyeevee_{{Eevee Texture}}",
+                        "Weight": 0.1
+                    }
+                ],
+                "AlternatePurchaseTypes": [
+                    {
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+                    {
+                      "AnimalIds": [
+                        "eevee",
+                        "espeon",
+                        "flareon",
+                        "glaceon",
+                        "jolteon",
+                        "leafeon",
+                        "umbreon",
+                        "vaporeon",
+                        "sylveon"
+                      ]
+                    }
+                  ]
+				}
+		}
+	},
+    {
+		"LogName": "hatching eeveelutions",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"espeon": {
+				"DisplayName": "{{i18n: espeon}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "7",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 3750,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_espeonegg"
+					],
+				"ProduceItemIds": [
+					{
+    					"Id": "Default",
+	    				"Condition": null,
+		    			"MinimumFriendship": 0,
+			    		"ItemId": "{{ModId}}_eeveeegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+				        "Condition": null,
+				        "MinimumFriendship": 750,
+				        "ItemId": "{{ModId}}_confusiontm"
+					},
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_persim"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_haban"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_pinkrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_orangerazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 300,
+                        "ItemId": "{{ModId}}_silverrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 400,
+                        "ItemId": "{{ModId}}_goldrazz"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+                "Sound": "{{ModId}}_espeoncry",
+				"BabySound": "{{ModId}}_eeveecry",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+                "SpriteWidth": "{{espeonwidth}}",
+                "SpriteHeight": "{{espeonheight}}",
+                "Texture": "eevee/espeon_{{Espeon Texture}}",
+                "BabyTexture": "eevee/eevee_{{Espeon Texture}}",
+                "Skins": [
+                    {
+                        "ID": "ShinyEspeon",
+                        "Texture": "eevee/shinyespeon_{{Espeon Texture}}",
+                        "BabyTexture": "eevee/shinyeevee_{{Espeon Texture}}",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+            "flareon": {
+                "DisplayName": "{{i18n: flareon}}",
+                "Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+                "DaysToMature": "5",
+                "DaysToProduce": "3",
+                "GrassEatAmount": "2",
+                "ProfessionForHappinessBoost": 2,
+                "ProfessionForQualityBoost": 2,
+                "SellPrice": 3750,
+                "IncubatorParentSheetOffset": 1,
+                "CanSwim": false,
+                "ShowInSummitCredits": true,
+                "CanGetPregnant": false,
+                "BabiesFollowAdults": true,
+                "EggItemIds": [
+                    "{{ModId}}_flareonegg"
+                    ],
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{ModId}}_eeveeegg"
+                    }
+                ],
+				"DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+				        "Condition": null,
+				        "MinimumFriendship": 750,
+				    	"ItemId": "{{ModId}}_embertm"
+					},
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_persim"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_haban"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_pinkrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_orangerazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 300,
+                        "ItemId": "{{ModId}}_silverrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 400,
+                        "ItemId": "{{ModId}}_goldrazz"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+                "SleepFrame": "16",
+                "Sound": "{{ModId}}_flareoncry",
+				"BabySound": "{{ModId}}_eeveecry",
+                "UseFlippedRightForLeft": false,
+                "UseDoubleUniqueAnimationFrames": true,
+                "SpriteWidth": "{{flareonwidth}}",
+                "SpriteHeight": "36",
+                "Texture": "eevee/flareon_{{Flareon Texture}}_{{Flareon Fur}}",
+                "BabyTexture": "eevee/eevee_{{Flareon Texture}}",
+                "Skins": [
+                    {
+                        "ID": "ShinyFlareon",
+                        "Texture": "eevee/shinyflareon_{{Flareon Texture}}_{{Flareon Fur}}",
+                        "BabyTexture": "eevee/shinyeevee_{{Flareon Texture}}",
+                        "Weight": 0.1
+                    }
+                ]
+            },
+            "glaceon": {
+                "DisplayName": "{{i18n: glaceon}}",
+                "Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+                "DaysToMature": "5",
+                "DaysToProduce": "3",
+                "GrassEatAmount": "2",
+                "ProfessionForHappinessBoost": 2,
+                "ProfessionForQualityBoost": 2,
+                "SellPrice": 3750,
+                "IncubatorParentSheetOffset": 1,
+                "CanSwim": true,
+                "ShowInSummitCredits": true,
+                "CanGetPregnant": false,
+                "BabiesFollowAdults": true,
+                "EggItemIds": [
+                    "{{ModId}}_glaceonegg"
+                    ],
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{ModId}}_eeveeegg"
+                    }
+                ],
+				"DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+				        "Condition": null,
+				        "MinimumFriendship": 750,
+				        "ItemId": "{{ModId}}_icywindtm"
+					},
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_persim"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_haban"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_pinkrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_orangerazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 300,
+                        "ItemId": "{{ModId}}_silverrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 400,
+                        "ItemId": "{{ModId}}_goldrazz"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+                "SleepFrame": "16",
+                "Sound": "{{ModId}}_glaceoncry",
+				"BabySound": "{{ModId}}_eeveecry",
+                "UseFlippedRightForLeft": false,
+                "UseDoubleUniqueAnimationFrames": true,
+                "SpriteWidth": "{{glaceonwidth}}",
+                "SpriteHeight": "36",
+                "Texture": "eevee/glaceon_{{Glaceon Texture}}",
+                "BabyTexture": "eevee/eevee_{{Glaceon Texture}}",
+                "Skins": [
+                    {
+                        "ID": "ShinyGlaceon",
+                        "Texture": "eevee/shinyglaceon_{{Glaceon Texture}}",
+                        "BabyTexture": "eevee/shinyeevee_{{Glaceon Texture}}",
+                        "Weight": 0.1
+                    }
+                ]
+            },
+            "jolteon": {
+                "DisplayName": "{{i18n: jolteon}}",
+                "Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+                "DaysToMature": "5",
+                "DaysToProduce": "3",
+                "GrassEatAmount": "2",
+                "ProfessionForHappinessBoost": 2,
+                "ProfessionForQualityBoost": 2,
+                "SellPrice": 3750,
+                "IncubatorParentSheetOffset": 1,
+                "CanSwim": false,
+                "ShowInSummitCredits": true,
+                "CanGetPregnant": false,
+                "BabiesFollowAdults": true,
+                "EggItemIds": [
+                    "{{ModId}}_jolteonegg"
+                ],
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{ModId}}_eeveeegg"
+                    }
+                ],
+				"DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{ModId}}_thundershocktm"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_persim"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_haban"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_pinkrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_orangerazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 300,
+                        "ItemId": "{{ModId}}_silverrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 400,
+                        "ItemId": "{{ModId}}_goldrazz"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+                "SleepFrame": "16",
+                "Sound": "{{ModId}}_jolteoncry",
+				"BabySound": "{{ModId}}_eeveecry",
+                "UseFlippedRightForLeft": false,
+                "UseDoubleUniqueAnimationFrames": true,            
+                "SpriteWidth": "{{jolteonwidth}}",
+                "SpriteHeight": "36",
+                "Texture": "eevee/jolteon_{{Jolteon Texture}}",
+                "BabyTexture": "eevee/eevee_{{Jolteon Texture}}",
+                "Skins": [
+                    {
+                        "ID": "ShinyJolteon",
+                        "Texture": "eevee/shinyjolteon_{{Jolteon Texture}}",
+                        "BabyTexture": "eevee/shinyeevee_{{Jolteon Texture}}",
+                        "Weight": 0.1
+                    }
+                ]
+            },
+            "leafeon": {
+                "DisplayName": "{{i18n: leafeon}}",
+                "Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+                "DaysToMature": "5",
+                "DaysToProduce": "3",
+                "GrassEatAmount": "2",
+                "ProfessionForHappinessBoost": 2,
+                "ProfessionForQualityBoost": 2,
+                "SellPrice": 3750,
+                "IncubatorParentSheetOffset": 1,
+                "CanSwim": false,
+                "ShowInSummitCredits": true,
+                "CanGetPregnant": false,
+                "BabiesFollowAdults": true,
+                "EggItemIds": [
+                    "{{ModId}}_leafeonegg"
+                ],
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{ModId}}_eeveeegg"
+                    }
+                ],
+				"DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{ModId}}_razorleaftm"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_persim"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_haban"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_pinkrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_orangerazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 300,
+                        "ItemId": "{{ModId}}_silverrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 400,
+                        "ItemId": "{{ModId}}_goldrazz"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+                "SleepFrame": "16",
+                "Sound": "{{ModId}}_leafeoncry",
+				"BabySound": "{{ModId}}_eeveecry",
+                "UseFlippedRightForLeft": false,
+                "UseDoubleUniqueAnimationFrames": true,
+                "SpriteWidth": "{{leafeonwidth}}",
+                "SpriteHeight": "36",
+                "Texture": "eevee/leafeon_{{Leafeon Texture}}",
+                "BabyTexture": "eevee/eevee_{{Leafeon Texture}}",
+                "Skins": [
+                    {
+                        "ID": "ShinyLeafeon",
+                        "Texture": "eevee/shinyleafeon_{{Leafeon Texture}}",
+                        "BabyTexture": "eevee/shinyeevee_{{Leafeon Texture}}",
+                        "Weight": 0.1
+                    }
+                ]
+            },
+            "umbreon": {
+                "DisplayName": "{{i18n: umbreon}}",
+                "Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+                "DaysToMature": "7",
+                "DaysToProduce": "3",
+                "GrassEatAmount": "2",
+                "ProfessionForHappinessBoost": 2,
+                "ProfessionForQualityBoost": 2,
+                "SellPrice": 3750,
+                "IncubatorParentSheetOffset": 1,
+                "CanSwim": false,
+                "ShowInSummitCredits": true,
+                "CanGetPregnant": false,
+                "BabiesFollowAdults": true,
+                "EggItemIds": [
+                    "{{ModId}}_umbreonegg"
+                ],
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{ModId}}_eeveeegg"
+                    }
+                ],
+				"DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{ModId}}_snarltm"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_persim"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_haban"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_pinkrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_orangerazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 300,
+                        "ItemId": "{{ModId}}_silverrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 400,
+                        "ItemId": "{{ModId}}_goldrazz"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+                "SleepFrame": "16",
+                "Sound": "{{ModId}}_umbreoncry",
+				"BabySound": "{{ModId}}_eeveecry",
+                "UseFlippedRightForLeft": false,
+                "UseDoubleUniqueAnimationFrames": true,
+                "SpriteWidth": "{{umbreonwidth}}",
+                "SpriteHeight": "36",
+                "Texture": "eevee/umbreon_{{Umbreon Texture}}",
+                "BabyTexture": "eevee/eevee_{{Umbreon Texture}}",
+                "Skins": [
+                    {
+                        "ID": "ShinyUmbreon",
+                        "Texture": "eevee/shinyumbreon_{{Umbreon Texture}}",
+                        "BabyTexture": "eevee/shinyeevee_{{Umbreon Texture}}",
+                        "Weight": 0.1
+                    }
+                ]
+
+            },
+            "vaporeon": {
+                "DisplayName": "{{i18n: vaporeon}}",
+                "Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+                "DaysToMature": "5",
+                "DaysToProduce": "3",
+                "GrassEatAmount": "2",
+                "ProfessionForHappinessBoost": 2,
+                "ProfessionForQualityBoost": 2,
+                "SellPrice": 3750,
+                "IncubatorParentSheetOffset": 1,
+                "CanSwim": true,
+                "ShowInSummitCredits": true,
+                "CanGetPregnant": false,
+                "BabiesFollowAdults": true,
+                "EggItemIds": [
+                    "{{ModId}}_vaporeonegg"
+                ],
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{ModId}}_eeveeegg"
+                    }
+                ],
+				"DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{ModId}}_waterguntm"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_persim"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_haban"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_pinkrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_orangerazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 300,
+                        "ItemId": "{{ModId}}_silverrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 400,
+                        "ItemId": "{{ModId}}_goldrazz"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+                "SleepFrame": "16",
+                "Sound": "{{ModId}}_vaporeoncry",
+				"BabySound": "{{ModId}}_eeveecry",
+                "UseFlippedRightForLeft": false,
+                "UseDoubleUniqueAnimationFrames": true,
+                "SpriteWidth": "{{vaporeonwidth}}",
+                "SpriteHeight": "36",
+                "Texture": "eevee/vaporeon_{{Vaporeon Texture}}",
+                "BabyTexture": "eevee/eevee_{{Vaporeon Texture}}",
+                "Skins": [
+                    {
+                        "ID": "ShinyVaporeon",
+                        "Texture": "eevee/shinyvaporeon_{{Vaporeon Texture}}",
+                        "BabyTexture": "eevee/shinyeevee_{{Vaporeon Texture}}",
+                        "Weight": 0.1
+                    }
+                ]
+            },
+            "sylveon": {
+                "DisplayName": "{{i18n: sylveon}}",
+                "Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+                "DaysToMature": "7",
+                "DaysToProduce": "3",
+                "GrassEatAmount": "2",
+                "ProfessionForHappinessBoost": 2,
+                "ProfessionForQualityBoost": 2,
+                "SellPrice": 3750,
+                "IncubatorParentSheetOffset": 1,
+                "CanSwim": true,
+                "ShowInSummitCredits": true,
+                "CanGetPregnant": false,
+                "BabiesFollowAdults": true,
+                "EggItemIds": [
+                    "{{ModId}}_sylveonegg"
+                ],
+                "ProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 0,
+                        "ItemId": "{{ModId}}_eeveeegg"
+                    }
+                ],
+				"DeluxeProduceItemIds": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 750,
+                        "ItemId": "{{ModId}}_disarmingvoicetm"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_persim"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 200,
+                        "ItemId": "{{ModId}}_haban"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_pinkrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 250,
+                        "ItemId": "{{ModId}}_orangerazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 300,
+                        "ItemId": "{{ModId}}_silverrazz"
+                    },
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "MinimumFriendship": 400,
+                        "ItemId": "{{ModId}}_goldrazz"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+                "SleepFrame": "16",
+                "Texture": "eevee/sylveon",
+                "Sound": "{{ModId}}_sylveoncry",
+                "BabyTexture": "eevee/eevee_Dungeon",
+				"BabySound": "{{ModId}}_eeveecry",
+                "SpriteWidth": "36",
+                "SpriteHeight": "36",
+                "UseFlippedRightForLeft": false,
+                "UseDoubleUniqueAnimationFrames": true,   
+                "Skins": [
+                    {
+                        "ID": "ShinySylveon",
+                        "Texture": "eevee/shinysylveon",
+                        "BabyTexture": "eevee/shinyeevee_Dungeon",
+                        "Weight": 0.1
+                    },
+                    {
+                        "ID": "BlueSylveon",
+                        "Texture": "eevee/bluesylveon",
+                        "BabyTexture": "eevee/shinyeevee_Dungeon",
+                        "Weight": 0.05
+                    },
+                    {
+                        "ID": "PinkSylveon",
+                        "Texture": "eevee/pinksylveon",
+                        "BabyTexture": "eevee/shinyeevee_Dungeon",
+                        "Weight": 0.05
+                    }
+                ]    
+            }
+            
+	    }
+    },
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_eeveecry": {
+				"ID": "{{ModId}}_eeveecry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/eevee/eeveecry.wav}}" ]
+			},
+			"{{ModId}}_espeoncry": {
+				"ID": "{{ModId}}_espeoncry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/eevee/espeoncry.wav}}" ]
+			},
+			"{{ModId}}_flareoncry": {
+				"ID": "{{ModId}}_flareoncry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/eevee/flareoncry.wav}}" ]
+			},
+			"{{ModId}}_glaceoncry": {
+				"ID": "{{ModId}}_glaceoncry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/eevee/glaceoncry.wav}}" ]
+			},
+			"{{ModId}}_leafeoncry": {
+				"ID": "{{ModId}}_leafeoncry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/eevee/leafeoncry.wav}}" ]
+			},
+			"{{ModId}}_jolteoncry": {
+				"ID": "{{ModId}}_jolteoncry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/eevee/jolteoncry.wav}}" ]
+			},
+			"{{ModId}}_umbreoncry": {
+				"ID": "{{ModId}}_umbreoncry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/eevee/umbreoncry.wav}}" ]
+			},
+			"{{ModId}}_vaporeoncry": {
+				"ID": "{{ModId}}_vaporeoncry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/eevee/vaporeoncry.wav}}" ]
+			},
+            "{{ModId}}_sylveoncry": {
+				"ID": "{{ModId}}_sylveoncry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/eevee/sylveoncry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving eevee at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_eeveeegg": {
+				"Name": "{{ModId}}_eeveeegg",
+				"DisplayName": "{{i18n: eeveeegg}}",
+				"Description": "{{i18n: eeveeegg.d}}",
+				"Texture": "eevee/eeveeegg",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "Edibility": 5,
+				"Category": -5,
+				"Price": 450,
+				"ContextTags": [
+					"color_copper"
+				]
+			},
+			"{{ModId}}_espeonegg": {
+				"Name": "{{ModId}}_espeonegg",
+				"DisplayName": "{{i18n: espeonegg}}",
+				"Description": "{{i18n: internalitem}}s",
+				"Texture": "eevee/eeveeegg",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": true,
+                "Edibility": 5,
+				"Category": -5,
+				"Price": 450
+			},
+			"{{ModId}}_flareonegg": {
+				"Name": "{{ModId}}_flareonegg",
+				"DisplayName": "{{i18n: flareonegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "eevee/eeveeegg",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": true,
+                "Edibility": 8,
+				"Category": -5,
+				"Price": 800
+			},
+			"{{ModId}}_glaceonegg": {
+				"Name": "{{ModId}}_glaceonegg",
+				"DisplayName": "{{i18n: glaceonegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "eevee/eeveeegg",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": true,
+                "Edibility": 5,
+				"Category": -5,
+				"Price": 450
+			},
+			"{{ModId}}_jolteonegg": {
+				"Name": "{{ModId}}_jolteonegg",
+				"DisplayName": "{{i18n: jolteonegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "eevee/eeveeegg",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": true,
+                "Edibility": 5,
+				"Category": -5,
+				"Price": 450
+			},
+			"{{ModId}}_leafeonegg": {
+				"Name": "{{ModId}}_leafeonegg",
+				"DisplayName": "{{i18n: leafeonegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "eevee/eeveeegg",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": true,
+                "Edibility": 8,
+				"Category": -5,
+				"Price": 800
+			},
+			"{{ModId}}_umbreonegg": {
+				"Name": "{{ModId}}_umbreonegg",
+				"DisplayName": "{{i18n: umbreonegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "eevee/eeveeegg",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": true,
+                "Edibility": 5,
+				"Category": -5,
+				"Price": 450
+			},
+			"{{ModId}}_vaporeonegg": {
+				"Name": "{{ModId}}_vaporeonegg",
+				"DisplayName": "{{i18n: vaporeonegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "eevee/eeveeegg",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": true,
+                "Edibility": 5,
+				"Category": -5,
+				"Price": 450
+			},
+            "{{ModId}}_sylveonegg": {
+				"Name": "{{ModId}}_sylveonegg",
+				"DisplayName": "{{i18n: sylveonegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "eevee/eeveeegg",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": true,
+                "Edibility": 5,
+				"Category": -5,
+				"Price": 450
+			}
+		}
+	},
+    {
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_confusiontm": {
+				"Name": "{{ModId}}_confusiontm",
+				"DisplayName": "{{i18n: confusiontm}}",
+				"Description": "{{i18n: confusiontm.d}}",
+				"Texture": "eevee/psytm",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2500,
+				"ContextTags": [
+					"color_dark_pink"
+				]
+			},
+			"{{ModId}}_embertm": {
+				"Name": "{{ModId}}_embertm",
+				"DisplayName": "{{i18n: embertm}}",
+				"Description": "{{i18n: embertm.d}}",
+				"Texture": "eevee/firetm",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2500,
+				"ContextTags": [
+					"color_red"
+				]
+		    },
+            "{{ModId}}_thundershocktm": {
+				"Name": "{{ModId}}_thundershocktm",
+				"DisplayName": "{{i18n: thundershocktm}}",
+				"Description": "{{i18n: thundershocktm.d}}",
+				"Texture": "eevee/eletm",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2500,
+				"ContextTags": [
+					"color_yellow"
+				]
+			},
+			"{{ModId}}_icywindtm": {
+				"Name": "{{ModId}}_icywindtm",
+				"DisplayName": "{{i18n: icywindtm}}",
+				"Description": "{{i18n: icywindtm.d}}",
+				"Texture": "eevee/icetm",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2500,
+				"ContextTags": [
+					"color_light_cyan"
+				]
+			},
+            "{{ModId}}_razorleaftm": {
+				"Name": "{{ModId}}_razorleaftm",
+				"DisplayName": "{{i18n: razorleaftm}}",
+				"Description": "{{i18n: razorleaftm.d}}",
+				"Texture": "eevee/grasstm",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2500,
+				"ContextTags": [
+					"color_lime"
+				]
+			},
+			"{{ModId}}_snarltm": {
+				"Name": "{{ModId}}_snarltm",
+				"DisplayName": "{{i18n: snarltm}}",
+				"Description": "{{i18n: snarltm.d}}",
+				"Texture": "eevee/darktm",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2500,
+				"ContextTags": [
+					"color_black"
+				]
+		    },
+            "{{ModId}}_waterguntm": {
+				"Name": "{{ModId}}_waterguntm",
+				"DisplayName": "{{i18n: waterguntm}}",
+				"Description": "{{i18n: waterguntm.d}}",
+				"Texture": "eevee/watertm",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2500,
+				"ContextTags": [
+					"color_blue"
+				]
+			},
+			"{{ModId}}_tailwhiptm": {
+				"Name": "{{ModId}}_tailwhiptm",
+				"DisplayName": "{{i18n: tailwhiptm}}",
+				"Description": "{{i18n: tailwhiptm.d}}",
+				"Texture": "eevee/normaltm",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2500,
+				"ContextTags": [
+					"color_iron"
+				]
+			},
+            "{{ModId}}_disarmingvoicetm": {
+				"Name": "{{ModId}}_disarmingvoicetm",
+				"DisplayName": "{{i18n: disarmingvoicetm}}",
+				"Description": "{{i18n: disarmingvoicetm.d}}",
+				"Texture": "eevee/fairytm",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2500,
+				"ContextTags": [
+					"color_pink"
+				]
+			},
+            "{{ModId}}_persim": {
+				"Name": "{{ModId}}_persim",
+				"DisplayName": "{{i18n: persim}}",
+				"Description": "{{i18n: persim.d}}",
+				"Texture": "eevee/persim",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -79,
+                "Edibility": 18,
+				"Price": 400,
+				"ContextTags": [
+					"color_pink"
+				]
+			},
+            "{{ModId}}_haban": {
+				"Name": "{{ModId}}_haban",
+				"DisplayName": "{{i18n: haban}}",
+				"Description": "{{i18n: haban.d}}",
+				"Texture": "eevee/haban",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -79,
+                "Edibility": 18,
+				"Price": 400,
+				"ContextTags": [
+					"color_dark_pink"
+				]
+			},
+            "{{ModId}}_orangerazz": {
+				"Name": "{{ModId}}_orangerazz",
+				"DisplayName": "{{i18n: orangerazz}}",
+				"Description": "{{i18n: orangerazz.d}}",
+				"Texture": "eevee/orangerazz",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -79,                
+                "Edibility": 18,
+				"Price": 500,
+				"ContextTags": [
+					"color_orange"
+				]
+			},
+            "{{ModId}}_pinkrazz": {
+				"Name": "{{ModId}}_pinkrazz",
+				"DisplayName": "{{i18n: pinkrazz}}",
+				"Description": "{{i18n: pinkrazz.d}}",
+				"Texture": "eevee/pinkrazz",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -79,
+                "Edibility": 18,
+				"Price": 500,
+				"ContextTags": [
+					"color_salmon"
+				]
+			},
+            "{{ModId}}_silverrazz": {
+				"Name": "{{ModId}}_silverrazz",
+				"DisplayName": "{{i18n: silverrazz}}",
+				"Description": "{{i18n: silverrazz.d}}",
+				"Texture": "eevee/silverrazz",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -79,
+                "Edibility": 36,
+				"Price": 750,
+				"ContextTags": [
+					"color_iron"
+				]
+			},
+            "{{ModId}}_goldrazz": {
+				"Name": "{{ModId}}_goldrazz",
+				"DisplayName": "{{i18n: goldrazz}}",
+				"Description": "{{i18n: goldrazz.d}}",
+				"Texture": "eevee/goldrazz",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -79,
+                "Edibility": 64,
+				"Price": 1200,
+				"ContextTags": [
+					"color_gold"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_eeveemayo": {
+				"Name": "{{ModId}}_eeveemayo",
+				"DisplayName": "{{i18n: eeveemayo}}",
+				"Description": "{{i18n: eeveemayo.d}}",
+				"Texture": "eevee/eeveemayo",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1500,
+				"ContextTags": [
+					"color_sand"
+				]
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_eeveemayon": {
+                "Id": "{{ModId}}_eeveemayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_eeveeegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_eeveemayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+    {
+        "LogName": "teaching eevees to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "eevee": {
+                "MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+            "espeon": {
+                "MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+            "flareon": {
+                "MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+            "glaceon": {
+                "MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+            "jolteon": {
+                "MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+            "leafeon": {
+                "MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+            "umbreon": {
+                "MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+            "vaporeon": {
+                "MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+            "sylveon": {
+                "MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

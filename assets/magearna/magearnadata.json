@@ -1,0 +1,290 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting magearna a physical presence",
+		"Action": "Load",
+		"Target": "magearna/magearna, magearna/shinymagearna, magearna/originalmagearna, magearna/shinyoriginalmagearna, magearna/basicegg, magearna/fairytm, magearna/bottlecap, magearna/flowers, magearna/shopicon",
+		"FromFile": "assets/magearna/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "assembling magearna",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"magearna": {
+				"DisplayName": "{{i18n: magearna}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"ShopTexture": "magearna/shopicon",
+				"ShopDescription": "{{i18n: magearna.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: magearna.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "1",
+				"DaysToProduce": "5",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 10000,
+				"PurchasePrice": 10000,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_magearnaegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_flowers"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_bottlecap"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_fleurcannontm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "magearna/magearna",
+				"Sound": "{{ModId}}_magearnacry",
+				"SpriteWidth": "32",
+				"SpriteHeight": "32",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinymagearna",
+                        "Texture": "magearna/shinymagearna",
+						"BabyTexture": "magearna/shinymagearna",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.15",
+						"AnimalIds": [
+						"originalmagearna"
+						]
+					}
+                  ]
+				},
+			"originalmagearna": {
+				"DisplayName": "{{i18n: magearna}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"ShopMissingBuildingDescription": "{{i18n: magearna.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "1",
+				"DaysToProduce": "5",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 15000,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_magearnaegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_flowers"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_bottlecap"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_fleurcannontm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+					],
+					"SleepFrame": "16",
+					"Texture": "magearna/originalmagearna",
+					"Sound": "{{ModId}}_magearnacry",
+					"SpriteWidth": "32",
+					"SpriteHeight": "32",
+					"UseFlippedRightForLeft": false,
+					"UseDoubleUniqueAnimationFrames": true,
+					"Skins": [
+						{
+							"id": "Shinymagearna",
+							"Texture": "magearna/originalshinymagearna",
+							"BabyTexture": "magearna/originalshinymagearna",
+							"Weight": 0.1
+						}
+					]
+			}
+		}
+	},
+	{
+		"LogName": "she has a mouth and she WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_magearnacry": {
+				"ID": "{{ModId}}_magearnacry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/magearna/magearnacry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving magearna at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_magearnaegg": {
+				"Name": "{{ModId}}_magearnaegg",
+				"DisplayName": "{{i18n: magearnaegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "magearna/basicegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_flowers": {
+				"Name": "{{ModId}}_flowers",
+				"DisplayName": "{{i18n: flowers}}",
+				"Description": "{{i18n: flowers.d}}",
+				"Texture": "magearna/flowers",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 2000
+			},
+			"{{ModId}}_bottlecap": {
+				"Name": "{{ModId}}_bottlecap",
+				"DisplayName": "{{i18n: bottlecap}}",
+				"Description": "{{i18n: bottlecap.d}}",
+				"Texture": "magearna/bottlecap",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 5000
+			},
+			"{{ModId}}_fleurcannontm": {
+				"Name": "{{ModId}}_fleurcannontm",
+				"DisplayName": "{{i18n: fleurcannontm}}",
+				"Description": "{{i18n: fleurcannontm.d}}",
+				"Texture": "magearna/fairytm",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 10000
+			}
+		}
+	},
+	{
+        "LogName": "teaching magearna to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "magearna": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

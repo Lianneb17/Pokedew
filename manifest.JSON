@@ -1,0 +1,17 @@
+{
+    "Name": "Pokemon Ranch",
+    "Author": "plaidbees",
+    "Version": "1.8",
+    "Description": "Adds Pokemon as new farm animals.",
+    "UniqueID": "bees.pkr",
+    "UpdateKeys": ["Nexus: 24619"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+		{
+		"UniqueID": "selph.ExtraAnimalConfig",
+		"IsRequired": true
+		}
+	]
+}

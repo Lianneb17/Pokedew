@@ -1,0 +1,232 @@
+{
+    "Changes": [
+    {
+		"LogName": "finding rare candies",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_farmcandy": {
+				"Name": "{{ModId}}_farmcandy",
+				"DisplayName": "{{i18n: rarecandy}}",
+				"Description": "{{i18n: farmcandy}}",
+				"Texture": "candy/farmcandy",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+                "Edibility": 100,
+				"Category": -26,
+				"Price": 1000,
+                "ContextTags": [
+					"color_lime"
+				],
+                "Buffs": [
+                    {
+                    "Duration": "-2",
+                    "CustomAttributes": {
+                        "FarmingLevel": 1        
+                    }
+                }
+                ]
+			},
+            "{{ModId}}_fishcandy": {
+				"Name": "{{ModId}}_fishcandy",
+				"DisplayName": "{{i18n: rarecandy}}",
+				"Description": "{{i18n: fishcandy}}",
+				"Texture": "candy/fishcandy",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+                "Edibility": 100,
+				"Category": -26,
+				"Price": 1000,
+                "ContextTags": [
+					"color_blue"
+				],
+                "Buffs": [
+                    {
+                    "Duration": "-2",
+                    "CustomAttributes": {
+                        "FishingLevel": 1        
+                    }
+                }
+                ]
+			},
+            "{{ModId}}_foragecandy": {
+				"Name": "{{ModId}}_foragecandy",
+				"DisplayName": "{{i18n: rarecandy}}",
+				"Description": "{{i18n: foragecandy}}",
+				"Texture": "candy/foragecandy",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+                "Edibility": 100,
+				"Category": -26,
+				"Price": 1000,
+                "ContextTags": [
+					"color_dark_cyan"
+				],
+                "Buffs": [
+                    {
+                    "Duration": "-2",
+                    "CustomAttributes": {
+                        "ForagingLevel": 1        
+                    }
+                }
+                ]
+			},
+            "{{ModId}}_luckcandy": {
+				"Name": "{{ModId}}_luckcandy",
+				"DisplayName": "{{i18n: rarecandy}}",
+				"Description": "{{i18n: luckcandy}}",
+				"Texture": "candy/luckcandy",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+                "Edibility": 100,
+				"Category": -26,
+				"Price": 1000,
+                "ContextTags": [
+					"color_gold"
+				],
+                "Buffs": [
+                    {
+                    "Duration": "-2",
+                    "CustomAttributes": {
+                        "LuckLevel": 1        
+                    }
+                }
+                ]
+			},
+            "{{ModId}}_minecandy": {
+				"Name": "{{ModId}}_minecandy",
+				"DisplayName": "{{i18n: rarecandy}}",
+				"Description": "{{i18n: minecandy}}",
+                "Texture": "candy/minecandy",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+                "Edibility": 100,
+				"Category": -26,
+				"Price": 1000,
+                "ContextTags": [
+					"color_dark_purple"
+				],
+                "Buffs": [
+                    {
+                    "Duration": "-2",
+                    "CustomAttributes": {
+                        "MiningLevel": 1        
+                    }
+                }
+                ]
+			},
+            "{{ModId}}_fightcandy": {
+				"Name": "{{ModId}}_fightcandy",
+				"DisplayName": "{{i18n: rarecandy}}",
+				"Description": "{{i18n: fightcandy}}",
+				"Texture": "candy/fightcandy",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+                "Edibility": 100,
+				"Category": -26,
+				"Price": 1000,
+                "ContextTags": [
+					"color_red"
+				],
+                "Buffs": [
+                    {
+                    "Duration": "-2",
+                    "CustomAttributes": {
+                        "Attack": 1
+                    }
+                }
+                ]
+			},
+            "{{ModId}}_defcandy": {
+				"Name": "{{ModId}}_defcandy",
+				"DisplayName": "{{i18n: rarecandy}}",
+				"Description": "{{i18n: defcandy}}",
+				"Texture": "candy/defcandy",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+                "Edibility": 100,
+				"Category": -26,
+				"Price": 1000,
+                "ContextTags": [
+					"color_orange"
+				],
+                "Buffs": [
+                    {
+                    "Duration": "-2",
+                    "CustomAttributes": {
+                        "Defense": 1
+                    }
+                }
+                ]
+			},
+            "{{ModId}}_energycandy": {
+				"Name": "{{ModId}}_energycandy",
+				"DisplayName": "{{i18n: rarecandy}}",
+				"Description": "{{i18n: energycandy}}",
+				"Texture": "candy/energycandy",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+                "Edibility": 100,
+				"Category": -26,
+				"Price": 1000,
+                "ContextTags": [
+					"color_dark_pink"
+				],
+                "Buffs": [
+                    {
+                    "Duration": "-2",
+                    "CustomAttributes": {
+                        "MaxStamina": 100
+                    }
+                }
+                ]
+			},
+            "{{ModId}}_prismaticcandy": {
+				"Name": "{{ModId}}_prismaticcandy",
+				"DisplayName": "{{i18n: prismaticcandy}}",
+				"Description": "{{i18n: prismaticcandy.d}}",
+				"Texture": "candy/prismaticcandy",
+				"Type": "Basic",
+                "ExcludeFromShippingCollection": "{{Treasure Box Items}}",
+                "Edibility": 200,
+				"Category": -26,
+				"Price": 10000,
+                "ContextTags": [
+					"color_prismatic"
+				],
+                "Buffs": [
+                    {
+                    "Duration": "-2",
+                    "CustomAttributes": {
+                        "Attack": 1,
+                        "Defense": 1,
+                        "FarmingLevel": 1,
+                        "FishingLevel": 1,
+                        "ForagingLevel": 1,
+                        "LuckLevel": 1,
+                        "MiningLevel": 1,
+                        "Speed": 1,
+                        "MagneticRadius": 1,
+                        "MaxStamina": 100
+                    }
+                }
+                ]
+			}
+		}
+	},
+    {
+        "LogName": "learning candy recipes",
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",
+        "Entries": {
+            "prismaticcandy":"{{ModId}}_energycandy 1 {{ModId}}_farmcandy 1 {{ModId}}_fightcandy 1 {{ModId}}_foragecandy 1 {{ModId}}_defcandy 1 {{ModId}}_fishcandy 1 {{ModId}}_luckcandy 1 {{ModId}}_minecandy 1/9999 9999/{{ModId}}_prismaticcandy 1/default"
+        }
+    },
+    {
+		"LogName": "wrapping candy",
+		"Action": "Load",
+		"Target": "candy/fightcandy, candy/farmcandy, candy/foragecandy, candy/fishcandy, candy/luckcandy, candy/minecandy, candy/defcandy, candy/energycandy, candy/prismaticcandy",
+		"FromFile": "assets/candy/{{TargetWithoutPath}}.png"
+	}
+    ]
+}

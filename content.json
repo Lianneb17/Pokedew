@@ -1,0 +1,290 @@
+{
+	"Format": "2.2.0",
+	"ConfigSchema": {
+		"Treasure Box Items": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Whether or not items obtained via Treasure Boxes are excluded from Full Shipment Achievement.",
+            "Section": "Perfection"
+		},
+		"Pokemon Items": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Whether or not animal goods obtained from Pokemon are excluded from Full Shipment Achievement.",
+            "Section": "Perfection"
+		},
+		"Deluxe Pokemon Items": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Whether or not deluxe items obtained from Pokemon are excluded from Full Shipment Achievement.",
+            "Section": "Perfection"
+		},
+		"Technical Machines": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Whether or not Technical Machines obtained from Pokemon are excluded from Full Shipment Achievement.",
+            "Section": "Perfection"
+		},
+		"Eevee Texture": {
+			"AllowValues": "Ranger, Dungeon",
+			"Default": "Dungeon",
+			"Description": "Changes Eevee's appearance to chosen game style. Requires restart to take effect.",
+            "Section": "Eeveelutions"
+		},
+		"Espeon texture": {
+			"AllowValues": "Ranger, Dungeon",
+			"Default": "Dungeon",
+			"Description": "Changes Espeon's appearance to chosen game style. Requires restart to take effect.",
+            "Section": "Eeveelutions"
+		},
+		"Flareon texture": {
+			"AllowValues": "Ranger, Dungeon",
+			"Default": "Dungeon",
+			"Description": "Changes Flareon's appearance to chosen game style. Requires restart to take effect.",
+            "Section": "Eeveelutions"
+		},
+		"Glaceon texture": {
+			"AllowValues": "Ranger, Dungeon",
+			"Default": "Dungeon",
+			"Description": "Changes Glaceon's appearance to chosen game style. Requires restart to take effect.",
+            "Section": "Eeveelutions"
+		},
+		"Jolteon texture": {
+			"AllowValues": "Ranger, Dungeon",
+			"Default": "Dungeon",
+			"Description": "Changes Jolteon's appearance to chosen game style. Requires restart to take effect.",
+            "Section": "Eeveelutions"
+		},
+		"Leafeon texture": {
+			"AllowValues": "Ranger, Dungeon",
+			"Default": "Dungeon",
+			"Description": "Changes Leafeon's appearance to chosen game style. Requires restart to take effect.",
+            "Section": "Eeveelutions"
+		},
+		"Umbreon texture": {
+			"AllowValues": "Ranger, Dungeon",
+			"Default": "Dungeon",
+			"Description": "Changes Umbreon's appearance to chosen game style. Requires restart to take effect.",
+            "Section": "Eeveelutions"
+		},
+		"Vaporeon texture": {
+			"AllowValues": "Ranger, Dungeon",
+			"Default": "Dungeon",
+			"Description": "Changes Vaporeon's appearance to chosen game style. Requires restart to take effect.",
+            "Section": "Eeveelutions"
+		},
+		"Flareon fur": {
+			"AllowValues": "Retro, Modern",
+			"Default": "Modern",
+			"Description": "Changes the color of Flareon's fur from the modern shade to the vivid yellow seen in older games.",
+            "Section": "Eeveelutions"
+		},
+		"Bow Appearance": {
+			"AllowValues": "Large, LargeRound, Medium, Small, Tiny",
+			"Default": "Small",
+			"Description": "Changes the appearance of the wearable bows obtained from the Hat Mouse."
+		},
+		"AHM Meat": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Enable/Disable meat items added by Animal Husbandry Mod. This only removes items, adjust AHM's settings to disable turning animals into meat. Does nothing without AHM."
+		}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "eeveewidth",
+			"Value": "36",
+			"When": { "Eevee Texture": "Dungeon" }
+		},
+		{
+			"Name": "eeveewidth",
+			"Value": "47",
+			"When": { "Eevee Texture": "Ranger" }
+		},
+		{
+			"Name": "espeonwidth",
+			"Value": "36",
+			"When": { "Espeon Texture": "Dungeon" }
+		},
+		{
+			"Name": "espeonwidth",
+			"Value": "47",
+			"When": { "Espeon Texture": "Ranger" }
+		},
+		{
+			"Name": "espeonheight",
+			"Value": "36",
+			"When": { "Espeon Texture": "Dungeon" }
+		},
+		{
+			"Name": "espeonheight",
+			"Value": "38",
+			"When": { "Espeon Texture": "Ranger" }
+		},
+		{
+			"Name": "flareonwidth",
+			"Value": "36",
+			"When": { "Flareon Texture": "Dungeon" }
+		},
+		{
+			"Name": "flareonwidth",
+			"Value": "47",
+			"When": { "Flareon Texture": "Ranger" }
+		},
+		{
+			"Name": "glaceonwidth",
+			"Value": "36",
+			"When": { "Glaceon Texture": "Dungeon" }
+		},
+		{
+			"Name": "glaceonwidth",
+			"Value": "47",
+			"When": { "Glaceon Texture": "Ranger" }
+		},
+		{
+			"Name": "jolteonwidth",
+			"Value": "36",
+			"When": { "Jolteon Texture": "Dungeon" }
+		},
+		{
+			"Name": "jolteonwidth",
+			"Value": "47",
+			"When": { "Jolteon Texture": "Ranger" }
+		},
+		{
+			"Name": "leafeonwidth",
+			"Value": "36",
+			"When": { "Leafeon Texture": "Dungeon" }
+		},
+		{
+			"Name": "leafeonwidth",
+			"Value": "47",
+			"When": { "Leafeon Texture": "Ranger" }
+		},
+		{
+			"Name": "umbreonwidth",
+			"Value": "36",
+			"When": { "Umbreon Texture": "Dungeon" }
+		},
+		{
+			"Name": "umbreonwidth",
+			"Value": "47",
+			"When": { "Umbreon Texture": "Ranger" }
+		},
+		{
+			"Name": "vaporeonwidth",
+			"Value": "36",
+			"When": { "Vaporeon Texture": "Dungeon" }
+		},
+		{
+			"Name": "vaporeonwidth",
+			"Value": "47",
+			"When": { "Vaporeon Texture": "Ranger" }
+		}
+
+	],
+	"CustomLocations": [
+		{
+		   "Name": "bees.pkr_daycare",
+		   "FromMapFile": "assets/daycare/Shed.tmx"
+		},
+		{
+			"Name": "bees.pkr_daycarehouse",
+			"FromMapFile": "assets/daycare/Shedhouse.tmx"
+		 }
+	 ],
+	"Changes": [
+	{
+		"Action": "Include",
+		"FromFile": "assets/rowlet/rowletdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/charmander/charmanderdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/squirtle/squirtledata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/bulbasaur/bulbasaurdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/turtwig/turtwigdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/chimchar/chimchardata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/piplup/piplupdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/pikachu/pikadata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/eevee/eeveedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/combee/combeedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/sunflora/flowerdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/minccino/minccinodata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/wooloo/wooloodata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/miltank/miltankdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/farfetchd/leekdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/lechonk/lechonkdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/vulpix/vulpixdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/sunmoon/sunmoondata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/unown/unowndata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/magearna/magearnadata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/ditto/dittodata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/candy/candydata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/assorted/miscdata.json"
+	}
+	]
+ }

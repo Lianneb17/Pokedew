@@ -1,0 +1,301 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting farfetchd a physical presence",
+		"Action": "Load",
+		"Target": "farfetchd/leek, farfetchd/shinyleek, farfetchd/leekegg, farfetchd/leekitem, farfetchd/leekmayo, farfetchd/shopicon, farfetchd/normaltm, farfetchd/leekmeat, farfetchd/cookedleekmeat",
+		"FromFile": "assets/farfetchd/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "hatching birds",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"farfetchd": {
+				"DisplayName": "{{i18n: farfetchd}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"ShopTexture": "farfetchd/shopicon",
+				"ShopDescription": "{{i18n: farfetchd.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: farfetchd.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "1",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_leekegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_leekegg"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "20"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_leekitem"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_swordstm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "farfetchd/leek",
+				"Sound": "{{ModId}}_leekcry",
+				"SpriteWidth": "30",
+				"SpriteHeight": "28",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"CustomFields": {
+					"meatIndex": "{{Modid}}_leekmeat"
+				},
+				"Skins": [
+                    {
+                        "ID": "ShinyLeek",
+                        "Texture": "farfetchd/shinyleek",
+						"BabyTexture": "farfetchd/shinyleek",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					}
+                ]
+			}
+		}
+	},
+	{
+		"LogName": "he has a beak and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_leekcry": {
+				"ID": "{{ModId}}_leekcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/farfetchd/leekcry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving farfetchd at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_leekegg": {
+				"Name": "{{ModId}}_leekegg",
+				"DisplayName": "{{i18n: farfetchdegg}}",
+				"Description": "{{i18n: farfetchdegg.d}}",
+				"Texture": "farfetchd/leekegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 600,
+				"ContextTags": [
+					"color_copper"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "giving farfetchd his leek",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_leekitem": {
+				"Name": "{{ModId}}_leekitem",
+				"DisplayName": "{{i18n: farfetchdleek}}",
+				"Description": "{{i18n: farfetchdleek.d}}",
+				"Texture": "farfetchd/leekitem",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -75,
+				"Edibility": 10,
+				"Price": 1000,
+				"ContextTags": [
+					"color_yellow_green"
+				]
+			},
+			"{{ModId}}_swordstm": {
+				"Name": "{{ModId}}_swordstm",
+				"DisplayName": "{{i18n: swordstm}}",
+				"Description": "{{i18n: swordstm.d}}",
+				"Texture": "farfetchd/normaltm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_iron"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_leekmayo": {
+				"Name": "{{ModId}}_leekmayo",
+				"DisplayName": "{{i18n: farfetchdmayo}}",
+				"Description": "{{i18n: farfetchdmayo.d}}",
+				"Texture": "farfetchd/leekmayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1600,
+				"ContextTags": [
+					"color_sand"
+				]
+			}
+		}
+    },
+	{
+		"LogName": "doing even worse things to farfetchd",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"When": {"HasMod|contains=DIGUS.ANIMALHUSBANDRYMOD": true, "AHM Meat": true},
+		"Entries": {
+			"{{ModId}}_leekmeat": {
+				"Name": "{{Modid}}_leekmeat",
+				"DisplayName": "{{i18n: leekmeat}}",
+				"Description": "{{i18n: leekmeat.d}}",
+				"Texture": "farfetchd/leekmeat",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+                "Edibility": 10,
+				"Category": -14,
+				"Price": 800,
+				"ContextTags": [
+					"color_pink"
+				]
+			},
+			"{{ModID}}_cookedleekmeat": {
+				"Name": "{{Modid}}_leekmeat",
+				"DisplayName": "{{i18n: cookedleekmeat}}",
+				"Description": "{{i18n: cookedleekmeat.d}}",
+				"Texture": "farfetchd/cookedleekmeat",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+                "Edibility": 30,
+				"Category": -7,
+				"Price": 1200,
+				"ContextTags": [
+					"color_copper"
+				]
+			}
+		}
+	},
+	{
+        "LogName": "cooking the bird",
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",
+		"When": {"HasMod|contains=DIGUS.ANIMALHUSBANDRYMOD": true, "AHM Meat": true},
+        "Entries": {
+            "cookedleekmeat":"{{ModId}}_leekmeat 1 247 1/9999 9999/{{ModId}}_cookedleekmeat 1/default"
+        }
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_leekmayon": {
+                "Id": "{{ModId}}_leekmayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_leekegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_leekmayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching farfetchd to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "farfetchd": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

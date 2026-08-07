@@ -1,0 +1,558 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting bees a corporeal form",
+		"Action": "Load",
+		"Target": "combee/combeeegg, combee/combeefegg, combee/combeem, combee/combeef, combee/queen, combee/babyqueen, combee/shinycombeem, combee/shinycombeef, combee/shinyqueen, combee/shinybabyqueen, combee/shopiconcombee, combee/combeemayo, combee/poisonbarb, combee/honey, combee/bugtm",
+		"FromFile": "assets/combee/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "hatching combee drones",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"combeem": {
+				"DisplayName": "{{i18n: combee}}",
+				"Gender": "Male",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"ShopTexture": "combee/shopiconcombee",
+				"ShopDescription": "{{i18n: combee.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: combee.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "1",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 1250,
+				"SellPrice": 1250,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_combeemegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "340"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_dazzlinghoney"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_buzztm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "combee/combeem",
+				"Sound": "{{ModId}}_combeecry",
+				"SpriteWidth": "28",
+				"SpriteHeight": "26",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"CustomFields": {
+					"meatIndex": 340
+				},
+				"Skins": [
+                    {
+                        "ID": "ShinyCombeeM",
+                        "Texture": "combee/shinycombeem",
+						"BabyTexture": "combee/shinycombeem",
+                        "Weight": 0.1
+                    }
+                ],
+                "AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.2",
+						"AnimalIds": [
+						"combeef"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.1",
+						"AnimalIds": [
+						"queen"
+						]
+					}
+                  ]
+			}
+		}
+	},
+	{
+		"LogName": "hatching the combee girl gang",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"combeef": {
+				"DisplayName": "{{i18n: combee}}",
+				"Gender": "Female",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "1",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 1250,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_combeefegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "340"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_dazzlinghoney"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_buzztm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "combee/combeef",
+				"Sound": "{{ModId}}_combeecry",
+				"SpriteWidth": "28",
+				"SpriteHeight": "26",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"CustomFields": {
+					"meatIndex": 340
+				},
+				"Skins": [
+                    {
+                        "ID": "ShinyCombeeF",
+                        "Texture": "combee/shinycombeef",
+						"BabyTexture": "combee/shinycombeef",
+                        "Weight": 0.1
+                    }
+                ]
+				},
+			"queen": {
+				"DisplayName": "{{i18n: queen}}",
+				"Gender": "Female",
+				"House": "PokeCoop",
+				"RequiredBuilding": "PokeCoop",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "3",
+				"DaysToProduce": "2",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 1250,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_queenegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_combeeegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_poisonbarb"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_stingtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+					],
+				"SleepFrame": "16",
+				"Texture": "combee/queen",
+				"Sound": "{{ModId}}_queencry",
+				"BabyTexture": "combee/babyqueen",
+				"BabySound": "{{ModId}}_combeecry",
+				"SpriteWidth": "32",
+				"SpriteHeight": "32",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"CustomFields": {
+					"meatIndex": 684
+				},
+				"Skins": [
+                    {
+                        "ID": "ShinyQueen",
+                        "Texture": "combee/shinyqueen",
+						"BabyTexture": "combee/shinybabyqueen",
+                        "Weight": 0.1
+                    }
+				]
+			}
+		}
+	},
+	{
+		"LogName": "she has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_combeecry": {
+				"ID": "{{ModId}}_combeecry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/combee/combeecry.wav}}" ]
+			},
+			"{{ModId}}_queencry": {
+				"ID": "{{ModId}}_queencry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/combee/queencry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_dazzlinghoney": {
+				"Name": "{{ModId}}_dazzlinghoney",
+				"DisplayName": "{{i18n: dhoney}}",
+				"Description": "{{i18n: dhoney.d}}",
+				"Texture": "combee/honey",
+				"Type": "Basic",
+				"Category": -18,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"ContextTags": [
+					"color_orange"
+				]
+			},
+			"{{ModId}}_poisonbarb": {
+				"Name": "{{ModId}}_poisonbarb",
+				"DisplayName": "{{i18n: poisonbarb}}",
+				"Description": "{{i18n: poisonbarb.d}}",
+				"Texture": "combee/poisonbarb",
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 500,
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"ContextTags": [
+					"color_white"
+				]
+			},
+			"{{ModId}}_buzztm": {
+				"Name": "{{ModId}}_buzztm",
+				"DisplayName": "{{i18n: buzztm}}",
+				"Description": "{{i18n: buzztm.d}}",
+				"Texture": "combee/bugtm",
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"ContextTags": [
+					"color_yellow_green"
+				]
+			},
+			"{{ModId}}_stingtm": {
+				"Name": "{{ModId}}_stingtm",
+				"DisplayName": "{{i18n: stingtm}}",
+				"Description": "{{i18n: stingtm.d}}",
+				"Texture": "combee/bugtm",
+				"Type": "Basic",
+				"Category": -17,
+				"Price": 1000,
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"ContextTags": [
+					"color_yellow_green"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "leaving combee at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_combeeegg": {
+				"Name": "{{ModId}}_combeeegg",
+				"DisplayName": "{{i18n: combeeegg}}",
+				"Description": "{{i18n: combeeegg.d}}",
+				"Texture": "combee/combeeegg",
+				"Type": "Basic",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 150,
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"ContextTags": [
+					"color_gold"
+				]
+			},
+			"{{ModId}}_combeefegg": {
+				"Name": "{{ModId}}_combeefegg",
+				"DisplayName": "{{i18n: combeefegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "combee/combeefegg",
+				"Type": "Basic",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 150,
+				"ExcludeFromShippingCollection": true,
+				"ContextTags": [
+					"color_gold"
+				]
+			},
+			"{{ModId}}_combeemegg": {
+				"Name": "{{ModId}}_combeemegg",
+				"DisplayName": "{{i18n: combeemegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "combee/combeefegg",
+				"Type": "Basic",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 150,
+				"ExcludeFromShippingCollection": true,
+				"ContextTags": [
+					"color_gold"
+				]
+			},
+			"{{ModId}}_queenegg": {
+				"Name": "{{ModId}}_combeefegg",
+				"DisplayName": "{{i18n: queenegg}}",
+				"Description": "{{i18n: internalitem}}",
+				"Texture": "combee/combeefegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 150
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_combeemayo": {
+				"Name": "{{ModId}}_combeemayo",
+				"DisplayName": "{{i18n: combeemayo}}",
+				"Description": "{{i18n: combeemayo.d}}",
+				"Texture": "combee/combeemayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 600,
+				"ContextTags": [
+					"color_white"
+				]
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_combeemayon": {
+                "Id": "{{ModId}}_combeemayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_combeeegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_combeemayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            },
+			"{{ModId}}_combeemayonn": {
+                "Id": "{{ModId}}_combeemayonn",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_combeefegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_combeemayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching combees to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "combeem": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"combeef": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"queen": {
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}

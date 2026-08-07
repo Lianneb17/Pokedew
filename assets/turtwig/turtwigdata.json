@@ -1,0 +1,550 @@
+{
+    "Changes": [
+	{
+		"LogName": "granting turtwig a physical presence",
+		"Action": "Load",
+		"Target": "turtwig/turtwig, turtwig/shinyturtwig, turtwig/grotle, turtwig/shinygrotle, turtwig/torterra, turtwig/shinytorterra, turtwig/shopicon, turtwig/turtwigegg, turtwig/turtwigmayo, turtwig/miracleseed, turtwig/softsand, turtwig/grasstm, turtwig/groundtm",
+		"FromFile": "assets/turtwig/{{TargetWithoutPath}}.png"
+	},
+	{
+		"LogName": "manifesting turtwig",
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"turtwig": {
+				"DisplayName": "{{i18n: turtwig}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"ShopTexture": "turtwig/shopicon",
+				"ShopDescription": "{{i18n: turtwig.d}}",
+				"ShopMissingBuildingDescription": "{{i18n: turtwig.md}}",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "6",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "1",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"PurchasePrice": 2500,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_turtwigegg"
+					],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_turtwigegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_oranberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_absorbtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "turtwig/turtwig",
+				"Sound": "{{ModId}}_turtwigcry",
+				"SpriteWidth": "44",
+				"SpriteHeight": "44",
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinyturtwig",
+                        "Texture": "turtwig/shinyturtwig",
+						"BabyTexture": "turtwig/shinyturtwig",
+                        "Weight": 0.1
+                    }
+                ],
+				"AlternatePurchaseTypes": [
+					{
+						"Condition": "RANDOM 0.01",
+						"AnimalIds": [
+						"ditto"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.5",
+						"AnimalIds": [
+						"grotle"
+						]
+					},
+					{
+						"Condition": "RANDOM 0.4",
+						"AnimalIds": [
+						"torterra"
+						]
+					}
+                  ]
+			},
+			"grotle": {
+				"DisplayName": "{{i18n: grotle}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "8",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_grotleegg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_turtwigegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_sitrusberry"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_leechseedtm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "turtwig/grotle",
+            	"BabyTexture": "turtwig/turtwig",
+				"Sound": "{{ModId}}_grotlecry",
+                "BabySound": "{{ModId}}_turtwigcry",
+				"SpriteWidth": 44,
+				"SpriteHeight": 44,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinygrotle",
+                        "Texture": "turtwig/shinygrotle",
+						"BabyTexture": "turtwig/shinyturtwig",
+                        "Weight": 0.1
+                    }
+                ]
+			},
+			"torterra": {
+				"DisplayName": "{{i18n: torterra}}",
+				"Gender": "MaleOrFemale",
+				"House": "PokeBarn",
+				"RequiredBuilding": "PokeBarn",
+				"BirthText": "{{i18n: birthtext}}",
+				"DaysToMature": "10",
+				"DaysToProduce": "3",
+				"GrassEatAmount": "2",
+				"ProfessionForHappinessBoost": 2,
+				"ProfessionForQualityBoost": 2,
+				"SellPrice": 2500,
+				"IncubatorParentSheetOffset": 1,
+				"CanSwim": false,
+				"ShowInSummitCredits": true,
+				"CanGetPregnant": false,
+				"BabiesFollowAdults": true,
+				"EggItemIds": [
+					"{{ModId}}_torterraegg"
+				],
+				"ProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 0,
+						"ItemId": "{{ModId}}_turtwigegg"
+					}
+				],
+				"DeluxeProduceItemIds": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_miracleseed"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 250,
+						"ItemId": "{{ModId}}_softsand"
+					},
+					{
+						"Id": "Default",
+						"Condition": null,
+						"MinimumFriendship": 750,
+						"ItemId": "{{ModId}}_earthquaketm"
+					},
+					{
+                    	"Id": "Default",
+                    	"Condition": null,
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_gummitreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 0,
+                    	"ItemId": "{{ModId}}_bowtreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.5 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_candytreasurebox"
+                    },
+					{
+                    	"Id": "Default",
+                    	"Condition": "RANDOM 0.25 SEASON spring, summer, fall",
+                    	"MinimumFriendship": 500,
+                    	"ItemId": "{{ModId}}_deluxetreasurebox"
+                    }
+				],
+				"SleepFrame": "16",
+				"Texture": "turtwig/torterra",
+            	"BabyTexture": "turtwig/turtwig",
+				"Sound": "{{ModId}}_torterracry",
+                "BabySound": "{{ModId}}_turtwigcry",
+				"SpriteWidth": 44,
+				"SpriteHeight": 44,	
+				"UseFlippedRightForLeft": false,
+				"UseDoubleUniqueAnimationFrames": true,
+				"Skins": [
+                    {
+                        "id": "Shinytorterra",
+                        "Texture": "turtwig/shinytorterra",
+						"BabyTexture": "turtwig/shinyturtwig",
+                        "Weight": 0.1
+                    }
+                ]
+			}
+		}
+	},
+	{
+		"LogName": "he has a mouth and he WILL scream",
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"{{ModId}}_turtwigcry": {
+				"ID": "{{ModId}}_turtwigcry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/turtwig/turtwigcry.wav}}" ]
+			},
+			"{{ModId}}_grotlecry": {
+				"ID": "{{ModId}}_grotlecry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/turtwig/grotlecry.wav}}" ]
+			},
+			"{{ModId}}_torterracry": {
+				"ID": "{{ModId}}_torterracry",
+				"Category": "Sound",
+				"FilePaths": [ "{{AbsoluteFilePath: assets/turtwig/torterracry.wav}}" ]
+			}
+		}
+	},
+	{
+		"LogName": "leaving turtwig at the daycare",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_turtwigegg": {
+				"Name": "{{ModId}}_turtwigegg",
+				"DisplayName": "{{i18n: turtwigegg}}",
+				"Description": "{{i18n: turtwigegg.d}}",
+				"Texture": "turtwig/turtwigegg",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+				"Category": -5,
+				"Edibility": 5,
+				"Price": 300,
+				"ContextTags": [
+					"color_green"
+				]
+			},
+			"{{ModId}}_grotleegg": {
+		    	"Name": "{{ModId}}_grotleegg",
+		    	"DisplayName": "{{i18n: grotleegg}}",
+		    	"Description": "{{i18n: internalitem}}",
+		    	"Texture": "turtwig/turtwigegg",
+		    	"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+		    	"Category": -5,                
+				"Edibility": 5,
+		    	"Price": 300,
+				"ContextTags": [
+					"color_green"
+				]
+			},
+			"{{ModId}}_torterraegg": {
+		    	"Name": "{{ModId}}_torterraegg",
+		    	"DisplayName": "{{i18n: torterraegg}}",
+		    	"Description": "{{i18n: internalitem}}",
+		    	"Texture": "turtwig/turtwigegg",
+		    	"Type": "Basic",
+				"ExcludeFromShippingCollection": true,
+		    	"Category": -5,                
+				"Edibility": 5,
+		    	"Price": 300,
+				"ContextTags": [
+					"color_green"
+				]
+			}
+		}
+	},
+	{
+		"LogName": "granting held items to pokemon",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_absorbtm": {
+				"Name": "{{ModId}}_absorbtm",
+				"DisplayName": "{{i18n: absorbtm}}",
+				"Description": "{{i18n: absorbtm.d}}",
+				"Texture": "turtwig/grasstm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_green"
+				]
+			},
+			"{{ModId}}_leechseedtm": {
+				"Name": "{{ModId}}_leechseedtm",
+				"DisplayName": "{{i18n: leechseedtm}}",
+				"Description": "{{i18n: leechseedtm.d}}",
+				"Texture": "turtwig/grasstm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_green"
+				]
+			},
+			"{{ModId}}_earthquaketm": {
+				"Name": "{{ModId}}_earthquaketm",
+				"DisplayName": "{{i18n: earthquaketm}}",
+				"Description": "{{i18n: earthquaketm.d}}",
+				"Texture": "turtwig/groundtm",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Technical Machines}}",
+				"Category": -17,
+				"Price": 2000,
+				"ContextTags": [
+					"color_brown"
+				]
+			},
+			"{{ModId}}_miracleseed": {
+				"Name": "{{ModId}}_miracleseed",
+				"DisplayName": "{{i18n: miracleseed}}",
+				"Description": "{{i18n: miracleseed.d}}",
+				"Texture": "turtwig/miracleseed",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 1000,
+				"ContextTags": [
+					"color_yellow"
+				]
+			},
+			"{{ModId}}_softsand": {
+				"Name": "{{ModId}}_softsand",
+				"DisplayName": "{{i18n: softsand}}",
+				"Description": "{{i18n: softsand.d}}",
+				"Texture": "turtwig/softsand",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Deluxe Pokemon Items}}",
+				"Category": -17,
+				"Price": 1000,
+				"ContextTags": [
+					"color_yellow"
+				]
+			}
+		}
+	},
+    {
+		"LogName": "doing terrible things to pokemon eggs",
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_turtwigmayo": {
+				"Name": "{{ModId}}_turtwigmayo",
+				"DisplayName": "{{i18n: turtwigmayo}}",
+				"Description": "{{i18n: turtwigmayo.d}}",
+				"Texture": "turtwig/turtwigmayo",
+				"Type": "Basic",
+				"ExcludeFromShippingCollection": "{{Pokemon Items}}",
+                "IsDrink": true,
+                "Edibility": 30,
+				"Category": -26,
+				"Price": 1200,
+				"ContextTags": [
+					"color_green"
+				]
+			}
+		}
+    },
+    {
+        "LogName": "reprogramming machines",
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)24", "OutputRules" ],
+        "Entries": {
+            "{{ModId}}_turtwigmayon": {
+                "Id": "{{ModId}}_turtwigmayon",
+                "Triggers": [
+                    {
+                        "RequiredItemId": "{{ModId}}_turtwigegg",
+                        "RequiredCount": 1
+                    }
+                    ],
+                "OutputItem": [
+                    {
+                        "ItemId": "{{ModId}}_turtwigmayo",
+                        "CopyQuality": false
+                    }
+                    ],
+                "MinutesUntilReady": 120
+            }
+        }
+    },
+	{
+        "LogName": "teaching them to find candy",
+        "Action": "EditData",
+        "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+        "Entries": {
+            "turtwig": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"grotle": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            },
+			"torterra": {
+				"MalePercentage": 0.875,
+                "AnimalProduceExtensionData": {
+					"(O){{ModId}}_gummitreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_candytreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_bowtreasurebox": {
+						"HarvestTool": "DigUp"
+                    },
+					"(O){{ModId}}_deluxetreasurebox": {
+						"HarvestTool": "DigUp"
+                    }
+                }
+            }
+        }
+    }
+    ]
+}
