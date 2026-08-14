@@ -183,100 +183,10 @@
 		}
 
 	],
-	"CustomLocations": [
-		{
-		   "Name": "bees.pkr_daycare",
-		   "FromMapFile": "assets/daycare/Shed.tmx"
-		},
-		{
-			"Name": "bees.pkr_daycarehouse",
-			"FromMapFile": "assets/daycare/Shedhouse.tmx"
-		 }
-	 ],
 	"Changes": [
 	{
 		"Action": "Include",
-		"FromFile": "assets/rowlet/rowletdata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/charmander/charmanderdata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/squirtle/squirtledata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/bulbasaur/bulbasaurdata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/turtwig/turtwigdata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/chimchar/chimchardata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/piplup/piplupdata.json"
-	},
-	{
-		"Action": "Include",
 		"FromFile": "assets/pikachu/pikadata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/eevee/eeveedata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/combee/combeedata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/sunflora/flowerdata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/minccino/minccinodata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/wooloo/wooloodata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/miltank/miltankdata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/farfetchd/leekdata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/lechonk/lechonkdata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/vulpix/vulpixdata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/sunmoon/sunmoondata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/unown/unowndata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/magearna/magearnadata.json"
-	},
-	{
-		"Action": "Include",
-		"FromFile": "assets/ditto/dittodata.json"
 	},
 	{
 		"Action": "Include",
@@ -285,6 +195,10 @@
 	{
 		"Action": "Include",
 		"FromFile": "assets/assorted/miscdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/evolutionstone/evolutionstonedata.json"
 	}
 	]
  }

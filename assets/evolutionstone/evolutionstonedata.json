@@ -1,0 +1,186 @@
+{
+    "Changes":[
+        {
+            "LogName": "Load evolution items",
+            "Action": "Load",
+            "Target": "evolutionstone/evolutionstones",
+            "FromFile": "assets/evolutionstone/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Sound",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "{{modId}}_sound_victory": {
+                    "ID": "{{modId}}_sound_victory",
+                    "Category": "Sound",
+                    "FilePaths": ["{{AbsoluteFilePath: assets/evolutionstone/victory.wav}}"]
+                }
+            }
+        },
+        {
+            "LogName": "Powers",
+            "Action": "EditData",
+            "Target": "Data/Powers",
+            "Entries": {
+                "{{modId}}_power_stone_thunder": {
+                    "DisplayName": "{{i18n:stone.thunder.power}}",
+                    "Description": "{{i18n:stone.thunder.power.description}}",
+                    "TexturePath": "evolutionstone/evolutionstones",
+                    "TexturePosition": {
+                        "X": 16,
+                        "Y": 0
+                        },
+                    "UnlockedCondition": "PLAYER_HAS_SEEN_EVENT Current {{modId}}_event_stone_thunder",
+                    "CustomFields": null
+                }
+            }
+        },
+        {
+            "LogName": "Triggers",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries":{
+                "{{modId}}_trigger_stone_thunder":{
+                    "ID": "{{modId}}_trigger_stone_thunder",
+                    "Trigger": "DayEnding",
+                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 1",
+                    "Action": "AddMail current {{modId}}_state_stone_thunder_start received"
+                }
+            }
+        },
+        {
+            "LogName": "Special orders",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "{{modId}}_specialorder_stone_thunder": {
+                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Requester": "Gunther",
+                    "Duration": "Week",
+                    "Repeatable": "False",
+                    "RequiredTags": "mail_{{modId}}_state_stone_thunder_start",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "ItemToRemoveOnEnd": "{{modId}}_item_stone_thunder",
+                    "MailToRemoveOnEnd": null,                    
+                    "Objectives": [
+                    {
+                        "Type": "Donate",
+                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "RequiredCount": "1",
+                        "Data": {
+                            "DropBox": "GuntherBox",
+                            "DropBoxGameLocation": "ArchaeologyHouse",
+                            "DropBoxIndicatorLocation": "6 8",
+                            "AcceptedContextTags": "item_{{modId}}_item_stone_thunder_item"
+                        }
+                    }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "3000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "{{modId}}_state_stone_thunder_complete"
+                            }
+                        }
+                    ],
+                    "RandomizedElements": null,
+                    "CustomFields": null
+                }
+            }
+        },
+        {
+            "LogName": "Items",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{modId}}_item_stone_thunder": {
+                    "DisplayName": "{{i18n:stone.base.item}}",
+                    "Description": "{{i18n:stone.thunder.item.description}}",
+                    "Texture": "evolutionstone/evolutionstones",
+                    "SpriteIndex": "0",
+                    "Type": "Quest",
+                    "ContextTags": [
+                        "item_{{modId}}_item_stone_thunder_item"
+                    ]
+                }
+            }
+        },        
+        {
+            "LogName": "Drops - Geode",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "535", "GeodeDrops" ],
+            "Entries": {
+				"{{modId}}_geode_drop_stone_water": {
+                    "Id": "{{modId}}__drop_stone_water",
+                    "ItemId": "(O){{modId}}_item_stone_water",
+                    "Chance": 0.2,
+                    "Precedence": -1000,
+                    "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_water"
+                }
+            }
+        },
+        {
+            "LogName": "Drops - frozen",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "536", "GeodeDrops" ],
+            "Entries": {
+                "{{modId}}_frozen_drop_thunderstone_drop": {
+                    "Id": "{{modId}}_frozen_drop_stone_thunder",
+                    "ItemId": "(O){{modId}}_item_stone_thunder",
+                    "Chance": 0.4,
+                    "Precedence": -1000,
+                    "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_thunder"
+                }
+            }
+        },
+        {
+            "LogName": "Drops - magma",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "537", "GeodeDrops" ],
+            "Entries": {
+                "{{modId}}_magma_drop_stone_thunder": {
+                    "Id": "{{modId}}_magma_drop_stone_thunder",
+                    "ItemId": "(O){{modId}}_item_stone_thunder",
+                    "Chance": 0.6,
+                    "Precedence": -1000,
+                    "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_thunder"
+                }
+            }
+        },
+        {
+            "LogName": "Drops - omni",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "749", "GeodeDrops" ],
+            "Entries": {
+                "{{modId}}_omni_drop_stone_thunder": {
+                    "Id": "{{modId}}_omni_drop_stone_thunder",
+                    "ItemId": "(O){{modId}}_item_stone_thunder",
+                    "Chance": 0.8,
+                    "Precedence": -1000,
+                    "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_thunder"
+                }
+            }
+        },
+        {
+            "LogName": "Events - missing translation",
+            "Action": "EditData",
+            "Target": "Data/Events/farm",
+            "Entries": {
+                "{{modId}}_event_stone_thunder/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_completed received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"Oh, good morning ${Mr.^Ms.}$ @!#$b#I hope it's not too early...$s#$b#Well, I just wanted to stop by and thank you in person for lending me your evolution stone.$h#$b#I had a call with {{random:Professor Elm from Johto,Professor Rowan from Sinnoh,Professor Sycamore from Kalos}} to identify the stone. $h#$b#It seems to be a Thunderstone and can be used to evolve Pikachu, Magneton, Eevee, Nosepass, Eelektric, Charjabug and Tadbulb. Isn't that amazing?!$h#$b#Well, I should let you get back to your work...\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"Oh! I almost forgot!#$b#Here is your Thunderstone back.$h\"/pause 500/pause 500/playSound {{modId}}_evolutionstone_sound/itemAboveHead {{modId}}_thunderstone_item false/message \"You got the 'Thunder stone'! It's been added to your wallet. $b#You feel an electrical charge through your body. You've got a deeper understanding of your Pokémon.\"/pause 1200/end"
+            }
+        }        
+    ]
+}

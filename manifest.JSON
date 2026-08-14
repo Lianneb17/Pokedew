@@ -1,17 +1,16 @@
 {
-    "Name": "Pokemon Ranch",
-    "Author": "plaidbees",
-    "Version": "1.8",
-    "Description": "Adds Pokemon as new farm animals.",
-    "UniqueID": "bees.pkr",
-    "UpdateKeys": ["Nexus: 24619"],
+    "Name": "Pokedew",
+    "Author": "lianneb",
+    "Version": "0.1",
+    "Description": "What if there are Pokémon in Stardew Valley",
+    "UniqueID": "lb.pokedew",
     "ContentPackFor": {
         "UniqueID": "Pathoschild.ContentPatcher"
     },
     "Dependencies": [
 		{
-		"UniqueID": "selph.ExtraAnimalConfig",
-		"IsRequired": true
+            "UniqueID": "selph.ExtraAnimalConfig",
+            "IsRequired": true
 		}
 	]
 }
