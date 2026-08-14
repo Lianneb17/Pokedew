@@ -1291,7 +1291,7 @@
                         {
                             "Id": "jolteon",
                             "AnimalId": "jolteon",
-                            "Condition": "RANDOM 0.143"
+                            "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received, RANDOM 0.143"
                         },
                         {
                             "Id": "glaceon",

@@ -199,6 +199,10 @@
 	{
 		"Action": "Include",
 		"FromFile": "assets/evolutionstone/evolutionstonedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/eevee/eeveedata.json"
 	}
 	]
  }

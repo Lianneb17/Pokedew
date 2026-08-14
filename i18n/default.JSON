@@ -1,14 +1,15 @@
 {
-    "stone.base.event.gunther.intro": "Oh, good morning ${Mr.^Ms.}$ @!#$b#I hope it's not too early... Well, I just wanted to stop by and thank you in person for lending me your evolution stone. I had a call with",
+    "stone.base.event.gunther.intro": "Oh, good morning ${Mr.^Ms.}$ @! I hope it's not too early... Well, I just wanted to stop by and thank you in person for lending me your evolution stone. I had a call with",
     "stone.base.event.gunther.prof.1": "Professor Elm from Johto",
     "stone.base.event.gunther.prof.2": "Professor Rowan from Sinnoh",
     "stone.base.event.gunther.prof.3": "Professor Sycamore from Kalos",
     "stone.base.event.gunther.call": "to identify the stone.",
     "stone.base.event.gunther.leave": "Well, I should let you get back to your work...",
 
+    "stone.thunder.event.gunther.return": "Oh! I almost forgot! Here is your Thunder stone back.",
     "stone.thunder.event.gunther.research": "It seems to be a Thunder stone and can be used to evolve Pikachu, Magneton, Eevee, Nosepass, Eelektric, Charjabug and Tadbulb. Isn't that amazing?!",
-    "stone.thunder.event.gunther.return": "Oh! I almost forgot!#$b#Here is your Thunder stone back.",
     "stone.thunder.event.message": "You got the 'Thunder stone'! It's been added to your wallet. You feel an electrical charge through your body. You've got a deeper understanding of your Pokémon.",
+    "stone.thunder.item.description": "It emits an unusual electrical charge. Maybe Gunther can tell you more.",
 
     "stone.base.item": "Mysterious evolution stone",
     "stone.base.specialorder": "A Curious Discovery",

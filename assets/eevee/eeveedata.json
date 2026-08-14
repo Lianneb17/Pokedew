@@ -134,12 +134,17 @@
 						]
 					},
                     {
+                        "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received, RANDOM 0.0125",
+                        "AnimalIds": [
+                            "jolteon"
+                        ]
+                    },
+                    {
                       "AnimalIds": [
                         "eevee",
                         "espeon",
                         "flareon",
                         "glaceon",
-                        "jolteon",
                         "leafeon",
                         "umbreon",
                         "vaporeon",
