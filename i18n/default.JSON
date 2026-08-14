@@ -1,4 +1,10 @@
 {
+    "stone.base.event.gunther.1": "Oh, good morning ${Mr.^Ms.}$ @!#$b#I hope it's not too early...$s#$b#Well, I just wanted to stop by and thank you in person for lending me your evolution stone.$h#$b#I had a call with {{random:Professor Elm from Johto,Professor Rowan from Sinnoh,Professor Sycamore from Kalos}} to identify the stone. ",
+
+    "stone.thunder.event.gunther.2": "$h#$b#It seems to be a Thunder stone and can be used to evolve Pikachu, Magneton, Eevee, Nosepass, Eelektric, Charjabug and Tadbulb. Isn't that amazing?!$h#$b#Well, I should let you get back to your work...",
+    "stone.thunder.event.gunther.3": "Oh! I almost forgot!#$b#Here is your Thunder stone back.$h",
+    "stone.thunder.event.message": "You got the 'Thunder stone'! It's been added to your wallet. $b#You feel an electrical charge through your body. You've got a deeper understanding of your Pokémon.",
+
     "stone.base.item": "Mysterious evolution stone",
     "stone.base.specialorder": "A Curious Discovery",
     "stone.base.specialorder.text": "Recent reports suggest that an evolution stone may be hidden among the geodes. If you happen to uncover one, please bring it to me. I'd very much like to examine it.",
@@ -17,7 +23,7 @@
     "stone.fire.power": "Fire stone",
     "stone.water.power": "Water stone",
     "stone.thunder.power": "Thunder stone",
-    "stone.leaf.power": "`Leaf` stone",
+    "stone.leaf.power": "Leaf stone",
     "stone.moon.power": "Moon stone",
     "stone.sun.power": "Sun stone",
     "stone.shiny.power": "Shiny",
