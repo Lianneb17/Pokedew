@@ -44,7 +44,7 @@
                 "{{modId}}_trigger_stone_thunder":{
                     "ID": "{{modId}}_trigger_stone_thunder",
                     "Trigger": "DayEnding",
-                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 1",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT pikachu 1\"",
                     "Action": "AddMail current {{modId}}_state_stone_thunder_start received"
                 }
             }

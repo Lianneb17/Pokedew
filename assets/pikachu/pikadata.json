@@ -120,13 +120,13 @@
 						"Condition": "RANDOM 0.5",
 						"AnimalIds": [
 							"fpikachu",
-							"mpikachu"
+							"mpikachu",
+							"pichu"
 						]
 					},
 					{
-						"Condition": "RANDOM 0.5",
+						"Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_completed Received, RANDOM 0.5",
 						"AnimalIds": [
-							"pichu",
 							"fraichu",
 							"mraichu",
 							"aloraichu"

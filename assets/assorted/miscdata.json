@@ -1455,16 +1455,16 @@
                         {
                             "Id": "fraichu",
                             "AnimalId": "fraichu",
-							"Condition": "RANDOM 0.33"
+							"Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_completed Received, RANDOM 0.33"
                         },
 						{
                             "Id": "mraichu",
                             "AnimalId": "mraichu",
-							"Condition": "RANDOM 0.5"
+							"Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_completed Received, RANDOM 0.5"
                         },
 						{
                             "Id": "alolan raichu",
-                            "AnimalId": "aloraichu"
+                            "AnimalId": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_completed Received, aloraichu"
                         }
                     ]
                 }
