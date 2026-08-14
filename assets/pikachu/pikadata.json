@@ -125,7 +125,7 @@
 						]
 					},
 					{
-						"Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_completed Received, RANDOM 0.5",
+						"Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete Received, RANDOM 0.5",
 						"AnimalIds": [
 							"fraichu",
 							"mraichu",

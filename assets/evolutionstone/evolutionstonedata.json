@@ -28,7 +28,7 @@
                     "Description": "{{i18n:stone.thunder.power.description}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
-                        "X": 16,
+                        "X": 32,
                         "Y": 0
                         },
                     "UnlockedCondition": "PLAYER_HAS_SEEN_EVENT Current {{modId}}_event_stone_thunder",
@@ -59,7 +59,8 @@
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
-                    "RequiredTags": "mail_{{modId}}_state_stone_thunder_start",
+                    "RequiredTags": "",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_start received",
                     "OrderType": "",
                     "SpecialRule": "",
                     "Text": "{{i18n:stone.base.specialorder.text}}",
@@ -120,12 +121,12 @@
             "Target": "Data/Objects",
             "TargetField": [ "535", "GeodeDrops" ],
             "Entries": {
-				"{{modId}}_geode_drop_stone_water": {
-                    "Id": "{{modId}}__drop_stone_water",
-                    "ItemId": "(O){{modId}}_item_stone_water",
+				"{{modId}}_geode_drop_stone_thunder": {
+                    "Id": "{{modId}}_drop_stone_thunder",
+                    "ItemId": "(O){{modId}}_item_stone_thunder",
                     "Chance": 0.2,
                     "Precedence": -1000,
-                    "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_water"
+                    "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_thunder"
                 }
             }
         },
@@ -179,7 +180,7 @@
             "Action": "EditData",
             "Target": "Data/Events/farm",
             "Entries": {
-                "{{modId}}_event_stone_thunder/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_completed received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.1}}{{i18n:stone.thunder.event.gunther.2}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.thunder.event.gunther.2}}\"/pause 500/pause 500/playSound {{modId}}_evolutionstone_sound/itemAboveHead {{modId}}_thunderstone_item false/message \"{{i18n:stone.thunder.event.message}}\"/pause 1200/end"
+                "{{modId}}_event_stone_thunder/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.thunder.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.thunder.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_thunder false/message \"{{i18n:stone.thunder.event.message}}\"/pause 1200/end"
             }
         }        
     ]
