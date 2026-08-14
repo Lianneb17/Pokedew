@@ -203,6 +203,10 @@
 	{
 		"Action": "Include",
 		"FromFile": "assets/eevee/eeveedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/vulpix/vulpixdata.json"
 	}
 	]
  }

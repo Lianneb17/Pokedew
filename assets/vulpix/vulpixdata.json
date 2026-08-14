@@ -104,7 +104,7 @@
 						]
 					},
 					{
-						"Condition": "RANDOM 0.25",
+						"Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_fire_complete received, RANDOM 0.25",
 						"AnimalIds": [
 						"tails"
 						]
