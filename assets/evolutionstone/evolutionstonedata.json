@@ -107,7 +107,7 @@
                     "DisplayName": "{{i18n:stone.base.item}}",
                     "Description": "{{i18n:stone.thunder.item.description}}",
                     "Texture": "evolutionstone/evolutionstones",
-                    "SpriteIndex": "0",
+                    "SpriteIndex": "2",
                     "Type": "Quest",
                     "ContextTags": [
                         "item_{{modId}}_item_stone_thunder_item"
