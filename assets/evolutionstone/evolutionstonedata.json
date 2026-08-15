@@ -88,6 +88,17 @@
                         },
                     "UnlockedCondition": "PLAYER_HAS_SEEN_EVENT Current {{modId}}_event_stone_sun",
                     "CustomFields": null
+                },
+				"{{modId}}_power_stone_shiny": {
+                    "DisplayName": "{{i18n:stone.shiny.power}}",
+                    "Description": "{{i18n:stone.shiny.power.description}}",
+                    "TexturePath": "evolutionstone/evolutionstones",
+                    "TexturePosition": {
+                        "X": 16,
+                        "Y": 16
+                        },
+                    "UnlockedCondition": "PLAYER_HAS_SEEN_EVENT Current {{modId}}_event_stone_shiny",
+                    "CustomFields": null
                 }
             }
         },
@@ -131,6 +142,12 @@
                     "Trigger": "DayEnding",
                     "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT seed 1",
                     "Action": "AddMail current {{modId}}_state_stone_sun_start received"
+                },
+                "{{modId}}_trigger_stone_shiny":{
+                    "ID": "{{modId}}_trigger_stone_shiny",
+                    "Trigger": "DayEnding",
+                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT minccino 1",
+                    "Action": "AddMail current {{modId}}_state_stone_shiny_start received"
                 }
             }
         },
@@ -390,6 +407,48 @@
                     ],
                     "RandomizedElements": null,
                     "CustomFields": null
+                },
+				"{{modId}}_specialorder_stone_shiny": {
+                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Requester": "Gunther",
+                    "Duration": "Week",
+                    "Repeatable": "False",
+                    "RequiredTags": "",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_shiny_start received",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "ItemToRemoveOnEnd": "{{modId}}_item_stone_shiny",
+                    "MailToRemoveOnEnd": null,                    
+                    "Objectives": [
+                    {
+                        "Type": "Donate",
+                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "RequiredCount": "1",
+                        "Data": {
+                            "DropBox": "GuntherBox",
+                            "DropBoxGameLocation": "ArchaeologyHouse",
+                            "DropBoxIndicatorLocation": "6 8",
+                            "AcceptedContextTags": "item_{{modId}}_item_stone_shiny_item"
+                        }
+                    }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "3000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "{{modId}}_state_stone_shiny_complete"
+                            }
+                        }
+                    ],
+                    "RandomizedElements": null,
+                    "CustomFields": null
                 }
             }
         },
@@ -457,6 +516,16 @@
                     "ContextTags": [
                         "item_{{modId}}_item_stone_sun_item"
                     ]
+                },
+				"{{modId}}_item_stone_shiny": {
+                    "DisplayName": "{{i18n:stone.base.item}}",
+                    "Description": "{{i18n:stone.shiny.item.description}}",
+                    "Texture": "evolutionstone/evolutionstones",
+                    "SpriteIndex": "6",
+                    "Type": "Quest",
+                    "ContextTags": [
+                        "item_{{modId}}_item_stone_shiny_item"
+                    ]
                 }
             }
         },        
@@ -507,6 +576,13 @@
                     "Chance": 0.2,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_sun"
+                },
+				"{{modId}}_geode_drop_stone_shiny": {
+                    "Id": "{{modId}}_drop_stone_shiny",
+                    "ItemId": "(O){{modId}}_item_stone_shiny",
+                    "Chance": 0.2,
+                    "Precedence": -1000,
+                    "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_shiny"
                 }
             }
         },
@@ -557,6 +633,13 @@
                     "Chance": 0.4,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_sun"
+                },
+                "{{modId}}_frozen_drop_shinystone_drop": {
+                    "Id": "{{modId}}_frozen_drop_stone_shiny",
+                    "ItemId": "(O){{modId}}_item_stone_shiny",
+                    "Chance": 0.4,
+                    "Precedence": -1000,
+                    "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_shiny"
                 }
             }
         },
@@ -607,6 +690,13 @@
                     "Chance": 0.6,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_sun"
+                },
+				"{{modId}}_magma_drop_stone_shiny": {
+                    "Id": "{{modId}}_magma_drop_stone_shiny",
+                    "ItemId": "(O){{modId}}_item_stone_shiny",
+                    "Chance": 0.6,
+                    "Precedence": -1000,
+                    "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_shiny"
                 }
             }
         },
@@ -657,6 +747,13 @@
                     "Chance": 0.8,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_sun"
+                },
+				"{{modId}}_omni_drop_stone_shiny": {
+                    "Id": "{{modId}}_omni_drop_stone_shiny",
+                    "ItemId": "(O){{modId}}_item_stone_shiny",
+                    "Chance": 0.8,
+                    "Precedence": -1000,
+                    "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_shiny"
                 }
             }
         },
@@ -670,7 +767,8 @@
                 "{{modId}}_event_stone_thunder/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.thunder.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.thunder.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_thunder false/message \"{{i18n:stone.thunder.event.message}}\"/pause 1200/end",
                 "{{modId}}_event_stone_leaf/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_leaf_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.leaf.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.leaf.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_leaf false/message \"{{i18n:stone.leaf.event.message}}\"/pause 1200/end",
                 "{{modId}}_event_stone_moon/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_moon_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.moon.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.moon.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_moon false/message \"{{i18n:stone.moon.event.message}}\"/pause 1200/end",
-                "{{modId}}_event_stone_sun/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_sun_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.sun.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.sun.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_sun false/message \"{{i18n:stone.sun.event.message}}\"/pause 1200/end"
+                "{{modId}}_event_stone_sun/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_sun_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.sun.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.sun.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_sun false/message \"{{i18n:stone.sun.event.message}}\"/pause 1200/end",
+                "{{modId}}_event_stone_shiny/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_shiny_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.shiny.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.shiny.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_shiny false/message \"{{i18n:stone.shiny.event.message}}\"/pause 1200/end"
             }
         }        
     ]
