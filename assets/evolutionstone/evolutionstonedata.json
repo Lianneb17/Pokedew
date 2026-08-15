@@ -668,56 +668,56 @@
             "Target": "Data/Objects",
             "TargetField": [ "536", "GeodeDrops" ],
             "Entries": {
-                "{{modId}}_frozen_drop_firestone_drop": {
+                "{{modId}}_frozen_drop_stone_fire": {
                     "Id": "{{modId}}_frozen_drop_stone_fire",
                     "ItemId": "(O){{modId}}_item_stone_fire",
                     "Chance": 0.4,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_fire"
                 },
-                "{{modId}}_frozen_drop_waterstone_drop": {
+                "{{modId}}frozen_drop_stone_water": {
                     "Id": "{{modId}}_frozen_drop_stone_water",
                     "ItemId": "(O){{modId}}_item_stone_water",
                     "Chance": 0.4,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_water"
                 },
-                "{{modId}}_frozen_drop_thunderstone_drop": {
+                "{{modId}}_frozen_drop_stone_thunder": {
                     "Id": "{{modId}}_frozen_drop_stone_thunder",
                     "ItemId": "(O){{modId}}_item_stone_thunder",
                     "Chance": 0.4,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_thunder"
                 },
-               "{{modId}}_frozen_drop_leafstone_drop": {
+               "{{modId}}_frozen_drop_stone_leaf": {
                     "Id": "{{modId}}_frozen_drop_stone_leaf",
                     "ItemId": "(O){{modId}}_item_stone_leaf",
                     "Chance": 0.4,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_leaf"
                 },
-                "{{modId}}_frozen_drop_moonstone_drop": {
+                "{{modId}}_frozen_drop_stone_moon": {
                     "Id": "{{modId}}_frozen_drop_stone_moon",
                     "ItemId": "(O){{modId}}_item_stone_moon",
                     "Chance": 0.4,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_moon"
                 },
-                "{{modId}}_frozen_drop_sunstone_drop": {
+                "{{modId}}_frozen_drop_stone_sun": {
                     "Id": "{{modId}}_frozen_drop_stone_sun",
                     "ItemId": "(O){{modId}}_item_stone_sun",
                     "Chance": 0.4,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_sun"
                 },
-                "{{modId}}_frozen_drop_shinystone_drop": {
+                "{{modId}}_frozen_drop_stone_shiny": {
                     "Id": "{{modId}}_frozen_drop_stone_shiny",
                     "ItemId": "(O){{modId}}_item_stone_shiny",
                     "Chance": 0.4,
                     "Precedence": -1000,
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_shiny"
                 },
-                "{{modId}}_frozen_drop_duskstone_drop": {
+                "{{modId}}_frozen_drop_stone_dusk": {
                     "Id": "{{modId}}_frozen_drop_stone_dusk",
                     "ItemId": "(O){{modId}}_item_stone_dusk",
                     "Chance": 0.4,
