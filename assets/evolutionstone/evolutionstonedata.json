@@ -235,7 +235,7 @@
                     "DisplayName": "{{i18n:stone.base.item}}",
                     "Description": "{{i18n:stone.water.item.description}}",
                     "Texture": "evolutionstone/evolutionstones",
-                    "SpriteIndex": "2",
+                    "SpriteIndex": "1",
                     "Type": "Quest",
                     "ContextTags": [
                         "item_{{modId}}_item_stone_water_item"
