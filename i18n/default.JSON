@@ -31,30 +31,39 @@
     "stone.thunder.power": "Thunder stone",
     "stone.thunder.power.description": "Allows you to trigger the evolutions of Pikachu, Magneton, Eevee, Nosepass, Eelektric, Charjabug and Tadbulb.",
 
+    "stone.leaf.event.gunther.return": "Oh! I almost forgot! Here is your leaf stone back.",
+    "stone.leaf.event.gunther.research": "It seems to be a leaf stone and can be used to evolve Poliwhirl, Shellder, Staryu, Eevee, Lombre and Panpour. Isn't that amazing?!",
+    "stone.leaf.event.message": "You got the 'Leaf stone'! It's been added to your wallet. You feel a sense of vitality spreading through your body. You've got a deeper understanding of your Pokémon.",
     "stone.leaf.item.description": "It carries a faint scent of fresh leaves, despite having no trace of plant matter. Maybe Gunther can tell you more.",
     "stone.leaf.power": "Leaf stone",
     "stone.leaf.power.description": "Allows you to trigger the evolutions of Gloom, Weepinbell, Exeggcute, Hisuian Voltorb, Eevee, Nuzleaf and Pansage.",
     
+    "stone.moon.event.message": "You got the 'Moon stone'! It's been added to your wallet. A strange calm settles over you. You've got a deeper understanding of your Pokémon.",
     "stone.moon.item.description": "It seems to shimmer faintly in the dark. Maybe Gunther can tell you more.",
     "stone.moon.power": "Moon stone",
     "stone.moon.power.description": "Allows you to trigger the evolutions of Nidorina, Nidorino, Clefairy, Jigglypuff, Skitty and Munna.",
-
+    
+    "stone.sun.event.message": "You got the 'Sun stone'! It's been added to your wallet. A warm energy fills your body. You've got a deeper understanding of your Pokémon.",
     "stone.sun.item.description": "It feels strangely warm and seems to hold a faint inner glow. Maybe Gunther can tell you more.",
     "stone.sun.power": "Sun stone",
     "stone.sun.power.description": "Allows you to trigger the evolutions of Gloom, Sunkern, Cottonee, Petilil and Helioptile.",
-
+    
+    "stone.shiny.event.message": "You got the 'Shiny stone'! It's been added to your wallet. You feel a strange clarity come over you. You've got a deeper understanding of your Pokémon.",
     "stone.shiny.item.description": "It catches the light in an unusual way, sparkling even when there is little light to reflect. Maybe Gunther can tell you more.",
     "stone.shiny.power": "Shiny",
     "stone.shiny.power.description": "Allows you to trigger the evolutions of Togetic, Roselia, Minccino and Floette.",
-
+    
+    "stone.dusk.event.message": "You got the 'Dusk stone'! It's been added to your wallet. A strange stillness settles over you. You've got a deeper understanding of your Pokémon.",
     "stone.dusk.item.description": "It seems to absorb the light around it, casting an oddly dark shadow. Maybe Gunther can tell you more.",
     "stone.dusk.power": "Dusk stone",
     "stone.dusk.power.description": "Allows you to trigger the evolutions of Murkrow, Misdreavus, Lampent and Doublade.",
-
+    
+    "stone.dawn.event.message": "You got the 'Dawn stone'! It's been added to your wallet. A gentle energy stirs within you. You've got a deeper understanding of your Pokémon.",
     "stone.dawn.item.description": "It gives off a faint, gentle glow that seems almost like morning light. Maybe Gunther can tell you more.",
     "stone.dawn.power": "Dawn stone",
     "stone.dawn.power.description": "Allows you to trigger the evolutions of Kirlia and Snorunt.",
     
+    "stone.ice.event.message": "You got the 'Ice stone'! It's been added to your wallet. A sudden chill runs through your body. You've got a deeper understanding of your Pokémon.",
     "stone.ice.item.description": "It radiates an unnatural cold, yet never seems to melt or frost over. Maybe Gunther can tell you more.",
     "stone.ice.power": "Ice stone",
     "stone.ice.power.description": "Allows you to trigger the evolutions of Alolan Sandshrew, Alolan Vulpix, Eevee, Galarian Duramaka, Crabrawler and Cetoddle.",

@@ -1286,21 +1286,21 @@
                         {
                             "Id": "vaporeon",
                             "AnimalId": "vaporeon",
-                            "Condition": "RANDOM 0.125"
+                            "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received, RANDOM 0.125"
                         },
                         {
                             "Id": "jolteon",
                             "AnimalId": "jolteon",
                             "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received, RANDOM 0.143"
                         },
+						{
+							"Id": "leafeon",
+							"AnimalId": "leafeon",
+							"Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received, RANDOM 0.167"
+						},
                         {
                             "Id": "glaceon",
                             "AnimalId": "glaceon",
-                            "Condition": "RANDOM 0.167"
-                        },
-                        {
-                            "Id": "leafeon",
-                            "AnimalId": "leafeon",
                             "Condition": "RANDOM 0.2"
                         },
                         {
