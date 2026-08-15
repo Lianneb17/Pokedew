@@ -158,6 +158,12 @@
                         ]
                     },
                     {
+                        "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_ice_complete received, RANDOM 0.2",
+                        "AnimalIds": [
+                            "glaceon"
+                        ]
+                    },                    
+                    {
                       "AnimalIds": [
                         "eevee",
                         "espeon",
