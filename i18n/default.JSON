@@ -59,6 +59,8 @@
     "stone.shiny.power": "Shiny",
     "stone.shiny.power.description": "Allows you to trigger the evolutions of Togetic, Roselia, Minccino and Floette.",
     
+    "stone.dusk.event.gunther.return": "Oh! I almost forgot! Here is your dusk stone back.",
+    "stone.dusk.event.gunther.research": "It seems to be a dusk stone and can be used to evolve Murkrow, Misdreavus, Lampent and Doublade. Isn't that amazing?!",
     "stone.dusk.event.message": "You got the 'Dusk stone'! It's been added to your wallet. A strange stillness settles over you. You've got a deeper understanding of your Pokémon.",
     "stone.dusk.item.description": "It seems to absorb the light around it, casting an oddly dark shadow. Maybe Gunther can tell you more.",
     "stone.dusk.power": "Dusk stone",
