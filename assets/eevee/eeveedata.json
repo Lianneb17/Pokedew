@@ -140,7 +140,13 @@
                         ]
                     },
                     {
-                        "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received, RANDOM 0.0125",
+                        "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_water_complete received, RANDOM 0.0125",
+                        "AnimalIds": [
+                            "vaporean"
+                        ]
+                    },
+                    {
+                        "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received, RANDOM 0.0143",
                         "AnimalIds": [
                             "jolteon"
                         ]
@@ -152,7 +158,6 @@
                         "glaceon",
                         "leafeon",
                         "umbreon",
-                        "vaporeon",
                         "sylveon"
                       ]
                     }
