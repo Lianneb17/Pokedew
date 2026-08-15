@@ -66,6 +66,8 @@
     "stone.dusk.power": "Dusk stone",
     "stone.dusk.power.description": "Allows you to trigger the evolutions of Murkrow, Misdreavus, Lampent and Doublade.",
     
+    "stone.dawn.event.gunther.return": "Oh! I almost forgot! Here is your dawn stone back.",
+    "stone.dawn.event.gunther.research": "It seems to be a dawn stone and can be used to evolve Kirlia and Snorunt. Isn't that amazing?!",
     "stone.dawn.event.message": "You got the 'Dawn stone'! It's been added to your wallet. A gentle energy stirs within you. You've got a deeper understanding of your Pokémon.",
     "stone.dawn.item.description": "It gives off a faint, gentle glow that seems almost like morning light. Maybe Gunther can tell you more.",
     "stone.dawn.power": "Dawn stone",
