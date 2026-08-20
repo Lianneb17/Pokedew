@@ -207,6 +207,14 @@
 	{
 		"Action": "Include",
 		"FromFile": "assets/vulpix/vulpixdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/bulbasaur/bulbasaurdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/eggs/eggdata.json"
 	}
 	]
  }

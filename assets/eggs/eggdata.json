@@ -1,0 +1,145 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load images",
+            "Action": "Load",
+            "Target": "eggs/eggs",
+            "FromFile": "assets/eggs/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Egg items",
+            "Action": "EditData",
+            "Target": "data/objects",
+            "Entries": {
+                "{{modId}}_item_egg_all": {
+                    "Name": "{{modId}}_item_egg_all",
+                    "DisplayName": "{{i18n:egg.all.item}}",
+                    "Description": "{{i18n:egg.all.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "300",
+                    "Texture": "eggs/color",
+                    "SpriteIndex": "10",
+                    "Edibility": "30",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_green"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_monster": {
+                    "Name": "{{modId}}_item_egg_group_monster",
+                    "DisplayName": "{{i18n:egg.group.monster.item}}",
+                    "Description": "{{i18n:egg.group.monster.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "0",
+                    "Edibility": "30",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_brown"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_grass": {
+                    "Name": "{{modId}}_item_egg_group_grass",
+                    "DisplayName": "{{i18n:egg.group.grass.item}}",
+                    "Description": "{{i18n:egg.group.grass.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "6",
+                    "ColorOverlayFromNextIndex": "True",
+                    "Edibility": "30",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_green"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                }
+            }
+        },
+        {
+            "LogName": "Fill eggs",
+            "Action": "EditData",
+            "Target": "selph.ExtraAnimalConfig/EggExtensionData",
+            "Entries": {
+                "{{modId}}_item_egg_all": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "{{modId}}_spawn_egg_all_venusaur_female",
+                            "AnimalId": "{{modId}}_pokemon_venusaur_female",
+                            "Condition": "RANDOM 0.0625"
+                        },
+                        {
+                            "Id": "{{modId}}_spawn_egg_all_venusaur_male",
+                            "AnimalId": "{{modId}}_pokemon_venusaur_male",
+                            "Condition": "RANDOM 0.125"
+                        },
+                        {
+                            "Id": "{{modId}}_spawn_egg_all_ivysaur",
+                            "AnimalId": "{{modId}}_pokemon_ivysaur",
+                            "Condition": "RANDOM 0.5"
+                        },
+                        {
+                            "Id": "{{modId}}_spawn_egg_all_bulbasaur",
+                            "AnimalId": "{{modId}}_pokemon_bulbasaur",
+                            "Condition": "RANDOM 1"
+                        }
+                    ]
+                },
+                "{{modId}}_item_egg_group_monster": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "{{modId}}_spawn_egg_group_monster_venusaur_female",
+                            "AnimalId": "{{modId}}_pokemon_venusaur_female",
+                            "Condition": "RANDOM 0.0625"
+                        },
+                        {
+                            "Id": "{{modId}}_spawn_egg_group_monster_venusaur_male",
+                            "AnimalId": "{{modId}}_pokemon_venusaur_male",
+                            "Condition": "RANDOM 0.125"
+                        },
+                        {
+                            "Id": "{{modId}}_spawn_egg_group_monster_ivysaur",
+                            "AnimalId": "{{modId}}_pokemon_ivysaur",
+                            "Condition": "RANDOM 0.5"
+                        },
+                        {
+                            "Id": "{{modId}}_spawn_egg_group_monster_bulbasaur",
+                            "AnimalId": "{{modId}}_pokemon_bulbasaur",
+                            "Condition": "RANDOM 1"
+                        }
+                    ]
+                },
+                "{{modId}}_item_egg_group_grass":{
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "{{modId}}_spawn_egg_group_grass_venusaur_female",
+                            "AnimalId": "{{modId}}_pokemon_venusaur_female",
+                            "Condition": "RANDOM 0.0625"
+                        },
+                        {
+                            "Id": "{{modId}}_spawn_egg_group_grass_venusaur_male",
+                            "AnimalId": "{{modId}}_pokemon_venusaur_male",
+                            "Condition": "RANDOM 0.125"
+                        },
+                        {
+                            "Id": "{{modId}}_spawn_egg_group_grass_ivysaur",
+                            "AnimalId": "{{modId}}_pokemon_ivysaur",
+                            "Condition": "RANDOM 0.5"
+                        },
+                        {
+                            "Id": "{{modId}}_spawn_egg_group_grass_bulbasaur",
+                            "AnimalId": "{{modId}}_pokemon_bulbasaur",
+                            "Condition": "RANDOM 1"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
