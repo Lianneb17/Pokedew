@@ -3,7 +3,7 @@
         {
             "LogName": "Load images",
             "Action": "Load",
-            "Target": "eggs/eggs",
+            "Target": "eggs/group, eggs/color",
             "FromFile": "assets/eggs/{{TargetWithoutPath}}.png"
         },
         {
