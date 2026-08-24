@@ -36,10 +36,90 @@
                     "Price": "500",
                     "Texture": "eggs/group",
                     "SpriteIndex": "0",
-                    "Edibility": "30",
+                    "Edibility": "50",
                     "ContextTags": [
                         "egg_item",
                         "color_brown"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_water1": {
+                    "Name": "{{modId}}_item_egg_group_water1",
+                    "DisplayName": "{{i18n:egg.group.water1.item}}",
+                    "Description": "{{i18n:egg.group.water1.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "1",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_cyan"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_bug": {
+                    "Name": "{{modId}}_item_egg_group_bug",
+                    "DisplayName": "{{i18n:egg.group.bug.item}}",
+                    "Description": "{{i18n:egg.group.bug.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "2",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_yellow_green"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_flying": {
+                    "Name": "{{modId}}_item_egg_group_flying",
+                    "DisplayName": "{{i18n:egg.group.flying.item}}",
+                    "Description": "{{i18n:egg.group.flying.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_light_cyan"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_field": {
+                    "Name": "{{modId}}_item_egg_group_field",
+                    "DisplayName": "{{i18n:egg.group.field.item}}",
+                    "Description": "{{i18n:egg.group.field.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_sand"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_fairy": {
+                    "Name": "{{modId}}_item_egg_group_fairy",
+                    "DisplayName": "{{i18n:egg.group.fairy.item}}",
+                    "Description": "{{i18n:egg.group.fairy.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_pink"
                     ],
                     "ExcludeFromShippingCollection": "True"
                 },
@@ -53,10 +133,154 @@
                     "Texture": "eggs/group",
                     "SpriteIndex": "6",
                     "ColorOverlayFromNextIndex": "True",
-                    "Edibility": "30",
+                    "Edibility": "50",
                     "ContextTags": [
                         "egg_item",
                         "color_green"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_humanlike": {
+                    "Name": "{{modId}}_item_egg_group_humanlike",
+                    "DisplayName": "{{i18n:egg.group.humanlike.item}}",
+                    "Description": "{{i18n:egg.group.humanlike.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_dark_cyan"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_water3": {
+                    "Name": "{{modId}}_item_egg_group_water3",
+                    "DisplayName": "{{i18n:egg.group.water3.item}}",
+                    "Description": "{{i18n:egg.group.water3.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_dark_blue"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_mineral": {
+                    "Name": "{{modId}}_item_egg_group_mineral",
+                    "DisplayName": "{{i18n:egg.group.mineral.item}}",
+                    "Description": "{{i18n:egg.group.mineral.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_gray"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_amorphous": {
+                    "Name": "{{modId}}_item_egg_group_amorphous",
+                    "DisplayName": "{{i18n:egg.group.amorphous.item}}",
+                    "Description": "{{i18n:egg.group.amorphous.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_purple"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_water2": {
+                    "Name": "{{modId}}_item_egg_group_water2",
+                    "DisplayName": "{{i18n:egg.group.water2.item}}",
+                    "Description": "{{i18n:egg.group.water2.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_blue"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_ditto": {
+                    "Name": "{{modId}}_item_egg_group_ditto",
+                    "DisplayName": "{{i18n:egg.group.ditto.item}}",
+                    "Description": "{{i18n:egg.group.ditto.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_dark_purple"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_dragon": {
+                    "Name": "{{modId}}_item_egg_group_dragon",
+                    "DisplayName": "{{i18n:egg.group.dragon.item}}",
+                    "Description": "{{i18n:egg.group.dragon.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_poppyseed"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_noeggsdiscovered": {
+                    "Name": "{{modId}}_item_egg_group_noeggsdiscovered",
+                    "DisplayName": "{{i18n:egg.group.noeggsdiscovered.item}}",
+                    "Description": "{{i18n:egg.group.noeggsdiscovered.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_yellow"
+                    ],
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_item_egg_group_unknowngender": {
+                    "Name": "{{modId}}_item_egg_group_unknowngender",
+                    "DisplayName": "{{i18n:egg.group.unknowngender.item}}",
+                    "Description": "{{i18n:egg.group.unknowngender.item.description}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/group",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_blue"
                     ],
                     "ExcludeFromShippingCollection": "True"
                 }
@@ -115,6 +339,26 @@
                         }
                     ]
                 },
+                "{{modId}}_item_egg_group_water1": {
+                    "AnimalSpawnList": [
+                    ]
+                },
+                "{{modId}}_item_egg_group_bug": {
+                    "AnimalSpawnList": [
+                    ]
+                },
+                "{{modId}}_item_egg_group_flying": {
+                    "AnimalSpawnList": [
+                    ]
+                },
+                "{{modId}}_item_egg_group_field": {
+                    "AnimalSpawnList": [
+                    ]
+                },
+                "{{modId}}_item_egg_group_fairy": {
+                    "AnimalSpawnList": [
+                    ]
+                },
                 "{{modId}}_item_egg_group_grass":{
                     "AnimalSpawnList": [
                         {
@@ -137,6 +381,34 @@
                             "AnimalId": "{{modId}}_pokemon_bulbasaur",
                             "Condition": "RANDOM 1"
                         }
+                    ]
+                },
+                "{{modId}}_item_egg_group_humanlike": {
+                    "AnimalSpawnList": [
+                    ]
+                },"{{modId}}_item_egg_group_water3": {
+                    "AnimalSpawnList": [
+                    ]
+                },"{{modId}}_item_egg_group_mineral": {
+                    "AnimalSpawnList": [
+                    ]
+                },"{{modId}}_item_egg_group_amorphous": {
+                    "AnimalSpawnList": [
+                    ]
+                },"{{modId}}_item_egg_group_water2": {
+                    "AnimalSpawnList": [
+                    ]
+                },"{{modId}}_item_egg_group_ditto": {
+                    "AnimalSpawnList": [
+                    ]
+                },"{{modId}}_item_egg_group_dragon": {
+                    "AnimalSpawnList": [
+                    ]
+                },"{{modId}}_item_egg_group_noeggsdiscovered": {
+                    "AnimalSpawnList": [
+                    ]
+                },"{{modId}}_item_egg_group_unknowngender": {
+                    "AnimalSpawnList": [
                     ]
                 }
             }
