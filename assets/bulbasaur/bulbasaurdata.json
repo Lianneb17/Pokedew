@@ -55,31 +55,25 @@
           "ShopMissingBuildingDescription": "{{i18n:pokemon.all.shop.missing}}",
           "AlternatePurchaseTypes": [
             {
+              "ID": "{{modId}}_pokemon_purchase_bulbasaur_DeluxePokeBarn",
               "AnimalIDs": [
+                "{{modId}}_pokemon_venusaur_male",
                 "{{modId}}_pokemon_venusaur_female"
               ],
-              "Condition": "BUILDINGS_CONSTRUCTED All \"DeluxePokeBarn\", RANDOM 0,250",
-              "ID": "{{modId}}_pokemon_purchase_venusaur_female"
+              "Condition": "BUILDINGS_CONSTRUCTED All \"DeluxePokeBarn\", RANDOM 0,333"
             },
             {
-              "AnimalIDs": [
-                "{{modId}}_pokemon_venusaur_male"
-              ],
-              "Condition": "BUILDINGS_CONSTRUCTED All \"DeluxePokeBarn\", RANDOM 0,333",
-              "ID": "{{modId}}_pokemon_purchase_venusaur_male"
-            },
-            {
+              "ID": "{{modId}}_pokemon_purchase_bulbasaur_BigPokeBarn",
               "AnimalIDs": [
                 "{{modId}}_pokemon_ivysaur"
               ],
-              "Condition": "BUILDINGS_CONSTRUCTED All \"BigPokeBarn\", RANDOM 0,500",
-              "ID": "{{modId}}_pokemon_purchase_ivysaur"
+              "Condition": "BUILDINGS_CONSTRUCTED All \"BigPokeBarn\", RANDOM 0,500"
             },
             {
+              "ID": "{{modId}}_pokemon_purchase_bulbasaur_PokeBarn",
               "AnimalIDs": [
                 "{{modId}}_pokemon_bulbasaur"
-              ],
-              "ID": "{{modId}}_pokemon_purchase_bulbasaur"
+              ]
             }
           ],
           "EggItemIds": [
@@ -89,7 +83,7 @@
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
-          "DaysToMature": "7",
+          "DaysToMature": "8",
           "CanGetPregnant": "False",
           "ProduceItemIds": [
             {
@@ -128,7 +122,7 @@
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
-          "DaysToMature": "7",
+          "DaysToMature": "8",
           "CanGetPregnant": "False",
           "ProduceItemIds": [
             {
@@ -167,7 +161,7 @@
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
-          "DaysToMature": "7",
+          "DaysToMature": "8",
           "CanGetPregnant": "False",
           "ProduceItemIds": [
             {
@@ -206,7 +200,7 @@
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
-          "DaysToMature": "7",
+          "DaysToMature": "8",
           "CanGetPregnant": "False",
           "ProduceItemIds": [
             {
@@ -242,7 +236,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_item_egg_bulbasaur": {
-          "Name": "{{modId}}_item_egg_bulbasaur",
+          "Name": "{{modId}_item_egg_bulbasaur",
           "DisplayName": "{{i18n:egg.bulbasaur.item}}",
           "Description": "{{i18n:egg.bulbasaur.item.description}}",
           "Type": "Basic",
@@ -308,14 +302,14 @@
           "TextureOverrides": [
             {
               "Id": "{{modId}}_pokemon_texture_venusaur_male",
-              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
-              "TextureToUse": "bulbasaur/1"
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
+              "TextureToUse": "bulbasaur/ivysaur"
             },
             {
               "Id": "{{modId}}_pokemon_texture_venusaur_male_shiny",
               "Skin": "{{modId}}_pokemon_venusaur_male_shiny",
-              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
-              "TextureToUse": "bulbasaur/1s"
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
+              "TextureToUse": "bulbasaur/ivysaurs"
             }
           ],
           "IgnoreRain": "True",
@@ -325,14 +319,14 @@
           "TextureOverrides": [
             {
               "Id": "{{modId}}_pokemon_texture_venusaur_female",
-              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
-              "TextureToUse": "bulbasaur/1"
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
+              "TextureToUse": "bulbasaur/ivysaur"
             },
             {
               "Id": "{{modId}}_pokemon_texture_venusaur_female_shiny",
               "Skin": "{{modId}}_pokemon_venusaur_female_shiny",
-              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
-              "TextureToUse": "bulbasaur/1s"
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
+              "TextureToUse": "bulbasaur/ivysaurs"
             }
           ],
           "IgnoreRain": "True",
