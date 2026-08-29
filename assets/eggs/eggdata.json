@@ -292,24 +292,54 @@
         "{{modId}}_item_egg_all": {
           "AnimalSpawnList": [
             {
+              "Id": "{{modId}}_spawn_egg_all_charizard",
+              "AnimalId": "{{modId}}_pokemon_charizard",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.091"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_charmeleon",
+              "AnimalId": "{{modId}}_pokemon_charmeleon",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.100"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_charmander",
+              "AnimalId": "{{modId}}_pokemon_charmander",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.111"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_blastoise",
+              "AnimalId": "{{modId}}_pokemon_blastoise",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.125"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_wartortle",
+              "AnimalId": "{{modId}}_pokemon_wartortle",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.143"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_squirtle",
+              "AnimalId": "{{modId}}_pokemon_squirtle",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.167"
+            },
+            {
               "Id": "{{modId}}_spawn_egg_all_venusaur_female",
               "AnimalId": "{{modId}}_pokemon_venusaur_female",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.200"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_spawn_egg_all_venusaur_male",
               "AnimalId": "{{modId}}_pokemon_venusaur_male",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.250"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_spawn_egg_all_ivysaur",
               "AnimalId": "{{modId}}_pokemon_ivysaur",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.333"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_spawn_egg_all_bulbasaur",
               "AnimalId": "{{modId}}_pokemon_bulbasaur",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.500"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_all_default",
@@ -320,24 +350,54 @@
         "{{modId}}_item_egg_group_monster": {
           "AnimalSpawnList": [
             {
+              "Id": "{{modId}}_spawn_egg_monster_charizard",
+              "AnimalId": "{{modId}}_pokemon_charizard",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.091"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_monster_charmeleon",
+              "AnimalId": "{{modId}}_pokemon_charmeleon",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.100"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_monster_charmander",
+              "AnimalId": "{{modId}}_pokemon_charmander",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.111"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_monster_blastoise",
+              "AnimalId": "{{modId}}_pokemon_blastoise",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.125"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_monster_wartortle",
+              "AnimalId": "{{modId}}_pokemon_wartortle",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.143"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_monster_squirtle",
+              "AnimalId": "{{modId}}_pokemon_squirtle",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.167"
+            },
+            {
               "Id": "{{modId}}_spawn_egg_monster_venusaur_female",
               "AnimalId": "{{modId}}_pokemon_venusaur_female",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.200"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_spawn_egg_monster_venusaur_male",
               "AnimalId": "{{modId}}_pokemon_venusaur_male",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.250"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_spawn_egg_monster_ivysaur",
               "AnimalId": "{{modId}}_pokemon_ivysaur",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.333"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_spawn_egg_monster_bulbasaur",
               "AnimalId": "{{modId}}_pokemon_bulbasaur",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.500"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_monster_default",
@@ -347,6 +407,21 @@
         },
         "{{modId}}_item_egg_group_water1": {
           "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_spawn_egg_water1_blastoise",
+              "AnimalId": "{{modId}}_pokemon_blastoise",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.250"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_water1_wartortle",
+              "AnimalId": "{{modId}}_pokemon_wartortle",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.333"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_water1_squirtle",
+              "AnimalId": "{{modId}}_pokemon_squirtle",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.500"
+            },
             {
               "Id": "{{modId}}_spawn_egg_group_water1_default",
               "AnimalId": "Golden Chicken"
@@ -390,22 +465,22 @@
             {
               "Id": "{{modId}}_spawn_egg_grass_venusaur_female",
               "AnimalId": "{{modId}}_pokemon_venusaur_female",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.200"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_spawn_egg_grass_venusaur_male",
               "AnimalId": "{{modId}}_pokemon_venusaur_male",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.250"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_spawn_egg_grass_ivysaur",
               "AnimalId": "{{modId}}_pokemon_ivysaur",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.333"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_spawn_egg_grass_bulbasaur",
               "AnimalId": "{{modId}}_pokemon_bulbasaur",
-              "Condition": "PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.500"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_grass_default",
@@ -463,6 +538,21 @@
         },
         "{{modId}}_item_egg_group_dragon": {
           "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_spawn_egg_dragon_charizard",
+              "AnimalId": "{{modId}}_pokemon_charizard",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.250"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_dragon_charmeleon",
+              "AnimalId": "{{modId}}_pokemon_charmeleon",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.333"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_dragon_charmander",
+              "AnimalId": "{{modId}}_pokemon_charmander",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1,  RANDOM 0.500"
+            },
             {
               "Id": "{{modId}}_spawn_egg_group_dragon_default",
               "AnimalId": "Golden Chicken"

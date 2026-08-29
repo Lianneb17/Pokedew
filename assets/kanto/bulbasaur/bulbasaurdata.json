@@ -2,7 +2,7 @@
   "Changes": [
     {
       "Action": "Load",
-      "FromFile": "assets/bulbasaur/{{TargetWithoutPath}}.png",
+      "FromFile": "assets/kanto/bulbasaur/{{TargetWithoutPath}}.png",
       "LogName": "Load images",
       "Target": "bulbasaur/shopicon, bulbasaur/bulbasaur, bulbasaur/bulbasaurs, bulbasaur/ivysaur, bulbasaur/ivysaurs, bulbasaur/venusaur_male, bulbasaur/venusaur_males, bulbasaur/venusaur_female, bulbasaur/venusaur_females"
     },
@@ -12,28 +12,28 @@
         "{{modId}}_sound_bulbasaur": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/bulbasaur/bulbasaur.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/bulbasaur/bulbasaur.wav}}"
           ],
           "ID": "{{modId}}_sound_bulbasaur"
         },
         "{{modId}}_sound_ivysaur": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/bulbasaur/ivysaur.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/bulbasaur/ivysaur.wav}}"
           ],
           "ID": "{{modId}}_sound_ivysaur"
         },
         "{{modId}}_sound_venusaur_male": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/bulbasaur/venusaur_male.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/bulbasaur/venusaur_male.wav}}"
           ],
           "ID": "{{modId}}_sound_venusaur_male"
         },
         "{{modId}}_sound_venusaur_female": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/bulbasaur/venusaur_female.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/bulbasaur/venusaur_female.wav}}"
           ],
           "ID": "{{modId}}_sound_venusaur_female"
         }
@@ -51,6 +51,7 @@
           "PurchasePrice": "2500",
           "ShopTexture": "bulbasaur/shopicon",
           "RequiredBuilding": "PokeBarn",
+          "UnlockCondition": "{{Kanto active}}",
           "ShopDescription": "{{i18n:pokemon.bulbasaur.shop}}",
           "ShopMissingBuildingDescription": "{{i18n:pokemon.all.shop.missing}}",
           "AlternatePurchaseTypes": [

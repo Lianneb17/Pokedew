@@ -1,5 +1,5 @@
 {
-	"Format": "2.2.0",
+	"Format": "1.0.0",
 	"ConfigSchema": {
 		"Kanto active": {
 			"Default": "true",
@@ -20,11 +20,19 @@
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/gen1/bulbasaur/bulbasaurdata.json"
+		"FromFile": "assets/eggs/eggdata.json"
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/eggs/eggdata.json"
+		"FromFile": "assets/kanto/bulbasaur/bulbasaurdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/squirtle/squirtledata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/squirtle/charmanderdata.json"
 	}
 	]
  }
