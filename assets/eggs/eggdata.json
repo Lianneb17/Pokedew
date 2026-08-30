@@ -292,6 +292,26 @@
         "{{modId}}_item_egg_all": {
           "AnimalSpawnList": [
             {
+              "Id": "{{modId}}_spawn_egg_all_butterfree_female",
+              "AnimalId": "{{modId}}_pokemon_butterfree_female",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.067"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_butterfree_male",
+              "AnimalId": "{{modId}}_pokemon_butterfree_male",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.071"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_metapod",
+              "AnimalId": "{{modId}}_pokemon_metapod",
+              "Condition": "{{Kanto active}},  RANDOM 0.077"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_caterpie",
+              "AnimalId": "{{modId}}_pokemon_caterpie",
+              "Condition": "{{Kanto active}},  RANDOM 0.083"
+            },
+            {
               "Id": "{{modId}}_spawn_egg_all_charizard",
               "AnimalId": "{{modId}}_pokemon_charizard",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.091"
@@ -430,6 +450,26 @@
         },
         "{{modId}}_item_egg_group_bug": {
           "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_spawn_egg_bug_butterfree_female",
+              "AnimalId": "{{modId}}_pokemon_butterfree_female",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.200"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_bug_butterfree_male",
+              "AnimalId": "{{modId}}_pokemon_butterfree_male",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.250"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_bug_metapod",
+              "AnimalId": "{{modId}}_pokemon_metapod",
+              "Condition": "{{Kanto active}},  RANDOM 0.333"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_bug_caterpie",
+              "AnimalId": "{{modId}}_pokemon_caterpie",
+              "Condition": "{{Kanto active}},  RANDOM 0.500"
+            },
             {
               "Id": "{{modId}}_spawn_egg_group_bug_default",
               "AnimalId": "Golden Chicken"
