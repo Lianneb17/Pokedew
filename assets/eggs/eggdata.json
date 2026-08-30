@@ -292,6 +292,21 @@
         "{{modId}}_item_egg_all": {
           "AnimalSpawnList": [
             {
+              "Id": "{{modId}}_spawn_egg_all_pidgeot",
+              "AnimalId": "{{modId}}_pokemon_pidgeot",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 6,  RANDOM 0.048"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_pidgeotto",
+              "AnimalId": "{{modId}}_pokemon_pidgeotto",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 2,  RANDOM 0.050"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_pidgey",
+              "AnimalId": "{{modId}}_pokemon_pidgey",
+              "Condition": "{{Kanto active}},  RANDOM 0.053"
+            },
+            {
               "Id": "{{modId}}_spawn_egg_all_beedrill",
               "AnimalId": "{{modId}}_pokemon_beedrill",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.056"
@@ -508,6 +523,21 @@
         },
         "{{modId}}_item_egg_group_flying": {
           "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_spawn_egg_flying_pidgeot",
+              "AnimalId": "{{modId}}_pokemon_pidgeot",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 6,  RANDOM 0.250"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_flying_pidgeotto",
+              "AnimalId": "{{modId}}_pokemon_pidgeotto",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 2,  RANDOM 0.333"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_flying_pidgey",
+              "AnimalId": "{{modId}}_pokemon_pidgey",
+              "Condition": "{{Kanto active}},  RANDOM 0.500"
+            },
             {
               "Id": "{{modId}}_spawn_egg_group_flying_default",
               "AnimalId": "Golden Chicken"

@@ -42,6 +42,9 @@
 		"Action": "Include",
 		"FromFile": "assets/kanto/weedle/weedledata.json"
 	},
-
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/pidgey/pidgetdata.json"
+	}
 	]
  }
