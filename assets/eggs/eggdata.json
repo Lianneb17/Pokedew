@@ -292,6 +292,21 @@
         "{{modId}}_item_egg_all": {
           "AnimalSpawnList": [
             {
+              "Id": "{{modId}}_spawn_egg_all_beedrill",
+              "AnimalId": "{{modId}}_pokemon_beedrill",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.056"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_kakuna",
+              "AnimalId": "{{modId}}_pokemon_kakuna",
+              "Condition": "{{Kanto active}},  RANDOM 0.059"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_weedle",
+              "AnimalId": "{{modId}}_pokemon_weedle",
+              "Condition": "{{Kanto active}},  RANDOM 0.062"
+            },
+            {
               "Id": "{{modId}}_spawn_egg_all_butterfree_female",
               "AnimalId": "{{modId}}_pokemon_butterfree_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.067"
@@ -450,6 +465,21 @@
         },
         "{{modId}}_item_egg_group_bug": {
           "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_spawn_egg_bug_beedrill",
+              "AnimalId": "{{modId}}_pokemon_beedrill",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.125"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_bug_kakuna",
+              "AnimalId": "{{modId}}_pokemon_kakuna",
+              "Condition": "{{Kanto active}},  RANDOM 0.143"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_bug_weedle",
+              "AnimalId": "{{modId}}_pokemon_weedle",
+              "Condition": "{{Kanto active}},  RANDOM 0.167"
+            },
             {
               "Id": "{{modId}}_spawn_egg_bug_butterfree_female",
               "AnimalId": "{{modId}}_pokemon_butterfree_female",

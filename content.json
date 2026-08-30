@@ -33,6 +33,15 @@
 	{
 		"Action": "Include",
 		"FromFile": "assets/kanto/squirtle/charmanderdata.json"
-	}
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/caterpie/caterpiedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/weedle/weedledata.json"
+	},
+
 	]
  }

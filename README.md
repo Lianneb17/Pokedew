@@ -9,7 +9,7 @@ Only starters will be available at Marnie's. All other Pokémons you need to sea
 
 # Currently working on
 Adding the first generation
-Progress 12/151
+Progress 15/151
 
 # In the future
 Add swimming sprites
