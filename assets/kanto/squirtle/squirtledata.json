@@ -88,8 +88,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_squirtle",
           "Texture": "squirtle/squirtle",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "30",
+          "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_squirtle_shiny",
@@ -127,8 +127,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_wartortle",
           "Texture": "wartortle/wartortle",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "30",
+          "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_wartortle_shiny",
@@ -166,8 +166,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_blastoise",
           "Texture": "blastoise/blastoise",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "30",
+          "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_blastoise_shiny",

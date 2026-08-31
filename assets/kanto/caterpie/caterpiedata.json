@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_caterpie",
           "Texture": "caterpie/caterpie",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "30",
+          "SpriteHeight": "27",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_caterpie_shiny",
@@ -96,8 +96,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_metapod",
           "Texture": "metapod/metapod",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "30",
+          "SpriteHeight": "27",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_metapod_shiny",
@@ -140,8 +140,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_butterfree",
           "Texture": "butterfree_male/butterfree_male",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "30",
+          "SpriteHeight": "27",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_butterfree_male_shiny",
@@ -184,8 +184,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_butterfree",
           "Texture": "butterfree_female/butterfree_female",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "30",
+          "SpriteHeight": "27",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_butterfree_female_shiny",

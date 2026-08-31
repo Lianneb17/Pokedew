@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_weedle",
           "Texture": "weedle/weedle",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "29",
+          "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_weedle_shiny",
@@ -96,8 +96,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kakuna",
           "Texture": "kakuna/kakuna",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "29",
+          "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_kakuna_shiny",
@@ -134,8 +134,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_beedrill",
           "Texture": "beedrill/beedrill",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "29",
+          "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_beedrill_shiny",

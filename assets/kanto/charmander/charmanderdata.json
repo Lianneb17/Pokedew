@@ -88,8 +88,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_charmander",
           "Texture": "charmander/charmander",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "42",
+          "SpriteHeight": "30",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_charmander_shiny",
@@ -127,8 +127,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_charmeleon",
           "Texture": "charmeleon/charmeleon",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "42",
+          "SpriteHeight": "30",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_charmeleon_shiny",
@@ -172,8 +172,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_charizard",
           "Texture": "charizard/charizard",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "42",
+          "SpriteHeight": "30",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_charizard_shiny",

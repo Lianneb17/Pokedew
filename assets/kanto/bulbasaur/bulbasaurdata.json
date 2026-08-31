@@ -96,8 +96,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_bulbasaur",
           "Texture": "bulbasaur/bulbasaur",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "29",
+          "SpriteHeight": "28",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_bulbasaur_shiny",
@@ -135,8 +135,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_ivysaur",
           "Texture": "ivysaur/ivysaur",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "29",
+          "SpriteHeight": "28",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_ivysaur_shiny",
@@ -174,8 +174,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_venusaur_male",
           "Texture": "venusaur_male/venusaur_male",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "29",
+          "SpriteHeight": "28",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_venusaur_male_shiny",
@@ -213,8 +213,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_venusaur_female",
           "Texture": "venusaur_female/venusaur_female",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "29",
+          "SpriteHeight": "28",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_venusaur_female_shiny",

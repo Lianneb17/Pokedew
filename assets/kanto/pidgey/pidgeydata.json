@@ -65,8 +65,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pidgey",
           "Texture": "pidgey/pidgey",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "31",
+          "SpriteHeight": "25",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_pidgey_shiny",
@@ -108,8 +108,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pidgeotto",
           "Texture": "pidgeotto/pidgeotto",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "31",
+          "SpriteHeight": "25",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_pidgeotto_shiny",
@@ -152,8 +152,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pidgeot",
           "Texture": "pidgeot/pidgeot",
-          "SpriteWidth": "888",
-          "SpriteHeight": "999",
+          "SpriteWidth": "31",
+          "SpriteHeight": "25",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_pidgeot_shiny",
