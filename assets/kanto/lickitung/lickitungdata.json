@@ -1,0 +1,158 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/lickitung/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "lickitung/lickitung, lickitung/lickitungs, lickitung/lickilicky, lickitung/lickilickys"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_lickitung": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/lickitung/lickitung.wav}}"
+          ],
+          "ID": "{{modId}}_sound_lickitung"
+        },
+        "{{modId}}_sound_lickilicky": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/lickitung/lickilicky.wav}}"
+          ],
+          "ID": "{{modId}}_sound_lickilicky"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_lickitung": {
+          "DisplayName": "{{i18n:pokemon.lickitung}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_lickitung",
+            "{{modId}}_item_egg_group_monster"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_lickitung",
+              "ItemID": "{{modId}}_item_egg_lickitung"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_lickitung",
+          "Texture": "lickitung/lickitung",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_lickitung_shiny",
+              "Weight": "0.1",
+              "Texture": "lickitung/lickitungs"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_lickitung"
+        },
+        "{{modId}}_pokemon_lickilicky": {
+          "DisplayName": "{{i18n:pokemon.lickilicky}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_lickitung",
+            "{{modId}}_item_egg_group_monster"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_lickilicky",
+              "ItemID": "{{modId}}_item_egg_lickitung"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_lickilicky",
+          "Texture": "lickilicky/lickilicky",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_lickilicky_shiny",
+              "Weight": "0.1",
+              "Texture": "lickitung/lickilickys",
+              "BabyTexture": "lickitung/lickitung"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_lickilicky"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_lickitung": {
+          "Name": "{{modId}_item_egg_lickitung",
+          "DisplayName": "{{i18n:egg.lickitung.item}}",
+          "Description": "{{i18n:egg.lickitung.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "9",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_pink"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_lickitung"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_lickitung": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_lickilicky",
+              "AnimalId": "{{modId}}_pokemon_lickilicky",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_lickitung",
+              "AnimalId": "{{modId}}_pokemon_lickitung"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_lickitung"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

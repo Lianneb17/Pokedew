@@ -1,0 +1,268 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/doduo/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "doduo/doduo, doduo/doduos, doduo/doduo_female, doduo/doduo_females, doduo/dodrio_male, doduo/dodrio_males, doduo/dodrio_female, doduo/dodrio_females"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_doduo": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/doduo/doduo.wav}}"
+          ],
+          "ID": "{{modId}}_sound_doduo"
+        },
+        "{{modId}}_sound_dodrio": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/doduo/dodrio.wav}}"
+          ],
+          "ID": "{{modId}}_sound_dodrio"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_doduo_male": {
+          "DisplayName": "{{i18n:pokemon.doduo_male}}",
+          "House": "PokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_doduo",
+            "{{modId}}_item_egg_group_flying"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_doduo_male",
+              "ItemID": "{{modId}}_item_egg_doduo"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_doduo_male",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_doduo",
+          "Texture": "doduo/doduo",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_doduo_male_shiny",
+              "Weight": "0.1",
+              "Texture": "doduo/doduo_males"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_doduo_male"
+        },
+        "{{modId}}_pokemon_doduo_female": {
+          "DisplayName": "{{i18n:pokemon.doduo_female}}",
+          "House": "PokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_doduo",
+            "{{modId}}_item_egg_group_flying"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_doduo_female",
+              "ItemID": "{{modId}}_item_egg_doduo"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_doduo_female",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_doduo_female",
+          "Texture": "doduo/doduo_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_doduo_female_shiny",
+              "Weight": "0.1",
+              "Texture": "doduo/doduo_females",
+              "BabyTexture": "doduo/doduo"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_doduo_female"
+        },
+        "{{modId}}_pokemon_dodrio_male": {
+          "DisplayName": "{{i18n:pokemon.dodrio_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_doduo",
+            "{{modId}}_item_egg_group_flying"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_dodrio_male",
+              "ItemID": "{{modId}}_item_egg_doduo"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_dodrio_male",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_dodrio_male",
+          "Texture": "dodùo/dodrio_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_dodrio_male_shiny",
+              "Weight": "0.1",
+              "Texture": "doduo/dodrio_males",
+              "BabyTexture": "doduo/doduo"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_dodrio_male"
+        },
+        "{{modId}}_pokemon_dodrio_female": {
+          "DisplayName": "{{i18n:pokemon.dodrio_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_doduo",
+            "{{modId}}_item_egg_group_flying"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_dodrio_female",
+              "ItemID": "{{modId}}_item_egg_doduo"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_dodrio_female",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_dodrio_female",
+          "Texture": "doduo/dodrio_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_dodrio_female_shiny",
+              "Weight": "0.1",
+              "Texture": "doduo/dodrio_females",
+              "BabyTexture": "doduo/doduo"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_dodrio_female"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_doduo": {
+          "Name": "{{modId}_item_egg_doduo",
+          "DisplayName": "{{i18n:egg.doduo.item}}",
+          "Description": "{{i18n:egg.doduo.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "5",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_brown"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_doduo"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_doduo": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_dodrio_female",
+              "AnimalId": "{{modId}}_pokemon_dodrio_female",
+              "Condition": "RANDOM 0,125"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_dodrio_male",
+              "AnimalId": "{{modId}}_pokemon_dodrio_male",
+              "Condition": "RANDOM 0,167"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_doduo_female",
+              "AnimalId": "{{modId}}_pokemon_doduo_female",
+              "Condition": "RANDOM 0,250"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_doduo",
+              "AnimalId": "{{modId}}_pokemon_doduo"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_doduo"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

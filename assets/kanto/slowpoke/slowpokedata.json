@@ -1,0 +1,383 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/slowpoke/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "slowpoke/slowpoke, slowpoke/slowpokes, slowpoke/slowpoke_galar, slowpoke/slowpoke_galars, slowpoke/slowbro, slowpoke/slowbros, slowpoke/slowbro_galar, slowpoke/slowbro_galars, slowpoke/slowking, slowpoke/slowkings, slowpoke/slowking_galar, slowpoke/slowking_galars"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_slowpoke": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/slowpoke/slowpoke.wav}}"
+          ],
+          "ID": "{{modId}}_sound_slowpoke"
+        },
+        "{{modId}}_sound_slowpoke_galar": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/slowpoke/slowpoke_galar.wav}}"
+          ],
+          "ID": "{{modId}}_sound_slowpoke_galar"
+        },
+        "{{modId}}_sound_slowbro": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/slowpoke/slowbro.wav}}"
+          ],
+          "ID": "{{modId}}_sound_slowbro"
+        },
+        "{{modId}}_sound_slowbro_galar": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/slowpoke/slowbro_galar.wav}}"
+          ],
+          "ID": "{{modId}}_sound_slowbro_galar"
+        },
+        "{{modId}}_sound_slowking": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/slowpoke/slowking.wav}}"
+          ],
+          "ID": "{{modId}}_sound_slowking"
+        },
+        "{{modId}}_sound_slowking_galar": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/slowpoke/slowking_galar.wav}}"
+          ],
+          "ID": "{{modId}}_sound_slowking_galar"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_slowpoke": {
+          "DisplayName": "{{i18n:pokemon.slowpoke}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_slowpoke",
+            "{{modId}}_item_egg_group_monster",
+            "{{modId}}_item_egg_group_water1"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_slowpoke",
+              "ItemID": "{{modId}}_item_egg_slowpoke"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_slowpoke",
+          "Texture": "slowpoke/slowpoke",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_slowpoke_shiny",
+              "Weight": "0.1",
+              "Texture": "slowpoke/slowpokes"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_slowpoke"
+        },
+        "{{modId}}_pokemon_slowpoke_galar": {
+          "DisplayName": "{{i18n:pokemon.slowpoke_galar}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_slowpoke",
+            "{{modId}}_item_egg_group_monster",
+            "{{modId}}_item_egg_group_water1"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_slowpoke_galar",
+              "ItemID": "{{modId}}_item_egg_slowpoke"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_slowpoke_galar",
+          "Texture": "slowpoke_galar/slowpoke_galar",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_slowpoke_galar_shiny",
+              "Weight": "0.1",
+              "Texture": "slowpoke/slowpoke_galars",
+              "BabyTexture": "slowpoke/slowpoke"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_slowpoke_galar"
+        },
+        "{{modId}}_pokemon_slowbro": {
+          "DisplayName": "{{i18n:pokemon.slowbro}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_slowpoke",
+            "{{modId}}_item_egg_group_monster",
+            "{{modId}}_item_egg_group_water1"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_slowbro",
+              "ItemID": "{{modId}}_item_egg_slowpoke"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_slowbro",
+          "Texture": "slowbro/slowbro",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_slowbro_shiny",
+              "Weight": "0.1",
+              "Texture": "slowpoke/slowbros",
+              "BabyTexture": "slowpoke/slowpoke"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_slowbro"
+        },
+        "{{modId}}_pokemon_slowbro_galar": {
+          "DisplayName": "{{i18n:pokemon.slowbro_galar}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_slowpoke",
+            "{{modId}}_item_egg_group_monster",
+            "{{modId}}_item_egg_group_water1"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_slowbro_galar",
+              "ItemID": "{{modId}}_item_egg_slowpoke"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_slowbro_galar",
+          "Texture": "slowbro_galar/slowbro_galar",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_slowbro_galar_shiny",
+              "Weight": "0.1",
+              "Texture": "slowpoke/slowbro_galars",
+              "BabyTexture": "slowpoke/slowpoke"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_slowbro_galar"
+        },
+        "{{modId}}_pokemon_slowking": {
+          "DisplayName": "{{i18n:pokemon.slowking}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_slowpoke",
+            "{{modId}}_item_egg_group_monster",
+            "{{modId}}_item_egg_group_water1"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_slowking",
+              "ItemID": "{{modId}}_item_egg_slowpoke"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_slowking",
+          "Texture": "slowking/slowking",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_slowking_shiny",
+              "Weight": "0.1",
+              "Texture": "slowpoke/slowkings",
+              "BabyTexture": "slowpoke/slowpoke"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_slowking"
+        },
+        "{{modId}}_pokemon_slowking_galar": {
+          "DisplayName": "{{i18n:pokemon.slowking_galar}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_slowpoke",
+            "{{modId}}_item_egg_group_monster",
+            "{{modId}}_item_egg_group_water1"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_slowking_galar",
+              "ItemID": "{{modId}}_item_egg_slowpoke"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_slowking_galar",
+          "Texture": "slowking_galar/slowking_galar",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_slowking_galar_shiny",
+              "Weight": "0.1",
+              "Texture": "slowpoke/slowking_galars",
+              "BabyTexture": "slowpoke/slowpoke"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_slowking_galar"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_slowpoke": {
+          "Name": "{{modId}_item_egg_slowpoke",
+          "DisplayName": "{{i18n:egg.slowpoke.item}}",
+          "Description": "{{i18n:egg.slowpoke.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "9",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_pink"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_slowpoke"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_slowpoke": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_slowking_galar",
+              "AnimalId": "{{modId}}_pokemon_slowking_galar",
+              "Condition": "RANDOM 0,167"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_slowking",
+              "AnimalId": "{{modId}}_pokemon_slowking",
+              "Condition": "RANDOM 0,200"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_slowbro_galar",
+              "AnimalId": "{{modId}}_pokemon_slowbro_galar",
+              "Condition": "RANDOM 0,250"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_slowbro",
+              "AnimalId": "{{modId}}_pokemon_slowbro",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_slowpoke_galar",
+              "AnimalId": "{{modId}}_pokemon_slowpoke_galar",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_slowpoke",
+              "AnimalId": "{{modId}}_pokemon_slowpoke"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_slowpoke"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_slowpoke": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_slowpoke"
+        },
+        "{{modId}}_pokemon_slowbro": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_slowbro"
+        },
+        "{{modId}}_pokemon_slowking": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_slowking"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

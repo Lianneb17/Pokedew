@@ -1,0 +1,176 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/seel/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "seel/seel, seel/seels, seel/dewgong, seel/dewgongs"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_seel": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/seel/seel.wav}}"
+          ],
+          "ID": "{{modId}}_sound_seel"
+        },
+        "{{modId}}_sound_dewgong": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/seel/dewgong.wav}}"
+          ],
+          "ID": "{{modId}}_sound_dewgong"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_seel": {
+          "DisplayName": "{{i18n:pokemon.seel}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_seel",
+            "{{modId}}_item_egg_group_water1",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_seel",
+              "ItemID": "{{modId}}_item_egg_seel"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_seel",
+          "Texture": "seel/seel",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_seel_shiny",
+              "Weight": "0.1",
+              "Texture": "seel/seels"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_seel"
+        },
+        "{{modId}}_pokemon_dewgong": {
+          "DisplayName": "{{i18n:pokemon.dewgong}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_seel",
+            "{{modId}}_item_egg_group_water1",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_dewgong",
+              "ItemID": "{{modId}}_item_egg_seel"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_dewgong",
+          "Texture": "dewgong/dewgong",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_dewgong_shiny",
+              "Weight": "0.1",
+              "Texture": "seel/dewgongs",
+              "BabyTexture": "seel/seel"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_dewgong"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_seel": {
+          "Name": "{{modId}_item_egg_seel",
+          "DisplayName": "{{i18n:egg.seel.item}}",
+          "Description": "{{i18n:egg.seel.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "8",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_white"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_seel"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_seel": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_dewgong",
+              "AnimalId": "{{modId}}_pokemon_dewgong",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_seel",
+              "AnimalId": "{{modId}}_pokemon_seel"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_seel"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_seel": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_seel"
+        },
+        "{{modId}}_pokemon_dewgong": {
+          "IgnoreRain": "True",
+          "IgnoreWinter": "True",
+          "ID": "{{modId}}_pokemon_dewgong"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/ekans/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "ekans/ekans, ekans/ekanss, ekans/arbok, ekans/arboks"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_ekans": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/ekans/ekans.wav}}"
+          ],
+          "ID": "{{modId}}_sound_ekans"
+        },
+        "{{modId}}_sound_arbok": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/ekans/arbok.wav}}"
+          ],
+          "ID": "{{modId}}_sound_arbok"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_ekans": {
+          "DisplayName": "{{i18n:pokemon.ekans}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_ekans",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_dragon"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_ekans",
+              "ItemID": "{{modId}}_item_egg_ekans"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_ekans",
+          "Texture": "ekans/ekans",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_ekans_shiny",
+              "Weight": "0.1",
+              "Texture": "ekans/ekanss"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_ekans"
+        },
+        "{{modId}}_pokemon_arbok": {
+          "DisplayName": "{{i18n:pokemon.arbok}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_ekans",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_dragon"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_arbok",
+              "ItemID": "{{modId}}_item_egg_ekans"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_arbok",
+          "Texture": "arbok/arbok",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_arbok_shiny",
+              "Weight": "0.1",
+              "Texture": "ekans/arboks",
+              "BabyTexture": "ekans/ekans"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_arbok"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_ekans": {
+          "Name": "{{modId}_item_egg_ekans",
+          "DisplayName": "{{i18n:egg.ekans.item}}",
+          "Description": "{{i18n:egg.ekans.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "6",
+          "Edibility": "-100",
+          "ContextTags": [
+            "egg_item",
+            "color_purple"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_ekans"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_ekans": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_arbok",
+              "AnimalId": "{{modId}}_pokemon_arbok",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_ekans",
+              "AnimalId": "{{modId}}_pokemon_ekans"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_ekans"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

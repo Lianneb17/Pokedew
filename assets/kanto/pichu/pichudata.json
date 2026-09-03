@@ -1,0 +1,2338 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/pichu/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "pichu/shopicon, pichu/pichu, pichu/pichus, pichu/pikachu_male, pichu/pikachu_males, pichu/pikachu_female, pichu/pikachu_females, pichu/raichu_male, pichu/raichu_males, pichu/raichu_female, pichu/raichu_females, pichu/raichu_alola_male, pichu/raichu_alola_males, pichu/raichu_alola_female, pichu/raichu_alola_females"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_pichu": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pichu.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pichu"
+        },
+        "{{modId}}_sound_pikachu_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_male"
+        },
+        "{{modId}}_sound_pikachu_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_female"
+        },
+        "{{modId}}_sound_pikachu_rock_star_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_rock_star_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_rock_star_male"
+        },
+        "{{modId}}_sound_pikachu_rock_star_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_rock_star_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_rock_star_female"
+        },
+        "{{modId}}_sound_pikachu_belle_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_belle_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_belle_male"
+        },
+        "{{modId}}_sound_pikachu_belle_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_belle_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_belle_female"
+        },
+        "{{modId}}_sound_pikachu_pop_star_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_pop_star_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_pop_star_male"
+        },
+        "{{modId}}_sound_pikachu_pop_star_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_pop_star_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_pop_star_female"
+        },
+        "{{modId}}_sound_pikachu_phd_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_phd_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_phd_male"
+        },
+        "{{modId}}_sound_pikachu_phd_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_phd_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_phd_female"
+        },
+        "{{modId}}_sound_pikachu_libre_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_libre_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_libre_male"
+        },
+        "{{modId}}_sound_pikachu_libre_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_libre_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_libre_female"
+        },
+        "{{modId}}_sound_pikachu_cosplay_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_cosplay_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_cosplay_male"
+        },
+        "{{modId}}_sound_pikachu_cosplay_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_cosplay_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_cosplay_female"
+        },
+        "{{modId}}_sound_pikachu_original_cap_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_original_cap_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_original_cap_male"
+        },
+        "{{modId}}_sound_pikachu_original_cap_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_original_cap_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_original_cap_female"
+        },
+        "{{modId}}_sound_pikachu_hoenn_cap_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_hoenn_cap_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_hoenn_cap_male"
+        },
+        "{{modId}}_sound_pikachu_hoenn_cap_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_hoenn_cap_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_hoenn_cap_female"
+        },
+        "{{modId}}_sound_pikachu_sinnoh_cap_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_sinnoh_cap_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_sinnoh_cap_male"
+        },
+        "{{modId}}_sound_pikachu_sinnoh_cap_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_sinnoh_cap_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_sinnoh_cap_female"
+        },
+        "{{modId}}_sound_pikachu_unova_cap_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_unova_cap_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_unova_cap_male"
+        },
+        "{{modId}}_sound_pikachu_unova_cap_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_unova_cap_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_unova_cap_female"
+        },
+        "{{modId}}_sound_pikachu_kalos_cap_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_kalos_cap_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_kalos_cap_male"
+        },
+        "{{modId}}_sound_pikachu_kalos_cap_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_kalos_cap_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_kalos_cap_female"
+        },
+        "{{modId}}_sound_pikachu_alola_cap_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_alola_cap_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_alola_cap_male"
+        },
+        "{{modId}}_sound_pikachu_alola_cap_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_alola_cap_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_alola_cap_female"
+        },
+        "{{modId}}_sound_pikachu_partner_cap_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_partner_cap_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_partner_cap_male"
+        },
+        "{{modId}}_sound_pikachu_partner_cap_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_partner_cap_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_partner_cap_female"
+        },
+        "{{modId}}_sound_pikachu_starter_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_starter_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_starter_male"
+        },
+        "{{modId}}_sound_pikachu_starter_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_starter_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_starter_female"
+        },
+        "{{modId}}_sound_pikachu_world_cap_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_world_cap_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_world_cap_male"
+        },
+        "{{modId}}_sound_pikachu_world_cap_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_world_cap_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pikachu_world_cap_female"
+        },
+        "{{modId}}_sound_raichu_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/raichu_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_raichu_male"
+        },
+        "{{modId}}_sound_raichu_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/raichu_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_raichu_female"
+        },
+        "{{modId}}_sound_raichu_alola_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/raichu_alola_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_raichu_alola_male"
+        },
+        "{{modId}}_sound_raichu_alola_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pichu/raichu_alola_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_raichu_alola_female"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_pichu": {
+          "DisplayName": "{{i18n:pokemon.pichu}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": "1500",
+          "ShopTexture": "pichu/shopicon",
+          "RequiredBuilding": "PokeBarn",
+          "UnlockCondition": "{{Kanto active}}",
+          "ShopDescription": "{{i18n:pokemon.pichu.shop}}",
+          "ShopMissingBuildingDescription": "{{i18n:pokemon.all.shop.missing}}",
+          "AlternatePurchaseTypes": [
+            {
+              "ID": "{{modId}}_pokemon_purchase_pichu_DeluxePokeBarn",
+              "AnimalIDs": [
+                "{{modId}}_pokemon_raichu_male",
+                "{{modId}}_pokemon_raichu_female",
+                "{{modId}}_pokemon_raichu_alola_male",
+                "{{modId}}_pokemon_raichu_alola_female"
+              ],
+              "Condition": "BUILDINGS_CONSTRUCTED All \"DeluxePokeBarn\", RANDOM 0,333"
+            },
+            {
+              "ID": "{{modId}}_pokemon_purchase_pichu_BigPokeBarn",
+              "AnimalIDs": [
+                "{{modId}}_pokemon_pikachu_male",
+                "{{modId}}_pokemon_pikachu_female",
+                "{{modId}}_pokemon_pikachu_rock_star_male",
+                "{{modId}}_pokemon_pikachu_rock_star_female",
+                "{{modId}}_pokemon_pikachu_belle_male",
+                "{{modId}}_pokemon_pikachu_belle_female",
+                "{{modId}}_pokemon_pikachu_pop_star_male",
+                "{{modId}}_pokemon_pikachu_pop_star_female",
+                "{{modId}}_pokemon_pikachu_phd_male",
+                "{{modId}}_pokemon_pikachu_phd_female",
+                "{{modId}}_pokemon_pikachu_libre_male",
+                "{{modId}}_pokemon_pikachu_libre_female",
+                "{{modId}}_pokemon_pikachu_cosplay_male",
+                "{{modId}}_pokemon_pikachu_cosplay_female",
+                "{{modId}}_pokemon_pikachu_original_cap_male",
+                "{{modId}}_pokemon_pikachu_original_cap_female",
+                "{{modId}}_pokemon_pikachu_hoenn_cap_male",
+                "{{modId}}_pokemon_pikachu_hoenn_cap_female",
+                "{{modId}}_pokemon_pikachu_sinnoh_cap_male",
+                "{{modId}}_pokemon_pikachu_sinnoh_cap_female",
+                "{{modId}}_pokemon_pikachu_unova_cap_male",
+                "{{modId}}_pokemon_pikachu_unova_cap_female",
+                "{{modId}}_pokemon_pikachu_kalos_cap_male",
+                "{{modId}}_pokemon_pikachu_kalos_cap_female",
+                "{{modId}}_pokemon_pikachu_alola_cap_male",
+                "{{modId}}_pokemon_pikachu_alola_cap_female",
+                "{{modId}}_pokemon_pikachu_partner_cap_male",
+                "{{modId}}_pokemon_pikachu_partner_cap_female",
+                "{{modId}}_pokemon_pikachu_starter_male",
+                "{{modId}}_pokemon_pikachu_starter_female",
+                "{{modId}}_pokemon_pikachu_world_cap_male",
+                "{{modId}}_pokemon_pikachu_world_cap_female"
+              ],
+              "Condition": "BUILDINGS_CONSTRUCTED All \"BigPokeBarn\", RANDOM 0,500"
+            },
+            {
+              "ID": "{{modId}}_pokemon_purchase_pichu_PokeBarn",
+              "AnimalIDs": [
+                "{{modId}}_pokemon_pichu"
+              ]
+            }
+          ],
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pichu",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pichu",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pichu",
+          "Texture": "pichu/pichu",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pichu_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pichus"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ShowInSummitCredits": "True",
+          "ID": "{{modId}}_pokemon_pichu"
+        },
+        "{{modId}}_pokemon_pikachu_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_male",
+          "Texture": "pikachu_male/pikachu_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_male"
+        },
+        "{{modId}}_pokemon_pikachu_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_female",
+          "Texture": "pikachu_female/pikachu_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_female"
+        },
+        "{{modId}}_pokemon_pikachu_rock_star_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_rock_star_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_rock_star_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_rock_star_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_rock_star_male",
+          "Texture": "pikachu_rock_star_male/pikachu_rock_star_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_rock_star_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_rock_star_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_rock_star_male"
+        },
+        "{{modId}}_pokemon_pikachu_rock_star_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_rock_star_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_rock_star_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_rock_star_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_rock_star_female",
+          "Texture": "pikachu_rock_star_female/pikachu_rock_star_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_rock_star_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_rock_star_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_rock_star_female"
+        },
+        "{{modId}}_pokemon_pikachu_belle_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_belle_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_belle_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_belle_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_belle_male",
+          "Texture": "pikachu_belle_male/pikachu_belle_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_belle_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_belle_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_belle_male"
+        },
+        "{{modId}}_pokemon_pikachu_belle_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_belle_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_belle_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_belle_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_belle_female",
+          "Texture": "pikachu_belle_female/pikachu_belle_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_belle_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_belle_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_belle_female"
+        },
+        "{{modId}}_pokemon_pikachu_pop_star_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_pop_star_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_pop_star_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_pop_star_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_pop_star_male",
+          "Texture": "pikachu_pop_star_male/pikachu_pop_star_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_pop_star_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_pop_star_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_pop_star_male"
+        },
+        "{{modId}}_pokemon_pikachu_pop_star_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_pop_star_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_pop_star_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_pop_star_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_pop_star_female",
+          "Texture": "pikachu_pop_star_female/pikachu_pop_star_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_pop_star_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_pop_star_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_pop_star_female"
+        },
+        "{{modId}}_pokemon_pikachu_phd_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_phd_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_phd_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_phd_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_phd_male",
+          "Texture": "pikachu_phd_male/pikachu_phd_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_phd_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_phd_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_phd_male"
+        },
+        "{{modId}}_pokemon_pikachu_phd_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_phd_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_phd_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_phd_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_phd_female",
+          "Texture": "pikachu_phd_female/pikachu_phd_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_phd_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_phd_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_phd_female"
+        },
+        "{{modId}}_pokemon_pikachu_libre_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_libre_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_libre_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_libre_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_libre_male",
+          "Texture": "pikachu_libre_male/pikachu_libre_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_libre_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_libre_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_libre_male"
+        },
+        "{{modId}}_pokemon_pikachu_libre_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_libre_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_libre_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_libre_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_libre_female",
+          "Texture": "pikachu_libre_female/pikachu_libre_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_libre_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_libre_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_libre_female"
+        },
+        "{{modId}}_pokemon_pikachu_cosplay_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_cosplay_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_cosplay_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_cosplay_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_cosplay_male",
+          "Texture": "pikachu_cosplay_male/pikachu_cosplay_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_cosplay_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_cosplay_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_cosplay_male"
+        },
+        "{{modId}}_pokemon_pikachu_cosplay_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_cosplay_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_cosplay_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_cosplay_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_cosplay_female",
+          "Texture": "pikachu_cosplay_female/pikachu_cosplay_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_cosplay_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_cosplay_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_cosplay_female"
+        },
+        "{{modId}}_pokemon_pikachu_original_cap_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_original_cap_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_original_cap_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_original_cap_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_original_cap_male",
+          "Texture": "pikachu_original_cap_male/pikachu_original_cap_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_original_cap_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_original_cap_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_original_cap_male"
+        },
+        "{{modId}}_pokemon_pikachu_original_cap_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_original_cap_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_original_cap_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_original_cap_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_original_cap_female",
+          "Texture": "pikachu_original_cap_female/pikachu_original_cap_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_original_cap_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_original_cap_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_original_cap_female"
+        },
+        "{{modId}}_pokemon_pikachu_hoenn_cap_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_hoenn_cap_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_hoenn_cap_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_hoenn_cap_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_hoenn_cap_male",
+          "Texture": "pikachu_hoenn_cap_male/pikachu_hoenn_cap_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_hoenn_cap_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_hoenn_cap_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_hoenn_cap_male"
+        },
+        "{{modId}}_pokemon_pikachu_hoenn_cap_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_hoenn_cap_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_hoenn_cap_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_hoenn_cap_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_hoenn_cap_female",
+          "Texture": "pikachu_hoenn_cap_female/pikachu_hoenn_cap_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_hoenn_cap_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_hoenn_cap_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_hoenn_cap_female"
+        },
+        "{{modId}}_pokemon_pikachu_sinnoh_cap_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_sinnoh_cap_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_sinnoh_cap_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_sinnoh_cap_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_sinnoh_cap_male",
+          "Texture": "pikachu_sinnoh_cap_male/pikachu_sinnoh_cap_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_sinnoh_cap_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_sinnoh_cap_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_sinnoh_cap_male"
+        },
+        "{{modId}}_pokemon_pikachu_sinnoh_cap_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_sinnoh_cap_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_sinnoh_cap_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_sinnoh_cap_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_sinnoh_cap_female",
+          "Texture": "pikachu_sinnoh_cap_female/pikachu_sinnoh_cap_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_sinnoh_cap_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_sinnoh_cap_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_sinnoh_cap_female"
+        },
+        "{{modId}}_pokemon_pikachu_unova_cap_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_unova_cap_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_unova_cap_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_unova_cap_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_unova_cap_male",
+          "Texture": "pikachu_unova_cap_male/pikachu_unova_cap_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_unova_cap_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_unova_cap_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_unova_cap_male"
+        },
+        "{{modId}}_pokemon_pikachu_unova_cap_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_unova_cap_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_unova_cap_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_unova_cap_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_unova_cap_female",
+          "Texture": "pikachu_unova_cap_female/pikachu_unova_cap_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_unova_cap_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_unova_cap_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_unova_cap_female"
+        },
+        "{{modId}}_pokemon_pikachu_kalos_cap_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_kalos_cap_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_kalos_cap_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_kalos_cap_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_kalos_cap_male",
+          "Texture": "pikachu_kalos_cap_male/pikachu_kalos_cap_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_kalos_cap_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_kalos_cap_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_kalos_cap_male"
+        },
+        "{{modId}}_pokemon_pikachu_kalos_cap_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_kalos_cap_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_kalos_cap_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_kalos_cap_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_kalos_cap_female",
+          "Texture": "pikachu_kalos_cap_female/pikachu_kalos_cap_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_kalos_cap_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_kalos_cap_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_kalos_cap_female"
+        },
+        "{{modId}}_pokemon_pikachu_alola_cap_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_alola_cap_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_alola_cap_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_alola_cap_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_alola_cap_male",
+          "Texture": "pikachu_alola_cap_male/pikachu_alola_cap_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_alola_cap_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_alola_cap_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_alola_cap_male"
+        },
+        "{{modId}}_pokemon_pikachu_alola_cap_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_alola_cap_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_alola_cap_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_alola_cap_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_alola_cap_female",
+          "Texture": "pikachu_alola_cap_female/pikachu_alola_cap_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_alola_cap_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_alola_cap_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_alola_cap_female"
+        },
+        "{{modId}}_pokemon_pikachu_partner_cap_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_partner_cap_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_partner_cap_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_partner_cap_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_partner_cap_male",
+          "Texture": "pikachu_partner_cap_male/pikachu_partner_cap_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_partner_cap_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_partner_cap_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_partner_cap_male"
+        },
+        "{{modId}}_pokemon_pikachu_partner_cap_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_partner_cap_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_partner_cap_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_partner_cap_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_partner_cap_female",
+          "Texture": "pikachu_partner_cap_female/pikachu_partner_cap_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_partner_cap_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_partner_cap_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_partner_cap_female"
+        },
+        "{{modId}}_pokemon_pikachu_starter_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_starter_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_starter_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_starter_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_starter_male",
+          "Texture": "pikachu_starter_male/pikachu_starter_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_starter_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_starter_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_starter_male"
+        },
+        "{{modId}}_pokemon_pikachu_starter_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_starter_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_starter_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_starter_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_starter_female",
+          "Texture": "pikachu_starter_female/pikachu_starter_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_starter_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_starter_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_starter_female"
+        },
+        "{{modId}}_pokemon_pikachu_world_cap_male": {
+          "DisplayName": "{{i18n:pokemon.pikachu_world_cap_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_world_cap_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_world_cap_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_world_cap_male",
+          "Texture": "pikachu_world_cap_male/pikachu_world_cap_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_world_cap_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_world_cap_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_world_cap_male"
+        },
+        "{{modId}}_pokemon_pikachu_world_cap_female": {
+          "DisplayName": "{{i18n:pokemon.pikachu_world_cap_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pikachu_world_cap_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_pikachu_world_cap_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pikachu_world_cap_female",
+          "Texture": "pikachu_world_cap_female/pikachu_world_cap_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pikachu_world_cap_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/pikachu_world_cap_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_pikachu_world_cap_female"
+        },
+        "{{modId}}_pokemon_raichu_male": {
+          "DisplayName": "{{i18n:pokemon.raichu_male}}",
+          "House": "DeluxePokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_raichu_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_raichu_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_raichu_male",
+          "Texture": "raichu_male/raichu_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_raichu_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/raichu_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_raichu_male"
+        },
+        "{{modId}}_pokemon_raichu_female": {
+          "DisplayName": "{{i18n:pokemon.raichu_female}}",
+          "House": "DeluxePokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_raichu_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_raichu_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_raichu_female",
+          "Texture": "raichu_female/raichu_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_raichu_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/raichu_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_raichu_female"
+        },
+        "{{modId}}_pokemon_raichu_alola_male": {
+          "DisplayName": "{{i18n:pokemon.raichu_alola_male}}",
+          "House": "DeluxePokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_raichu_alola_male",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_raichu_alola_male",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_raichu_alola_male",
+          "Texture": "raichu_alola_male/raichu_alola_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_raichu_alola_male_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/raichu_alola_males",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_raichu_alola_male"
+        },
+        "{{modId}}_pokemon_raichu_alola_female": {
+          "DisplayName": "{{i18n:pokemon.raichu_alola_female}}",
+          "House": "DeluxePokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pichu",
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_raichu_alola_female",
+              "ItemID": "{{modId}}_item_egg_pichu"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_raichu_alola_female",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_raichu_alola_female",
+          "Texture": "raichu_alola_female/raichu_alola_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_raichu_alola_female_shiny",
+              "Weight": "0.1",
+              "Texture": "pichu/raichu_alola_females",
+              "BabyTexture": "pichu/pichu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_raichu_alola_female"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_pichu": {
+          "Name": "{{modId}_item_egg_pichu",
+          "DisplayName": "{{i18n:egg.pichu.item}}",
+          "Description": "{{i18n:egg.pichu.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "300",
+          "Texture": "eggs/color",
+          "SpriteIndex": "2",
+          "Edibility": "30",
+          "ContextTags": [
+            "egg_item",
+            "color_yellow"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_pichu"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_pichu": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_raichu_alola_female",
+              "AnimalId": "{{modId}}_pokemon_raichu_alola_female",
+              "Condition": "RANDOM 0,027"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_raichu_alola_male",
+              "AnimalId": "{{modId}}_pokemon_raichu_alola_male",
+              "Condition": "RANDOM 0,028"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_raichu_female",
+              "AnimalId": "{{modId}}_pokemon_raichu_female",
+              "Condition": "RANDOM 0,029"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_raichu_male",
+              "AnimalId": "{{modId}}_pokemon_raichu_male",
+              "Condition": "RANDOM 0,029"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_world_cap_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_world_cap_female",
+              "Condition": "RANDOM 0,030"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_world_cap_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_world_cap_male",
+              "Condition": "RANDOM 0,031"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_starter_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_starter_female",
+              "Condition": "RANDOM 0,032"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_starter_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_starter_male",
+              "Condition": "RANDOM 0,033"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_partner_cap_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_partner_cap_female",
+              "Condition": "RANDOM 0,034"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_partner_cap_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_partner_cap_male",
+              "Condition": "RANDOM 0,036"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_alola_cap_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_alola_cap_female",
+              "Condition": "RANDOM 0,037"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_alola_cap_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_alola_cap_male",
+              "Condition": "RANDOM 0,038"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_kalos_cap_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_kalos_cap_female",
+              "Condition": "RANDOM 0,040"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_kalos_cap_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_kalos_cap_male",
+              "Condition": "RANDOM 0,042"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_unova_cap_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_unova_cap_female",
+              "Condition": "RANDOM 0,043"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_unova_cap_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_unova_cap_male",
+              "Condition": "RANDOM 0,045"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_sinnoh_cap_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_sinnoh_cap_female",
+              "Condition": "RANDOM 0,048"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_sinnoh_cap_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_sinnoh_cap_male",
+              "Condition": "RANDOM 0,050"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_hoenn_cap_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_hoenn_cap_female",
+              "Condition": "RANDOM 0,053"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_hoenn_cap_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_hoenn_cap_male",
+              "Condition": "RANDOM 0,056"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_original_cap_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_original_cap_female",
+              "Condition": "RANDOM 0,059"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_original_cap_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_original_cap_male",
+              "Condition": "RANDOM 0,062"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_cosplay_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_cosplay_female",
+              "Condition": "RANDOM 0,067"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_cosplay_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_cosplay_male",
+              "Condition": "RANDOM 0,071"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_libre_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_libre_female",
+              "Condition": "RANDOM 0,077"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_libre_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_libre_male",
+              "Condition": "RANDOM 0,083"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_phd_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_phd_female",
+              "Condition": "RANDOM 0,091"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_phd_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_phd_male",
+              "Condition": "RANDOM 0,100"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_pop_star_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_pop_star_female",
+              "Condition": "RANDOM 0,111"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_pop_star_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_pop_star_male",
+              "Condition": "RANDOM 0,125"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_belle_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_belle_female",
+              "Condition": "RANDOM 0,143"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_belle_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_belle_male",
+              "Condition": "RANDOM 0,167"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_rock_star_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_rock_star_female",
+              "Condition": "RANDOM 0,200"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_rock_star_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_rock_star_male",
+              "Condition": "RANDOM 0,250"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_female",
+              "AnimalId": "{{modId}}_pokemon_pikachu_female",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pikachu_male",
+              "AnimalId": "{{modId}}_pokemon_pikachu_male",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_pichu",
+              "AnimalId": "{{modId}}_pokemon_pichu"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_pichu"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_raichu_male": {
+          "TextureOverrides": [
+            {
+              "Id": "{{modId}}_pokemon_texture_raichu_male",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "pichu/pikachu_male"
+            },
+            {
+              "Id": "{{modId}}_pokemon_texture_raichu_male_shiny",
+              "Skin": "{{modId}}_pokemon_raichu_male_shiny",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "pichu/pikachu_males"
+            }
+          ],
+          "ID": "{{modId}}_pokemon_raichu_male"
+        },
+        "{{modId}}_pokemon_raichu_female": {
+          "TextureOverrides": [
+            {
+              "Id": "{{modId}}_pokemon_texture_raichu_female",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "pichu/pikachu_male"
+            },
+            {
+              "Id": "{{modId}}_pokemon_texture_raichu_female_shiny",
+              "Skin": "{{modId}}_pokemon_raichu_female_shiny",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "pichu/pikachu_males"
+            }
+          ],
+          "ID": "{{modId}}_pokemon_raichu_female"
+        },
+        "{{modId}}_pokemon_raichu_alola_male": {
+          "TextureOverrides": [
+            {
+              "Id": "{{modId}}_pokemon_texture_raichu_alola_male",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "pichu/pikachu_male"
+            },
+            {
+              "Id": "{{modId}}_pokemon_texture_raichu_alola_male_shiny",
+              "Skin": "{{modId}}_pokemon_raichu_alola_male_shiny",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "pichu/pikachu_males"
+            }
+          ],
+          "ID": "{{modId}}_pokemon_raichu_alola_male"
+        },
+        "{{modId}}_pokemon_raichu_alola_female": {
+          "TextureOverrides": [
+            {
+              "Id": "{{modId}}_pokemon_texture_raichu_alola_female",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "pichu/pikachu_male"
+            },
+            {
+              "Id": "{{modId}}_pokemon_texture_raichu_alola_female_shiny",
+              "Skin": "{{modId}}_pokemon_raichu_alola_female_shiny",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "pichu/pikachu_males"
+            }
+          ],
+          "ID": "{{modId}}_pokemon_raichu_alola_female"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

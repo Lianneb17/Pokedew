@@ -1,0 +1,121 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/lapras/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "lapras/lapras, lapras/laprass"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_lapras": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/lapras/lapras.wav}}"
+          ],
+          "ID": "{{modId}}_sound_lapras"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_lapras": {
+          "DisplayName": "{{i18n:pokemon.lapras}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_lapras",
+            "{{modId}}_item_egg_group_monster",
+            "{{modId}}_item_egg_group_water1"
+          ],
+          "IncubationTime": "45000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_lapras",
+              "ItemID": "{{modId}}_item_egg_lapras"
+            }
+          ],
+          "DaysToProduce": "7",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_lapras",
+          "Texture": "lapras/lapras",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_lapras_shiny",
+              "Weight": "0.1",
+              "Texture": "lapras/laprass"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "11000",
+          "ID": "{{modId}}_pokemon_lapras"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_lapras": {
+          "Name": "{{modId}_item_egg_lapras",
+          "DisplayName": "{{i18n:egg.lapras.item}}",
+          "Description": "{{i18n:egg.lapras.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "1100",
+          "Texture": "eggs/color",
+          "SpriteIndex": "1",
+          "Edibility": "1100",
+          "ContextTags": [
+            "egg_item",
+            "color_blue"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_lapras"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_lapras": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_lapras",
+              "AnimalId": "{{modId}}_pokemon_lapras"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_lapras"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_lapras": {
+          "IgnoreRain": "True",
+          "IgnoreWinter": "True",
+          "ID": "{{modId}}_pokemon_lapras"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

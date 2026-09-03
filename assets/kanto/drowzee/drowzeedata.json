@@ -1,0 +1,158 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/drowzee/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "drowzee/drowzee, drowzee/drowzees, drowzee/hypno, drowzee/hypnos"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_drowzee": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/drowzee/drowzee.wav}}"
+          ],
+          "ID": "{{modId}}_sound_drowzee"
+        },
+        "{{modId}}_sound_hypno": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/drowzee/hypno.wav}}"
+          ],
+          "ID": "{{modId}}_sound_hypno"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_drowzee": {
+          "DisplayName": "{{i18n:pokemon.drowzee}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_drowzee",
+            "{{modId}}_item_egg_group_humanlike"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_drowzee",
+              "ItemID": "{{modId}}_item_egg_drowzee"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_drowzee",
+          "Texture": "drowzee/drowzee",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_drowzee_shiny",
+              "Weight": "0.1",
+              "Texture": "drowzee/drowzees"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_drowzee"
+        },
+        "{{modId}}_pokemon_hypno": {
+          "DisplayName": "{{i18n:pokemon.hypno}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_drowzee",
+            "{{modId}}_item_egg_group_humanlike"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_hypno",
+              "ItemID": "{{modId}}_item_egg_drowzee"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_hypno",
+          "Texture": "hypno/hypno",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_hypno_shiny",
+              "Weight": "0.1",
+              "Texture": "drowzee/hypnos",
+              "BabyTexture": "drowzee/drowzee"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_hypno"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_drowzee": {
+          "Name": "{{modId}_item_egg_drowzee",
+          "DisplayName": "{{i18n:egg.drowzee.item}}",
+          "Description": "{{i18n:egg.drowzee.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "2",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_yellow"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_drowzee"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_drowzee": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_hypno",
+              "AnimalId": "{{modId}}_pokemon_hypno",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_drowzee",
+              "AnimalId": "{{modId}}_pokemon_drowzee"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_drowzee"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

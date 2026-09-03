@@ -1,0 +1,241 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/mankey/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "mankey/mankey, mankey/mankeys, mankey/primeape, mankey/primeapes, mankey/annihilape, mankey/annihilapes"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_mankey": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/mankey/mankey.wav}}"
+          ],
+          "ID": "{{modId}}_sound_mankey"
+        },
+        "{{modId}}_sound_primeape": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/mankey/primeape.wav}}"
+          ],
+          "ID": "{{modId}}_sound_primeape"
+        },
+        "{{modId}}_sound_annihilape": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/mankey/annihilape.wav}}"
+          ],
+          "ID": "{{modId}}_sound_annihilape"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_mankey": {
+          "DisplayName": "{{i18n:pokemon.mankey}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_mankey",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_mankey",
+              "ItemID": "{{modId}}_item_egg_mankey"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_mankey",
+          "Texture": "mankey/mankey",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_mankey_shiny",
+              "Weight": "0.1",
+              "Texture": "mankey/mankeys"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_mankey"
+        },
+        "{{modId}}_pokemon_primeape": {
+          "DisplayName": "{{i18n:pokemon.primeape}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_mankey",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_primeape",
+              "ItemID": "{{modId}}_item_egg_mankey"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_primeape",
+          "Texture": "primeape/primeape",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_primeape_shiny",
+              "Weight": "0.1",
+              "Texture": "mankey/primeapes",
+              "BabyTexture": "mankey/mankey"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_primeape"
+        },
+        "{{modId}}_pokemon_annihilape": {
+          "DisplayName": "{{i18n:pokemon.annihilape}}",
+          "House": "DeluxePokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_mankey",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_annihilape",
+              "ItemID": "{{modId}}_item_egg_mankey"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_annihilape",
+          "Texture": "annihilape/annihilape",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_annihilape_shiny",
+              "Weight": "0.1",
+              "Texture": "mankey/annihilapes",
+              "BabyTexture": "mankey/mankey"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_annihilape"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_mankey": {
+          "Name": "{{modId}_item_egg_mankey",
+          "DisplayName": "{{i18n:egg.mankey.item}}",
+          "Description": "{{i18n:egg.mankey.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "5",
+          "Edibility": "50",
+          "Buffs": [
+            {
+              "Duration": "0",
+              "Effects": {
+                "Attack": "3"
+              }
+            }
+          ],
+          "ContextTags": [
+            "egg_item",
+            "color_brown"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_mankey"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_mankey": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_annihilape",
+              "AnimalId": "{{modId}}_pokemon_annihilape",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_primeape",
+              "AnimalId": "{{modId}}_pokemon_primeape",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_mankey",
+              "AnimalId": "{{modId}}_pokemon_mankey"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_mankey"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_annihilape": {
+          "TextureOverrides": [
+            {
+              "Id": "{{modId}}_pokemon_texture_annihilape",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "mankey/primeape"
+            },
+            {
+              "Id": "{{modId}}_pokemon_texture_annihilape_shiny",
+              "Skin": "{{modId}}_pokemon_annihilape_shiny",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "mankey/primeapes"
+            }
+          ],
+          "GlowColor": "SlateBlue",
+          "GlowRadius": "30",
+          "ID": "{{modId}}_pokemon_annihilape"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/horsea/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "horsea/horsea, horsea/horseas, horsea/seadra, horsea/seadras, horsea/kingdra, horsea/kingdras"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_horsea": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/horsea/horsea.wav}}"
+          ],
+          "ID": "{{modId}}_sound_horsea"
+        },
+        "{{modId}}_sound_seadra": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/horsea/seadra.wav}}"
+          ],
+          "ID": "{{modId}}_sound_seadra"
+        },
+        "{{modId}}_sound_kingdra": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/horsea/kingdra.wav}}"
+          ],
+          "ID": "{{modId}}_sound_kingdra"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_horsea": {
+          "DisplayName": "{{i18n:pokemon.horsea}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_horsea",
+            "{{modId}}_item_egg_group_water1",
+            "{{modId}}_item_egg_group_dragon"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_horsea",
+              "ItemID": "{{modId}}_item_egg_horsea"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_horsea",
+          "Texture": "horsea/horsea",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_horsea_shiny",
+              "Weight": "0.1",
+              "Texture": "horsea/horseas"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_horsea"
+        },
+        "{{modId}}_pokemon_seadra": {
+          "DisplayName": "{{i18n:pokemon.seadra}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_horsea",
+            "{{modId}}_item_egg_group_water1",
+            "{{modId}}_item_egg_group_dragon"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_seadra",
+              "ItemID": "{{modId}}_item_egg_horsea"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_seadra",
+          "Texture": "seadra/seadra",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_seadra_shiny",
+              "Weight": "0.1",
+              "Texture": "horsea/seadras",
+              "BabyTexture": "horsea/horsea"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_seadra"
+        },
+        "{{modId}}_pokemon_kingdra": {
+          "DisplayName": "{{i18n:pokemon.kingdra}}",
+          "House": "DeluxePokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_horsea",
+            "{{modId}}_item_egg_group_water1",
+            "{{modId}}_item_egg_group_dragon"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_kingdra",
+              "ItemID": "{{modId}}_item_egg_horsea"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_kingdra",
+          "Texture": "kingdra/kingdra",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_kingdra_shiny",
+              "Weight": "0.1",
+              "Texture": "horsea/kingdras",
+              "BabyTexture": "horsea/horsea"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_kingdra"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_horsea": {
+          "Name": "{{modId}_item_egg_horsea",
+          "DisplayName": "{{i18n:egg.horsea.item}}",
+          "Description": "{{i18n:egg.horsea.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "1",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_blue"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_horsea"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_horsea": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_kingdra",
+              "AnimalId": "{{modId}}_pokemon_kingdra",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_seadra",
+              "AnimalId": "{{modId}}_pokemon_seadra",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_horsea",
+              "AnimalId": "{{modId}}_pokemon_horsea"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_horsea"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_horsea": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_horsea"
+        },
+        "{{modId}}_pokemon_seadra": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_seadra"
+        },
+        "{{modId}}_pokemon_kingdra": {
+          "TextureOverrides": [
+            {
+              "Id": "{{modId}}_pokemon_texture_kingdra",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "horsea/seadra"
+            },
+            {
+              "Id": "{{modId}}_pokemon_texture_kingdra_shiny",
+              "Skin": "{{modId}}_pokemon_kingdra_shiny",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "horsea/seadras"
+            }
+          ],
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_kingdra"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

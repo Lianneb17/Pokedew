@@ -32,7 +32,7 @@
 	},
 	{
 		"Action": "Include",
-		"FromFile": "assets/kanto/squirtle/charmanderdata.json"
+		"FromFile": "assets/kanto/charmander/charmanderdata.json"
 	},
 	{
 		"Action": "Include",
@@ -45,6 +45,279 @@
 	{
 		"Action": "Include",
 		"FromFile": "assets/kanto/pidgey/pidgetdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/rattata/rattatadata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/spearow/spearowdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/ekans/ekansdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/pichu/pichudata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/sandshrew/sandshrewdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/nidoran/nidoran_fdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/nidoran/nidoran_mdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/cleffa/cleffadata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/vulpix/vulpixdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/igglybuff/igglybuffdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/zubat/zubatdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/oddish/oddishdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/paras/parasdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/venonat/venonatdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/diglett/diglettdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/meowth/meowthdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/psyduck/psyduckdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/mankey/mankeydata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/growlithe/growlithedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/poliwag/poliwagdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/abra/abradata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/machop/machopdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/bellsprout/bellsproutdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/tentacool/tentacooldata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/geodude/geoduedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/ponyta/ponytadata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/slowpoke/slowpokedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/magnemite/magnemitedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/farfetchd/farfetchddata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/doduo/dodoudata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/seel/seeldata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/grimer/grimerdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/shellder/shellderdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/gastly/gastlydata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/onix/onixdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/drowzee/drowzeedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/krabby/krabbydata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/exeggcute/exeggcutedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/cubone/cubonedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/lickitung/lickitungdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/koffing/koffingdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/rhyhorn/rhyhorndata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/tangela/tangeladata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/horsea/horseedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/goldeen/goleendata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/staryu/staryudata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/mime_jr/mime_jrdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/scyther/scytherdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/smoochum/smoochumdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/elekid/elekiddata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/magby/magbydata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/pinsir/pinsirdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/tauros/taurosdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/magikarp/magikarpdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/lapras/laprasdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/ditto/dittoadata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/eevee/eeveedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/porygon/porygonddata.json"
+	},
+	
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/omanyte/omanytedata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/kabuto/kabutodata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/aerodactyl/aerodactyldata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/munchlax/munchlaxdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/articuno/articunodata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/zapdos/zapdosdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/moltres/moltresdata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/dratini/dratinidata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/mewtwo/mewtwodata.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/kanto/mew/mewdata.json"
 	}
 	]
  }

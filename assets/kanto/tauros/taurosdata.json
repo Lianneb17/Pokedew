@@ -1,0 +1,273 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/tauros/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "tauros/tauros, tauros/tauross, tauros/tauros_paldea_combat_breed, tauros/tauros_paldea_combat_breeds, tauros/tauros_paldea_blaze_breed, tauros/tauros_paldea_blaze_breeds, tauros/tauros_paldea_aqua_breed, tauros/tauros_paldea_aqua_breeds"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_tauros": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/tauros/tauros.wav}}"
+          ],
+          "ID": "{{modId}}_sound_tauros"
+        },
+        "{{modId}}_sound_tauros_paldea_combat_breed": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/tauros/tauros_paldea_combat_breed.wav}}"
+          ],
+          "ID": "{{modId}}_sound_tauros_paldea_combat_breed"
+        },
+        "{{modId}}_sound_tauros_paldea_blaze_breed": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/tauros/tauros_paldea_blaze_breed.wav}}"
+          ],
+          "ID": "{{modId}}_sound_tauros_paldea_blaze_breed"
+        },
+        "{{modId}}_sound_tauros_paldea_aqua_breed": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/tauros/tauros_paldea_aqua_breed.wav}}"
+          ],
+          "ID": "{{modId}}_sound_tauros_paldea_aqua_breed"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_tauros": {
+          "DisplayName": "{{i18n:pokemon.tauros}}",
+          "House": "PokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_tauros",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_tauros",
+              "ItemID": "{{modId}}_item_egg_tauros"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_tauros",
+          "Texture": "tauros/tauros",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_tauros_shiny",
+              "Weight": "0.1",
+              "Texture": "tauros/tauross"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_tauros"
+        },
+        "{{modId}}_pokemon_tauros_paldea_combat_breed": {
+          "DisplayName": "{{i18n:pokemon.tauros_paldea_combat_breed}}",
+          "House": "PokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_tauros",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_tauros_paldea_combat_breed",
+              "ItemID": "{{modId}}_item_egg_tauros"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_tauros_paldea_combat_breed",
+          "Texture": "tauros_paldea_combat_breed/tauros_paldea_combat_breed",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_tauros_paldea_combat_breed_shiny",
+              "Weight": "0.1",
+              "Texture": "tauros/tauros_paldea_combat_breeds",
+              "BabyTexture": "tauros/tauros"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_tauros_paldea_combat_breed"
+        },
+        "{{modId}}_pokemon_tauros_paldea_blaze_breed": {
+          "DisplayName": "{{i18n:pokemon.tauros_paldea_blaze_breed}}",
+          "House": "PokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_tauros",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_tauros_paldea_blaze_breed",
+              "ItemID": "{{modId}}_item_egg_tauros"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_tauros_paldea_blaze_breed",
+          "Texture": "tauros_paldea_blaze_breed/tauros_paldea_blaze_breed",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_tauros_paldea_blaze_breed_shiny",
+              "Weight": "0.1",
+              "Texture": "tauros/tauros_paldea_blaze_breeds",
+              "BabyTexture": "tauros/tauros"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_tauros_paldea_blaze_breed"
+        },
+        "{{modId}}_pokemon_tauros_paldea_aqua_breed": {
+          "DisplayName": "{{i18n:pokemon.tauros_paldea_aqua_breed}}",
+          "House": "PokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_tauros",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_tauros_paldea_aqua_breed",
+              "ItemID": "{{modId}}_item_egg_tauros"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_tauros_paldea_aqua_breed",
+          "Texture": "tauros_paldea_aqua_breed/tauros_paldea_aqua_breed",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_tauros_paldea_aqua_breed_shiny",
+              "Weight": "0.1",
+              "Texture": "tauros/tauros_paldea_aqua_breeds",
+              "BabyTexture": "tauros/tauros"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_tauros_paldea_aqua_breed"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_tauros": {
+          "Name": "{{modId}_item_egg_tauros",
+          "DisplayName": "{{i18n:egg.tauros.item}}",
+          "Description": "{{i18n:egg.tauros.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "5",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_brown"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_tauros"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_tauros": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_tauros_paldea_aqua_breed",
+              "AnimalId": "{{modId}}_pokemon_tauros_paldea_aqua_breed",
+              "Condition": "RANDOM 0,250"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_tauros_paldea_blaze_breed",
+              "AnimalId": "{{modId}}_pokemon_tauros_paldea_blaze_breed",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_tauros_paldea_combat_breed",
+              "AnimalId": "{{modId}}_pokemon_tauros_paldea_combat_breed",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_tauros",
+              "AnimalId": "{{modId}}_pokemon_tauros"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_tauros"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_tauros_paldea_blaze_breed": {
+          "IsHeater": "True",
+          "ID": "{{modId}}_pokemon_tauros_paldea_blaze_breed"
+        },
+        "{{modId}}_pokemon_tauros_paldea_aqua_breed": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_tauros_paldea_aqua_breed"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/zapdos/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "zapdos/zapdos, zapdos/zapdoss, zapdos/zapdos_galar, zapdos/zapdos_galars"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_zapdos": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/zapdos/zapdos.wav}}"
+          ],
+          "ID": "{{modId}}_sound_zapdos"
+        },
+        "{{modId}}_sound_zapdos_galar": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/zapdos/zapdos_galar.wav}}"
+          ],
+          "ID": "{{modId}}_sound_zapdos_galar"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_zapdos": {
+          "DisplayName": "{{i18n:pokemon.zapdos}}",
+          "House": "PokeBarn",
+          "Gender": "Genderless",
+          "EggItemIds": [
+            "{{modId}}_item_egg_zapdos",
+            "{{modId}}_item_egg_group_noeggdiscovered"
+          ],
+          "IncubationTime": "45000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_zapdos",
+              "ItemID": "{{modId}}_item_egg_zapdos"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_zapdos",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            },
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_zapdos",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "7",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_zapdos",
+          "Texture": "zapdos/zapdos",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_zapdos_shiny",
+              "Weight": "0.1",
+              "Texture": "zapdos/zapdoss"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "11000",
+          "ID": "{{modId}}_pokemon_zapdos"
+        },
+        "{{modId}}_pokemon_zapdos_galar": {
+          "DisplayName": "{{i18n:pokemon.zapdos_galar}}",
+          "House": "PokeBarn",
+          "Gender": "Genderless",
+          "EggItemIds": [
+            "{{modId}}_item_egg_zapdos",
+            "{{modId}}_item_egg_group_noeggdiscovered"
+          ],
+          "IncubationTime": "45000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_zapdos_galar",
+              "ItemID": "{{modId}}_item_egg_zapdos"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_zapdos_galar",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "7",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_zapdos_galar",
+          "Texture": "zapdos_galar/zapdos_galar",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_zapdos_galar_shiny",
+              "Weight": "0.1",
+              "Texture": "zapdos/zapdos_galars",
+              "BabyTexture": "zapdos/zapdos"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "11000",
+          "ID": "{{modId}}_pokemon_zapdos_galar"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_zapdos": {
+          "Name": "{{modId}_item_egg_zapdos",
+          "DisplayName": "{{i18n:egg.zapdos.item}}",
+          "Description": "{{i18n:egg.zapdos.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "1100",
+          "Texture": "eggs/color",
+          "SpriteIndex": "2",
+          "Edibility": "1100",
+          "ContextTags": [
+            "egg_item",
+            "color_yellow"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_zapdos"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_zapdos": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_zapdos_galar",
+              "AnimalId": "{{modId}}_pokemon_zapdos_galar",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_zapdos",
+              "AnimalId": "{{modId}}_pokemon_zapdos"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_zapdos"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

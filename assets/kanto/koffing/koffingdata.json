@@ -1,0 +1,214 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/koffing/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "koffing/koffing, koffing/koffings, koffing/weezing, koffing/weezings, koffing/weezing_galar, koffing/weezing_galars"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_koffing": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/koffing/koffing.wav}}"
+          ],
+          "ID": "{{modId}}_sound_koffing"
+        },
+        "{{modId}}_sound_weezing": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/koffing/weezing.wav}}"
+          ],
+          "ID": "{{modId}}_sound_weezing"
+        },
+        "{{modId}}_sound_weezing_galar": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/koffing/weezing_galar.wav}}"
+          ],
+          "ID": "{{modId}}_sound_weezing_galar"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_koffing": {
+          "DisplayName": "{{i18n:pokemon.koffing}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_koffing",
+            "{{modId}}_item_egg_group_amorphous"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_koffing",
+              "ItemID": "{{modId}}_item_egg_koffing"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_koffing",
+          "Texture": "koffing/koffing",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_koffing_shiny",
+              "Weight": "0.1",
+              "Texture": "koffing/koffings"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_koffing"
+        },
+        "{{modId}}_pokemon_weezing": {
+          "DisplayName": "{{i18n:pokemon.weezing}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_koffing",
+            "{{modId}}_item_egg_group_amorphous"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_weezing",
+              "ItemID": "{{modId}}_item_egg_koffing"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_weezing",
+          "Texture": "weezing/weezing",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_weezing_shiny",
+              "Weight": "0.1",
+              "Texture": "koffing/weezings",
+              "BabyTexture": "koffing/koffing"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_weezing"
+        },
+        "{{modId}}_pokemon_weezing_galar": {
+          "DisplayName": "{{i18n:pokemon.weezing_galar}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_koffing",
+            "{{modId}}_item_egg_group_amorphous"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_weezing_galar",
+              "ItemID": "{{modId}}_item_egg_koffing"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_fairydust_weezing_galar",
+              "ItemID": "872"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_weezing_galar",
+          "Texture": "weezing_galar/weezing_galar",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_weezing_galar_shiny",
+              "Weight": "0.1",
+              "Texture": "koffing/weezing_galars",
+              "BabyTexture": "koffing/koffing"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_weezing_galar"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_koffing": {
+          "Name": "{{modId}_item_egg_koffing",
+          "DisplayName": "{{i18n:egg.koffing.item}}",
+          "Description": "{{i18n:egg.koffing.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "6",
+          "Edibility": "-100",
+          "ContextTags": [
+            "egg_item",
+            "color_purple"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_koffing"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_koffing": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_weezing_galar",
+              "AnimalId": "{{modId}}_pokemon_weezing_galar",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_weezing",
+              "AnimalId": "{{modId}}_pokemon_weezing",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_koffing",
+              "AnimalId": "{{modId}}_pokemon_koffing"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_koffing"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

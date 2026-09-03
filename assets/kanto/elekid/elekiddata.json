@@ -1,0 +1,252 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/elekid/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "elekid/elekid, elekid/elekids, elekid/electabuzz, elekid/electabuzzs, elekid/electivire, elekid/electivires"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_elekid": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/elekid/elekid.wav}}"
+          ],
+          "ID": "{{modId}}_sound_elekid"
+        },
+        "{{modId}}_sound_electabuzz": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/elekid/electabuzz.wav}}"
+          ],
+          "ID": "{{modId}}_sound_electabuzz"
+        },
+        "{{modId}}_sound_electivire": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/elekid/electivire.wav}}"
+          ],
+          "ID": "{{modId}}_sound_electivire"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_elekid": {
+          "DisplayName": "{{i18n:pokemon.elekid}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_elekid",
+            "{{modId}}_item_egg_group_noeggdiscovered"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_elekid",
+              "ItemID": "{{modId}}_item_egg_elekid"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_elekid",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_elekid",
+          "Texture": "elekid/elekid",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_elekid_shiny",
+              "Weight": "0.1",
+              "Texture": "elekid/elekids"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_elekid"
+        },
+        "{{modId}}_pokemon_electabuzz": {
+          "DisplayName": "{{i18n:pokemon.electabuzz}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_elekid",
+            "{{modId}}_item_egg_group_noeggdiscovered"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_electabuzz",
+              "ItemID": "{{modId}}_item_egg_elekid"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_electabuzz",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_electabuzz",
+          "Texture": "electabuzz/electabuzz",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_electabuzz_shiny",
+              "Weight": "0.1",
+              "Texture": "elekid/electabuzzs",
+              "BabyTexture": "elekid/elekid"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_electabuzz"
+        },
+        "{{modId}}_pokemon_electivire": {
+          "DisplayName": "{{i18n:pokemon.electivire}}",
+          "House": "DeluxePokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_elekid",
+            "{{modId}}_item_egg_group_noeggdiscovered"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_electivire",
+              "ItemID": "{{modId}}_item_egg_elekid"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_electivire",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_electivire",
+          "Texture": "electivire/electivire",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_electivire_shiny",
+              "Weight": "0.1",
+              "Texture": "elekid/electivires",
+              "BabyTexture": "elekid/elekid"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_electivire"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_elekid": {
+          "Name": "{{modId}_item_egg_elekid",
+          "DisplayName": "{{i18n:egg.elekid.item}}",
+          "Description": "{{i18n:egg.elekid.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "2",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_yellow"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_elekid"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_elekid": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_electivire",
+              "AnimalId": "{{modId}}_pokemon_electivire",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_electabuzz",
+              "AnimalId": "{{modId}}_pokemon_electabuzz",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_elekid",
+              "AnimalId": "{{modId}}_pokemon_elekid"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_elekid"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_electivire": {
+          "TextureOverrides": [
+            {
+              "Id": "{{modId}}_pokemon_texture_electivire",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "elekid/electabuzz"
+            },
+            {
+              "Id": "{{modId}}_pokemon_texture_electivire_shiny",
+              "Skin": "{{modId}}_pokemon_electivire_shiny",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
+              "TextureToUse": "elekid/electabuzzs"
+            }
+          ],
+          "ID": "{{modId}}_pokemon_electivire"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

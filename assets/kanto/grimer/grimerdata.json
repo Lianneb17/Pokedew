@@ -1,0 +1,258 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/grimer/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "grimer/grimer, grimer/grimers, grimer/grimer_alola, grimer/grimer_alolas, grimer/muk, grimer/muks, grimer/muk_alola, grimer/muk_alolas"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_grimer": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/grimer/grimer.wav}}"
+          ],
+          "ID": "{{modId}}_sound_grimer"
+        },
+        "{{modId}}_sound_grimer_alola": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/grimer/grimer_alola.wav}}"
+          ],
+          "ID": "{{modId}}_sound_grimer_alola"
+        },
+        "{{modId}}_sound_muk": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/grimer/muk.wav}}"
+          ],
+          "ID": "{{modId}}_sound_muk"
+        },
+        "{{modId}}_sound_muk_alola": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/grimer/muk_alola.wav}}"
+          ],
+          "ID": "{{modId}}_sound_muk_alola"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_grimer": {
+          "DisplayName": "{{i18n:pokemon.grimer}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_grimer",
+            "{{modId}}_item_egg_group_amorphous"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_grimer",
+              "ItemID": "{{modId}}_item_egg_grimer"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_grimer",
+          "Texture": "grimer/grimer",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_grimer_shiny",
+              "Weight": "0.1",
+              "Texture": "grimer/grimers"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_grimer"
+        },
+        "{{modId}}_pokemon_grimer_alola": {
+          "DisplayName": "{{i18n:pokemon.grimer_alola}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_grimer",
+            "{{modId}}_item_egg_group_amorphous"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_grimer_alola",
+              "ItemID": "{{modId}}_item_egg_grimer"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_grimer_alola",
+          "Texture": "grimer_alola/grimer_alola",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_grimer_alola_shiny",
+              "Weight": "0.1",
+              "Texture": "grimer/grimer_alolas",
+              "BabyTexture": "grimer/grimer"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_grimer_alola"
+        },
+        "{{modId}}_pokemon_muk": {
+          "DisplayName": "{{i18n:pokemon.muk}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_grimer",
+            "{{modId}}_item_egg_group_amorphous"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_muk",
+              "ItemID": "{{modId}}_item_egg_grimer"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_muk",
+          "Texture": "muk/muk",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_muk_shiny",
+              "Weight": "0.1",
+              "Texture": "grimer/muks",
+              "BabyTexture": "grimer/grimer"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_muk"
+        },
+        "{{modId}}_pokemon_muk_alola": {
+          "DisplayName": "{{i18n:pokemon.muk_alola}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_grimer",
+            "{{modId}}_item_egg_group_amorphous"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_muk_alola",
+              "ItemID": "{{modId}}_item_egg_grimer"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_muk_alola",
+          "Texture": "muk_alola/muk_alola",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_muk_alola_shiny",
+              "Weight": "0.1",
+              "Texture": "grimer/muk_alolas",
+              "BabyTexture": "grimer/grimer"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_muk_alola"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_grimer": {
+          "Name": "{{modId}_item_egg_grimer",
+          "DisplayName": "{{i18n:egg.grimer.item}}",
+          "Description": "{{i18n:egg.grimer.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "6",
+          "Edibility": "-100",
+          "ContextTags": [
+            "egg_item",
+            "color_purple"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_grimer"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_grimer": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_muk_alola",
+              "AnimalId": "{{modId}}_pokemon_muk_alola",
+              "Condition": "RANDOM 0,250"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_muk",
+              "AnimalId": "{{modId}}_pokemon_muk",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_grimer_alola",
+              "AnimalId": "{{modId}}_pokemon_grimer_alola",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_grimer",
+              "AnimalId": "{{modId}}_pokemon_grimer"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_grimer"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

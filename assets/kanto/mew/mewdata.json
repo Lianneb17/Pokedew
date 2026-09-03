@@ -1,0 +1,108 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/mew/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "mew/mew, mew/mews"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_mew": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/mew/mew.wav}}"
+          ],
+          "ID": "{{modId}}_sound_mew"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_mew": {
+          "DisplayName": "{{i18n:pokemon.mew}}",
+          "House": "PokeBarn",
+          "Gender": "Genderless",
+          "EggItemIds": [
+            "{{modId}}_item_egg_mew",
+            "{{modId}}_item_egg_group_noeggdiscovered"
+          ],
+          "IncubationTime": "45000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "8",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_mew",
+              "ItemID": "{{modId}}_item_egg_mew"
+            }
+          ],
+          "DaysToProduce": "7",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_mew",
+          "Texture": "mew/mew",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_mew_shiny",
+              "Weight": "0.1",
+              "Texture": "mew/mews"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "11000",
+          "ID": "{{modId}}_pokemon_mew"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_mew": {
+          "Name": "{{modId}_item_egg_mew",
+          "DisplayName": "{{i18n:egg.mew.item}}",
+          "Description": "{{i18n:egg.mew.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "1100",
+          "Texture": "eggs/color",
+          "SpriteIndex": "9",
+          "Edibility": "1100",
+          "ContextTags": [
+            "egg_item",
+            "color_pink"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_mew"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_mew": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_mew",
+              "AnimalId": "{{modId}}_pokemon_mew"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_mew"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

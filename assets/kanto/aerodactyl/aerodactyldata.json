@@ -1,0 +1,114 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/aerodactyl/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "aerodactyl/aerodactyl, aerodactyl/aerodactyls"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_aerodactyl": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/aerodactyl/aerodactyl.wav}}"
+          ],
+          "ID": "{{modId}}_sound_aerodactyl"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_aerodactyl": {
+          "DisplayName": "{{i18n:pokemon.aerodactyl}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_aerodactyl",
+            "{{modId}}_item_egg_group_flying"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_aerodactyl",
+              "ItemID": "{{modId}}_item_egg_aerodactyl"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_aerodactyl",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_aerodactyl",
+          "Texture": "aerodactyl/aerodactyl",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_aerodactyl_shiny",
+              "Weight": "0.1",
+              "Texture": "aerodactyl/aerodactyls"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_aerodactyl"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_aerodactyl": {
+          "Name": "{{modId}_item_egg_aerodactyl",
+          "DisplayName": "{{i18n:egg.aerodactyl.item}}",
+          "Description": "{{i18n:egg.aerodactyl.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "700",
+          "Texture": "eggs/color",
+          "SpriteIndex": "6",
+          "Edibility": "700",
+          "ContextTags": [
+            "egg_item",
+            "color_purple"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_aerodactyl"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_aerodactyl": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_aerodactyl",
+              "AnimalId": "{{modId}}_pokemon_aerodactyl"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_aerodactyl"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

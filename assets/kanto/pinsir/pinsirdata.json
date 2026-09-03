@@ -1,0 +1,108 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/pinsir/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "pinsir/pinsir, pinsir/pinsirs"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_pinsir": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/pinsir/pinsir.wav}}"
+          ],
+          "ID": "{{modId}}_sound_pinsir"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_pinsir": {
+          "DisplayName": "{{i18n:pokemon.pinsir}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_pinsir",
+            "{{modId}}_item_egg_group_bug"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_pinsir",
+              "ItemID": "{{modId}}_item_egg_pinsir"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_pinsir",
+          "Texture": "pinsir/pinsir",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_pinsir_shiny",
+              "Weight": "0.1",
+              "Texture": "pinsir/pinsirs"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_pinsir"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_pinsir": {
+          "Name": "{{modId}_item_egg_pinsir",
+          "DisplayName": "{{i18n:egg.pinsir.item}}",
+          "Description": "{{i18n:egg.pinsir.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "5",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_brown"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_pinsir"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_pinsir": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_pinsir",
+              "AnimalId": "{{modId}}_pokemon_pinsir"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_pinsir"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

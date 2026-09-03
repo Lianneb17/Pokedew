@@ -1,0 +1,173 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/krabby/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "krabby/krabby, krabby/krabbys, krabby/kingler, krabby/kinglers"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_krabby": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/krabby/krabby.wav}}"
+          ],
+          "ID": "{{modId}}_sound_krabby"
+        },
+        "{{modId}}_sound_kingler": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/krabby/kingler.wav}}"
+          ],
+          "ID": "{{modId}}_sound_kingler"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_krabby": {
+          "DisplayName": "{{i18n:pokemon.krabby}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_krabby",
+            "{{modId}}_item_egg_group_water3"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_krabby",
+              "ItemID": "{{modId}}_item_egg_krabby"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_krabby",
+          "Texture": "krabby/krabby",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_krabby_shiny",
+              "Weight": "0.1",
+              "Texture": "krabby/krabbys"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_krabby"
+        },
+        "{{modId}}_pokemon_kingler": {
+          "DisplayName": "{{i18n:pokemon.kingler}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_krabby",
+            "{{modId}}_item_egg_group_water3"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_kingler",
+              "ItemID": "{{modId}}_item_egg_krabby"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_kingler",
+          "Texture": "kingler/kingler",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_kingler_shiny",
+              "Weight": "0.1",
+              "Texture": "krabby/kinglers",
+              "BabyTexture": "krabby/krabby"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_kingler"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_krabby": {
+          "Name": "{{modId}_item_egg_krabby",
+          "DisplayName": "{{i18n:egg.krabby.item}}",
+          "Description": "{{i18n:egg.krabby.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "0",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_red"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_krabby"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_krabby": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_kingler",
+              "AnimalId": "{{modId}}_pokemon_kingler",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_krabby",
+              "AnimalId": "{{modId}}_pokemon_krabby"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_krabby"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_krabby": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_krabby"
+        },
+        "{{modId}}_pokemon_kingler": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_kingler"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

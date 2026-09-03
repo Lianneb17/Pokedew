@@ -95,7 +95,7 @@
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_metapod",
-          "Texture": "metapod/metapod",
+          "Texture": "caterpie/metapod",
           "SpriteWidth": "30",
           "SpriteHeight": "27",
           "Skins": [
@@ -139,7 +139,7 @@
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_butterfree",
-          "Texture": "butterfree_male/butterfree_male",
+          "Texture": "caterpie/butterfree_male",
           "SpriteWidth": "30",
           "SpriteHeight": "27",
           "Skins": [
@@ -183,7 +183,7 @@
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_butterfree",
-          "Texture": "butterfree_female/butterfree_female",
+          "Texture": "caterpie/butterfree_female",
           "SpriteWidth": "30",
           "SpriteHeight": "27",
           "Skins": [
@@ -236,12 +236,12 @@
             {
               "Id": "{{modId}}_egg_spawn_butterfree_female",
               "AnimalId": "{{modId}}_pokemon_butterfree_female",
-              "Condition": "RANDOM 0,250"
+              "Condition": "RANDOM 0,125"
             },
             {
               "Id": "{{modId}}_egg_spawn_butterfree_male",
               "AnimalId": "{{modId}}_pokemon_butterfree_male",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0,167"
             },
             {
               "Id": "{{modId}}_egg_spawn_metapod",

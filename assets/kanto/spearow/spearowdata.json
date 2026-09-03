@@ -1,0 +1,170 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/spearow/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "spearow/spearow, spearow/spearows, spearow/fearow, spearow/fearows"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_spearow": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/spearow/spearow.wav}}"
+          ],
+          "ID": "{{modId}}_sound_spearow"
+        },
+        "{{modId}}_sound_fearow": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/spearow/fearow.wav}}"
+          ],
+          "ID": "{{modId}}_sound_fearow"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_spearow": {
+          "DisplayName": "{{i18n:pokemon.spearow}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_spearow",
+            "{{modId}}_item_egg_group_flying"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_spearow",
+              "ItemID": "{{modId}}_item_egg_spearow"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_spearow",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_spearow",
+          "Texture": "spearow/spearow",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_spearow_shiny",
+              "Weight": "0.1",
+              "Texture": "spearow/spearows"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_spearow"
+        },
+        "{{modId}}_pokemon_fearow": {
+          "DisplayName": "{{i18n:pokemon.fearow}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_spearow",
+            "{{modId}}_item_egg_group_flying"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_fearow",
+              "ItemID": "{{modId}}_item_egg_spearow"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_fearow",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_fearow",
+          "Texture": "fearow/fearow",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_fearow_shiny",
+              "Weight": "0.1",
+              "Texture": "spearow/fearows",
+              "BabyTexture": "spearow/spearow"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_fearow"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_spearow": {
+          "Name": "{{modId}_item_egg_spearow",
+          "DisplayName": "{{i18n:egg.spearow.item}}",
+          "Description": "{{i18n:egg.spearow.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "300",
+          "Texture": "eggs/color",
+          "SpriteIndex": "5",
+          "Edibility": "30",
+          "ContextTags": [
+            "egg_item",
+            "color_brown"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_spearow"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_spearow": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_fearow",
+              "AnimalId": "{{modId}}_pokemon_fearow",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_spearow",
+              "AnimalId": "{{modId}}_pokemon_spearow"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_spearow"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

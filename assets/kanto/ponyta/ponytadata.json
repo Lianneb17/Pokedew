@@ -1,0 +1,279 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/ponyta/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "ponyta/ponyta, ponyta/ponytas, ponyta/ponyta_galar, ponyta/ponyta_galars, ponyta/rapidash, ponyta/rapidashs, ponyta/rapidash_galar, ponyta/rapidash_galars"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_ponyta": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/ponyta/ponyta.wav}}"
+          ],
+          "ID": "{{modId}}_sound_ponyta"
+        },
+        "{{modId}}_sound_ponyta_galar": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/ponyta/ponyta_galar.wav}}"
+          ],
+          "ID": "{{modId}}_sound_ponyta_galar"
+        },
+        "{{modId}}_sound_rapidash": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/ponyta/rapidash.wav}}"
+          ],
+          "ID": "{{modId}}_sound_rapidash"
+        },
+        "{{modId}}_sound_rapidash_galar": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/ponyta/rapidash_galar.wav}}"
+          ],
+          "ID": "{{modId}}_sound_rapidash_galar"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_ponyta": {
+          "DisplayName": "{{i18n:pokemon.ponyta}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_ponyta",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_ponyta",
+              "ItemID": "{{modId}}_item_egg_ponyta"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_ponyta",
+          "Texture": "ponyta/ponyta",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_ponyta_shiny",
+              "Weight": "0.1",
+              "Texture": "ponyta/ponytas"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_ponyta"
+        },
+        "{{modId}}_pokemon_ponyta_galar": {
+          "DisplayName": "{{i18n:pokemon.ponyta_galar}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_ponyta",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_ponyta_galar",
+              "ItemID": "{{modId}}_item_egg_ponyta"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_ponyta_galar",
+          "Texture": "ponyta_galar/ponyta_galar",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_ponyta_galar_shiny",
+              "Weight": "0.1",
+              "Texture": "ponyta/ponyta_galars",
+              "BabyTexture": "ponyta/ponyta"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_ponyta_galar"
+        },
+        "{{modId}}_pokemon_rapidash": {
+          "DisplayName": "{{i18n:pokemon.rapidash}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_ponyta",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_rapidash",
+              "ItemID": "{{modId}}_item_egg_ponyta"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_rapidash",
+          "Texture": "rapidash/rapidash",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_rapidash_shiny",
+              "Weight": "0.1",
+              "Texture": "ponyta/rapidashs",
+              "BabyTexture": "ponyta/ponyta"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_rapidash"
+        },
+        "{{modId}}_pokemon_rapidash_galar": {
+          "DisplayName": "{{i18n:pokemon.rapidash_galar}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_ponyta",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_rapidash_galar",
+              "ItemID": "{{modId}}_item_egg_ponyta"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_fairydust_rapidash_galar",
+              "ItemID": "872"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_rapidash_galar",
+          "Texture": "rapidash_galar/rapidash_galar",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_rapidash_galar_shiny",
+              "Weight": "0.1",
+              "Texture": "ponyta/rapidash_galars",
+              "BabyTexture": "ponyta/ponyta"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_rapidash_galar"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_ponyta": {
+          "Name": "{{modId}_item_egg_ponyta",
+          "DisplayName": "{{i18n:egg.ponyta.item}}",
+          "Description": "{{i18n:egg.ponyta.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "2",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_yellow"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_ponyta"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_ponyta": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_rapidash_galar",
+              "AnimalId": "{{modId}}_pokemon_rapidash_galar",
+              "Condition": "RANDOM 0,250"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_rapidash",
+              "AnimalId": "{{modId}}_pokemon_rapidash",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_ponyta_galar",
+              "AnimalId": "{{modId}}_pokemon_ponyta_galar",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_ponyta",
+              "AnimalId": "{{modId}}_pokemon_ponyta"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_ponyta"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_ponyta": {
+          "IsHeater": "True",
+          "ID": "{{modId}}_pokemon_ponyta"
+        },
+        "{{modId}}_pokemon_rapidash": {
+          "IsHeater": "True",
+          "ID": "{{modId}}_pokemon_rapidash"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

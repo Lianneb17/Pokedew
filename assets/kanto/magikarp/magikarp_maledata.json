@@ -1,0 +1,297 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/magikarp_male/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "magikarp_male/magikarp_male, magikarp_male/magikarp_males, magikarp_male/magikarp_female, magikarp_male/magikarp_females, magikarp_male/gyarados_male, magikarp_male/gyarados_males, magikarp_male/gyarados_female, magikarp_male/gyarados_females"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_magikarp_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/magikarp_male/magikarp_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_magikarp_male"
+        },
+        "{{modId}}_sound_magikarp_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/magikarp_male/magikarp_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_magikarp_female"
+        },
+        "{{modId}}_sound_gyarados_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/magikarp_male/gyarados_male.wav}}"
+          ],
+          "ID": "{{modId}}_sound_gyarados_male"
+        },
+        "{{modId}}_sound_gyarados_female": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/magikarp_male/gyarados_female.wav}}"
+          ],
+          "ID": "{{modId}}_sound_gyarados_female"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_magikarp_male": {
+          "DisplayName": "{{i18n:pokemon.magikarp_male}}",
+          "House": "PokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_magikarp_male",
+            "{{modId}}_item_egg_group_water2",
+            "{{modId}}_item_egg_group_dragon"
+          ],
+          "IncubationTime": "9000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_magikarp_male",
+              "ItemID": "{{modId}}_item_egg_magikarp_male"
+            }
+          ],
+          "DaysToProduce": "1",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_magikarp_male",
+          "Texture": "magikarp_male/magikarp_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_magikarp_male_shiny",
+              "Weight": "0.1",
+              "Texture": "magikarp_male/magikarp_males"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "1000",
+          "ID": "{{modId}}_pokemon_magikarp_male"
+        },
+        "{{modId}}_pokemon_magikarp_female": {
+          "DisplayName": "{{i18n:pokemon.magikarp_female}}",
+          "House": "PokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_magikarp_male",
+            "{{modId}}_item_egg_group_water2",
+            "{{modId}}_item_egg_group_dragon"
+          ],
+          "IncubationTime": "9000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_magikarp_female",
+              "ItemID": "{{modId}}_item_egg_magikarp_male"
+            }
+          ],
+          "DaysToProduce": "1",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_magikarp_female",
+          "Texture": "magikarp_female/magikarp_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_magikarp_female_shiny",
+              "Weight": "0.1",
+              "Texture": "magikarp_male/magikarp_females",
+              "BabyTexture": "magikarp_male/magikarp_male"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "1000",
+          "ID": "{{modId}}_pokemon_magikarp_female"
+        },
+        "{{modId}}_pokemon_gyarados_male": {
+          "DisplayName": "{{i18n:pokemon.gyarados_male}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_magikarp_male",
+            "{{modId}}_item_egg_group_water2",
+            "{{modId}}_item_egg_group_dragon"
+          ],
+          "IncubationTime": "9000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_gyarados_male",
+              "ItemID": "{{modId}}_item_egg_magikarp_male"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_gyarados_male",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "1",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_gyarados_male",
+          "Texture": "gyarados_male/gyarados_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_gyarados_male_shiny",
+              "Weight": "0.1",
+              "Texture": "magikarp_male/gyarados_males",
+              "BabyTexture": "magikarp_male/magikarp_male"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "1000",
+          "ID": "{{modId}}_pokemon_gyarados_male"
+        },
+        "{{modId}}_pokemon_gyarados_female": {
+          "DisplayName": "{{i18n:pokemon.gyarados_female}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_magikarp_male",
+            "{{modId}}_item_egg_group_water2",
+            "{{modId}}_item_egg_group_dragon"
+          ],
+          "IncubationTime": "9000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_gyarados_female",
+              "ItemID": "{{modId}}_item_egg_magikarp_male"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_gyarados_female",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "1",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_gyarados_female",
+          "Texture": "gyarados_female/gyarados_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_gyarados_female_shiny",
+              "Weight": "0.1",
+              "Texture": "magikarp_male/gyarados_females",
+              "BabyTexture": "magikarp_male/magikarp_male"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "1000",
+          "ID": "{{modId}}_pokemon_gyarados_female"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_magikarp_male": {
+          "Name": "{{modId}_item_egg_magikarp_male",
+          "DisplayName": "{{i18n:egg.magikarp_male.item}}",
+          "Description": "{{i18n:egg.magikarp_male.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "100",
+          "Texture": "eggs/color",
+          "SpriteIndex": "0",
+          "Edibility": "10",
+          "ContextTags": [
+            "egg_item",
+            "color_red"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_magikarp_male"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_magikarp_male": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_gyarados_female",
+              "AnimalId": "{{modId}}_pokemon_gyarados_female",
+              "Condition": "RANDOM 0,250"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_gyarados_male",
+              "AnimalId": "{{modId}}_pokemon_gyarados_male",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_magikarp_female",
+              "AnimalId": "{{modId}}_pokemon_magikarp_female",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_magikarp_male",
+              "AnimalId": "{{modId}}_pokemon_magikarp_male"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_magikarp_male"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_magikarp_male": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_magikarp_male"
+        },
+        "{{modId}}_pokemon_magikarp_female": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_magikarp_female"
+        },
+        "{{modId}}_pokemon_gyarados_male": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_gyarados_male"
+        },
+        "{{modId}}_pokemon_gyarados_female": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_gyarados_female"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

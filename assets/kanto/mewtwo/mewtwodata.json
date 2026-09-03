@@ -1,0 +1,108 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/mewtwo/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "mewtwo/mewtwo, mewtwo/mewtwos"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_mewtwo": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/mewtwo/mewtwo.wav}}"
+          ],
+          "ID": "{{modId}}_sound_mewtwo"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_mewtwo": {
+          "DisplayName": "{{i18n:pokemon.mewtwo}}",
+          "House": "PokeBarn",
+          "Gender": "Genderless",
+          "EggItemIds": [
+            "{{modId}}_item_egg_mewtwo",
+            "{{modId}}_item_egg_group_noeggdiscovered"
+          ],
+          "IncubationTime": "45000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_mewtwo",
+              "ItemID": "{{modId}}_item_egg_mewtwo"
+            }
+          ],
+          "DaysToProduce": "7",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_mewtwo",
+          "Texture": "mewtwo/mewtwo",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_mewtwo_shiny",
+              "Weight": "0.1",
+              "Texture": "mewtwo/mewtwos"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "11000",
+          "ID": "{{modId}}_pokemon_mewtwo"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_mewtwo": {
+          "Name": "{{modId}_item_egg_mewtwo",
+          "DisplayName": "{{i18n:egg.mewtwo.item}}",
+          "Description": "{{i18n:egg.mewtwo.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "1100",
+          "Texture": "eggs/color",
+          "SpriteIndex": "6",
+          "Edibility": "1100",
+          "ContextTags": [
+            "egg_item",
+            "color_purple"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_mewtwo"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_mewtwo": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_mewtwo",
+              "AnimalId": "{{modId}}_pokemon_mewtwo"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_mewtwo"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

@@ -23,19 +23,12 @@
           ],
           "ID": "{{modId}}_sound_ivysaur"
         },
-        "{{modId}}_sound_venusaur_male": {
+        "{{modId}}_sound_venusaur": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/bulbasaur/venusaur_male.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/bulbasaur/venusaur.wav}}"
           ],
-          "ID": "{{modId}}_sound_venusaur_male"
-        },
-        "{{modId}}_sound_venusaur_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/bulbasaur/venusaur_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_venusaur_female"
+          "ID": "{{modId}}_sound_venusaur"
         }
       },
       "LogName": "Adding sound changes",
@@ -134,7 +127,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_ivysaur",
-          "Texture": "ivysaur/ivysaur",
+          "Texture": "bulbasaur/ivysaur",
           "SpriteWidth": "29",
           "SpriteHeight": "28",
           "Skins": [
@@ -172,8 +165,8 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_venusaur_male",
-          "Texture": "venusaur_male/venusaur_male",
+          "Sound": "{{modId}}_sound_venusaur",
+          "Texture": "bulbasaur/venusaur_male",
           "SpriteWidth": "29",
           "SpriteHeight": "28",
           "Skins": [
@@ -211,8 +204,8 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_venusaur_female",
-          "Texture": "venusaur_female/venusaur_female",
+          "Sound": "{{modId}}_sound_venusaur",
+          "Texture": "bulbasaur/venusaur_female",
           "SpriteWidth": "29",
           "SpriteHeight": "28",
           "Skins": [
@@ -265,12 +258,12 @@
             {
               "Id": "{{modId}}_egg_spawn_venusaur_female",
               "AnimalId": "{{modId}}_pokemon_venusaur_female",
-              "Condition": "RANDOM 0,250"
+              "Condition": "RANDOM 0,125"
             },
             {
               "Id": "{{modId}}_egg_spawn_venusaur_male",
               "AnimalId": "{{modId}}_pokemon_venusaur_male",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0,167"
             },
             {
               "Id": "{{modId}}_egg_spawn_ivysaur",

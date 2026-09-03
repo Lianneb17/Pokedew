@@ -1,0 +1,217 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/farfetchd/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "farfetchd/farfetchd, farfetchd/farfetchds, farfetchd/farfetchd_galar, farfetchd/farfetchd_galars, farfetchd/sirfetchd, farfetchd/sirfetchds"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_farfetchd": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/farfetchd/farfetchd.wav}}"
+          ],
+          "ID": "{{modId}}_sound_farfetchd"
+        },
+        "{{modId}}_sound_farfetchd_galar": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/farfetchd/farfetchd_galar.wav}}"
+          ],
+          "ID": "{{modId}}_sound_farfetchd_galar"
+        },
+        "{{modId}}_sound_sirfetchd": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/farfetchd/sirfetchd.wav}}"
+          ],
+          "ID": "{{modId}}_sound_sirfetchd"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_farfetchd": {
+          "DisplayName": "{{i18n:pokemon.farfetchd}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_farfetchd",
+            "{{modId}}_item_egg_group_flying",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_farfetchd",
+              "ItemID": "{{modId}}_item_egg_farfetchd"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_farfetchd",
+              "ItemID": "444"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_farfetchd",
+          "Texture": "farfetchd/farfetchd",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_farfetchd_shiny",
+              "Weight": "0.1",
+              "Texture": "farfetchd/farfetchds"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_farfetchd"
+        },
+        "{{modId}}_pokemon_farfetchd_galar": {
+          "DisplayName": "{{i18n:pokemon.farfetchd_galar}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_farfetchd",
+            "{{modId}}_item_egg_group_flying",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_farfetchd_galar",
+              "ItemID": "{{modId}}_item_egg_farfetchd"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_farfetchd_galar",
+          "Texture": "farfetchd_galar/farfetchd_galar",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_farfetchd_galar_shiny",
+              "Weight": "0.1",
+              "Texture": "farfetchd/farfetchd_galars",
+              "BabyTexture": "farfetchd/farfetchd"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_farfetchd_galar"
+        },
+        "{{modId}}_pokemon_sirfetchd": {
+          "DisplayName": "{{i18n:pokemon.sirfetchd}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_farfetchd",
+            "{{modId}}_item_egg_group_flying",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_sirfetchd",
+              "ItemID": "{{modId}}_item_egg_farfetchd"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_sirfetchd",
+          "Texture": "sirfetchd/sirfetchd",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_sirfetchd_shiny",
+              "Weight": "0.1",
+              "Texture": "farfetchd/sirfetchds",
+              "BabyTexture": "farfetchd/farfetchd"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_sirfetchd"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_farfetchd": {
+          "Name": "{{modId}_item_egg_farfetchd",
+          "DisplayName": "{{i18n:egg.farfetchd.item}}",
+          "Description": "{{i18n:egg.farfetchd.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "5",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_brown"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_farfetchd"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_farfetchd": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_sirfetchd",
+              "AnimalId": "{{modId}}_pokemon_sirfetchd",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_farfetchd_galar",
+              "AnimalId": "{{modId}}_pokemon_farfetchd_galar",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_farfetchd",
+              "AnimalId": "{{modId}}_pokemon_farfetchd"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_farfetchd"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

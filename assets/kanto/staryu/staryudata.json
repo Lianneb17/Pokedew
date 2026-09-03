@@ -1,0 +1,173 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/staryu/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "staryu/staryu, staryu/staryus, staryu/starmie, staryu/starmies"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_staryu": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/staryu/staryu.wav}}"
+          ],
+          "ID": "{{modId}}_sound_staryu"
+        },
+        "{{modId}}_sound_starmie": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/staryu/starmie.wav}}"
+          ],
+          "ID": "{{modId}}_sound_starmie"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_staryu": {
+          "DisplayName": "{{i18n:pokemon.staryu}}",
+          "House": "PokeBarn",
+          "Gender": "Genderless",
+          "EggItemIds": [
+            "{{modId}}_item_egg_staryu",
+            "{{modId}}_item_egg_group_water3"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_staryu",
+              "ItemID": "{{modId}}_item_egg_staryu"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_staryu",
+          "Texture": "staryu/staryu",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_staryu_shiny",
+              "Weight": "0.1",
+              "Texture": "staryu/staryus"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_staryu"
+        },
+        "{{modId}}_pokemon_starmie": {
+          "DisplayName": "{{i18n:pokemon.starmie}}",
+          "House": "BigPokeBarn",
+          "Gender": "Genderless",
+          "EggItemIds": [
+            "{{modId}}_item_egg_staryu",
+            "{{modId}}_item_egg_group_water3"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "10",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_starmie",
+              "ItemID": "{{modId}}_item_egg_staryu"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_starmie",
+          "Texture": "starmie/starmie",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_starmie_shiny",
+              "Weight": "0.1",
+              "Texture": "staryu/starmies",
+              "BabyTexture": "staryu/staryu"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_starmie"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_staryu": {
+          "Name": "{{modId}_item_egg_staryu",
+          "DisplayName": "{{i18n:egg.staryu.item}}",
+          "Description": "{{i18n:egg.staryu.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "5",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_brown"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_staryu"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_staryu": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_starmie",
+              "AnimalId": "{{modId}}_pokemon_starmie",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_staryu",
+              "AnimalId": "{{modId}}_pokemon_staryu"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_staryu"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_staryu": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_staryu"
+        },
+        "{{modId}}_pokemon_starmie": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_starmie"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

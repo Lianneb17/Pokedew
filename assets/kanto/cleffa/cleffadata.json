@@ -1,0 +1,249 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/cleffa/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "cleffa/cleffa, cleffa/cleffas, cleffa/clefairy, cleffa/clefairys, cleffa/clefable, cleffa/clefables"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_cleffa": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/cleffa/cleffa.wav}}"
+          ],
+          "ID": "{{modId}}_sound_cleffa"
+        },
+        "{{modId}}_sound_clefairy": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/cleffa/clefairy.wav}}"
+          ],
+          "ID": "{{modId}}_sound_clefairy"
+        },
+        "{{modId}}_sound_clefable": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/cleffa/clefable.wav}}"
+          ],
+          "ID": "{{modId}}_sound_clefable"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_cleffa": {
+          "DisplayName": "{{i18n:pokemon.cleffa}}",
+          "House": "PokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_cleffa",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "3",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_cleffa",
+              "ItemID": "{{modId}}_item_egg_cleffa"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_fairydust_cleffa",
+              "ItemID": "872"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_cleffa",
+          "Texture": "cleffa/cleffa",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_cleffa_shiny",
+              "Weight": "0.1",
+              "Texture": "cleffa/cleffas"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_cleffa"
+        },
+        "{{modId}}_pokemon_clefairy": {
+          "DisplayName": "{{i18n:pokemon.clefairy}}",
+          "House": "BigPokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_cleffa",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "3",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_clefairy",
+              "ItemID": "{{modId}}_item_egg_cleffa"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_fairydust_clefairy",
+              "ItemID": "872"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_clefairy",
+          "Texture": "cleffa/clefairy",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_clefairy_shiny",
+              "Weight": "0.1",
+              "Texture": "cleffa/clefairys",
+              "BabyTexture": "cleffa/cleffa"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_clefairy"
+        },
+        "{{modId}}_pokemon_clefable": {
+          "DisplayName": "{{i18n:pokemon.clefable}}",
+          "House": "DeluxePokeBarn",
+          "Gender": "MaleOrFemale",
+          "EggItemIds": [
+            "{{modId}}_item_egg_cleffa",
+            "{{modId}}_item_egg_group_fairy"
+          ],
+          "IncubationTime": "18000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "3",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_clefable",
+              "ItemID": "{{modId}}_item_egg_cleffa"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_fairydust_clefable",
+              "ItemID": "872"
+            }
+          ],
+          "DaysToProduce": "2",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_clefable",
+          "Texture": "cleffa/clefable",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_clefable_shiny",
+              "Weight": "0.1",
+              "Texture": "cleffa/clefables",
+              "BabyTexture": "cleffa/cleffa"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "3000",
+          "ID": "{{modId}}_pokemon_clefable"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_cleffa": {
+          "Name": "{{modId}_item_egg_cleffa",
+          "DisplayName": "{{i18n:egg.cleffa.item}}",
+          "Description": "{{i18n:egg.cleffa.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "300",
+          "Texture": "eggs/color",
+          "SpriteIndex": "9",
+          "Edibility": "30",
+          "ContextTags": [
+            "egg_item",
+            "color_pink"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_cleffa"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_cleffa": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_clefable",
+              "AnimalId": "{{modId}}_pokemon_clefable",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_clefairy",
+              "AnimalId": "{{modId}}_pokemon_clefairy",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_cleffa",
+              "AnimalId": "{{modId}}_pokemon_cleffa"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_cleffa"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_clefable": {
+          "TextureOverrides": [
+            {
+              "Id": "{{modId}}_pokemon_texture_clefable",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 2 3",
+              "TextureToUse": "cleffa/clefairy"
+            },
+            {
+              "Id": "{{modId}}_pokemon_texture_clefable_shiny",
+              "Skin": "{{modId}}_pokemon_clefable_shiny",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 2 3",
+              "TextureToUse": "cleffa/clefairys"
+            }
+          ],
+          "ID": "{{modId}}_pokemon_clefable"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

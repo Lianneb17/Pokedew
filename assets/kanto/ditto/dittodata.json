@@ -1,0 +1,108 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/ditto/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "ditto/ditto, ditto/dittos"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_ditto": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/ditto/ditto.wav}}"
+          ],
+          "ID": "{{modId}}_sound_ditto"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_ditto": {
+          "DisplayName": "{{i18n:pokemon.ditto}}",
+          "House": "PokeBarn",
+          "Gender": "Genderless",
+          "EggItemIds": [
+            "{{modId}}_item_egg_ditto",
+            "{{modId}}_item_egg_group_ditto"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_ditto",
+              "ItemID": "{{modId}}_item_egg_ditto"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_ditto",
+          "Texture": "ditto/ditto",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_ditto_shiny",
+              "Weight": "0.1",
+              "Texture": "ditto/dittos"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_ditto"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_ditto": {
+          "Name": "{{modId}_item_egg_ditto",
+          "DisplayName": "{{i18n:egg.ditto.item}}",
+          "Description": "{{i18n:egg.ditto.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "6",
+          "Edibility": "50",
+          "ContextTags": [
+            "egg_item",
+            "color_purple"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_ditto"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_ditto": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_ditto",
+              "AnimalId": "{{modId}}_pokemon_ditto"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_ditto"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}

@@ -126,7 +126,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_charmeleon",
-          "Texture": "charmeleon/charmeleon",
+          "Texture": "charmander/charmeleon",
           "SpriteWidth": "42",
           "SpriteHeight": "30",
           "Skins": [
@@ -171,7 +171,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_charizard",
-          "Texture": "charizard/charizard",
+          "Texture": "charmander/charizard",
           "SpriteWidth": "42",
           "SpriteHeight": "30",
           "Skins": [

@@ -1,0 +1,266 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/tyrogue/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "tyrogue/tyrogue, tyrogue/tyrogues, tyrogue/hitmonlee, tyrogue/hitmonlees, tyrogue/hitmonchan, tyrogue/hitmonchans, tyrogue/hitmontop, tyrogue/hitmontops"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_tyrogue": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/tyrogue/tyrogue.wav}}"
+          ],
+          "ID": "{{modId}}_sound_tyrogue"
+        },
+        "{{modId}}_sound_hitmonlee": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/tyrogue/hitmonlee.wav}}"
+          ],
+          "ID": "{{modId}}_sound_hitmonlee"
+        },
+        "{{modId}}_sound_hitmonchan": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/tyrogue/hitmonchan.wav}}"
+          ],
+          "ID": "{{modId}}_sound_hitmonchan"
+        },
+        "{{modId}}_sound_hitmontop": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/tyrogue/hitmontop.wav}}"
+          ],
+          "ID": "{{modId}}_sound_hitmontop"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_tyrogue": {
+          "DisplayName": "{{i18n:pokemon.tyrogue}}",
+          "House": "PokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_tyrogue",
+            "{{modId}}_item_egg_group_humanlike"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_tyrogue",
+              "ItemID": "{{modId}}_item_egg_tyrogue"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_tyrogue",
+          "Texture": "tyrogue/tyrogue",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_tyrogue_shiny",
+              "Weight": "0.1",
+              "Texture": "tyrogue/tyrogues"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_tyrogue"
+        },
+        "{{modId}}_pokemon_hitmonlee": {
+          "DisplayName": "{{i18n:pokemon.hitmonlee}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_tyrogue",
+            "{{modId}}_item_egg_group_humanlike"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_hitmonlee",
+              "ItemID": "{{modId}}_item_egg_tyrogue"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_hitmonlee",
+          "Texture": "hitmonlee/hitmonlee",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_hitmonlee_shiny",
+              "Weight": "0.1",
+              "Texture": "tyrogue/hitmonlees",
+              "BabyTexture": "tyrogue/tyrogue"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_hitmonlee"
+        },
+        "{{modId}}_pokemon_hitmonchan": {
+          "DisplayName": "{{i18n:pokemon.hitmonchan}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_tyrogue",
+            "{{modId}}_item_egg_group_humanlike"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_hitmonchan",
+              "ItemID": "{{modId}}_item_egg_tyrogue"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_hitmonchan",
+          "Texture": "hitmonchan/hitmonchan",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_hitmonchan_shiny",
+              "Weight": "0.1",
+              "Texture": "tyrogue/hitmonchans",
+              "BabyTexture": "tyrogue/tyrogue"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_hitmonchan"
+        },
+        "{{modId}}_pokemon_hitmontop": {
+          "DisplayName": "{{i18n:pokemon.hitmontop}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_tyrogue",
+            "{{modId}}_item_egg_group_humanlike"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_hitmontop",
+              "ItemID": "{{modId}}_item_egg_tyrogue"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_hitmontop",
+          "Texture": "hitmontop/hitmontop",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_hitmontop_shiny",
+              "Weight": "0.1",
+              "Texture": "tyrogue/hitmontops",
+              "BabyTexture": "tyrogue/tyrogue"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_hitmontop"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_tyrogue": {
+          "Name": "{{modId}_item_egg_tyrogue",
+          "DisplayName": "{{i18n:egg.tyrogue.item}}",
+          "Description": "{{i18n:egg.tyrogue.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "500",
+          "Texture": "eggs/color",
+          "SpriteIndex": "5",
+          "Edibility": "50",
+          "Buffs": [
+            {
+              "Duration": "0",
+              "Effects": {
+                "Attack": "3"
+              }
+            }
+          ],
+          "ContextTags": [
+            "egg_item",
+            "color_brown"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_tyrogue"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_tyrogue": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_hitmontop",
+              "AnimalId": "{{modId}}_pokemon_hitmontop",
+              "Condition": "RANDOM 0,250"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_hitmonchan",
+              "AnimalId": "{{modId}}_pokemon_hitmonchan",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_hitmonlee",
+              "AnimalId": "{{modId}}_pokemon_hitmonlee",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_tyrogue",
+              "AnimalId": "{{modId}}_pokemon_tyrogue"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_tyrogue"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    }
+  ]
+}
