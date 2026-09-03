@@ -81,6 +81,7 @@
           "ID": "{{modId}}_pokemon_pidgey"
         },
         "{{modId}}_pokemon_pidgeotto": {
+          "BabyTexture": "pidgey/pidgey",
           "DisplayName": "{{i18n:pokemon.pidgeotto}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -115,7 +116,7 @@
               "ID": "{{modId}}_pokemon_pidgeotto_shiny",
               "Weight": "0.1",
               "Texture": "pidgey/pidgeottos",
-              "BabyTexture": "pidgey/pidgey"
+              "BabyTexture": "pidgey/pidgeys"
             }
           ],
           "SleepFrame": "16",
@@ -125,6 +126,7 @@
           "ID": "{{modId}}_pokemon_pidgeotto"
         },
         "{{modId}}_pokemon_pidgeot": {
+          "BabyTexture": "pidgey/pidgey",
           "DisplayName": "{{i18n:pokemon.pidgeot}}",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
@@ -159,7 +161,7 @@
               "ID": "{{modId}}_pokemon_pidgeot_shiny",
               "Weight": "0.1",
               "Texture": "pidgey/pidgeots",
-              "BabyTexture": "pidgey/pidgey"
+              "BabyTexture": "pidgey/pidgeys"
             }
           ],
           "SleepFrame": "16",

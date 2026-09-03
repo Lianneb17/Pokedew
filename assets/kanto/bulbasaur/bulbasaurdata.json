@@ -106,6 +106,7 @@
           "ID": "{{modId}}_pokemon_bulbasaur"
         },
         "{{modId}}_pokemon_ivysaur": {
+          "BabyTexture": "bulbasaur/bulbasaur",
           "DisplayName": "{{i18n:pokemon.ivysaur}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -135,7 +136,7 @@
               "ID": "{{modId}}_pokemon_ivysaur_shiny",
               "Weight": "0.1",
               "Texture": "bulbasaur/ivysaurs",
-              "BabyTexture": "bulbasaur/bulbasaur"
+              "BabyTexture": "bulbasaur/bulbasaurs"
             }
           ],
           "SleepFrame": "16",
@@ -145,6 +146,7 @@
           "ID": "{{modId}}_pokemon_ivysaur"
         },
         "{{modId}}_pokemon_venusaur_male": {
+          "BabyTexture": "bulbasaur/bulbasaur",
           "DisplayName": "{{i18n:pokemon.venusaur_male}}",
           "House": "DeluxePokeBarn",
           "Gender": "Male",
@@ -174,7 +176,7 @@
               "ID": "{{modId}}_pokemon_venusaur_male_shiny",
               "Weight": "0.1",
               "Texture": "bulbasaur/venusaur_males",
-              "BabyTexture": "bulbasaur/bulbasaur"
+              "BabyTexture": "bulbasaur/bulbasaurs"
             }
           ],
           "SleepFrame": "16",
@@ -184,6 +186,7 @@
           "ID": "{{modId}}_pokemon_venusaur_male"
         },
         "{{modId}}_pokemon_venusaur_female": {
+          "BabyTexture": "bulbasaur/bulbasaur",
           "DisplayName": "{{i18n:pokemon.venusaur_female}}",
           "House": "DeluxePokeBarn",
           "Gender": "Female",
@@ -213,7 +216,7 @@
               "ID": "{{modId}}_pokemon_venusaur_female_shiny",
               "Weight": "0.1",
               "Texture": "bulbasaur/venusaur_females",
-              "BabyTexture": "bulbasaur/bulbasaur"
+              "BabyTexture": "bulbasaur/bulbasaurs"
             }
           ],
           "SleepFrame": "16",

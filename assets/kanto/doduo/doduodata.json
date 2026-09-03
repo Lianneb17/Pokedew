@@ -107,8 +107,7 @@
             {
               "ID": "{{modId}}_pokemon_doduo_female_shiny",
               "Weight": "0.1",
-              "Texture": "doduo/doduo_females",
-              "BabyTexture": "doduo/doduo"
+              "Texture": "doduo/doduo_females"
             }
           ],
           "SleepFrame": "16",
@@ -118,6 +117,7 @@
           "ID": "{{modId}}_pokemon_doduo_female"
         },
         "{{modId}}_pokemon_dodrio_male": {
+          "BabyTexture": "doduo/doduo_male",
           "DisplayName": "{{i18n:pokemon.dodrio_male}}",
           "House": "BigPokeBarn",
           "Gender": "Male",
@@ -152,7 +152,7 @@
               "ID": "{{modId}}_pokemon_dodrio_male_shiny",
               "Weight": "0.1",
               "Texture": "doduo/dodrio_males",
-              "BabyTexture": "doduo/doduo"
+              "BabyTexture": "doduo/doduo_males"
             }
           ],
           "SleepFrame": "16",
@@ -162,6 +162,7 @@
           "ID": "{{modId}}_pokemon_dodrio_male"
         },
         "{{modId}}_pokemon_dodrio_female": {
+          "BabyTexture": "doduo/doduo_female",
           "DisplayName": "{{i18n:pokemon.dodrio_female}}",
           "House": "BigPokeBarn",
           "Gender": "Female",
@@ -196,7 +197,7 @@
               "ID": "{{modId}}_pokemon_dodrio_female_shiny",
               "Weight": "0.1",
               "Texture": "doduo/dodrio_females",
-              "BabyTexture": "doduo/doduo"
+              "BabyTexture": "doduo/doduo_females"
             }
           ],
           "SleepFrame": "16",

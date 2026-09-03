@@ -74,6 +74,7 @@
           "ID": "{{modId}}_pokemon_spearow"
         },
         "{{modId}}_pokemon_fearow": {
+          "BabyTexture": "spearow/spearow",
           "DisplayName": "{{i18n:pokemon.fearow}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -108,7 +109,7 @@
               "ID": "{{modId}}_pokemon_fearow_shiny",
               "Weight": "0.1",
               "Texture": "spearow/fearows",
-              "BabyTexture": "spearow/spearow"
+              "BabyTexture": "spearow/spearows"
             }
           ],
           "SleepFrame": "16",

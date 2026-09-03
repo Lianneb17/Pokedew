@@ -75,6 +75,7 @@
           "ID": "{{modId}}_pokemon_caterpie"
         },
         "{{modId}}_pokemon_metapod": {
+          "BabyTexture": "caterpie/caterpie",
           "DisplayName": "{{i18n:pokemon.metapod}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -103,7 +104,7 @@
               "ID": "{{modId}}_pokemon_metapod_shiny",
               "Weight": "0.1",
               "Texture": "caterpie/metapods",
-              "BabyTexture": "caterpie/caterpie"
+              "BabyTexture": "caterpie/caterpies"
             }
           ],
           "SleepFrame": "16",
@@ -113,6 +114,7 @@
           "ID": "{{modId}}_pokemon_metapod"
         },
         "{{modId}}_pokemon_butterfree_male": {
+          "BabyTexture": "caterpie/caterpie",
           "DisplayName": "{{i18n:pokemon.butterfree_male}}",
           "House": "DeluxePokeBarn",
           "Gender": "Male",
@@ -147,7 +149,7 @@
               "ID": "{{modId}}_pokemon_butterfree_male_shiny",
               "Weight": "0.1",
               "Texture": "caterpie/butterfree_males",
-              "BabyTexture": "caterpie/caterpie"
+              "BabyTexture": "caterpie/caterpies"
             }
           ],
           "SleepFrame": "16",
@@ -157,6 +159,7 @@
           "ID": "{{modId}}_pokemon_butterfree_male"
         },
         "{{modId}}_pokemon_butterfree_female": {
+          "BabyTexture": "caterpie/caterpie",
           "DisplayName": "{{i18n:pokemon.butterfree_female}}",
           "House": "DeluxePokeBarn",
           "Gender": "Female",
@@ -191,7 +194,7 @@
               "ID": "{{modId}}_pokemon_butterfree_female_shiny",
               "Weight": "0.1",
               "Texture": "caterpie/butterfree_females",
-              "BabyTexture": "caterpie/caterpie"
+              "BabyTexture": "caterpie/caterpies"
             }
           ],
           "SleepFrame": "16",

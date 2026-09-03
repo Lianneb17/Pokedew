@@ -68,6 +68,7 @@
           "ID": "{{modId}}_pokemon_cubone"
         },
         "{{modId}}_pokemon_marowak": {
+          "BabyTexture": "cubone/cubone",
           "DisplayName": "{{i18n:pokemon.marowak}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -96,7 +97,7 @@
               "ID": "{{modId}}_pokemon_marowak_shiny",
               "Weight": "0.1",
               "Texture": "cubone/marowaks",
-              "BabyTexture": "cubone/cubone"
+              "BabyTexture": "cubone/cubones"
             }
           ],
           "SleepFrame": "16",
@@ -106,6 +107,7 @@
           "ID": "{{modId}}_pokemon_marowak"
         },
         "{{modId}}_pokemon_marowak_alola": {
+          "BabyTexture": "cubone/cubone",
           "DisplayName": "{{i18n:pokemon.marowak_alola}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -134,7 +136,7 @@
               "ID": "{{modId}}_pokemon_marowak_alola_shiny",
               "Weight": "0.1",
               "Texture": "cubone/marowak_alolas",
-              "BabyTexture": "cubone/cubone"
+              "BabyTexture": "cubone/cubones"
             }
           ],
           "SleepFrame": "16",

@@ -81,6 +81,7 @@
           "ID": "{{modId}}_pokemon_cleffa"
         },
         "{{modId}}_pokemon_clefairy": {
+          "BabyTexture": "cleffa/cleffa",
           "DisplayName": "{{i18n:pokemon.clefairy}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -115,7 +116,7 @@
               "ID": "{{modId}}_pokemon_clefairy_shiny",
               "Weight": "0.1",
               "Texture": "cleffa/clefairys",
-              "BabyTexture": "cleffa/cleffa"
+              "BabyTexture": "cleffa/cleffas"
             }
           ],
           "SleepFrame": "16",
@@ -125,6 +126,7 @@
           "ID": "{{modId}}_pokemon_clefairy"
         },
         "{{modId}}_pokemon_clefable": {
+          "BabyTexture": "cleffa/cleffa",
           "DisplayName": "{{i18n:pokemon.clefable}}",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
@@ -159,7 +161,7 @@
               "ID": "{{modId}}_pokemon_clefable_shiny",
               "Weight": "0.1",
               "Texture": "cleffa/clefables",
-              "BabyTexture": "cleffa/cleffa"
+              "BabyTexture": "cleffa/cleffas"
             }
           ],
           "SleepFrame": "16",

@@ -76,6 +76,7 @@
           "ID": "{{modId}}_pokemon_dratini"
         },
         "{{modId}}_pokemon_dragonair": {
+          "BabyTexture": "dratini/dratini",
           "DisplayName": "{{i18n:pokemon.dragonair}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -105,7 +106,7 @@
               "ID": "{{modId}}_pokemon_dragonair_shiny",
               "Weight": "0.1",
               "Texture": "dratini/dragonairs",
-              "BabyTexture": "dratini/dratini"
+              "BabyTexture": "dratini/dratinis"
             }
           ],
           "SleepFrame": "16",
@@ -115,6 +116,7 @@
           "ID": "{{modId}}_pokemon_dragonair"
         },
         "{{modId}}_pokemon_dragonite": {
+          "BabyTexture": "dratini/dratini",
           "DisplayName": "{{i18n:pokemon.dragonite}}",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
@@ -150,7 +152,7 @@
               "ID": "{{modId}}_pokemon_dragonite_shiny",
               "Weight": "0.1",
               "Texture": "dratini/dragonites",
-              "BabyTexture": "dratini/dratini"
+              "BabyTexture": "dratini/dratinis"
             }
           ],
           "SleepFrame": "16",

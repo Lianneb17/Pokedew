@@ -68,6 +68,7 @@
           "ID": "{{modId}}_pokemon_drowzee"
         },
         "{{modId}}_pokemon_hypno": {
+          "BabyTexture": "drowzee/drowzee",
           "DisplayName": "{{i18n:pokemon.hypno}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -96,7 +97,7 @@
               "ID": "{{modId}}_pokemon_hypno_shiny",
               "Weight": "0.1",
               "Texture": "drowzee/hypnos",
-              "BabyTexture": "drowzee/drowzee"
+              "BabyTexture": "drowzee/drowzees"
             }
           ],
           "SleepFrame": "16",

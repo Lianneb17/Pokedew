@@ -106,6 +106,7 @@
           "ID": "{{modId}}_pokemon_diglett_alola"
         },
         "{{modId}}_pokemon_dugtrio": {
+          "BabyTexture": "diglett/diglett",
           "DisplayName": "{{i18n:pokemon.dugtrio}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -134,7 +135,7 @@
               "ID": "{{modId}}_pokemon_dugtrio_shiny",
               "Weight": "0.1",
               "Texture": "diglett/dugtrios",
-              "BabyTexture": "diglett/diglett"
+              "BabyTexture": "diglett/digletts"
             }
           ],
           "SleepFrame": "16",
@@ -144,6 +145,7 @@
           "ID": "{{modId}}_pokemon_dugtrio"
         },
         "{{modId}}_pokemon_dugtrio_alola": {
+          "BabyTexture": "diglett/diglett_alola",
           "DisplayName": "{{i18n:pokemon.dugtrio_alola}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -172,7 +174,7 @@
               "ID": "{{modId}}_pokemon_dugtrio_alola_shiny",
               "Weight": "0.1",
               "Texture": "diglett/dugtrio_alolas",
-              "BabyTexture": "diglett/diglett"
+              "BabyTexture": "diglett/diglett_alolas"
             }
           ],
           "SleepFrame": "16",

@@ -75,6 +75,7 @@
           "ID": "{{modId}}_pokemon_bellsprout"
         },
         "{{modId}}_pokemon_weepinbell": {
+          "BabyTexture": "bellsprout/bellsprout",
           "DisplayName": "{{i18n:pokemon.weepinbell}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -103,7 +104,7 @@
               "ID": "{{modId}}_pokemon_weepinbell_shiny",
               "Weight": "0.1",
               "Texture": "bellsprout/weepinbells",
-              "BabyTexture": "bellsprout/bellsprout"
+              "BabyTexture": "bellsprout/bellsprouts"
             }
           ],
           "SleepFrame": "16",
@@ -113,6 +114,7 @@
           "ID": "{{modId}}_pokemon_weepinbell"
         },
         "{{modId}}_pokemon_victreebel": {
+          "BabyTexture": "bellsprout/bellsprout",
           "DisplayName": "{{i18n:pokemon.victreebel}}",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
@@ -141,7 +143,7 @@
               "ID": "{{modId}}_pokemon_victreebel_shiny",
               "Weight": "0.1",
               "Texture": "bellsprout/victreebels",
-              "BabyTexture": "bellsprout/bellsprout"
+              "BabyTexture": "bellsprout/bellsprouts"
             }
           ],
           "SleepFrame": "16",
