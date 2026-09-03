@@ -16,13 +16,6 @@
           ],
           "ID": "{{modId}}_sound_ponyta"
         },
-        "{{modId}}_sound_ponyta_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/ponyta/ponyta_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_ponyta_galar"
-        },
         "{{modId}}_sound_rapidash": {
           "Category": "Sound",
           "FilePaths": [
@@ -30,13 +23,6 @@
           ],
           "ID": "{{modId}}_sound_rapidash"
         },
-        "{{modId}}_sound_rapidash_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/ponyta/rapidash_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_rapidash_galar"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -101,7 +87,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_ponyta_galar",
+          "Sound": "{{modId}}_sound_ponyta",
           "Texture": "ponyta_galar/ponyta_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -183,7 +169,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_rapidash_galar",
+          "Sound": "{{modId}}_sound_rapidash",
           "Texture": "rapidash_galar/rapidash_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

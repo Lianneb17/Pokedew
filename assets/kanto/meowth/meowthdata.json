@@ -16,33 +16,12 @@
           ],
           "ID": "{{modId}}_sound_meowth"
         },
-        "{{modId}}_sound_meowth_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/meowth/meowth_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_meowth_alola"
-        },
-        "{{modId}}_sound_meowth_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/meowth/meowth_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_meowth_galar"
-        },
         "{{modId}}_sound_persian": {
           "Category": "Sound",
           "FilePaths": [
             "{{AbsoluteFilePath: assets/kanto/meowth/persian.wav}}"
           ],
           "ID": "{{modId}}_sound_persian"
-        },
-        "{{modId}}_sound_persian_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/meowth/persian_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_persian_alola"
         },
         "{{modId}}_sound_perrserker": {
           "Category": "Sound",
@@ -115,7 +94,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_meowth_alola",
+          "Sound": "{{modId}}_sound_meowth",
           "Texture": "meowth_alola/meowth_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -153,7 +132,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_meowth_galar",
+          "Sound": "{{modId}}_sound_meowth",
           "Texture": "meowth_galar/meowth_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -229,7 +208,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_persian_alola",
+          "Sound": "{{modId}}_sound_persian",
           "Texture": "persian_alola/persian_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

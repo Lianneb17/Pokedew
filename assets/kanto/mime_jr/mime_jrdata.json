@@ -23,13 +23,6 @@
           ],
           "ID": "{{modId}}_sound_mr_mime"
         },
-        "{{modId}}_sound_mr_mime_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/mime_jr/mr_mime_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_mr_mime_galar"
-        },
         "{{modId}}_sound_mr_rime": {
           "Category": "Sound",
           "FilePaths": [
@@ -151,7 +144,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_mr_mime_galar",
+          "Sound": "{{modId}}_sound_mr_mime",
           "Texture": "mr_mime_galar/mr_mime_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

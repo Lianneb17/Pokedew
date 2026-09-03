@@ -16,13 +16,6 @@
           ],
           "ID": "{{modId}}_sound_grimer"
         },
-        "{{modId}}_sound_grimer_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/grimer/grimer_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_grimer_alola"
-        },
         "{{modId}}_sound_muk": {
           "Category": "Sound",
           "FilePaths": [
@@ -30,13 +23,6 @@
           ],
           "ID": "{{modId}}_sound_muk"
         },
-        "{{modId}}_sound_muk_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/grimer/muk_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_muk_alola"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -101,7 +87,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_grimer_alola",
+          "Sound": "{{modId}}_sound_grimer",
           "Texture": "grimer_alola/grimer_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -177,7 +163,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_muk_alola",
+          "Sound": "{{modId}}_sound_muk",
           "Texture": "muk_alola/muk_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

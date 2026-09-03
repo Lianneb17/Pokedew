@@ -16,13 +16,6 @@
           ],
           "ID": "{{modId}}_sound_vulpix"
         },
-        "{{modId}}_sound_vulpix_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/vulpix/vulpix_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_vulpix_alola"
-        },
         "{{modId}}_sound_ninetales": {
           "Category": "Sound",
           "FilePaths": [
@@ -30,13 +23,6 @@
           ],
           "ID": "{{modId}}_sound_ninetales"
         },
-        "{{modId}}_sound_ninetales_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/vulpix/ninetales_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_ninetales_alola"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -101,7 +87,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_vulpix_alola",
+          "Sound": "{{modId}}_sound_vulpix",
           "Texture": "vulpix_alola/vulpix_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -183,7 +169,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_ninetales_alola",
+          "Sound": "{{modId}}_sound_ninetales",
           "Texture": "ninetales_alola/ninetales_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

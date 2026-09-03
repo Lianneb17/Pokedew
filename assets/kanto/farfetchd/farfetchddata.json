@@ -16,13 +16,6 @@
           ],
           "ID": "{{modId}}_sound_farfetchd"
         },
-        "{{modId}}_sound_farfetchd_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/farfetchd/farfetchd_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_farfetchd_galar"
-        },
         "{{modId}}_sound_sirfetchd": {
           "Category": "Sound",
           "FilePaths": [
@@ -102,7 +95,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_farfetchd_galar",
+          "Sound": "{{modId}}_sound_farfetchd",
           "Texture": "farfetchd_galar/farfetchd_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

@@ -16,13 +16,6 @@
           ],
           "ID": "{{modId}}_sound_zapdos"
         },
-        "{{modId}}_sound_zapdos_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/zapdos/zapdos_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_zapdos_galar"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -104,7 +97,7 @@
           ],
           "DaysToProduce": "7",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_zapdos_galar",
+          "Sound": "{{modId}}_sound_zapdos",
           "Texture": "zapdos_galar/zapdos_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

@@ -23,13 +23,6 @@
           ],
           "ID": "{{modId}}_sound_weezing"
         },
-        "{{modId}}_sound_weezing_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/koffing/weezing_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_weezing_galar"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -138,7 +131,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_weezing_galar",
+          "Sound": "{{modId}}_sound_weezing",
           "Texture": "weezing_galar/weezing_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

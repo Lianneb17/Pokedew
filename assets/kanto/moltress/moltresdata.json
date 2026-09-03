@@ -16,13 +16,6 @@
           ],
           "ID": "{{modId}}_sound_moltres"
         },
-        "{{modId}}_sound_moltres_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/moltres/moltres_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_moltres_galar"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -99,7 +92,7 @@
           ],
           "DaysToProduce": "7",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_moltres_galar",
+          "Sound": "{{modId}}_sound_moltres",
           "Texture": "moltres_galar/moltres_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

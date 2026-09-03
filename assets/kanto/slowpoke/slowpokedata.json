@@ -16,26 +16,12 @@
           ],
           "ID": "{{modId}}_sound_slowpoke"
         },
-        "{{modId}}_sound_slowpoke_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/slowpoke/slowpoke_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_slowpoke_galar"
-        },
         "{{modId}}_sound_slowbro": {
           "Category": "Sound",
           "FilePaths": [
             "{{AbsoluteFilePath: assets/kanto/slowpoke/slowbro.wav}}"
           ],
           "ID": "{{modId}}_sound_slowbro"
-        },
-        "{{modId}}_sound_slowbro_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/slowpoke/slowbro_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_slowbro_galar"
         },
         "{{modId}}_sound_slowking": {
           "Category": "Sound",
@@ -44,13 +30,6 @@
           ],
           "ID": "{{modId}}_sound_slowking"
         },
-        "{{modId}}_sound_slowking_galar": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/slowpoke/slowking_galar.wav}}"
-          ],
-          "ID": "{{modId}}_sound_slowking_galar"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -117,7 +96,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_slowpoke_galar",
+          "Sound": "{{modId}}_sound_slowpoke",
           "Texture": "slowpoke_galar/slowpoke_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -195,7 +174,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_slowbro_galar",
+          "Sound": "{{modId}}_sound_slowbro",
           "Texture": "slowbro_galar/slowbro_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -273,7 +252,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_slowking_galar",
+          "Sound": "{{modId}}_sound_slowking",
           "Texture": "slowking_galar/slowking_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

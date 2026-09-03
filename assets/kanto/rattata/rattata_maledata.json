@@ -23,20 +23,6 @@
           ],
           "ID": "{{modId}}_sound_rattata_female"
         },
-        "{{modId}}_sound_rattata_alola_male": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rattata_male/rattata_alola_male.wav}}"
-          ],
-          "ID": "{{modId}}_sound_rattata_alola_male"
-        },
-        "{{modId}}_sound_rattata_alola_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rattata_male/rattata_alola_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_rattata_alola_female"
-        },
         "{{modId}}_sound_raticate_male": {
           "Category": "Sound",
           "FilePaths": [
@@ -51,34 +37,6 @@
           ],
           "ID": "{{modId}}_sound_raticate_female"
         },
-        "{{modId}}_sound_raticate_alola_male": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rattata_male/raticate_alola_male.wav}}"
-          ],
-          "ID": "{{modId}}_sound_raticate_alola_male"
-        },
-        "{{modId}}_sound_raticate_alola_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rattata_male/raticate_alola_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_raticate_alola_female"
-        },
-        "{{modId}}_sound_raticate_totem_alola_male": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rattata_male/raticate_totem_alola_male.wav}}"
-          ],
-          "ID": "{{modId}}_sound_raticate_totem_alola_male"
-        },
-        "{{modId}}_sound_raticate_totem_alola_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rattata_male/raticate_totem_alola_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_raticate_totem_alola_female"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -181,7 +139,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_rattata_alola_male",
+          "Sound": "{{modId}}_sound_rattata_male",
           "Texture": "rattata_alola_male/rattata_alola_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -219,7 +177,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_rattata_alola_female",
+          "Sound": "{{modId}}_sound_rattata_female",
           "Texture": "rattata_alola_female/rattata_alola_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -333,7 +291,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_raticate_alola_male",
+          "Sound": "{{modId}}_sound_raticate_male",
           "Texture": "raticate_alola_male/raticate_alola_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -371,7 +329,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_raticate_alola_female",
+          "Sound": "{{modId}}_sound_raticate_female",
           "Texture": "raticate_alola_female/raticate_alola_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -409,7 +367,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_raticate_totem_alola_male",
+          "Sound": "{{modId}}_sound_raticate_totem_male",
           "Texture": "raticate_totem_alola_male/raticate_totem_alola_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -447,7 +405,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_raticate_totem_alola_female",
+          "Sound": "{{modId}}_sound_raticate_totem_female",
           "Texture": "raticate_totem_alola_female/raticate_totem_alola_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

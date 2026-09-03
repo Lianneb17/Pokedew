@@ -16,26 +16,12 @@
           ],
           "ID": "{{modId}}_sound_geodude"
         },
-        "{{modId}}_sound_geodude_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/geodude/geodude_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_geodude_alola"
-        },
         "{{modId}}_sound_graveler": {
           "Category": "Sound",
           "FilePaths": [
             "{{AbsoluteFilePath: assets/kanto/geodude/graveler.wav}}"
           ],
           "ID": "{{modId}}_sound_graveler"
-        },
-        "{{modId}}_sound_graveler_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/geodude/graveler_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_graveler_alola"
         },
         "{{modId}}_sound_golem": {
           "Category": "Sound",
@@ -44,13 +30,6 @@
           ],
           "ID": "{{modId}}_sound_golem"
         },
-        "{{modId}}_sound_golem_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/geodude/golem_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_golem_alola"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -122,7 +101,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_geodude_alola",
+          "Sound": "{{modId}}_sound_geodude",
           "Texture": "geodude_alola/geodude_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -205,7 +184,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_graveler_alola",
+          "Sound": "{{modId}}_sound_graveler",
           "Texture": "graveler_alola/graveler_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -288,7 +267,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_golem_alola",
+          "Sound": "{{modId}}_sound_golem",
           "Texture": "golem_alola/golem_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

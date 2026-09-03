@@ -184,20 +184,6 @@
           ],
           "ID": "{{modId}}_sound_pikachu_kalos_cap_female"
         },
-        "{{modId}}_sound_pikachu_alola_cap_male": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_alola_cap_male.wav}}"
-          ],
-          "ID": "{{modId}}_sound_pikachu_alola_cap_male"
-        },
-        "{{modId}}_sound_pikachu_alola_cap_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/pichu/pikachu_alola_cap_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_pikachu_alola_cap_female"
-        },
         "{{modId}}_sound_pikachu_partner_cap_male": {
           "Category": "Sound",
           "FilePaths": [
@@ -254,20 +240,6 @@
           ],
           "ID": "{{modId}}_sound_raichu_female"
         },
-        "{{modId}}_sound_raichu_alola_male": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/pichu/raichu_alola_male.wav}}"
-          ],
-          "ID": "{{modId}}_sound_raichu_alola_male"
-        },
-        "{{modId}}_sound_raichu_alola_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/pichu/raichu_alola_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_raichu_alola_female"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -1515,7 +1487,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_pikachu_alola_cap_male",
+          "Sound": "{{modId}}_sound_pikachu_cap_male",
           "Texture": "pikachu_alola_cap_male/pikachu_alola_cap_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -1561,7 +1533,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_pikachu_alola_cap_female",
+          "Sound": "{{modId}}_sound_pikachu_cap_female",
           "Texture": "pikachu_alola_cap_female/pikachu_alola_cap_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -1975,7 +1947,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_raichu_alola_male",
+          "Sound": "{{modId}}_sound_raichu_male",
           "Texture": "raichu_alola_male/raichu_alola_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -2021,7 +1993,7 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_raichu_alola_female",
+          "Sound": "{{modId}}_sound_raichu_female",
           "Texture": "raichu_alola_female/raichu_alola_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

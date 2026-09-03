@@ -22,13 +22,6 @@
             "{{AbsoluteFilePath: assets/kanto/exeggcute/exeggutor.wav}}"
           ],
           "ID": "{{modId}}_sound_exeggutor"
-        },
-        "{{modId}}_sound_exeggutor_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/exeggcute/exeggutor_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_exeggutor_alola"
         }
       },
       "LogName": "Adding sound changes",
@@ -132,7 +125,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_exeggutor_alola",
+          "Sound": "{{modId}}_sound_exeggutor",
           "Texture": "exeggutor_alola/exeggutor_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

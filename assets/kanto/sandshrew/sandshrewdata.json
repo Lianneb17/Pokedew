@@ -16,13 +16,6 @@
           ],
           "ID": "{{modId}}_sound_sandshrew"
         },
-        "{{modId}}_sound_sandshrew_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/sandshrew/sandshrew_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_sandshrew_alola"
-        },
         "{{modId}}_sound_sandslash": {
           "Category": "Sound",
           "FilePaths": [
@@ -30,13 +23,6 @@
           ],
           "ID": "{{modId}}_sound_sandslash"
         },
-        "{{modId}}_sound_sandslash_alola": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/sandshrew/sandslash_alola.wav}}"
-          ],
-          "ID": "{{modId}}_sound_sandslash_alola"
-        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -101,7 +87,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_sandshrew_alola",
+          "Sound": "{{modId}}_sound_sandshrew",
           "Texture": "sandshrew_alola/sandshrew_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -177,7 +163,7 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_sandslash_alola",
+          "Sound": "{{modId}}_sound_sandslash",
           "Texture": "sandslash_alola/sandslash_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
