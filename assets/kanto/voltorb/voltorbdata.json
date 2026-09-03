@@ -124,7 +124,7 @@
               "ID": "{{modId}}_pokemon_voltorb_hisui_shiny",
               "Weight": "0.1",
               "Texture": "voltorb/voltorb_hisuis",
-              "BabyTexture": "voltorb/voltorb"
+              "BabyTexture": "voltorb/voltorbs"
             }
           ],
           "SleepFrame": "16",
@@ -169,7 +169,7 @@
               "ID": "{{modId}}_pokemon_electrode_shiny",
               "Weight": "0.1",
               "Texture": "voltorb/electrodes",
-              "BabyTexture": "voltorb/voltorb"
+              "BabyTexture": "voltorb/voltorbs"
             }
           ],
           "SleepFrame": "16",
@@ -214,7 +214,7 @@
               "ID": "{{modId}}_pokemon_electrode_hisui_shiny",
               "Weight": "0.1",
               "Texture": "voltorb/electrode_hisuis",
-              "BabyTexture": "voltorb/voltorb"
+              "BabyTexture": "voltorb/voltorbs"
             }
           ],
           "SleepFrame": "16",

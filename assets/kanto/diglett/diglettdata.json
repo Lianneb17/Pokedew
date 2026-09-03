@@ -96,7 +96,7 @@
               "ID": "{{modId}}_pokemon_diglett_alola_shiny",
               "Weight": "0.1",
               "Texture": "diglett/diglett_alolas",
-              "BabyTexture": "diglett/diglett"
+              "BabyTexture": "diglett/digletts"
             }
           ],
           "SleepFrame": "16",

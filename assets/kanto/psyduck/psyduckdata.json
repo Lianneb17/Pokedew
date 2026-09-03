@@ -98,7 +98,7 @@
               "ID": "{{modId}}_pokemon_golduck_shiny",
               "Weight": "0.1",
               "Texture": "psyduck/golducks",
-              "BabyTexture": "psyduck/psyduck"
+              "BabyTexture": "psyduck/psyducks"
             }
           ],
           "SleepFrame": "16",

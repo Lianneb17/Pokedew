@@ -96,7 +96,7 @@
               "ID": "{{modId}}_pokemon_snorlax_shiny",
               "Weight": "0.1",
               "Texture": "munchlax/snorlaxs",
-              "BabyTexture": "munchlax/munchlax"
+              "BabyTexture": "munchlax/munchlaxs"
             }
           ],
           "SleepFrame": "16",

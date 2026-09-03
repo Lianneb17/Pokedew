@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_porygon2_shiny",
               "Weight": "0.1",
               "Texture": "porygon/porygon2s",
-              "BabyTexture": "porygon/porygon"
+              "BabyTexture": "porygon/porygons"
             }
           ],
           "SleepFrame": "16",
@@ -141,7 +141,7 @@
               "ID": "{{modId}}_pokemon_porygon_z_shiny",
               "Weight": "0.1",
               "Texture": "porygon/porygon_zs",
-              "BabyTexture": "porygon/porygon"
+              "BabyTexture": "porygon/porygons"
             }
           ],
           "SleepFrame": "16",

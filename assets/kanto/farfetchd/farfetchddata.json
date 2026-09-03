@@ -111,7 +111,7 @@
               "ID": "{{modId}}_pokemon_farfetchd_galar_shiny",
               "Weight": "0.1",
               "Texture": "farfetchd/farfetchd_galars",
-              "BabyTexture": "farfetchd/farfetchd"
+              "BabyTexture": "farfetchd/farfetchds"
             }
           ],
           "SleepFrame": "16",
@@ -150,7 +150,7 @@
               "ID": "{{modId}}_pokemon_sirfetchd_shiny",
               "Weight": "0.1",
               "Texture": "farfetchd/sirfetchds",
-              "BabyTexture": "farfetchd/farfetchd"
+              "BabyTexture": "farfetchd/farfetchds"
             }
           ],
           "SleepFrame": "16",

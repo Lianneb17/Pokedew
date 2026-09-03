@@ -98,7 +98,7 @@
               "ID": "{{modId}}_pokemon_kabutops_shiny",
               "Weight": "0.1",
               "Texture": "kabuto/kabutopss",
-              "BabyTexture": "kabuto/kabuto"
+              "BabyTexture": "kabuto/kabutos"
             }
           ],
           "SleepFrame": "16",

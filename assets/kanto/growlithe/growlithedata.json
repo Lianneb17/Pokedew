@@ -110,7 +110,7 @@
               "ID": "{{modId}}_pokemon_growlithe_hisui_shiny",
               "Weight": "0.1",
               "Texture": "growlithe/growlithe_hisuis",
-              "BabyTexture": "growlithe/growlithe"
+              "BabyTexture": "growlithe/growlithes"
             }
           ],
           "SleepFrame": "16",
@@ -148,7 +148,7 @@
               "ID": "{{modId}}_pokemon_arcanine_shiny",
               "Weight": "0.1",
               "Texture": "growlithe/arcanines",
-              "BabyTexture": "growlithe/growlithe"
+              "BabyTexture": "growlithe/growlithes"
             }
           ],
           "SleepFrame": "16",
@@ -186,7 +186,7 @@
               "ID": "{{modId}}_pokemon_arcanine_hisui_shiny",
               "Weight": "0.1",
               "Texture": "growlithe/arcanine_hisuis",
-              "BabyTexture": "growlithe/growlithe"
+              "BabyTexture": "growlithe/growlithes"
             }
           ],
           "SleepFrame": "16",

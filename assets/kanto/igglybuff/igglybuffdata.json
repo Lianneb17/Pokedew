@@ -115,7 +115,7 @@
               "ID": "{{modId}}_pokemon_jigglypuff_shiny",
               "Weight": "0.1",
               "Texture": "igglybuff/jigglypuffs",
-              "BabyTexture": "igglybuff/igglybuff"
+              "BabyTexture": "igglybuff/igglybuffs"
             }
           ],
           "SleepFrame": "16",
@@ -159,7 +159,7 @@
               "ID": "{{modId}}_pokemon_wigglytuff_shiny",
               "Weight": "0.1",
               "Texture": "igglybuff/wigglytuffs",
-              "BabyTexture": "igglybuff/igglybuff"
+              "BabyTexture": "igglybuff/igglybuffs"
             }
           ],
           "SleepFrame": "16",

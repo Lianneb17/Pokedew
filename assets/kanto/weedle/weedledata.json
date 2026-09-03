@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_kakuna_shiny",
               "Weight": "0.1",
               "Texture": "weedle/kakunas",
-              "BabyTexture": "weedle/weedle"
+              "BabyTexture": "weedle/weedles"
             }
           ],
           "SleepFrame": "16",
@@ -141,7 +141,7 @@
               "ID": "{{modId}}_pokemon_beedrill_shiny",
               "Weight": "0.1",
               "Texture": "weedle/beedrills",
-              "BabyTexture": "weedle/weedle"
+              "BabyTexture": "weedle/weedles"
             }
           ],
           "SleepFrame": "16",

@@ -124,7 +124,7 @@
               "ID": "{{modId}}_pokemon_meowth_alola_shiny",
               "Weight": "0.1",
               "Texture": "meowth/meowth_alolas",
-              "BabyTexture": "meowth/meowth"
+              "BabyTexture": "meowth/meowths"
             }
           ],
           "SleepFrame": "16",
@@ -162,7 +162,7 @@
               "ID": "{{modId}}_pokemon_meowth_galar_shiny",
               "Weight": "0.1",
               "Texture": "meowth/meowth_galars",
-              "BabyTexture": "meowth/meowth"
+              "BabyTexture": "meowth/meowths"
             }
           ],
           "SleepFrame": "16",
@@ -200,7 +200,7 @@
               "ID": "{{modId}}_pokemon_persian_shiny",
               "Weight": "0.1",
               "Texture": "meowth/persians",
-              "BabyTexture": "meowth/meowth"
+              "BabyTexture": "meowth/meowths"
             }
           ],
           "SleepFrame": "16",
@@ -238,7 +238,7 @@
               "ID": "{{modId}}_pokemon_persian_alola_shiny",
               "Weight": "0.1",
               "Texture": "meowth/persian_alolas",
-              "BabyTexture": "meowth/meowth"
+              "BabyTexture": "meowth/meowths"
             }
           ],
           "SleepFrame": "16",
@@ -276,7 +276,7 @@
               "ID": "{{modId}}_pokemon_perrserker_shiny",
               "Weight": "0.1",
               "Texture": "meowth/perrserkers",
-              "BabyTexture": "meowth/meowth"
+              "BabyTexture": "meowth/meowths"
             }
           ],
           "SleepFrame": "16",

@@ -105,7 +105,7 @@
               "ID": "{{modId}}_pokemon_nidorino_shiny",
               "Weight": "0.1",
               "Texture": "nidoran_m/nidorinos",
-              "BabyTexture": "nidoran_m/nidoran_m"
+              "BabyTexture": "nidoran_m/nidoran_ms"
             }
           ],
           "SleepFrame": "16",
@@ -144,7 +144,7 @@
               "ID": "{{modId}}_pokemon_nidoking_shiny",
               "Weight": "0.1",
               "Texture": "nidoran_m/nidokings",
-              "BabyTexture": "nidoran_m/nidoran_m"
+              "BabyTexture": "nidoran_m/nidoran_ms"
             }
           ],
           "SleepFrame": "16",

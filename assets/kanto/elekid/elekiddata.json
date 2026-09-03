@@ -117,7 +117,7 @@
               "ID": "{{modId}}_pokemon_electabuzz_shiny",
               "Weight": "0.1",
               "Texture": "elekid/electabuzzs",
-              "BabyTexture": "elekid/elekid"
+              "BabyTexture": "elekid/elekids"
             }
           ],
           "SleepFrame": "16",
@@ -162,7 +162,7 @@
               "ID": "{{modId}}_pokemon_electivire_shiny",
               "Weight": "0.1",
               "Texture": "elekid/electivires",
-              "BabyTexture": "elekid/elekid"
+              "BabyTexture": "elekid/elekids"
             }
           ],
           "SleepFrame": "16",

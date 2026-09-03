@@ -126,7 +126,7 @@
               "ID": "{{modId}}_pokemon_rhyhorn_female_shiny",
               "Weight": "0.1",
               "Texture": "rhyhorn_male/rhyhorn_females",
-              "BabyTexture": "rhyhorn_male/rhyhorn_male"
+              "BabyTexture": "rhyhorn_male/rhyhorn_males"
             }
           ],
           "SleepFrame": "16",
@@ -165,7 +165,7 @@
               "ID": "{{modId}}_pokemon_rhydon_male_shiny",
               "Weight": "0.1",
               "Texture": "rhyhorn_male/rhydon_males",
-              "BabyTexture": "rhyhorn_male/rhyhorn_male"
+              "BabyTexture": "rhyhorn_male/rhyhorn_males"
             }
           ],
           "SleepFrame": "16",
@@ -204,7 +204,7 @@
               "ID": "{{modId}}_pokemon_rhydon_female_shiny",
               "Weight": "0.1",
               "Texture": "rhyhorn_male/rhydon_females",
-              "BabyTexture": "rhyhorn_male/rhyhorn_male"
+              "BabyTexture": "rhyhorn_male/rhyhorn_males"
             }
           ],
           "SleepFrame": "16",
@@ -243,7 +243,7 @@
               "ID": "{{modId}}_pokemon_rhyperior_male_shiny",
               "Weight": "0.1",
               "Texture": "rhyhorn_male/rhyperior_males",
-              "BabyTexture": "rhyhorn_male/rhyhorn_male"
+              "BabyTexture": "rhyhorn_male/rhyhorn_males"
             }
           ],
           "SleepFrame": "16",
@@ -282,7 +282,7 @@
               "ID": "{{modId}}_pokemon_rhyperior_female_shiny",
               "Weight": "0.1",
               "Texture": "rhyhorn_male/rhyperior_females",
-              "BabyTexture": "rhyhorn_male/rhyhorn_male"
+              "BabyTexture": "rhyhorn_male/rhyhorn_males"
             }
           ],
           "SleepFrame": "16",

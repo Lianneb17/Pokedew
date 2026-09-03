@@ -110,7 +110,7 @@
               "ID": "{{modId}}_pokemon_ponyta_galar_shiny",
               "Weight": "0.1",
               "Texture": "ponyta/ponyta_galars",
-              "BabyTexture": "ponyta/ponyta"
+              "BabyTexture": "ponyta/ponytas"
             }
           ],
           "SleepFrame": "16",
@@ -148,7 +148,7 @@
               "ID": "{{modId}}_pokemon_rapidash_shiny",
               "Weight": "0.1",
               "Texture": "ponyta/rapidashs",
-              "BabyTexture": "ponyta/ponyta"
+              "BabyTexture": "ponyta/ponytas"
             }
           ],
           "SleepFrame": "16",
@@ -192,7 +192,7 @@
               "ID": "{{modId}}_pokemon_rapidash_galar_shiny",
               "Weight": "0.1",
               "Texture": "ponyta/rapidash_galars",
-              "BabyTexture": "ponyta/ponyta"
+              "BabyTexture": "ponyta/ponytas"
             }
           ],
           "SleepFrame": "16",

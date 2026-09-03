@@ -110,7 +110,7 @@
               "ID": "{{modId}}_pokemon_hitmonlee_shiny",
               "Weight": "0.1",
               "Texture": "tyrogue/hitmonlees",
-              "BabyTexture": "tyrogue/tyrogue"
+              "BabyTexture": "tyrogue/tyrogues"
             }
           ],
           "SleepFrame": "16",
@@ -148,7 +148,7 @@
               "ID": "{{modId}}_pokemon_hitmonchan_shiny",
               "Weight": "0.1",
               "Texture": "tyrogue/hitmonchans",
-              "BabyTexture": "tyrogue/tyrogue"
+              "BabyTexture": "tyrogue/tyrogues"
             }
           ],
           "SleepFrame": "16",
@@ -186,7 +186,7 @@
               "ID": "{{modId}}_pokemon_hitmontop_shiny",
               "Weight": "0.1",
               "Texture": "tyrogue/hitmontops",
-              "BabyTexture": "tyrogue/tyrogue"
+              "BabyTexture": "tyrogue/tyrogues"
             }
           ],
           "SleepFrame": "16",

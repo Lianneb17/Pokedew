@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_machoke_shiny",
               "Weight": "0.1",
               "Texture": "machop/machokes",
-              "BabyTexture": "machop/machop"
+              "BabyTexture": "machop/machops"
             }
           ],
           "SleepFrame": "16",
@@ -141,7 +141,7 @@
               "ID": "{{modId}}_pokemon_machamp_shiny",
               "Weight": "0.1",
               "Texture": "machop/machamps",
-              "BabyTexture": "machop/machop"
+              "BabyTexture": "machop/machops"
             }
           ],
           "SleepFrame": "16",

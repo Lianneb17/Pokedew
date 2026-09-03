@@ -420,7 +420,7 @@
               "ID": "{{modId}}_pokemon_pikachu_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -466,7 +466,7 @@
               "ID": "{{modId}}_pokemon_pikachu_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -512,7 +512,7 @@
               "ID": "{{modId}}_pokemon_pikachu_rock_star_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_rock_star_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -558,7 +558,7 @@
               "ID": "{{modId}}_pokemon_pikachu_rock_star_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_rock_star_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -604,7 +604,7 @@
               "ID": "{{modId}}_pokemon_pikachu_belle_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_belle_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -650,7 +650,7 @@
               "ID": "{{modId}}_pokemon_pikachu_belle_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_belle_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -696,7 +696,7 @@
               "ID": "{{modId}}_pokemon_pikachu_pop_star_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_pop_star_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -742,7 +742,7 @@
               "ID": "{{modId}}_pokemon_pikachu_pop_star_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_pop_star_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -788,7 +788,7 @@
               "ID": "{{modId}}_pokemon_pikachu_phd_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_phd_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -834,7 +834,7 @@
               "ID": "{{modId}}_pokemon_pikachu_phd_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_phd_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -880,7 +880,7 @@
               "ID": "{{modId}}_pokemon_pikachu_libre_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_libre_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -926,7 +926,7 @@
               "ID": "{{modId}}_pokemon_pikachu_libre_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_libre_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -972,7 +972,7 @@
               "ID": "{{modId}}_pokemon_pikachu_cosplay_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_cosplay_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1018,7 +1018,7 @@
               "ID": "{{modId}}_pokemon_pikachu_cosplay_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_cosplay_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1064,7 +1064,7 @@
               "ID": "{{modId}}_pokemon_pikachu_original_cap_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_original_cap_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1110,7 +1110,7 @@
               "ID": "{{modId}}_pokemon_pikachu_original_cap_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_original_cap_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1156,7 +1156,7 @@
               "ID": "{{modId}}_pokemon_pikachu_hoenn_cap_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_hoenn_cap_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1202,7 +1202,7 @@
               "ID": "{{modId}}_pokemon_pikachu_hoenn_cap_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_hoenn_cap_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1248,7 +1248,7 @@
               "ID": "{{modId}}_pokemon_pikachu_sinnoh_cap_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_sinnoh_cap_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1294,7 +1294,7 @@
               "ID": "{{modId}}_pokemon_pikachu_sinnoh_cap_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_sinnoh_cap_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1340,7 +1340,7 @@
               "ID": "{{modId}}_pokemon_pikachu_unova_cap_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_unova_cap_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1386,7 +1386,7 @@
               "ID": "{{modId}}_pokemon_pikachu_unova_cap_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_unova_cap_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1432,7 +1432,7 @@
               "ID": "{{modId}}_pokemon_pikachu_kalos_cap_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_kalos_cap_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1478,7 +1478,7 @@
               "ID": "{{modId}}_pokemon_pikachu_kalos_cap_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_kalos_cap_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1524,7 +1524,7 @@
               "ID": "{{modId}}_pokemon_pikachu_alola_cap_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_alola_cap_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1570,7 +1570,7 @@
               "ID": "{{modId}}_pokemon_pikachu_alola_cap_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_alola_cap_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1616,7 +1616,7 @@
               "ID": "{{modId}}_pokemon_pikachu_partner_cap_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_partner_cap_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1662,7 +1662,7 @@
               "ID": "{{modId}}_pokemon_pikachu_partner_cap_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_partner_cap_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1708,7 +1708,7 @@
               "ID": "{{modId}}_pokemon_pikachu_starter_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_starter_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1754,7 +1754,7 @@
               "ID": "{{modId}}_pokemon_pikachu_starter_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_starter_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1800,7 +1800,7 @@
               "ID": "{{modId}}_pokemon_pikachu_world_cap_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_world_cap_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1846,7 +1846,7 @@
               "ID": "{{modId}}_pokemon_pikachu_world_cap_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/pikachu_world_cap_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1892,7 +1892,7 @@
               "ID": "{{modId}}_pokemon_raichu_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/raichu_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1938,7 +1938,7 @@
               "ID": "{{modId}}_pokemon_raichu_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/raichu_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -1984,7 +1984,7 @@
               "ID": "{{modId}}_pokemon_raichu_alola_male_shiny",
               "Weight": "0.1",
               "Texture": "pichu/raichu_alola_males",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",
@@ -2030,7 +2030,7 @@
               "ID": "{{modId}}_pokemon_raichu_alola_female_shiny",
               "Weight": "0.1",
               "Texture": "pichu/raichu_alola_females",
-              "BabyTexture": "pichu/pichu"
+              "BabyTexture": "pichu/pichus"
             }
           ],
           "SleepFrame": "16",

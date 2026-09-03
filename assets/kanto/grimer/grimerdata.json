@@ -110,7 +110,7 @@
               "ID": "{{modId}}_pokemon_grimer_alola_shiny",
               "Weight": "0.1",
               "Texture": "grimer/grimer_alolas",
-              "BabyTexture": "grimer/grimer"
+              "BabyTexture": "grimer/grimers"
             }
           ],
           "SleepFrame": "16",
@@ -148,7 +148,7 @@
               "ID": "{{modId}}_pokemon_muk_shiny",
               "Weight": "0.1",
               "Texture": "grimer/muks",
-              "BabyTexture": "grimer/grimer"
+              "BabyTexture": "grimer/grimers"
             }
           ],
           "SleepFrame": "16",
@@ -186,7 +186,7 @@
               "ID": "{{modId}}_pokemon_muk_alola_shiny",
               "Weight": "0.1",
               "Texture": "grimer/muk_alolas",
-              "BabyTexture": "grimer/grimer"
+              "BabyTexture": "grimer/grimers"
             }
           ],
           "SleepFrame": "16",

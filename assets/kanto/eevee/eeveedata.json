@@ -226,7 +226,7 @@
               "ID": "{{modId}}_pokemon_vaporeon_shiny",
               "Weight": "0.1",
               "Texture": "eevee/vaporeons",
-              "BabyTexture": "eevee/eevee_male"
+              "BabyTexture": "eevee/eevee_males"
             }
           ],
           "SleepFrame": "16",

@@ -110,7 +110,7 @@
               "ID": "{{modId}}_pokemon_vulpix_alola_shiny",
               "Weight": "0.1",
               "Texture": "vulpix/vulpix_alolas",
-              "BabyTexture": "vulpix/vulpix"
+              "BabyTexture": "vulpix/vulpixs"
             }
           ],
           "SleepFrame": "16",
@@ -148,7 +148,7 @@
               "ID": "{{modId}}_pokemon_ninetales_shiny",
               "Weight": "0.1",
               "Texture": "vulpix/ninetaless",
-              "BabyTexture": "vulpix/vulpix"
+              "BabyTexture": "vulpix/vulpixs"
             }
           ],
           "SleepFrame": "16",
@@ -192,7 +192,7 @@
               "ID": "{{modId}}_pokemon_ninetales_alola_shiny",
               "Weight": "0.1",
               "Texture": "vulpix/ninetales_alolas",
-              "BabyTexture": "vulpix/vulpix"
+              "BabyTexture": "vulpix/vulpixs"
             }
           ],
           "SleepFrame": "16",

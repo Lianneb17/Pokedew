@@ -98,7 +98,7 @@
               "ID": "{{modId}}_pokemon_dewgong_shiny",
               "Weight": "0.1",
               "Texture": "seel/dewgongs",
-              "BabyTexture": "seel/seel"
+              "BabyTexture": "seel/seels"
             }
           ],
           "SleepFrame": "16",

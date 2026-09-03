@@ -96,7 +96,7 @@
               "ID": "{{modId}}_pokemon_kingler_shiny",
               "Weight": "0.1",
               "Texture": "krabby/kinglers",
-              "BabyTexture": "krabby/krabby"
+              "BabyTexture": "krabby/krabbys"
             }
           ],
           "SleepFrame": "16",

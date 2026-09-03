@@ -112,7 +112,7 @@
               "ID": "{{modId}}_pokemon_magikarp_female_shiny",
               "Weight": "0.1",
               "Texture": "magikarp_male/magikarp_females",
-              "BabyTexture": "magikarp_male/magikarp_male"
+              "BabyTexture": "magikarp_male/magikarp_males"
             }
           ],
           "SleepFrame": "16",
@@ -157,7 +157,7 @@
               "ID": "{{modId}}_pokemon_gyarados_male_shiny",
               "Weight": "0.1",
               "Texture": "magikarp_male/gyarados_males",
-              "BabyTexture": "magikarp_male/magikarp_male"
+              "BabyTexture": "magikarp_male/magikarp_males"
             }
           ],
           "SleepFrame": "16",
@@ -202,7 +202,7 @@
               "ID": "{{modId}}_pokemon_gyarados_female_shiny",
               "Weight": "0.1",
               "Texture": "magikarp_male/gyarados_females",
-              "BabyTexture": "magikarp_male/magikarp_male"
+              "BabyTexture": "magikarp_male/magikarp_males"
             }
           ],
           "SleepFrame": "16",

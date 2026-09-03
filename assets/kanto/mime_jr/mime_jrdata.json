@@ -122,7 +122,7 @@
               "ID": "{{modId}}_pokemon_mr_mime_shiny",
               "Weight": "0.1",
               "Texture": "mime_jr/mr_mimes",
-              "BabyTexture": "mime_jr/mime_jr"
+              "BabyTexture": "mime_jr/mime_jrs"
             }
           ],
           "SleepFrame": "16",
@@ -160,7 +160,7 @@
               "ID": "{{modId}}_pokemon_mr_mime_galar_shiny",
               "Weight": "0.1",
               "Texture": "mime_jr/mr_mime_galars",
-              "BabyTexture": "mime_jr/mime_jr"
+              "BabyTexture": "mime_jr/mime_jrs"
             }
           ],
           "SleepFrame": "16",
@@ -198,7 +198,7 @@
               "ID": "{{modId}}_pokemon_mr_rime_shiny",
               "Weight": "0.1",
               "Texture": "mime_jr/mr_rimes",
-              "BabyTexture": "mime_jr/mime_jr"
+              "BabyTexture": "mime_jr/mime_jrs"
             }
           ],
           "SleepFrame": "16",

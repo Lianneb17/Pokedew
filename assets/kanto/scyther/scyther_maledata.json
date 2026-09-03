@@ -129,7 +129,7 @@
               "ID": "{{modId}}_pokemon_scyther_female_shiny",
               "Weight": "0.1",
               "Texture": "scyther_male/scyther_females",
-              "BabyTexture": "scyther_male/scyther_male"
+              "BabyTexture": "scyther_male/scyther_males"
             }
           ],
           "SleepFrame": "16",
@@ -167,7 +167,7 @@
               "ID": "{{modId}}_pokemon_scizor_male_shiny",
               "Weight": "0.1",
               "Texture": "scyther_male/scizor_males",
-              "BabyTexture": "scyther_male/scyther_male"
+              "BabyTexture": "scyther_male/scyther_males"
             }
           ],
           "SleepFrame": "16",
@@ -205,7 +205,7 @@
               "ID": "{{modId}}_pokemon_scizor_female_shiny",
               "Weight": "0.1",
               "Texture": "scyther_male/scizor_females",
-              "BabyTexture": "scyther_male/scyther_male"
+              "BabyTexture": "scyther_male/scyther_males"
             }
           ],
           "SleepFrame": "16",
@@ -243,7 +243,7 @@
               "ID": "{{modId}}_pokemon_kleavor_shiny",
               "Weight": "0.1",
               "Texture": "scyther_male/kleavors",
-              "BabyTexture": "scyther_male/scyther_male"
+              "BabyTexture": "scyther_male/scyther_males"
             }
           ],
           "SleepFrame": "16",

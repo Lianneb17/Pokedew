@@ -117,7 +117,7 @@
               "ID": "{{modId}}_pokemon_magneton_shiny",
               "Weight": "0.1",
               "Texture": "magnemite/magnetons",
-              "BabyTexture": "magnemite/magnemite"
+              "BabyTexture": "magnemite/magnemites"
             }
           ],
           "SleepFrame": "16",
@@ -162,7 +162,7 @@
               "ID": "{{modId}}_pokemon_magnezone_shiny",
               "Weight": "0.1",
               "Texture": "magnemite/magnezones",
-              "BabyTexture": "magnemite/magnemite"
+              "BabyTexture": "magnemite/magnemites"
             }
           ],
           "SleepFrame": "16",

@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_haunter_shiny",
               "Weight": "0.1",
               "Texture": "gastly/haunters",
-              "BabyTexture": "gastly/gastly"
+              "BabyTexture": "gastly/gastlys"
             }
           ],
           "SleepFrame": "16",
@@ -141,7 +141,7 @@
               "ID": "{{modId}}_pokemon_gengar_shiny",
               "Weight": "0.1",
               "Texture": "gastly/gengars",
-              "BabyTexture": "gastly/gastly"
+              "BabyTexture": "gastly/gastlys"
             }
           ],
           "SleepFrame": "16",

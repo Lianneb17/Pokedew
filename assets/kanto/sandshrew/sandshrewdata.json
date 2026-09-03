@@ -110,7 +110,7 @@
               "ID": "{{modId}}_pokemon_sandshrew_alola_shiny",
               "Weight": "0.1",
               "Texture": "sandshrew/sandshrew_alolas",
-              "BabyTexture": "sandshrew/sandshrew"
+              "BabyTexture": "sandshrew/sandshrews"
             }
           ],
           "SleepFrame": "16",
@@ -148,7 +148,7 @@
               "ID": "{{modId}}_pokemon_sandslash_shiny",
               "Weight": "0.1",
               "Texture": "sandshrew/sandslashs",
-              "BabyTexture": "sandshrew/sandshrew"
+              "BabyTexture": "sandshrew/sandshrews"
             }
           ],
           "SleepFrame": "16",
@@ -186,7 +186,7 @@
               "ID": "{{modId}}_pokemon_sandslash_alola_shiny",
               "Weight": "0.1",
               "Texture": "sandshrew/sandslash_alolas",
-              "BabyTexture": "sandshrew/sandshrew"
+              "BabyTexture": "sandshrew/sandshrews"
             }
           ],
           "SleepFrame": "16",

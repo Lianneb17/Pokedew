@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_magmar_shiny",
               "Weight": "0.1",
               "Texture": "magby/magmars",
-              "BabyTexture": "magby/magby"
+              "BabyTexture": "magby/magbys"
             }
           ],
           "SleepFrame": "16",
@@ -141,7 +141,7 @@
               "ID": "{{modId}}_pokemon_magmortar_shiny",
               "Weight": "0.1",
               "Texture": "magby/magmortars",
-              "BabyTexture": "magby/magby"
+              "BabyTexture": "magby/magbys"
             }
           ],
           "SleepFrame": "16",

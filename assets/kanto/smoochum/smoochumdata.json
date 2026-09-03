@@ -96,7 +96,7 @@
               "ID": "{{modId}}_pokemon_jynx_shiny",
               "Weight": "0.1",
               "Texture": "smoochum/jynxs",
-              "BabyTexture": "smoochum/smoochum"
+              "BabyTexture": "smoochum/smoochums"
             }
           ],
           "SleepFrame": "16",

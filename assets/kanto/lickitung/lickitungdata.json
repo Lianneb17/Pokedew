@@ -96,7 +96,7 @@
               "ID": "{{modId}}_pokemon_lickilicky_shiny",
               "Weight": "0.1",
               "Texture": "lickitung/lickilickys",
-              "BabyTexture": "lickitung/lickitung"
+              "BabyTexture": "lickitung/lickitungs"
             }
           ],
           "SleepFrame": "16",

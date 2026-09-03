@@ -96,7 +96,7 @@
               "ID": "{{modId}}_pokemon_venomoth_shiny",
               "Weight": "0.1",
               "Texture": "venonat/venomoths",
-              "BabyTexture": "venonat/venonat"
+              "BabyTexture": "venonat/venonats"
             }
           ],
           "SleepFrame": "16",

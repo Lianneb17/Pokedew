@@ -131,7 +131,7 @@
               "ID": "{{modId}}_pokemon_geodude_alola_shiny",
               "Weight": "0.1",
               "Texture": "geodude/geodude_alolas",
-              "BabyTexture": "geodude/geodude"
+              "BabyTexture": "geodude/geodudes"
             }
           ],
           "SleepFrame": "16",
@@ -169,7 +169,7 @@
               "ID": "{{modId}}_pokemon_graveler_shiny",
               "Weight": "0.1",
               "Texture": "geodude/gravelers",
-              "BabyTexture": "geodude/geodude"
+              "BabyTexture": "geodude/geodudes"
             }
           ],
           "SleepFrame": "16",
@@ -214,7 +214,7 @@
               "ID": "{{modId}}_pokemon_graveler_alola_shiny",
               "Weight": "0.1",
               "Texture": "geodude/graveler_alolas",
-              "BabyTexture": "geodude/geodude"
+              "BabyTexture": "geodude/geodudes"
             }
           ],
           "SleepFrame": "16",
@@ -252,7 +252,7 @@
               "ID": "{{modId}}_pokemon_golem_shiny",
               "Weight": "0.1",
               "Texture": "geodude/golems",
-              "BabyTexture": "geodude/geodude"
+              "BabyTexture": "geodude/geodudes"
             }
           ],
           "SleepFrame": "16",
@@ -297,7 +297,7 @@
               "ID": "{{modId}}_pokemon_golem_alola_shiny",
               "Weight": "0.1",
               "Texture": "geodude/golem_alolas",
-              "BabyTexture": "geodude/geodude"
+              "BabyTexture": "geodude/geodudes"
             }
           ],
           "SleepFrame": "16",

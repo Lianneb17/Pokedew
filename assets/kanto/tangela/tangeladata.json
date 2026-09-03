@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_tangrowth_male_shiny",
               "Weight": "0.1",
               "Texture": "tangela/tangrowth_males",
-              "BabyTexture": "tangela/tangela"
+              "BabyTexture": "tangela/tangelas"
             }
           ],
           "SleepFrame": "16",
@@ -141,7 +141,7 @@
               "ID": "{{modId}}_pokemon_tangrowth_female_shiny",
               "Weight": "0.1",
               "Texture": "tangela/tangrowth_females",
-              "BabyTexture": "tangela/tangela"
+              "BabyTexture": "tangela/tangelas"
             }
           ],
           "SleepFrame": "16",

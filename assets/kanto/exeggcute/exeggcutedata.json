@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_exeggutor_shiny",
               "Weight": "0.1",
               "Texture": "exeggcute/exeggutors",
-              "BabyTexture": "exeggcute/exeggcute"
+              "BabyTexture": "exeggcute/exeggcutes"
             }
           ],
           "SleepFrame": "16",
@@ -141,7 +141,7 @@
               "ID": "{{modId}}_pokemon_exeggutor_alola_shiny",
               "Weight": "0.1",
               "Texture": "exeggcute/exeggutor_alolas",
-              "BabyTexture": "exeggcute/exeggcute"
+              "BabyTexture": "exeggcute/exeggcutes"
             }
           ],
           "SleepFrame": "16",

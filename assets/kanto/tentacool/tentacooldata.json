@@ -96,7 +96,7 @@
               "ID": "{{modId}}_pokemon_tentacruel_shiny",
               "Weight": "0.1",
               "Texture": "tentacool/tentacruels",
-              "BabyTexture": "tentacool/tentacool"
+              "BabyTexture": "tentacool/tentacools"
             }
           ],
           "SleepFrame": "16",

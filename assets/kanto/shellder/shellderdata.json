@@ -96,7 +96,7 @@
               "ID": "{{modId}}_pokemon_cloyster_shiny",
               "Weight": "0.1",
               "Texture": "shellder/cloysters",
-              "BabyTexture": "shellder/shellder"
+              "BabyTexture": "shellder/shellders"
             }
           ],
           "SleepFrame": "16",

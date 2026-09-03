@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_weezing_shiny",
               "Weight": "0.1",
               "Texture": "koffing/weezings",
-              "BabyTexture": "koffing/koffing"
+              "BabyTexture": "koffing/koffings"
             }
           ],
           "SleepFrame": "16",
@@ -147,7 +147,7 @@
               "ID": "{{modId}}_pokemon_weezing_galar_shiny",
               "Weight": "0.1",
               "Texture": "koffing/weezing_galars",
-              "BabyTexture": "koffing/koffing"
+              "BabyTexture": "koffing/koffings"
             }
           ],
           "SleepFrame": "16",

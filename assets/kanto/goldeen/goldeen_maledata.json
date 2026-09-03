@@ -110,7 +110,7 @@
               "ID": "{{modId}}_pokemon_goldeen_female_shiny",
               "Weight": "0.1",
               "Texture": "goldeen_male/goldeen_females",
-              "BabyTexture": "goldeen_male/goldeen_male"
+              "BabyTexture": "goldeen_male/goldeen_males"
             }
           ],
           "SleepFrame": "16",
@@ -148,7 +148,7 @@
               "ID": "{{modId}}_pokemon_seaking_male_shiny",
               "Weight": "0.1",
               "Texture": "goldeen_male/seaking_males",
-              "BabyTexture": "goldeen_male/goldeen_male"
+              "BabyTexture": "goldeen_male/goldeen_males"
             }
           ],
           "SleepFrame": "16",
@@ -186,7 +186,7 @@
               "ID": "{{modId}}_pokemon_seaking_female_shiny",
               "Weight": "0.1",
               "Texture": "goldeen_male/seaking_females",
-              "BabyTexture": "goldeen_male/goldeen_male"
+              "BabyTexture": "goldeen_male/goldeen_males"
             }
           ],
           "SleepFrame": "16",

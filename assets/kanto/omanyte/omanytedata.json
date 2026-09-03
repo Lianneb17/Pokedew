@@ -98,7 +98,7 @@
               "ID": "{{modId}}_pokemon_omastar_shiny",
               "Weight": "0.1",
               "Texture": "omanyte/omastars",
-              "BabyTexture": "omanyte/omanyte"
+              "BabyTexture": "omanyte/omanytes"
             }
           ],
           "SleepFrame": "16",

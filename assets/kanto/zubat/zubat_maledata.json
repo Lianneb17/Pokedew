@@ -129,7 +129,7 @@
               "ID": "{{modId}}_pokemon_zubat_female_shiny",
               "Weight": "0.1",
               "Texture": "zubat_male/zubat_females",
-              "BabyTexture": "zubat_male/zubat_male"
+              "BabyTexture": "zubat_male/zubat_males"
             }
           ],
           "SleepFrame": "16",
@@ -173,7 +173,7 @@
               "ID": "{{modId}}_pokemon_golbat_male_shiny",
               "Weight": "0.1",
               "Texture": "zubat_male/golbat_males",
-              "BabyTexture": "zubat_male/zubat_male"
+              "BabyTexture": "zubat_male/zubat_males"
             }
           ],
           "SleepFrame": "16",
@@ -217,7 +217,7 @@
               "ID": "{{modId}}_pokemon_golbat_female_shiny",
               "Weight": "0.1",
               "Texture": "zubat_male/golbat_females",
-              "BabyTexture": "zubat_male/zubat_male"
+              "BabyTexture": "zubat_male/zubat_males"
             }
           ],
           "SleepFrame": "16",
@@ -261,7 +261,7 @@
               "ID": "{{modId}}_pokemon_crobat_shiny",
               "Weight": "0.1",
               "Texture": "zubat_male/crobats",
-              "BabyTexture": "zubat_male/zubat_male"
+              "BabyTexture": "zubat_male/zubat_males"
             }
           ],
           "SleepFrame": "16",

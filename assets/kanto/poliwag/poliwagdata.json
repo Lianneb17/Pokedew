@@ -117,7 +117,7 @@
               "ID": "{{modId}}_pokemon_poliwhirl_shiny",
               "Weight": "0.1",
               "Texture": "poliwag/poliwhirls",
-              "BabyTexture": "poliwag/poliwag"
+              "BabyTexture": "poliwag/poliwags"
             }
           ],
           "SleepFrame": "16",
@@ -155,7 +155,7 @@
               "ID": "{{modId}}_pokemon_poliwrath_shiny",
               "Weight": "0.1",
               "Texture": "poliwag/poliwraths",
-              "BabyTexture": "poliwag/poliwag"
+              "BabyTexture": "poliwag/poliwags"
             }
           ],
           "SleepFrame": "16",
@@ -193,7 +193,7 @@
               "ID": "{{modId}}_pokemon_politoed_male_shiny",
               "Weight": "0.1",
               "Texture": "poliwag/politoed_males",
-              "BabyTexture": "poliwag/poliwag"
+              "BabyTexture": "poliwag/poliwags"
             }
           ],
           "SleepFrame": "16",
@@ -231,7 +231,7 @@
               "ID": "{{modId}}_pokemon_politoed_female_shiny",
               "Weight": "0.1",
               "Texture": "poliwag/politoed_females",
-              "BabyTexture": "poliwag/poliwag"
+              "BabyTexture": "poliwag/poliwags"
             }
           ],
           "SleepFrame": "16",

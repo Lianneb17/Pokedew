@@ -126,7 +126,7 @@
               "ID": "{{modId}}_pokemon_slowpoke_galar_shiny",
               "Weight": "0.1",
               "Texture": "slowpoke/slowpoke_galars",
-              "BabyTexture": "slowpoke/slowpoke"
+              "BabyTexture": "slowpoke/slowpokes"
             }
           ],
           "SleepFrame": "16",
@@ -165,7 +165,7 @@
               "ID": "{{modId}}_pokemon_slowbro_shiny",
               "Weight": "0.1",
               "Texture": "slowpoke/slowbros",
-              "BabyTexture": "slowpoke/slowpoke"
+              "BabyTexture": "slowpoke/slowpokes"
             }
           ],
           "SleepFrame": "16",
@@ -204,7 +204,7 @@
               "ID": "{{modId}}_pokemon_slowbro_galar_shiny",
               "Weight": "0.1",
               "Texture": "slowpoke/slowbro_galars",
-              "BabyTexture": "slowpoke/slowpoke"
+              "BabyTexture": "slowpoke/slowpokes"
             }
           ],
           "SleepFrame": "16",
@@ -243,7 +243,7 @@
               "ID": "{{modId}}_pokemon_slowking_shiny",
               "Weight": "0.1",
               "Texture": "slowpoke/slowkings",
-              "BabyTexture": "slowpoke/slowpoke"
+              "BabyTexture": "slowpoke/slowpokes"
             }
           ],
           "SleepFrame": "16",
@@ -282,7 +282,7 @@
               "ID": "{{modId}}_pokemon_slowking_galar_shiny",
               "Weight": "0.1",
               "Texture": "slowpoke/slowking_galars",
-              "BabyTexture": "slowpoke/slowpoke"
+              "BabyTexture": "slowpoke/slowpokes"
             }
           ],
           "SleepFrame": "16",

@@ -96,7 +96,7 @@
               "ID": "{{modId}}_pokemon_starmie_shiny",
               "Weight": "0.1",
               "Texture": "staryu/starmies",
-              "BabyTexture": "staryu/staryu"
+              "BabyTexture": "staryu/staryus"
             }
           ],
           "SleepFrame": "16",

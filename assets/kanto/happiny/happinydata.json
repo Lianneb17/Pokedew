@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_chansey_shiny",
               "Weight": "0.1",
               "Texture": "happiny/chanseys",
-              "BabyTexture": "happiny/happiny"
+              "BabyTexture": "happiny/happinys"
             }
           ],
           "SleepFrame": "16",
@@ -141,7 +141,7 @@
               "ID": "{{modId}}_pokemon_blissey_shiny",
               "Weight": "0.1",
               "Texture": "happiny/blisseys",
-              "BabyTexture": "happiny/happiny"
+              "BabyTexture": "happiny/happinys"
             }
           ],
           "SleepFrame": "16",

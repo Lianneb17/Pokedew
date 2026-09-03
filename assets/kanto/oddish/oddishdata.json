@@ -124,7 +124,7 @@
               "ID": "{{modId}}_pokemon_gloom_male_shiny",
               "Weight": "0.1",
               "Texture": "oddish/gloom_males",
-              "BabyTexture": "oddish/oddish"
+              "BabyTexture": "oddish/oddishs"
             }
           ],
           "SleepFrame": "16",
@@ -162,7 +162,7 @@
               "ID": "{{modId}}_pokemon_gloom_female_shiny",
               "Weight": "0.1",
               "Texture": "oddish/gloom_females",
-              "BabyTexture": "oddish/oddish"
+              "BabyTexture": "oddish/oddishs"
             }
           ],
           "SleepFrame": "16",
@@ -200,7 +200,7 @@
               "ID": "{{modId}}_pokemon_vileplume_male_shiny",
               "Weight": "0.1",
               "Texture": "oddish/vileplume_males",
-              "BabyTexture": "oddish/oddish"
+              "BabyTexture": "oddish/oddishs"
             }
           ],
           "SleepFrame": "16",
@@ -238,7 +238,7 @@
               "ID": "{{modId}}_pokemon_vileplume_female_shiny",
               "Weight": "0.1",
               "Texture": "oddish/vileplume_females",
-              "BabyTexture": "oddish/oddish"
+              "BabyTexture": "oddish/oddishs"
             }
           ],
           "SleepFrame": "16",
@@ -276,7 +276,7 @@
               "ID": "{{modId}}_pokemon_bellossom_shiny",
               "Weight": "0.1",
               "Texture": "oddish/bellossoms",
-              "BabyTexture": "oddish/oddish"
+              "BabyTexture": "oddish/oddishs"
             }
           ],
           "SleepFrame": "16",

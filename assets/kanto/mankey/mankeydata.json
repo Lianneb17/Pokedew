@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_primeape_shiny",
               "Weight": "0.1",
               "Texture": "mankey/primeapes",
-              "BabyTexture": "mankey/mankey"
+              "BabyTexture": "mankey/mankeys"
             }
           ],
           "SleepFrame": "16",
@@ -141,7 +141,7 @@
               "ID": "{{modId}}_pokemon_annihilape_shiny",
               "Weight": "0.1",
               "Texture": "mankey/annihilapes",
-              "BabyTexture": "mankey/mankey"
+              "BabyTexture": "mankey/mankeys"
             }
           ],
           "SleepFrame": "16",

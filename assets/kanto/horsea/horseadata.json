@@ -105,7 +105,7 @@
               "ID": "{{modId}}_pokemon_seadra_shiny",
               "Weight": "0.1",
               "Texture": "horsea/seadras",
-              "BabyTexture": "horsea/horsea"
+              "BabyTexture": "horsea/horseas"
             }
           ],
           "SleepFrame": "16",
@@ -144,7 +144,7 @@
               "ID": "{{modId}}_pokemon_kingdra_shiny",
               "Weight": "0.1",
               "Texture": "horsea/kingdras",
-              "BabyTexture": "horsea/horsea"
+              "BabyTexture": "horsea/horseas"
             }
           ],
           "SleepFrame": "16",

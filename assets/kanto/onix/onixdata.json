@@ -103,7 +103,7 @@
               "ID": "{{modId}}_pokemon_steelix_male_shiny",
               "Weight": "0.1",
               "Texture": "onix/steelix_males",
-              "BabyTexture": "onix/onix"
+              "BabyTexture": "onix/onixs"
             }
           ],
           "SleepFrame": "16",
@@ -141,7 +141,7 @@
               "ID": "{{modId}}_pokemon_steelix_female_shiny",
               "Weight": "0.1",
               "Texture": "onix/steelix_females",
-              "BabyTexture": "onix/onix"
+              "BabyTexture": "onix/onixs"
             }
           ],
           "SleepFrame": "16",
