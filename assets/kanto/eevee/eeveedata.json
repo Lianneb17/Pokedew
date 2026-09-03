@@ -1,0 +1,1018 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "FromFile": "assets/kanto/eevee/{{TargetWithoutPath}}.png",
+      "LogName": "Load images",
+      "Target": "eevee/shopicon, eevee/eevee_male, eevee/eevee_males, eevee/eevee_female, eevee/eevee_females, eevee/eevee_starter_male, eevee/eevee_starter_males, eevee/eevee_starter_female, eevee/eevee_starter_females, eevee/vaporeon, eevee/vaporeons, eevee/jolteon, eevee/jolteons, eevee/flareon, eevee/flareons, eevee/espeon, eevee/espeons, eevee/umbreon, eevee/umbreons, eevee/leafeon, eevee/leafeons, eevee/glaceon, eevee/glaceons, eevee/sylveon, eevee/sylveons"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_sound_eevee_male": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/eevee/eevee.wav}}"
+          ],
+          "ID": "{{modId}}_sound_eevee_male"
+        },
+        "{{modId}}_sound_vaporeon": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/eevee/vaporeon.wav}}"
+          ],
+          "ID": "{{modId}}_sound_vaporeon"
+        },
+        "{{modId}}_sound_jolteon": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/eevee/jolteon.wav}}"
+          ],
+          "ID": "{{modId}}_sound_jolteon"
+        },
+        "{{modId}}_sound_flareon": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/eevee/flareon.wav}}"
+          ],
+          "ID": "{{modId}}_sound_flareon"
+        },
+        "{{modId}}_sound_espeon": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/eevee/espeon.wav}}"
+          ],
+          "ID": "{{modId}}_sound_espeon"
+        },
+        "{{modId}}_sound_umbreon": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/eevee/umbreon.wav}}"
+          ],
+          "ID": "{{modId}}_sound_umbreon"
+        },
+        "{{modId}}_sound_leafeon": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/eevee/leafeon.wav}}"
+          ],
+          "ID": "{{modId}}_sound_leafeon"
+        },
+        "{{modId}}_sound_glaceon": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/eevee/glaceon.wav}}"
+          ],
+          "ID": "{{modId}}_sound_glaceon"
+        },
+        "{{modId}}_sound_sylveon": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/eevee/sylveon.wav}}"
+          ],
+          "ID": "{{modId}}_sound_sylveon"
+        }
+      },
+      "LogName": "Adding sound changes",
+      "Target": "Data/AudioChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_eevee_male": {
+          "DisplayName": "{{i18n:pokemon.eevee_male}}",
+          "House": "PokeBarn",
+          "Gender": "Male",
+          "PurchasePrice": "3500",
+          "ShopTexture": "eevee/shopicon",
+          "RequiredBuilding": "PokeBarn",
+          "UnlockCondition": "{{Kanto active}}",
+          "ShopDescription": "{{i18n:pokemon.eevee_male.shop}}",
+          "ShopMissingBuildingDescription": "{{i18n:pokemon.all.shop.missing}}",
+          "AlternatePurchaseTypes": [
+            {
+              "ID": "{{modId}}_pokemon_purchase_eevee_male_BigPokeBarn_male",
+              "AnimalIDs": [
+                "{{modId}}_pokemon_vaporeon_male",
+                "{{modId}}_pokemon_jolteon_male",
+                "{{modId}}_pokemon_flareon_male",
+                "{{modId}}_pokemon_espeon_male",
+                "{{modId}}_pokemon_umbreon_male",
+                "{{modId}}_pokemon_leafeon_male",
+                "{{modId}}_pokemon_glaceon_male",
+                "{{modId}}_pokemon_sylveon_male"
+              ],
+              "Condition": "BUILDINGS_CONSTRUCTED All \"BigPokeBarn\", RANDOM 0,167"
+            },
+            {
+              "ID": "{{modId}}_pokemon_purchase_eevee_male_BigPokeBarn_female",
+              "AnimalIDs": [
+                "{{modId}}_pokemon_vaporeon_female",
+                "{{modId}}_pokemon_jolteon_female",
+                "{{modId}}_pokemon_flareon_female",
+                "{{modId}}_pokemon_espeon_female",
+                "{{modId}}_pokemon_umbreon_female",
+                "{{modId}}_pokemon_leafeon_female",
+                "{{modId}}_pokemon_glaceon_female",
+                "{{modId}}_pokemon_sylveon_female"
+              ],
+              "Condition": "BUILDINGS_CONSTRUCTED All \"BigPokeBarn\", RANDOM 0,250"
+            },
+            {
+              "ID": "{{modId}}_pokemon_purchase_eevee_male_PokeBarn",
+              "AnimalIDs": [
+                "{{modId}}_pokemon_eevee_male",
+                "{{modId}}_pokemon_eevee_female"
+              ]
+            }
+          ],
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_eevee_male",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_eevee",
+          "Texture": "eevee/eevee_male",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_eevee_male_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/eevee_males"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ShowInSummitCredits": "True",
+          "ID": "{{modId}}_pokemon_eevee_male"
+        },
+        "{{modId}}_pokemon_eevee_female": {
+          "DisplayName": "{{i18n:pokemon.eevee_female}}",
+          "House": "PokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_eevee_female",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_eevee_female",
+          "Texture": "eevee_female/eevee_female",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_eevee_female_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/eevee_females"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_eevee_female"
+        },
+        "{{modId}}_pokemon_vaporeon_male": {
+          "DisplayName": "{{i18n:pokemon.vaporeon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_vaporeon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_vaporeon",
+          "Texture": "vaporeon/vaporeon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_vaporeon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/vaporeons",
+              "BabyTexture": "eevee/eevee_male"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_vaporeon_male"
+        },
+        "{{modId}}_pokemon_vaporeon_female": {
+          "BabyTexture": "eevee/eevee_female",
+          "DisplayName": "{{i18n:pokemon.vaporeon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_vaporeon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_vaporeon",
+          "Texture": "vaporeon/vaporeon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_vaporeon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/vaporeons",
+              "BabyTexture": "eevee/eevee_females"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "True",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_vaporeon_female"
+        },
+        "{{modId}}_pokemon_jolteon_male": {
+          "BabyTexture": "eevee/eevee_male",
+          "DisplayName": "{{i18n:pokemon.jolteon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_jolteon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_jolteon",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_jolteon",
+          "Texture": "jolteon/jolteon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_jolteon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/jolteons",
+              "BabyTexture": "eevee/eevee_males"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_jolteon_male"
+        },
+        "{{modId}}_pokemon_jolteon_female": {
+          "BabyTexture": "eevee/eevee_female",
+          "DisplayName": "{{i18n:pokemon.jolteon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_jolteon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_battery_jolteon",
+              "ItemID": "787",
+              "Condition": "WEATHER Here Storm"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_jolteon",
+          "Texture": "jolteon/jolteon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_jolteon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/jolteons",
+              "BabyTexture": "eevee/eevee_females"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_jolteon_female"
+        },
+        "{{modId}}_pokemon_flareon_male": {
+          "BabyTexture": "eevee/eevee_male",
+          "DisplayName": "{{i18n:pokemon.flareon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_flareon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_flareon",
+          "Texture": "flareon/flareon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_flareon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/flareons",
+              "BabyTexture": "eevee/eevee_males"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_flareon_male"
+        },
+        "{{modId}}_pokemon_flareon_female": {
+          "BabyTexture": "eevee/eevee_female",
+          "DisplayName": "{{i18n:pokemon.flareon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_flareon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_flareon",
+          "Texture": "flareon/flareon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_flareon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/flareons",
+              "BabyTexture": "eevee/eevee_females"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_flareon_female"
+        },
+        "{{modId}}_pokemon_espeon_male": {
+          "BabyTexture": "eevee/eevee_male",
+          "DisplayName": "{{i18n:pokemon.espeon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_espeon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_espeon",
+          "Texture": "espeon/espeon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_espeon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/espeons",
+              "BabyTexture": "eevee/eevee_males"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_espeon_male"
+        },
+        "{{modId}}_pokemon_espeon_female": {
+          "BabyTexture": "eevee/eevee_female",
+          "DisplayName": "{{i18n:pokemon.espeon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_espeon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_espeon",
+          "Texture": "espeon/espeon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_espeon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/espeons",
+              "BabyTexture": "eevee/eevee_females"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_espeon_female"
+        },        
+        "{{modId}}_pokemon_umbreon_male": {
+          "BabyTexture": "eevee/eevee_male",
+          "DisplayName": "{{i18n:pokemon.umbreon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_umbreon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_umbreon",
+          "Texture": "umbreon/umbreon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_umbreon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/umbreons",
+              "BabyTexture": "eevee/eevee_males"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_umbreon_male"
+        },
+        "{{modId}}_pokemon_umbreon_female": {
+          "BabyTexture": "eevee/eevee_female",
+          "DisplayName": "{{i18n:pokemon.umbreon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_umbreon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_umbreon",
+          "Texture": "umbreon/umbreon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_umbreon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/umbreons",
+              "BabyTexture": "eevee/eevee_females"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_umbreon_female"
+        },
+        "{{modId}}_pokemon_leafeon_male": {
+          "BabyTexture": "eevee/eevee_male",
+          "DisplayName": "{{i18n:pokemon.leafeon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_leafeon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_leafeon",
+          "Texture": "leafeon/leafeon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_leafeon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/leafeons",
+              "BabyTexture": "eevee/eevee_males"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_leafeon_male"
+        },
+        "{{modId}}_pokemon_leafeon_female": {
+          "BabyTexture": "eevee/eevee_female",
+          "DisplayName": "{{i18n:pokemon.leafeon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_leafeon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_leafeon",
+          "Texture": "leafeon/leafeon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_leafeon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/leafeons",
+              "BabyTexture": "eevee/eevee_females"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_leafeon_female"
+        },
+        "{{modId}}_pokemon_glaceon_male": {
+          "BabyTexture": "eevee/eevee_male",
+          "DisplayName": "{{i18n:pokemon.glaceon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_glaceon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_glaceon",
+          "Texture": "glaceon/glaceon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_glaceon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/glaceons",
+              "BabyTexture": "eevee/eevee_males"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_glaceon_male"
+        },
+        "{{modId}}_pokemon_glaceon_female": {
+          "BabyTexture": "eevee/eevee_female",
+          "DisplayName": "{{i18n:pokemon.glaceon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_glaceon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_glaceon",
+          "Texture": "glaceon/glaceon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_glaceon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/glaceons",
+              "BabyTexture": "eevee/eevee_females"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_glaceon_female"
+        },
+        "{{modId}}_pokemon_sylveon_male": {
+          "BabyTexture": "eevee/eevee_male",
+          "DisplayName": "{{i18n:pokemon.sylveon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_sylveon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_fairydust_sylveon",
+              "ItemID": "872"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_sylveon",
+          "Texture": "sylveon/sylveon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_sylveon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/sylveons",
+              "BabyTexture": "eevee/eevee_males"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_sylveon_males"
+        },
+        "{{modId}}_pokemon_sylveon_female": {
+          "BabyTexture": "eevee/eevee_female",
+          "DisplayName": "{{i18n:pokemon.sylveon}}",
+          "House": "BigPokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_eevee",
+            "{{modId}}_item_egg_group_field"
+          ],
+          "IncubationTime": "36000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "7",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_sylveon",
+              "ItemID": "{{modId}}_item_egg_eevee"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_fairydust_sylveon",
+              "ItemID": "872"
+            }
+          ],
+          "DaysToProduce": "4",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_sylveon",
+          "Texture": "sylveon/sylveon",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_sylveon_shiny",
+              "Weight": "0.1",
+              "Texture": "eevee/sylveons",
+              "BabyTexture": "eevee/eevee_females"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "7000",
+          "ID": "{{modId}}_pokemon_sylveon_females"
+        }
+      },
+      "LogName": "Adding animal changes",
+      "Target": "Data/AnimalChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_eevee": {
+          "Name": "{{modId}_item_egg_eevee",
+          "DisplayName": "{{i18n:egg.eevee.item}}",
+          "Description": "{{i18n:egg.eevee.item.description}}",
+          "Type": "Basic",
+          "Category": "-5",
+          "Price": "700",
+          "Texture": "eggs/color",
+          "SpriteIndex": "5",
+          "Edibility": "700",
+          "ContextTags": [
+            "egg_item",
+            "color_brown"
+          ],
+          "ExcludeFromShippingCollection": "True",
+          "ID": "{{modId}}_item_egg_eevee"
+        }
+      },
+      "LogName": "Creating eggdata",
+      "Target": "Data/ObjectChanges"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_item_egg_eevee": {
+          "AnimalSpawnList": [
+            {
+              "Id": "{{modId}}_egg_spawn_sylveon_male",
+              "AnimalId": "{{modId}}_pokemon_sylveon_male",
+              "Condition": "RANDOM 0,056"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_sylveon_female",
+              "AnimalId": "{{modId}}_pokemon_sylveon_female",
+              "Condition": "RANDOM 0,059"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_glaceon_male",
+              "AnimalId": "{{modId}}_pokemon_glaceon_male",
+              "Condition": "RANDOM 0,063"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_glaceon_female",
+              "AnimalId": "{{modId}}_pokemon_glaceon_female",
+              "Condition": "RANDOM 0,067"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_leafeon_male",
+              "AnimalId": "{{modId}}_pokemon_leafeon_male",
+              "Condition": "RANDOM 0,071"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_leafeon_female",
+              "AnimalId": "{{modId}}_pokemon_leafeon_female",
+              "Condition": "RANDOM 0,077"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_umbreon_male",
+              "AnimalId": "{{modId}}_pokemon_umbreon_male",
+              "Condition": "RANDOM 0,083"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_umbreon_female",
+              "AnimalId": "{{modId}}_pokemon_umbreon_female",
+              "Condition": "RANDOM 0,091"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_espeon_male",
+              "AnimalId": "{{modId}}_pokemon_espeon_male",
+              "Condition": "RANDOM 0,100"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_espeon_female",
+              "AnimalId": "{{modId}}_pokemon_espeon_female",
+              "Condition": "RANDOM 0,111"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_flareon_male",
+              "AnimalId": "{{modId}}_pokemon_flareon_male",
+              "Condition": "RANDOM 0,125"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_flareon_female",
+              "AnimalId": "{{modId}}_pokemon_flareon_female",
+              "Condition": "RANDOM 0,143"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_jolteon_male",
+              "AnimalId": "{{modId}}_pokemon_jolteon_male",
+              "Condition": "RANDOM 0,167"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_jolteon_female",
+              "AnimalId": "{{modId}}_pokemon_jolteon_female",
+              "Condition": "RANDOM 0,200"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_vaporeon_male",
+              "AnimalId": "{{modId}}_pokemon_vaporeon_male",
+              "Condition": "RANDOM 0,250"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_vaporeon_female",
+              "AnimalId": "{{modId}}_pokemon_vaporeon_female",
+              "Condition": "RANDOM 0,333"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_eevee_female",
+              "AnimalId": "{{modId}}_pokemon_eevee_female",
+              "Condition": "RANDOM 0,500"
+            },
+            {
+              "Id": "{{modId}}_egg_spawn_eevee_male",
+              "AnimalId": "{{modId}}_pokemon_eevee_male"
+            }
+          ],
+          "ID": "{{modId}}_item_egg_eevee"
+        }
+      },
+      "LogName": "Adding egg extension changes",
+      "Target": "selph.ExtraAnimalConfig/EggExtensionData"
+    },
+    {
+      "Action": "EditData",
+      "Entries": {
+        "{{modId}}_pokemon_vaporeon_male": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_vaporeon_male"
+        },
+        "{{modId}}_pokemon_vaporeon_female": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_vaporeon_female"
+        },
+        "{{modId}}_pokemon_flareon_male": {
+          "IsHeater": "True",
+          "ID": "{{modId}}_pokemon_flareon_male"
+        },
+        "{{modId}}_pokemon_flareon_female": {
+          "IsHeater": "True",
+          "ID": "{{modId}}_pokemon_flareon_female"
+        },
+        "{{modId}}_pokemon_leafeon_male": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_leafeon_male"
+        },
+        "{{modId}}_pokemon_leafeon_female": {
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_leafeon_female"
+        },
+        "{{modId}}_pokemon_glaceon_male": {
+          "IgnoreWinter": "True",
+          "ID": "{{modId}}_pokemon_glaceon_male"
+        },
+        "{{modId}}_pokemon_glaceon_female": {
+          "IgnoreWinter": "True",
+          "ID": "{{modId}}_pokemon_glaceon_female"
+        }
+      },
+      "LogName": "Adding extra texture changes",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData"
+    }
+  ]
+}

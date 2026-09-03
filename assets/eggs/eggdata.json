@@ -357,54 +357,84 @@
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4,  RANDOM 0.004"
             },
             {
-              "Id": "{{modId}}_spawn_egg_all_sylveon",
-              "AnimalId": "{{modId}}_pokemon_sylveon",
+              "Id": "{{modId}}_spawn_egg_all_sylveon_male",
+              "AnimalId": "{{modId}}_pokemon_sylveon_male",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
             },
             {
-              "Id": "{{modId}}_spawn_egg_all_glaceon",
-              "AnimalId": "{{modId}}_pokemon_glaceon",
+              "Id": "{{modId}}_spawn_egg_all_sylveon_female",
+              "AnimalId": "{{modId}}_pokemon_sylveon_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
             },
             {
-              "Id": "{{modId}}_spawn_egg_all_leafeon",
-              "AnimalId": "{{modId}}_pokemon_leafeon",
+              "Id": "{{modId}}_spawn_egg_all_glaceon_male",
+              "AnimalId": "{{modId}}_pokemon_glaceon_male",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
             },
             {
-              "Id": "{{modId}}_spawn_egg_all_umbreon",
-              "AnimalId": "{{modId}}_pokemon_umbreon",
+              "Id": "{{modId}}_spawn_egg_all_glaceon_female",
+              "AnimalId": "{{modId}}_pokemon_glaceon_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
             },
             {
-              "Id": "{{modId}}_spawn_egg_all_espeon",
-              "AnimalId": "{{modId}}_pokemon_espeon",
+              "Id": "{{modId}}_spawn_egg_all_leafeon_male",
+              "AnimalId": "{{modId}}_pokemon_leafeon_male",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
             },
             {
-              "Id": "{{modId}}_spawn_egg_all_flareon",
-              "AnimalId": "{{modId}}_pokemon_flareon",
+              "Id": "{{modId}}_spawn_egg_all_leafeon_female",
+              "AnimalId": "{{modId}}_pokemon_leafeon_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
             },
             {
-              "Id": "{{modId}}_spawn_egg_all_jolteon",
-              "AnimalId": "{{modId}}_pokemon_jolteon",
+              "Id": "{{modId}}_spawn_egg_all_umbreon_male",
+              "AnimalId": "{{modId}}_pokemon_umbreon_male",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
             },
             {
-              "Id": "{{modId}}_spawn_egg_all_vaporeon",
-              "AnimalId": "{{modId}}_pokemon_vaporeon",
+              "Id": "{{modId}}_spawn_egg_all_umbreon_female",
+              "AnimalId": "{{modId}}_pokemon_umbreon_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
             },
             {
-              "Id": "{{modId}}_spawn_egg_all_eevee_starter_female",
-              "AnimalId": "{{modId}}_pokemon_eevee_starter_female",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 5,  RANDOM 0.004"
+              "Id": "{{modId}}_spawn_egg_all_espeon_male",
+              "AnimalId": "{{modId}}_pokemon_espeon_male",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
             },
             {
-              "Id": "{{modId}}_spawn_egg_all_eevee_starter_male",
-              "AnimalId": "{{modId}}_pokemon_eevee_starter_male",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 5,  RANDOM 0.004"
+              "Id": "{{modId}}_spawn_egg_all_espeon_female",
+              "AnimalId": "{{modId}}_pokemon_espeon_female",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_flareon_male",
+              "AnimalId": "{{modId}}_pokemon_flareon_male",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_flareon_female",
+              "AnimalId": "{{modId}}_pokemon_flareon_female",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_jolteon_male",
+              "AnimalId": "{{modId}}_pokemon_jolteon_male",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_jolteon_female",
+              "AnimalId": "{{modId}}_pokemon_jolteon_female",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_vaporeon_male",
+              "AnimalId": "{{modId}}_pokemon_vaporeon_male",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_vaporeon_female",
+              "AnimalId": "{{modId}}_pokemon_vaporeon_female",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.004"
             },
             {
               "Id": "{{modId}}_spawn_egg_all_eevee_female",
@@ -2242,54 +2272,84 @@
         "{{modId}}_item_egg_group_field": {
           "AnimalSpawnList": [
             {
-              "Id": "{{modId}}_spawn_egg_field_sylveon",
-              "AnimalId": "{{modId}}_pokemon_sylveon",
+              "Id": "{{modId}}_spawn_egg_field_sylveon_male",
+              "AnimalId": "{{modId}}_pokemon_sylveon_male",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
             },
             {
-              "Id": "{{modId}}_spawn_egg_field_glaceon",
-              "AnimalId": "{{modId}}_pokemon_glaceon",
+              "Id": "{{modId}}_spawn_egg_field_sylveon_female",
+              "AnimalId": "{{modId}}_pokemon_sylveon_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
             },
             {
-              "Id": "{{modId}}_spawn_egg_field_leafeon",
-              "AnimalId": "{{modId}}_pokemon_leafeon",
+              "Id": "{{modId}}_spawn_egg_field_glaceon_female",
+              "AnimalId": "{{modId}}_pokemon_glaceon_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
             },
             {
-              "Id": "{{modId}}_spawn_egg_field_umbreon",
-              "AnimalId": "{{modId}}_pokemon_umbreon",
+              "Id": "{{modId}}_spawn_egg_field_glaceon_female",
+              "AnimalId": "{{modId}}_pokemon_glaceon_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
             },
             {
-              "Id": "{{modId}}_spawn_egg_field_espeon",
-              "AnimalId": "{{modId}}_pokemon_espeon",
+              "Id": "{{modId}}_spawn_egg_field_leafeon_male",
+              "AnimalId": "{{modId}}_pokemon_leafeon_male",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
             },
             {
-              "Id": "{{modId}}_spawn_egg_field_flareon",
-              "AnimalId": "{{modId}}_pokemon_flareon",
+              "Id": "{{modId}}_spawn_egg_field_leafeon_female",
+              "AnimalId": "{{modId}}_pokemon_leafeon_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
             },
             {
-              "Id": "{{modId}}_spawn_egg_field_jolteon",
-              "AnimalId": "{{modId}}_pokemon_jolteon",
+              "Id": "{{modId}}_spawn_egg_field_umbreon_male",
+              "AnimalId": "{{modId}}_pokemon_umbreon_male",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
             },
             {
-              "Id": "{{modId}}_spawn_egg_field_vaporeon",
-              "AnimalId": "{{modId}}_pokemon_vaporeon",
+              "Id": "{{modId}}_spawn_egg_field_umbreon_female",
+              "AnimalId": "{{modId}}_pokemon_umbreon_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
             },
             {
-              "Id": "{{modId}}_spawn_egg_field_eevee_starter_female",
-              "AnimalId": "{{modId}}_pokemon_eevee_starter_female",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 5,  RANDOM 0.009"
+              "Id": "{{modId}}_spawn_egg_field_espeon_male",
+              "AnimalId": "{{modId}}_pokemon_espeon_male",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
             },
             {
-              "Id": "{{modId}}_spawn_egg_field_eevee_starter_male",
-              "AnimalId": "{{modId}}_pokemon_eevee_starter_male",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 5,  RANDOM 0.010"
+              "Id": "{{modId}}_spawn_egg_field_espeon_female",
+              "AnimalId": "{{modId}}_pokemon_espeon_female",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_field_flareon_male",
+              "AnimalId": "{{modId}}_pokemon_flareon_male",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_field_flareon_female",
+              "AnimalId": "{{modId}}_pokemon_flareon_female",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_field_jolteon_male",
+              "AnimalId": "{{modId}}_pokemon_jolteon_male",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_field_jolteon_female",
+              "AnimalId": "{{modId}}_pokemon_jolteon_female",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_field_vaporeon_male",
+              "AnimalId": "{{modId}}_pokemon_vaporeon_male",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_field_vaporeon_female",
+              "AnimalId": "{{modId}}_pokemon_vaporeon_female",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8,  RANDOM 0.009"
             },
             {
               "Id": "{{modId}}_spawn_egg_field_eevee_female",
