@@ -26,7 +26,7 @@
         "{{modId}}_pokemon_ditto": {
           "DisplayName": "{{i18n:pokemon.ditto}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_ditto",
             "{{modId}}_item_egg_group_ditto"

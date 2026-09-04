@@ -2,40 +2,26 @@
   "Changes": [
     {
       "Action": "Load",
-      "FromFile": "assets/kanto/goldeen_male/{{TargetWithoutPath}}.png",
+      "FromFile": "assets/kanto/goldeen/{{TargetWithoutPath}}.png",
       "LogName": "Load images",
-      "Target": "goldeen_male/goldeen_male, goldeen_male/goldeen_males, goldeen_male/goldeen_female, goldeen_male/goldeen_females, goldeen_male/seaking_male, goldeen_male/seaking_males, goldeen_male/seaking_female, goldeen_male/seaking_females"
+      "Target": "goldeen/goldeen, goldeen/goldeens, goldeen/goldeen_female, goldeen/goldeen_females, goldeen/seaking_male, goldeen/seaking_males, goldeen/seaking_female, goldeen/seaking_females"
     },
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_sound_goldeen_male": {
+        "{{modId}}_sound_goldeen": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/goldeen_male/goldeen_male.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/goldeen/goldeen.wav}}"
           ],
-          "ID": "{{modId}}_sound_goldeen_male"
+          "ID": "{{modId}}_sound_goldeen"
         },
-        "{{modId}}_sound_goldeen_female": {
+        "{{modId}}_sound_seaking": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/goldeen_male/goldeen_female.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/goldeen/seaking.wav}}"
           ],
-          "ID": "{{modId}}_sound_goldeen_female"
-        },
-        "{{modId}}_sound_seaking_male": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/goldeen_male/seaking_male.wav}}"
-          ],
-          "ID": "{{modId}}_sound_seaking_male"
-        },
-        "{{modId}}_sound_seaking_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/goldeen_male/seaking_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_seaking_female"
+          "ID": "{{modId}}_sound_seaking"
         }
       },
       "LogName": "Adding sound changes",
@@ -44,12 +30,12 @@
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_pokemon_goldeen_male": {
-          "DisplayName": "{{i18n:pokemon.goldeen_male}}",
+        "{{modId}}_pokemon_goldeen": {
+          "DisplayName": "{{i18n:pokemon.goldeen}}",
           "House": "PokeBarn",
           "Gender": "Male",
           "EggItemIds": [
-            "{{modId}}_item_egg_goldeen_male",
+            "{{modId}}_item_egg_goldeen",
             "{{modId}}_item_egg_group_water2"
           ],
           "IncubationTime": "27000",
@@ -58,35 +44,35 @@
           "CanGetPregnant": "False",
           "ProduceItemIds": [
             {
-              "Id": "{{modId}}_pokemon_produceItem_egg_goldeen_male",
-              "ItemID": "{{modId}}_item_egg_goldeen_male"
+              "Id": "{{modId}}_pokemon_produceItem_egg_goldeen",
+              "ItemID": "{{modId}}_item_egg_goldeen"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_goldeen_male",
-          "Texture": "goldeen_male/goldeen_male",
+          "Sound": "{{modId}}_sound_goldeen",
+          "Texture": "goldeen/goldeen",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
-              "ID": "{{modId}}_pokemon_goldeen_male_shiny",
+              "ID": "{{modId}}_pokemon_goldeen_shiny",
               "Weight": "0.1",
-              "Texture": "goldeen_male/goldeen_males"
+              "Texture": "goldeen/goldeens"
             }
           ],
           "SleepFrame": "16",
           "UseDoubleUniqueAnimationFrames": "True",
           "CanSwim": "True",
           "SellPrice": "5000",
-          "ID": "{{modId}}_pokemon_goldeen_male"
+          "ID": "{{modId}}_pokemon_goldeen"
         },
         "{{modId}}_pokemon_goldeen_female": {
           "DisplayName": "{{i18n:pokemon.goldeen_female}}",
           "House": "PokeBarn",
           "Gender": "Female",
           "EggItemIds": [
-            "{{modId}}_item_egg_goldeen_male",
+            "{{modId}}_item_egg_goldeen",
             "{{modId}}_item_egg_group_water2"
           ],
           "IncubationTime": "27000",
@@ -96,21 +82,21 @@
           "ProduceItemIds": [
             {
               "Id": "{{modId}}_pokemon_produceItem_egg_goldeen_female",
-              "ItemID": "{{modId}}_item_egg_goldeen_male"
+              "ItemID": "{{modId}}_item_egg_goldeen"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_goldeen_female",
-          "Texture": "goldeen_female/goldeen_female",
+          "Texture": "goldeen/goldeen_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_goldeen_female_shiny",
               "Weight": "0.1",
-              "Texture": "goldeen_male/goldeen_females",
-              "BabyTexture": "goldeen_male/goldeen_males"
+              "Texture": "goldeen/goldeen_females",
+              "BabyTexture": "goldeen/goldeens"
             }
           ],
           "SleepFrame": "16",
@@ -124,7 +110,7 @@
           "House": "BigPokeBarn",
           "Gender": "Male",
           "EggItemIds": [
-            "{{modId}}_item_egg_goldeen_male",
+            "{{modId}}_item_egg_goldeen",
             "{{modId}}_item_egg_group_water2"
           ],
           "IncubationTime": "27000",
@@ -134,22 +120,22 @@
           "ProduceItemIds": [
             {
               "Id": "{{modId}}_pokemon_produceItem_egg_seaking_male",
-              "ItemID": "{{modId}}_item_egg_goldeen_male"
+              "ItemID": "{{modId}}_item_egg_goldeen"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_seaking_male",
-          "Texture": "seaking_male/seaking_male",
-          "BabyTexture": "goldeen_male/goldeen_male",
+          "Texture": "goldeen/seaking_male",
+          "BabyTexture": "goldeen/goldeen",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_seaking_male_shiny",
               "Weight": "0.1",
-              "Texture": "goldeen_male/seaking_males",
-              "BabyTexture": "goldeen_male/goldeen_males"
+              "Texture": "goldeen/seaking_males",
+              "BabyTexture": "goldeen/goldeens"
             }
           ],
           "SleepFrame": "16",
@@ -163,7 +149,7 @@
           "House": "BigPokeBarn",
           "Gender": "Female",
           "EggItemIds": [
-            "{{modId}}_item_egg_goldeen_male",
+            "{{modId}}_item_egg_goldeen",
             "{{modId}}_item_egg_group_water2"
           ],
           "IncubationTime": "27000",
@@ -173,22 +159,22 @@
           "ProduceItemIds": [
             {
               "Id": "{{modId}}_pokemon_produceItem_egg_seaking_female",
-              "ItemID": "{{modId}}_item_egg_goldeen_male"
+              "ItemID": "{{modId}}_item_egg_goldeen"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_seaking_female",
-          "Texture": "seaking_female/seaking_female",
-          "BabyTexture": "goldeen_male/goldeen_male",
+          "Texture": "goldeen/seaking_female",
+          "BabyTexture": "goldeen/goldeen",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_seaking_female_shiny",
               "Weight": "0.1",
-              "Texture": "goldeen_male/seaking_females",
-              "BabyTexture": "goldeen_male/goldeen_males"
+              "Texture": "goldeen/seaking_females",
+              "BabyTexture": "goldeen/goldeens"
             }
           ],
           "SleepFrame": "16",
@@ -204,10 +190,10 @@
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_item_egg_goldeen_male": {
-          "Name": "{{modId}_item_egg_goldeen_male",
-          "DisplayName": "{{i18n:egg.goldeen_male.item}}",
-          "Description": "{{i18n:egg.goldeen_male.item.description}}",
+        "{{modId}}_item_egg_goldeen": {
+          "Name": "{{modId}_item_egg_goldeen",
+          "DisplayName": "{{i18n:egg.goldeen.item}}",
+          "Description": "{{i18n:egg.goldeen.item.description}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -219,7 +205,7 @@
             "color_red"
           ],
           "ExcludeFromShippingCollection": "True",
-          "ID": "{{modId}}_item_egg_goldeen_male"
+          "ID": "{{modId}}_item_egg_goldeen"
         }
       },
       "LogName": "Creating eggdata",
@@ -228,7 +214,7 @@
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_item_egg_goldeen_male": {
+        "{{modId}}_item_egg_goldeen": {
           "AnimalSpawnList": [
             {
               "Id": "{{modId}}_egg_spawn_seaking_female",
@@ -246,11 +232,11 @@
               "Condition": "RANDOM 0,500"
             },
             {
-              "Id": "{{modId}}_egg_spawn_goldeen_male",
-              "AnimalId": "{{modId}}_pokemon_goldeen_male"
+              "Id": "{{modId}}_egg_spawn_goldeen",
+              "AnimalId": "{{modId}}_pokemon_goldeen"
             }
           ],
-          "ID": "{{modId}}_item_egg_goldeen_male"
+          "ID": "{{modId}}_item_egg_goldeen"
         }
       },
       "LogName": "Adding egg extension changes",
@@ -259,9 +245,9 @@
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_pokemon_goldeen_male": {
+        "{{modId}}_pokemon_goldeen": {
           "IgnoreRain": "True",
-          "ID": "{{modId}}_pokemon_goldeen_male"
+          "ID": "{{modId}}_pokemon_goldeen"
         },
         "{{modId}}_pokemon_goldeen_female": {
           "IgnoreRain": "True",

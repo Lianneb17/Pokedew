@@ -127,7 +127,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_wartortle",
-          "Texture": "wartortle/wartortle",
+          "Texture": "squirtle/wartortle",
           "SpriteWidth": "30",
           "SpriteHeight": "29",
           "Skins": [
@@ -167,7 +167,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_blastoise",
-          "Texture": "blastoise/blastoise",
+          "Texture": "squirtle/blastoise",
           "SpriteWidth": "30",
           "SpriteHeight": "29",
           "Skins": [

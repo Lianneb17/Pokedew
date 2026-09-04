@@ -26,7 +26,7 @@
         "{{modId}}_pokemon_moltres": {
           "DisplayName": "{{i18n:pokemon.moltres}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_moltres",
             "{{modId}}_item_egg_group_noeggdiscovered"
@@ -69,7 +69,7 @@
         "{{modId}}_pokemon_moltres_galar": {
           "DisplayName": "{{i18n:pokemon.moltres_galar}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_moltres",
             "{{modId}}_item_egg_group_noeggdiscovered"
@@ -93,7 +93,7 @@
           "DaysToProduce": "7",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_moltres",
-          "Texture": "moltres_galar/moltres_galar",
+          "Texture": "moltres/moltres_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

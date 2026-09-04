@@ -40,7 +40,7 @@
         "{{modId}}_pokemon_magnemite": {
           "DisplayName": "{{i18n:pokemon.magnemite}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_magnemite",
             "{{modId}}_item_egg_group_mineral"
@@ -84,7 +84,7 @@
         "{{modId}}_pokemon_magneton": {
           "DisplayName": "{{i18n:pokemon.magneton}}",
           "House": "BigPokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_magnemite",
             "{{modId}}_item_egg_group_mineral"
@@ -109,7 +109,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_magneton",
-          "Texture": "magneton/magneton",
+          "Texture": "magnemite/magneton",
           "BabyTexture": "magnemite/magnemite",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -130,7 +130,7 @@
         "{{modId}}_pokemon_magnezone": {
           "DisplayName": "{{i18n:pokemon.magnezone}}",
           "House": "DeluxePokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_magnemite",
             "{{modId}}_item_egg_group_mineral"
@@ -155,7 +155,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_magnezone",
-          "Texture": "magnezone/magnezone",
+          "Texture": "magnemite/magnezone",
           "BabyTexture": "magnemite/magnemite",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

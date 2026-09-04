@@ -22,7 +22,7 @@
             "{{AbsoluteFilePath: assets/kanto/vulpix/ninetales.wav}}"
           ],
           "ID": "{{modId}}_sound_ninetales"
-        },
+        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -88,15 +88,14 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_vulpix",
-          "Texture": "vulpix_alola/vulpix_alola",
+          "Texture": "vulpix/vulpix_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_vulpix_alola_shiny",
               "Weight": "0.1",
-              "Texture": "vulpix/vulpix_alolas",
-              "BabyTexture": "vulpix/vulpixs"
+              "Texture": "vulpix/vulpix_alolas"
             }
           ],
           "SleepFrame": "16",
@@ -126,7 +125,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_ninetales",
-          "Texture": "ninetales/ninetales",
+          "Texture": "vulpix/ninetales",
           "BabyTexture": "vulpix/vulpix",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -171,7 +170,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_ninetales",
-          "Texture": "ninetales_alola/ninetales_alola",
+          "Texture": "vulpix/ninetales_alola",
           "BabyTexture": "vulpix/vulpix_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -180,7 +179,7 @@
               "ID": "{{modId}}_pokemon_ninetales_alola_shiny",
               "Weight": "0.1",
               "Texture": "vulpix/ninetales_alolas",
-              "BabyTexture": "vulpix/vulpixs"
+              "BabyTexture": "vulpix/vulpix_alolas"
             }
           ],
           "SleepFrame": "16",

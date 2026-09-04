@@ -1,4 +1,4 @@
-{
+{ // TODO
   "Changes": [
     {
       "Action": "Load",
@@ -97,7 +97,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_nidorino",
-          "Texture": "nidorino/nidorino",
+          "Texture": "nidoran_m/nidorino",
           "BabyTexture": "nidoran_m/nidoran_m",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -137,7 +137,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_nidoking",
-          "Texture": "nidoking/nidoking",
+          "Texture": "nidoran_m/nidoking",
           "BabyTexture": "nidoran_m/nidoran_m",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

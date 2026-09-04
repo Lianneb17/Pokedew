@@ -40,7 +40,7 @@
         "{{modId}}_pokemon_porygon": {
           "DisplayName": "{{i18n:pokemon.porygon}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_porygon",
             "{{modId}}_item_egg_group_mineral"
@@ -77,7 +77,7 @@
         "{{modId}}_pokemon_porygon2": {
           "DisplayName": "{{i18n:pokemon.porygon2}}",
           "House": "BigPokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_porygon",
             "{{modId}}_item_egg_group_mineral"
@@ -95,7 +95,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_porygon2",
-          "Texture": "porygon2/porygon2",
+          "Texture": "porygon/porygon2",
           "BabyTexture": "porygon/porygon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -116,7 +116,7 @@
         "{{modId}}_pokemon_porygon_z": {
           "DisplayName": "{{i18n:pokemon.porygon_z}}",
           "House": "DeluxePokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_porygon",
             "{{modId}}_item_egg_group_mineral"
@@ -134,7 +134,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_porygon_z",
-          "Texture": "porygon_z/porygon_z",
+          "Texture": "porygon/porygon_z",
           "BabyTexture": "porygon/porygon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

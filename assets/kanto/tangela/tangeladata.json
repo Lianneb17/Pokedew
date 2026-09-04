@@ -16,19 +16,12 @@
           ],
           "ID": "{{modId}}_sound_tangela"
         },
-        "{{modId}}_sound_tangrowth_male": {
+        "{{modId}}_sound_tangrowth": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/tangela/tangrowth_male.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/tangela/tangrowth.wav}}"
           ],
-          "ID": "{{modId}}_sound_tangrowth_male"
-        },
-        "{{modId}}_sound_tangrowth_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/tangela/tangrowth_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_tangrowth_female"
+          "ID": "{{modId}}_sound_tangrowth"
         }
       },
       "LogName": "Adding sound changes",
@@ -95,7 +88,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tangrowth",
-          "Texture": "tangrowth/tangrowth_male",
+          "Texture": "tangela/tangrowth_male",
           "BabyTexture": "tangela/tangela",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -133,8 +126,8 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_tangrowth_female",
-          "Texture": "tangrowth_female/tangrowth_female",
+          "Sound": "{{modId}}_sound_tangrowth",
+          "Texture": "tangela/tangrowth_female",
           "BabyTexture": "tangela/tangela",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

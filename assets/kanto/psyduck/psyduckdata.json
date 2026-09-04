@@ -90,7 +90,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_golduck",
-          "Texture": "golduck/golduck",
+          "Texture": "psyduck/golduck",
           "BabyTexture": "psyduck/psyduck",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

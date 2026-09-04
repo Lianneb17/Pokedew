@@ -22,7 +22,7 @@
             "{{AbsoluteFilePath: assets/kanto/ponyta/rapidash.wav}}"
           ],
           "ID": "{{modId}}_sound_rapidash"
-        },
+        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -88,7 +88,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_ponyta",
-          "Texture": "ponyta_galar/ponyta_galar",
+          "Texture": "ponyta/ponyta_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -125,7 +125,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_rapidash",
-          "Texture": "rapidash/rapidash",
+          "Texture": "ponyta/rapidash",
           "BabyTexture": "ponyta/ponyta",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -170,7 +170,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_rapidash",
-          "Texture": "rapidash_galar/rapidash_galar",
+          "Texture": "ponyta/rapidash_galar",
           "BabyTexture": "ponyta/ponyta_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

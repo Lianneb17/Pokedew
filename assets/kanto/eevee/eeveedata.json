@@ -181,7 +181,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_eevee_female",
-          "Texture": "eevee_female/eevee_female",
+          "Texture": "eevee/eevee_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -218,7 +218,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_vaporeon",
-          "Texture": "vaporeon/vaporeon",
+          "Texture": "eevee/vaporeon",
           "BabyTexture": "eevee/eevee_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -258,7 +258,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_vaporeon",
-          "Texture": "vaporeon/vaporeon",
+          "Texture": "eevee/vaporeon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -304,7 +304,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_jolteon",
-          "Texture": "jolteon/jolteon",
+          "Texture": "eevee/jolteon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -350,7 +350,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_jolteon",
-          "Texture": "jolteon/jolteon",
+          "Texture": "eevee/jolteon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -389,7 +389,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_flareon",
-          "Texture": "flareon/flareon",
+          "Texture": "eevee/flareon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -428,7 +428,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_flareon",
-          "Texture": "flareon/flareon",
+          "Texture": "eevee/flareon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -467,7 +467,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_espeon",
-          "Texture": "espeon/espeon",
+          "Texture": "eevee/espeon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -506,7 +506,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_espeon",
-          "Texture": "espeon/espeon",
+          "Texture": "eevee/espeon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -545,7 +545,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_umbreon",
-          "Texture": "umbreon/umbreon",
+          "Texture": "eevee/umbreon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -584,7 +584,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_umbreon",
-          "Texture": "umbreon/umbreon",
+          "Texture": "eevee/umbreon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -623,7 +623,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_leafeon",
-          "Texture": "leafeon/leafeon",
+          "Texture": "eevee/leafeon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -662,7 +662,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_leafeon",
-          "Texture": "leafeon/leafeon",
+          "Texture": "eevee/leafeon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -701,7 +701,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_glaceon",
-          "Texture": "glaceon/glaceon",
+          "Texture": "eevee/glaceon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -740,7 +740,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_glaceon",
-          "Texture": "glaceon/glaceon",
+          "Texture": "eevee/glaceon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -785,7 +785,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sylveon",
-          "Texture": "sylveon/sylveon",
+          "Texture": "eevee/sylveon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -830,7 +830,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sylveon",
-          "Texture": "sylveon/sylveon",
+          "Texture": "eevee/sylveon",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

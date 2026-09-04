@@ -90,7 +90,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_parasect",
-          "Texture": "parasect/parasect",
+          "Texture": "paras/parasect",
           "BabyTexture": "paras/paras",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

@@ -33,7 +33,7 @@
         "{{modId}}_pokemon_staryu": {
           "DisplayName": "{{i18n:pokemon.staryu}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_staryu",
             "{{modId}}_item_egg_group_water3"
@@ -70,7 +70,7 @@
         "{{modId}}_pokemon_starmie": {
           "DisplayName": "{{i18n:pokemon.starmie}}",
           "House": "BigPokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_staryu",
             "{{modId}}_item_egg_group_water3"
@@ -88,7 +88,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_starmie",
-          "Texture": "starmie/starmie",
+          "Texture": "staryu/starmie",
           "BabyTexture": "staryu/staryu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

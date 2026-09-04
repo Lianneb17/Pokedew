@@ -22,7 +22,7 @@
             "{{AbsoluteFilePath: assets/kanto/sandshrew/sandslash.wav}}"
           ],
           "ID": "{{modId}}_sound_sandslash"
-        },
+        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -88,15 +88,14 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sandshrew",
-          "Texture": "sandshrew_alola/sandshrew_alola",
+          "Texture": "sandshrew/sandshrew_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_sandshrew_alola_shiny",
               "Weight": "0.1",
-              "Texture": "sandshrew/sandshrew_alolas",
-              "BabyTexture": "sandshrew/sandshrews"
+              "Texture": "sandshrew/sandshrew_alolas"
             }
           ],
           "SleepFrame": "16",
@@ -126,7 +125,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sandslash",
-          "Texture": "sandslash/sandslash",
+          "Texture": "sandshrew/sandslash",
           "BabyTexture": "sandshrew/sandshrew",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -165,7 +164,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sandslash",
-          "Texture": "sandslash_alola/sandslash_alola",
+          "Texture": "sandshrew/sandslash_alola",
           "BabyTexture": "sandshrew/sandshrew_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -174,7 +173,7 @@
               "ID": "{{modId}}_pokemon_sandslash_alola_shiny",
               "Weight": "0.1",
               "Texture": "sandshrew/sandslash_alolas",
-              "BabyTexture": "sandshrew/sandshrews"
+              "BabyTexture": "sandshrew/sandshrew_alolas"
             }
           ],
           "SleepFrame": "16",

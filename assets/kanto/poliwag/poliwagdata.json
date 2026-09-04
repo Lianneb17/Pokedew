@@ -4,7 +4,7 @@
       "Action": "Load",
       "FromFile": "assets/kanto/poliwag/{{TargetWithoutPath}}.png",
       "LogName": "Load images",
-      "Target": "poliwag/poliwag, poliwag/poliwags, poliwag/poliwhirl, poliwag/poliwhirls, poliwag/poliwrath, poliwag/poliwraths, poliwag/politoed_male, poliwag/politoed_males, poliwag/politoed_female, poliwag/politoed_females"
+      "Target": "poliwag/poliwag, poliwag/poliwags, poliwag/poliwhirl, poliwag/poliwhirls, poliwag/poliwrath, poliwag/poliwraths, poliwag/politoed, poliwag/politoeds"
     },
     {
       "Action": "EditData",
@@ -30,19 +30,12 @@
           ],
           "ID": "{{modId}}_sound_poliwrath"
         },
-        "{{modId}}_sound_politoed_male": {
+        "{{modId}}_sound_politoed": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/poliwag/politoed_male.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/poliwag/politoed.wav}}"
           ],
-          "ID": "{{modId}}_sound_politoed_male"
-        },
-        "{{modId}}_sound_politoed_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/poliwag/politoed_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_politoed_female"
+          "ID": "{{modId}}_sound_politoed"
         }
       },
       "LogName": "Adding sound changes",
@@ -109,7 +102,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_poliwhirl",
-          "Texture": "poliwhirl/poliwhirl",
+          "Texture": "poliwag/poliwhirl",
           "BabyTexture": "poliwag/poliwag",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -148,7 +141,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_poliwrath",
-          "Texture": "poliwrath/poliwrath",
+          "Texture": "poliwag/poliwrath",
           "BabyTexture": "poliwag/poliwag",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -166,10 +159,10 @@
           "SellPrice": "5000",
           "ID": "{{modId}}_pokemon_poliwrath"
         },
-        "{{modId}}_pokemon_politoed_male": {
-          "DisplayName": "{{i18n:pokemon.politoed_male}}",
+        "{{modId}}_pokemon_politoed": {
+          "DisplayName": "{{i18n:pokemon.politoed}}",
           "House": "DeluxePokeBarn",
-          "Gender": "Male",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_poliwag",
             "{{modId}}_item_egg_group_water1"
@@ -180,22 +173,22 @@
           "CanGetPregnant": "False",
           "ProduceItemIds": [
             {
-              "Id": "{{modId}}_pokemon_produceItem_egg_politoed_male",
+              "Id": "{{modId}}_pokemon_produceItem_egg_politoed",
               "ItemID": "{{modId}}_item_egg_poliwag"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_politoed_male",
-          "Texture": "politoed_male/politoed_male",
+          "Sound": "{{modId}}_sound_politoed",
+          "Texture": "poliwag/politoed",
           "BabyTexture": "poliwag/poliwag",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
-              "ID": "{{modId}}_pokemon_politoed_male_shiny",
+              "ID": "{{modId}}_pokemon_politoed_shiny",
               "Weight": "0.1",
-              "Texture": "poliwag/politoed_males",
+              "Texture": "poliwag/politoeds",
               "BabyTexture": "poliwag/poliwags"
             }
           ],
@@ -203,46 +196,7 @@
           "UseDoubleUniqueAnimationFrames": "True",
           "CanSwim": "True",
           "SellPrice": "5000",
-          "ID": "{{modId}}_pokemon_politoed_male"
-        },
-        "{{modId}}_pokemon_politoed_female": {
-          "DisplayName": "{{i18n:pokemon.politoed_female}}",
-          "House": "DeluxePokeBarn",
-          "Gender": "Female",
-          "EggItemIds": [
-            "{{modId}}_item_egg_poliwag",
-            "{{modId}}_item_egg_group_water1"
-          ],
-          "IncubationTime": "27000",
-          "BirthText": "{{i18n:egg.all.hatching}}",
-          "DaysToMature": "8",
-          "CanGetPregnant": "False",
-          "ProduceItemIds": [
-            {
-              "Id": "{{modId}}_pokemon_produceItem_egg_politoed_female",
-              "ItemID": "{{modId}}_item_egg_poliwag"
-            }
-          ],
-          "DaysToProduce": "3",
-          "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_politoed_female",
-          "Texture": "politoed_female/politoed_female",
-          "BabyTexture": "poliwag/poliwag",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
-          "Skins": [
-            {
-              "ID": "{{modId}}_pokemon_politoed_female_shiny",
-              "Weight": "0.1",
-              "Texture": "poliwag/politoed_females",
-              "BabyTexture": "poliwag/poliwags"
-            }
-          ],
-          "SleepFrame": "16",
-          "UseDoubleUniqueAnimationFrames": "True",
-          "CanSwim": "True",
-          "SellPrice": "5000",
-          "ID": "{{modId}}_pokemon_politoed_female"
+          "ID": "{{modId}}_pokemon_politoed"
         }
       },
       "LogName": "Adding animal changes",
@@ -278,13 +232,8 @@
         "{{modId}}_item_egg_poliwag": {
           "AnimalSpawnList": [
             {
-              "Id": "{{modId}}_egg_spawn_politoed_female",
-              "AnimalId": "{{modId}}_pokemon_politoed_female",
-              "Condition": "RANDOM 0,200"
-            },
-            {
-              "Id": "{{modId}}_egg_spawn_politoed_male",
-              "AnimalId": "{{modId}}_pokemon_politoed_male",
+              "Id": "{{modId}}_egg_spawn_politoed",
+              "AnimalId": "{{modId}}_pokemon_politoed",
               "Condition": "RANDOM 0,250"
             },
             {
@@ -336,39 +285,22 @@
           "IgnoreRain": "True",
           "ID": "{{modId}}_pokemon_poliwrath"
         },
-        "{{modId}}_pokemon_politoed_male": {
+        "{{modId}}_pokemon_politoed": {
           "TextureOverrides": [
             {
-              "Id": "{{modId}}_pokemon_texture_politoed_male",
+              "Id": "{{modId}}_pokemon_texture_politoed",
               "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
               "TextureToUse": "poliwag/poliwhirl"
             },
             {
-              "Id": "{{modId}}_pokemon_texture_politoed_male_shiny",
-              "Skin": "{{modId}}_pokemon_politoed_male_shiny",
+              "Id": "{{modId}}_pokemon_texture_politoed_shiny",
+              "Skin": "{{modId}}_pokemon_politoed_shiny",
               "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
               "TextureToUse": "poliwag/poliwhirls"
             }
           ],
           "IgnoreRain": "True",
-          "ID": "{{modId}}_pokemon_politoed_male"
-        },
-        "{{modId}}_pokemon_politoed_female": {
-          "TextureOverrides": [
-            {
-              "Id": "{{modId}}_pokemon_texture_politoed_female",
-              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
-              "TextureToUse": "poliwag/poliwhirl"
-            },
-            {
-              "Id": "{{modId}}_pokemon_texture_politoed_female_shiny",
-              "Skin": "{{modId}}_pokemon_politoed_female_shiny",
-              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
-              "TextureToUse": "poliwag/poliwhirls"
-            }
-          ],
-          "IgnoreRain": "True",
-          "ID": "{{modId}}_pokemon_politoed_female"
+          "ID": "{{modId}}_pokemon_politoed"
         }
       },
       "LogName": "Adding extra texture changes",

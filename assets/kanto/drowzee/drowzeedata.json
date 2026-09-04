@@ -89,7 +89,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_hypno",
-          "Texture": "hypno/hypno",
+          "Texture": "drowzee/hypno",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

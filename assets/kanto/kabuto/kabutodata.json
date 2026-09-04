@@ -90,7 +90,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kabutops",
-          "Texture": "kabutops/kabutops",
+          "Texture": "kabuto/kabutops",
           "BabyTexture": "kabuto/kabuto",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

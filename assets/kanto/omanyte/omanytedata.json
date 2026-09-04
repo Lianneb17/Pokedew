@@ -90,7 +90,7 @@
           "DaysToProduce": "4",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_omastar",
-          "Texture": "omastar/omastar",
+          "Texture": "omanyte/omastar",
           "BabyTexture": "omanyte/omanyte",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

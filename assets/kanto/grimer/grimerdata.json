@@ -22,7 +22,7 @@
             "{{AbsoluteFilePath: assets/kanto/grimer/muk.wav}}"
           ],
           "ID": "{{modId}}_sound_muk"
-        },
+        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -88,7 +88,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_grimer",
-          "Texture": "grimer_alola/grimer_alola",
+          "Texture": "grimer/grimer_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -126,7 +126,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_muk",
-          "Texture": "muk/muk",
+          "Texture": "grimer/muk",
           "BabyTexture": "grimer/grimer",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -165,7 +165,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_muk",
-          "Texture": "muk_alola/muk_alola",
+          "Texture": "grimer/muk_alola",
           "BabyTexture": "grimer/grimer_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

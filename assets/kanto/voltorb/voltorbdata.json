@@ -16,26 +16,12 @@
           ],
           "ID": "{{modId}}_sound_voltorb"
         },
-        "{{modId}}_sound_voltorb_hisui": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/voltorb/voltorb_hisui.wav}}"
-          ],
-          "ID": "{{modId}}_sound_voltorb_hisui"
-        },
         "{{modId}}_sound_electrode": {
           "Category": "Sound",
           "FilePaths": [
             "{{AbsoluteFilePath: assets/kanto/voltorb/electrode.wav}}"
           ],
           "ID": "{{modId}}_sound_electrode"
-        },
-        "{{modId}}_sound_electrode_hisui": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/voltorb/electrode_hisui.wav}}"
-          ],
-          "ID": "{{modId}}_sound_electrode_hisui"
         }
       },
       "LogName": "Adding sound changes",
@@ -47,7 +33,7 @@
         "{{modId}}_pokemon_voltorb": {
           "DisplayName": "{{i18n:pokemon.voltorb}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_voltorb",
             "{{modId}}_item_egg_group_mineral"
@@ -91,7 +77,7 @@
         "{{modId}}_pokemon_voltorb_hisui": {
           "DisplayName": "{{i18n:pokemon.voltorb_hisui}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_voltorb",
             "{{modId}}_item_egg_group_mineral"
@@ -116,7 +102,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_voltorb_hisui",
-          "Texture": "voltorb_hisui/voltorb_hisui",
+          "Texture": "voltorb/voltorb_hisui",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -135,7 +121,7 @@
         "{{modId}}_pokemon_electrode": {
           "DisplayName": "{{i18n:pokemon.electrode}}",
           "House": "BigPokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_voltorb",
             "{{modId}}_item_egg_group_mineral"
@@ -160,7 +146,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_electrode",
-          "Texture": "electrode/electrode",
+          "Texture": "voltorb/electrode",
           "BabyTexture": "voltorb/voltorb",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -181,7 +167,7 @@
         "{{modId}}_pokemon_electrode_hisui": {
           "DisplayName": "{{i18n:pokemon.electrode_hisui}}",
           "House": "BigPokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_voltorb",
             "{{modId}}_item_egg_group_mineral"
@@ -206,7 +192,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_electrode_hisui",
-          "Texture": "electrode_hisui/electrode_hisui",
+          "Texture": "voltorb/electrode_hisui",
           "BabyTexture": "voltorb/voltorb_hisui",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

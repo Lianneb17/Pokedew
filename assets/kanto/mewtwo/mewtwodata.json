@@ -26,7 +26,7 @@
         "{{modId}}_pokemon_mewtwo": {
           "DisplayName": "{{i18n:pokemon.mewtwo}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_mewtwo",
             "{{modId}}_item_egg_group_noeggdiscovered"

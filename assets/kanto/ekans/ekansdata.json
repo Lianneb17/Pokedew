@@ -90,7 +90,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_arbok",
-          "Texture": "arbok/arbok",
+          "Texture": "ekans/arbok",
           "BabyTexture": "ekans/ekan",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

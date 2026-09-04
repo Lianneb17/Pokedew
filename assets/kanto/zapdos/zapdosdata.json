@@ -15,7 +15,7 @@
             "{{AbsoluteFilePath: assets/kanto/zapdos/zapdos.wav}}"
           ],
           "ID": "{{modId}}_sound_zapdos"
-        },
+        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -26,7 +26,7 @@
         "{{modId}}_pokemon_zapdos": {
           "DisplayName": "{{i18n:pokemon.zapdos}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_zapdos",
             "{{modId}}_item_egg_group_noeggdiscovered"
@@ -74,7 +74,7 @@
         "{{modId}}_pokemon_zapdos_galar": {
           "DisplayName": "{{i18n:pokemon.zapdos_galar}}",
           "House": "PokeBarn",
-          "Gender": "Genderless",
+          "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_zapdos",
             "{{modId}}_item_egg_group_noeggdiscovered"
@@ -98,7 +98,7 @@
           "DaysToProduce": "7",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_zapdos",
-          "Texture": "zapdos_galar/zapdos_galar",
+          "Texture": "zapdos/zapdos_galar",
           "BabyTexture": "zapdos/zapdo",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

@@ -110,7 +110,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_electabuzz",
-          "Texture": "electabuzz/electabuzz",
+          "Texture": "elekid/electabuzz",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -156,7 +156,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_electivire",
-          "Texture": "electivire/electivire",
+          "Texture": "elekid/electivire",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

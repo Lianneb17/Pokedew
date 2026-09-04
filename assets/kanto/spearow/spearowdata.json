@@ -101,7 +101,7 @@
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_fearow",
-          "Texture": "fearow/fearow",
+          "Texture": "spearow/fearow",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

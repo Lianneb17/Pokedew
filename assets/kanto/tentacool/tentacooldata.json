@@ -88,7 +88,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tentacruel",
-          "Texture": "tentacruel/tentacruel",
+          "Texture": "tentacool/tentacruel",
           "BabyTexture": "tentacool/tentacool",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

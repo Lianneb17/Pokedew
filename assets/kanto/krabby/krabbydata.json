@@ -88,7 +88,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kingler",
-          "Texture": "kingler/kingler",
+          "Texture": "krabby/kingler",
           "BabyTexture": "krabby/krabby",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

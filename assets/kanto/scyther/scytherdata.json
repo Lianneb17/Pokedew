@@ -2,26 +2,33 @@
   "Changes": [
     {
       "Action": "Load",
-      "FromFile": "assets/kanto/farfetchd/{{TargetWithoutPath}}.png",
+      "FromFile": "assets/kanto/scyther/{{TargetWithoutPath}}.png",
       "LogName": "Load images",
-      "Target": "farfetchd/farfetchd, farfetchd/farfetchds, farfetchd/farfetchd_galar, farfetchd/farfetchd_galars, farfetchd/sirfetchd, farfetchd/sirfetchds"
+      "Target": "scyther/scyther, scyther/scythers, scyther/scizor, scyther/scizors, scyther/kleavor, scyther/kleavors"
     },
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_sound_farfetchd": {
+        "{{modId}}_sound_scyther": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/farfetchd/farfetchd.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/scyther/scyther.wav}}"
           ],
-          "ID": "{{modId}}_sound_farfetchd"
+          "ID": "{{modId}}_sound_scyther"
         },
-        "{{modId}}_sound_sirfetchd": {
+        "{{modId}}_sound_scizor": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/farfetchd/sirfetchd.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/scyther/scizor.wav}}"
           ],
-          "ID": "{{modId}}_sound_sirfetchd"
+          "ID": "{{modId}}_sound_scizor"
+        },
+        "{{modId}}_sound_kleavor": {
+          "Category": "Sound",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/kanto/scyther/kleavor.wav}}"
+          ],
+          "ID": "{{modId}}_sound_kleavor"
         }
       },
       "LogName": "Adding sound changes",
@@ -30,14 +37,13 @@
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_pokemon_farfetchd": {
-          "DisplayName": "{{i18n:pokemon.farfetchd}}",
+        "{{modId}}_pokemon_scyther": {
+          "DisplayName": "{{i18n:pokemon.scyther}}",
           "House": "PokeBarn",
-          "Gender": "MaleOrFemale",
+          "Gender": "Male",
           "EggItemIds": [
-            "{{modId}}_item_egg_farfetchd",
-            "{{modId}}_item_egg_group_flying",
-            "{{modId}}_item_egg_group_field"
+            "{{modId}}_item_egg_scyther",
+            "{{modId}}_item_egg_group_bug"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -45,43 +51,42 @@
           "CanGetPregnant": "False",
           "ProduceItemIds": [
             {
-              "Id": "{{modId}}_pokemon_produceItem_egg_farfetchd",
-              "ItemID": "{{modId}}_item_egg_farfetchd"
+              "Id": "{{modId}}_pokemon_produceItem_egg_scyther",
+              "ItemID": "{{modId}}_item_egg_scyther"
             }
           ],
           "DeluxeProduceItemIds": [
             {
-              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_farfetchd",
+              "Id": "{{modId}}_pokemon_deluxeProduceItem_duckfeather_scyther",
               "ItemID": "444"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_farfetchd",
-          "Texture": "farfetchd/farfetchd",
+          "Sound": "{{modId}}_sound_scyther",
+          "Texture": "scyther/scyther",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
-              "ID": "{{modId}}_pokemon_farfetchd_shiny",
+              "ID": "{{modId}}_pokemon_scyther_shiny",
               "Weight": "0.1",
-              "Texture": "farfetchd/farfetchds"
+              "Texture": "scyther/scythers"
             }
           ],
           "SleepFrame": "16",
           "UseDoubleUniqueAnimationFrames": "True",
           "CanSwim": "False",
           "SellPrice": "5000",
-          "ID": "{{modId}}_pokemon_farfetchd"
+          "ID": "{{modId}}_pokemon_scyther"
         },
-        "{{modId}}_pokemon_farfetchd_galar": {
-          "DisplayName": "{{i18n:pokemon.farfetchd_galar}}",
-          "House": "PokeBarn",
-          "Gender": "MaleOrFemale",
+        "{{modId}}_pokemon_scizor": {
+          "DisplayName": "{{i18n:pokemon.scizor}}",
+          "House": "BigPokeBarn",
+          "Gender": "Male",
           "EggItemIds": [
-            "{{modId}}_item_egg_farfetchd",
-            "{{modId}}_item_egg_group_flying",
-            "{{modId}}_item_egg_group_field"
+            "{{modId}}_item_egg_scyther",
+            "{{modId}}_item_egg_group_bug"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -89,37 +94,38 @@
           "CanGetPregnant": "False",
           "ProduceItemIds": [
             {
-              "Id": "{{modId}}_pokemon_produceItem_egg_farfetchd_galar",
-              "ItemID": "{{modId}}_item_egg_farfetchd"
+              "Id": "{{modId}}_pokemon_produceItem_egg_scizor",
+              "ItemID": "{{modId}}_item_egg_scyther"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_farfetchd",
-          "Texture": "farfetchd/farfetchd_galar",
+          "Sound": "{{modId}}_sound_scizor",
+          "Texture": "scyther/scizor",
+          "BabyTexture": "scyther/scyther",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
-              "ID": "{{modId}}_pokemon_farfetchd_galar_shiny",
+              "ID": "{{modId}}_pokemon_scizor_shiny",
               "Weight": "0.1",
-              "Texture": "farfetchd/farfetchd_galars"
+              "Texture": "scyther/scizors",
+              "BabyTexture": "scyther/scythers"
             }
           ],
           "SleepFrame": "16",
           "UseDoubleUniqueAnimationFrames": "True",
           "CanSwim": "False",
           "SellPrice": "5000",
-          "ID": "{{modId}}_pokemon_farfetchd_galar"
+          "ID": "{{modId}}_pokemon_scizor"
         },
-        "{{modId}}_pokemon_sirfetchd": {
-          "DisplayName": "{{i18n:pokemon.sirfetchd}}",
+        "{{modId}}_pokemon_kleavor": {
+          "DisplayName": "{{i18n:pokemon.kleavor}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
-            "{{modId}}_item_egg_farfetchd",
-            "{{modId}}_item_egg_group_flying",
-            "{{modId}}_item_egg_group_field"
+            "{{modId}}_item_egg_scyther",
+            "{{modId}}_item_egg_group_bug"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -127,30 +133,30 @@
           "CanGetPregnant": "False",
           "ProduceItemIds": [
             {
-              "Id": "{{modId}}_pokemon_produceItem_egg_sirfetchd",
-              "ItemID": "{{modId}}_item_egg_farfetchd"
+              "Id": "{{modId}}_pokemon_produceItem_egg_kleavor",
+              "ItemID": "{{modId}}_item_egg_scyther"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_sirfetchd",
-          "Texture": "farfetchd/sirfetchd",
-          "BabyTexture": "farfetchd/farfetchd",
+          "Sound": "{{modId}}_sound_kleavor",
+          "Texture": "scyther/kleavor",
+          "BabyTexture": "scyther/scyther",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
-              "ID": "{{modId}}_pokemon_sirfetchd_shiny",
+              "ID": "{{modId}}_pokemon_kleavor_shiny",
               "Weight": "0.1",
-              "Texture": "farfetchd/sirfetchds",
-              "BabyTexture": "farfetchd/farfetchds"
+              "Texture": "scyther/kleavors",
+              "BabyTexture": "scyther/scythers"
             }
           ],
           "SleepFrame": "16",
           "UseDoubleUniqueAnimationFrames": "True",
           "CanSwim": "False",
           "SellPrice": "5000",
-          "ID": "{{modId}}_pokemon_sirfetchd"
+          "ID": "{{modId}}_pokemon_kleavor"
         }
       },
       "LogName": "Adding animal changes",
@@ -159,22 +165,22 @@
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_item_egg_farfetchd": {
-          "Name": "{{modId}_item_egg_farfetchd",
-          "DisplayName": "{{i18n:egg.farfetchd.item}}",
-          "Description": "{{i18n:egg.farfetchd.item.description}}",
+        "{{modId}}_item_egg_scyther": {
+          "Name": "{{modId}_item_egg_scyther",
+          "DisplayName": "{{i18n:egg.scyther.item}}",
+          "Description": "{{i18n:egg.scyther.item.description}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
           "Texture": "eggs/color",
-          "SpriteIndex": "5",
+          "SpriteIndex": "3",
           "Edibility": "50",
           "ContextTags": [
             "egg_item",
-            "color_brown"
+            "color_green"
           ],
           "ExcludeFromShippingCollection": "True",
-          "ID": "{{modId}}_item_egg_farfetchd"
+          "ID": "{{modId}}_item_egg_scyther"
         }
       },
       "LogName": "Creating eggdata",
@@ -183,24 +189,24 @@
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_item_egg_farfetchd": {
+        "{{modId}}_item_egg_scyther": {
           "AnimalSpawnList": [
             {
-              "Id": "{{modId}}_egg_spawn_sirfetchd",
-              "AnimalId": "{{modId}}_pokemon_sirfetchd",
+              "Id": "{{modId}}_egg_spawn_kleavor",
+              "AnimalId": "{{modId}}_pokemon_kleavor",
               "Condition": "RANDOM 0,333"
             },
             {
-              "Id": "{{modId}}_egg_spawn_farfetchd_galar",
-              "AnimalId": "{{modId}}_pokemon_farfetchd_galar",
+              "Id": "{{modId}}_egg_spawn_scizor",
+              "AnimalId": "{{modId}}_pokemon_scizor",
               "Condition": "RANDOM 0,500"
             },
             {
-              "Id": "{{modId}}_egg_spawn_farfetchd",
-              "AnimalId": "{{modId}}_pokemon_farfetchd"
+              "Id": "{{modId}}_egg_spawn_scyther",
+              "AnimalId": "{{modId}}_pokemon_scyther"
             }
           ],
-          "ID": "{{modId}}_item_egg_farfetchd"
+          "ID": "{{modId}}_item_egg_scyther"
         }
       },
       "LogName": "Adding egg extension changes",

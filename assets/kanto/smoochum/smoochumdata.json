@@ -88,7 +88,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_jynx",
-          "Texture": "jynx/jynx",
+          "Texture": "smoochum/jynx",
           "BabyTexture": "smoochum/smoochum",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

@@ -16,33 +16,19 @@
           ],
           "ID": "{{modId}}_sound_oddish"
         },
-        "{{modId}}_sound_gloom_male": {
+        "{{modId}}_sound_gloom": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/oddish/gloom_male.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/oddish/gloom.wav}}"
           ],
-          "ID": "{{modId}}_sound_gloom_male"
+          "ID": "{{modId}}_sound_gloom"
         },
-        "{{modId}}_sound_gloom_female": {
+        "{{modId}}_sound_vileplum": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/oddish/gloom_female.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/oddish/vileplume.wav}}"
           ],
-          "ID": "{{modId}}_sound_gloom_female"
-        },
-        "{{modId}}_sound_vileplume_male": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/oddish/vileplume_male.wav}}"
-          ],
-          "ID": "{{modId}}_sound_vileplume_male"
-        },
-        "{{modId}}_sound_vileplume_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/oddish/vileplume_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_vileplume_female"
+          "ID": "{{modId}}_sound_vileplume"
         },
         "{{modId}}_sound_bellossom": {
           "Category": "Sound",
@@ -115,8 +101,8 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_gloom_male",
-          "Texture": "gloom_male/gloom_male",
+          "Sound": "{{modId}}_sound_gloom",
+          "Texture": "oddish/gloom_male",
           "BabyTexture": "oddish/oddish",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -154,8 +140,8 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_gloom_female",
-          "Texture": "gloom_female/gloom_female",
+          "Sound": "{{modId}}_sound_gloom",
+          "Texture": "oddish/gloom_female",
           "BabyTexture": "oddish/oddish",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -193,8 +179,8 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_vileplume_male",
-          "Texture": "vileplume_male/vileplume_male",
+          "Sound": "{{modId}}_sound_vileplume",
+          "Texture": "oddish/vileplume_male",
           "BabyTexture": "oddish/oddish",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -232,8 +218,8 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_vileplume_female",
-          "Texture": "vileplume_female/vileplume_female",
+          "Sound": "{{modId}}_sound_vileplume",
+          "Texture": "oddish/vileplume_female",
           "BabyTexture": "oddish/oddish",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -251,10 +237,10 @@
           "SellPrice": "5000",
           "ID": "{{modId}}_pokemon_vileplume_female"
         },
-        "{{modId}}_pokemon_bellossom": {
+        "{{modId}}_pokemon_bellossom_male": {
           "DisplayName": "{{i18n:pokemon.bellossom}}",
           "House": "DeluxePokeBarn",
-          "Gender": "MaleOrFemale",
+          "Gender": "Male",
           "EggItemIds": [
             "{{modId}}_item_egg_oddish",
             "{{modId}}_item_egg_group_grass"
@@ -272,7 +258,46 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_bellossom",
-          "Texture": "bellossom/bellossom",
+          "Texture": "oddish/bellossom",
+          "BabyTexture": "oddish/oddish",
+          "SpriteWidth": "21",
+          "SpriteHeight": "29",
+          "Skins": [
+            {
+              "ID": "{{modId}}_pokemon_bellossom_shiny",
+              "Weight": "0.1",
+              "Texture": "oddish/bellossoms",
+              "BabyTexture": "oddish/oddishs"
+            }
+          ],
+          "SleepFrame": "16",
+          "UseDoubleUniqueAnimationFrames": "True",
+          "CanSwim": "False",
+          "SellPrice": "5000",
+          "ID": "{{modId}}_pokemon_bellossom"
+        },
+        "{{modId}}_pokemon_bellossom_female": {
+          "DisplayName": "{{i18n:pokemon.bellossom}}",
+          "House": "DeluxePokeBarn",
+          "Gender": "Female",
+          "EggItemIds": [
+            "{{modId}}_item_egg_oddish",
+            "{{modId}}_item_egg_group_grass"
+          ],
+          "IncubationTime": "27000",
+          "BirthText": "{{i18n:egg.all.hatching}}",
+          "DaysToMature": "8",
+          "CanGetPregnant": "False",
+          "ProduceItemIds": [
+            {
+              "Id": "{{modId}}_pokemon_produceItem_egg_bellossom",
+              "ItemID": "{{modId}}_item_egg_oddish"
+            }
+          ],
+          "DaysToProduce": "3",
+          "ProduceOnMature": "True",
+          "Sound": "{{modId}}_sound_bellossom",
+          "Texture": "oddish/bellossom",
           "BabyTexture": "oddish/oddish",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -408,7 +433,7 @@
           "IgnoreRain": "True",
           "ID": "{{modId}}_pokemon_vileplume_female"
         },
-        "{{modId}}_pokemon_bellossom": {
+        "{{modId}}_pokemon_bellossom_male": {
           "TextureOverrides": [
             {
               "Id": "{{modId}}_pokemon_texture_bellossom",
@@ -423,7 +448,24 @@
             }
           ],
           "IgnoreRain": "True",
-          "ID": "{{modId}}_pokemon_bellossom"
+          "ID": "{{modId}}_pokemon_bellossom_male"
+        },
+        "{{modId}}_pokemon_bellossom_female": {
+          "TextureOverrides": [
+            {
+              "Id": "{{modId}}_pokemon_texture_bellossom",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
+              "TextureToUse": "oddish/gloom_female"
+            },
+            {
+              "Id": "{{modId}}_pokemon_texture_bellossom_shiny",
+              "Skin": "{{modId}}_pokemon_bellossom_shiny",
+              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
+              "TextureToUse": "oddish/gloom_females"
+            }
+          ],
+          "IgnoreRain": "True",
+          "ID": "{{modId}}_pokemon_bellossom_male"
         }
       },
       "LogName": "Adding extra texture changes",

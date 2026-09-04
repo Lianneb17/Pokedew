@@ -2,54 +2,33 @@
   "Changes": [
     {
       "Action": "Load",
-      "FromFile": "assets/kanto/rhyhorn_male/{{TargetWithoutPath}}.png",
+      "FromFile": "assets/kanto/rhyhorn/{{TargetWithoutPath}}.png",
       "LogName": "Load images",
-      "Target": "rhyhorn_male/rhyhorn_male, rhyhorn_male/rhyhorn_males, rhyhorn_male/rhyhorn_female, rhyhorn_male/rhyhorn_females, rhyhorn_male/rhydon_male, rhyhorn_male/rhydon_males, rhyhorn_male/rhydon_female, rhyhorn_male/rhydon_females, rhyhorn_male/rhyperior_male, rhyhorn_male/rhyperior_males, rhyhorn_male/rhyperior_female, rhyhorn_male/rhyperior_females"
+      "Target": "rhyhorn/rhyhorn, rhyhorn/rhyhorns, rhyhorn/rhyhorn_female, rhyhorn/rhyhorn_females, rhyhorn/rhydon_male, rhyhorn/rhydon_males, rhyhorn/rhydon_female, rhyhorn/rhydon_females, rhyhorn/rhyperior_male, rhyhorn/rhyperior_males, rhyhorn/rhyperior_female, rhyhorn/rhyperior_females"
     },
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_sound_rhyhorn_male": {
+        "{{modId}}_sound_rhyhorn": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rhyhorn_male/rhyhorn_male.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/rhyhorn/rhyhorn.wav}}"
           ],
-          "ID": "{{modId}}_sound_rhyhorn_male"
+          "ID": "{{modId}}_sound_rhyhorn"
         },
-        "{{modId}}_sound_rhyhorn_female": {
+        "{{modId}}_sound_rhydon": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rhyhorn_male/rhyhorn_female.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/rhyhorn/rhydon.wav}}"
           ],
-          "ID": "{{modId}}_sound_rhyhorn_female"
+          "ID": "{{modId}}_sound_rhydon"
         },
-        "{{modId}}_sound_rhydon_male": {
+        "{{modId}}_sound_rhyperior": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rhyhorn_male/rhydon_male.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/rhyhorn/rhyperior.wav}}"
           ],
-          "ID": "{{modId}}_sound_rhydon_male"
-        },
-        "{{modId}}_sound_rhydon_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rhyhorn_male/rhydon_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_rhydon_female"
-        },
-        "{{modId}}_sound_rhyperior_male": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rhyhorn_male/rhyperior_male.wav}}"
-          ],
-          "ID": "{{modId}}_sound_rhyperior_male"
-        },
-        "{{modId}}_sound_rhyperior_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/rhyhorn_male/rhyperior_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_rhyperior_female"
+          "ID": "{{modId}}_sound_rhyperior"
         }
       },
       "LogName": "Adding sound changes",
@@ -63,7 +42,7 @@
           "House": "PokeBarn",
           "Gender": "Male",
           "EggItemIds": [
-            "{{modId}}_item_egg_rhyhorn_male",
+            "{{modId}}_item_egg_rhyhorn",
             "{{modId}}_item_egg_group_monster",
             "{{modId}}_item_egg_group_field"
           ],
@@ -74,20 +53,20 @@
           "ProduceItemIds": [
             {
               "Id": "{{modId}}_pokemon_produceItem_egg_rhyhorn_male",
-              "ItemID": "{{modId}}_item_egg_rhyhorn_male"
+              "ItemID": "{{modId}}_item_egg_rhyhorn"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_rhyhorn_male",
-          "Texture": "rhyhorn_male/rhyhorn_male",
+          "Sound": "{{modId}}_sound_rhyhorn",
+          "Texture": "rhyhorn/rhyhorn_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_rhyhorn_male_shiny",
               "Weight": "0.1",
-              "Texture": "rhyhorn_male/rhyhorn_males"
+              "Texture": "rhyhorn/rhyhorn_males"
             }
           ],
           "SleepFrame": "16",
@@ -101,7 +80,7 @@
           "House": "PokeBarn",
           "Gender": "Female",
           "EggItemIds": [
-            "{{modId}}_item_egg_rhyhorn_male",
+            "{{modId}}_item_egg_rhyhorn",
             "{{modId}}_item_egg_group_monster",
             "{{modId}}_item_egg_group_field"
           ],
@@ -112,20 +91,20 @@
           "ProduceItemIds": [
             {
               "Id": "{{modId}}_pokemon_produceItem_egg_rhyhorn_female",
-              "ItemID": "{{modId}}_item_egg_rhyhorn_male"
+              "ItemID": "{{modId}}_item_egg_rhyhorn"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_rhyhorn_female",
-          "Texture": "rhyhorn_female/rhyhorn_female",
+          "Sound": "{{modId}}_sound_rhyhorn",
+          "Texture": "rhyhorn/rhyhorn_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_rhyhorn_female_shiny",
               "Weight": "0.1",
-              "Texture": "rhyhorn_male/rhyhorn_females"
+              "Texture": "rhyhorn/rhyhorn_females"
             }
           ],
           "SleepFrame": "16",
@@ -139,7 +118,7 @@
           "House": "BigPokeBarn",
           "Gender": "Male",
           "EggItemIds": [
-            "{{modId}}_item_egg_rhyhorn_male",
+            "{{modId}}_item_egg_rhyhorn",
             "{{modId}}_item_egg_group_monster",
             "{{modId}}_item_egg_group_field"
           ],
@@ -150,22 +129,22 @@
           "ProduceItemIds": [
             {
               "Id": "{{modId}}_pokemon_produceItem_egg_rhydon_male",
-              "ItemID": "{{modId}}_item_egg_rhyhorn_male"
+              "ItemID": "{{modId}}_item_egg_rhyhorn"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_rhydon_male",
-          "Texture": "rhydon_male/rhydon_male",
-          "BabyTexture": "rhyhorn_male/rhyhorn_male",
+          "Texture": "rhyhorn/rhydon_male",
+          "BabyTexture": "rhyhorn/rhyhorn_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_rhydon_male_shiny",
               "Weight": "0.1",
-              "Texture": "rhyhorn_male/rhydon_males",
-              "BabyTexture": "rhyhorn_male/rhyhorn_males"
+              "Texture": "rhyhorn/rhydon_males",
+              "BabyTexture": "rhyhorn/rhyhorn_males"
             }
           ],
           "SleepFrame": "16",
@@ -179,7 +158,7 @@
           "House": "BigPokeBarn",
           "Gender": "Female",
           "EggItemIds": [
-            "{{modId}}_item_egg_rhyhorn_male",
+            "{{modId}}_item_egg_rhyhorn",
             "{{modId}}_item_egg_group_monster",
             "{{modId}}_item_egg_group_field"
           ],
@@ -190,22 +169,22 @@
           "ProduceItemIds": [
             {
               "Id": "{{modId}}_pokemon_produceItem_egg_rhydon_female",
-              "ItemID": "{{modId}}_item_egg_rhyhorn_male"
+              "ItemID": "{{modId}}_item_egg_rhyhorn"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_rhydon_female",
-          "Texture": "rhydon_female/rhydon_female",
-          "BabyTexture": "rhyhorn_male/rhyhorn_female",
+          "Texture": "rhyhorn/rhydon_female",
+          "BabyTexture": "rhyhorn/rhyhorn_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_rhydon_female_shiny",
               "Weight": "0.1",
-              "Texture": "rhyhorn_male/rhydon_females",
-              "BabyTexture": "rhyhorn_male/rhyhorn_females"
+              "Texture": "rhyhorn/rhydon_females",
+              "BabyTexture": "rhyhorn/rhyhorn_females"
             }
           ],
           "SleepFrame": "16",
@@ -219,7 +198,7 @@
           "House": "DeluxePokeBarn",
           "Gender": "Male",
           "EggItemIds": [
-            "{{modId}}_item_egg_rhyhorn_male",
+            "{{modId}}_item_egg_rhyhorn",
             "{{modId}}_item_egg_group_monster",
             "{{modId}}_item_egg_group_field"
           ],
@@ -230,22 +209,22 @@
           "ProduceItemIds": [
             {
               "Id": "{{modId}}_pokemon_produceItem_egg_rhyperior_male",
-              "ItemID": "{{modId}}_item_egg_rhyhorn_male"
+              "ItemID": "{{modId}}_item_egg_rhyhorn"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_rhyperior_male",
-          "Texture": "rhyperior_male/rhyperior_male",
-          "BabyTexture": "rhyhorn_male/rhyhorn_male",
+          "Sound": "{{modId}}_sound_rhyperior",
+          "Texture": "rhyhorn/rhyperior_male",
+          "BabyTexture": "rhyhorn/rhyhorn_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_rhyperior_male_shiny",
               "Weight": "0.1",
-              "Texture": "rhyhorn_male/rhyperior_males",
-              "BabyTexture": "rhyhorn_male/rhyhorn_males"
+              "Texture": "rhyhorn/rhyperior_males",
+              "BabyTexture": "rhyhorn/rhyhorn_males"
             }
           ],
           "SleepFrame": "16",
@@ -259,7 +238,7 @@
           "House": "DeluxePokeBarn",
           "Gender": "Female",
           "EggItemIds": [
-            "{{modId}}_item_egg_rhyhorn_male",
+            "{{modId}}_item_egg_rhyhorn",
             "{{modId}}_item_egg_group_monster",
             "{{modId}}_item_egg_group_field"
           ],
@@ -270,22 +249,22 @@
           "ProduceItemIds": [
             {
               "Id": "{{modId}}_pokemon_produceItem_egg_rhyperior_female",
-              "ItemID": "{{modId}}_item_egg_rhyhorn_male"
+              "ItemID": "{{modId}}_item_egg_rhyhorn"
             }
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_rhyperior_female",
-          "Texture": "rhyperior_female/rhyperior_female",
-          "BabyTexture": "rhyhorn_male/rhyhorn_female",
+          "Sound": "{{modId}}_sound_rhyperior",
+          "Texture": "rhyhorn/rhyperior_female",
+          "BabyTexture": "rhyhorn/rhyhorn_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_rhyperior_female_shiny",
               "Weight": "0.1",
-              "Texture": "rhyhorn_male/rhyperior_females",
-              "BabyTexture": "rhyhorn_male/rhyhorn_females"
+              "Texture": "rhyhorn/rhyperior_females",
+              "BabyTexture": "rhyhorn/rhyhorn_females"
             }
           ],
           "SleepFrame": "16",
@@ -301,10 +280,10 @@
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_item_egg_rhyhorn_male": {
-          "Name": "{{modId}_item_egg_rhyhorn_male",
-          "DisplayName": "{{i18n:egg.rhyhorn_male.item}}",
-          "Description": "{{i18n:egg.rhyhorn_male.item.description}}",
+        "{{modId}}_item_egg_rhyhorn": {
+          "Name": "{{modId}_item_egg_rhyhorn",
+          "DisplayName": "{{i18n:egg.rhyhorn.item}}",
+          "Description": "{{i18n:egg.rhyhorn.item.description}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -316,7 +295,7 @@
             "color_gray"
           ],
           "ExcludeFromShippingCollection": "True",
-          "ID": "{{modId}}_item_egg_rhyhorn_male"
+          "ID": "{{modId}}_item_egg_rhyhorn"
         }
       },
       "LogName": "Creating eggdata",
@@ -325,7 +304,7 @@
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_item_egg_rhyhorn_male": {
+        "{{modId}}_item_egg_rhyhorn": {
           "AnimalSpawnList": [
             {
               "Id": "{{modId}}_egg_spawn_rhyperior_female",
@@ -353,11 +332,11 @@
               "Condition": "RANDOM 0,500"
             },
             {
-              "Id": "{{modId}}_egg_spawn_rhyhorn_male",
-              "AnimalId": "{{modId}}_pokemon_rhyhorn_male"
+              "Id": "{{modId}}_egg_spawn_rhyhorn",
+              "AnimalId": "{{modId}}_pokemon_rhyhorn"
             }
           ],
-          "ID": "{{modId}}_item_egg_rhyhorn_male"
+          "ID": "{{modId}}_item_egg_rhyhorn"
         }
       },
       "LogName": "Adding egg extension changes",
@@ -366,13 +345,13 @@
     {
       "Action": "EditData",
       "Entries": {
-        "{{modId}}_pokemon_rhyhorn_male": {
+        "{{modId}}_pokemon_rhyhorn": {
           "ExtraProduceSpawnList": [
             {
-              "Id": "{{modId}}_pokemon_extraSpawn_truffle_rhyhorn_male",
+              "Id": "{{modId}}_pokemon_extraSpawn_truffle_rhyhorn",
               "ProduceItems": [
                 {
-                  "Id": "{{modId}}_pokemon_spawn_truffle_rhyhorn_male",
+                  "Id": "{{modId}}_pokemon_spawn_truffle_rhyhorn",
                   "ItemID": "430"
                 }
               ],
@@ -380,7 +359,7 @@
               "SyncWithMainProduce": "False"
             }
           ],
-          "ID": "{{modId}}_pokemon_rhyhorn_male"
+          "ID": "{{modId}}_pokemon_rhyhorn"
         },
         "{{modId}}_pokemon_rhyhorn_female": {
           "ExtraProduceSpawnList": [
@@ -435,13 +414,13 @@
             {
               "Id": "{{modId}}_pokemon_texture_rhyperior_male",
               "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 6 10",
-              "TextureToUse": "rhyhorn_male/rhydon_male"
+              "TextureToUse": "rhyhorn/rhydon_male"
             },
             {
               "Id": "{{modId}}_pokemon_texture_rhyperior_male_shiny",
               "Skin": "{{modId}}_pokemon_rhyperior_male_shiny",
               "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 6 10",
-              "TextureToUse": "rhyhorn_male/rhydon_males"
+              "TextureToUse": "rhyhorn/rhydon_males"
             }
           ],
           "ExtraProduceSpawnList": [
@@ -464,13 +443,13 @@
             {
               "Id": "{{modId}}_pokemon_texture_rhyperior_female",
               "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 6 10",
-              "TextureToUse": "rhyhorn_male/rhydon_male"
+              "TextureToUse": "rhyhorn/rhydon_male"
             },
             {
               "Id": "{{modId}}_pokemon_texture_rhyperior_female_shiny",
               "Skin": "{{modId}}_pokemon_rhyperior_female_shiny",
               "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 6 10",
-              "TextureToUse": "rhyhorn_male/rhydon_males"
+              "TextureToUse": "rhyhorn/rhydon_males"
             }
           ],
           "ExtraProduceSpawnList": [

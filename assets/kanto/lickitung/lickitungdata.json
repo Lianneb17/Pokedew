@@ -88,7 +88,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_lickilicky",
-          "Texture": "lickilicky/lickilicky",
+          "Texture": "lickitung/lickilicky",
           "BabyTexture": "lickitung/lickitung",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

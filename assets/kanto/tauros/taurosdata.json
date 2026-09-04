@@ -15,27 +15,6 @@
             "{{AbsoluteFilePath: assets/kanto/tauros/tauros.wav}}"
           ],
           "ID": "{{modId}}_sound_tauros"
-        },
-        "{{modId}}_sound_tauros_paldea_combat_breed": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/tauros/tauros_paldea_combat_breed.wav}}"
-          ],
-          "ID": "{{modId}}_sound_tauros_paldea_combat_breed"
-        },
-        "{{modId}}_sound_tauros_paldea_blaze_breed": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/tauros/tauros_paldea_blaze_breed.wav}}"
-          ],
-          "ID": "{{modId}}_sound_tauros_paldea_blaze_breed"
-        },
-        "{{modId}}_sound_tauros_paldea_aqua_breed": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/tauros/tauros_paldea_aqua_breed.wav}}"
-          ],
-          "ID": "{{modId}}_sound_tauros_paldea_aqua_breed"
         }
       },
       "LogName": "Adding sound changes",
@@ -102,16 +81,14 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tauros_paldea_combat_breed",
-          "Texture": "tauros_paldea_combat_breed/tauros_paldea_combat_breed",
-          "BabyTexture": "tauros/tauro",
+          "Texture": "tauros/tauros_paldea_combat_breed",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_tauros_paldea_combat_breed_shiny",
               "Weight": "0.1",
-              "Texture": "tauros/tauros_paldea_combat_breeds",
-              "BabyTexture": "tauros/tauros"
+              "Texture": "tauros/tauros_paldea_combat_breeds"
             }
           ],
           "SleepFrame": "16",
@@ -141,16 +118,14 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tauros_paldea_blaze_breed",
-          "Texture": "tauros_paldea_blaze_breed/tauros_paldea_blaze_breed",
-          "BabyTexture": "tauros/tauro",
+          "Texture": "tauros/tauros_paldea_blaze_breed",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_tauros_paldea_blaze_breed_shiny",
               "Weight": "0.1",
-              "Texture": "tauros/tauros_paldea_blaze_breeds",
-              "BabyTexture": "tauros/tauros"
+              "Texture": "tauros/tauros_paldea_blaze_breeds"
             }
           ],
           "SleepFrame": "16",
@@ -180,16 +155,14 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tauros_paldea_aqua_breed",
-          "Texture": "tauros_paldea_aqua_breed/tauros_paldea_aqua_breed",
-          "BabyTexture": "tauros/tauro",
+          "Texture": "tauros/tauros_paldea_aqua_breed",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_tauros_paldea_aqua_breed_shiny",
               "Weight": "0.1",
-              "Texture": "tauros/tauros_paldea_aqua_breeds",
-              "BabyTexture": "tauros/tauros"
+              "Texture": "tauros/tauros_paldea_aqua_breeds"
             }
           ],
           "SleepFrame": "16",

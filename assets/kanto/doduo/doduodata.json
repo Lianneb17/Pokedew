@@ -144,7 +144,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_dodrio_male",
-          "Texture": "dodùo/dodrio_male",
+          "Texture": "doduo/dodrio_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

@@ -88,7 +88,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_cloyster",
-          "Texture": "cloyster/cloyster",
+          "Texture": "shellder/cloyster",
           "BabyTexture": "shellder/shellder",
           "SpriteWidth": "21",
           "SpriteHeight": "29",

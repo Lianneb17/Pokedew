@@ -22,7 +22,7 @@
             "{{AbsoluteFilePath: assets/kanto/koffing/weezing.wav}}"
           ],
           "ID": "{{modId}}_sound_weezing"
-        },
+        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -88,7 +88,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_weezing",
-          "Texture": "weezing/weezing",
+          "Texture": "koffing/weezing",
           "BabyTexture": "koffing/koffing",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
@@ -133,7 +133,7 @@
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_weezing",
-          "Texture": "weezing_galar/weezing_galar",
+          "Texture": "koffing/weezing_galar",
           "BabyTexture": "koffing/koffing",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
