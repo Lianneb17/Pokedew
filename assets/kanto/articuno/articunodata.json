@@ -100,8 +100,7 @@
             {
               "ID": "{{modId}}_pokemon_articuno_galar_shiny",
               "Weight": "0.1",
-              "Texture": "articuno/articuno_galars",
-              "BabyTexture": "articuno/articunos"
+              "Texture": "articuno/articuno_galars"
             }
           ],
           "SleepFrame": "16",

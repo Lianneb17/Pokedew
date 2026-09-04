@@ -82,6 +82,7 @@
           "ID": "{{modId}}_pokemon_elekid"
         },
         "{{modId}}_pokemon_electabuzz": {
+          "BabyTexture": "elekid/elekid",
           "DisplayName": "{{i18n:pokemon.electabuzz}}",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
@@ -127,6 +128,7 @@
           "ID": "{{modId}}_pokemon_electabuzz"
         },
         "{{modId}}_pokemon_electivire": {
+          "BabyTexture": "elekid/elekid",
           "DisplayName": "{{i18n:pokemon.electivire}}",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",

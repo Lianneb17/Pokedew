@@ -109,8 +109,7 @@
             {
               "ID": "{{modId}}_pokemon_rattata_female_shiny",
               "Weight": "0.1",
-              "Texture": "rattata_male/rattata_females",
-              "BabyTexture": "rattata_male/rattata_males"
+              "Texture": "rattata_male/rattata_females"
             }
           ],
           "SleepFrame": "16",
@@ -147,8 +146,7 @@
             {
               "ID": "{{modId}}_pokemon_rattata_alola_male_shiny",
               "Weight": "0.1",
-              "Texture": "rattata_male/rattata_alola_males",
-              "BabyTexture": "rattata_male/rattata_males"
+              "Texture": "rattata_male/rattata_alola_males"
             }
           ],
           "SleepFrame": "16",
@@ -185,8 +183,7 @@
             {
               "ID": "{{modId}}_pokemon_rattata_alola_female_shiny",
               "Weight": "0.1",
-              "Texture": "rattata_male/rattata_alola_females",
-              "BabyTexture": "rattata_male/rattata_males"
+              "Texture": "rattata_male/rattata_alola_females"
             }
           ],
           "SleepFrame": "16",
@@ -217,6 +214,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_raticate_male",
           "Texture": "raticate_male/raticate_male",
+          "BabyTexture": "rattata_male/rattata_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -255,6 +253,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_raticate_female",
           "Texture": "raticate_female/raticate_female",
+          "BabyTexture": "rattata/rattata_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -262,7 +261,7 @@
               "ID": "{{modId}}_pokemon_raticate_female_shiny",
               "Weight": "0.1",
               "Texture": "rattata_male/raticate_females",
-              "BabyTexture": "rattata_male/rattata_males"
+              "BabyTexture": "rattata/rattata_females"
             }
           ],
           "SleepFrame": "16",
@@ -293,6 +292,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_raticate_male",
           "Texture": "raticate_alola_male/raticate_alola_male",
+          "BabyTexture": "rattata_male/rattata_alola_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -300,7 +300,7 @@
               "ID": "{{modId}}_pokemon_raticate_alola_male_shiny",
               "Weight": "0.1",
               "Texture": "rattata_male/raticate_alola_males",
-              "BabyTexture": "rattata_male/rattata_males"
+              "BabyTexture": "rattata_male/rattata_alola_males"
             }
           ],
           "SleepFrame": "16",
@@ -331,6 +331,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_raticate_female",
           "Texture": "raticate_alola_female/raticate_alola_female",
+          "BabyTexture": "rattata_male/rattata_alola_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -338,7 +339,7 @@
               "ID": "{{modId}}_pokemon_raticate_alola_female_shiny",
               "Weight": "0.1",
               "Texture": "rattata_male/raticate_alola_females",
-              "BabyTexture": "rattata_male/rattata_males"
+              "BabyTexture": "rattata/rattata_alola_females"
             }
           ],
           "SleepFrame": "16",
@@ -369,6 +370,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_raticate_totem_male",
           "Texture": "raticate_totem_alola_male/raticate_totem_alola_male",
+          "BabyTexture": "rattata_male/rattata_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -407,6 +409,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_raticate_totem_female",
           "Texture": "raticate_totem_alola_female/raticate_totem_alola_female",
+          "BabyTexture": "rattata_male/rattata_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

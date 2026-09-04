@@ -127,6 +127,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sandslash",
           "Texture": "sandslash/sandslash",
+          "BabyTexture": "sandshrew/sandshrew",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -165,6 +166,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sandslash",
           "Texture": "sandslash_alola/sandslash_alola",
+          "BabyTexture": "sandshrew/sandshrew_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

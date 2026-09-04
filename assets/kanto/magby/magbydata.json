@@ -96,6 +96,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_magmar",
           "Texture": "magmar/magmar",
+          "BabyTexture": "magby/magby",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -134,6 +135,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_magmortar",
           "Texture": "magmortar/magmortar",
+          "BabyTexture": "magby/magby",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

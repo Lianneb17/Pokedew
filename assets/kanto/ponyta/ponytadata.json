@@ -95,8 +95,7 @@
             {
               "ID": "{{modId}}_pokemon_ponyta_galar_shiny",
               "Weight": "0.1",
-              "Texture": "ponyta/ponyta_galars",
-              "BabyTexture": "ponyta/ponytas"
+              "Texture": "ponyta/ponyta_galars"
             }
           ],
           "SleepFrame": "16",
@@ -127,6 +126,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_rapidash",
           "Texture": "rapidash/rapidash",
+          "BabyTexture": "ponyta/ponyta",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -171,6 +171,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_rapidash",
           "Texture": "rapidash_galar/rapidash_galar",
+          "BabyTexture": "ponyta/ponyta_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -178,7 +179,7 @@
               "ID": "{{modId}}_pokemon_rapidash_galar_shiny",
               "Weight": "0.1",
               "Texture": "ponyta/rapidash_galars",
-              "BabyTexture": "ponyta/ponytas"
+              "BabyTexture": "ponyta/ponyta_galars"
             }
           ],
           "SleepFrame": "16",

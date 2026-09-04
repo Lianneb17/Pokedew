@@ -29,7 +29,7 @@
             "{{AbsoluteFilePath: assets/kanto/slowpoke/slowking.wav}}"
           ],
           "ID": "{{modId}}_sound_slowking"
-        },
+        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -104,8 +104,7 @@
             {
               "ID": "{{modId}}_pokemon_slowpoke_galar_shiny",
               "Weight": "0.1",
-              "Texture": "slowpoke/slowpoke_galars",
-              "BabyTexture": "slowpoke/slowpokes"
+              "Texture": "slowpoke/slowpoke_galars"
             }
           ],
           "SleepFrame": "16",
@@ -137,6 +136,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_slowbro",
           "Texture": "slowbro/slowbro",
+          "BabyTexture": "slowpoke/slowpoke",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -176,6 +176,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_slowbro",
           "Texture": "slowbro_galar/slowbro_galar",
+          "BabyTexture": "slowpoke/slowpoke_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -183,7 +184,7 @@
               "ID": "{{modId}}_pokemon_slowbro_galar_shiny",
               "Weight": "0.1",
               "Texture": "slowpoke/slowbro_galars",
-              "BabyTexture": "slowpoke/slowpokes"
+              "BabyTexture": "slowpoke/slowpoke_galars"
             }
           ],
           "SleepFrame": "16",
@@ -215,6 +216,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_slowking",
           "Texture": "slowking/slowking",
+          "BabyTexture": "slowpoke/slowpoke",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -254,6 +256,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_slowking",
           "Texture": "slowking_galar/slowking_galar",
+          "BabyTexture": "slowpoke/slowpoke_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -261,7 +264,7 @@
               "ID": "{{modId}}_pokemon_slowking_galar_shiny",
               "Weight": "0.1",
               "Texture": "slowpoke/slowking_galars",
-              "BabyTexture": "slowpoke/slowpokes"
+              "BabyTexture": "slowpoke/slowpoke_galars"
             }
           ],
           "SleepFrame": "16",

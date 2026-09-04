@@ -109,8 +109,7 @@
             {
               "ID": "{{modId}}_pokemon_geodude_alola_shiny",
               "Weight": "0.1",
-              "Texture": "geodude/geodude_alolas",
-              "BabyTexture": "geodude/geodudes"
+              "Texture": "geodude/geodude_alolas"
             }
           ],
           "SleepFrame": "16",
@@ -141,6 +140,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_graveler",
           "Texture": "graveler/graveler",
+          "BabyTexture": "geodude/geodude",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -186,6 +186,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_graveler",
           "Texture": "graveler_alola/graveler_alola",
+          "BabyTexture": "geodude/geodude_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -193,7 +194,7 @@
               "ID": "{{modId}}_pokemon_graveler_alola_shiny",
               "Weight": "0.1",
               "Texture": "geodude/graveler_alolas",
-              "BabyTexture": "geodude/geodudes"
+              "BabyTexture": "geodude/geodude_alolas"
             }
           ],
           "SleepFrame": "16",
@@ -224,6 +225,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_golem",
           "Texture": "golem/golem",
+          "BabyTexture": "geodude/geodude",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -269,6 +271,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_golem",
           "Texture": "golem_alola/golem_alola",
+          "BabyTexture": "geodude/geodude_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -276,7 +279,7 @@
               "ID": "{{modId}}_pokemon_golem_alola_shiny",
               "Weight": "0.1",
               "Texture": "geodude/golem_alolas",
-              "BabyTexture": "geodude/geodudes"
+              "BabyTexture": "geodude/geodude_alolas"
             }
           ],
           "SleepFrame": "16",
@@ -423,13 +426,13 @@
             {
               "Id": "{{modId}}_pokemon_texture_golem_alola",
               "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
-              "TextureToUse": "geodude/graveler"
+              "TextureToUse": "geodude/graveler_alola"
             },
             {
               "Id": "{{modId}}_pokemon_texture_golem_alola_shiny",
               "Skin": "{{modId}}_pokemon_golem_alola_shiny",
               "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 5 8",
-              "TextureToUse": "geodude/gravelers"
+              "TextureToUse": "geodude/graveler_alolas"
             }
           ],
           "ID": "{{modId}}_pokemon_golem_alola"

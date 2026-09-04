@@ -117,6 +117,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_gloom_male",
           "Texture": "gloom_male/gloom_male",
+          "BabyTexture": "oddish/oddish",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -155,6 +156,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_gloom_female",
           "Texture": "gloom_female/gloom_female",
+          "BabyTexture": "oddish/oddish",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -193,6 +195,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_vileplume_male",
           "Texture": "vileplume_male/vileplume_male",
+          "BabyTexture": "oddish/oddish",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -231,6 +234,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_vileplume_female",
           "Texture": "vileplume_female/vileplume_female",
+          "BabyTexture": "oddish/oddish",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -269,6 +273,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_bellossom",
           "Texture": "bellossom/bellossom",
+          "BabyTexture": "oddish/oddish",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

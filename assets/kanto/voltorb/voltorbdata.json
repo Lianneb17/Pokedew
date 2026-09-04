@@ -123,8 +123,7 @@
             {
               "ID": "{{modId}}_pokemon_voltorb_hisui_shiny",
               "Weight": "0.1",
-              "Texture": "voltorb/voltorb_hisuis",
-              "BabyTexture": "voltorb/voltorbs"
+              "Texture": "voltorb/voltorb_hisuis"
             }
           ],
           "SleepFrame": "16",
@@ -162,6 +161,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_electrode",
           "Texture": "electrode/electrode",
+          "BabyTexture": "voltorb/voltorb",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -207,6 +207,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_electrode_hisui",
           "Texture": "electrode_hisui/electrode_hisui",
+          "BabyTexture": "voltorb/voltorb_hisui",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -214,7 +215,7 @@
               "ID": "{{modId}}_pokemon_electrode_hisui_shiny",
               "Weight": "0.1",
               "Texture": "voltorb/electrode_hisuis",
-              "BabyTexture": "voltorb/voltorbs"
+              "BabyTexture": "voltorb/voltorb_hisuis"
             }
           ],
           "SleepFrame": "16",

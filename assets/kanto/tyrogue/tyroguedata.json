@@ -103,6 +103,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_hitmonlee",
           "Texture": "hitmonlee/hitmonlee",
+          "BabyTexture": "tyrogue/tyrogue",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -141,6 +142,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_hitmonchan",
           "Texture": "hitmonchan/hitmonchan",
+          "BabyTexture": "tyrogue/tyrogue",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -179,6 +181,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_hitmontop",
           "Texture": "hitmontop/hitmontop",
+          "BabyTexture": "tyrogue/tyrogue",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

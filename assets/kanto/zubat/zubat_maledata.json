@@ -129,7 +129,6 @@
               "ID": "{{modId}}_pokemon_zubat_female_shiny",
               "Weight": "0.1",
               "Texture": "zubat_male/zubat_females",
-              "BabyTexture": "zubat_male/zubat_males"
             }
           ],
           "SleepFrame": "16",
@@ -166,6 +165,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_golbat_male",
           "Texture": "golbat_male/golbat_male",
+          "BabyTexture": "zubat_male/zubat_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -210,6 +210,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_golbat_female",
           "Texture": "golbat_female/golbat_female",
+          "BabyTexture": "zubat_male/zubat_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -217,7 +218,7 @@
               "ID": "{{modId}}_pokemon_golbat_female_shiny",
               "Weight": "0.1",
               "Texture": "zubat_male/golbat_females",
-              "BabyTexture": "zubat_male/zubat_males"
+              "BabyTexture": "zubat_male/zubat_females"
             }
           ],
           "SleepFrame": "16",
@@ -254,6 +255,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_crobat",
           "Texture": "crobat/crobat",
+          "BabyTexture": "zubat_male/zubat_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

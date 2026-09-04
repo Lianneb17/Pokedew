@@ -89,6 +89,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_exeggutor",
           "Texture": "exeggutor/exeggutor",
+          "BabyTexture": "exeggcute/exeggcute",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -127,6 +128,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_exeggutor",
           "Texture": "exeggutor_alola/exeggutor_alola",
+          "BabyTexture": "exeggcute/exeggcute",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

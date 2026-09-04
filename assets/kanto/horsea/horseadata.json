@@ -98,6 +98,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_seadra",
           "Texture": "seadra/seadra",
+          "BabyTexture": "horsea/horsea",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -137,6 +138,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kingdra",
           "Texture": "kingdra/kingdra",
+          "BabyTexture": "horsea/horsea",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

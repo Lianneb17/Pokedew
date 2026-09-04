@@ -98,6 +98,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_nidorina",
           "Texture": "nidorina/nidorina",
+          "BabyTexture": "nidoran_f/nidoran_f",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -137,6 +138,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_nidoqueen",
           "Texture": "nidoqueen/nidoqueen",
+          "BabyTexture": "nidoran_f/nidoran_f",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

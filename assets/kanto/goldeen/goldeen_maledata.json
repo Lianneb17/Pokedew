@@ -141,6 +141,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_seaking_male",
           "Texture": "seaking_male/seaking_male",
+          "BabyTexture": "goldeen_male/goldeen_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -179,6 +180,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_seaking_female",
           "Texture": "seaking_female/seaking_female",
+          "BabyTexture": "goldeen_male/goldeen_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

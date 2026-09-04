@@ -125,8 +125,7 @@
             {
               "ID": "{{modId}}_pokemon_rhyhorn_female_shiny",
               "Weight": "0.1",
-              "Texture": "rhyhorn_male/rhyhorn_females",
-              "BabyTexture": "rhyhorn_male/rhyhorn_males"
+              "Texture": "rhyhorn_male/rhyhorn_females"
             }
           ],
           "SleepFrame": "16",
@@ -158,6 +157,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_rhydon_male",
           "Texture": "rhydon_male/rhydon_male",
+          "BabyTexture": "rhyhorn_male/rhyhorn_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -197,6 +197,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_rhydon_female",
           "Texture": "rhydon_female/rhydon_female",
+          "BabyTexture": "rhyhorn_male/rhyhorn_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -204,7 +205,7 @@
               "ID": "{{modId}}_pokemon_rhydon_female_shiny",
               "Weight": "0.1",
               "Texture": "rhyhorn_male/rhydon_females",
-              "BabyTexture": "rhyhorn_male/rhyhorn_males"
+              "BabyTexture": "rhyhorn_male/rhyhorn_females"
             }
           ],
           "SleepFrame": "16",
@@ -236,6 +237,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_rhyperior_male",
           "Texture": "rhyperior_male/rhyperior_male",
+          "BabyTexture": "rhyhorn_male/rhyhorn_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -275,6 +277,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_rhyperior_female",
           "Texture": "rhyperior_female/rhyperior_female",
+          "BabyTexture": "rhyhorn_male/rhyhorn_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -282,7 +285,7 @@
               "ID": "{{modId}}_pokemon_rhyperior_female_shiny",
               "Weight": "0.1",
               "Texture": "rhyhorn_male/rhyperior_females",
-              "BabyTexture": "rhyhorn_male/rhyhorn_males"
+              "BabyTexture": "rhyhorn_male/rhyhorn_females"
             }
           ],
           "SleepFrame": "16",

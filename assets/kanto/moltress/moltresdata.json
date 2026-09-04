@@ -100,8 +100,7 @@
             {
               "ID": "{{modId}}_pokemon_moltres_galar_shiny",
               "Weight": "0.1",
-              "Texture": "moltres/moltres_galars",
-              "BabyTexture": "moltres/moltres"
+              "Texture": "moltres/moltres_galars"
             }
           ],
           "SleepFrame": "16",

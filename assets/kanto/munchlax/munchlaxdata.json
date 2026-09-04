@@ -89,6 +89,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_snorlax",
           "Texture": "snorlax/snorlax",
+          "BabyTexture": "munchlax/munchlax",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

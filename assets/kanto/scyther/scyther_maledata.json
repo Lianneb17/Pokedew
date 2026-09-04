@@ -128,8 +128,7 @@
             {
               "ID": "{{modId}}_pokemon_scyther_female_shiny",
               "Weight": "0.1",
-              "Texture": "scyther_male/scyther_females",
-              "BabyTexture": "scyther_male/scyther_males"
+              "Texture": "scyther_male/scyther_females"
             }
           ],
           "SleepFrame": "16",
@@ -160,6 +159,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_scizor_male",
           "Texture": "scizor_male/scizor_male",
+          "BabyTexture": "scyther_male/scyther_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -198,6 +198,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_scizor_female",
           "Texture": "scizor_female/scizor_female",
+          "BabyTexture": "scyther_male/scyther_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -236,6 +237,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kleavor",
           "Texture": "kleavor/kleavor",
+          "BabyTexture": "scyther_male/scyther_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

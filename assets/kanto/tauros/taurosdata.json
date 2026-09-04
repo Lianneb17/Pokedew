@@ -103,6 +103,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tauros_paldea_combat_breed",
           "Texture": "tauros_paldea_combat_breed/tauros_paldea_combat_breed",
+          "BabyTexture": "tauros/tauro",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -141,6 +142,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tauros_paldea_blaze_breed",
           "Texture": "tauros_paldea_blaze_breed/tauros_paldea_blaze_breed",
+          "BabyTexture": "tauros/tauro",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -179,6 +181,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tauros_paldea_aqua_breed",
           "Texture": "tauros_paldea_aqua_breed/tauros_paldea_aqua_breed",
+          "BabyTexture": "tauros/tauro",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

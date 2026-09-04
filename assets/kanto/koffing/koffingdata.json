@@ -89,6 +89,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_weezing",
           "Texture": "weezing/weezing",
+          "BabyTexture": "koffing/koffing",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -133,6 +134,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_weezing",
           "Texture": "weezing_galar/weezing_galar",
+          "BabyTexture": "koffing/koffing",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

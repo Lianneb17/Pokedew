@@ -141,6 +141,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_arcanine",
           "Texture": "arcanine/arcanine",
+          "BabyTexture": "growlithe/growlithe",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -179,6 +180,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_arcanine_hisui",
           "Texture": "arcanine_hisui/arcanine_hisui",
+          "BabyTexture": "growlithe/growlithe_hisui",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -186,7 +188,7 @@
               "ID": "{{modId}}_pokemon_arcanine_hisui_shiny",
               "Weight": "0.1",
               "Texture": "growlithe/arcanine_hisuis",
-              "BabyTexture": "growlithe/growlithes"
+              "BabyTexture": "growlithe/growlithe_hisuis"
             }
           ],
           "SleepFrame": "16",

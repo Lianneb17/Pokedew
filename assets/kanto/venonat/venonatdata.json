@@ -89,6 +89,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_venomoth",
           "Texture": "venomoth/venomoth",
+          "BabyTexture": "venonat/venonat",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

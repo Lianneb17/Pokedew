@@ -102,8 +102,7 @@
             {
               "ID": "{{modId}}_pokemon_meowth_alola_shiny",
               "Weight": "0.1",
-              "Texture": "meowth/meowth_alolas",
-              "BabyTexture": "meowth/meowths"
+              "Texture": "meowth/meowth_alolas"
             }
           ],
           "SleepFrame": "16",
@@ -140,8 +139,7 @@
             {
               "ID": "{{modId}}_pokemon_meowth_galar_shiny",
               "Weight": "0.1",
-              "Texture": "meowth/meowth_galars",
-              "BabyTexture": "meowth/meowths"
+              "Texture": "meowth/meowth_galars"
             }
           ],
           "SleepFrame": "16",
@@ -172,6 +170,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_persian",
           "Texture": "persian/persian",
+          "BabyTexture": "meowth/meowth",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -210,6 +209,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_persian",
           "Texture": "persian_alola/persian_alola",
+          "BabyTexture": "meowth/meowth_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -248,6 +248,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_perrserker",
           "Texture": "perrserker/perrserker",
+          "BabyTexture": "meowth/meowth_galar",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -255,7 +256,7 @@
               "ID": "{{modId}}_pokemon_perrserker_shiny",
               "Weight": "0.1",
               "Texture": "meowth/perrserkers",
-              "BabyTexture": "meowth/meowths"
+              "BabyTexture": "meowth/meowth_galars"
             }
           ],
           "SleepFrame": "16",

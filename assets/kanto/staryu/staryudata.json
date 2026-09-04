@@ -89,6 +89,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_starmie",
           "Texture": "starmie/starmie",
+          "BabyTexture": "staryu/staryu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

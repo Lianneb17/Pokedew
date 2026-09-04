@@ -108,6 +108,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_mr_mime",
           "Texture": "mr_mime/mr_mime",
+          "BabyTexture": "mime_jr/mime_jr",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -146,6 +147,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_mr_mime",
           "Texture": "mr_mime_galar/mr_mime_galar",
+          "BabyTexture": "mime_jr/mime_jr",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -184,6 +186,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_mr_rime",
           "Texture": "mr_rime/mr_rime",
+          "BabyTexture": "mime_jr/mime_jr",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

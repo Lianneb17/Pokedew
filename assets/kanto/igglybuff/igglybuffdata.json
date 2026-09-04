@@ -108,6 +108,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_jigglypuff",
           "Texture": "jigglypuff/jigglypuff",
+          "BabyTexture": "igglybuff/igglybuff",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -152,6 +153,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_wigglytuff",
           "Texture": "wigglytuff/wigglytuff",
+          "BabyTexture": "igglybuff/igglybuff",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

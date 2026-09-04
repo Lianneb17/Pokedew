@@ -103,8 +103,7 @@
             {
               "ID": "{{modId}}_pokemon_farfetchd_galar_shiny",
               "Weight": "0.1",
-              "Texture": "farfetchd/farfetchd_galars",
-              "BabyTexture": "farfetchd/farfetchds"
+              "Texture": "farfetchd/farfetchd_galars"
             }
           ],
           "SleepFrame": "16",
@@ -136,6 +135,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sirfetchd",
           "Texture": "sirfetchd/sirfetchd",
+          "BabyTexture": "farfetchd/farfetchd",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

@@ -127,6 +127,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_muk",
           "Texture": "muk/muk",
+          "BabyTexture": "grimer/grimer",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -165,6 +166,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_muk",
           "Texture": "muk_alola/muk_alola",
+          "BabyTexture": "grimer/grimer_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -172,7 +174,7 @@
               "ID": "{{modId}}_pokemon_muk_alola_shiny",
               "Weight": "0.1",
               "Texture": "grimer/muk_alolas",
-              "BabyTexture": "grimer/grimers"
+              "BabyTexture": "grimer/grimer_alolas"
             }
           ],
           "SleepFrame": "16",

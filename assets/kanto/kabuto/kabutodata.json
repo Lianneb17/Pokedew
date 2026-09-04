@@ -91,6 +91,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kabutops",
           "Texture": "kabutops/kabutops",
+          "BabyTexture": "kabuto/kabuto",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

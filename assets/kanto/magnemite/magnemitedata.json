@@ -110,6 +110,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_magneton",
           "Texture": "magneton/magneton",
+          "BabyTexture": "magnemite/magnemite",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -155,6 +156,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_magnezone",
           "Texture": "magnezone/magnezone",
+          "BabyTexture": "magnemite/magnemite",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

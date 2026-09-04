@@ -91,6 +91,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_parasect",
           "Texture": "parasect/parasect",
+          "BabyTexture": "paras/paras",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -98,7 +99,7 @@
               "ID": "{{modId}}_pokemon_parasect_shiny",
               "Weight": "0.1",
               "Texture": "paras/parasects",
-              "BabyTexture": "paras/paras"
+              "BabyTexture": "paras/parass"
             }
           ],
           "SleepFrame": "16",

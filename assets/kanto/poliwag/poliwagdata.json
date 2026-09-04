@@ -110,6 +110,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_poliwhirl",
           "Texture": "poliwhirl/poliwhirl",
+          "BabyTexture": "poliwag/poliwag",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -148,6 +149,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_poliwrath",
           "Texture": "poliwrath/poliwrath",
+          "BabyTexture": "poliwag/poliwag",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -186,6 +188,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_politoed_male",
           "Texture": "politoed_male/politoed_male",
+          "BabyTexture": "poliwag/poliwag",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -224,6 +227,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_politoed_female",
           "Texture": "politoed_female/politoed_female",
+          "BabyTexture": "poliwag/poliwag",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

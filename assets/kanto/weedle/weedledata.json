@@ -96,6 +96,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kakuna",
           "Texture": "kakuna/kakuna",
+          "BabyTexture": "weedle/weedle",
           "SpriteWidth": "29",
           "SpriteHeight": "29",
           "Skins": [
@@ -134,6 +135,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_beedrill",
           "Texture": "beedrill/beedrill",
+          "BabyTexture": "weedle/weedle",
           "SpriteWidth": "29",
           "SpriteHeight": "29",
           "Skins": [

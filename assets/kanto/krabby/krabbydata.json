@@ -89,6 +89,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kingler",
           "Texture": "kingler/kingler",
+          "BabyTexture": "krabby/krabby",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

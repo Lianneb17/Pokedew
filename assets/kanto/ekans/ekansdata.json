@@ -91,6 +91,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_arbok",
           "Texture": "arbok/arbok",
+          "BabyTexture": "ekans/ekan",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

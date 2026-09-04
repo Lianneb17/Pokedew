@@ -127,6 +127,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_ninetales",
           "Texture": "ninetales/ninetales",
+          "BabyTexture": "vulpix/vulpix",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -171,6 +172,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_ninetales",
           "Texture": "ninetales_alola/ninetales_alola",
+          "BabyTexture": "vulpix/vulpix_alola",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

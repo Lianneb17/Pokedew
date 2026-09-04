@@ -89,6 +89,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_jynx",
           "Texture": "jynx/jynx",
+          "BabyTexture": "smoochum/smoochum",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

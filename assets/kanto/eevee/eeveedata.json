@@ -219,6 +219,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_vaporeon",
           "Texture": "vaporeon/vaporeon",
+          "BabyTexture": "eevee/eevee_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

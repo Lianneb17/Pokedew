@@ -150,6 +150,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_gyarados_male",
           "Texture": "gyarados_male/gyarados_male",
+          "BabyTexture": "magikarp_male/magikarp_male",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -195,6 +196,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_gyarados_female",
           "Texture": "gyarados_female/gyarados_female",
+          "BabyTexture": "magikarp/magikarp_female",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

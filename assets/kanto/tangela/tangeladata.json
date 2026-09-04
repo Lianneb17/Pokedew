@@ -94,8 +94,9 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_tangrowth_male",
-          "Texture": "tangrowth_male/tangrowth_male",
+          "Sound": "{{modId}}_sound_tangrowth",
+          "Texture": "tangrowth/tangrowth_male",
+          "BabyTexture": "tangela/tangela",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -134,6 +135,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tangrowth_female",
           "Texture": "tangrowth_female/tangrowth_female",
+          "BabyTexture": "tangela/tangela",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

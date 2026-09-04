@@ -91,6 +91,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_dewgong",
           "Texture": "dewgong/dewgong",
+          "BabyTexture": "seel/seel",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [

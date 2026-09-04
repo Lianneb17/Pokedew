@@ -385,6 +385,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_male",
           "Texture": "pikachu_male/pikachu_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -431,6 +432,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_female",
           "Texture": "pikachu_female/pikachu_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -477,6 +479,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_rock_star_male",
           "Texture": "pikachu_rock_star_male/pikachu_rock_star_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -523,6 +526,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_rock_star_female",
           "Texture": "pikachu_rock_star_female/pikachu_rock_star_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -569,6 +573,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_belle_male",
           "Texture": "pikachu_belle_male/pikachu_belle_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -615,6 +620,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_belle_female",
           "Texture": "pikachu_belle_female/pikachu_belle_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -661,6 +667,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_pop_star_male",
           "Texture": "pikachu_pop_star_male/pikachu_pop_star_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -707,6 +714,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_pop_star_female",
           "Texture": "pikachu_pop_star_female/pikachu_pop_star_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -753,6 +761,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_phd_male",
           "Texture": "pikachu_phd_male/pikachu_phd_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -799,6 +808,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_phd_female",
           "Texture": "pikachu_phd_female/pikachu_phd_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -845,6 +855,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_libre_male",
           "Texture": "pikachu_libre_male/pikachu_libre_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -891,6 +902,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_libre_female",
           "Texture": "pikachu_libre_female/pikachu_libre_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -937,6 +949,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_cosplay_male",
           "Texture": "pikachu_cosplay_male/pikachu_cosplay_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -983,6 +996,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_cosplay_female",
           "Texture": "pikachu_cosplay_female/pikachu_cosplay_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1029,6 +1043,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_original_cap_male",
           "Texture": "pikachu_original_cap_male/pikachu_original_cap_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1075,6 +1090,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_original_cap_female",
           "Texture": "pikachu_original_cap_female/pikachu_original_cap_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1121,6 +1137,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_hoenn_cap_male",
           "Texture": "pikachu_hoenn_cap_male/pikachu_hoenn_cap_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1167,6 +1184,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_hoenn_cap_female",
           "Texture": "pikachu_hoenn_cap_female/pikachu_hoenn_cap_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1213,6 +1231,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_sinnoh_cap_male",
           "Texture": "pikachu_sinnoh_cap_male/pikachu_sinnoh_cap_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1259,6 +1278,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_sinnoh_cap_female",
           "Texture": "pikachu_sinnoh_cap_female/pikachu_sinnoh_cap_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1305,6 +1325,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_unova_cap_male",
           "Texture": "pikachu_unova_cap_male/pikachu_unova_cap_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1351,6 +1372,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_unova_cap_female",
           "Texture": "pikachu_unova_cap_female/pikachu_unova_cap_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1397,6 +1419,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_kalos_cap_male",
           "Texture": "pikachu_kalos_cap_male/pikachu_kalos_cap_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1443,6 +1466,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_kalos_cap_female",
           "Texture": "pikachu_kalos_cap_female/pikachu_kalos_cap_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1489,6 +1513,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_cap_male",
           "Texture": "pikachu_alola_cap_male/pikachu_alola_cap_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1535,6 +1560,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_cap_female",
           "Texture": "pikachu_alola_cap_female/pikachu_alola_cap_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1581,6 +1607,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_partner_cap_male",
           "Texture": "pikachu_partner_cap_male/pikachu_partner_cap_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1627,6 +1654,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_partner_cap_female",
           "Texture": "pikachu_partner_cap_female/pikachu_partner_cap_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1673,6 +1701,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_starter_male",
           "Texture": "pikachu_starter_male/pikachu_starter_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1719,6 +1748,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_starter_female",
           "Texture": "pikachu_starter_female/pikachu_starter_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1765,6 +1795,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_world_cap_male",
           "Texture": "pikachu_world_cap_male/pikachu_world_cap_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1811,6 +1842,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pikachu_world_cap_female",
           "Texture": "pikachu_world_cap_female/pikachu_world_cap_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1857,6 +1889,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_raichu_male",
           "Texture": "raichu_male/raichu_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1903,6 +1936,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_raichu_female",
           "Texture": "raichu_female/raichu_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1949,6 +1983,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_raichu_male",
           "Texture": "raichu_alola_male/raichu_alola_male",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
@@ -1995,6 +2030,7 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_raichu_female",
           "Texture": "raichu_alola_female/raichu_alola_female",
+          "BabyTexture": "pichu/pichu",
           "SpriteWidth": "21",
           "SpriteHeight": "29",
           "Skins": [
