@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_omanyte": {
-          "DisplayName": "{{i18n:pokemon.omanyte}}",
+          "DisplayName": "Omanyte",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -53,8 +53,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_omanyte",
           "Texture": "omanyte/omanyte",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_omanyte_shiny",
@@ -69,7 +69,7 @@
           "ID": "{{modId}}_pokemon_omanyte"
         },
         "{{modId}}_pokemon_omastar": {
-          "DisplayName": "{{i18n:pokemon.omastar}}",
+          "DisplayName": "Omastar",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -92,8 +92,8 @@
           "Sound": "{{modId}}_sound_omastar",
           "Texture": "omanyte/omastar",
           "BabyTexture": "omanyte/omanyte",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_omastar_shiny",
@@ -117,8 +117,8 @@
       "Entries": {
         "{{modId}}_item_egg_omanyte": {
           "Name": "{{modId}_item_egg_omanyte",
-          "DisplayName": "{{i18n:egg.omanyte.item}}",
-          "Description": "{{i18n:egg.omanyte.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=omanyte}}",
+          "Description": "{{i18n:egg.item.description |pokemon=omanyte}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "700",
@@ -144,7 +144,7 @@
             {
               "Id": "{{modId}}_egg_spawn_omastar",
               "AnimalId": "{{modId}}_pokemon_omastar",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_omanyte",

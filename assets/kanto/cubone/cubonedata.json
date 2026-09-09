@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_cubone": {
-          "DisplayName": "{{i18n:pokemon.cubone}}",
+          "DisplayName": "Cubone",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_cubone",
           "Texture": "cubone/cubone",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_cubone_shiny",
@@ -68,8 +68,7 @@
           "ID": "{{modId}}_pokemon_cubone"
         },
         "{{modId}}_pokemon_marowak": {
-          "BabyTexture": "cubone/cubone",
-          "DisplayName": "{{i18n:pokemon.marowak}}",
+          "DisplayName": "Marowak",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +89,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_marowak",
           "Texture": "cubone/marowak",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "cubone/cubone",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_marowak_shiny",
@@ -107,8 +107,7 @@
           "ID": "{{modId}}_pokemon_marowak"
         },
         "{{modId}}_pokemon_marowak_alola": {
-          "BabyTexture": "cubone/cubone",
-          "DisplayName": "{{i18n:pokemon.marowak_alola}}",
+          "DisplayName": "Marowak_alola",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -129,8 +128,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_marowak",
           "Texture": "cubone/marowak_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "cubone/cubone",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_marowak_alola_shiny",
@@ -154,8 +154,8 @@
       "Entries": {
         "{{modId}}_item_egg_cubone": {
           "Name": "{{modId}_item_egg_cubone",
-          "DisplayName": "{{i18n:egg.cubone.item}}",
-          "Description": "{{i18n:egg.cubone.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=cubone}}",
+          "Description": "{{i18n:egg.item.description |pokemon=cubone}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -181,12 +181,12 @@
             {
               "Id": "{{modId}}_egg_spawn_marowak_alola",
               "AnimalId": "{{modId}}_pokemon_marowak_alola",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_marowak",
               "AnimalId": "{{modId}}_pokemon_marowak",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_cubone",

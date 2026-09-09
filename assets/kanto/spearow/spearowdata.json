@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_spearow": {
-          "DisplayName": "{{i18n:pokemon.spearow}}",
+          "DisplayName": "Spearow",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -58,8 +58,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_spearow",
           "Texture": "spearow/spearow",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_spearow_shiny",
@@ -74,8 +74,7 @@
           "ID": "{{modId}}_pokemon_spearow"
         },
         "{{modId}}_pokemon_fearow": {
-          "BabyTexture": "spearow/spearow",
-          "DisplayName": "{{i18n:pokemon.fearow}}",
+          "DisplayName": "Fearow",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -102,8 +101,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_fearow",
           "Texture": "spearow/fearow",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "spearow/spearow",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_fearow_shiny",
@@ -127,8 +127,8 @@
       "Entries": {
         "{{modId}}_item_egg_spearow": {
           "Name": "{{modId}_item_egg_spearow",
-          "DisplayName": "{{i18n:egg.spearow.item}}",
-          "Description": "{{i18n:egg.spearow.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=spearow}}",
+          "Description": "{{i18n:egg.item.description |pokemon=spearow}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "300",
@@ -154,7 +154,7 @@
             {
               "Id": "{{modId}}_egg_spawn_fearow",
               "AnimalId": "{{modId}}_pokemon_fearow",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_spearow",

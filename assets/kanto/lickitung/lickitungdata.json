@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_lickitung": {
-          "DisplayName": "{{i18n:pokemon.lickitung}}",
+          "DisplayName": "Lickitung",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_lickitung",
           "Texture": "lickitung/lickitung",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_lickitung_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_lickitung"
         },
         "{{modId}}_pokemon_lickilicky": {
-          "DisplayName": "{{i18n:pokemon.lickilicky}}",
+          "DisplayName": "Lickilicky",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_lickilicky",
           "Texture": "lickitung/lickilicky",
           "BabyTexture": "lickitung/lickitung",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_lickilicky_shiny",
@@ -115,8 +115,8 @@
       "Entries": {
         "{{modId}}_item_egg_lickitung": {
           "Name": "{{modId}_item_egg_lickitung",
-          "DisplayName": "{{i18n:egg.lickitung.item}}",
-          "Description": "{{i18n:egg.lickitung.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=lickitung}}",
+          "Description": "{{i18n:egg.item.description |pokemon=lickitung}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -142,7 +142,7 @@
             {
               "Id": "{{modId}}_egg_spawn_lickilicky",
               "AnimalId": "{{modId}}_pokemon_lickilicky",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_lickitung",

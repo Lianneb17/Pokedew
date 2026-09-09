@@ -24,7 +24,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_aerodactyl": {
-          "DisplayName": "{{i18n:pokemon.aerodactyl}}",
+          "DisplayName": "Aerodactyl",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -51,8 +51,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_aerodactyl",
           "Texture": "aerodactyl/aerodactyl",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_aerodactyl_shiny",
@@ -75,8 +75,8 @@
       "Entries": {
         "{{modId}}_item_egg_aerodactyl": {
           "Name": "{{modId}_item_egg_aerodactyl",
-          "DisplayName": "{{i18n:egg.aerodactyl.item}}",
-          "Description": "{{i18n:egg.aerodactyl.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=aerodactyl}}",
+          "Description": "{{i18n:egg.item.description |pokemon=aerodactyl}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "700",

@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_smoochum": {
-          "DisplayName": "{{i18n:pokemon.smoochum}}",
+          "DisplayName": "Smoochum",
           "House": "PokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_smoochum",
           "Texture": "smoochum/smoochum",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_smoochum_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_smoochum"
         },
         "{{modId}}_pokemon_jynx": {
-          "DisplayName": "{{i18n:pokemon.jynx}}",
+          "DisplayName": "Jynx",
           "House": "BigPokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_jynx",
           "Texture": "smoochum/jynx",
           "BabyTexture": "smoochum/smoochum",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_jynx_shiny",
@@ -115,8 +115,8 @@
       "Entries": {
         "{{modId}}_item_egg_smoochum": {
           "Name": "{{modId}_item_egg_smoochum",
-          "DisplayName": "{{i18n:egg.smoochum.item}}",
-          "Description": "{{i18n:egg.smoochum.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=smoochum}}",
+          "Description": "{{i18n:egg.item.description |pokemon=smoochum}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -142,7 +142,7 @@
             {
               "Id": "{{modId}}_egg_spawn_jynx",
               "AnimalId": "{{modId}}_pokemon_jynx",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_smoochum",

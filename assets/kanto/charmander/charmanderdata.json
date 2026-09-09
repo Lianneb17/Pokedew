@@ -38,14 +38,14 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_charmander": {
-          "DisplayName": "{{i18n:pokemon.charmander}}",
+          "DisplayName": "Charmander",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "PurchasePrice": "2500",
           "ShopTexture": "charmander/shopicon",
           "RequiredBuilding": "PokeBarn",
           "UnlockCondition": "{{Kanto active}}",
-          "ShopDescription": "{{i18n:pokemon.charmander.shop}}",
+          "ShopDescription": "{{i18n:pokemon.shop |name=Charmander}}",
           "ShopMissingBuildingDescription": "{{i18n:pokemon.all.shop.missing}}",
           "AlternatePurchaseTypes": [
             {
@@ -88,8 +88,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_charmander",
           "Texture": "charmander/charmander",
-          "SpriteWidth": "42",
-          "SpriteHeight": "30",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_charmander_shiny",
@@ -105,8 +105,7 @@
           "ID": "{{modId}}_pokemon_charmander"
         },
         "{{modId}}_pokemon_charmeleon": {
-          "BabyTexture": "charmander/charmander",
-          "DisplayName": "{{i18n:pokemon.charmeleon}}",
+          "DisplayName": "Charmeleon",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -128,8 +127,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_charmeleon",
           "Texture": "charmander/charmeleon",
-          "SpriteWidth": "42",
-          "SpriteHeight": "30",
+          "BabyTexture": "charmander/charmander",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_charmeleon_shiny",
@@ -145,8 +145,7 @@
           "ID": "{{modId}}_pokemon_charmeleon"
         },
         "{{modId}}_pokemon_charizard": {
-          "BabyTexture": "charmander/charmander",
-          "DisplayName": "{{i18n:pokemon.charizard}}",
+          "DisplayName": "Charizard",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -174,8 +173,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_charizard",
           "Texture": "charmander/charizard",
-          "SpriteWidth": "42",
-          "SpriteHeight": "30",
+          "BabyTexture": "charmander/charmander",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_charizard_shiny",
@@ -199,8 +199,8 @@
       "Entries": {
         "{{modId}}_item_egg_charmander": {
           "Name": "{{modId}_item_egg_charmander",
-          "DisplayName": "{{i18n:egg.charmander.item}}",
-          "Description": "{{i18n:egg.charmander.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=charmander}}",
+          "Description": "{{i18n:egg.item.description |pokemon=charmander}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -226,12 +226,12 @@
             {
               "Id": "{{modId}}_egg_spawn_charizard",
               "AnimalId": "{{modId}}_pokemon_charizard",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_charmeleon",
               "AnimalId": "{{modId}}_pokemon_charmeleon",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_charmander",

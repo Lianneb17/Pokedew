@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_kabuto": {
-          "DisplayName": "{{i18n:pokemon.kabuto}}",
+          "DisplayName": "Kabuto",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -53,8 +53,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kabuto",
           "Texture": "kabuto/kabuto",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_kabuto_shiny",
@@ -69,7 +69,7 @@
           "ID": "{{modId}}_pokemon_kabuto"
         },
         "{{modId}}_pokemon_kabutops": {
-          "DisplayName": "{{i18n:pokemon.kabutops}}",
+          "DisplayName": "Kabutops",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -92,8 +92,8 @@
           "Sound": "{{modId}}_sound_kabutops",
           "Texture": "kabuto/kabutops",
           "BabyTexture": "kabuto/kabuto",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_kabutops_shiny",
@@ -117,8 +117,8 @@
       "Entries": {
         "{{modId}}_item_egg_kabuto": {
           "Name": "{{modId}_item_egg_kabuto",
-          "DisplayName": "{{i18n:egg.kabuto.item}}",
-          "Description": "{{i18n:egg.kabuto.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=kabuto}}",
+          "Description": "{{i18n:egg.item.description |pokemon=kabuto}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "700",
@@ -144,7 +144,7 @@
             {
               "Id": "{{modId}}_egg_spawn_kabutops",
               "AnimalId": "{{modId}}_pokemon_kabutops",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_kabuto",

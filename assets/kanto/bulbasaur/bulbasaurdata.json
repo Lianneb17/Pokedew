@@ -38,14 +38,14 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_bulbasaur": {
-          "DisplayName": "{{i18n:pokemon.bulbasaur}}",
+          "DisplayName": "Bulbasaur",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "PurchasePrice": "2500",
           "ShopTexture": "bulbasaur/shopicon",
           "RequiredBuilding": "PokeBarn",
           "UnlockCondition": "{{Kanto active}}",
-          "ShopDescription": "{{i18n:pokemon.bulbasaur.shop}}",
+          "ShopDescription": "{{i18n:pokemon.shop |name=Bulbasaur}}",
           "ShopMissingBuildingDescription": "{{i18n:pokemon.all.shop.missing}}",
           "AlternatePurchaseTypes": [
             {
@@ -90,7 +90,7 @@
           "Sound": "{{modId}}_sound_bulbasaur",
           "Texture": "bulbasaur/bulbasaur",
           "SpriteWidth": "29",
-          "SpriteHeight": "28",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_bulbasaur_shiny",
@@ -106,8 +106,7 @@
           "ID": "{{modId}}_pokemon_bulbasaur"
         },
         "{{modId}}_pokemon_ivysaur": {
-          "BabyTexture": "bulbasaur/bulbasaur",
-          "DisplayName": "{{i18n:pokemon.ivysaur}}",
+          "DisplayName": "Ivysaur",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -129,8 +128,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_ivysaur",
           "Texture": "bulbasaur/ivysaur",
+          "BabyTexture": "bulbasaur/bulbasaur",
           "SpriteWidth": "29",
-          "SpriteHeight": "28",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_ivysaur_shiny",
@@ -146,8 +146,7 @@
           "ID": "{{modId}}_pokemon_ivysaur"
         },
         "{{modId}}_pokemon_venusaur_male": {
-          "BabyTexture": "bulbasaur/bulbasaur",
-          "DisplayName": "{{i18n:pokemon.venusaur_male}}",
+          "DisplayName": "{{i18n:pokemon.male |name=Venusaur}}",
           "House": "DeluxePokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -169,8 +168,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_venusaur",
           "Texture": "bulbasaur/venusaur_male",
+          "BabyTexture": "bulbasaur/bulbasaur",
           "SpriteWidth": "29",
-          "SpriteHeight": "28",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_venusaur_male_shiny",
@@ -186,8 +186,7 @@
           "ID": "{{modId}}_pokemon_venusaur_male"
         },
         "{{modId}}_pokemon_venusaur_female": {
-          "BabyTexture": "bulbasaur/bulbasaur",
-          "DisplayName": "{{i18n:pokemon.venusaur_female}}",
+          "DisplayName": "{{i18n:pokemon.female |name=Venusaur}}",
           "House": "DeluxePokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -209,8 +208,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_venusaur",
           "Texture": "bulbasaur/venusaur_female",
+          "BabyTexture": "bulbasaur/bulbasaur",
           "SpriteWidth": "29",
-          "SpriteHeight": "28",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_venusaur_female_shiny",
@@ -234,8 +234,8 @@
       "Entries": {
         "{{modId}}_item_egg_bulbasaur": {
           "Name": "{{modId}_item_egg_bulbasaur",
-          "DisplayName": "{{i18n:egg.bulbasaur.item}}",
-          "Description": "{{i18n:egg.bulbasaur.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=bulbasaur}}",
+          "Description": "{{i18n:egg.item.description |pokemon=bulbasaur}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -261,17 +261,17 @@
             {
               "Id": "{{modId}}_egg_spawn_venusaur_female",
               "AnimalId": "{{modId}}_pokemon_venusaur_female",
-              "Condition": "RANDOM 0,125"
+              "Condition": "RANDOM 0.167"
             },
             {
               "Id": "{{modId}}_egg_spawn_venusaur_male",
               "AnimalId": "{{modId}}_pokemon_venusaur_male",
-              "Condition": "RANDOM 0,167"
+              "Condition": "RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_egg_spawn_ivysaur",
               "AnimalId": "{{modId}}_pokemon_ivysaur",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_bulbasaur",

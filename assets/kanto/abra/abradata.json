@@ -4,7 +4,7 @@
       "Action": "Load",
       "FromFile": "assets/kanto/abra/{{TargetWithoutPath}}.png",
       "LogName": "Load images",
-      "Target": "abra/abra, abra/abras, abra/kadabra, abra/kadabra, abra/alakazam, abra/alakazam"
+      "Target": "abra/abra, abra/abras, abra/kadabra, abra/kadabras, abra/alakazam, abra/alakazams"
     },
     {
       "Action": "EditData",
@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_abra": {
-          "DisplayName": "{{i18n:pokemon.abra}}",
+          "DisplayName": "Abra",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_abra",
           "Texture": "abra/abra",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_abra_shiny",
@@ -75,8 +75,7 @@
           "ID": "{{modId}}_pokemon_abra"
         },
         "{{modId}}_pokemon_kadabra": {
-          "BabyTexture": "abra/abra",
-          "DisplayName": "{{i18n:pokemon.kadabra}}",
+          "DisplayName": "Kadabra",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -97,8 +96,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kadabra",
           "Texture": "abra/kadabra",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "abra/abra",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_kadabra_shiny",
@@ -114,8 +114,7 @@
           "ID": "{{modId}}_pokemon_kadabra"
         },
         "{{modId}}_pokemon_alakazam": {
-          "BabyTexture": "abra/abra",
-          "DisplayName": "{{i18n:pokemon.alakazam}}",
+          "DisplayName": "Alakazam",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -136,8 +135,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_alakazam",
           "Texture": "abra/alakazam",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "abra/abra",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_alakazam_shiny",
@@ -151,7 +151,7 @@
           "CanSwim": "False",
           "SellPrice": "5000",
           "ID": "{{modId}}_pokemon_alakazam"
-        }        
+        }
       },
       "LogName": "Adding animal changes",
       "Target": "Data/AnimalChanges"
@@ -161,8 +161,8 @@
       "Entries": {
         "{{modId}}_item_egg_abra": {
           "Name": "{{modId}_item_egg_abra",
-          "DisplayName": "{{i18n:egg.abra.item}}",
-          "Description": "{{i18n:egg.abra.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=abra}}",
+          "Description": "{{i18n:egg.item.description |pokemon=abra}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -188,12 +188,12 @@
             {
               "Id": "{{modId}}_egg_spawn_alakazam",
               "AnimalId": "{{modId}}_pokemon_alakazam",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_alakazam_completed received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_kadabra",
               "AnimalId": "{{modId}}_pokemon_kadabra",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_abra",

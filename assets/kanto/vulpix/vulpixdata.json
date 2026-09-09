@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_vulpix": {
-          "DisplayName": "{{i18n:pokemon.vulpix}}",
+          "DisplayName": "Vulpix",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_vulpix",
           "Texture": "vulpix/vulpix",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_vulpix_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_vulpix"
         },
         "{{modId}}_pokemon_vulpix_alola": {
-          "DisplayName": "{{i18n:pokemon.vulpix_alola}}",
+          "DisplayName": "Vulpix_alola",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -89,8 +89,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_vulpix",
           "Texture": "vulpix/vulpix_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_vulpix_alola_shiny",
@@ -105,7 +105,7 @@
           "ID": "{{modId}}_pokemon_vulpix_alola"
         },
         "{{modId}}_pokemon_ninetales": {
-          "DisplayName": "{{i18n:pokemon.ninetales}}",
+          "DisplayName": "Ninetales",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -127,8 +127,8 @@
           "Sound": "{{modId}}_sound_ninetales",
           "Texture": "vulpix/ninetales",
           "BabyTexture": "vulpix/vulpix",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_ninetales_shiny",
@@ -144,7 +144,7 @@
           "ID": "{{modId}}_pokemon_ninetales"
         },
         "{{modId}}_pokemon_ninetales_alola": {
-          "DisplayName": "{{i18n:pokemon.ninetales_alola}}",
+          "DisplayName": "Ninetales_alola",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -171,15 +171,15 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_ninetales",
           "Texture": "vulpix/ninetales_alola",
-          "BabyTexture": "vulpix/vulpix_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "vulpix/vulpix",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_ninetales_alola_shiny",
               "Weight": "0.1",
               "Texture": "vulpix/ninetales_alolas",
-              "BabyTexture": "vulpix/vulpix_alolas"
+              "BabyTexture": "vulpix/vulpixs"
             }
           ],
           "SleepFrame": "16",
@@ -197,8 +197,8 @@
       "Entries": {
         "{{modId}}_item_egg_vulpix": {
           "Name": "{{modId}_item_egg_vulpix",
-          "DisplayName": "{{i18n:egg.vulpix.item}}",
-          "Description": "{{i18n:egg.vulpix.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=vulpix}}",
+          "Description": "{{i18n:egg.item.description |pokemon=vulpix}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -224,17 +224,17 @@
             {
               "Id": "{{modId}}_egg_spawn_ninetales_alola",
               "AnimalId": "{{modId}}_pokemon_ninetales_alola",
-              "Condition": "RANDOM 0,250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_ninetales",
               "AnimalId": "{{modId}}_pokemon_ninetales",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_fire_stone_received received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_ice_stone_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_vulpix_alola",
               "AnimalId": "{{modId}}_pokemon_vulpix_alola",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_vulpix",

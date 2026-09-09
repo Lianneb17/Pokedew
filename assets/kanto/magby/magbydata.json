@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_magby": {
-          "DisplayName": "{{i18n:pokemon.magby}}",
+          "DisplayName": "Magby",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_magby",
           "Texture": "magby/magby",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_magby_shiny",
@@ -75,7 +75,7 @@
           "ID": "{{modId}}_pokemon_magby"
         },
         "{{modId}}_pokemon_magmar": {
-          "DisplayName": "{{i18n:pokemon.magmar}}",
+          "DisplayName": "Magmar",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -97,8 +97,8 @@
           "Sound": "{{modId}}_sound_magmar",
           "Texture": "magby/magmar",
           "BabyTexture": "magby/magby",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_magmar_shiny",
@@ -114,7 +114,7 @@
           "ID": "{{modId}}_pokemon_magmar"
         },
         "{{modId}}_pokemon_magmortar": {
-          "DisplayName": "{{i18n:pokemon.magmortar}}",
+          "DisplayName": "Magmortar",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -136,8 +136,8 @@
           "Sound": "{{modId}}_sound_magmortar",
           "Texture": "magby/magmortar",
           "BabyTexture": "magby/magby",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_magmortar_shiny",
@@ -161,8 +161,8 @@
       "Entries": {
         "{{modId}}_item_egg_magby": {
           "Name": "{{modId}_item_egg_magby",
-          "DisplayName": "{{i18n:egg.magby.item}}",
-          "Description": "{{i18n:egg.magby.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=magby}}",
+          "Description": "{{i18n:egg.item.description |pokemon=magby}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -188,12 +188,12 @@
             {
               "Id": "{{modId}}_egg_spawn_magmortar",
               "AnimalId": "{{modId}}_pokemon_magmortar",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_magmortar_completed received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_magmar",
               "AnimalId": "{{modId}}_pokemon_magmar",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_magby",

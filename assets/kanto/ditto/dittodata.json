@@ -24,7 +24,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_ditto": {
-          "DisplayName": "{{i18n:pokemon.ditto}}",
+          "DisplayName": "Ditto",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -69,8 +69,8 @@
       "Entries": {
         "{{modId}}_item_egg_ditto": {
           "Name": "{{modId}_item_egg_ditto",
-          "DisplayName": "{{i18n:egg.ditto.item}}",
-          "Description": "{{i18n:egg.ditto.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=ditto}}",
+          "Description": "{{i18n:egg.item.description |pokemon=ditto}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",

@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_weedle": {
-          "DisplayName": "{{i18n:pokemon.weedle}}",
+          "DisplayName": "Weedle",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -60,7 +60,7 @@
           "Sound": "{{modId}}_sound_weedle",
           "Texture": "weedle/weedle",
           "SpriteWidth": "29",
-          "SpriteHeight": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_weedle_shiny",
@@ -75,7 +75,7 @@
           "ID": "{{modId}}_pokemon_weedle"
         },
         "{{modId}}_pokemon_kakuna": {
-          "DisplayName": "{{i18n:pokemon.kakuna}}",
+          "DisplayName": "Kakuna",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -98,7 +98,7 @@
           "Texture": "weedle/kakuna",
           "BabyTexture": "weedle/weedle",
           "SpriteWidth": "29",
-          "SpriteHeight": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_kakuna_shiny",
@@ -114,7 +114,7 @@
           "ID": "{{modId}}_pokemon_kakuna"
         },
         "{{modId}}_pokemon_beedrill": {
-          "DisplayName": "{{i18n:pokemon.beedrill}}",
+          "DisplayName": "Beedrill",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -137,7 +137,7 @@
           "Texture": "weedle/beedrill",
           "BabyTexture": "weedle/weedle",
           "SpriteWidth": "29",
-          "SpriteHeight": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_beedrill_shiny",
@@ -161,8 +161,8 @@
       "Entries": {
         "{{modId}}_item_egg_weedle": {
           "Name": "{{modId}_item_egg_weedle",
-          "DisplayName": "{{i18n:egg.weedle.item}}",
-          "Description": "{{i18n:egg.weedle.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=weedle}}",
+          "Description": "{{i18n:egg.item.description |pokemon=weedle}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "300",
@@ -188,12 +188,12 @@
             {
               "Id": "{{modId}}_egg_spawn_beedrill",
               "AnimalId": "{{modId}}_pokemon_beedrill",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_kakuna",
               "AnimalId": "{{modId}}_pokemon_kakuna",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_weedle",

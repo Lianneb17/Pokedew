@@ -24,7 +24,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_mewtwo": {
-          "DisplayName": "{{i18n:pokemon.mewtwo}}",
+          "DisplayName": "Mewtwo",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -45,8 +45,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_mewtwo",
           "Texture": "mewtwo/mewtwo",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_mewtwo_shiny",
@@ -69,8 +69,8 @@
       "Entries": {
         "{{modId}}_item_egg_mewtwo": {
           "Name": "{{modId}_item_egg_mewtwo",
-          "DisplayName": "{{i18n:egg.mewtwo.item}}",
-          "Description": "{{i18n:egg.mewtwo.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=mewtwo}}",
+          "Description": "{{i18n:egg.item.description |pokemon=mewtwo}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "1100",

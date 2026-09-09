@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_igglybuff": {
-          "DisplayName": "{{i18n:pokemon.igglybuff}}",
+          "DisplayName": "Igglybuff",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -65,8 +65,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_igglybuff",
           "Texture": "igglybuff/igglybuff",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_igglybuff_shiny",
@@ -81,7 +81,7 @@
           "ID": "{{modId}}_pokemon_igglybuff"
         },
         "{{modId}}_pokemon_jigglypuff": {
-          "DisplayName": "{{i18n:pokemon.jigglypuff}}",
+          "DisplayName": "Jigglypuff",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -109,8 +109,8 @@
           "Sound": "{{modId}}_sound_jigglypuff",
           "Texture": "igglybuff/jigglypuff",
           "BabyTexture": "igglybuff/igglybuff",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_jigglypuff_shiny",
@@ -126,7 +126,7 @@
           "ID": "{{modId}}_pokemon_jigglypuff"
         },
         "{{modId}}_pokemon_wigglytuff": {
-          "DisplayName": "{{i18n:pokemon.wigglytuff}}",
+          "DisplayName": "Wigglytuff",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -154,8 +154,8 @@
           "Sound": "{{modId}}_sound_wigglytuff",
           "Texture": "igglybuff/wigglytuff",
           "BabyTexture": "igglybuff/igglybuff",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_wigglytuff_shiny",
@@ -179,8 +179,8 @@
       "Entries": {
         "{{modId}}_item_egg_igglybuff": {
           "Name": "{{modId}_item_egg_igglybuff",
-          "DisplayName": "{{i18n:egg.igglybuff.item}}",
-          "Description": "{{i18n:egg.igglybuff.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=igglybuff}}",
+          "Description": "{{i18n:egg.item.description |pokemon=igglybuff}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "300",
@@ -206,12 +206,12 @@
             {
               "Id": "{{modId}}_egg_spawn_wigglytuff",
               "AnimalId": "{{modId}}_pokemon_wigglytuff",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_moon_stone_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_jigglypuff",
               "AnimalId": "{{modId}}_pokemon_jigglypuff",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_igglybuff",

@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_gastly": {
-          "DisplayName": "{{i18n:pokemon.gastly}}",
+          "DisplayName": "Gastly",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_gastly",
           "Texture": "gastly/gastly",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_gastly_shiny",
@@ -75,7 +75,7 @@
           "ID": "{{modId}}_pokemon_gastly"
         },
         "{{modId}}_pokemon_haunter": {
-          "DisplayName": "{{i18n:pokemon.haunter}}",
+          "DisplayName": "Haunter",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -97,8 +97,8 @@
           "Sound": "{{modId}}_sound_haunter",
           "Texture": "gastly/haunter",
           "BabyTexture": "gastly/gastly",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_haunter_shiny",
@@ -114,7 +114,7 @@
           "ID": "{{modId}}_pokemon_haunter"
         },
         "{{modId}}_pokemon_gengar": {
-          "DisplayName": "{{i18n:pokemon.gengar}}",
+          "DisplayName": "Gengar",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -136,8 +136,8 @@
           "Sound": "{{modId}}_sound_gengar",
           "Texture": "gastly/gengar",
           "BabyTexture": "gastly/gastly",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_gengar_shiny",
@@ -161,8 +161,8 @@
       "Entries": {
         "{{modId}}_item_egg_gastly": {
           "Name": "{{modId}_item_egg_gastly",
-          "DisplayName": "{{i18n:egg.gastly.item}}",
-          "Description": "{{i18n:egg.gastly.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=gastly}}",
+          "Description": "{{i18n:egg.item.description |pokemon=gastly}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -188,12 +188,12 @@
             {
               "Id": "{{modId}}_egg_spawn_gengar",
               "AnimalId": "{{modId}}_pokemon_gengar",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_gengar_completed received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_haunter",
               "AnimalId": "{{modId}}_pokemon_haunter",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_gastly",

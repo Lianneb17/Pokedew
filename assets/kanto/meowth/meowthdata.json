@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_meowth": {
-          "DisplayName": "{{i18n:pokemon.meowth}}",
+          "DisplayName": "Meowth",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_meowth",
           "Texture": "meowth/meowth",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_meowth_shiny",
@@ -75,7 +75,7 @@
           "ID": "{{modId}}_pokemon_meowth"
         },
         "{{modId}}_pokemon_meowth_alola": {
-          "DisplayName": "{{i18n:pokemon.meowth_alola}}",
+          "DisplayName": "Meowth_alola",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -96,8 +96,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_meowth",
           "Texture": "meowth/meowth_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_meowth_alola_shiny",
@@ -112,7 +112,7 @@
           "ID": "{{modId}}_pokemon_meowth_alola"
         },
         "{{modId}}_pokemon_meowth_galar": {
-          "DisplayName": "{{i18n:pokemon.meowth_galar}}",
+          "DisplayName": "Meowth_galar",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -133,8 +133,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_meowth",
           "Texture": "meowth/meowth_galar",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_meowth_galar_shiny",
@@ -149,7 +149,7 @@
           "ID": "{{modId}}_pokemon_meowth_galar"
         },
         "{{modId}}_pokemon_persian": {
-          "DisplayName": "{{i18n:pokemon.persian}}",
+          "DisplayName": "Persian",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -171,8 +171,8 @@
           "Sound": "{{modId}}_sound_persian",
           "Texture": "meowth/persian",
           "BabyTexture": "meowth/meowth",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_persian_shiny",
@@ -188,7 +188,7 @@
           "ID": "{{modId}}_pokemon_persian"
         },
         "{{modId}}_pokemon_persian_alola": {
-          "DisplayName": "{{i18n:pokemon.persian_alola}}",
+          "DisplayName": "Persian_alola",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -209,9 +209,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_persian",
           "Texture": "meowth/persian_alola",
-          "BabyTexture": "meowth/meowth_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "meowth/meowth",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_persian_alola_shiny",
@@ -227,7 +227,7 @@
           "ID": "{{modId}}_pokemon_persian_alola"
         },
         "{{modId}}_pokemon_perrserker": {
-          "DisplayName": "{{i18n:pokemon.perrserker}}",
+          "DisplayName": "Perrserker",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -248,15 +248,15 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_perrserker",
           "Texture": "meowth/perrserker",
-          "BabyTexture": "meowth/meowth_galar",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "meowth/meowth",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_perrserker_shiny",
               "Weight": "0.1",
               "Texture": "meowth/perrserkers",
-              "BabyTexture": "meowth/meowth_galars"
+              "BabyTexture": "meowth/meowths"
             }
           ],
           "SleepFrame": "16",
@@ -274,8 +274,8 @@
       "Entries": {
         "{{modId}}_item_egg_meowth": {
           "Name": "{{modId}_item_egg_meowth",
-          "DisplayName": "{{i18n:egg.meowth.item}}",
-          "Description": "{{i18n:egg.meowth.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=meowth}}",
+          "Description": "{{i18n:egg.item.description |pokemon=meowth}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -301,27 +301,27 @@
             {
               "Id": "{{modId}}_egg_spawn_perrserker",
               "AnimalId": "{{modId}}_pokemon_perrserker",
-              "Condition": "RANDOM 0,167"
+              "Condition": "RANDOM 0.167"
             },
             {
               "Id": "{{modId}}_egg_spawn_persian_alola",
               "AnimalId": "{{modId}}_pokemon_persian_alola",
-              "Condition": "RANDOM 0,200"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_egg_spawn_persian",
               "AnimalId": "{{modId}}_pokemon_persian",
-              "Condition": "RANDOM 0,250"
+              "Condition": "RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_meowth_galar",
               "AnimalId": "{{modId}}_pokemon_meowth_galar",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_galar_unlocked received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_meowth_alola",
               "AnimalId": "{{modId}}_pokemon_meowth_alola",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_meowth",

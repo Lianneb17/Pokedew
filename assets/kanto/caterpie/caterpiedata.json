@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_caterpie": {
-          "DisplayName": "{{i18n:pokemon.caterpie}}",
+          "DisplayName": "Caterpie",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_caterpie",
           "Texture": "caterpie/caterpie",
-          "SpriteWidth": "30",
-          "SpriteHeight": "27",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_caterpie_shiny",
@@ -75,8 +75,7 @@
           "ID": "{{modId}}_pokemon_caterpie"
         },
         "{{modId}}_pokemon_metapod": {
-          "BabyTexture": "caterpie/caterpie",
-          "DisplayName": "{{i18n:pokemon.metapod}}",
+          "DisplayName": "Metapod",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -97,8 +96,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_metapod",
           "Texture": "caterpie/metapod",
-          "SpriteWidth": "30",
-          "SpriteHeight": "27",
+          "BabyTexture": "caterpie/caterpie",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_metapod_shiny",
@@ -114,8 +114,7 @@
           "ID": "{{modId}}_pokemon_metapod"
         },
         "{{modId}}_pokemon_butterfree_male": {
-          "BabyTexture": "caterpie/caterpie",
-          "DisplayName": "{{i18n:pokemon.butterfree_male}}",
+          "DisplayName": "{{i18n:pokemon.male |name=Butterfree}}",
           "House": "DeluxePokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -142,8 +141,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_butterfree",
           "Texture": "caterpie/butterfree_male",
-          "SpriteWidth": "30",
-          "SpriteHeight": "27",
+          "BabyTexture": "caterpie/caterpie",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_butterfree_male_shiny",
@@ -159,8 +159,7 @@
           "ID": "{{modId}}_pokemon_butterfree_male"
         },
         "{{modId}}_pokemon_butterfree_female": {
-          "BabyTexture": "caterpie/caterpie",
-          "DisplayName": "{{i18n:pokemon.butterfree_female}}",
+          "DisplayName": "{{i18n:pokemon.female |name=Butterfree}}",
           "House": "DeluxePokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -187,8 +186,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_butterfree",
           "Texture": "caterpie/butterfree_female",
-          "SpriteWidth": "30",
-          "SpriteHeight": "27",
+          "BabyTexture": "caterpie/caterpie",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_butterfree_female_shiny",
@@ -212,8 +212,8 @@
       "Entries": {
         "{{modId}}_item_egg_caterpie": {
           "Name": "{{modId}_item_egg_caterpie",
-          "DisplayName": "{{i18n:egg.caterpie.item}}",
-          "Description": "{{i18n:egg.caterpie.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=caterpie}}",
+          "Description": "{{i18n:egg.item.description |pokemon=caterpie}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "300",
@@ -239,17 +239,17 @@
             {
               "Id": "{{modId}}_egg_spawn_butterfree_female",
               "AnimalId": "{{modId}}_pokemon_butterfree_female",
-              "Condition": "RANDOM 0,125"
+              "Condition": "RANDOM 0.167"
             },
             {
               "Id": "{{modId}}_egg_spawn_butterfree_male",
               "AnimalId": "{{modId}}_pokemon_butterfree_male",
-              "Condition": "RANDOM 0,167"
+              "Condition": "RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_egg_spawn_metapod",
               "AnimalId": "{{modId}}_pokemon_metapod",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_caterpie",

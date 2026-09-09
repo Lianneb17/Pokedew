@@ -38,12 +38,12 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_elekid": {
-          "DisplayName": "{{i18n:pokemon.elekid}}",
+          "DisplayName": "Elekid",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_elekid",
-            "{{modId}}_item_egg_group_noeggdiscovered"
+            "{{modId}}_item_egg_group_humanlike"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -66,8 +66,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_elekid",
           "Texture": "elekid/elekid",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_elekid_shiny",
@@ -82,13 +82,12 @@
           "ID": "{{modId}}_pokemon_elekid"
         },
         "{{modId}}_pokemon_electabuzz": {
-          "BabyTexture": "elekid/elekid",
-          "DisplayName": "{{i18n:pokemon.electabuzz}}",
+          "DisplayName": "Electabuzz",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_elekid",
-            "{{modId}}_item_egg_group_noeggdiscovered"
+            "{{modId}}_item_egg_group_humanlike"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -111,8 +110,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_electabuzz",
           "Texture": "elekid/electabuzz",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "elekid/elekid",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_electabuzz_shiny",
@@ -128,13 +128,12 @@
           "ID": "{{modId}}_pokemon_electabuzz"
         },
         "{{modId}}_pokemon_electivire": {
-          "BabyTexture": "elekid/elekid",
-          "DisplayName": "{{i18n:pokemon.electivire}}",
+          "DisplayName": "Electivire",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_elekid",
-            "{{modId}}_item_egg_group_noeggdiscovered"
+            "{{modId}}_item_egg_group_humanlike"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -157,8 +156,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_electivire",
           "Texture": "elekid/electivire",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "elekid/elekid",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_electivire_shiny",
@@ -182,8 +182,8 @@
       "Entries": {
         "{{modId}}_item_egg_elekid": {
           "Name": "{{modId}_item_egg_elekid",
-          "DisplayName": "{{i18n:egg.elekid.item}}",
-          "Description": "{{i18n:egg.elekid.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=elekid}}",
+          "Description": "{{i18n:egg.item.description |pokemon=elekid}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -209,12 +209,12 @@
             {
               "Id": "{{modId}}_egg_spawn_electivire",
               "AnimalId": "{{modId}}_pokemon_electivire",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_electivire_completed received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_electabuzz",
               "AnimalId": "{{modId}}_pokemon_electabuzz",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_elekid",

@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_dratini": {
-          "DisplayName": "{{i18n:pokemon.dratini}}",
+          "DisplayName": "Dratini",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -60,8 +60,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_dratini",
           "Texture": "dratini/dratini",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_dratini_shiny",
@@ -76,8 +76,7 @@
           "ID": "{{modId}}_pokemon_dratini"
         },
         "{{modId}}_pokemon_dragonair": {
-          "BabyTexture": "dratini/dratini",
-          "DisplayName": "{{i18n:pokemon.dragonair}}",
+          "DisplayName": "Dragonair",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -99,8 +98,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_dragonair",
           "Texture": "dratini/dragonair",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "dratini/dratini",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_dragonair_shiny",
@@ -116,8 +116,7 @@
           "ID": "{{modId}}_pokemon_dragonair"
         },
         "{{modId}}_pokemon_dragonite": {
-          "BabyTexture": "dratini/dratini",
-          "DisplayName": "{{i18n:pokemon.dragonite}}",
+          "DisplayName": "Dragonite",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -145,8 +144,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_dragonite",
           "Texture": "dratini/dragonite",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "dratini/dratini",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_dragonite_shiny",
@@ -170,8 +170,8 @@
       "Entries": {
         "{{modId}}_item_egg_dratini": {
           "Name": "{{modId}_item_egg_dratini",
-          "DisplayName": "{{i18n:egg.dratini.item}}",
-          "Description": "{{i18n:egg.dratini.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=dratini}}",
+          "Description": "{{i18n:egg.item.description |pokemon=dratini}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "1100",
@@ -197,12 +197,12 @@
             {
               "Id": "{{modId}}_egg_spawn_dragonite",
               "AnimalId": "{{modId}}_pokemon_dragonite",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_dragonair",
               "AnimalId": "{{modId}}_pokemon_dragonair",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_dratini",

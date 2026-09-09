@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_farfetchd": {
-          "DisplayName": "{{i18n:pokemon.farfetchd}}",
+          "DisplayName": "Farfetchd",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_farfetchd",
           "Texture": "farfetchd/farfetchd",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_farfetchd_shiny",
@@ -75,7 +75,7 @@
           "ID": "{{modId}}_pokemon_farfetchd"
         },
         "{{modId}}_pokemon_farfetchd_galar": {
-          "DisplayName": "{{i18n:pokemon.farfetchd_galar}}",
+          "DisplayName": "Farfetchd_galar",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -97,8 +97,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_farfetchd",
           "Texture": "farfetchd/farfetchd_galar",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_farfetchd_galar_shiny",
@@ -113,7 +113,7 @@
           "ID": "{{modId}}_pokemon_farfetchd_galar"
         },
         "{{modId}}_pokemon_sirfetchd": {
-          "DisplayName": "{{i18n:pokemon.sirfetchd}}",
+          "DisplayName": "Sirfetchd",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -136,8 +136,8 @@
           "Sound": "{{modId}}_sound_sirfetchd",
           "Texture": "farfetchd/sirfetchd",
           "BabyTexture": "farfetchd/farfetchd",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_sirfetchd_shiny",
@@ -161,8 +161,8 @@
       "Entries": {
         "{{modId}}_item_egg_farfetchd": {
           "Name": "{{modId}_item_egg_farfetchd",
-          "DisplayName": "{{i18n:egg.farfetchd.item}}",
-          "Description": "{{i18n:egg.farfetchd.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=farfetchd}}",
+          "Description": "{{i18n:egg.item.description |pokemon=farfetchd}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -188,12 +188,12 @@
             {
               "Id": "{{modId}}_egg_spawn_sirfetchd",
               "AnimalId": "{{modId}}_pokemon_sirfetchd",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_farfetchd_galar",
               "AnimalId": "{{modId}}_pokemon_farfetchd_galar",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_galar_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_farfetchd",

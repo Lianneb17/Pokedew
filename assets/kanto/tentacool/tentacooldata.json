@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_tentacool": {
-          "DisplayName": "{{i18n:pokemon.tentacool}}",
+          "DisplayName": "Tentacool",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tentacool",
           "Texture": "tentacool/tentacool",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_tentacool_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_tentacool"
         },
         "{{modId}}_pokemon_tentacruel": {
-          "DisplayName": "{{i18n:pokemon.tentacruel}}",
+          "DisplayName": "Tentacruel",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_tentacruel",
           "Texture": "tentacool/tentacruel",
           "BabyTexture": "tentacool/tentacool",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_tentacruel_shiny",
@@ -115,8 +115,8 @@
       "Entries": {
         "{{modId}}_item_egg_tentacool": {
           "Name": "{{modId}_item_egg_tentacool",
-          "DisplayName": "{{i18n:egg.tentacool.item}}",
-          "Description": "{{i18n:egg.tentacool.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=tentacool}}",
+          "Description": "{{i18n:egg.item.description |pokemon=tentacool}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -142,7 +142,7 @@
             {
               "Id": "{{modId}}_egg_spawn_tentacruel",
               "AnimalId": "{{modId}}_pokemon_tentacruel",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_tentacool",

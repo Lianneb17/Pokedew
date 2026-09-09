@@ -16,26 +16,12 @@
           ],
           "ID": "{{modId}}_sound_growlithe"
         },
-        "{{modId}}_sound_growlithe_hisui": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/growlithe/growlithe_hisui.wav}}"
-          ],
-          "ID": "{{modId}}_sound_growlithe_hisui"
-        },
         "{{modId}}_sound_arcanine": {
           "Category": "Sound",
           "FilePaths": [
             "{{AbsoluteFilePath: assets/kanto/growlithe/arcanine.wav}}"
           ],
           "ID": "{{modId}}_sound_arcanine"
-        },
-        "{{modId}}_sound_arcanine_hisui": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/growlithe/arcanine_hisui.wav}}"
-          ],
-          "ID": "{{modId}}_sound_arcanine_hisui"
         }
       },
       "LogName": "Adding sound changes",
@@ -45,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_growlithe": {
-          "DisplayName": "{{i18n:pokemon.growlithe}}",
+          "DisplayName": "Growlithe",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -66,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_growlithe",
           "Texture": "growlithe/growlithe",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_growlithe_shiny",
@@ -82,7 +68,7 @@
           "ID": "{{modId}}_pokemon_growlithe"
         },
         "{{modId}}_pokemon_growlithe_hisui": {
-          "DisplayName": "{{i18n:pokemon.growlithe_hisui}}",
+          "DisplayName": "Growlithe_hisui",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -101,16 +87,15 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_growlithe_hisui",
+          "Sound": "{{modId}}_sound_growlithe",
           "Texture": "growlithe/growlithe_hisui",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_growlithe_hisui_shiny",
               "Weight": "0.1",
-              "Texture": "growlithe/growlithe_hisuis",
-              "BabyTexture": "growlithe/growlithes"
+              "Texture": "growlithe/growlithe_hisuis"
             }
           ],
           "SleepFrame": "16",
@@ -120,7 +105,7 @@
           "ID": "{{modId}}_pokemon_growlithe_hisui"
         },
         "{{modId}}_pokemon_arcanine": {
-          "DisplayName": "{{i18n:pokemon.arcanine}}",
+          "DisplayName": "Arcanine",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -142,8 +127,8 @@
           "Sound": "{{modId}}_sound_arcanine",
           "Texture": "growlithe/arcanine",
           "BabyTexture": "growlithe/growlithe",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_arcanine_shiny",
@@ -159,7 +144,7 @@
           "ID": "{{modId}}_pokemon_arcanine"
         },
         "{{modId}}_pokemon_arcanine_hisui": {
-          "DisplayName": "{{i18n:pokemon.arcanine_hisui}}",
+          "DisplayName": "Arcanine_hisui",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -178,17 +163,17 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_arcanine_hisui",
+          "Sound": "{{modId}}_sound_arcanine",
           "Texture": "growlithe/arcanine_hisui",
-          "BabyTexture": "growlithe/growlithe_hisui",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "growlithe/growlithe",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_arcanine_hisui_shiny",
               "Weight": "0.1",
               "Texture": "growlithe/arcanine_hisuis",
-              "BabyTexture": "growlithe/growlithe_hisuis"
+              "BabyTexture": "growlithe/growlithes"
             }
           ],
           "SleepFrame": "16",
@@ -206,8 +191,8 @@
       "Entries": {
         "{{modId}}_item_egg_growlithe": {
           "Name": "{{modId}_item_egg_growlithe",
-          "DisplayName": "{{i18n:egg.growlithe.item}}",
-          "Description": "{{i18n:egg.growlithe.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=growlithe}}",
+          "Description": "{{i18n:egg.item.description |pokemon=growlithe}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -233,17 +218,17 @@
             {
               "Id": "{{modId}}_egg_spawn_arcanine_hisui",
               "AnimalId": "{{modId}}_pokemon_arcanine_hisui",
-              "Condition": "RANDOM 0,250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_hisui_unlocked received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_arcanine",
               "AnimalId": "{{modId}}_pokemon_arcanine",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_fire_stone_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_growlithe_hisui",
               "AnimalId": "{{modId}}_pokemon_growlithe_hisui",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_hisui_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_growlithe",

@@ -24,7 +24,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_kangaskhan": {
-          "DisplayName": "{{i18n:pokemon.kangaskhan}}",
+          "DisplayName": "Kangaskhan",
           "House": "PokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -45,8 +45,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_kangaskhan",
           "Texture": "kangaskhan/kangaskhan",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_kangaskhan_shiny",
@@ -69,8 +69,8 @@
       "Entries": {
         "{{modId}}_item_egg_kangaskhan": {
           "Name": "{{modId}_item_egg_kangaskhan",
-          "DisplayName": "{{i18n:egg.kangaskhan.item}}",
-          "Description": "{{i18n:egg.kangaskhan.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=kangaskhan}}",
+          "Description": "{{i18n:egg.item.description |pokemon=kangaskhan}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",

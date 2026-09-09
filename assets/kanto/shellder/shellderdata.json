@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_shellder": {
-          "DisplayName": "{{i18n:pokemon.shellder}}",
+          "DisplayName": "Shellder",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_shellder",
           "Texture": "shellder/shellder",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_shellder_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_shellder"
         },
         "{{modId}}_pokemon_cloyster": {
-          "DisplayName": "{{i18n:pokemon.cloyster}}",
+          "DisplayName": "Cloyster",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_cloyster",
           "Texture": "shellder/cloyster",
           "BabyTexture": "shellder/shellder",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_cloyster_shiny",
@@ -115,8 +115,8 @@
       "Entries": {
         "{{modId}}_item_egg_shellder": {
           "Name": "{{modId}_item_egg_shellder",
-          "DisplayName": "{{i18n:egg.shellder.item}}",
-          "Description": "{{i18n:egg.shellder.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=shellder}}",
+          "Description": "{{i18n:egg.item.description |pokemon=shellder}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -142,7 +142,7 @@
             {
               "Id": "{{modId}}_egg_spawn_cloyster",
               "AnimalId": "{{modId}}_pokemon_cloyster",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_water_stone_received received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_shellder",

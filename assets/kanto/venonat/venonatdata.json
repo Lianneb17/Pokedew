@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_venonat": {
-          "DisplayName": "{{i18n:pokemon.venonat}}",
+          "DisplayName": "Venonat",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_venonat",
           "Texture": "venonat/venonat",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_venonat_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_venonat"
         },
         "{{modId}}_pokemon_venomoth": {
-          "DisplayName": "{{i18n:pokemon.venomoth}}",
+          "DisplayName": "Venomoth",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_venomoth",
           "Texture": "venonat/venomoth",
           "BabyTexture": "venonat/venonat",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_venomoth_shiny",
@@ -115,8 +115,8 @@
       "Entries": {
         "{{modId}}_item_egg_venonat": {
           "Name": "{{modId}_item_egg_venonat",
-          "DisplayName": "{{i18n:egg.venonat.item}}",
-          "Description": "{{i18n:egg.venonat.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=venonat}}",
+          "Description": "{{i18n:egg.item.description |pokemon=venonat}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -142,7 +142,7 @@
             {
               "Id": "{{modId}}_egg_spawn_venomoth",
               "AnimalId": "{{modId}}_pokemon_venomoth",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_venonat",

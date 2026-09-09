@@ -24,7 +24,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_articuno": {
-          "DisplayName": "{{i18n:pokemon.articuno}}",
+          "DisplayName": "Articuno",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -51,8 +51,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_articuno",
           "Texture": "articuno/articuno",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_articuno_shiny",
@@ -67,7 +67,7 @@
           "ID": "{{modId}}_pokemon_articuno"
         },
         "{{modId}}_pokemon_articuno_galar": {
-          "DisplayName": "{{i18n:pokemon.articuno_galar}}",
+          "DisplayName": "Articuno_galar",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -94,8 +94,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_articuno",
           "Texture": "articuno/articuno_galar",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_articuno_galar_shiny",
@@ -118,8 +118,8 @@
       "Entries": {
         "{{modId}}_item_egg_articuno": {
           "Name": "{{modId}_item_egg_articuno",
-          "DisplayName": "{{i18n:egg.articuno.item}}",
-          "Description": "{{i18n:egg.articuno.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=articuno}}",
+          "Description": "{{i18n:egg.item.description |pokemon=articuno}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "1100",
@@ -145,7 +145,7 @@
             {
               "Id": "{{modId}}_egg_spawn_articuno_galar",
               "AnimalId": "{{modId}}_pokemon_articuno_galar",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_galar_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_articuno",

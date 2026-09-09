@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_sandshrew": {
-          "DisplayName": "{{i18n:pokemon.sandshrew}}",
+          "DisplayName": "Sandshrew",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sandshrew",
           "Texture": "sandshrew/sandshrew",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_sandshrew_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_sandshrew"
         },
         "{{modId}}_pokemon_sandshrew_alola": {
-          "DisplayName": "{{i18n:pokemon.sandshrew_alola}}",
+          "DisplayName": "Sandshrew_alola",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -89,8 +89,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sandshrew",
           "Texture": "sandshrew/sandshrew_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_sandshrew_alola_shiny",
@@ -105,7 +105,7 @@
           "ID": "{{modId}}_pokemon_sandshrew_alola"
         },
         "{{modId}}_pokemon_sandslash": {
-          "DisplayName": "{{i18n:pokemon.sandslash}}",
+          "DisplayName": "Sandslash",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -127,8 +127,8 @@
           "Sound": "{{modId}}_sound_sandslash",
           "Texture": "sandshrew/sandslash",
           "BabyTexture": "sandshrew/sandshrew",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_sandslash_shiny",
@@ -144,7 +144,7 @@
           "ID": "{{modId}}_pokemon_sandslash"
         },
         "{{modId}}_pokemon_sandslash_alola": {
-          "DisplayName": "{{i18n:pokemon.sandslash_alola}}",
+          "DisplayName": "Sandslash_alola",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -165,15 +165,15 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_sandslash",
           "Texture": "sandshrew/sandslash_alola",
-          "BabyTexture": "sandshrew/sandshrew_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "sandshrew/sandshrew",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_sandslash_alola_shiny",
               "Weight": "0.1",
               "Texture": "sandshrew/sandslash_alolas",
-              "BabyTexture": "sandshrew/sandshrew_alolas"
+              "BabyTexture": "sandshrew/sandshrews"
             }
           ],
           "SleepFrame": "16",
@@ -191,8 +191,8 @@
       "Entries": {
         "{{modId}}_item_egg_sandshrew": {
           "Name": "{{modId}_item_egg_sandshrew",
-          "DisplayName": "{{i18n:egg.sandshrew.item}}",
-          "Description": "{{i18n:egg.sandshrew.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=sandshrew}}",
+          "Description": "{{i18n:egg.item.description |pokemon=sandshrew}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -218,17 +218,17 @@
             {
               "Id": "{{modId}}_egg_spawn_sandslash_alola",
               "AnimalId": "{{modId}}_pokemon_sandslash_alola",
-              "Condition": "RANDOM 0,250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_sandslash",
               "AnimalId": "{{modId}}_pokemon_sandslash",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_ice_stone_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_sandshrew_alola",
               "AnimalId": "{{modId}}_pokemon_sandshrew_alola",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_sandshrew",

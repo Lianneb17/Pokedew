@@ -19,3 +19,12 @@ Egg analyser
 Quests with Pokémon rewards
 Fossils
 Berries
+
+# Egg levels
+- Water3 -> lvl 1, gen 7&10 has lvl 0
+- amorphous -> lvl 1, vanaf 3 is lvl 0 (not sure for all gens, but not belangrijk for nu)
+- Ditto -> only when kanto is active
+- No egg discovered -> lvl 9, gen 7 heeft er 1 in lvl 0
+
+# Caution
+Water group 2 only exists of male or female pokemons, so for time being they're chanced are not halved.

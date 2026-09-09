@@ -29,7 +29,7 @@
             "{{AbsoluteFilePath: assets/kanto/geodude/golem.wav}}"
           ],
           "ID": "{{modId}}_sound_golem"
-        },
+        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_geodude": {
-          "DisplayName": "{{i18n:pokemon.geodude}}",
+          "DisplayName": "Geodude",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_geodude",
           "Texture": "geodude/geodude",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_geodude_shiny",
@@ -75,7 +75,7 @@
           "ID": "{{modId}}_pokemon_geodude"
         },
         "{{modId}}_pokemon_geodude_alola": {
-          "DisplayName": "{{i18n:pokemon.geodude_alola}}",
+          "DisplayName": "Geodude_alola",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -103,8 +103,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_geodude",
           "Texture": "geodude/geodude_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_geodude_alola_shiny",
@@ -119,7 +119,7 @@
           "ID": "{{modId}}_pokemon_geodude_alola"
         },
         "{{modId}}_pokemon_graveler": {
-          "DisplayName": "{{i18n:pokemon.graveler}}",
+          "DisplayName": "Graveler",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -141,8 +141,8 @@
           "Sound": "{{modId}}_sound_graveler",
           "Texture": "geodude/graveler",
           "BabyTexture": "geodude/geodude",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_graveler_shiny",
@@ -158,7 +158,7 @@
           "ID": "{{modId}}_pokemon_graveler"
         },
         "{{modId}}_pokemon_graveler_alola": {
-          "DisplayName": "{{i18n:pokemon.graveler_alola}}",
+          "DisplayName": "Graveler_alola",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -186,15 +186,15 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_graveler",
           "Texture": "geodude/graveler_alola",
-          "BabyTexture": "geodude/geodude_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "geodude/geodude",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_graveler_alola_shiny",
               "Weight": "0.1",
               "Texture": "geodude/graveler_alolas",
-              "BabyTexture": "geodude/geodude_alolas"
+              "BabyTexture": "geodude/geodudes"
             }
           ],
           "SleepFrame": "16",
@@ -204,7 +204,7 @@
           "ID": "{{modId}}_pokemon_graveler_alola"
         },
         "{{modId}}_pokemon_golem": {
-          "DisplayName": "{{i18n:pokemon.golem}}",
+          "DisplayName": "Golem",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -226,8 +226,8 @@
           "Sound": "{{modId}}_sound_golem",
           "Texture": "geodude/golem",
           "BabyTexture": "geodude/geodude",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_golem_shiny",
@@ -243,7 +243,7 @@
           "ID": "{{modId}}_pokemon_golem"
         },
         "{{modId}}_pokemon_golem_alola": {
-          "DisplayName": "{{i18n:pokemon.golem_alola}}",
+          "DisplayName": "Golem_alola",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -271,15 +271,15 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_golem",
           "Texture": "geodude/golem_alola",
-          "BabyTexture": "geodude/geodude_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "geodude/geodude",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_golem_alola_shiny",
               "Weight": "0.1",
               "Texture": "geodude/golem_alolas",
-              "BabyTexture": "geodude/geodude_alolas"
+              "BabyTexture": "geodude/geodudes"
             }
           ],
           "SleepFrame": "16",
@@ -297,8 +297,8 @@
       "Entries": {
         "{{modId}}_item_egg_geodude": {
           "Name": "{{modId}_item_egg_geodude",
-          "DisplayName": "{{i18n:egg.geodude.item}}",
-          "Description": "{{i18n:egg.geodude.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=geodude}}",
+          "Description": "{{i18n:egg.item.description |pokemon=geodude}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "300",
@@ -324,27 +324,27 @@
             {
               "Id": "{{modId}}_egg_spawn_golem_alola",
               "AnimalId": "{{modId}}_pokemon_golem_alola",
-              "Condition": "RANDOM 0,167"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.167"
             },
             {
               "Id": "{{modId}}_egg_spawn_golem",
               "AnimalId": "{{modId}}_pokemon_golem",
-              "Condition": "RANDOM 0,200"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_golem_completed received, RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_egg_spawn_graveler_alola",
               "AnimalId": "{{modId}}_pokemon_graveler_alola",
-              "Condition": "RANDOM 0,250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_graveler",
               "AnimalId": "{{modId}}_pokemon_graveler",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_geodude_alola",
               "AnimalId": "{{modId}}_pokemon_geodude_alola",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_geodude",

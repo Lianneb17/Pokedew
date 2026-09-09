@@ -1491,11 +1491,7 @@
               "AnimalId": "{{modId}}_pokemon_metapod",
               "Condition": "{{Kanto active}}, RANDOM 0.077"
             },
-            {
-              "Id": "{{modId}}_spawn_egg_all_caterpie",
-              "AnimalId": "{{modId}}_pokemon_caterpie",
-              "Condition": "{{Kanto active}}, RANDOM 0.083"
-            },
+            
             {
               "Id": "{{modId}}_spawn_egg_all_charizard",
               "AnimalId": "{{modId}}_pokemon_charizard",
@@ -1545,6 +1541,11 @@
               "Id": "{{modId}}_spawn_egg_all_bulbasaur",
               "AnimalId": "{{modId}}_pokemon_bulbasaur",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1, RANDOM 0.500"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_all_caterpie",
+              "AnimalId": "{{modId}}_pokemon_caterpie",
+              "Condition": "{{Kanto active}}"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_all_default",
@@ -1690,11 +1691,6 @@
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 3, RANDOM 0.077"
             },
             {
-              "Id": "{{modId}}_spawn_egg_monster_nidoran_f",
-              "AnimalId": "{{modId}}_pokemon_nidoran_f",
-              "Condition": "{{Kanto active}}, RANDOM 0.083"
-            },
-            {
               "Id": "{{modId}}_spawn_egg_monster_charizard",
               "AnimalId": "{{modId}}_pokemon_charizard",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8, RANDOM 0.091"
@@ -1743,6 +1739,11 @@
               "Id": "{{modId}}_spawn_egg_monster_bulbasaur",
               "AnimalId": "{{modId}}_pokemon_bulbasaur",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1, RANDOM 0.500"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_monster_nidoran_f",
+              "AnimalId": "{{modId}}_pokemon_nidoran_f",
+              "Condition": "{{Kanto active}}"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_monster_default",
@@ -1861,12 +1862,7 @@
               "Id": "{{modId}}_spawn_egg_water1_poliwhirl",
               "AnimalId": "{{modId}}_pokemon_poliwhirl",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 3, RANDOM 0.125"
-            },
-            {
-              "Id": "{{modId}}_spawn_egg_water1_poliwag",
-              "AnimalId": "{{modId}}_pokemon_poliwag",
-              "Condition": "{{Kanto active}}, RANDOM 0.143"
-            },
+            },            
             {
               "Id": "{{modId}}_spawn_egg_water1_golduck",
               "AnimalId": "{{modId}}_pokemon_golduck",
@@ -1891,6 +1887,11 @@
               "Id": "{{modId}}_spawn_egg_water1_squirtle",
               "AnimalId": "{{modId}}_pokemon_squirtle",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1, RANDOM 0.500"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_water1_poliwag",
+              "AnimalId": "{{modId}}_pokemon_poliwag",
+              "Condition": "{{Kanto active}}, RANDOM 0.143"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_water1_default",
@@ -1973,7 +1974,7 @@
             {
               "Id": "{{modId}}_spawn_egg_bug_caterpie",
               "AnimalId": "{{modId}}_pokemon_caterpie",
-              "Condition": "{{Kanto active}}, RANDOM 0.500"
+              "Condition": "{{Kanto active}}"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_bug_default",
@@ -2061,7 +2062,7 @@
             {
               "Id": "{{modId}}_spawn_egg_flying_pidgey",
               "AnimalId": "{{modId}}_pokemon_pidgey",
-              "Condition": "{{Kanto active}}, RANDOM 0.500"
+              "Condition": "{{Kanto active}}"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_flying_default",
@@ -2484,7 +2485,7 @@
             {
               "Id": "{{modId}}_spawn_egg_field_rattata",
               "AnimalId": "{{modId}}_pokemon_rattata",
-              "Condition": "{{Kanto active}}, RANDOM 0.500"
+              "Condition": "{{Kanto active}}"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_field_default",
@@ -2572,7 +2573,7 @@
             {
               "Id": "{{modId}}_spawn_egg_fairy_pichu",
               "AnimalId": "{{modId}}_pokemon_pichu",
-              "Condition": "{{Kanto active}}, RANDOM 0.500"
+              "Condition": "{{Kanto active}}"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_fairy_default",
@@ -2633,11 +2634,6 @@
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4, RANDOM 0.077"
             },
             {
-              "Id": "{{modId}}_spawn_egg_grass_paras",
-              "AnimalId": "{{modId}}_pokemon_paras",
-              "Condition": "{{Kanto active}}, RANDOM 0.083"
-            },
-            {
               "Id": "{{modId}}_spawn_egg_grass_bellossom",
               "AnimalId": "{{modId}}_pokemon_bellossom",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 7, RANDOM 0.091"
@@ -2686,6 +2682,11 @@
               "Id": "{{modId}}_spawn_egg_grass_bulbasaur",
               "AnimalId": "{{modId}}_pokemon_bulbasaur",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1, RANDOM 0.500"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_grass_paras",
+              "AnimalId": "{{modId}}_pokemon_paras",
+              "Condition": "{{Kanto active}}"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_grass_default",
@@ -2756,11 +2757,6 @@
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 6, RANDOM 0.071"
             },
             {
-              "Id": "{{modId}}_spawn_egg_humanlike_tyrogue",
-              "AnimalId": "{{modId}}_pokemon_tyrogue",
-              "Condition": "{{Kanto active}}, RANDOM 0.077"
-            },
-            {
               "Id": "{{modId}}_spawn_egg_humanlike_hypno_female",
               "AnimalId": "{{modId}}_pokemon_hypno_female",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 7, RANDOM 0.083"
@@ -2816,6 +2812,11 @@
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1, RANDOM 0.500"
             },
             {
+              "Id": "{{modId}}_spawn_egg_humanlike_tyrogue",
+              "AnimalId": "{{modId}}_pokemon_tyrogue",
+              "Condition": "{{Kanto active}}"
+            },
+            {
               "Id": "{{modId}}_spawn_egg_group_humanlike_default",
               "AnimalId": "Golden Chicken"
             }
@@ -2869,11 +2870,6 @@
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8, RANDOM 0.200"
             },
             {
-              "Id": "{{modId}}_spawn_egg_water3_shellder",
-              "AnimalId": "{{modId}}_pokemon_shellder",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1, RANDOM 0.250"
-            },
-            {
               "Id": "{{modId}}_spawn_egg_water3_tentacruel",
               "AnimalId": "{{modId}}_pokemon_tentacruel",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8, RANDOM 0.333"
@@ -2882,6 +2878,11 @@
               "Id": "{{modId}}_spawn_egg_water3_tentacool",
               "AnimalId": "{{modId}}_pokemon_tentacool",
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 2, RANDOM 0.500"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_water3_shellder",
+              "AnimalId": "{{modId}}_pokemon_shellder",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_water3_default",
@@ -2984,7 +2985,7 @@
             {
               "Id": "{{modId}}_spawn_egg_mineral_geodude",
               "AnimalId": "{{modId}}_pokemon_geodude",
-              "Condition": "{{Kanto active}}, RANDOM 0.500"
+              "Condition": "{{Kanto active}}"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_mineral_default",
@@ -3042,7 +3043,7 @@
             {
               "Id": "{{modId}}_spawn_egg_amorphous_grimer",
               "AnimalId": "{{modId}}_pokemon_grimer",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1, RANDOM 0.500"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_amorphous_default",
@@ -3066,12 +3067,7 @@
               "Id": "{{modId}}_spawn_egg_water2_magikarp_female",
               "AnimalId": "{{modId}}_pokemon_magikarp_female",
               "Condition": "{{Kanto active}}, RANDOM 0.143"
-            },
-            {
-              "Id": "{{modId}}_spawn_egg_water2_magikarp_male",
-              "AnimalId": "{{modId}}_pokemon_magikarp_male",
-              "Condition": "{{Kanto active}}, RANDOM 0.167"
-            },
+            },            
             {
               "Id": "{{modId}}_spawn_egg_water2_seaking_female",
               "AnimalId": "{{modId}}_pokemon_seaking_female",
@@ -3093,6 +3089,11 @@
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1, RANDOM 0.500"
             },
             {
+              "Id": "{{modId}}_spawn_egg_water2_magikarp_male",
+              "AnimalId": "{{modId}}_pokemon_magikarp_male",
+              "Condition": "{{Kanto active}}"
+            },
+            {
               "Id": "{{modId}}_spawn_egg_group_water2_default",
               "AnimalId": "Golden Chicken"
             }
@@ -3103,7 +3104,7 @@
             {
               "Id": "{{modId}}_spawn_egg_ditto_ditto",
               "AnimalId": "{{modId}}_pokemon_ditto",
-              "Condition": "{{Kanto active}}, RANDOM 0.500"
+              "Condition": "{{Kanto active}}"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_ditto_default",
@@ -3116,63 +3117,58 @@
             {
               "Id": "{{modId}}_spawn_egg_dragon_dragonite",
               "AnimalId": "{{modId}}_pokemon_dragonite",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 10, RANDOM 0.062"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 10, RANDOM 0.067"
             },
             {
               "Id": "{{modId}}_spawn_egg_dragon_dragonair",
               "AnimalId": "{{modId}}_pokemon_dragonair",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4, RANDOM 0.067"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 4, RANDOM 0.071"
             },
             {
               "Id": "{{modId}}_spawn_egg_dragon_dratini",
               "AnimalId": "{{modId}}_pokemon_dratini",
-              "Condition": "{{Kanto active}}, RANDOM 0.071"
+              "Condition": "{{Kanto active}}, RANDOM 0.077"
             },
             {
               "Id": "{{modId}}_spawn_egg_dragon_gyarados_female",
               "AnimalId": "{{modId}}_pokemon_gyarados_female",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8, RANDOM 0.077"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8, RANDOM 0.042"
             },
             {
               "Id": "{{modId}}_spawn_egg_dragon_gyarados_male",
               "AnimalId": "{{modId}}_pokemon_gyarados_male",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8, RANDOM 0.083"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8, RANDOM 0.045"
             },
             {
               "Id": "{{modId}}_spawn_egg_dragon_magikarp_female",
               "AnimalId": "{{modId}}_pokemon_magikarp_female",
-              "Condition": "{{Kanto active}}, RANDOM 0.091"
+              "Condition": "{{Kanto active}}, RANDOM 0.050"
             },
             {
               "Id": "{{modId}}_spawn_egg_dragon_magikarp_male",
               "AnimalId": "{{modId}}_pokemon_magikarp_male",
-              "Condition": "{{Kanto active}}, RANDOM 0.100"
+              "Condition": "{{Kanto active}}, RANDOM 0.056"
             },
             {
               "Id": "{{modId}}_spawn_egg_dragon_kingdra",
               "AnimalId": "{{modId}}_pokemon_kingdra",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8, RANDOM 0.111"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 8, RANDOM 0.125"
             },
             {
               "Id": "{{modId}}_spawn_egg_dragon_seadra",
               "AnimalId": "{{modId}}_pokemon_seadra",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 5, RANDOM 0.125"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 5, RANDOM 0.143"
             },
             {
               "Id": "{{modId}}_spawn_egg_dragon_horsea",
               "AnimalId": "{{modId}}_pokemon_horsea",
-              "Condition": "{{Kanto active}}, RANDOM 0.143"
+              "Condition": "{{Kanto active}}, RANDOM 0.167"
             },
             {
               "Id": "{{modId}}_spawn_egg_dragon_arbok",
               "AnimalId": "{{modId}}_pokemon_arbok",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 5, RANDOM 0.167"
-            },
-            {
-              "Id": "{{modId}}_spawn_egg_dragon_ekans",
-              "AnimalId": "{{modId}}_pokemon_ekans",
-              "Condition": "{{Kanto active}}, RANDOM 0.200"
-            },
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 5, RANDOM 0.200"
+            },            
             {
               "Id": "{{modId}}_spawn_egg_dragon_charizard",
               "AnimalId": "{{modId}}_pokemon_charizard",
@@ -3189,6 +3185,11 @@
               "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 1, RANDOM 0.500"
             },
             {
+              "Id": "{{modId}}_spawn_egg_dragon_ekans",
+              "AnimalId": "{{modId}}_pokemon_ekans",
+              "Condition": "{{Kanto active}}"
+            },
+            {
               "Id": "{{modId}}_spawn_egg_group_dragon_default",
               "AnimalId": "Golden Chicken"
             }
@@ -3197,19 +3198,44 @@
         "{{modId}}_item_egg_group_noeggsdiscovered": {
           "AnimalSpawnList": [
             {
-              "Id": "{{modId}}_spawn_egg_noeggsdiscovered_xxx",
-              "AnimalId": "{{modId}}_pokemon_xxx",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current yyy, RANDOM 0.500"
+              "Id": "{{modId}}_spawn_egg_noeggsdiscovered_mew",
+              "AnimalId": "{{modId}}_pokemon_mew",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 10, RANDOM 0.125"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_noeggsdiscovered_mewtwo",
+              "AnimalId": "{{modId}}_pokemon_mewtwo",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 10, RANDOM 0.143"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_noeggsdiscovered_moltres_galar",
+              "AnimalId": "{{modId}}_pokemon_moltres_galar",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 9, RANDOM 0.167"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_noeggsdiscovered_moltres",
+              "AnimalId": "{{modId}}_pokemon_moltres",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 9, RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_spawn_egg_noeggsdiscovered_zapdos_galar",
               "AnimalId": "{{modId}}_pokemon_zapdos_galar",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 10, RANDOM 0.500"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 9, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_spawn_egg_noeggsdiscovered_zapdos",
               "AnimalId": "{{modId}}_pokemon_zapdos",
-              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 10, RANDOM 0.500"
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 9, RANDOM 0.333"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_noeggsdiscovered_articuno_galar",
+              "AnimalId": "{{modId}}_pokemon_articuno_galar",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 9, RANDOM 0.500"
+            },
+            {
+              "Id": "{{modId}}_spawn_egg_noeggsdiscovered_articuno",
+              "AnimalId": "{{modId}}_pokemon_articuno",
+              "Condition": "{{Kanto active}}, PLAYER_BASE_FARMING_LEVEL current 9"
             },
             {
               "Id": "{{modId}}_spawn_egg_group_nogeggsdiscovered_default",

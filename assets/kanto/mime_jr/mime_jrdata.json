@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_mime_jr": {
-          "DisplayName": "{{i18n:pokemon.mime_jr}}",
+          "DisplayName": "Mime_jr",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -65,8 +65,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_mime_jr",
           "Texture": "mime_jr/mime_jr",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_mime_jr_shiny",
@@ -81,7 +81,7 @@
           "ID": "{{modId}}_pokemon_mime_jr"
         },
         "{{modId}}_pokemon_mr_mime": {
-          "DisplayName": "{{i18n:pokemon.mr_mime}}",
+          "DisplayName": "Mr_mime",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -109,8 +109,8 @@
           "Sound": "{{modId}}_sound_mr_mime",
           "Texture": "mime_jr/mr_mime",
           "BabyTexture": "mime_jr/mime_jr",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_mr_mime_shiny",
@@ -126,7 +126,7 @@
           "ID": "{{modId}}_pokemon_mr_mime"
         },
         "{{modId}}_pokemon_mr_mime_galar": {
-          "DisplayName": "{{i18n:pokemon.mr_mime_galar}}",
+          "DisplayName": "Mr_mime_galar",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -148,8 +148,8 @@
           "Sound": "{{modId}}_sound_mr_mime",
           "Texture": "mime_jr/mr_mime_galar",
           "BabyTexture": "mime_jr/mime_jr",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_mr_mime_galar_shiny",
@@ -165,7 +165,7 @@
           "ID": "{{modId}}_pokemon_mr_mime_galar"
         },
         "{{modId}}_pokemon_mr_rime": {
-          "DisplayName": "{{i18n:pokemon.mr_rime}}",
+          "DisplayName": "Mr_rime",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -187,8 +187,8 @@
           "Sound": "{{modId}}_sound_mr_rime",
           "Texture": "mime_jr/mr_rime",
           "BabyTexture": "mime_jr/mime_jr",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_mr_rime_shiny",
@@ -212,8 +212,8 @@
       "Entries": {
         "{{modId}}_item_egg_mime_jr": {
           "Name": "{{modId}_item_egg_mime_jr",
-          "DisplayName": "{{i18n:egg.mime_jr.item}}",
-          "Description": "{{i18n:egg.mime_jr.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=mime_jr}}",
+          "Description": "{{i18n:egg.item.description |pokemon=mime_jr}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -239,17 +239,17 @@
             {
               "Id": "{{modId}}_egg_spawn_mr_rime",
               "AnimalId": "{{modId}}_pokemon_mr_rime",
-              "Condition": "RANDOM 0,250"
+              "Condition": "RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_mr_mime_galar",
               "AnimalId": "{{modId}}_pokemon_mr_mime_galar",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_galar_unlocked received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_mr_mime",
               "AnimalId": "{{modId}}_pokemon_mr_mime",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_mime_jr",

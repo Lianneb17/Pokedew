@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_nidoran_f": {
-          "DisplayName": "{{i18n:pokemon.nidoran_f}}",
+          "DisplayName": "Nidoran_f",
           "House": "PokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -60,8 +60,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_nidoran_f",
           "Texture": "nidoran_f/nidoran_f",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_nidoran_f_shiny",
@@ -76,7 +76,7 @@
           "ID": "{{modId}}_pokemon_nidoran_f"
         },
         "{{modId}}_pokemon_nidorina": {
-          "DisplayName": "{{i18n:pokemon.nidorina}}",
+          "DisplayName": "Nidorina",
           "House": "BigPokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -99,8 +99,8 @@
           "Sound": "{{modId}}_sound_nidorina",
           "Texture": "nidoran_f/nidorina",
           "BabyTexture": "nidoran_f/nidoran_f",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_nidorina_shiny",
@@ -116,7 +116,7 @@
           "ID": "{{modId}}_pokemon_nidorina"
         },
         "{{modId}}_pokemon_nidoqueen": {
-          "DisplayName": "{{i18n:pokemon.nidoqueen}}",
+          "DisplayName": "Nidoqueen",
           "House": "DeluxePokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -139,8 +139,8 @@
           "Sound": "{{modId}}_sound_nidoqueen",
           "Texture": "nidoran_f/nidoqueen",
           "BabyTexture": "nidoran_f/nidoran_f",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_nidoqueen_shiny",
@@ -164,8 +164,8 @@
       "Entries": {
         "{{modId}}_item_egg_nidoran_f": {
           "Name": "{{modId}_item_egg_nidoran_f",
-          "DisplayName": "{{i18n:egg.nidoran_f.item}}",
-          "Description": "{{i18n:egg.nidoran_f.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=nidoran_f}}",
+          "Description": "{{i18n:egg.item.description |pokemon=nidoran_f}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -191,12 +191,12 @@
             {
               "Id": "{{modId}}_egg_spawn_nidoqueen",
               "AnimalId": "{{modId}}_pokemon_nidoqueen",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_moon_stone_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_nidorina",
               "AnimalId": "{{modId}}_pokemon_nidorina",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_nidoran_f",

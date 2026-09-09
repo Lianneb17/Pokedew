@@ -15,7 +15,7 @@
             "{{AbsoluteFilePath: assets/kanto/moltres/moltres.wav}}"
           ],
           "ID": "{{modId}}_sound_moltres"
-        },
+        }
       },
       "LogName": "Adding sound changes",
       "Target": "Data/AudioChanges"
@@ -24,7 +24,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_moltres": {
-          "DisplayName": "{{i18n:pokemon.moltres}}",
+          "DisplayName": "Moltres",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -51,8 +51,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_moltres",
           "Texture": "moltres/moltres",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_moltres_shiny",
@@ -67,7 +67,7 @@
           "ID": "{{modId}}_pokemon_moltres"
         },
         "{{modId}}_pokemon_moltres_galar": {
-          "DisplayName": "{{i18n:pokemon.moltres_galar}}",
+          "DisplayName": "Moltres_galar",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -94,8 +94,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_moltres",
           "Texture": "moltres/moltres_galar",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_moltres_galar_shiny",
@@ -118,8 +118,8 @@
       "Entries": {
         "{{modId}}_item_egg_moltres": {
           "Name": "{{modId}_item_egg_moltres",
-          "DisplayName": "{{i18n:egg.moltres.item}}",
-          "Description": "{{i18n:egg.moltres.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=moltres}}",
+          "Description": "{{i18n:egg.item.description |pokemon=moltres}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "1100",
@@ -145,7 +145,7 @@
             {
               "Id": "{{modId}}_egg_spawn_moltres_galar",
               "AnimalId": "{{modId}}_pokemon_moltres_galar",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_galar_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_moltres",

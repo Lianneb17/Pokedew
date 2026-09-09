@@ -24,7 +24,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_lapras": {
-          "DisplayName": "{{i18n:pokemon.lapras}}",
+          "DisplayName": "Lapras",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -46,8 +46,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_lapras",
           "Texture": "lapras/lapras",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_lapras_shiny",
@@ -70,8 +70,8 @@
       "Entries": {
         "{{modId}}_item_egg_lapras": {
           "Name": "{{modId}_item_egg_lapras",
-          "DisplayName": "{{i18n:egg.lapras.item}}",
-          "Description": "{{i18n:egg.lapras.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=lapras}}",
+          "Description": "{{i18n:egg.item.description |pokemon=lapras}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "1100",

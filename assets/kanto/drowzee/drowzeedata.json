@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_drowzee": {
-          "DisplayName": "{{i18n:pokemon.drowzee}}",
+          "DisplayName": "Drowzee",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_drowzee",
           "Texture": "drowzee/drowzee",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_drowzee_shiny",
@@ -68,8 +68,7 @@
           "ID": "{{modId}}_pokemon_drowzee"
         },
         "{{modId}}_pokemon_hypno": {
-          "BabyTexture": "drowzee/drowzee",
-          "DisplayName": "{{i18n:pokemon.hypno}}",
+          "DisplayName": "Hypno",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +89,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_hypno",
           "Texture": "drowzee/hypno",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "drowzee/drowzee",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_hypno_shiny",
@@ -115,8 +115,8 @@
       "Entries": {
         "{{modId}}_item_egg_drowzee": {
           "Name": "{{modId}_item_egg_drowzee",
-          "DisplayName": "{{i18n:egg.drowzee.item}}",
-          "Description": "{{i18n:egg.drowzee.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=drowzee}}",
+          "Description": "{{i18n:egg.item.description |pokemon=drowzee}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -142,7 +142,7 @@
             {
               "Id": "{{modId}}_egg_spawn_hypno",
               "AnimalId": "{{modId}}_pokemon_hypno",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_drowzee",

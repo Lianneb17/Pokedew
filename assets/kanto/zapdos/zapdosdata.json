@@ -24,7 +24,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_zapdos": {
-          "DisplayName": "{{i18n:pokemon.zapdos}}",
+          "DisplayName": "Zapdos",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -56,8 +56,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_zapdos",
           "Texture": "zapdos/zapdos",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_zapdos_shiny",
@@ -72,7 +72,7 @@
           "ID": "{{modId}}_pokemon_zapdos"
         },
         "{{modId}}_pokemon_zapdos_galar": {
-          "DisplayName": "{{i18n:pokemon.zapdos_galar}}",
+          "DisplayName": "Zapdos_galar",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -99,15 +99,13 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_zapdos",
           "Texture": "zapdos/zapdos_galar",
-          "BabyTexture": "zapdos/zapdo",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_zapdos_galar_shiny",
               "Weight": "0.1",
-              "Texture": "zapdos/zapdos_galars",
-              "BabyTexture": "zapdos/zapdos"
+              "Texture": "zapdos/zapdos_galars"
             }
           ],
           "SleepFrame": "16",
@@ -125,8 +123,8 @@
       "Entries": {
         "{{modId}}_item_egg_zapdos": {
           "Name": "{{modId}_item_egg_zapdos",
-          "DisplayName": "{{i18n:egg.zapdos.item}}",
-          "Description": "{{i18n:egg.zapdos.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=zapdos}}",
+          "Description": "{{i18n:egg.item.description |pokemon=zapdos}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "1100",
@@ -152,7 +150,7 @@
             {
               "Id": "{{modId}}_egg_spawn_zapdos_galar",
               "AnimalId": "{{modId}}_pokemon_zapdos_galar",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_galar_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_zapdos",

@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_machop": {
-          "DisplayName": "{{i18n:pokemon.machop}}",
+          "DisplayName": "Machop",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_machop",
           "Texture": "machop/machop",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_machop_shiny",
@@ -75,7 +75,7 @@
           "ID": "{{modId}}_pokemon_machop"
         },
         "{{modId}}_pokemon_machoke": {
-          "DisplayName": "{{i18n:pokemon.machoke}}",
+          "DisplayName": "Machoke",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -97,8 +97,8 @@
           "Sound": "{{modId}}_sound_machoke",
           "Texture": "machop/machoke",
           "BabyTexture": "machop/machop",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_machoke_shiny",
@@ -114,7 +114,7 @@
           "ID": "{{modId}}_pokemon_machoke"
         },
         "{{modId}}_pokemon_machamp": {
-          "DisplayName": "{{i18n:pokemon.machamp}}",
+          "DisplayName": "Machamp",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -136,8 +136,8 @@
           "Sound": "{{modId}}_sound_machamp",
           "Texture": "machop/machamp",
           "BabyTexture": "machop/machop",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_machamp_shiny",
@@ -161,8 +161,8 @@
       "Entries": {
         "{{modId}}_item_egg_machop": {
           "Name": "{{modId}_item_egg_machop",
-          "DisplayName": "{{i18n:egg.machop.item}}",
-          "Description": "{{i18n:egg.machop.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=machop}}",
+          "Description": "{{i18n:egg.item.description |pokemon=machop}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -196,12 +196,12 @@
             {
               "Id": "{{modId}}_egg_spawn_machamp",
               "AnimalId": "{{modId}}_pokemon_machamp",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_machamp_completed received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_machoke",
               "AnimalId": "{{modId}}_pokemon_machoke",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_machop",

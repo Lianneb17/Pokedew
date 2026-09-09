@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_slowpoke": {
-          "DisplayName": "{{i18n:pokemon.slowpoke}}",
+          "DisplayName": "Slowpoke",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -60,8 +60,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_slowpoke",
           "Texture": "slowpoke/slowpoke",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_slowpoke_shiny",
@@ -76,7 +76,7 @@
           "ID": "{{modId}}_pokemon_slowpoke"
         },
         "{{modId}}_pokemon_slowpoke_galar": {
-          "DisplayName": "{{i18n:pokemon.slowpoke_galar}}",
+          "DisplayName": "Slowpoke_galar",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -98,8 +98,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_slowpoke",
           "Texture": "slowpoke/slowpoke_galar",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_slowpoke_galar_shiny",
@@ -114,7 +114,7 @@
           "ID": "{{modId}}_pokemon_slowpoke_galar"
         },
         "{{modId}}_pokemon_slowbro": {
-          "DisplayName": "{{i18n:pokemon.slowbro}}",
+          "DisplayName": "Slowbro",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -137,8 +137,8 @@
           "Sound": "{{modId}}_sound_slowbro",
           "Texture": "slowpoke/slowbro",
           "BabyTexture": "slowpoke/slowpoke",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_slowbro_shiny",
@@ -154,7 +154,7 @@
           "ID": "{{modId}}_pokemon_slowbro"
         },
         "{{modId}}_pokemon_slowbro_galar": {
-          "DisplayName": "{{i18n:pokemon.slowbro_galar}}",
+          "DisplayName": "Slowbro_galar",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -176,15 +176,15 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_slowbro",
           "Texture": "slowpoke/slowbro_galar",
-          "BabyTexture": "slowpoke/slowpoke_galar",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "slowpoke/slowpoke",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_slowbro_galar_shiny",
               "Weight": "0.1",
               "Texture": "slowpoke/slowbro_galars",
-              "BabyTexture": "slowpoke/slowpoke_galars"
+              "BabyTexture": "slowpoke/slowpokes"
             }
           ],
           "SleepFrame": "16",
@@ -194,7 +194,7 @@
           "ID": "{{modId}}_pokemon_slowbro_galar"
         },
         "{{modId}}_pokemon_slowking": {
-          "DisplayName": "{{i18n:pokemon.slowking}}",
+          "DisplayName": "Slowking",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -217,8 +217,8 @@
           "Sound": "{{modId}}_sound_slowking",
           "Texture": "slowpoke/slowking",
           "BabyTexture": "slowpoke/slowpoke",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_slowking_shiny",
@@ -234,7 +234,7 @@
           "ID": "{{modId}}_pokemon_slowking"
         },
         "{{modId}}_pokemon_slowking_galar": {
-          "DisplayName": "{{i18n:pokemon.slowking_galar}}",
+          "DisplayName": "Slowking_galar",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -256,15 +256,15 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_slowking",
           "Texture": "slowpoke/slowking_galar",
-          "BabyTexture": "slowpoke/slowpoke_galar",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "slowpoke/slowpoke",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_slowking_galar_shiny",
               "Weight": "0.1",
               "Texture": "slowpoke/slowking_galars",
-              "BabyTexture": "slowpoke/slowpoke_galars"
+              "BabyTexture": "slowpoke/slowpokes"
             }
           ],
           "SleepFrame": "16",
@@ -282,8 +282,8 @@
       "Entries": {
         "{{modId}}_item_egg_slowpoke": {
           "Name": "{{modId}_item_egg_slowpoke",
-          "DisplayName": "{{i18n:egg.slowpoke.item}}",
-          "Description": "{{i18n:egg.slowpoke.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=slowpoke}}",
+          "Description": "{{i18n:egg.item.description |pokemon=slowpoke}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -309,27 +309,27 @@
             {
               "Id": "{{modId}}_egg_spawn_slowking_galar",
               "AnimalId": "{{modId}}_pokemon_slowking_galar",
-              "Condition": "RANDOM 0,167"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_galar_unlocked received, RANDOM 0.167"
             },
             {
               "Id": "{{modId}}_egg_spawn_slowking",
               "AnimalId": "{{modId}}_pokemon_slowking",
-              "Condition": "RANDOM 0,200"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_slowking_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_galarica_wreath_received received, RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_egg_spawn_slowbro_galar",
               "AnimalId": "{{modId}}_pokemon_slowbro_galar",
-              "Condition": "RANDOM 0,250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_galar_unlocked received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_slowbro",
               "AnimalId": "{{modId}}_pokemon_slowbro",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_galarica_cuff_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_slowpoke_galar",
               "AnimalId": "{{modId}}_pokemon_slowpoke_galar",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_galar_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_slowpoke",

@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_diglett": {
-          "DisplayName": "{{i18n:pokemon.diglett}}",
+          "DisplayName": "Diglett",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_diglett",
           "Texture": "diglett/diglett",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_diglett_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_diglett"
         },
         "{{modId}}_pokemon_diglett_alola": {
-          "DisplayName": "{{i18n:pokemon.diglett_alola}}",
+          "DisplayName": "Diglett_alola",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -89,8 +89,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_diglett",
           "Texture": "diglett/diglett_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_diglett_alola_shiny",
@@ -105,8 +105,7 @@
           "ID": "{{modId}}_pokemon_diglett_alola"
         },
         "{{modId}}_pokemon_dugtrio": {
-          "BabyTexture": "diglett/diglett",
-          "DisplayName": "{{i18n:pokemon.dugtrio}}",
+          "DisplayName": "Dugtrio",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -127,8 +126,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_dugtrio",
           "Texture": "diglett/dugtrio",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "diglett/diglett",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_dugtrio_shiny",
@@ -144,8 +144,7 @@
           "ID": "{{modId}}_pokemon_dugtrio"
         },
         "{{modId}}_pokemon_dugtrio_alola": {
-          "BabyTexture": "diglett/diglett_alola",
-          "DisplayName": "{{i18n:pokemon.dugtrio_alola}}",
+          "DisplayName": "Dugtrio_alola",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -166,14 +165,15 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_dugtrio",
           "Texture": "diglett/dugtrio_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "diglett/diglett",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_dugtrio_alola_shiny",
               "Weight": "0.1",
               "Texture": "diglett/dugtrio_alolas",
-              "BabyTexture": "diglett/diglett_alolas"
+              "BabyTexture": "diglett/digletts"
             }
           ],
           "SleepFrame": "16",
@@ -191,8 +191,8 @@
       "Entries": {
         "{{modId}}_item_egg_diglett": {
           "Name": "{{modId}_item_egg_diglett",
-          "DisplayName": "{{i18n:egg.diglett.item}}",
-          "Description": "{{i18n:egg.diglett.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=diglett}}",
+          "Description": "{{i18n:egg.item.description |pokemon=diglett}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -218,17 +218,17 @@
             {
               "Id": "{{modId}}_egg_spawn_dugtrio_alola",
               "AnimalId": "{{modId}}_pokemon_dugtrio_alola",
-              "Condition": "RANDOM 0,250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_dugtrio",
               "AnimalId": "{{modId}}_pokemon_dugtrio",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_diglett_alola",
               "AnimalId": "{{modId}}_pokemon_diglett_alola",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_diglett",

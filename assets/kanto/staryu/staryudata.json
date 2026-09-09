@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_staryu": {
-          "DisplayName": "{{i18n:pokemon.staryu}}",
+          "DisplayName": "Staryu",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_staryu",
           "Texture": "staryu/staryu",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_staryu_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_staryu"
         },
         "{{modId}}_pokemon_starmie": {
-          "DisplayName": "{{i18n:pokemon.starmie}}",
+          "DisplayName": "Starmie",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_starmie",
           "Texture": "staryu/starmie",
           "BabyTexture": "staryu/staryu",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_starmie_shiny",
@@ -115,8 +115,8 @@
       "Entries": {
         "{{modId}}_item_egg_staryu": {
           "Name": "{{modId}_item_egg_staryu",
-          "DisplayName": "{{i18n:egg.staryu.item}}",
-          "Description": "{{i18n:egg.staryu.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=staryu}}",
+          "Description": "{{i18n:egg.item.description |pokemon=staryu}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -142,7 +142,7 @@
             {
               "Id": "{{modId}}_egg_spawn_starmie",
               "AnimalId": "{{modId}}_pokemon_starmie",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_water_stone_received received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_staryu",

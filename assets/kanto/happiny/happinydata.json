@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_happiny": {
-          "DisplayName": "{{i18n:pokemon.happiny}}",
+          "DisplayName": "Happiny",
           "House": "PokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -59,8 +59,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_happiny",
           "Texture": "happiny/happiny",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_happiny_shiny",
@@ -75,7 +75,7 @@
           "ID": "{{modId}}_pokemon_happiny"
         },
         "{{modId}}_pokemon_chansey": {
-          "DisplayName": "{{i18n:pokemon.chansey}}",
+          "DisplayName": "Chansey",
           "House": "BigPokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -97,8 +97,8 @@
           "Sound": "{{modId}}_sound_chansey",
           "Texture": "happiny/chansey",
           "BabyTexture": "happiny/happiny",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_chansey_shiny",
@@ -114,7 +114,7 @@
           "ID": "{{modId}}_pokemon_chansey"
         },
         "{{modId}}_pokemon_blissey": {
-          "DisplayName": "{{i18n:pokemon.blissey}}",
+          "DisplayName": "Blissey",
           "House": "DeluxePokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -136,8 +136,8 @@
           "Sound": "{{modId}}_sound_blissey",
           "Texture": "happiny/blissey",
           "BabyTexture": "happiny/happiny",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_blissey_shiny",
@@ -161,8 +161,8 @@
       "Entries": {
         "{{modId}}_item_egg_happiny": {
           "Name": "{{modId}_item_egg_happiny",
-          "DisplayName": "{{i18n:egg.happiny.item}}",
-          "Description": "{{i18n:egg.happiny.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=happiny}}",
+          "Description": "{{i18n:egg.item.description |pokemon=happiny}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "1100",
@@ -188,12 +188,12 @@
             {
               "Id": "{{modId}}_egg_spawn_blissey",
               "AnimalId": "{{modId}}_pokemon_blissey",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_chansey",
               "AnimalId": "{{modId}}_pokemon_chansey",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_happiny",

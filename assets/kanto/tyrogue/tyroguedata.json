@@ -45,7 +45,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_tyrogue": {
-          "DisplayName": "{{i18n:pokemon.tyrogue}}",
+          "DisplayName": "Tyrogue",
           "House": "PokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -66,8 +66,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tyrogue",
           "Texture": "tyrogue/tyrogue",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_tyrogue_shiny",
@@ -82,7 +82,7 @@
           "ID": "{{modId}}_pokemon_tyrogue"
         },
         "{{modId}}_pokemon_hitmonlee": {
-          "DisplayName": "{{i18n:pokemon.hitmonlee}}",
+          "DisplayName": "Hitmonlee",
           "House": "BigPokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -104,8 +104,8 @@
           "Sound": "{{modId}}_sound_hitmonlee",
           "Texture": "tyrogue/hitmonlee",
           "BabyTexture": "tyrogue/tyrogue",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_hitmonlee_shiny",
@@ -121,7 +121,7 @@
           "ID": "{{modId}}_pokemon_hitmonlee"
         },
         "{{modId}}_pokemon_hitmonchan": {
-          "DisplayName": "{{i18n:pokemon.hitmonchan}}",
+          "DisplayName": "Hitmonchan",
           "House": "BigPokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -143,8 +143,8 @@
           "Sound": "{{modId}}_sound_hitmonchan",
           "Texture": "tyrogue/hitmonchan",
           "BabyTexture": "tyrogue/tyrogue",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_hitmonchan_shiny",
@@ -160,7 +160,7 @@
           "ID": "{{modId}}_pokemon_hitmonchan"
         },
         "{{modId}}_pokemon_hitmontop": {
-          "DisplayName": "{{i18n:pokemon.hitmontop}}",
+          "DisplayName": "Hitmontop",
           "House": "BigPokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -182,8 +182,8 @@
           "Sound": "{{modId}}_sound_hitmontop",
           "Texture": "tyrogue/hitmontop",
           "BabyTexture": "tyrogue/tyrogue",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_hitmontop_shiny",
@@ -207,8 +207,8 @@
       "Entries": {
         "{{modId}}_item_egg_tyrogue": {
           "Name": "{{modId}_item_egg_tyrogue",
-          "DisplayName": "{{i18n:egg.tyrogue.item}}",
-          "Description": "{{i18n:egg.tyrogue.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=tyrogue}}",
+          "Description": "{{i18n:egg.item.description |pokemon=tyrogue}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -242,17 +242,17 @@
             {
               "Id": "{{modId}}_egg_spawn_hitmontop",
               "AnimalId": "{{modId}}_pokemon_hitmontop",
-              "Condition": "RANDOM 0,250"
+              "Condition": "RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_hitmonchan",
               "AnimalId": "{{modId}}_pokemon_hitmonchan",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_hitmonlee",
               "AnimalId": "{{modId}}_pokemon_hitmonlee",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_tyrogue",

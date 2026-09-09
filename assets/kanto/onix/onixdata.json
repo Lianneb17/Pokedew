@@ -16,19 +16,12 @@
           ],
           "ID": "{{modId}}_sound_onix"
         },
-        "{{modId}}_sound_steelix_male": {
+        "{{modId}}_sound_steelix": {
           "Category": "Sound",
           "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/onix/steelix_male.wav}}"
+            "{{AbsoluteFilePath: assets/kanto/onix/steelix.wav}}"
           ],
-          "ID": "{{modId}}_sound_steelix_male"
-        },
-        "{{modId}}_sound_steelix_female": {
-          "Category": "Sound",
-          "FilePaths": [
-            "{{AbsoluteFilePath: assets/kanto/onix/steelix_female.wav}}"
-          ],
-          "ID": "{{modId}}_sound_steelix_female"
+          "ID": "{{modId}}_sound_steelix"
         }
       },
       "LogName": "Adding sound changes",
@@ -38,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_onix": {
-          "DisplayName": "{{i18n:pokemon.onix}}",
+          "DisplayName": "Onix",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -59,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_onix",
           "Texture": "onix/onix",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_onix_shiny",
@@ -75,7 +68,7 @@
           "ID": "{{modId}}_pokemon_onix"
         },
         "{{modId}}_pokemon_steelix_male": {
-          "DisplayName": "{{i18n:pokemon.steelix_male}}",
+          "DisplayName": "{{i18n:pokemon.male |name=Steelix}}",
           "House": "BigPokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -94,11 +87,11 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_steelix_male",
+          "Sound": "{{modId}}_sound_steelix",
           "Texture": "onix/steelix_male",
           "BabyTexture": "onix/onix",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_steelix_male_shiny",
@@ -114,7 +107,7 @@
           "ID": "{{modId}}_pokemon_steelix_male"
         },
         "{{modId}}_pokemon_steelix_female": {
-          "DisplayName": "{{i18n:pokemon.steelix_female}}",
+          "DisplayName": "{{i18n:pokemon.female |name=Steelix}}",
           "House": "BigPokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -133,11 +126,11 @@
           ],
           "DaysToProduce": "3",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_steelix_female",
+          "Sound": "{{modId}}_sound_steelix",
           "Texture": "onix/steelix_female",
           "BabyTexture": "onix/onix",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_steelix_female_shiny",
@@ -161,8 +154,8 @@
       "Entries": {
         "{{modId}}_item_egg_onix": {
           "Name": "{{modId}_item_egg_onix",
-          "DisplayName": "{{i18n:egg.onix.item}}",
-          "Description": "{{i18n:egg.onix.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=onix}}",
+          "Description": "{{i18n:egg.item.description |pokemon=onix}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -188,12 +181,12 @@
             {
               "Id": "{{modId}}_egg_spawn_steelix_female",
               "AnimalId": "{{modId}}_pokemon_steelix_female",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_steelix_completed received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_steelix_male",
               "AnimalId": "{{modId}}_pokemon_steelix_male",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_steelix_completed received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_onix",

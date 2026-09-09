@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_magnemite": {
-          "DisplayName": "{{i18n:pokemon.magnemite}}",
+          "DisplayName": "Magnemite",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -66,8 +66,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_magnemite",
           "Texture": "magnemite/magnemite",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_magnemite_shiny",
@@ -82,7 +82,7 @@
           "ID": "{{modId}}_pokemon_magnemite"
         },
         "{{modId}}_pokemon_magneton": {
-          "DisplayName": "{{i18n:pokemon.magneton}}",
+          "DisplayName": "Magneton",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -111,8 +111,8 @@
           "Sound": "{{modId}}_sound_magneton",
           "Texture": "magnemite/magneton",
           "BabyTexture": "magnemite/magnemite",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_magneton_shiny",
@@ -128,7 +128,7 @@
           "ID": "{{modId}}_pokemon_magneton"
         },
         "{{modId}}_pokemon_magnezone": {
-          "DisplayName": "{{i18n:pokemon.magnezone}}",
+          "DisplayName": "Magnezone",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -157,8 +157,8 @@
           "Sound": "{{modId}}_sound_magnezone",
           "Texture": "magnemite/magnezone",
           "BabyTexture": "magnemite/magnemite",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_magnezone_shiny",
@@ -182,8 +182,8 @@
       "Entries": {
         "{{modId}}_item_egg_magnemite": {
           "Name": "{{modId}_item_egg_magnemite",
-          "DisplayName": "{{i18n:egg.magnemite.item}}",
-          "Description": "{{i18n:egg.magnemite.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=magnemite}}",
+          "Description": "{{i18n:egg.item.description |pokemon=magnemite}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -209,12 +209,12 @@
             {
               "Id": "{{modId}}_egg_spawn_magnezone",
               "AnimalId": "{{modId}}_pokemon_magnezone",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_thunder_stone_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_magneton",
               "AnimalId": "{{modId}}_pokemon_magneton",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_magnemite",

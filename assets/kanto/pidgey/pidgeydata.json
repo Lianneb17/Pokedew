@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_pidgey": {
-          "DisplayName": "{{i18n:pokemon.pidgey}}",
+          "DisplayName": "Pidgey",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -65,8 +65,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pidgey",
           "Texture": "pidgey/pidgey",
-          "SpriteWidth": "31",
-          "SpriteHeight": "25",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_pidgey_shiny",
@@ -81,8 +81,7 @@
           "ID": "{{modId}}_pokemon_pidgey"
         },
         "{{modId}}_pokemon_pidgeotto": {
-          "BabyTexture": "pidgey/pidgey",
-          "DisplayName": "{{i18n:pokemon.pidgeotto}}",
+          "DisplayName": "Pidgeotto",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -109,8 +108,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pidgeotto",
           "Texture": "pidgey/pidgeotto",
-          "SpriteWidth": "31",
-          "SpriteHeight": "25",
+          "BabyTexture": "pidgey/pidgey",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_pidgeotto_shiny",
@@ -126,8 +126,7 @@
           "ID": "{{modId}}_pokemon_pidgeotto"
         },
         "{{modId}}_pokemon_pidgeot": {
-          "BabyTexture": "pidgey/pidgey",
-          "DisplayName": "{{i18n:pokemon.pidgeot}}",
+          "DisplayName": "Pidgeot",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -154,8 +153,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pidgeot",
           "Texture": "pidgey/pidgeot",
-          "SpriteWidth": "31",
-          "SpriteHeight": "25",
+          "BabyTexture": "pidgey/pidgey",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_pidgeot_shiny",
@@ -179,8 +179,8 @@
       "Entries": {
         "{{modId}}_item_egg_pidgey": {
           "Name": "{{modId}_item_egg_pidgey",
-          "DisplayName": "{{i18n:egg.pidgey.item}}",
-          "Description": "{{i18n:egg.pidgey.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=pidgey}}",
+          "Description": "{{i18n:egg.item.description |pokemon=pidgey}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "300",
@@ -206,12 +206,12 @@
             {
               "Id": "{{modId}}_egg_spawn_pidgeot",
               "AnimalId": "{{modId}}_pokemon_pidgeot",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_pidgeotto",
               "AnimalId": "{{modId}}_pokemon_pidgeotto",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_pidgey",

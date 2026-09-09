@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_krabby": {
-          "DisplayName": "{{i18n:pokemon.krabby}}",
+          "DisplayName": "Krabby",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_krabby",
           "Texture": "krabby/krabby",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_krabby_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_krabby"
         },
         "{{modId}}_pokemon_kingler": {
-          "DisplayName": "{{i18n:pokemon.kingler}}",
+          "DisplayName": "Kingler",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_kingler",
           "Texture": "krabby/kingler",
           "BabyTexture": "krabby/krabby",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_kingler_shiny",
@@ -115,8 +115,8 @@
       "Entries": {
         "{{modId}}_item_egg_krabby": {
           "Name": "{{modId}_item_egg_krabby",
-          "DisplayName": "{{i18n:egg.krabby.item}}",
-          "Description": "{{i18n:egg.krabby.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=krabby}}",
+          "Description": "{{i18n:egg.item.description |pokemon=krabby}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -142,7 +142,7 @@
             {
               "Id": "{{modId}}_egg_spawn_kingler",
               "AnimalId": "{{modId}}_pokemon_kingler",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_krabby",

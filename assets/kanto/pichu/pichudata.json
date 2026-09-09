@@ -4,7 +4,7 @@
       "Action": "Load",
       "FromFile": "assets/kanto/pichu/{{TargetWithoutPath}}.png",
       "LogName": "Load images",
-      "Target": "pichu/shopicon, pichu/pichu, pichu/pichus, pichu/pikachu_male, pichu/pikachu_males, pichu/pikachu_female, pichu/pikachu_females, pichu/raichu_male, pichu/raichu_males, pichu/raichu_female, pichu/raichu_females, pichu/raichu_alola_male, pichu/raichu_alola_males, pichu/raichu_alola_female, pichu/raichu_alola_females"
+      "Target": "pichu/pichu, pichu/pichus, pichu/pikachu_male, pichu/pikachu_males, pichu/pikachu_female, pichu/pikachu_females, pichu/raichu_male, pichu/raichu_males, pichu/raichu_female, pichu/raichu_females, pichu/raichu_alola_male, pichu/raichu_alola_males, pichu/raichu_alola_female, pichu/raichu_alola_females"
     },
     {
       "Action": "EditData",
@@ -38,41 +38,9 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_pichu": {
-          "DisplayName": "{{i18n:pokemon.pichu}}",
+          "DisplayName": "Pichu",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
-          "PurchasePrice": "1500",
-          "ShopTexture": "pichu/shopicon",
-          "RequiredBuilding": "PokeBarn",
-          "UnlockCondition": "{{Kanto active}}",
-          "ShopDescription": "{{i18n:pokemon.pichu.shop}}",
-          "ShopMissingBuildingDescription": "{{i18n:pokemon.all.shop.missing}}",
-          "AlternatePurchaseTypes": [
-            {
-              "ID": "{{modId}}_pokemon_purchase_pichu_DeluxePokeBarn",
-              "AnimalIDs": [
-                "{{modId}}_pokemon_raichu_male",
-                "{{modId}}_pokemon_raichu_female",
-                "{{modId}}_pokemon_raichu_alola_male",
-                "{{modId}}_pokemon_raichu_alola_female"
-              ],
-              "Condition": "BUILDINGS_CONSTRUCTED All \"DeluxePokeBarn\", RANDOM 0,333"
-            },
-            {
-              "ID": "{{modId}}_pokemon_purchase_pichu_BigPokeBarn",
-              "AnimalIDs": [
-                "{{modId}}_pokemon_pikachu_male",
-                "{{modId}}_pokemon_pikachu_female"
-              ],
-              "Condition": "BUILDINGS_CONSTRUCTED All \"BigPokeBarn\", RANDOM 0,500"
-            },
-            {
-              "ID": "{{modId}}_pokemon_purchase_pichu_PokeBarn",
-              "AnimalIDs": [
-                "{{modId}}_pokemon_pichu"
-              ]
-            }
-          ],
           "EggItemIds": [
             "{{modId}}_item_egg_pichu",
             "{{modId}}_item_egg_group_field",
@@ -99,8 +67,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_pichu",
           "Texture": "pichu/pichu",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_pichu_shiny",
@@ -112,11 +80,10 @@
           "UseDoubleUniqueAnimationFrames": "True",
           "CanSwim": "False",
           "SellPrice": "3000",
-          "ShowInSummitCredits": "True",
           "ID": "{{modId}}_pokemon_pichu"
         },
         "{{modId}}_pokemon_pikachu_male": {
-          "DisplayName": "{{i18n:pokemon.pikachu_male}}",
+          "DisplayName": "{{i18n:pokemon.male |name=Pikachu}}",
           "House": "BigPokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -143,11 +110,11 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_pikachu_male",
+          "Sound": "{{modId}}_sound_pikachu",
           "Texture": "pichu/pikachu_male",
           "BabyTexture": "pichu/pichu",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_pikachu_male_shiny",
@@ -163,7 +130,7 @@
           "ID": "{{modId}}_pokemon_pikachu_male"
         },
         "{{modId}}_pokemon_pikachu_female": {
-          "DisplayName": "{{i18n:pokemon.pikachu_female}}",
+          "DisplayName": "{{i18n:pokemon.female |name=Pikachu}}",
           "House": "BigPokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -190,11 +157,11 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_pikachu_female",
+          "Sound": "{{modId}}_sound_pikachu",
           "Texture": "pichu/pikachu_female",
           "BabyTexture": "pichu/pichu",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_pikachu_female_shiny",
@@ -210,7 +177,7 @@
           "ID": "{{modId}}_pokemon_pikachu_female"
         },
         "{{modId}}_pokemon_raichu_male": {
-          "DisplayName": "{{i18n:pokemon.raichu_male}}",
+          "DisplayName": "{{i18n:pokemon.male |name=Raichu}}",
           "House": "DeluxePokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -237,11 +204,11 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_raichu_male",
+          "Sound": "{{modId}}_sound_raichu",
           "Texture": "pichu/raichu_male",
           "BabyTexture": "pichu/pichu",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_raichu_male_shiny",
@@ -257,7 +224,7 @@
           "ID": "{{modId}}_pokemon_raichu_male"
         },
         "{{modId}}_pokemon_raichu_female": {
-          "DisplayName": "{{i18n:pokemon.raichu_female}}",
+          "DisplayName": "{{i18n:pokemon.female |name=Raichu}}",
           "House": "DeluxePokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -284,11 +251,11 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_raichu_female",
+          "Sound": "{{modId}}_sound_raichu",
           "Texture": "pichu/raichu_female",
           "BabyTexture": "pichu/pichu",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_raichu_female_shiny",
@@ -304,7 +271,7 @@
           "ID": "{{modId}}_pokemon_raichu_female"
         },
         "{{modId}}_pokemon_raichu_alola_male": {
-          "DisplayName": "{{i18n:pokemon.raichu_alola_male}}",
+          "DisplayName": "{{i18n:pokemon.male |name=Raichu_alola}}",
           "House": "DeluxePokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -331,11 +298,11 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_raichu_male",
+          "Sound": "{{modId}}_sound_raichu",
           "Texture": "pichu/raichu_alola_male",
           "BabyTexture": "pichu/pichu",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_raichu_alola_male_shiny",
@@ -351,7 +318,7 @@
           "ID": "{{modId}}_pokemon_raichu_alola_male"
         },
         "{{modId}}_pokemon_raichu_alola_female": {
-          "DisplayName": "{{i18n:pokemon.raichu_alola_female}}",
+          "DisplayName": "{{i18n:pokemon.female |name=Raichu_alola}}",
           "House": "DeluxePokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -378,11 +345,11 @@
           ],
           "DaysToProduce": "2",
           "ProduceOnMature": "True",
-          "Sound": "{{modId}}_sound_raichu_female",
+          "Sound": "{{modId}}_sound_raichu",
           "Texture": "pichu/raichu_alola_female",
           "BabyTexture": "pichu/pichu",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_raichu_alola_female_shiny",
@@ -406,8 +373,8 @@
       "Entries": {
         "{{modId}}_item_egg_pichu": {
           "Name": "{{modId}_item_egg_pichu",
-          "DisplayName": "{{i18n:egg.pichu.item}}",
-          "Description": "{{i18n:egg.pichu.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=pichu}}",
+          "Description": "{{i18n:egg.item.description |pokemon=pichu}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "300",
@@ -433,32 +400,32 @@
             {
               "Id": "{{modId}}_egg_spawn_raichu_alola_female",
               "AnimalId": "{{modId}}_pokemon_raichu_alola_female",
-              "Condition": "RANDOM 0,027"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.125"
             },
             {
               "Id": "{{modId}}_egg_spawn_raichu_alola_male",
               "AnimalId": "{{modId}}_pokemon_raichu_alola_male",
-              "Condition": "RANDOM 0,028"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.143"
             },
             {
               "Id": "{{modId}}_egg_spawn_raichu_female",
               "AnimalId": "{{modId}}_pokemon_raichu_female",
-              "Condition": "RANDOM 0,029"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_thunder_stone_received received, RANDOM 0.167"
             },
             {
               "Id": "{{modId}}_egg_spawn_raichu_male",
               "AnimalId": "{{modId}}_pokemon_raichu_male",
-              "Condition": "RANDOM 0,029"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_thunder_stone_received received, RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_egg_spawn_pikachu_female",
               "AnimalId": "{{modId}}_pokemon_pikachu_female",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_pikachu_male",
               "AnimalId": "{{modId}}_pokemon_pikachu_male",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_pichu",
@@ -505,38 +472,6 @@
             }
           ],
           "ID": "{{modId}}_pokemon_raichu_female"
-        },
-        "{{modId}}_pokemon_raichu_alola_male": {
-          "TextureOverrides": [
-            {
-              "Id": "{{modId}}_pokemon_texture_raichu_alola_male",
-              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
-              "TextureToUse": "pichu/pikachu_male"
-            },
-            {
-              "Id": "{{modId}}_pokemon_texture_raichu_alola_male_shiny",
-              "Skin": "{{modId}}_pokemon_raichu_alola_male_shiny",
-              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
-              "TextureToUse": "pichu/pikachu_males"
-            }
-          ],
-          "ID": "{{modId}}_pokemon_raichu_alola_male"
-        },
-        "{{modId}}_pokemon_raichu_alola_female": {
-          "TextureOverrides": [
-            {
-              "Id": "{{modId}}_pokemon_texture_raichu_alola_female",
-              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
-              "TextureToUse": "pichu/pikachu_female"
-            },
-            {
-              "Id": "{{modId}}_pokemon_texture_raichu_alola_female_shiny",
-              "Skin": "{{modId}}_pokemon_raichu_alola_female_shiny",
-              "Condition": "selph.ExtraAnimalConfig_ANIMAL_AGE 4 7",
-              "TextureToUse": "pichu/pikachu_females"
-            }
-          ],
-          "ID": "{{modId}}_pokemon_raichu_alola_female"
         }
       },
       "LogName": "Adding extra texture changes",

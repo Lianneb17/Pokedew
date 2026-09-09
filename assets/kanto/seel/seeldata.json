@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_seel": {
-          "DisplayName": "{{i18n:pokemon.seel}}",
+          "DisplayName": "Seel",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -53,8 +53,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_seel",
           "Texture": "seel/seel",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_seel_shiny",
@@ -69,7 +69,7 @@
           "ID": "{{modId}}_pokemon_seel"
         },
         "{{modId}}_pokemon_dewgong": {
-          "DisplayName": "{{i18n:pokemon.dewgong}}",
+          "DisplayName": "Dewgong",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -92,8 +92,8 @@
           "Sound": "{{modId}}_sound_dewgong",
           "Texture": "seel/dewgong",
           "BabyTexture": "seel/seel",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_dewgong_shiny",
@@ -117,8 +117,8 @@
       "Entries": {
         "{{modId}}_item_egg_seel": {
           "Name": "{{modId}_item_egg_seel",
-          "DisplayName": "{{i18n:egg.seel.item}}",
-          "Description": "{{i18n:egg.seel.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=seel}}",
+          "Description": "{{i18n:egg.item.description |pokemon=seel}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -144,7 +144,7 @@
             {
               "Id": "{{modId}}_egg_spawn_dewgong",
               "AnimalId": "{{modId}}_pokemon_dewgong",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_seel",

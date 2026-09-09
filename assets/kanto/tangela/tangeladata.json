@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_tangela": {
-          "DisplayName": "{{i18n:pokemon.tangela}}",
+          "DisplayName": "Tangela",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_tangela",
           "Texture": "tangela/tangela",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_tangela_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_tangela"
         },
         "{{modId}}_pokemon_tangrowth_male": {
-          "DisplayName": "{{i18n:pokemon.tangrowth_male}}",
+          "DisplayName": "{{i18n:pokemon.male |name=Tangrowth}}",
           "House": "BigPokeBarn",
           "Gender": "Male",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_tangrowth",
           "Texture": "tangela/tangrowth_male",
           "BabyTexture": "tangela/tangela",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_tangrowth_male_shiny",
@@ -107,7 +107,7 @@
           "ID": "{{modId}}_pokemon_tangrowth_male"
         },
         "{{modId}}_pokemon_tangrowth_female": {
-          "DisplayName": "{{i18n:pokemon.tangrowth_female}}",
+          "DisplayName": "{{i18n:pokemon.female |name=Tangrowth}}",
           "House": "BigPokeBarn",
           "Gender": "Female",
           "EggItemIds": [
@@ -129,8 +129,8 @@
           "Sound": "{{modId}}_sound_tangrowth",
           "Texture": "tangela/tangrowth_female",
           "BabyTexture": "tangela/tangela",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_tangrowth_female_shiny",
@@ -154,8 +154,8 @@
       "Entries": {
         "{{modId}}_item_egg_tangela": {
           "Name": "{{modId}_item_egg_tangela",
-          "DisplayName": "{{i18n:egg.tangela.item}}",
-          "Description": "{{i18n:egg.tangela.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=tangela}}",
+          "Description": "{{i18n:egg.item.description |pokemon=tangela}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -181,12 +181,12 @@
             {
               "Id": "{{modId}}_egg_spawn_tangrowth_female",
               "AnimalId": "{{modId}}_pokemon_tangrowth_female",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_tangrowth_male",
               "AnimalId": "{{modId}}_pokemon_tangrowth_male",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_tangela",

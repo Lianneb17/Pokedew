@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_cleffa": {
-          "DisplayName": "{{i18n:pokemon.cleffa}}",
+          "DisplayName": "Cleffa",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -65,8 +65,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_cleffa",
           "Texture": "cleffa/cleffa",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_cleffa_shiny",
@@ -81,8 +81,7 @@
           "ID": "{{modId}}_pokemon_cleffa"
         },
         "{{modId}}_pokemon_clefairy": {
-          "BabyTexture": "cleffa/cleffa",
-          "DisplayName": "{{i18n:pokemon.clefairy}}",
+          "DisplayName": "Clefairy",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -109,8 +108,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_clefairy",
           "Texture": "cleffa/clefairy",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "cleffa/cleffa",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_clefairy_shiny",
@@ -126,8 +126,7 @@
           "ID": "{{modId}}_pokemon_clefairy"
         },
         "{{modId}}_pokemon_clefable": {
-          "BabyTexture": "cleffa/cleffa",
-          "DisplayName": "{{i18n:pokemon.clefable}}",
+          "DisplayName": "Clefable",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -154,8 +153,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_clefable",
           "Texture": "cleffa/clefable",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "cleffa/cleffa",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_clefable_shiny",
@@ -179,8 +179,8 @@
       "Entries": {
         "{{modId}}_item_egg_cleffa": {
           "Name": "{{modId}_item_egg_cleffa",
-          "DisplayName": "{{i18n:egg.cleffa.item}}",
-          "Description": "{{i18n:egg.cleffa.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=cleffa}}",
+          "Description": "{{i18n:egg.item.description |pokemon=cleffa}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "300",
@@ -206,12 +206,12 @@
             {
               "Id": "{{modId}}_egg_spawn_clefable",
               "AnimalId": "{{modId}}_pokemon_clefable",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_moon_stone_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_clefairy",
               "AnimalId": "{{modId}}_pokemon_clefairy",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_cleffa",

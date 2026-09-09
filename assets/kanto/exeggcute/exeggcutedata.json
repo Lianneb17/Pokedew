@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_exeggcute": {
-          "DisplayName": "{{i18n:pokemon.exeggcute}}",
+          "DisplayName": "Exeggcute",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_exeggcute",
           "Texture": "exeggcute/exeggcute",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_exeggcute_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_exeggcute"
         },
         "{{modId}}_pokemon_exeggutor": {
-          "DisplayName": "{{i18n:pokemon.exeggutor}}",
+          "DisplayName": "Exeggutor",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_exeggutor",
           "Texture": "exeggcute/exeggutor",
           "BabyTexture": "exeggcute/exeggcute",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_exeggutor_shiny",
@@ -107,7 +107,7 @@
           "ID": "{{modId}}_pokemon_exeggutor"
         },
         "{{modId}}_pokemon_exeggutor_alola": {
-          "DisplayName": "{{i18n:pokemon.exeggutor_alola}}",
+          "DisplayName": "Exeggutor_alola",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -129,8 +129,8 @@
           "Sound": "{{modId}}_sound_exeggutor",
           "Texture": "exeggcute/exeggutor_alola",
           "BabyTexture": "exeggcute/exeggcute",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_exeggutor_alola_shiny",
@@ -154,8 +154,8 @@
       "Entries": {
         "{{modId}}_item_egg_exeggcute": {
           "Name": "{{modId}_item_egg_exeggcute",
-          "DisplayName": "{{i18n:egg.exeggcute.item}}",
-          "Description": "{{i18n:egg.exeggcute.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=exeggcute}}",
+          "Description": "{{i18n:egg.item.description |pokemon=exeggcute}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -181,12 +181,12 @@
             {
               "Id": "{{modId}}_egg_spawn_exeggutor_alola",
               "AnimalId": "{{modId}}_pokemon_exeggutor_alola",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_exeggutor",
               "AnimalId": "{{modId}}_pokemon_exeggutor",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_leaf_stone_received received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_exeggcute",

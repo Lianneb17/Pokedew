@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_koffing": {
-          "DisplayName": "{{i18n:pokemon.koffing}}",
+          "DisplayName": "Koffing",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_koffing",
           "Texture": "koffing/koffing",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_koffing_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_koffing"
         },
         "{{modId}}_pokemon_weezing": {
-          "DisplayName": "{{i18n:pokemon.weezing}}",
+          "DisplayName": "Weezing",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_weezing",
           "Texture": "koffing/weezing",
           "BabyTexture": "koffing/koffing",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_weezing_shiny",
@@ -107,7 +107,7 @@
           "ID": "{{modId}}_pokemon_weezing"
         },
         "{{modId}}_pokemon_weezing_galar": {
-          "DisplayName": "{{i18n:pokemon.weezing_galar}}",
+          "DisplayName": "Weezing_galar",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -135,8 +135,8 @@
           "Sound": "{{modId}}_sound_weezing",
           "Texture": "koffing/weezing_galar",
           "BabyTexture": "koffing/koffing",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_weezing_galar_shiny",
@@ -160,8 +160,8 @@
       "Entries": {
         "{{modId}}_item_egg_koffing": {
           "Name": "{{modId}_item_egg_koffing",
-          "DisplayName": "{{i18n:egg.koffing.item}}",
-          "Description": "{{i18n:egg.koffing.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=koffing}}",
+          "Description": "{{i18n:egg.item.description |pokemon=koffing}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -187,12 +187,12 @@
             {
               "Id": "{{modId}}_egg_spawn_weezing_galar",
               "AnimalId": "{{modId}}_pokemon_weezing_galar",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_galar_unlocked received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_weezing",
               "AnimalId": "{{modId}}_pokemon_weezing",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_koffing",

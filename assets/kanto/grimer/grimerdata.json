@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_grimer": {
-          "DisplayName": "{{i18n:pokemon.grimer}}",
+          "DisplayName": "Grimer",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_grimer",
           "Texture": "grimer/grimer",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_grimer_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_grimer"
         },
         "{{modId}}_pokemon_grimer_alola": {
-          "DisplayName": "{{i18n:pokemon.grimer_alola}}",
+          "DisplayName": "Grimer_alola",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -89,14 +89,13 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_grimer",
           "Texture": "grimer/grimer_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_grimer_alola_shiny",
               "Weight": "0.1",
-              "Texture": "grimer/grimer_alolas",
-              "BabyTexture": "grimer/grimers"
+              "Texture": "grimer/grimer_alolas"
             }
           ],
           "SleepFrame": "16",
@@ -106,7 +105,7 @@
           "ID": "{{modId}}_pokemon_grimer_alola"
         },
         "{{modId}}_pokemon_muk": {
-          "DisplayName": "{{i18n:pokemon.muk}}",
+          "DisplayName": "Muk",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -128,8 +127,8 @@
           "Sound": "{{modId}}_sound_muk",
           "Texture": "grimer/muk",
           "BabyTexture": "grimer/grimer",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_muk_shiny",
@@ -145,7 +144,7 @@
           "ID": "{{modId}}_pokemon_muk"
         },
         "{{modId}}_pokemon_muk_alola": {
-          "DisplayName": "{{i18n:pokemon.muk_alola}}",
+          "DisplayName": "Muk_alola",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -166,15 +165,15 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_muk",
           "Texture": "grimer/muk_alola",
-          "BabyTexture": "grimer/grimer_alola",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "BabyTexture": "grimer/grimer",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_muk_alola_shiny",
               "Weight": "0.1",
               "Texture": "grimer/muk_alolas",
-              "BabyTexture": "grimer/grimer_alolas"
+              "BabyTexture": "grimer/grimers"
             }
           ],
           "SleepFrame": "16",
@@ -192,8 +191,8 @@
       "Entries": {
         "{{modId}}_item_egg_grimer": {
           "Name": "{{modId}_item_egg_grimer",
-          "DisplayName": "{{i18n:egg.grimer.item}}",
-          "Description": "{{i18n:egg.grimer.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=grimer}}",
+          "Description": "{{i18n:egg.item.description |pokemon=grimer}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -219,17 +218,17 @@
             {
               "Id": "{{modId}}_egg_spawn_muk_alola",
               "AnimalId": "{{modId}}_pokemon_muk_alola",
-              "Condition": "RANDOM 0,250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_muk",
               "AnimalId": "{{modId}}_pokemon_muk",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_grimer_alola",
               "AnimalId": "{{modId}}_pokemon_grimer_alola",
-              "Condition": "RANDOM 0,500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_grimer",

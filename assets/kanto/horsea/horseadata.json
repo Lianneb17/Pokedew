@@ -38,7 +38,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_horsea": {
-          "DisplayName": "{{i18n:pokemon.horsea}}",
+          "DisplayName": "Horsea",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -60,8 +60,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_horsea",
           "Texture": "horsea/horsea",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_horsea_shiny",
@@ -76,7 +76,7 @@
           "ID": "{{modId}}_pokemon_horsea"
         },
         "{{modId}}_pokemon_seadra": {
-          "DisplayName": "{{i18n:pokemon.seadra}}",
+          "DisplayName": "Seadra",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -99,8 +99,8 @@
           "Sound": "{{modId}}_sound_seadra",
           "Texture": "horsea/seadra",
           "BabyTexture": "horsea/horsea",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_seadra_shiny",
@@ -116,7 +116,7 @@
           "ID": "{{modId}}_pokemon_seadra"
         },
         "{{modId}}_pokemon_kingdra": {
-          "DisplayName": "{{i18n:pokemon.kingdra}}",
+          "DisplayName": "Kingdra",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -139,8 +139,8 @@
           "Sound": "{{modId}}_sound_kingdra",
           "Texture": "horsea/kingdra",
           "BabyTexture": "horsea/horsea",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_kingdra_shiny",
@@ -164,8 +164,8 @@
       "Entries": {
         "{{modId}}_item_egg_horsea": {
           "Name": "{{modId}_item_egg_horsea",
-          "DisplayName": "{{i18n:egg.horsea.item}}",
-          "Description": "{{i18n:egg.horsea.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=horsea}}",
+          "Description": "{{i18n:egg.item.description |pokemon=horsea}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -191,12 +191,12 @@
             {
               "Id": "{{modId}}_egg_spawn_kingdra",
               "AnimalId": "{{modId}}_pokemon_kingdra",
-              "Condition": "RANDOM 0,333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_kingdra_completed received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_seadra",
               "AnimalId": "{{modId}}_pokemon_seadra",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_horsea",

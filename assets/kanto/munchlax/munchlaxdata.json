@@ -31,7 +31,7 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_munchlax": {
-          "DisplayName": "{{i18n:pokemon.munchlax}}",
+          "DisplayName": "Munchlax",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -52,8 +52,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_munchlax",
           "Texture": "munchlax/munchlax",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_munchlax_shiny",
@@ -68,7 +68,7 @@
           "ID": "{{modId}}_pokemon_munchlax"
         },
         "{{modId}}_pokemon_snorlax": {
-          "DisplayName": "{{i18n:pokemon.snorlax}}",
+          "DisplayName": "Snorlax",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -90,8 +90,8 @@
           "Sound": "{{modId}}_sound_snorlax",
           "Texture": "munchlax/snorlax",
           "BabyTexture": "munchlax/munchlax",
-          "SpriteWidth": "21",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_snorlax_shiny",
@@ -115,8 +115,8 @@
       "Entries": {
         "{{modId}}_item_egg_munchlax": {
           "Name": "{{modId}_item_egg_munchlax",
-          "DisplayName": "{{i18n:egg.munchlax.item}}",
-          "Description": "{{i18n:egg.munchlax.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=munchlax}}",
+          "Description": "{{i18n:egg.item.description |pokemon=munchlax}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "1100",
@@ -142,7 +142,7 @@
             {
               "Id": "{{modId}}_egg_spawn_snorlax",
               "AnimalId": "{{modId}}_pokemon_snorlax",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_munchlax",

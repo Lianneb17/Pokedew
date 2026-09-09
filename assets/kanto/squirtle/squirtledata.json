@@ -38,14 +38,14 @@
       "Action": "EditData",
       "Entries": {
         "{{modId}}_pokemon_squirtle": {
-          "DisplayName": "{{i18n:pokemon.squirtle}}",
+          "DisplayName": "Squirtle",
           "House": "PokeBarn",
           "Gender": "MaleOrFemale",
           "PurchasePrice": "2500",
           "ShopTexture": "squirtle/shopicon",
           "RequiredBuilding": "PokeBarn",
           "UnlockCondition": "{{Kanto active}}",
-          "ShopDescription": "{{i18n:pokemon.squirtle.shop}}",
+          "ShopDescription": "{{i18n:pokemon.shop |name=Squirtle}}",
           "ShopMissingBuildingDescription": "{{i18n:pokemon.all.shop.missing}}",
           "AlternatePurchaseTypes": [
             {
@@ -88,8 +88,8 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_squirtle",
           "Texture": "squirtle/squirtle",
-          "SpriteWidth": "30",
-          "SpriteHeight": "29",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_squirtle_shiny",
@@ -105,8 +105,7 @@
           "ID": "{{modId}}_pokemon_squirtle"
         },
         "{{modId}}_pokemon_wartortle": {
-          "BabyTexture": "squirtle/squirtle",
-          "DisplayName": "{{i18n:pokemon.wartortle}}",
+          "DisplayName": "Wartortle",
           "House": "BigPokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -128,8 +127,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_wartortle",
           "Texture": "squirtle/wartortle",
-          "SpriteWidth": "30",
-          "SpriteHeight": "29",
+          "BabyTexture": "squirtle/squirtle",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_wartortle_shiny",
@@ -145,8 +145,7 @@
           "ID": "{{modId}}_pokemon_wartortle"
         },
         "{{modId}}_pokemon_blastoise": {
-          "BabyTexture": "squirtle/squirtle",
-          "DisplayName": "{{i18n:pokemon.blastoise}}",
+          "DisplayName": "Blastoise",
           "House": "DeluxePokeBarn",
           "Gender": "MaleOrFemale",
           "EggItemIds": [
@@ -168,8 +167,9 @@
           "ProduceOnMature": "True",
           "Sound": "{{modId}}_sound_blastoise",
           "Texture": "squirtle/blastoise",
-          "SpriteWidth": "30",
-          "SpriteHeight": "29",
+          "BabyTexture": "squirtle/squirtle",
+          "SpriteWidth": "29",
+          "SpriteHeight": "21",
           "Skins": [
             {
               "ID": "{{modId}}_pokemon_blastoise_shiny",
@@ -193,8 +193,8 @@
       "Entries": {
         "{{modId}}_item_egg_squirtle": {
           "Name": "{{modId}_item_egg_squirtle",
-          "DisplayName": "{{i18n:egg.squirtle.item}}",
-          "Description": "{{i18n:egg.squirtle.item.description}}",
+          "DisplayName": "{{i18n:egg.item |pokemon=squirtle}}",
+          "Description": "{{i18n:egg.item.description |pokemon=squirtle}}",
           "Type": "Basic",
           "Category": "-5",
           "Price": "500",
@@ -220,12 +220,12 @@
             {
               "Id": "{{modId}}_egg_spawn_blastoise",
               "AnimalId": "{{modId}}_pokemon_blastoise",
-              "Condition": "RANDOM 0,333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_wartortle",
               "AnimalId": "{{modId}}_pokemon_wartortle",
-              "Condition": "RANDOM 0,500"
+              "Condition": "RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_squirtle",
