@@ -143,61 +143,61 @@
                 "{{modId}}_trigger_stone_fire":{
                     "ID": "{{modId}}_trigger_stone_fire",
                     "Trigger": "DayEnding",
-                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT vulpix 1",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_vulpix 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_growlithe 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_growlithe_hisui 1\"",
                     "Action": "AddMail current {{modId}}_state_stone_fire_start received"
                 },
                 "{{modId}}_trigger_stone_water":{
                     "ID": "{{modId}}_trigger_stone_water",
                     "Trigger": "DayEnding",
-                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 100",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_poliwhirl 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_shellder 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_staryu 1\"",
                     "Action": "AddMail current {{modId}}_state_stone_water_start received"
                 },
                 "{{modId}}_trigger_stone_thunder":{
                     "ID": "{{modId}}_trigger_stone_thunder",
                     "Trigger": "DayEnding",
-                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT pikachu 1\"",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_magneton 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_pikachu_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_pikachu_male 1\"",
                     "Action": "AddMail current {{modId}}_state_stone_thunder_start received"
                 },
                 "{{modId}}_trigger_stone_leaf":{
                     "ID": "{{modId}}_trigger_stone_leaf",
                     "Trigger": "DayEnding",
-                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 100",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_weepinbell 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_exeggcute 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_gloom_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_gloom_male 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_voltorb_hisui 1\"",
                     "Action": "AddMail current {{modId}}_state_stone_leaf_start received"
                 },
                 "{{modId}}_trigger_stone_moon":{
                     "ID": "{{modId}}_trigger_stone_moon",
                     "Trigger": "DayEnding",
-                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 100",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_clefairy 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_jigglypuff{{modId}}_pokemon_jigglypuff 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_nidorina 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_nidorino 1\"",
                     "Action": "AddMail current {{modId}}_state_stone_moon_start received"
                 },
                 "{{modId}}_trigger_stone_sun":{
                     "ID": "{{modId}}_trigger_stone_sun",
                     "Trigger": "DayEnding",
-                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT seed 1",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 1\"",
                     "Action": "AddMail current {{modId}}_state_stone_sun_start received"
                 },
                 "{{modId}}_trigger_stone_shiny":{
                     "ID": "{{modId}}_trigger_stone_shiny",
                     "Trigger": "DayEnding",
-                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT minccino 1",
+                    "Condition": "False",
                     "Action": "AddMail current {{modId}}_state_stone_shiny_start received"
                 },
                 "{{modId}}_trigger_stone_dusk":{
                     "ID": "{{modId}}_trigger_stone_dusk",
                     "Trigger": "DayEnding",
-                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 100",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 1\"",
                     "Action": "AddMail current {{modId}}_state_stone_dusk_start received"
                 },
                 "{{modId}}_trigger_stone_dawn":{
                     "ID": "{{modId}}_trigger_stone_dawn",
                     "Trigger": "DayEnding",
-                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT pichu 100",
+                    "Condition": "False",
                     "Action": "AddMail current {{modId}}_state_stone_dawn_start received"
                 },
                 "{{modId}}_trigger_stone_ice":{
                     "ID": "{{modId}}_trigger_stone_ice",
                     "Trigger": "DayEnding",
-                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT alovulpix 1",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_sandshrew_alola 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_vulpix_alola 1\"",
                     "Action": "AddMail current {{modId}}_state_stone_ice_start received"
                 }
             }
