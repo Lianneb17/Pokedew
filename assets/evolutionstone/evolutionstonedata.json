@@ -24,8 +24,8 @@
             "Target": "Data/Powers",
             "Entries": {
                 "{{modId}}_power_stone_fire": {
-                    "DisplayName": "{{i18n:stone.fire.power}}",
-                    "Description": "{{i18n:stone.fire.power.description}}",
+                    "DisplayName": "{{i18n:stone.power |stone={{i18n:stone.fire}}}}",
+                    "Description": "{{i18n:stone.power.description |pokemons={{i18n:stone.fire.pokemons}}}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
                         "X": 0,
@@ -35,8 +35,8 @@
                     "CustomFields": null
                 },
 				"{{modId}}_power_stone_water": {
-                    "DisplayName": "{{i18n:stone.water.power}}",
-                    "Description": "{{i18n:stone.water.power.description}}",
+                    "DisplayName": "{{i18n:stone.power |stone={{i18n:stone.water}}}}",
+                    "Description": "{{i18n:stone.power.description |pokemons={{i18n:stone.water.pokemons}}}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
                         "X": 16,
@@ -46,8 +46,8 @@
                     "CustomFields": null
                 },
                 "{{modId}}_power_stone_thunder": {
-                    "DisplayName": "{{i18n:stone.thunder.power}}",
-                    "Description": "{{i18n:stone.thunder.power.description}}",
+                    "DisplayName": "{{i18n:stone.power |stone={{i18n:stone.thunder}}}}",
+                    "Description": "{{i18n:stone.power.description |pokemons={{i18n:stone.thunder.pokemons}}}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
                         "X": 32,
@@ -57,8 +57,8 @@
                     "CustomFields": null
                 },
 				"{{modId}}_power_stone_leaf": {
-                    "DisplayName": "{{i18n:stone.leaf.power}}",
-                    "Description": "{{i18n:stone.leaf.power.description}}",
+                    "DisplayName": "{{i18n:stone.power |stone={{i18n:stone.leaf}}}}",
+                    "Description": "{{i18n:stone.power.description |pokemons={{i18n:stone.leaf.pokemons}}}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
                         "X": 48,
@@ -68,8 +68,8 @@
                     "CustomFields": null
                 },
 				"{{modId}}_power_stone_moon": {
-                    "DisplayName": "{{i18n:stone.moon.power}}",
-                    "Description": "{{i18n:stone.moon.power.description}}",
+                    "DisplayName": "{{i18n:stone.power |stone={{i18n:stone.moon}}}}",
+                    "Description": "{{i18n:stone.power.description |pokemons={{i18n:stone.moon.pokemons}}}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
                         "X": 64,
@@ -79,8 +79,8 @@
                     "CustomFields": null
                 },
                 "{{modId}}_power_stone_sun": {
-                    "DisplayName": "{{i18n:stone.sun.power}}",
-                    "Description": "{{i18n:stone.sun.power.description}}",
+                    "DisplayName": "{{i18n:stone.power |stone={{i18n:stone.sun}}}}",
+                    "Description": "{{i18n:stone.power.description |pokemons={{i18n:stone.sun.pokemons}}}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
                         "X": 0,
@@ -90,8 +90,8 @@
                     "CustomFields": null
                 },
 				"{{modId}}_power_stone_shiny": {
-                    "DisplayName": "{{i18n:stone.shiny.power}}",
-                    "Description": "{{i18n:stone.shiny.power.description}}",
+                    "DisplayName": "{{i18n:stone.power |stone={{i18n:stone.shiny}}}}",
+                    "Description": "{{i18n:stone.power.description |pokemons={{i18n:stone.shiny.pokemons}}}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
                         "X": 16,
@@ -101,8 +101,8 @@
                     "CustomFields": null
                 },
 				"{{modId}}_power_stone_dusk": {
-                    "DisplayName": "{{i18n:stone.dusk.power}}",
-                    "Description": "{{i18n:stone.dusk.power.description}}",
+                    "DisplayName": "{{i18n:stone.power |stone={{i18n:stone.dusk}}}}",
+                    "Description": "{{i18n:stone.power.description |pokemons={{i18n:stone.dusk.pokemons}}}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
                         "X": 32,
@@ -112,8 +112,8 @@
                     "CustomFields": null
                 },
 				"{{modId}}_power_stone_dawn": {
-                    "DisplayName": "{{i18n:stone.dawn.power}}",
-                    "Description": "{{i18n:stone.dawn.power.description}}",
+                    "DisplayName": "{{i18n:stone.power |stone={{i18n:stone.dawn}}}}",
+                    "Description": "{{i18n:stone.power.description |pokemons={{i18n:stone.dawn.pokemons}}}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
                         "X": 48,
@@ -123,8 +123,8 @@
                     "CustomFields": null
                 },
 				"{{modId}}_power_stone_ice": {
-                    "DisplayName": "{{i18n:stone.ice.power}}",
-                    "Description": "{{i18n:stone.ice.power.description}}",
+                    "DisplayName": "{{i18n:stone.power |stone={{i18n:stone.ice}}}}",
+                    "Description": "{{i18n:stone.power.description |pokemons={{i18n:stone.ice.pokemons}}}}",
                     "TexturePath": "evolutionstone/evolutionstones",
                     "TexturePosition": {
                         "X": 64,
@@ -208,7 +208,7 @@
             "Target": "Data/SpecialOrders",
             "Entries": {
 				"{{modId}}_specialorder_stone_fire": {
-                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Name": "{{i18n:stone.specialorder}}",
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
@@ -216,13 +216,13 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_fire_start received",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "Text": "{{i18n:stone.specialorder.text}}",
                     "ItemToRemoveOnEnd": "{{modId}}_item_stone_fire",
                     "MailToRemoveOnEnd": null,                    
                     "Objectives": [
                     {
                         "Type": "Donate",
-                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "Text": "{{i18n:stone.specialorder.donate}}",
                         "RequiredCount": "1",
                         "Data": {
                             "DropBox": "GuntherBox",
@@ -250,7 +250,7 @@
                     "CustomFields": null
                 },
                 "{{modId}}_specialorder_stone_water": {
-                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Name": "{{i18n:stone.specialorder}}",
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
@@ -258,13 +258,13 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_water_start received",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "Text": "{{i18n:stone.specialorder.text}}",
                     "ItemToRemoveOnEnd": "{{modId}}_item_stone_water",
                     "MailToRemoveOnEnd": null,                    
                     "Objectives": [
                     {
                         "Type": "Donate",
-                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "Text": "{{i18n:stone.specialorder.donate}}",
                         "RequiredCount": "1",
                         "Data": {
                             "DropBox": "GuntherBox",
@@ -292,7 +292,7 @@
                     "CustomFields": null
                 },
                 "{{modId}}_specialorder_stone_thunder": {
-                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Name": "{{i18n:stone.specialorder}}",
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
@@ -300,13 +300,13 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_start received",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "Text": "{{i18n:stone.specialorder.text}}",
                     "ItemToRemoveOnEnd": "{{modId}}_item_stone_thunder",
                     "MailToRemoveOnEnd": null,                    
                     "Objectives": [
                     {
                         "Type": "Donate",
-                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "Text": "{{i18n:stone.specialorder.donate}}",
                         "RequiredCount": "1",
                         "Data": {
                             "DropBox": "GuntherBox",
@@ -334,7 +334,7 @@
                     "CustomFields": null
                 },
 				"{{modId}}_specialorder_stone_leaf": {
-                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Name": "{{i18n:stone.specialorder}}",
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
@@ -342,13 +342,13 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_leaf_start received",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "Text": "{{i18n:stone.specialorder.text}}",
                     "ItemToRemoveOnEnd": "{{modId}}_item_stone_leaf",
                     "MailToRemoveOnEnd": null,                    
                     "Objectives": [
                     {
                         "Type": "Donate",
-                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "Text": "{{i18n:stone.specialorder.donate}}",
                         "RequiredCount": "1",
                         "Data": {
                             "DropBox": "GuntherBox",
@@ -376,7 +376,7 @@
                     "CustomFields": null
                 },
 				"{{modId}}_specialorder_stone_moon": {
-                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Name": "{{i18n:stone.specialorder}}",
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
@@ -384,13 +384,13 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_moon_start received",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "Text": "{{i18n:stone.specialorder.text}}",
                     "ItemToRemoveOnEnd": "{{modId}}_item_stone_moon",
                     "MailToRemoveOnEnd": null,                    
                     "Objectives": [
                     {
                         "Type": "Donate",
-                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "Text": "{{i18n:stone.specialorder.donate}}",
                         "RequiredCount": "1",
                         "Data": {
                             "DropBox": "GuntherBox",
@@ -418,7 +418,7 @@
                     "CustomFields": null
                 },
 				"{{modId}}_specialorder_stone_sun": {
-                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Name": "{{i18n:stone.specialorder}}",
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
@@ -426,13 +426,13 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_sun_start received",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "Text": "{{i18n:stone.specialorder.text}}",
                     "ItemToRemoveOnEnd": "{{modId}}_item_stone_sun",
                     "MailToRemoveOnEnd": null,                    
                     "Objectives": [
                     {
                         "Type": "Donate",
-                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "Text": "{{i18n:stone.specialorder.donate}}",
                         "RequiredCount": "1",
                         "Data": {
                             "DropBox": "GuntherBox",
@@ -460,7 +460,7 @@
                     "CustomFields": null
                 },
 				"{{modId}}_specialorder_stone_shiny": {
-                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Name": "{{i18n:stone.specialorder}}",
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
@@ -468,13 +468,13 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_shiny_start received",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "Text": "{{i18n:stone.specialorder.text}}",
                     "ItemToRemoveOnEnd": "{{modId}}_item_stone_shiny",
                     "MailToRemoveOnEnd": null,                    
                     "Objectives": [
                     {
                         "Type": "Donate",
-                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "Text": "{{i18n:stone.specialorder.donate}}",
                         "RequiredCount": "1",
                         "Data": {
                             "DropBox": "GuntherBox",
@@ -502,7 +502,7 @@
                     "CustomFields": null
                 },
 				"{{modId}}_specialorder_stone_dusk": {
-                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Name": "{{i18n:stone.specialorder}}",
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
@@ -510,13 +510,13 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_dusk_start received",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "Text": "{{i18n:stone.specialorder.text}}",
                     "ItemToRemoveOnEnd": "{{modId}}_item_stone_dusk",
                     "MailToRemoveOnEnd": null,                    
                     "Objectives": [
                     {
                         "Type": "Donate",
-                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "Text": "{{i18n:stone.specialorder.donate}}",
                         "RequiredCount": "1",
                         "Data": {
                             "DropBox": "GuntherBox",
@@ -544,7 +544,7 @@
                     "CustomFields": null
                 },
 				"{{modId}}_specialorder_stone_dawn": {
-                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Name": "{{i18n:stone.specialorder}}",
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
@@ -552,13 +552,13 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_dawn_start received",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "Text": "{{i18n:stone.specialorder.text}}",
                     "ItemToRemoveOnEnd": "{{modId}}_item_stone_dawn",
                     "MailToRemoveOnEnd": null,                    
                     "Objectives": [
                     {
                         "Type": "Donate",
-                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "Text": "{{i18n:stone.specialorder.donate}}",
                         "RequiredCount": "1",
                         "Data": {
                             "DropBox": "GuntherBox",
@@ -586,7 +586,7 @@
                     "CustomFields": null
                 },
 				"{{modId}}_specialorder_stone_ice": {
-                    "Name": "{{i18n:stone.base.specialorder}}",
+                    "Name": "{{i18n:stone.specialorder}}",
                     "Requester": "Gunther",
                     "Duration": "Week",
                     "Repeatable": "False",
@@ -594,13 +594,13 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_stone_ice_start received",
                     "OrderType": "",
                     "SpecialRule": "",
-                    "Text": "{{i18n:stone.base.specialorder.text}}",
+                    "Text": "{{i18n:stone.specialorder.text}}",
                     "ItemToRemoveOnEnd": "{{modId}}_item_stone_ice",
                     "MailToRemoveOnEnd": null,                    
                     "Objectives": [
                     {
                         "Type": "Donate",
-                        "Text": "{{i18n:stone.base.specialorder.donate}}",
+                        "Text": "{{i18n:stone.specialorder.donate}}",
                         "RequiredCount": "1",
                         "Data": {
                             "DropBox": "GuntherBox",
@@ -635,8 +635,8 @@
             "Target": "Data/Objects",
             "Entries": {
                 "{{modId}}_item_stone_fire": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.fire.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.item.description |extra={{i18n:stone.fire.description}}}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "0",
                     "Type": "Quest",
@@ -645,8 +645,8 @@
                     ]
                 },
                 "{{modId}}_item_stone_water": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.water.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.item.description |extra={{i18n:stone.water.description}}}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "1",
                     "Type": "Quest",
@@ -655,8 +655,8 @@
                     ]
                 },
                 "{{modId}}_item_stone_thunder": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.thunder.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.item.description |extra={{i18n:stone.thunder.description}}}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "2",
                     "Type": "Quest",
@@ -665,8 +665,8 @@
                     ]
                 },
 				"{{modId}}_item_stone_leaf": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.leaf.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.item.description |extra={{i18n:stone.leaf.description}}}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "3",
                     "Type": "Quest",
@@ -675,8 +675,8 @@
                     ]
                 },
 				"{{modId}}_item_stone_moon": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.moon.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.item.description |extra={{i18n:stone.moon.description}}}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "4",
                     "Type": "Quest",
@@ -685,8 +685,8 @@
                     ]
                 },
 				"{{modId}}_item_stone_sun": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.sun.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.item.description |extra={{i18n:stone.sun.description}}}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "5",
                     "Type": "Quest",
@@ -695,8 +695,8 @@
                     ]
                 },
 				"{{modId}}_item_stone_shiny": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.shiny.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.item.description |extra={{i18n:stone.shiny.description}}}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "6",
                     "Type": "Quest",
@@ -705,8 +705,8 @@
                     ]
                 },
 				"{{modId}}_item_stone_dusk": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.dusk.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.item.description |extra={{i18n:stone.dusk.description}}}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "7",
                     "Type": "Quest",
@@ -715,8 +715,8 @@
                     ]
                 },
 				"{{modId}}_item_stone_dawn": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.dawn.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.item.description |extra={{i18n:stone.dawn.description}}}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "8",
                     "Type": "Quest",
@@ -725,8 +725,8 @@
                     ]
                 },
 				"{{modId}}_item_stone_ice": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.ice.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.item.description |extra={{i18n:stone.ice.description}}}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "4",
                     "Type": "Quest",
@@ -799,8 +799,8 @@
                     "condition": "PLAYER_SPECIAL_ORDER_ACTIVE current {{modId}}_specialorder_stone_dusk"
                 },
 				"{{modId}}_item_stone_dawn": {
-                    "DisplayName": "{{i18n:stone.base.item}}",
-                    "Description": "{{i18n:stone.dawn.item.description}}",
+                    "DisplayName": "{{i18n:stone.item}}",
+                    "Description": "{{i18n:stone.dawn.description}}",
                     "Texture": "evolutionstone/evolutionstones",
                     "SpriteIndex": "4",
                     "Type": "Quest",
@@ -1056,16 +1056,16 @@
             "Action": "EditData",
             "Target": "Data/Events/farm",
             "Entries": {
-                "{{modId}}_event_stone_fire/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_fire_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.fire.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.fire.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_fire false/message \"{{i18n:stone.fire.event.message}}\"/pause 1200/end",
-                "{{modId}}_event_stone_water/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_water_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.water.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.water.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_water false/message \"{{i18n:stone.water.event.message}}\"/pause 1200/end",
-                "{{modId}}_event_stone_thunder/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.thunder.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.thunder.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_thunder false/message \"{{i18n:stone.thunder.event.message}}\"/pause 1200/end",
-                "{{modId}}_event_stone_leaf/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_leaf_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.leaf.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.leaf.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_leaf false/message \"{{i18n:stone.leaf.event.message}}\"/pause 1200/end",
-                "{{modId}}_event_stone_moon/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_moon_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.moon.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.moon.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_moon false/message \"{{i18n:stone.moon.event.message}}\"/pause 1200/end",
-                "{{modId}}_event_stone_sun/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_sun_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.sun.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.sun.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_sun false/message \"{{i18n:stone.sun.event.message}}\"/pause 1200/end",
-                "{{modId}}_event_stone_shiny/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_shiny_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.shiny.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.shiny.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_shiny false/message \"{{i18n:stone.shiny.event.message}}\"/pause 1200/end",
-                "{{modId}}_event_stone_dusk/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_dusk_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.dusk.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.dusk.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_dusk false/message \"{{i18n:stone.dusk.event.message}}\"/pause 1200/end",
-                "{{modId}}_event_stone_dawn/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_dawn_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.dawn.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.dawn.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_dawn false/message \"{{i18n:stone.dawn.event.message}}\"/pause 1200/end",
-                "{{modId}}_event_stone_ice/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_ice_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.base.event.gunther.intro}} {{i18n:stone.base.event.gunther.prof.{{random:1,2,3}}}} {{i18n:stone.base.event.gunther.call}} {{i18n:stone.ice.event.gunther.research}} {{i18n:stone.base.event.gunther.leave}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.ice.event.gunther.return}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_ice false/message \"{{i18n:stone.ice.event.message}}\"/pause 1200/end"
+                "{{modId}}_event_stone_fire/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_fire_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.event.gunther.intro |professor={{i18n:stone.event.gunther.prof.{{random:1,2,3}}}} |power={{i18n:stone.fire}} |pokemon={{i18n:stone.power |stone={{i18n:stone.fire.pokemons}}}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.event.gunther.return |power={{i18n:stone.power |stone={{i18n:stone.fire}}}}}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_fire false/message \"{{i18n:stone.event.gunther.message |feeling={{i18n:stone.fire.feeling}}}}\"/pause 1200/end",
+                "{{modId}}_event_stone_water/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_water_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.event.gunther.intro |professor={{i18n:stone.event.gunther.prof.{{random:1,2,3}}}} |power={{i18n:stone.water}} |pokemon={{i18n:stone.power |stone={{i18n:stone.water.pokemons}}}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.event.gunther.return |power={{i18n:stone.power |stone={{i18n:stone.water}}}}}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_water false/message \"{{i18n:stone.event.gunther.message |feeling={{i18n:stone.water.feeling}}}}\"/pause 1200/end",
+                "{{modId}}_event_stone_thunder/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_thunder_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.event.gunther.intro |professor={{i18n:stone.event.gunther.prof.{{random:1,2,3}}}} |power={{i18n:stone.thunder}} |pokemon={{i18n:stone.power |stone={{i18n:stone.thunder.pokemons}}}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.event.gunther.return |power={{i18n:stone.power |stone={{i18n:stone.thunder}}}}}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_thunder false/message \"{{i18n:stone.event.gunther.message |feeling={{i18n:stone.thunder.feeling}}}}\"/pause 1200/end",
+                "{{modId}}_event_stone_leaf/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_leaf_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.event.gunther.intro |professor={{i18n:stone.event.gunther.prof.{{random:1,2,3}}}} |power={{i18n:stone.leaf}} |pokemon={{i18n:stone.power |stone={{i18n:stone.leaf.pokemons}}}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.event.gunther.return |power={{i18n:stone.power |stone={{i18n:stone.leaf}}}}}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_leaf false/message \"{{i18n:stone.event.gunther.message |feeling={{i18n:stone.leaf.feeling}}}}\"/pause 1200/end",
+                "{{modId}}_event_stone_moon/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_moon_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.event.gunther.intro |professor={{i18n:stone.event.gunther.prof.{{random:1,2,3}}}} |power={{i18n:stone.moon}} |pokemon={{i18n:stone.power |stone={{i18n:stone.moon.pokemons}}}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.event.gunther.return |power={{i18n:stone.power |stone={{i18n:stone.moon}}}}}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_moon false/message \"{{i18n:stone.event.gunther.message |feeling={{i18n:stone.moon.feeling}}}}\"/pause 1200/end",
+                "{{modId}}_event_stone_sun/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_sun_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.event.gunther.intro |professor={{i18n:stone.event.gunther.prof.{{random:1,2,3}}}} |power={{i18n:stone.sun}} |pokemon={{i18n:stone.power |stone={{i18n:stone.sun.pokemons}}}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.event.gunther.return |power={{i18n:stone.power |stone={{i18n:stone.sun}}}}}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_sun false/message \"{{i18n:stone.event.gunther.message |feeling={{i18n:stone.sun.feeling}}}}\"/pause 1200/end",
+                "{{modId}}_event_stone_shiny/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_shiny_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.event.gunther.intro |professor={{i18n:stone.event.gunther.prof.{{random:1,2,3}}}} |power={{i18n:stone.shiny}} |pokemon={{i18n:stone.power |stone={{i18n:stone.shiny.pokemons}}}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.event.gunther.return |power={{i18n:stone.power |stone={{i18n:stone.shiny}}}}}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_shiny false/message \"{{i18n:stone.event.gunther.message |feeling={{i18n:stone.shiny.feeling}}}}\"/pause 1200/end",
+                "{{modId}}_event_stone_dusk/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_dusk_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.event.gunther.intro |professor={{i18n:stone.event.gunther.prof.{{random:1,2,3}}}} |power={{i18n:stone.dusk}} |pokemon={{i18n:stone.power |stone={{i18n:stone.dusk.pokemons}}}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.event.gunther.return |power={{i18n:stone.power |stone={{i18n:stone.dusk}}}}}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_dusk false/message \"{{i18n:stone.event.gunther.message |feeling={{i18n:stone.dusk.feeling}}}}\"/pause 1200/end",
+                "{{modId}}_event_stone_dawn/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_dawn_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.event.gunther.intro |professor={{i18n:stone.event.gunther.prof.{{random:1,2,3}}}} |power={{i18n:stone.dawn}} |pokemon={{i18n:stone.power |stone={{i18n:stone.dawn.pokemons}}}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.event.gunther.return |power={{i18n:stone.power |stone={{i18n:stone.dawn}}}}}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_dawn false/message \"{{i18n:stone.event.gunther.message |feeling={{i18n:stone.dawn.feeling}}}}\"/pause 1200/end",
+                "{{modId}}_event_stone_ice/GameStateQuery PLAYER_HAS_MAIL current {{modId}}_state_stone_ice_complete received": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:stone.event.gunther.intro |professor={{i18n:stone.event.gunther.prof.{{random:1,2,3}}}} |power={{i18n:stone.ice}} |pokemon={{i18n:stone.power |stone={{i18n:stone.ice.pokemons}}}}\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"{{i18n:stone.event.gunther.return |power={{i18n:stone.power |stone={{i18n:stone.ice}}}}}}\"/pause 500/pause 500/playSound {{modId}}_sound_victory/itemAboveHead {{modId}}_item_stone_ice false/message \"{{i18n:stone.event.gunther.message |feeling={{i18n:stone.ice.feeling}}}}\"/pause 1200/end"
             }
         }        
     ]
