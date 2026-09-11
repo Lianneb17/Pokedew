@@ -224,12 +224,12 @@
             {
               "Id": "{{modId}}_egg_spawn_ninetales_alola",
               "AnimalId": "{{modId}}_pokemon_ninetales_alola",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_ice_stone_received received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_ninetales",
               "AnimalId": "{{modId}}_pokemon_ninetales",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_fire_stone_received received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_ice_stone_received received, RANDOM 0.333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_fire_stone_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_vulpix_alola",

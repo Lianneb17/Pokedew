@@ -246,12 +246,12 @@
             {
               "Id": "{{modId}}_egg_spawn_electrode_hisui",
               "AnimalId": "{{modId}}_pokemon_electrode_hisui",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_hisui_unlocked received, RANDOM 0.250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_hisui_unlocked received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_leaf_stone_received received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_electrode",
               "AnimalId": "{{modId}}_pokemon_electrode",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_leaf_stone_received received, RANDOM 0.333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_voltorb_hisui",

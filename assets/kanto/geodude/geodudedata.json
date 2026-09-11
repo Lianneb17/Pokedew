@@ -324,7 +324,7 @@
             {
               "Id": "{{modId}}_egg_spawn_golem_alola",
               "AnimalId": "{{modId}}_pokemon_golem_alola",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.167"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, PLAYER_HAS_MAIL current {{modId}}_state_trade_golem_alola_completed received, RANDOM 0.167"
             },
             {
               "Id": "{{modId}}_egg_spawn_golem",

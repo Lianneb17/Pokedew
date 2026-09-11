@@ -218,7 +218,7 @@
             {
               "Id": "{{modId}}_egg_spawn_arcanine_hisui",
               "AnimalId": "{{modId}}_pokemon_arcanine_hisui",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_hisui_unlocked received, RANDOM 0.250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_hisui_unlocked received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_fire_stone_received received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_arcanine",

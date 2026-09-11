@@ -218,12 +218,12 @@
             {
               "Id": "{{modId}}_egg_spawn_sandslash_alola",
               "AnimalId": "{{modId}}_pokemon_sandslash_alola",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_ice_stone_received received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_sandslash",
               "AnimalId": "{{modId}}_pokemon_sandslash",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_ice_stone_received received, RANDOM 0.333"
+              "Condition": "RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_sandshrew_alola",

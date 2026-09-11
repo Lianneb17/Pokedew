@@ -400,12 +400,12 @@
             {
               "Id": "{{modId}}_egg_spawn_raichu_alola_female",
               "AnimalId": "{{modId}}_pokemon_raichu_alola_female",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.125"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_thunder_stone_received received, RANDOM 0.125"
             },
             {
               "Id": "{{modId}}_egg_spawn_raichu_alola_male",
               "AnimalId": "{{modId}}_pokemon_raichu_alola_male",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, RANDOM 0.143"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_region_alola_unlocked received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_thunder_stone_received received, RANDOM 0.143"
             },
             {
               "Id": "{{modId}}_egg_spawn_raichu_female",
