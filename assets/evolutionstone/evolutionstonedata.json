@@ -242,7 +242,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "{{modId}}_state_stone_fire_complete"
+                                "MailReceived": "{{modId}}_state_evolutionitem_fire_stone_received"
                             }
                         }
                     ],
@@ -284,7 +284,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "{{modId}}_state_stone_water_complete"
+                                "MailReceived": "{{modId}}_state_evolutionitem_water_stone_received"
                             }
                         }
                     ],
@@ -326,7 +326,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "{{modId}}_state_stone_thunder_complete"
+                                "MailReceived": "{{modId}}_state_evolutionitem_thunder_stone_received"
                             }
                         }
                     ],
@@ -368,7 +368,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "{{modId}}_state_stone_leaf_complete"
+                                "MailReceived": "{{modId}}_state_evolutionitem_leaf_stone_received"
                             }
                         }
                     ],
@@ -410,7 +410,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "{{modId}}_state_stone_moon_complete"
+                                "MailReceived": "{{modId}}_state_evolutionitem_moon_stone_received"
                             }
                         }
                     ],
@@ -452,7 +452,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "{{modId}}_state_stone_sun_complete"
+                                "MailReceived": "{{modId}}_state_evolutionitem_sun_stone_received"
                             }
                         }
                     ],
@@ -494,7 +494,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "{{modId}}_state_stone_shiny_complete"
+                                "MailReceived": "{{modId}}_state_evolutionitem_shiny_stone_received"
                             }
                         }
                     ],
@@ -536,7 +536,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "{{modId}}_state_stone_dusk_complete"
+                                "MailReceived": "{{modId}}_state_evolutionitem_dusk_stone_received"
                             }
                         }
                     ],
@@ -578,7 +578,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "{{modId}}_state_stone_dawn_complete"
+                                "MailReceived": "{{modId}}_state_evolutionitem_dawn_stone_received"
                             }
                         }
                     ],
@@ -620,7 +620,7 @@
                         {
                             "Type": "Mail",
                             "Data": {
-                                "MailReceived": "{{modId}}_state_stone_ice_complete"
+                                "MailReceived": "{{modId}}_state_evolutionitem_ice_stone_received"
                             }
                         }
                     ],
