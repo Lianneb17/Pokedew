@@ -43,7 +43,7 @@
           "Gender": "Female",
           "EggItemIds": [
             "{{modId}}_item_egg_happiny",
-            "{{modId}}_item_egg_group_fairy"
+            "{{modId}}_item_egg_group_noeggdiscovered"
           ],
           "IncubationTime": "45000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -80,7 +80,7 @@
           "Gender": "Female",
           "EggItemIds": [
             "{{modId}}_item_egg_happiny",
-            "{{modId}}_item_egg_group_fairy"
+            "{{modId}}_item_egg_group_noeggdiscovered"
           ],
           "IncubationTime": "45000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -119,7 +119,7 @@
           "Gender": "Female",
           "EggItemIds": [
             "{{modId}}_item_egg_happiny",
-            "{{modId}}_item_egg_group_fairy"
+            "{{modId}}_item_egg_group_noeggdiscovered"
           ],
           "IncubationTime": "45000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -193,7 +193,7 @@
             {
               "Id": "{{modId}}_egg_spawn_chansey",
               "AnimalId": "{{modId}}_pokemon_chansey",
-              "Condition": "RANDOM 0.500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_oval_stone_received received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_happiny",

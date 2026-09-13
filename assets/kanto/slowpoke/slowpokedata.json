@@ -314,7 +314,7 @@
             {
               "Id": "{{modId}}_egg_spawn_slowking",
               "AnimalId": "{{modId}}_pokemon_slowking",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_slowking_completed received, RANDOM 0.200"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_slowking_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_kings_rock_received received, RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_egg_spawn_slowbro_galar",

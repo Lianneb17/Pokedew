@@ -191,7 +191,7 @@
             {
               "Id": "{{modId}}_egg_spawn_kingdra",
               "AnimalId": "{{modId}}_pokemon_kingdra",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_kingdra_completed received, RANDOM 0.333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_kingdra_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_dragon_scale_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_seadra",

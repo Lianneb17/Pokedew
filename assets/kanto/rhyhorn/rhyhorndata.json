@@ -309,12 +309,12 @@
             {
               "Id": "{{modId}}_egg_spawn_rhyperior_female",
               "AnimalId": "{{modId}}_pokemon_rhyperior_female",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_rhyperior_completed received, RANDOM 0.167"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_rhyperior_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_protector_received received, RANDOM 0.167"
             },
             {
               "Id": "{{modId}}_egg_spawn_rhyperior_male",
               "AnimalId": "{{modId}}_pokemon_rhyperior_male",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_rhyperior_completed received, RANDOM 0.200"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_rhyperior_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_protector_received received, RANDOM 0.200"
             },
             {
               "Id": "{{modId}}_egg_spawn_rhydon_female",

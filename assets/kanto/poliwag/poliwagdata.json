@@ -273,12 +273,12 @@
             {
               "Id": "{{modId}}_egg_spawn_politoed_female",
               "AnimalId": "{{modId}}_pokemon_politoed_female",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_politoed_completed received, RANDOM 0.125"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_politoed_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_kings_rock_received received, RANDOM 0.125"
             },
             {
               "Id": "{{modId}}_egg_spawn_politoed_male",
               "AnimalId": "{{modId}}_pokemon_politoed_male",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_politoed_completed received, RANDOM 0.143"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_politoed_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_kings_rock_received received, RANDOM 0.143"
             },
             {
               "Id": "{{modId}}_egg_spawn_poliwrath",

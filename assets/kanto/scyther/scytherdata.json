@@ -325,12 +325,12 @@
             {
               "Id": "{{modId}}_egg_spawn_scizor_female",
               "AnimalId": "{{modId}}_pokemon_scizor_female",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_scizor_completed received, RANDOM 0.250"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_scizor_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_metal_coat_received received, RANDOM 0.250"
             },
             {
               "Id": "{{modId}}_egg_spawn_scizor_male",
               "AnimalId": "{{modId}}_pokemon_scizor_male",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_scizor_completed received, RANDOM 0.333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_scizor_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_metal_coat_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_scyther_female",

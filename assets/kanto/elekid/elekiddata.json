@@ -209,7 +209,7 @@
             {
               "Id": "{{modId}}_egg_spawn_electivire",
               "AnimalId": "{{modId}}_pokemon_electivire",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_electivire_completed received, RANDOM 0.333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_electivire_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_electirizer_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_electabuzz",

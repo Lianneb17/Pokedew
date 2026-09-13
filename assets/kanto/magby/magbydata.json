@@ -188,7 +188,7 @@
             {
               "Id": "{{modId}}_egg_spawn_magmortar",
               "AnimalId": "{{modId}}_pokemon_magmortar",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_magmortar_completed received, RANDOM 0.333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_magmortar_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_magmarizer_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_magmar",

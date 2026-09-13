@@ -188,12 +188,12 @@
             {
               "Id": "{{modId}}_egg_spawn_porygon_z",
               "AnimalId": "{{modId}}_pokemon_porygon_z",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_porygon_z_completed received, RANDOM 0.333"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_porygon_z_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_dubious_disc_received received, RANDOM 0.333"
             },
             {
               "Id": "{{modId}}_egg_spawn_porygon2",
               "AnimalId": "{{modId}}_pokemon_porygon2",
-              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_porygon2_completed received, RANDOM 0.500"
+              "Condition": "PLAYER_HAS_MAIL current {{modId}}_state_trade_porygon2_completed received, PLAYER_HAS_MAIL current {{modId}}_state_evolveitem_up_grade_received received, RANDOM 0.500"
             },
             {
               "Id": "{{modId}}_egg_spawn_porygon",
