@@ -1,0 +1,140 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "FromFile": "assets/evolutionitems/{{TargetWithoutPath}}.png",
+            "LogName": "Load evolution items",
+            "Target": "evolutionitems/items"
+        },
+        {
+            "LogName": "Start triggers",
+            "Target": "Data/TriggerActions",
+            "Action": "EditData",
+            "Entries": {
+                "{{modId}}_evolveitem_black_augurite_start": {
+                    "Id": "{{modId}}_evolveitem_black_augurite_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_scizor_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_scizor_male 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_black_augurite_letter_quest tomorrow"
+                }
+            }
+        },
+        {
+            "LogName": "Quest letters",
+            "Target": "Data/Mail",
+            "Action": "EditData",
+            "Entries": {
+                "{{modId}}_evolveitem_black_augurite_letter_quest": "{{i18n:evolveitem.blackaugurite.letter.quest}}%item quest {{modId}}_evolveitem_black_augurite_quest true %%"
+            }
+        },
+        {
+            "LogName": "Quests",
+            "Target": "Data/Quests",
+            "Action": "EditData",
+            "Entries": {
+                "{{modId}}_evolveitem_black_augurite_quest": "LostItem/{{i18n:evolveitem.blackaugurite.quest}}/{{i18n:evolveitem.blackaugurite.quest.description}}/{{i18n:evolveitem.blackaugurite.quest.objective}}/Abigail {{modId}}_evolveitem_black_augurite_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.blackaugurite.quest.response}}"
+            }
+        },
+        {
+            "LogName": "Quest items",
+            "Target": "Data/Objects",
+            "Action": "EditData",
+            "Entries": {
+                "{{modId}}_evolveitem_black_augurite_item": {
+                    "DisplayName": "{{i18n:evolveitem.blackaugurite}}",
+                    "Description": "{{i18n:evolveitem.blackaugurite.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "0",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                }
+            }
+        },
+        {
+            "LogName": "Complete triggers",
+            "Target": "Data/TriggerActions",
+            "Action": "EditData",
+            "Entries": {
+                "{{modId}}_evolveitem_black_augurite_completed": {
+                    "Id": "{{modId}}_evolveitem_black_augurite_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_black_augurite_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_black_augurite_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_black_augurite_letter_reward tomorrow"
+                }
+            }
+        },
+        {
+            "LogName": "Reward letters",
+            "Target": "Data/Mail",
+            "Action": "EditData",
+            "Entries": {
+                "{{modId}}_evolveitem_black_augurite_letter_reward": "{{i18n:evolveitem.blackaugurite.letter.quest}}%item id <item id> 1 %%"
+            }
+        },
+        {
+            "LogName": "Reward items",
+            "Target": "Data/Objects",
+            "Action": "EditData",
+            "Entries": {
+                "{{modId}}_item_egg_kleavor": {
+                    "Name": "{{modId}_item_egg_kleavor",
+                    "DisplayName": "{{i18n:egg.item |pokemon=kleavor}}",
+                    "Description": "{{i18n:egg.item.description |pokemon=kleavor}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/color",
+                    "SpriteIndex": "3",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_brown",
+                        "{{modId}}_item_egg_kleavor"
+                    ],
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_kleavor"
+                }
+            }
+        },
+        {
+            "LogName": "Reward powers",
+            "Target": "Data/Powers",
+            "Action": "EditData",
+            "Entries": {
+                "DisplayName":"{{i18n:evolveitem.blackaugurite}}",
+                "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.blackaugurite.power}}}}",
+                "TexturePath": "evolutionitems/items",
+                "TexturePosition": {
+                    "x": "0",
+                    "y": "0"
+                },
+                "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_black_augurite_letter_reward received"
+            }
+        },
+        {
+            "LogName": "Fill eggs",
+            "Target": "selph.ExtraAnimalConfig/EggExtensionData",
+            "Action": "EditData",
+            "Entries": {
+                "{{modId}}_item_egg_kleavor": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "{{modId}}_egg_spawn_kleavor_female_quest",
+                            "AnimalId": "{{modId}}_pokemon_kleavor_female",
+                            "Condition": " received, RANDOM 0.5"
+                        },
+                        {
+                            "Id": "{{modId}}_egg_spawn_kleavor_male_quest",
+                            "AnimalId": "{{modId}}_pokemon_kleavor_male"
+                        }
+                    ],
+                    "ID": "{{modId}}_item_egg_kleavor"
+                }
+            }
+        }        
+    ]
+}

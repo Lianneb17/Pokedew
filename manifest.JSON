@@ -11,6 +11,14 @@
 		{
             "UniqueID": "selph.ExtraAnimalConfig",
             "IsRequired": true
-		}
+		},
+        {
+            "UniqueID": "Spiderbuttons.SpecialPowerUtilities",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Spiderbuttons.BETAS",
+            "IsRequired": true
+        }
 	]
 }

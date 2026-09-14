@@ -20,6 +20,10 @@
 	},
 	{
 		"Action": "Include",
+		"FromFile": "assets/evolutionitems/evolutionitemsdata.json"
+	},
+	{
+		"Action": "Include",
 		"FromFile": "assets/eggs/eggdata.json"
 	},
 	{

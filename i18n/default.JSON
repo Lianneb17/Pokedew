@@ -48,6 +48,9 @@
   "pokemon.shop": "{name}! I choose you!!",
   "pokemonincubator": "Pokémon Egg Incubator",
   "pokemonincubator.d": "A device that incubates a Pokémon Egg until it is ready to hatch. Unlimited use!",
+  "evolveitem.blackaugurite": "Black Augurite",
+  "evolveitem.blackaugurite.description": "A strange black stone that can trigger a special evolution.",
+  "evolveitem.power": "This item allows you to trigger the evolution for {pokemon}",
   "stone.dawn": "Dawn",
   "stone.dawn.description": "It gives off a faint, gentle glow that seems almost like morning light.",
   "stone.dawn.feeling": "A gentle energy stirs within you.",
@@ -100,5 +103,11 @@
   "stone.water": "Water",
   "stone.water.feeling": "You feel a cool sensation wash over you.",
   "stone.water.description": "Its surface is strangely cool and damp, as though it has just been pulled from deep water.",
-  "stone.water.pokemons": "Poliwhirl, Shellder, Staryu, Eevee, Lombre and Panpour."
+  "stone.water.pokemons": "Poliwhirl, Shellder, Staryu, Eevee, Lombre and Panpour.",
+  "evolveitem.blackaugurite.letter.quest": "Hey @!^I've been looking for something called Black Augurite. Apparently, the last place anyone saw it was somewhere around the Calico Desert.^If you happen to find one, could you bring it to me? I'd really like to get my hands on it. I've been wondering what it tastes like.^...I mean, what it's like.^Anyway, please hurry!^— Abigail",
+  "evolveitem.blackaugurite.power": "Kleavor",
+  "evolveitem.blackaugurite.quest": "A Stone's Throw Away",
+  "evolveitem.blackaugurite.quest.description": "Abigail is looking for a Black Augurite from the Calico Desert. Apparently, she has a very particular interest in this stone.",
+  "evolveitem.blackaugurite.quest.objective": "Find a black augurite for Abigail",
+  "evolveitem.blackaugurite.quest.response": "You found it! Thank you so much for bringing this to me. I won't forget that you went all the way to the Calico Desert to find it for me. I owe you one!"
 }

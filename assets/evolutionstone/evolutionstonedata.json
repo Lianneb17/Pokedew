@@ -1,7 +1,7 @@
 {
     "Changes":[
         {
-            "LogName": "Load evolution items",
+            "LogName": "Load evolution stones",
             "Action": "Load",
             "Target": "evolutionstone/evolutionstones",
             "FromFile": "assets/evolutionstone/{{TargetWithoutPath}}.png"

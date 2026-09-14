@@ -168,7 +168,8 @@
           "Gender": "Female",
           "EggItemIds": [
             "{{modId}}_item_egg_scyther",
-            "{{modId}}_item_egg_group_bug"
+            "{{modId}}_item_egg_group_bug",
+            "{{modId}}_item_egg_kleavor"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -207,7 +208,8 @@
           "Gender": "Male",
           "EggItemIds": [
             "{{modId}}_item_egg_scyther",
-            "{{modId}}_item_egg_group_bug"
+            "{{modId}}_item_egg_group_bug",
+            "{{modId}}_item_egg_kleavor"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -246,7 +248,8 @@
           "Gender": "Female",
           "EggItemIds": [
             "{{modId}}_item_egg_scyther",
-            "{{modId}}_item_egg_group_bug"
+            "{{modId}}_item_egg_group_bug",
+            "{{modId}}_item_egg_kleavor"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -298,7 +301,8 @@
           "Edibility": "50",
           "ContextTags": [
             "egg_item",
-            "color_green"
+            "color_green",
+            "{{modId}}_item_egg_scyther"
           ],
           "ExcludeFromShippingCollection": "True",
           "ID": "{{modId}}_item_egg_scyther"
