@@ -16,6 +16,72 @@
                     "Trigger": "DayEnding",
                     "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_scizor_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_scizor_male 1\"",
                     "Action": "AddMail current {{modId}}_evolveitem_black_augurite_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_dragon_scale_start": {
+                    "Id": "{{modId}}_evolveitem_dragon_scale_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_horsea_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_horsea_male 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_dragon_scale_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_dubious_disc_start": {
+                    "Id": "{{modId}}_evolveitem_dubious_disc_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_porygon 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_dubious_disc_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_electirizer_start": {
+                    "Id": "{{modId}}_evolveitem_electirizer_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_elekid_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_elekid_male 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_galarica_cuff_start": {
+                    "Id": "{{modId}}_evolveitem_galarica_cuff_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_slowpoke_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_slowpoke_male 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_galarica_cuff_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_galarica_wreath_start": {
+                    "Id": "{{modId}}_evolveitem_galarica_wreath_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_slowpoke_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_slowpoke_male 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_galarica_wreath_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_kings_rock_start": {
+                    "Id": "{{modId}}_evolveitem_kings_rock_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_poliwag_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_poliwag_male 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_kings_rock_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_magmarizer_start": {
+                    "Id": "{{modId}}_evolveitem_magmarizer_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_magby_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_magby_male 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_magmarizer_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_metal_coat_start": {
+                    "Id": "{{modId}}_evolveitem_metal_coat_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_scyther_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_scyther_male 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_onix 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_oval_stone_start": {
+                    "Id": "{{modId}}_evolveitem_oval_stone_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_happiny_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_happiny_male 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_oval_stone_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_protector_start": {
+                    "Id": "{{modId}}_evolveitem_protector_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_rhyhorn_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_rhyhorn_male 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_protector_letter_quest tomorrow"
+                },
+                "{{modId}}_evolveitem_up_grade_start": {
+                    "Id": "{{modId}}_evolveitem_up_grade_start",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_porygon 1\"",
+                    "Action": "AddMail current {{modId}}_evolveitem_up_grade_letter_quest tomorrow"
                 }
             }
         },
@@ -24,7 +90,18 @@
             "Target": "Data/Mail",
             "Action": "EditData",
             "Entries": {
-                "{{modId}}_evolveitem_black_augurite_letter_quest": "{{i18n:evolveitem.blackaugurite.letter.quest}}%item quest {{modId}}_evolveitem_black_augurite_quest true %%"
+                "{{modId}}_evolveitem_black_augurite_letter_quest": "{{i18n:evolveitem.blackaugurite.letter.quest}}%item quest {{modId}}_evolveitem_black_augurite_quest true %%",
+                "{{modId}}_evolveitem_dragon_scale_letter_quest": "{{i18n:evolveitem.dragon.scale.letter.quest}}%item quest {{modId}}_evolveitem_dragon_scale_quest true %%",
+                "{{modId}}_evolveitem_dubious_disc_letter_quest": "{{i18n:evolveitem.dubious.disc.letter.quest}}%item quest {{modId}}_evolveitem_dubious_disc_quest true %%",
+                "{{modId}}_evolveitem_electirizer_letter_quest": "{{i18n:evolveitem.electirizer.letter.quest}}%item quest {{modId}}_evolveitem_electirizer_quest true %%",
+                "{{modId}}_evolveitem_galarica_cuff_letter_quest": "{{i18n:evolveitem.galarica.cuff.letter.quest}}%item quest {{modId}}_evolveitem_galarica_cuff_quest true %%",
+                "{{modId}}_evolveitem_galarica_wreath_letter_quest": "{{i18n:evolveitem.galarica.wreath.letter.quest}}%item quest {{modId}}_evolveitem_galarica_wreath_quest true %%",
+                "{{modId}}_evolveitem_kings_rock_letter_quest": "{{i18n:evolveitem.kings.rock.letter.quest}}%item quest {{modId}}_evolveitem_kings_rock_quest true %%",
+                "{{modId}}_evolveitem_magmarizer_letter_quest": "{{i18n:evolveitem.magmarizer.letter.quest}}%item quest {{modId}}_evolveitem_magmarizer_quest true %%",
+                "{{modId}}_evolveitem_metal_coat_letter_quest": "{{i18n:evolveitem.metal.coat.letter.quest}}%item quest {{modId}}_evolveitem_metal_coat_quest true %%",
+                "{{modId}}_evolveitem_oval_stone_letter_quest": "{{i18n:evolveitem.oval.stone.letter.quest}}%item quest {{modId}}_evolveitem_oval_stone_quest true %%",
+                "{{modId}}_evolveitem_protector_letter_quest": "{{i18n:evolveitem.protector.letter.quest}}%item quest {{modId}}_evolveitem_protector_quest true %%",
+                "{{modId}}_evolveitem_up_grade_letter_quest": "{{i18n:evolveitem.up.grade.letter.quest}}%item quest {{modId}}_evolveitem_up_grade_quest true %%"
             }
         },
         {
@@ -32,7 +109,18 @@
             "Target": "Data/Quests",
             "Action": "EditData",
             "Entries": {
-                "{{modId}}_evolveitem_black_augurite_quest": "LostItem/{{i18n:evolveitem.blackaugurite.quest}}/{{i18n:evolveitem.blackaugurite.quest.description}}/{{i18n:evolveitem.blackaugurite.quest.objective}}/Abigail {{modId}}_evolveitem_black_augurite_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.blackaugurite.quest.response}}"
+                "{{modId}}_evolveitem_black_augurite_quest": "LostItem/{{i18n:evolveitem.blackaugurite.quest}}/{{i18n:evolveitem.blackaugurite.quest.description}}/{{i18n:evolveitem.blackaugurite.quest.objective}}/Abigail {{modId}}_evolveitem_black_augurite_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.blackaugurite.quest.response}}",
+                "{{modId}}_evolveitem_dragon_scale_quest": "LostItem/{{i18n:evolveitem.dragon.scale.quest}}/{{i18n:evolveitem.dragon.scale.quest.description}}/{{i18n:evolveitem.dragon.scale.quest.objective}}/Abigail {{modId}}_evolveitem_dragon_scale_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.dragon.scale.quest.response}}",
+                "{{modId}}_evolveitem_dubious_disc_quest": "LostItem/{{i18n:evolveitem.dubious.disc.quest}}/{{i18n:evolveitem.dubious.disc.quest.description}}/{{i18n:evolveitem.dubious.disc.quest.objective}}/Abigail {{modId}}_evolveitem_dubious_disc_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.dubious.disc.quest.response}}",
+                "{{modId}}_evolveitem_electirizer_quest": "LostItem/{{i18n:evolveitem.electirizer.quest}}/{{i18n:evolveitem.electirizer.quest.description}}/{{i18n:evolveitem.electirizer.quest.objective}}/Abigail {{modId}}_evolveitem_electirizer_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.electirizer.quest.response}}",
+                "{{modId}}_evolveitem_galarica_cuff_quest": "LostItem/{{i18n:evolveitem.galarica.cuff.quest}}/{{i18n:evolveitem.galarica.cuff.quest.description}}/{{i18n:evolveitem.galarica.cuff.quest.objective}}/Abigail {{modId}}_evolveitem_galarica_cuff_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.galarica.cuff.quest.response}}",
+                "{{modId}}_evolveitem_galarica_wreath_quest": "LostItem/{{i18n:evolveitem.galarica.wreath.quest}}/{{i18n:evolveitem.galarica.wreath.quest.description}}/{{i18n:evolveitem.galarica.wreath.quest.objective}}/Abigail {{modId}}_evolveitem_galarica_wreath_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.galarica.wreath.quest.response}}",
+                "{{modId}}_evolveitem_kings_rock_quest": "LostItem/{{i18n:evolveitem.kings.rock.quest}}/{{i18n:evolveitem.kings.rock.quest.description}}/{{i18n:evolveitem.kings.rock.quest.objective}}/Abigail {{modId}}_evolveitem_kings_rock_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.kings.rock.quest.response}}",
+                "{{modId}}_evolveitem_magmarizer_quest": "LostItem/{{i18n:evolveitem.magmarizer.quest}}/{{i18n:evolveitem.magmarizer.quest.description}}/{{i18n:evolveitem.magmarizer.quest.objective}}/Abigail {{modId}}_evolveitem_magmarizer_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.magmarizer.quest.response}}",
+                "{{modId}}_evolveitem_metal_coat_quest": "LostItem/{{i18n:evolveitem.metal.coat.quest}}/{{i18n:evolveitem.metal.coat.quest.description}}/{{i18n:evolveitem.metal.coat.quest.objective}}/Abigail {{modId}}_evolveitem_metal_coat_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.metal.coat.quest.response}}",
+                "{{modId}}_evolveitem_oval_stone_quest": "LostItem/{{i18n:evolveitem.oval.stone.quest}}/{{i18n:evolveitem.oval.stone.quest.description}}/{{i18n:evolveitem.oval.stone.quest.objective}}/Abigail {{modId}}_evolveitem_oval_stone_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.oval.stone.quest.response}}",
+                "{{modId}}_evolveitem_protector_quest": "LostItem/{{i18n:evolveitem.protector.quest}}/{{i18n:evolveitem.protector.quest.description}}/{{i18n:evolveitem.protector.quest.objective}}/Abigail {{modId}}_evolveitem_protector_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.protector.quest.response}}",
+                "{{modId}}_evolveitem_up_grade_quest": "LostItem/{{i18n:evolveitem.up.grade.quest}}/{{i18n:evolveitem.up.grade.quest.description}}/{{i18n:evolveitem.up.grade.quest.objective}}/Abigail {{modId}}_evolveitem_up_grade_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.up.grade.quest.response}}"
             }
         },
         {
@@ -51,6 +139,138 @@
                     "CanBeTrashed": "False",
                     "ExcludeFromRandomSale": "True",
                     "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_dragon_scale_item": {
+                    "DisplayName": "{{i18n:evolveitem.dragon.scale}}",
+                    "Description": "{{i18n:evolveitem.dragon.scale.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "1",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_dubious_disc_item": {
+                    "DisplayName": "{{i18n:evolveitem.dubious.disc}}",
+                    "Description": "{{i18n:evolveitem.dubious.disc.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "2",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_electirizer_item": {
+                    "DisplayName": "{{i18n:evolveitem.electirizer}}",
+                    "Description": "{{i18n:evolveitem.electirizer.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "3",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_galarica_cuff_item": {
+                    "DisplayName": "{{i18n:evolveitem.galarica.cuff}}",
+                    "Description": "{{i18n:evolveitem.galarica.cuff.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "4",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_galarica_wreath_item": {
+                    "DisplayName": "{{i18n:evolveitem.galarica.wreath}}",
+                    "Description": "{{i18n:evolveitem.galarica.wreath.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "5",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_kings_rock_item": {
+                    "DisplayName": "{{i18n:evolveitem.kings.rock}}",
+                    "Description": "{{i18n:evolveitem.kings.rock.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "6",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_magmarizer_item": {
+                    "DisplayName": "{{i18n:evolveitem.magmarizer}}",
+                    "Description": "{{i18n:evolveitem.magmarizer.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "7",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_metal_coat_item": {
+                    "DisplayName": "{{i18n:evolveitem.metal.coat}}",
+                    "Description": "{{i18n:evolveitem.metal.coat.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "8",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_oval_stone_item": {
+                    "DisplayName": "{{i18n:evolveitem.oval.stone}}",
+                    "Description": "{{i18n:evolveitem.oval.stone.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "9",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_protector_item": {
+                    "DisplayName": "{{i18n:evolveitem.protector}}",
+                    "Description": "{{i18n:evolveitem.protector.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "10",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
+                },
+                "{{modId}}_evolveitem_up_grade_item": {
+                    "DisplayName": "{{i18n:evolveitem.up.grade}}",
+                    "Description": "{{i18n:evolveitem.up.grade.description}}",
+                    "Type": "Quest",
+                    "Category": "0",
+                    "Texture": "evolutionitems/items",
+                    "SpriteIndex": "11",
+                    "CanBeGivenAsGift": "False",
+                    "CanBeTrashed": "False",
+                    "ExcludeFromRandomSale": "True",
+                    "ExcludeFromShippingCollection": "True"
                 }
             }
         },
@@ -64,6 +284,72 @@
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_black_augurite_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_black_augurite_quest",
                     "Action": "AddMail current {{modId}}_evolveitem_black_augurite_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_dragon_scale_completed": {
+                    "Id": "{{modId}}_evolveitem_dragon_scale_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_dragon_scale_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_dragon_scale_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_dragon_scale_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_dubious_disc_completed": {
+                    "Id": "{{modId}}_evolveitem_dubious_disc_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_dubious_disc_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_dubious_disc_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_dubious_disc_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_electirizer_completed": {
+                    "Id": "{{modId}}_evolveitem_electirizer_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_electirizer_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_electirizer_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_galarica_cuff_completed": {
+                    "Id": "{{modId}}_evolveitem_galarica_cuff_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_galarica_cuff_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_galarica_cuff_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_galarica_cuff_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_galarica_wreath_completed": {
+                    "Id": "{{modId}}_evolveitem_galarica_wreath_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_galarica_wreath_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_galarica_wreath_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_galarica_wreath_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_kings_rock_completed": {
+                    "Id": "{{modId}}_evolveitem_kings_rock_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_kings_rock_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_kings_rock_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_kings_rock_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_magmarizer_completed": {
+                    "Id": "{{modId}}_evolveitem_magmarizer_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_magmarizer_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_magmarizer_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_magmarizer_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_metal_coat_completed": {
+                    "Id": "{{modId}}_evolveitem_metal_coat_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_metal_coat_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_metal_coat_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_oval_stone_completed": {
+                    "Id": "{{modId}}_evolveitem_oval_stone_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_oval_stone_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_oval_stone_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_oval_stone_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_protector_completed": {
+                    "Id": "{{modId}}_evolveitem_protector_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_protector_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_protector_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_protector_letter_reward tomorrow"
+                },
+                "{{modId}}_evolveitem_up_grade_completed": {
+                    "Id": "{{modId}}_evolveitem_up_grade_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_up_grade_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_up_grade_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_up_grade_letter_reward tomorrow"
                 }
             }
         },
@@ -72,7 +358,18 @@
             "Target": "Data/Mail",
             "Action": "EditData",
             "Entries": {
-                "{{modId}}_evolveitem_black_augurite_letter_reward": "{{i18n:evolveitem.blackaugurite.letter.quest}}%item id <item id> 1 %%"
+                "{{modId}}_evolveitem_black_augurite_letter_reward": "{{i18n:evolveitem.blackaugurite.letter.quest}}%item id {{modId}}_item_egg_kleavor 1 %%",
+                "{{modId}}_evolveitem_dragon_scale_letter_reward": "{{i18n:evolveitem.dragon.scale.letter.quest}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_dubious_disc_letter_reward": "{{i18n:evolveitem.dubious.disc.letter.quest}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_electirizer_letter_reward": "{{i18n:evolveitem.electirizer.letter.quest}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_galarica_cuff_letter_reward": "{{i18n:evolveitem.galarica.cuff.letter.quest}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_galarica_wreath_letter_reward": "{{i18n:evolveitem.galarica.wreath.letter.quest}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_kings_rock_letter_reward": "{{i18n:evolveitem.kings.rock.letter.quest}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_magmarizer_letter_reward": "{{i18n:evolveitem.magmarizer.letter.quest}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_metal_coat_letter_reward": "{{i18n:evolveitem.metal.coat.letter.quest}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_oval_stone_letter_reward": "{{i18n:evolveitem.oval.stone.letter.quest}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_protector_letter_reward": "{{i18n:evolveitem.protector.letter.quest}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_up_grade_letter_reward": "{{i18n:evolveitem.up.grade.letter.quest}}%item id <item id> 1 %%"
             }
         },
         {
@@ -105,14 +402,126 @@
             "Target": "Data/Powers",
             "Action": "EditData",
             "Entries": {
-                "DisplayName":"{{i18n:evolveitem.blackaugurite}}",
-                "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.blackaugurite.power}}}}",
-                "TexturePath": "evolutionitems/items",
-                "TexturePosition": {
-                    "x": "0",
-                    "y": "0"
+                "{{modId}}_evolveitem_black_augurite_power": {
+                    "DisplayName": "{{i18n:evolveitem.blackaugurite}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.blackaugurite.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "0",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_black_augurite_letter_reward received"
                 },
-                "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_black_augurite_letter_reward received"
+                "{{modId}}_evolveitem_dragon_scale_power": {
+                    "DisplayName": "{{i18n:evolveitem.dragon.scale}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.dragon.scale.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "1",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_dragon_scale_letter_reward received"
+                },
+                "{{modId}}_evolveitem_dubious_disc_power": {
+                    "DisplayName": "{{i18n:evolveitem.dubious.disc}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.dubious.disc.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "2",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_dubious_disc_letter_reward received"
+                },
+                "{{modId}}_evolveitem_electirizer_power": {
+                    "DisplayName": "{{i18n:evolveitem.electirizer}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.electirizer.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "3",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_electirizer_letter_reward received"
+                },
+                "{{modId}}_evolveitem_galarica_cuff_power": {
+                    "DisplayName": "{{i18n:evolveitem.galarica.cuff}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.galarica.cuff.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "4",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_galarica_cuff_letter_reward received"
+                },
+                "{{modId}}_evolveitem_galarica_wreath_power": {
+                    "DisplayName": "{{i18n:evolveitem.galarica.wreath}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.galarica.wreath.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "5",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_galarica_wreath_letter_reward received"
+                },
+                "{{modId}}_evolveitem_kings_rock_power": {
+                    "DisplayName": "{{i18n:evolveitem.kings.rock}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.kings.rock.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "6",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_kings_rock_letter_reward received"
+                },
+                "{{modId}}_evolveitem_magmarizer_power": {
+                    "DisplayName": "{{i18n:evolveitem.magmarizer}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.magmarizer.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "7",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_magmarizer_letter_reward received"
+                },
+                "{{modId}}_evolveitem_metal_coat_power": {
+                    "DisplayName": "{{i18n:evolveitem.metal.coat}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.metal.coat.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "8",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_metal_coat_letter_reward received"
+                },
+                "{{modId}}_evolveitem_oval_stone_power": {
+                    "DisplayName": "{{i18n:evolveitem.oval.stone}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.oval.stone.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "9",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_oval_stone_letter_reward received"
+                },
+                "{{modId}}_evolveitem_protector_power": {
+                    "DisplayName": "{{i18n:evolveitem.protector}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.protector.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "10",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_protector_letter_reward received"
+                },
+                "{{modId}}_evolveitem_up_grade_power": {
+                    "DisplayName": "{{i18n:evolveitem.up.grade}}",
+                    "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.up.grade.power}}}}",
+                    "TexturePath": "evolutionitems/items",
+                    "TexturePosition": {
+                        "x": "11",
+                        "y": "0"
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_up_grade_letter_reward received"
+                }
             }
         },
         {
@@ -135,6 +544,6 @@
                     "ID": "{{modId}}_item_egg_kleavor"
                 }
             }
-        }        
+        }
     ]
 }
