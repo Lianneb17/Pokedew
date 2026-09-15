@@ -160,7 +160,8 @@
           "EggItemIds": [
             "{{modId}}_item_egg_slowpoke",
             "{{modId}}_item_egg_group_monster",
-            "{{modId}}_item_egg_group_water1"
+            "{{modId}}_item_egg_group_water1",
+            "{{modId}}_item_egg_slowbro_galar"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -240,7 +241,8 @@
           "EggItemIds": [
             "{{modId}}_item_egg_slowpoke",
             "{{modId}}_item_egg_group_monster",
-            "{{modId}}_item_egg_group_water1"
+            "{{modId}}_item_egg_group_water1",
+            "{{modId}}_item_egg_slowking_galar"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
