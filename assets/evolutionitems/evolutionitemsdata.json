@@ -32,7 +32,7 @@
                 "{{modId}}_evolveitem_electirizer_start": {
                     "Id": "{{modId}}_evolveitem_electirizer_start",
                     "Trigger": "DayEnding",
-                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_elekid_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_elekid_male 1\"",
+                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_electabuzz 1",
                     "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_quest tomorrow"
                 },
                 "{{modId}}_evolveitem_galarica_cuff_start": {
@@ -105,7 +105,8 @@
                 "{{modId}}_evolveitem_black_augurite_quest": "LostItem/{{i18n:evolveitem.blackaugurite.quest}}/{{i18n:evolveitem.blackaugurite.quest.description}}/{{i18n:evolveitem.blackaugurite.quest.objective}}/Abigail {{modId}}_evolveitem_black_augurite_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.blackaugurite.quest.response}}",
                 "{{modId}}_evolveitem_dragon_scale_quest": "LostItem/{{i18n:evolveitem.dragon.scale.quest}}/{{i18n:evolveitem.dragon.scale.quest.description}}/{{i18n:evolveitem.dragon.scale.quest.objective}}/Abigail {{modId}}_evolveitem_dragon_scale_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.dragon.scale.quest.response}}",
                 "{{modId}}_evolveitem_dubious_disc_quest": "LostItem/{{i18n:evolveitem.dubious.disc.quest}}/{{i18n:evolveitem.dubious.disc.quest.description}}/{{i18n:evolveitem.dubious.disc.quest.objective}}/Abigail {{modId}}_evolveitem_dubious_disc_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.dubious.disc.quest.response}}",
-                "{{modId}}_evolveitem_electirizer_quest": "LostItem/{{i18n:evolveitem.electirizer.quest}}/{{i18n:evolveitem.electirizer.quest.description}}/{{i18n:evolveitem.electirizer.quest.objective}}/Abigail {{modId}}_evolveitem_electirizer_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.electirizer.quest.response}}",
+                "{{modId}}_evolveitem_electirizer_quest": "LostItem/{{i18n:evolveitem.electirizer.quest}}/{{i18n:evolveitem.electirizer.quest.description}}/{{i18n:evolveitem.electirizer.quest.objective}}/Sam {{modId}}_evolveitem_electirizer_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.electirizer.quest.response}}",
+                "{{modId}}_evolveitem_electirizer_quest_egg": "ItemDelivery/{{i18n:evolveitem.electirizer.quest.egg}}/{{i18n:evolveitem.electirizer.quest.egg.description}}/{{i18n:evolveitem.electirizer.quest.egg.objective}}/Sam {{modId}}_evolveitem_electirizer_item 1/-1/-1/false/{{i18n:evolveitem.electirizer.quest.egg.response}}",
                 "{{modId}}_evolveitem_galarica_cuff_quest": "LostItem/{{i18n:evolveitem.galarica.cuff.quest}}/{{i18n:evolveitem.galarica.cuff.quest.description}}/{{i18n:evolveitem.galarica.cuff.quest.objective}}/Penny {{modId}}_evolveitem_galarica_cuff_item Forest 34 6/-1/-1/false/{{i18n:evolveitem.galarica.cuff.quest.response}}",
                 "{{modId}}_evolveitem_galarica_wreath_quest": "LostItem/{{i18n:evolveitem.galarica.wreath.quest}}/{{i18n:evolveitem.galarica.wreath.quest.description}}/{{i18n:evolveitem.galarica.wreath.quest.objective}}/Penny {{modId}}_evolveitem_galarica_wreath_item Forest 114 23/-1/-1/false/{{i18n:evolveitem.galarica.wreath.quest.response}}",
                 "{{modId}}_evolveitem_kings_rock_quest": "LostItem/{{i18n:evolveitem.kings.rock.quest}}/{{i18n:evolveitem.kings.rock.quest.description}}/{{i18n:evolveitem.kings.rock.quest.objective}}/Abigail {{modId}}_evolveitem_kings_rock_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.kings.rock.quest.response}}",
@@ -294,6 +295,12 @@
                     "Id": "{{modId}}_evolveitem_electirizer_completed",
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_electirizer_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_electirizer_quest",
+                    "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_egg tomorrow"
+                },
+                "{{modId}}_evolveitem_electirizer_egg_completed": {
+                    "Id": "{{modId}}_evolveitem_electirizer_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_electirizer_letter_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_electirizer_quest_egg",
                     "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_reward tomorrow"
                 },
                 "{{modId}}_evolveitem_galarica_cuff_completed": {
@@ -354,7 +361,8 @@
                 "{{modId}}_evolveitem_black_augurite_letter_reward": "{{i18n:evolveitem.blackaugurite.letter.reward}}%item id {{modId}}_item_egg_kleavor 1 %%",
                 "{{modId}}_evolveitem_dragon_scale_letter_reward": "{{i18n:evolveitem.dragon.scale.letter.reward}}%item id <item id> 1 %%",
                 "{{modId}}_evolveitem_dubious_disc_letter_reward": "{{i18n:evolveitem.dubious.disc.letter.reward}}%item id <item id> 1 %%",
-                "{{modId}}_evolveitem_electirizer_letter_reward": "{{i18n:evolveitem.electirizer.letter.reward}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_electirizer_letter_egg": "{{i18n:evolveitem.electirizer.letter.egg}}%item quest {{modId}}_evolveitem_electirizer_quest_egg true %%",
+                "{{modId}}_evolveitem_electirizer_letter_reward": "{{i18n:evolveitem.electirizer.letter.reward}}%item id {{modId}}_item_egg_electivire 1 %%",
                 "{{modId}}_evolveitem_galarica_cuff_letter_reward": "{{i18n:evolveitem.galarica.cuff.letter.reward}}%item id {{modId}}_item_egg_slowbro_galar 1 %%%item quest {{modId}}_evolveitem_galarica_wreath_quest true %%",
                 "{{modId}}_evolveitem_galarica_wreath_letter_reward": "{{i18n:evolveitem.galarica.wreath.letter.reward}}%item id {{modId}}_item_egg_slowking_galar 1 %%",
                 "{{modId}}_evolveitem_kings_rock_letter_reward": "{{i18n:evolveitem.kings.rock.letter.reward}}%item id <item id> 1 %%",
@@ -386,6 +394,23 @@
                     ],
                     "ExcludeFromShippingCollection": "True",
                     "ID": "{{modId}}_item_egg_kleavor"
+                },
+                "{{modId}}_item_egg_electivire": {
+                    "Name": "{{modId}_item_egg_electivire",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Electivire}}",
+                    "Description": "{{i18n:egg.item.description |pokemon=Electivire}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/color",
+                    "SpriteIndex": "2",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_yellow"
+                    ],
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_electivire"
                 },
                 "{{modId}}_item_egg_slowbro_galar": {
                     "Name": "{{modId}_item_egg_slowbro_galar",
@@ -568,6 +593,14 @@
                         }
                     ],
                     "ID": "{{modId}}_item_egg_kleavor"
+                },
+                "{{modId}}_item_egg_electivire": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "{{modId}}_egg_spawn_electivire_quest",
+                            "AnimalId": "{{modId}}_item_egg_electivire"
+                        }
+                    ]
                 },
                 "{{modId}}_item_egg_slowbro_galar": {
                     "AnimalSpawnList": [

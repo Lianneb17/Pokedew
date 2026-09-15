@@ -133,7 +133,8 @@
           "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_elekid",
-            "{{modId}}_item_egg_group_humanlike"
+            "{{modId}}_item_egg_group_humanlike",
+            "{{modId}}_item_egg_electivire"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
