@@ -20,13 +20,13 @@
                 "{{modId}}_evolveitem_dragon_scale_start": {
                     "Id": "{{modId}}_evolveitem_dragon_scale_start",
                     "Trigger": "DayEnding",
-                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_horsea_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_horsea_male 1\"",
+                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_seadra 1",
                     "Action": "AddMail current {{modId}}_evolveitem_dragon_scale_letter_quest tomorrow"
                 },
                 "{{modId}}_evolveitem_dubious_disc_start": {
                     "Id": "{{modId}}_evolveitem_dubious_disc_start",
                     "Trigger": "DayEnding",
-                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_porygon 1\"",
+                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_porygon2 1",
                     "Action": "AddMail current {{modId}}_evolveitem_dubious_disc_letter_quest tomorrow"
                 },
                 "{{modId}}_evolveitem_electirizer_start": {
@@ -44,13 +44,13 @@
                 "{{modId}}_evolveitem_kings_rock_start": {
                     "Id": "{{modId}}_evolveitem_kings_rock_start",
                     "Trigger": "DayEnding",
-                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_poliwag_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_poliwag_male 1\"",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_poliwhirl 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_slowpoke 1\"",
                     "Action": "AddMail current {{modId}}_evolveitem_kings_rock_letter_quest tomorrow"
                 },
                 "{{modId}}_evolveitem_magmarizer_start": {
                     "Id": "{{modId}}_evolveitem_magmarizer_start",
                     "Trigger": "DayEnding",
-                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_magby_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_magby_male 1\"",
+                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_magmar 1",
                     "Action": "AddMail current {{modId}}_evolveitem_magmarizer_letter_quest tomorrow"
                 },
                 "{{modId}}_evolveitem_metal_coat_start": {
@@ -62,19 +62,19 @@
                 "{{modId}}_evolveitem_oval_stone_start": {
                     "Id": "{{modId}}_evolveitem_oval_stone_start",
                     "Trigger": "DayEnding",
-                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_happiny_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_happiny_male 1\"",
+                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_happiny 1",
                     "Action": "AddMail current {{modId}}_evolveitem_oval_stone_letter_quest tomorrow"
                 },
                 "{{modId}}_evolveitem_protector_start": {
                     "Id": "{{modId}}_evolveitem_protector_start",
                     "Trigger": "DayEnding",
-                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_rhyhorn_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_rhyhorn_male 1\"",
+                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_rhydon_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_rhydon_male 1\"",
                     "Action": "AddMail current {{modId}}_evolveitem_protector_letter_quest tomorrow"
                 },
                 "{{modId}}_evolveitem_up_grade_start": {
                     "Id": "{{modId}}_evolveitem_up_grade_start",
                     "Trigger": "DayEnding",
-                    "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_porygon 1\"",
+                    "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_porygon 1",
                     "Action": "AddMail current {{modId}}_evolveitem_up_grade_letter_quest tomorrow"
                 }
             }
