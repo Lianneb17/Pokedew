@@ -126,8 +126,7 @@
           "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_poliwag",
-            "{{modId}}_item_egg_group_water1",
-            "{{modId}}_item_egg_poliwrath"
+            "{{modId}}_item_egg_group_water1"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -166,7 +165,8 @@
           "Gender": "Male",
           "EggItemIds": [
             "{{modId}}_item_egg_poliwag",
-            "{{modId}}_item_egg_group_water1"
+            "{{modId}}_item_egg_group_water1",
+            "{{modId}}_item_egg_politoed"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -205,7 +205,8 @@
           "Gender": "Female",
           "EggItemIds": [
             "{{modId}}_item_egg_poliwag",
-            "{{modId}}_item_egg_group_water1"
+            "{{modId}}_item_egg_group_water1",
+            "{{modId}}_item_egg_politoed"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",

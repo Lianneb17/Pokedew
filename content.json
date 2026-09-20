@@ -7,7 +7,40 @@
 			"Section": "Active regions"
 		}
 	},
-	"DynamicTokens": [
+	"DynamicTokens": [ 
+		{
+			"Name": "{{modId}}_evolveitem_kings_rocks_pokemon",
+			"Value": "Poliwhirl"
+		},
+		{
+			"Name": "{{modId}}_evolveitem_kings_rocks_pokemon",
+			"Value": "Slowpoke",
+			"When": {
+				"HasFlag": "{{modId}}_evolveitem_kings_rock_pokemon_slowpoke"
+			}
+		},
+		{
+			"Name": "{{modId}}_evolveitem_kings_rocks_egg",
+			"Value": "{{modId}}_item_egg_poliwag"
+		},
+		{
+			"Name": "{{modId}}_evolveitem_kings_rocks_egg",
+			"Value": "{{modId}}_item_egg_slowpoke",
+			"When": {
+				"{{modId}}_evolveitem_kings_rocks_pokemon": "Slowpoke"
+			}
+		},
+		{
+			"Name": "{{modId}}_evolveitem_kings_rocks_reward",
+			"Value": "{{modId}}_item_egg_politoed"
+		},
+		{
+			"Name": "{{modId}}_evolveitem_kings_rocks_reward",
+			"Value": "{{modId}}_item_egg_slowbro",
+			"When": {
+				"{{modId}}_evolveitem_kings_rocks_pokemon": "Slowpoke"
+			}
+		}
 	],
 	"Changes": [
 	{
