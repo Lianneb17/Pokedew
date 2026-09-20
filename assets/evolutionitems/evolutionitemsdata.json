@@ -89,6 +89,12 @@
                     "Trigger": "DayStarted",
                     "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION {{modId}}_evolveitem_kings_rock_start, !PLAYER_HAS_MAIL current {{modId}}_evolveitem_kings_rock_letter_reward, selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_slowpoke 1",
                     "Action": "AddMail current {{modId}}_evolveitem_kings_rock_pokemon_slowpoke Received"
+                },
+                "{{modId}}_evolveitem_metal_coat_onix": {
+                    "Id": "{{modId}}_evolveitem_metal_coat_onix",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION {{modId}}_evolveitem_metal_coat_start, !PLAYER_HAS_MAIL current {{modId}}_evolveitem_metal_coat_letter_reward, selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_onix 1",
+                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_pokemon_onix Received"
                 }
             }
         },
@@ -125,6 +131,7 @@
                 "{{modId}}_evolveitem_kings_rock_quest": "LostItem/{{i18n:evolveitem.kings.rock.quest}}/{{i18n:evolveitem.kings.rock.quest.description}}/{{i18n:evolveitem.kings.rock.quest.objective}}/Abigail {{modId}}_evolveitem_kings_rock_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.kings.rock.quest.response}}",
                 "{{modId}}_evolveitem_kings_rock_quest_egg": "LostDelivery/{{i18n:evolveitem.kings.rock.quest.egg}}/{{i18n:evolveitem.kings.rock.quest.egg.description |pokemon={{modId}}_evolveitem_kings_rocks_pokemon}}/{{i18n:evolveitem.kings.rock.quest.egg.objective |pokemon={{modId}}_evolveitem_kings_rocks_pokemon}}/Elliott {{modId}}_evolveitem_kings_rocks_egg 1/-1/-1/false/{{i18n:evolveitem.kings.rock.quest.response}}",
                 "{{modId}}_evolveitem_magmarizer_quest": "LostItem/{{i18n:evolveitem.magmarizer.quest}}/{{i18n:evolveitem.magmarizer.quest.description}}/{{i18n:evolveitem.magmarizer.quest.objective}}/Abigail {{modId}}_evolveitem_magmarizer_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.magmarizer.quest.response}}",
+                "{{modId}}_evolveitem_metal_coat_quest_egg": "LostDelivery/{{i18n:evolveitem.metal.coat.quest.egg}}/{{i18n:evolveitem.metal.coat.quest.egg.description |pokemon={{modId}}_evolveitem_metal_coat_pokemon}}/{{i18n:evolveitem.metal.coat.quest.egg.objective |pokemon={{modId}}_evolveitem_metal_coat_pokemon}}/Elliott {{modId}}_evolveitem_metal_coat_egg 1/-1/-1/false/{{i18n:evolveitem.metal.coat.quest.response}}",
                 "{{modId}}_evolveitem_metal_coat_quest": "LostItem/{{i18n:evolveitem.metal.coat.quest}}/{{i18n:evolveitem.metal.coat.quest.description}}/{{i18n:evolveitem.metal.coat.quest.objective}}/Abigail {{modId}}_evolveitem_metal_coat_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.metal.coat.quest.response}}",
                 "{{modId}}_evolveitem_oval_stone_quest": "LostItem/{{i18n:evolveitem.oval.stone.quest}}/{{i18n:evolveitem.oval.stone.quest.description}}/{{i18n:evolveitem.oval.stone.quest.objective}}/Abigail {{modId}}_evolveitem_oval_stone_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.oval.stone.quest.response}}",
                 "{{modId}}_evolveitem_protector_quest": "LostItem/{{i18n:evolveitem.protector.quest}}/{{i18n:evolveitem.protector.quest.description}}/{{i18n:evolveitem.protector.quest.objective}}/Abigail {{modId}}_evolveitem_protector_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.protector.quest.response}}",
@@ -353,6 +360,12 @@
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_metal_coat_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_metal_coat_quest",
                     "Action": "AddMail current {{modId}}_evolveitem_metal_coat_letter_reward tomorrow"
                 },
+                "{{modId}}_evolveitem_metal_coat_egg_completed": {
+                    "Id": "{{modId}}_evolveitem_metal_coat_egg_completed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_metal_coat_letter_quest_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_metal_coat_quest_egg",
+                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_letter_reward tomorrow"
+                },
                 "{{modId}}_evolveitem_oval_stone_completed": {
                     "Id": "{{modId}}_evolveitem_oval_stone_completed",
                     "Trigger": "DayEnding",
@@ -388,6 +401,7 @@
                 "{{modId}}_evolveitem_kings_rock_letter_egg": "{{i18n:evolveitem.kings.rock.letter.egg |pokemon={{{{modId}}_evolveitem_kings_rocks_pokemon}}}}%item quest {{modId}}_evolveitem_kings_rock_quest_egg true %%",
                 "{{modId}}_evolveitem_kings_rock_letter_reward": "{{i18n:evolveitem.kings.rock.letter.reward}}%item id {{modId}}_evolveitem_kings_rocks_reward 1 %%",
                 "{{modId}}_evolveitem_magmarizer_letter_reward": "{{i18n:evolveitem.magmarizer.letter.reward}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_metal_coat_letter_egg": "{{i18n:evolveitem.metal.coat.letter.egg |pokemon={{{{modId}}_evolveitem_metal_coat_pokemon}}}}%item quest {{modId}}_evolveitem_metal_coat_quest_egg true %%",
                 "{{modId}}_evolveitem_metal_coat_letter_reward": "{{i18n:evolveitem.metal.coat.letter.reward}}%item id <item id> 1 %%",
                 "{{modId}}_evolveitem_oval_stone_letter_reward": "{{i18n:evolveitem.oval.stone.letter.reward}}%item id <item id> 1 %%",
                 "{{modId}}_evolveitem_protector_letter_reward": "{{i18n:evolveitem.protector.letter.reward}}%item id <item id> 1 %%",
@@ -500,6 +514,40 @@
                     ],
                     "ExcludeFromShippingCollection": "True",
                     "ID": "{{modId}}_item_egg_slowbro"
+                },
+                "{{modId}}_item_egg_scizor": {
+                    "Name": "{{modId}_item_egg_scizor",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Scizor}}",
+                    "Description": "{{i18n:egg.item.description |pokemon=Scizor}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/color",
+                    "SpriteIndex": "0",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_red"
+                    ],
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_scizor"
+                },
+                "{{modId}}_item_egg_steelix": {
+                    "Name": "{{modId}_item_egg_steelix",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Steelix}}",
+                    "Description": "{{i18n:egg.item.description |pokemon=Steelix}}",
+                    "Type": "Basic",
+                    "Category": "-5",
+                    "Price": "500",
+                    "Texture": "eggs/color",
+                    "SpriteIndex": "7",
+                    "Edibility": "50",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_gray"
+                    ],
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_steelix"
                 }
             }
         },
@@ -640,7 +688,7 @@
                         {
                             "Id": "{{modId}}_egg_spawn_kleavor_female_quest",
                             "AnimalId": "{{modId}}_pokemon_kleavor_female",
-                            "Condition": " received, RANDOM 0.5"
+                            "Condition": "RANDOM 0.5"
                         },
                         {
                             "Id": "{{modId}}_egg_spawn_kleavor_male_quest",
@@ -677,7 +725,8 @@
                     "AnimalSpawnList": [
                         {
                             "Id": "{{modId}}_egg_spawn_politoed_male_quest",
-                            "AnimalId": "{{modId}}_pokemon_politoed_male"
+                            "AnimalId": "{{modId}}_pokemon_politoed_male",
+                            "Condition": "RANDOM 0.5"
                         },
                         {
                             "Id": "{{modId}}_egg_spawn_politoed_female_quest",
@@ -693,7 +742,32 @@
                         }
                     ]
                 },
-
+                "{{modId}}_item_egg_steelix": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "{{modId}}_egg_spawn_steelix_male_quest",
+                            "AnimalId": "{{modId}}_pokemon_steelix_male",
+                            "Condition": "RANDOM 0.5"
+                        },
+                        {
+                            "Id": "{{modId}}_egg_spawn_steelix_female_quest",
+                            "AnimalId": "{{modId}}_pokemon_steelix_female"
+                        }
+                    ]
+                },
+                "{{modId}}_item_egg_scizor": {
+                    "AnimalSpawnList": [
+                        {
+                            "Id": "{{modId}}_egg_spawn_scizor_female_quest",
+                            "AnimalId": "{{modId}}_pokemon_scizor_female",
+                            "Condition": "RANDOM 0.5"
+                        },
+                        {
+                            "Id": "{{modId}}_egg_spawn_scizor_male_quest",
+                            "AnimalId": "{{modId}}_pokemon_scizor_male"
+                        }
+                    ]
+                }
             }
         }
     ]

@@ -40,6 +40,39 @@
 			"When": {
 				"{{modId}}_evolveitem_kings_rocks_pokemon": "Slowpoke"
 			}
+		},
+		{
+			"Name": "{{modId}}_evolveitem_metal_coat_pokemon",
+			"Value": "Scyther"
+		},
+		{
+			"Name": "{{modId}}_evolveitem_metal_coat_pokemon",
+			"Value": "Onix",
+			"When": {
+				"HasFlag": "{{modId}}_evolveitem_metal_coat_pokemon_onix"
+			}
+		},
+		{
+			"Name": "{{modId}}_evolveitem_metal_coat_egg",
+			"Value": "{{modId}}_item_egg_scyther"
+		},
+		{
+			"Name": "{{modId}}_evolveitem_metal_coat_egg",
+			"Value": "{{modId}}_item_egg_onix",
+			"When": {
+				"{{modId}}_evolveitem_metal_coat_pokemon": "Onix"
+			}
+		},
+		{
+			"Name": "{{modId}}_evolveitem_metal_coat_reward",
+			"Value": "{{modId}}_item_egg_scizor"
+		},
+		{
+			"Name": "{{modId}}_evolveitem_metal_coat_reward",
+			"Value": "{{modId}}_item_egg_steelix",
+			"When": {
+				"{{modId}}_evolveitem_metal_coat_pokemon": "Onix"
+			}
 		}
 	],
 	"Changes": [
