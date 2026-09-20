@@ -1,107 +1,107 @@
 {
     "Changes": [
         {
-            "Action": "Load",
-            "FromFile": "assets/evolutionitems/{{TargetWithoutPath}}.png",
             "LogName": "Load evolution items",
-            "Target": "evolutionitems/items"
+            "Action": "Load",
+            "Target": "evolutionitems/items",
+            "FromFile": "assets/evolutionitems/{{TargetWithoutPath}}.png"
         },
         {
             "LogName": "Start triggers",
-            "Target": "Data/TriggerActions",
             "Action": "EditData",
+            "Target": "Data/TriggerActions",
             "Entries": {
                 "{{modId}}_evolveitem_black_augurite_start": {
-                    "Id": "{{modId}}_evolveitem_black_augurite_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_black_augurite_letter_quest tomorrow",
                     "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_scizor_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_scizor_male 1\"",
-                    "Action": "AddMail current {{modId}}_evolveitem_black_augurite_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_black_augurite_start",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_dragon_scale_start": {
-                    "Id": "{{modId}}_evolveitem_dragon_scale_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_dragon_scale_letter_quest tomorrow",
                     "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_seadra 1",
-                    "Action": "AddMail current {{modId}}_evolveitem_dragon_scale_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_dragon_scale_start",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_dubious_disc_start": {
-                    "Id": "{{modId}}_evolveitem_dubious_disc_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_dubious_disc_letter_quest tomorrow",
                     "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_porygon2 1",
-                    "Action": "AddMail current {{modId}}_evolveitem_dubious_disc_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_dubious_disc_start",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_electirizer_start": {
-                    "Id": "{{modId}}_evolveitem_electirizer_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_quest tomorrow",
                     "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_electabuzz 1",
-                    "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_electirizer_start",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_galarica_cuff_start": {
-                    "Id": "{{modId}}_evolveitem_galarica_cuff_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_galarica_cuff_letter_quest tomorrow",
                     "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_slowpoke_galar 1",
-                    "Action": "AddMail current {{modId}}_evolveitem_galarica_cuff_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_galarica_cuff_start",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_kings_rock_start": {
-                    "Id": "{{modId}}_evolveitem_kings_rock_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_kings_rock_letter_quest tomorrow",
                     "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_poliwhirl 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_slowpoke 1\"",
-                    "Action": "AddMail current {{modId}}_evolveitem_kings_rock_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_kings_rock_start",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_magmarizer_start": {
-                    "Id": "{{modId}}_evolveitem_magmarizer_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_magmarizer_letter_egg tomorrow",
                     "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_magmar 1",
-                    "Action": "AddMail current {{modId}}_evolveitem_magmarizer_letter_egg tomorrow"
+                    "Id": "{{modId}}_evolveitem_magmarizer_start",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_metal_coat_start": {
-                    "Id": "{{modId}}_evolveitem_metal_coat_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_letter_quest tomorrow",
                     "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_scyther_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_scyther_male 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_onix 1\"",
-                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_metal_coat_start",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_oval_stone_start": {
-                    "Id": "{{modId}}_evolveitem_oval_stone_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_oval_stone_letter_quest tomorrow",
                     "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_happiny 1",
-                    "Action": "AddMail current {{modId}}_evolveitem_oval_stone_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_oval_stone_start",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_protector_start": {
-                    "Id": "{{modId}}_evolveitem_protector_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_protector_letter_quest tomorrow",
                     "Condition": "ANY \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_rhydon_female 1\" \"selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_rhydon_male 1\"",
-                    "Action": "AddMail current {{modId}}_evolveitem_protector_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_protector_start",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_up_grade_start": {
-                    "Id": "{{modId}}_evolveitem_up_grade_start",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_up_grade_letter_quest tomorrow",
                     "Condition": "selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_porygon 1",
-                    "Action": "AddMail current {{modId}}_evolveitem_up_grade_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_up_grade_start",
+                    "Trigger": "DayEnding"
                 }
             }
         },
         {
             "LogName": "Extra state for which pokemon triggered quests when multiple is possible",
-            "Target": "Data/TriggerActions",
             "Action": "EditData",
+            "Target": "Data/TriggerActions",
             "Entries": {
                 "{{modId}}_evolveitem_kings_rock_slowpoke": {
-                    "Id": "{{modId}}_evolveitem_kings_rock_slowpoke",
-                    "Trigger": "DayStarted",
+                    "Action": "AddMail current {{modId}}_evolveitem_kings_rock_pokemon_slowpoke Received",
                     "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION {{modId}}_evolveitem_kings_rock_start, !PLAYER_HAS_MAIL current {{modId}}_evolveitem_kings_rock_letter_reward, selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_slowpoke 1",
-                    "Action": "AddMail current {{modId}}_evolveitem_kings_rock_pokemon_slowpoke Received"
+                    "Id": "{{modId}}_evolveitem_kings_rock_slowpoke",
+                    "Trigger": "DayStarted"
                 },
                 "{{modId}}_evolveitem_metal_coat_onix": {
-                    "Id": "{{modId}}_evolveitem_metal_coat_onix",
-                    "Trigger": "DayStarted",
+                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_pokemon_onix Received",
                     "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION {{modId}}_evolveitem_metal_coat_start, !PLAYER_HAS_MAIL current {{modId}}_evolveitem_metal_coat_letter_reward, selph.ExtraAnimalConfig_ANIMAL_COUNT {{modId}}_pokemon_onix 1",
-                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_pokemon_onix Received"
+                    "Id": "{{modId}}_evolveitem_metal_coat_onix",
+                    "Trigger": "DayStarted"
                 }
-            }
+            }            
         },
         {
             "LogName": "Quest letters",
-            "Target": "Data/Mail",
             "Action": "EditData",
+            "Target": "Data/Mail",
             "Entries": {
                 "{{modId}}_evolveitem_black_augurite_letter_quest": "{{i18n:evolveitem.blackaugurite.letter.quest}}%item quest {{modId}}_evolveitem_black_augurite_quest true %%",
                 "{{modId}}_evolveitem_dragon_scale_letter_quest": "{{i18n:evolveitem.dragon.scale.letter.quest}}%item quest {{modId}}_evolveitem_dragon_scale_quest true %%",
@@ -122,20 +122,26 @@
             "Action": "EditData",
             "Entries": {
                 "{{modId}}_evolveitem_black_augurite_quest": "LostItem/{{i18n:evolveitem.blackaugurite.quest}}/{{i18n:evolveitem.blackaugurite.quest.description}}/{{i18n:evolveitem.blackaugurite.quest.objective}}/Abigail {{modId}}_evolveitem_black_augurite_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.blackaugurite.quest.response}}",
-                "{{modId}}_evolveitem_dragon_scale_quest": "LostItem/{{i18n:evolveitem.dragon.scale.quest}}/{{i18n:evolveitem.dragon.scale.quest.description}}/{{i18n:evolveitem.dragon.scale.quest.objective}}/Abigail {{modId}}_evolveitem_dragon_scale_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.dragon.scale.quest.response}}",
-                "{{modId}}_evolveitem_dubious_disc_quest": "LostItem/{{i18n:evolveitem.dubious.disc.quest}}/{{i18n:evolveitem.dubious.disc.quest.description}}/{{i18n:evolveitem.dubious.disc.quest.objective}}/Abigail {{modId}}_evolveitem_dubious_disc_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.dubious.disc.quest.response}}",
-                "{{modId}}_evolveitem_electirizer_quest": "LostItem/{{i18n:evolveitem.electirizer.quest}}/{{i18n:evolveitem.electirizer.quest.description}}/{{i18n:evolveitem.electirizer.quest.objective}}/Sam {{modId}}_evolveitem_electirizer_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.electirizer.quest.response}}",
+                "{{modId}}_evolveitem_dragon_scale_quest": "LostItem/{{i18n:evolveitem.dragon.scale.quest}}/{{i18n:evolveitem.dragon.scale.quest.description}}/{{i18n:evolveitem.dragon.scale.quest.objective}}/Wizard {{modId}}_evolveitem_dragon_scale_item IslandNorth 0 30/-1/-1/false/{{i18n:evolveitem.dragon.scale.quest.response}}",
+                "{{modId}}_evolveitem_dragon_scale_quest_egg": "ItemDelivery/{{i18n:evolveitem.dragon.scale.quest.egg}}/{{i18n:evolveitem.dragon.scale.quest.egg.description}}/{{i18n:evolveitem.dragon.scale.quest.egg.objective}}/Wizard {{modId}}_evolveitem_dragon_scale_item 1/-1/-1/false/{{i18n:evolveitem.dragon.scale.quest.egg.response}}",
+                "{{modId}}_evolveitem_dubious_disc_quest": "LostItem/{{i18n:evolveitem.dubious.disc.quest}}/{{i18n:evolveitem.dubious.disc.quest.description}}/{{i18n:evolveitem.dubious.disc.quest.objective}}/Sebastian {{modId}}_evolveitem_dubious_disc_item ScienceHouse 1 7/-1/-1/false/{{i18n:evolveitem.dubious.disc.quest.response}}",
+                "{{modId}}_evolveitem_dubious_disc_quest_egg": "ItemDelivery/{{i18n:evolveitem.dubious.disc.quest.egg}}/{{i18n:evolveitem.dubious.disc.quest.egg.description}}/{{i18n:evolveitem.dubious.disc.quest.egg.objective}}/Sebastian {{modId}}_evolveitem_dubious_disc_item 1/-1/-1/false/{{i18n:evolveitem.dubious.disc.quest.egg.response}}",
+                "{{modId}}_evolveitem_electirizer_quest": "LostItem/{{i18n:evolveitem.electirizer.quest}}/{{i18n:evolveitem.electirizer.quest.description}}/{{i18n:evolveitem.electirizer.quest.objective}}/Sam {{modId}}_evolveitem_electirizer_item Town 21 89/-1/-1/false/{{i18n:evolveitem.electirizer.quest.response}}",
                 "{{modId}}_evolveitem_electirizer_quest_egg": "ItemDelivery/{{i18n:evolveitem.electirizer.quest.egg}}/{{i18n:evolveitem.electirizer.quest.egg.description}}/{{i18n:evolveitem.electirizer.quest.egg.objective}}/Sam {{modId}}_evolveitem_electirizer_item 1/-1/-1/false/{{i18n:evolveitem.electirizer.quest.egg.response}}",
                 "{{modId}}_evolveitem_galarica_cuff_quest": "LostItem/{{i18n:evolveitem.galarica.cuff.quest}}/{{i18n:evolveitem.galarica.cuff.quest.description}}/{{i18n:evolveitem.galarica.cuff.quest.objective}}/Penny {{modId}}_evolveitem_galarica_cuff_item Forest 34 6/-1/-1/false/{{i18n:evolveitem.galarica.cuff.quest.response}}",
                 "{{modId}}_evolveitem_galarica_wreath_quest": "LostItem/{{i18n:evolveitem.galarica.wreath.quest}}/{{i18n:evolveitem.galarica.wreath.quest.description}}/{{i18n:evolveitem.galarica.wreath.quest.objective}}/Penny {{modId}}_evolveitem_galarica_wreath_item Forest 114 23/-1/-1/false/{{i18n:evolveitem.galarica.wreath.quest.response}}",
-                "{{modId}}_evolveitem_kings_rock_quest": "LostItem/{{i18n:evolveitem.kings.rock.quest}}/{{i18n:evolveitem.kings.rock.quest.description}}/{{i18n:evolveitem.kings.rock.quest.objective}}/Abigail {{modId}}_evolveitem_kings_rock_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.kings.rock.quest.response}}",
+                "{{modId}}_evolveitem_kings_rock_quest": "LostItem/{{i18n:evolveitem.kings.rock.quest}}/{{i18n:evolveitem.kings.rock.quest.description}}/{{i18n:evolveitem.kings.rock.quest.objective}}/Elliott {{modId}}_evolveitem_kings_rock_item Beach 92 6/-1/-1/false/{{i18n:evolveitem.kings.rock.quest.response}}",
                 "{{modId}}_evolveitem_kings_rock_quest_egg": "LostDelivery/{{i18n:evolveitem.kings.rock.quest.egg}}/{{i18n:evolveitem.kings.rock.quest.egg.description |pokemon={{modId}}_evolveitem_kings_rocks_pokemon}}/{{i18n:evolveitem.kings.rock.quest.egg.objective |pokemon={{modId}}_evolveitem_kings_rocks_pokemon}}/Elliott {{modId}}_evolveitem_kings_rocks_egg 1/-1/-1/false/{{i18n:evolveitem.kings.rock.quest.response}}",
-                "{{modId}}_evolveitem_magmarizer_quest": "LostItem/{{i18n:evolveitem.magmarizer.quest}}/{{i18n:evolveitem.magmarizer.quest.description}}/{{i18n:evolveitem.magmarizer.quest.objective}}/Abigail {{modId}}_evolveitem_magmarizer_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.magmarizer.quest.response}}",
-                "{{modId}}_evolveitem_metal_coat_quest_egg": "LostDelivery/{{i18n:evolveitem.metal.coat.quest.egg}}/{{i18n:evolveitem.metal.coat.quest.egg.description |pokemon={{modId}}_evolveitem_metal_coat_pokemon}}/{{i18n:evolveitem.metal.coat.quest.egg.objective |pokemon={{modId}}_evolveitem_metal_coat_pokemon}}/Elliott {{modId}}_evolveitem_metal_coat_egg 1/-1/-1/false/{{i18n:evolveitem.metal.coat.quest.response}}",
-                "{{modId}}_evolveitem_metal_coat_quest": "LostItem/{{i18n:evolveitem.metal.coat.quest}}/{{i18n:evolveitem.metal.coat.quest.description}}/{{i18n:evolveitem.metal.coat.quest.objective}}/Abigail {{modId}}_evolveitem_metal_coat_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.metal.coat.quest.response}}",
-                "{{modId}}_evolveitem_oval_stone_quest": "LostItem/{{i18n:evolveitem.oval.stone.quest}}/{{i18n:evolveitem.oval.stone.quest.description}}/{{i18n:evolveitem.oval.stone.quest.objective}}/Abigail {{modId}}_evolveitem_oval_stone_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.oval.stone.quest.response}}",
-                "{{modId}}_evolveitem_protector_quest": "LostItem/{{i18n:evolveitem.protector.quest}}/{{i18n:evolveitem.protector.quest.description}}/{{i18n:evolveitem.protector.quest.objective}}/Abigail {{modId}}_evolveitem_protector_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.protector.quest.response}}",
-                "{{modId}}_evolveitem_up_grade_quest": "LostItem/{{i18n:evolveitem.up.grade.quest}}/{{i18n:evolveitem.up.grade.quest.description}}/{{i18n:evolveitem.up.grade.quest.objective}}/Abigail {{modId}}_evolveitem_up_grade_item Desert 1 55/-1/-1/false/{{i18n:evolveitem.up.grade.quest.response}}"
+                "{{modId}}_evolveitem_magmarizer_quest": "LostItem/{{i18n:evolveitem.magmarizer.quest}}/{{i18n:evolveitem.magmarizer.quest.description}}/{{i18n:evolveitem.magmarizer.quest.objective}}/Willy {{modId}}_evolveitem_magmarizer_item BoatTunnel 2 10/-1/-1/false/{{i18n:evolveitem.magmarizer.quest.response}}",
+                "{{modId}}_evolveitem_magmarizer_quest_egg": "ItemDelivery/{{i18n:evolveitem.magmarizer.quest.egg}}/{{i18n:evolveitem.magmarizer.quest.egg.description}}/{{i18n:evolveitem.magmarizer.quest.egg.objective}}/Willy {{modId}}_evolveitem_magmarizer_item 1/-1/-1/false/{{i18n:evolveitem.magmarizer.quest.egg.response}}",
+                "{{modId}}_evolveitem_metal_coat_quest": "LostItem/{{i18n:evolveitem.metal.coat.quest}}/{{i18n:evolveitem.metal.coat.quest.description}}/{{i18n:evolveitem.metal.coat.quest.objective}}/Demetrius {{modId}}_evolveitem_metal_coat_item Mountain 42 6/-1/-1/false/{{i18n:evolveitem.metal.coat.quest.response}}",
+                "{{modId}}_evolveitem_metal_coat_quest_egg": "LostDelivery/{{i18n:evolveitem.metal.coat.quest.egg}}/{{i18n:evolveitem.metal.coat.quest.egg.description |pokemon={{modId}}_evolveitem_metal_coat_pokemon}}/{{i18n:evolveitem.metal.coat.quest.egg.objective |pokemon={{modId}}_evolveitem_metal_coat_pokemon}}/Demetrius {{modId}}_evolveitem_metal_coat_egg 1/-1/-1/false/{{i18n:evolveitem.metal.coat.quest.response}}",
+                "{{modId}}_evolveitem_oval_stone_quest": "LostItem/{{i18n:evolveitem.oval.stone.quest}}/{{i18n:evolveitem.oval.stone.quest.description}}/{{i18n:evolveitem.oval.stone.quest.objective}}/Harvey {{modId}}_evolveitem_oval_stone_item IslandSouthEast 30 25/-1/-1/false/{{i18n:evolveitem.oval.stone.quest.response}}",
+                "{{modId}}_evolveitem_oval_stone_quest_egg": "ItemDelivery/{{i18n:evolveitem.oval.stone.quest.egg}}/{{i18n:evolveitem.oval.stone.quest.egg.description}}/{{i18n:evolveitem.oval.stone.quest.egg.objective}}/Harvey {{modId}}_evolveitem_oval_stone_item 1/-1/-1/false/{{i18n:evolveitem.oval.stone.quest.egg.response}}",
+                "{{modId}}_evolveitem_protector_quest": "LostItem/{{i18n:evolveitem.protector.quest}}/{{i18n:evolveitem.protector.quest.description}}/{{i18n:evolveitem.protector.quest.objective}}/Robin {{modId}}_evolveitem_protector_item Backwoods 21 21/-1/-1/false/{{i18n:evolveitem.protector.quest.response}}",
+                "{{modId}}_evolveitem_protector_quest_egg": "ItemDelivery/{{i18n:evolveitem.protector.quest.egg}}/{{i18n:evolveitem.protector.quest.egg.description}}/{{i18n:evolveitem.protector.quest.egg.objective}}/Robin {{modId}}_evolveitem_protector_item 1/-1/-1/false/{{i18n:evolveitem.protector.quest.egg.response}}",
+                "{{modId}}_evolveitem_up_grade_quest": "LostItem/{{i18n:evolveitem.up.grade.quest}}/{{i18n:evolveitem.up.grade.quest.description}}/{{i18n:evolveitem.up.grade.quest.objective}}/Maru {{modId}}_evolveitem_up_grade_item Town 81 16/-1/-1/false/{{i18n:evolveitem.up.grade.quest.response}}",
+                "{{modId}}_evolveitem_up_grade_quest_egg": "ItemDelivery/{{i18n:evolveitem.up.grade.quest.egg}}/{{i18n:evolveitem.up.grade.quest.egg.description}}/{{i18n:evolveitem.up.grade.quest.egg.objective}}/Maru {{modId}}_evolveitem_up_grade_item 1/-1/-1/false/{{i18n:evolveitem.up.grade.quest.egg.response}}"
             }
         },
         {
@@ -144,148 +150,148 @@
             "Action": "EditData",
             "Entries": {
                 "{{modId}}_evolveitem_black_augurite_item": {
-                    "DisplayName": "{{i18n:evolveitem.blackaugurite}}",
-                    "Description": "{{i18n:evolveitem.blackaugurite.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "0",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.blackaugurite.description}}",
+                    "DisplayName": "{{i18n:evolveitem.blackaugurite}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "0",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_dragon_scale_item": {
-                    "DisplayName": "{{i18n:evolveitem.dragon.scale}}",
-                    "Description": "{{i18n:evolveitem.dragon.scale.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "1",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.dragon.scale.description}}",
+                    "DisplayName": "{{i18n:evolveitem.dragon.scale}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "1",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_dubious_disc_item": {
-                    "DisplayName": "{{i18n:evolveitem.dubious.disc}}",
-                    "Description": "{{i18n:evolveitem.dubious.disc.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "2",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.dubious.disc.description}}",
+                    "DisplayName": "{{i18n:evolveitem.dubious.disc}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "2",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_electirizer_item": {
-                    "DisplayName": "{{i18n:evolveitem.electirizer}}",
-                    "Description": "{{i18n:evolveitem.electirizer.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "3",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.electirizer.description}}",
+                    "DisplayName": "{{i18n:evolveitem.electirizer}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "3",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_galarica_cuff_item": {
-                    "DisplayName": "{{i18n:evolveitem.galarica.cuff}}",
-                    "Description": "{{i18n:evolveitem.galarica.cuff.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "4",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.galarica.cuff.description}}",
+                    "DisplayName": "{{i18n:evolveitem.galarica.cuff}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "4",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_galarica_wreath_item": {
-                    "DisplayName": "{{i18n:evolveitem.galarica.wreath}}",
-                    "Description": "{{i18n:evolveitem.galarica.wreath.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "5",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.galarica.wreath.description}}",
+                    "DisplayName": "{{i18n:evolveitem.galarica.wreath}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "5",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_kings_rock_item": {
-                    "DisplayName": "{{i18n:evolveitem.kings.rock}}",
-                    "Description": "{{i18n:evolveitem.kings.rock.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "6",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.kings.rock.description}}",
+                    "DisplayName": "{{i18n:evolveitem.kings.rock}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "6",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_magmarizer_item": {
-                    "DisplayName": "{{i18n:evolveitem.magmarizer}}",
-                    "Description": "{{i18n:evolveitem.magmarizer.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "7",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.magmarizer.description}}",
+                    "DisplayName": "{{i18n:evolveitem.magmarizer}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "7",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_metal_coat_item": {
-                    "DisplayName": "{{i18n:evolveitem.metal.coat}}",
-                    "Description": "{{i18n:evolveitem.metal.coat.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "8",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.metal.coat.description}}",
+                    "DisplayName": "{{i18n:evolveitem.metal.coat}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "8",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_oval_stone_item": {
-                    "DisplayName": "{{i18n:evolveitem.oval.stone}}",
-                    "Description": "{{i18n:evolveitem.oval.stone.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "9",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.oval.stone.description}}",
+                    "DisplayName": "{{i18n:evolveitem.oval.stone}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "9",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_protector_item": {
-                    "DisplayName": "{{i18n:evolveitem.protector}}",
-                    "Description": "{{i18n:evolveitem.protector.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "10",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.protector.description}}",
+                    "DisplayName": "{{i18n:evolveitem.protector}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "10",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 },
                 "{{modId}}_evolveitem_up_grade_item": {
-                    "DisplayName": "{{i18n:evolveitem.up.grade}}",
-                    "Description": "{{i18n:evolveitem.up.grade.description}}",
-                    "Type": "Quest",
-                    "Category": "0",
-                    "Texture": "evolutionitems/items",
-                    "SpriteIndex": "11",
                     "CanBeGivenAsGift": "False",
                     "CanBeTrashed": "False",
+                    "Category": "0",
+                    "Description": "{{i18n:evolveitem.up.grade.description}}",
+                    "DisplayName": "{{i18n:evolveitem.up.grade}}",
                     "ExcludeFromRandomSale": "True",
-                    "ExcludeFromShippingCollection": "True"
+                    "ExcludeFromShippingCollection": "True",
+                    "SpriteIndex": "11",
+                    "Texture": "evolutionitems/items",
+                    "Type": "Quest"
                 }
             }
         },
@@ -295,100 +301,130 @@
             "Action": "EditData",
             "Entries": {
                 "{{modId}}_evolveitem_black_augurite_completed": {
-                    "Id": "{{modId}}_evolveitem_black_augurite_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_black_augurite_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_black_augurite_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_black_augurite_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_black_augurite_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_black_augurite_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_dragon_scale_completed": {
-                    "Id": "{{modId}}_evolveitem_dragon_scale_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_dragon_scale_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_dragon_scale_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_dragon_scale_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_dragon_scale_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_dragon_scale_completed",
+                    "Trigger": "DayEnding"
+                },
+                "{{modId}}_evolveitem_dragon_scale_egg_completed": {
+                    "Action": "AddMail current {{modId}}_evolveitem_dragon_scale_letter_reward tomorrow",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_dragon_scale_letter_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_dragon_scale_quest_egg",
+                    "Id": "{{modId}}_evolveitem_dragon_scale_egg_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_dubious_disc_completed": {
-                    "Id": "{{modId}}_evolveitem_dubious_disc_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_dubious_disc_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_dubious_disc_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_dubious_disc_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_dubious_disc_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_dubious_disc_completed",
+                    "Trigger": "DayEnding"
+                },
+                "{{modId}}_evolveitem_dubious_disc_egg_completed": {
+                    "Action": "AddMail current {{modId}}_evolveitem_dubious_disc_letter_reward tomorrow",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_dubious_disc_letter_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_dubious_disc_quest_egg",
+                    "Id": "{{modId}}_evolveitem_dubious_disc_egg_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_electirizer_completed": {
-                    "Id": "{{modId}}_evolveitem_electirizer_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_egg tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_electirizer_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_electirizer_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_egg tomorrow"
+                    "Id": "{{modId}}_evolveitem_electirizer_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_electirizer_egg_completed": {
-                    "Id": "{{modId}}_evolveitem_electirizer_egg_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_electirizer_letter_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_electirizer_quest_egg",
-                    "Action": "AddMail current {{modId}}_evolveitem_electirizer_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_electirizer_egg_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_galarica_cuff_completed": {
-                    "Id": "{{modId}}_evolveitem_galarica_cuff_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_galarica_cuff_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_galarica_cuff_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_galarica_cuff_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_galarica_cuff_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_galarica_cuff_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_galarica_wreath_completed": {
-                    "Id": "{{modId}}_evolveitem_galarica_wreath_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_galarica_wreath_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_galarica_cuff_letter_reward received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_galarica_wreath_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_galarica_wreath_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_galarica_wreath_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_kings_rock_completed": {
-                    "Id": "{{modId}}_evolveitem_kings_rock_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_kings_rock_letter_egg tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_kings_rock_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_kings_rock_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_kings_rock_letter_egg tomorrow"
+                    "Id": "{{modId}}_evolveitem_kings_rock_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_kings_rock_egg_completed": {
-                    "Id": "{{modId}}_evolveitem_kings_rock_egg_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_kings_rock_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_kings_rock_letter_quest_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_kings_rock_quest_egg",
-                    "Action": "AddMail current {{modId}}_evolveitem_kings_rock_letter_reward tomorrow"
-                },
-                "{{modId}}_evolveitem_magmarizer_egg_completed": {
-                    "Id": "{{modId}}_evolveitem_magmarizer_egg_completed",
-                    "Trigger": "DayEnding",
-                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_magmarizer_letter_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_magmarizer_quest_egg",
-                    "Action": "AddMail current {{modId}}_evolveitem_magmarizer_letter_quest tomorrow"
+                    "Id": "{{modId}}_evolveitem_kings_rock_egg_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_magmarizer_completed": {
-                    "Id": "{{modId}}_evolveitem_magmarizer_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_magmarizer_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_magmarizer_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_magmarizer_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_magmarizer_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_magmarizer_completed",
+                    "Trigger": "DayEnding"
+                },
+                "{{modId}}_evolveitem_magmarizer_egg_completed": {
+                    "Action": "AddMail current {{modId}}_evolveitem_magmarizer_letter_quest tomorrow",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_magmarizer_letter_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_magmarizer_quest_egg",
+                    "Id": "{{modId}}_evolveitem_magmarizer_egg_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_metal_coat_completed": {
-                    "Id": "{{modId}}_evolveitem_metal_coat_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_metal_coat_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_metal_coat_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_metal_coat_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_metal_coat_egg_completed": {
-                    "Id": "{{modId}}_evolveitem_metal_coat_egg_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_metal_coat_letter_quest_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_metal_coat_quest_egg",
-                    "Action": "AddMail current {{modId}}_evolveitem_metal_coat_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_metal_coat_egg_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_oval_stone_completed": {
-                    "Id": "{{modId}}_evolveitem_oval_stone_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_oval_stone_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_oval_stone_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_oval_stone_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_oval_stone_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_oval_stone_completed",
+                    "Trigger": "DayEnding"
+                },
+                "{{modId}}_evolveitem_oval_stone_egg_completed": {
+                    "Action": "AddMail current {{modId}}_evolveitem_oval_stone_letter_reward tomorrow",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_oval_stone_letter_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_oval_stone_quest_egg",
+                    "Id": "{{modId}}_evolveitem_oval_stone_egg_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_protector_completed": {
-                    "Id": "{{modId}}_evolveitem_protector_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_protector_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_protector_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_protector_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_protector_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_protector_completed",
+                    "Trigger": "DayEnding"
+                },
+                "{{modId}}_evolveitem_protector_egg_completed": {
+                    "Action": "AddMail current {{modId}}_evolveitem_protector_letter_reward tomorrow",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_protector_letter_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_protector_quest_egg",
+                    "Id": "{{modId}}_evolveitem_protector_egg_completed",
+                    "Trigger": "DayEnding"
                 },
                 "{{modId}}_evolveitem_up_grade_completed": {
-                    "Id": "{{modId}}_evolveitem_up_grade_completed",
-                    "Trigger": "DayEnding",
+                    "Action": "AddMail current {{modId}}_evolveitem_up_grade_letter_reward tomorrow",
                     "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_up_grade_letter_quest received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_up_grade_quest",
-                    "Action": "AddMail current {{modId}}_evolveitem_up_grade_letter_reward tomorrow"
+                    "Id": "{{modId}}_evolveitem_up_grade_completed",
+                    "Trigger": "DayEnding"
+                },
+                "{{modId}}_evolveitem_up_grade_egg_completed": {
+                    "Action": "AddMail current {{modId}}_evolveitem_up_grade_letter_reward tomorrow",
+                    "Condition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_up_grade_letter_egg received, !Spiderbuttons.BETAS_PLAYER_HAS_QUEST current {{modId}}_evolveitem_up_grade_quest_egg",
+                    "Id": "{{modId}}_evolveitem_up_grade_egg_completed",
+                    "Trigger": "DayEnding"
                 }
             }
         },
@@ -398,7 +434,9 @@
             "Action": "EditData",
             "Entries": {
                 "{{modId}}_evolveitem_black_augurite_letter_reward": "{{i18n:evolveitem.blackaugurite.letter.reward}}%item id {{modId}}_item_egg_kleavor 1 %%",
+                "{{modId}}_evolveitem_dragon_scale_letter_egg": "{{i18n:evolveitem.dragon.scale.letter.egg}}%item quest {{modId}}_evolveitem_dragon_scale_quest_egg true %%",
                 "{{modId}}_evolveitem_dragon_scale_letter_reward": "{{i18n:evolveitem.dragon.scale.letter.reward}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_dubious_disc_letter_egg": "{{i18n:evolveitem.dubious.disc.letter.egg}}%item quest {{modId}}_evolveitem_dubious_disc_quest_egg true %%",
                 "{{modId}}_evolveitem_dubious_disc_letter_reward": "{{i18n:evolveitem.dubious.disc.letter.reward}}%item id <item id> 1 %%",
                 "{{modId}}_evolveitem_electirizer_letter_egg": "{{i18n:evolveitem.electirizer.letter.egg}}%item quest {{modId}}_evolveitem_electirizer_quest_egg true %%",
                 "{{modId}}_evolveitem_electirizer_letter_reward": "{{i18n:evolveitem.electirizer.letter.reward}}%item id {{modId}}_item_egg_electivire 1 %%",
@@ -410,8 +448,11 @@
                 "{{modId}}_evolveitem_magmarizer_letter_reward": "{{i18n:evolveitem.magmarizer.letter.reward}}%item id <item id> 1 %%",
                 "{{modId}}_evolveitem_metal_coat_letter_egg": "{{i18n:evolveitem.metal.coat.letter.egg |pokemon={{{{modId}}_evolveitem_metal_coat_pokemon}}}}%item quest {{modId}}_evolveitem_metal_coat_quest_egg true %%",
                 "{{modId}}_evolveitem_metal_coat_letter_reward": "{{i18n:evolveitem.metal.coat.letter.reward}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_oval_stone_letter_egg": "{{i18n:evolveitem.oval.stone.letter.egg}}%item quest {{modId}}_evolveitem_oval_stone_quest_egg true %%",
                 "{{modId}}_evolveitem_oval_stone_letter_reward": "{{i18n:evolveitem.oval.stone.letter.reward}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_protector_letter_egg": "{{i18n:evolveitem.protector.letter.egg}}%item quest {{modId}}_evolveitem_protector_quest_egg true %%",
                 "{{modId}}_evolveitem_protector_letter_reward": "{{i18n:evolveitem.protector.letter.reward}}%item id <item id> 1 %%",
+                "{{modId}}_evolveitem_up_grade_letter_egg": "{{i18n:evolveitem.up.grade.letter.egg}}%item quest {{modId}}_evolveitem_up_grade_quest_egg true %%",
                 "{{modId}}_evolveitem_up_grade_letter_reward": "{{i18n:evolveitem.up.grade.letter.reward}}%item id <item id> 1 %%"
             }
         },
@@ -420,158 +461,243 @@
             "Target": "Data/Objects",
             "Action": "EditData",
             "Entries": {
-                "{{modId}}_item_egg_kleavor": {
-                    "Name": "{{modId}_item_egg_kleavor",
-                    "DisplayName": "{{i18n:egg.item |pokemon=Kleavor}}",
-                    "Description": "{{i18n:egg.item.description |pokemon=Kleavor}}",
-                    "Type": "Basic",
+                "{{modId}_item_egg_kingdra": {
                     "Category": "-5",
-                    "Price": "500",
-                    "Texture": "eggs/color",
-                    "SpriteIndex": "5",
-                    "Edibility": "50",
                     "ContextTags": [
                         "egg_item",
-                        "color_brown"
+                        "color_blue"
                     ],
+                    "Description": "{{i18n:egg.item.description |pokemon=Kingdra}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Kingdra}}",
+                    "Edibility": "50",
                     "ExcludeFromShippingCollection": "True",
-                    "ID": "{{modId}}_item_egg_kleavor"
+                    "ID": "{{modId}}_item_egg_kingdra",
+                    "Name": "{{modId}_item_egg_kingdra",
+                    "Price": "500",
+                    "SpriteIndex": "1",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_chansey": {
+                    "Category": "-5",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_pink"
+                    ],
+                    "Description": "{{i18n:egg.item.description |pokemon=Chansey}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Chansey}}",
+                    "Edibility": "1100",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_chansey",
+                    "Name": "{{modId}_item_egg_chansey",
+                    "Price": "1100",
+                    "SpriteIndex": "9",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
                 },
                 "{{modId}}_item_egg_electivire": {
-                    "Name": "{{modId}_item_egg_electivire",
-                    "DisplayName": "{{i18n:egg.item |pokemon=Electivire}}",
-                    "Description": "{{i18n:egg.item.description |pokemon=Electivire}}",
-                    "Type": "Basic",
                     "Category": "-5",
-                    "Price": "500",
-                    "Texture": "eggs/color",
-                    "SpriteIndex": "2",
-                    "Edibility": "50",
                     "ContextTags": [
                         "egg_item",
                         "color_yellow"
                     ],
-                    "ExcludeFromShippingCollection": "True",
-                    "ID": "{{modId}}_item_egg_electivire"
-                },
-                "{{modId}}_item_egg_slowbro_galar": {
-                    "Name": "{{modId}_item_egg_slowbro_galar",
-                    "DisplayName": "{{i18n:egg.item |pokemon=Galarian Slowbro}}",
-                    "Description": "{{i18n:egg.item.description |pokemon=Galarian Slowbro}}",
-                    "Type": "Basic",
-                    "Category": "-5",
-                    "Price": "500",
-                    "Texture": "eggs/color",
-                    "SpriteIndex": "9",
+                    "Description": "{{i18n:egg.item.description |pokemon=Electivire}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Electivire}}",
                     "Edibility": "50",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_electivire",
+                    "Name": "{{modId}_item_egg_electivire",
+                    "Price": "500",
+                    "SpriteIndex": "2",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_kleavor": {
+                    "Category": "-5",
                     "ContextTags": [
                         "egg_item",
-                        "color_pink"
+                        "color_brown"
                     ],
-                    "ExcludeFromShippingCollection": "True",
-                    "ID": "{{modId}}_item_egg_slowbro_galar"
-                },
-                "{{modId}}_item_egg_slowking_galar": {
-                    "Name": "{{modId}_item_egg_slowking_galar",
-                    "DisplayName": "{{i18n:egg.item |pokemon=Galarian Slowking}}",
-                    "Description": "{{i18n:egg.item.description |pokemon=Galarian Slowking}}",
-                    "Type": "Basic",
-                    "Category": "-5",
-                    "Price": "500",
-                    "Texture": "eggs/color",
-                    "SpriteIndex": "9",
+                    "Description": "{{i18n:egg.item.description |pokemon=Kleavor}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Kleavor}}",
                     "Edibility": "50",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_kleavor",
+                    "Name": "{{modId}_item_egg_kleavor",
+                    "Price": "500",
+                    "SpriteIndex": "5",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_magmortar": {
+                    "Category": "-5",
                     "ContextTags": [
                         "egg_item",
-                        "color_pink"
+                        "color_red"
                     ],
+                    "Description": "{{i18n:egg.item.description |pokemon=Magmortar}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Magmortar}}",
+                    "Edibility": "50",
                     "ExcludeFromShippingCollection": "True",
-                    "ID": "{{modId}}_item_egg_slowking_galar"
+                    "ID": "{{modId}}_item_egg_magmortar",
+                    "Name": "{{modId}_item_egg_magmortar",
+                    "Price": "500",
+                    "SpriteIndex": "0",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
                 },
                 "{{modId}}_item_egg_politoed": {
-                    "Name": "{{modId}_item_egg_politoed",
-                    "DisplayName": "{{i18n:egg.item |pokemon=Politoed}}",
-                    "Description": "{{i18n:egg.item.description |pokemon=Politoed}}",
-                    "Type": "Basic",
                     "Category": "-5",
-                    "Price": "500",
-                    "Texture": "eggs/color",
-                    "SpriteIndex": "3",
-                    "Edibility": "50",
                     "ContextTags": [
                         "egg_item",
                         "color_green"
                     ],
-                    "ExcludeFromShippingCollection": "True",
-                    "ID": "{{modId}}_item_egg_politoed"
-                },
-                "{{modId}}_item_egg_slowbro": {
-                    "Name": "{{modId}_item_egg_slowbro",
-                    "DisplayName": "{{i18n:egg.item |pokemon=Slowbro}}",
-                    "Description": "{{i18n:egg.item.description |pokemon=Slowbro}}",
-                    "Type": "Basic",
-                    "Category": "-5",
-                    "Price": "500",
-                    "Texture": "eggs/color",
-                    "SpriteIndex": "9",
+                    "Description": "{{i18n:egg.item.description |pokemon=Politoed}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Politoed}}",
                     "Edibility": "50",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_politoed",
+                    "Name": "{{modId}_item_egg_politoed",
+                    "Price": "500",
+                    "SpriteIndex": "3",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_porygon2": {
+                    "Category": "-5",
                     "ContextTags": [
                         "egg_item",
                         "color_pink"
                     ],
-                    "ExcludeFromShippingCollection": "True",
-                    "ID": "{{modId}}_item_egg_slowbro"
-                },
-                "{{modId}}_item_egg_scizor": {
-                    "Name": "{{modId}_item_egg_scizor",
-                    "DisplayName": "{{i18n:egg.item |pokemon=Scizor}}",
-                    "Description": "{{i18n:egg.item.description |pokemon=Scizor}}",
-                    "Type": "Basic",
-                    "Category": "-5",
-                    "Price": "500",
-                    "Texture": "eggs/color",
-                    "SpriteIndex": "0",
+                    "Description": "{{i18n:egg.item.description |pokemon=Porygon2}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Porygon2}}",
                     "Edibility": "50",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_porygon2",
+                    "Name": "{{modId}_item_egg_porygon2",
+                    "Price": "500",
+                    "SpriteIndex": "9",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_porygon_z": {
+                    "Category": "-5",
                     "ContextTags": [
                         "egg_item",
-                        "color_red"
+                        "color_pink"
                     ],
-                    "ExcludeFromShippingCollection": "True",
-                    "ID": "{{modId}}_item_egg_scizor"
-                },
-                "{{modId}}_item_egg_steelix": {
-                    "Name": "{{modId}_item_egg_steelix",
-                    "DisplayName": "{{i18n:egg.item |pokemon=Steelix}}",
-                    "Description": "{{i18n:egg.item.description |pokemon=Steelix}}",
-                    "Type": "Basic",
-                    "Category": "-5",
-                    "Price": "500",
-                    "Texture": "eggs/color",
-                    "SpriteIndex": "7",
+                    "Description": "{{i18n:egg.item.description |pokemon=Porygon Z}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Porygon Z}}",
                     "Edibility": "50",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_porygon_z",
+                    "Name": "{{modId}_item_egg_porygon_z",
+                    "Price": "500",
+                    "SpriteIndex": "9",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_rhyperior": {
+                    "Category": "-5",
                     "ContextTags": [
                         "egg_item",
                         "color_gray"
                     ],
-                    "ExcludeFromShippingCollection": "True",
-                    "ID": "{{modId}}_item_egg_steelix"
-                },
-                "{{modId}}_item_egg_magmortar": {
-                    "Name": "{{modId}_item_egg_magmortar",
-                    "DisplayName": "{{i18n:egg.item |pokemon=Magmortar}}",
-                    "Description": "{{i18n:egg.item.description |pokemon=Magmortar}}",
-                    "Type": "Basic",
-                    "Category": "-5",
-                    "Price": "500",
-                    "Texture": "eggs/color",
-                    "SpriteIndex": "0",
+                    "Description": "{{i18n:egg.item.description |pokemon=Rhyperior}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Rhyperior}}",
                     "Edibility": "50",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_rhyperior",
+                    "Name": "{{modId}_item_egg_rhyperior",
+                    "Price": "500",
+                    "SpriteIndex": "7",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_scizor": {
+                    "Category": "-5",
                     "ContextTags": [
                         "egg_item",
                         "color_red"
                     ],
+                    "Description": "{{i18n:egg.item.description |pokemon=Scizor}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Scizor}}",
+                    "Edibility": "50",
                     "ExcludeFromShippingCollection": "True",
-                    "ID": "{{modId}}_item_egg_magmortar"
+                    "ID": "{{modId}}_item_egg_scizor",
+                    "Name": "{{modId}_item_egg_scizor",
+                    "Price": "500",
+                    "SpriteIndex": "0",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_slowbro_galar": {
+                    "Category": "-5",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_pink"
+                    ],
+                    "Description": "{{i18n:egg.item.description |pokemon=Galarian Slowbro}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Galarian Slowbro}}",
+                    "Edibility": "50",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_slowbro_galar",
+                    "Name": "{{modId}_item_egg_slowbro_galar",
+                    "Price": "500",
+                    "SpriteIndex": "9",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_slowking": {
+                    "Category": "-5",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_pink"
+                    ],
+                    "Description": "{{i18n:egg.item.description |pokemon=Slowking}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Slowking}}",
+                    "Edibility": "50",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_slowking",
+                    "Name": "{{modId}_item_egg_slowking",
+                    "Price": "500",
+                    "SpriteIndex": "9",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_slowking_galar": {
+                    "Category": "-5",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_pink"
+                    ],
+                    "Description": "{{i18n:egg.item.description |pokemon=Galarian Slowking}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Galarian Slowking}}",
+                    "Edibility": "50",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_slowking_galar",
+                    "Name": "{{modId}_item_egg_slowking_galar",
+                    "Price": "500",
+                    "SpriteIndex": "9",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
+                },
+                "{{modId}}_item_egg_steelix": {
+                    "Category": "-5",
+                    "ContextTags": [
+                        "egg_item",
+                        "color_gray"
+                    ],
+                    "Description": "{{i18n:egg.item.description |pokemon=Steelix}}",
+                    "DisplayName": "{{i18n:egg.item |pokemon=Steelix}}",
+                    "Edibility": "50",
+                    "ExcludeFromShippingCollection": "True",
+                    "ID": "{{modId}}_item_egg_steelix",
+                    "Name": "{{modId}_item_egg_steelix",
+                    "Price": "500",
+                    "SpriteIndex": "7",
+                    "Texture": "eggs/color",
+                    "Type": "Basic"
                 }
             }
         },
@@ -581,8 +707,8 @@
             "Action": "EditData",
             "Entries": {
                 "{{modId}}_evolveitem_black_augurite_power": {
-                    "DisplayName": "{{i18n:evolveitem.blackaugurite}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.blackaugurite.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.blackaugurite}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "0",
@@ -591,8 +717,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_black_augurite_letter_reward received"
                 },
                 "{{modId}}_evolveitem_dragon_scale_power": {
-                    "DisplayName": "{{i18n:evolveitem.dragon.scale}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.dragon.scale.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.dragon.scale}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "1",
@@ -601,8 +727,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_dragon_scale_letter_reward received"
                 },
                 "{{modId}}_evolveitem_dubious_disc_power": {
-                    "DisplayName": "{{i18n:evolveitem.dubious.disc}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.dubious.disc.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.dubious.disc}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "2",
@@ -611,8 +737,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_dubious_disc_letter_reward received"
                 },
                 "{{modId}}_evolveitem_electirizer_power": {
-                    "DisplayName": "{{i18n:evolveitem.electirizer}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.electirizer.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.electirizer}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "3",
@@ -621,8 +747,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_electirizer_letter_reward received"
                 },
                 "{{modId}}_evolveitem_galarica_cuff_power": {
-                    "DisplayName": "{{i18n:evolveitem.galarica.cuff}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.galarica.cuff.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.galarica.cuff}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "4",
@@ -631,8 +757,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_galarica_cuff_letter_reward received"
                 },
                 "{{modId}}_evolveitem_galarica_wreath_power": {
-                    "DisplayName": "{{i18n:evolveitem.galarica.wreath}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.galarica.wreath.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.galarica.wreath}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "5",
@@ -641,8 +767,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_galarica_wreath_letter_reward received"
                 },
                 "{{modId}}_evolveitem_kings_rock_power": {
-                    "DisplayName": "{{i18n:evolveitem.kings.rock}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.kings.rock.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.kings.rock}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "6",
@@ -651,8 +777,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_kings_rock_letter_reward received"
                 },
                 "{{modId}}_evolveitem_magmarizer_power": {
-                    "DisplayName": "{{i18n:evolveitem.magmarizer}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.magmarizer.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.magmarizer}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "7",
@@ -661,8 +787,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_magmarizer_letter_reward received"
                 },
                 "{{modId}}_evolveitem_metal_coat_power": {
-                    "DisplayName": "{{i18n:evolveitem.metal.coat}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.metal.coat.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.metal.coat}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "8",
@@ -671,8 +797,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_metal_coat_letter_reward received"
                 },
                 "{{modId}}_evolveitem_oval_stone_power": {
-                    "DisplayName": "{{i18n:evolveitem.oval.stone}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.oval.stone.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.oval.stone}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "9",
@@ -681,8 +807,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_oval_stone_letter_reward received"
                 },
                 "{{modId}}_evolveitem_protector_power": {
-                    "DisplayName": "{{i18n:evolveitem.protector}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.protector.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.protector}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "10",
@@ -691,8 +817,8 @@
                     "UnlockedCondition": "PLAYER_HAS_MAIL current {{modId}}_evolveitem_protector_letter_reward received"
                 },
                 "{{modId}}_evolveitem_up_grade_power": {
-                    "DisplayName": "{{i18n:evolveitem.up.grade}}",
                     "Description": "{{i18n:evolveitem.power |pokemon={{i18n:evolveitem.up.grade.power}}}}",
+                    "DisplayName": "{{i18n:evolveitem.up.grade}}",
                     "TexturePath": "evolutionitems/items",
                     "TexturePosition": {
                         "x": "11",
@@ -707,96 +833,142 @@
             "Target": "selph.ExtraAnimalConfig/EggExtensionData",
             "Action": "EditData",
             "Entries": {
-                "{{modId}}_item_egg_kleavor": {
+                "{{modId}}_item_egg_chansey": {
                     "AnimalSpawnList": [
                         {
-                            "Id": "{{modId}}_egg_spawn_kleavor_female_quest",
-                            "AnimalId": "{{modId}}_pokemon_kleavor_female",
-                            "Condition": "RANDOM 0.5"
-                        },
-                        {
-                            "Id": "{{modId}}_egg_spawn_kleavor_male_quest",
-                            "AnimalId": "{{modId}}_pokemon_kleavor_male"
+                            "AnimalId": "{{modId}}_item_egg_chansey",
+                            "Id": "{{modId}}_egg_spawn_chansey_quest"
                         }
-                    ],
-                    "ID": "{{modId}}_item_egg_kleavor"
+                    ]
                 },
                 "{{modId}}_item_egg_electivire": {
                     "AnimalSpawnList": [
                         {
-                            "Id": "{{modId}}_egg_spawn_electivire_quest",
-                            "AnimalId": "{{modId}}_item_egg_electivire"
+                            "AnimalId": "{{modId}}_item_egg_electivire",
+                            "Id": "{{modId}}_egg_spawn_electivire_quest"
                         }
                     ]
                 },
-                "{{modId}}_item_egg_slowbro_galar": {
+                "{{modId}}_item_egg_kingdra": {
                     "AnimalSpawnList": [
                         {
-                            "Id": "{{modId}}_egg_spawn_slowbro_galar_quest",
-                            "AnimalId": "{{modId}}_pokemon_slowbro_galar"
+                            "AnimalId": "{{modId}}_pokemon_kingdra",
+                            "Id": "{{modId}}_egg_spawn_kingdra_quest"
                         }
-                    ]
+                    ],
+                    "ID": "{{modId}}_item_egg_kleavor"
                 },
-                "{{modId}}_item_egg_slowking_galar": {
+                "{{modId}}_item_egg_kleavor": {
                     "AnimalSpawnList": [
                         {
-                            "Id": "{{modId}}_egg_spawn_slowbro_galar_quest",
-                            "AnimalId": "{{modId}}_pokemon_slowbro_galar"
+                            "AnimalId": "{{modId}}_pokemon_kleavor_female",
+                            "Condition": "RANDOM 0.5",
+                            "Id": "{{modId}}_egg_spawn_kleavor_female_quest"
+                        },
+                        {
+                            "AnimalId": "{{modId}}_pokemon_kleavor_male",
+                            "Id": "{{modId}}_egg_spawn_kleavor_male_quest"
+                        }
+                    ],
+                    "ID": "{{modId}}_item_egg_kleavor"
+                },
+                "{{modId}}_item_egg_magmortar": {
+                    "AnimalSpawnList": [
+                        {
+                            "AnimalId": "{{modId}}_item_egg_magmortar",
+                            "Id": "{{modId}}_egg_spawn_magmortar_quest"
                         }
                     ]
                 },
                 "{{modId}}_item_egg_politoed": {
                     "AnimalSpawnList": [
                         {
-                            "Id": "{{modId}}_egg_spawn_politoed_male_quest",
                             "AnimalId": "{{modId}}_pokemon_politoed_male",
-                            "Condition": "RANDOM 0.5"
+                            "Condition": "RANDOM 0.5",
+                            "Id": "{{modId}}_egg_spawn_politoed_male_quest"
                         },
                         {
-                            "Id": "{{modId}}_egg_spawn_politoed_female_quest",
-                            "AnimalId": "{{modId}}_pokemon_politoed_female"
+                            "AnimalId": "{{modId}}_pokemon_politoed_female",
+                            "Id": "{{modId}}_egg_spawn_politoed_female_quest"
                         }
                     ]
                 },
-                "{{modId}}_item_egg_slowbro": {
+                "{{modId}}_item_egg_polygon2": {
                     "AnimalSpawnList": [
                         {
-                            "Id": "{{modId}}_egg_spawn_slowbro_quest",
-                            "AnimalId": "{{modId}}_pokemon_slowbro"
+                            "AnimalId": "{{modId}}_item_egg_polygon2",
+                            "Id": "{{modId}}_egg_spawn_polygon2_quest"
                         }
                     ]
                 },
-                "{{modId}}_item_egg_steelix": {
+                "{{modId}}_item_egg_polygon_z": {
                     "AnimalSpawnList": [
                         {
-                            "Id": "{{modId}}_egg_spawn_steelix_male_quest",
-                            "AnimalId": "{{modId}}_pokemon_steelix_male",
+                            "AnimalId": "{{modId}}_item_egg_polygon_z",
+                            "Id": "{{modId}}_egg_spawn_polygon_z_quest"
+                        }
+                    ]
+                },
+                "{{modId}}_item_egg_rhyperior": {
+                    "AnimalSpawnList": [
+                        {
+                            "AnimalId": "{{modId}}_item_egg_rhyperior_male",
+                            "Id": "{{modId}}_egg_spawn_rhyperior_male_quest",
                             "Condition": "RANDOM 0.5"
                         },
                         {
-                            "Id": "{{modId}}_egg_spawn_steelix_female_quest",
-                            "AnimalId": "{{modId}}_pokemon_steelix_female"
+                            "AnimalId": "{{modId}}_item_egg_rhyperior_female",
+                            "Id": "{{modId}}_egg_spawn_rhyperior_female_quest"
                         }
                     ]
                 },
                 "{{modId}}_item_egg_scizor": {
                     "AnimalSpawnList": [
                         {
-                            "Id": "{{modId}}_egg_spawn_scizor_female_quest",
                             "AnimalId": "{{modId}}_pokemon_scizor_female",
-                            "Condition": "RANDOM 0.5"
+                            "Condition": "RANDOM 0.5",
+                            "Id": "{{modId}}_egg_spawn_scizor_female_quest"
                         },
                         {
-                            "Id": "{{modId}}_egg_spawn_scizor_male_quest",
-                            "AnimalId": "{{modId}}_pokemon_scizor_male"
+                            "AnimalId": "{{modId}}_pokemon_scizor_male",
+                            "Id": "{{modId}}_egg_spawn_scizor_male_quest"
                         }
                     ]
                 },
-                "{{modId}}_item_egg_magmortar": {
+                "{{modId}}_item_egg_slowbro": {
                     "AnimalSpawnList": [
                         {
-                            "Id": "{{modId}}_egg_spawn_magmortar_quest",
-                            "AnimalId": "{{modId}}_item_egg_magmortar"
+                            "AnimalId": "{{modId}}_pokemon_slowbro",
+                            "Id": "{{modId}}_egg_spawn_slowbro_quest"
+                        }
+                    ]
+                },
+                "{{modId}}_item_egg_slowbro_galar": {
+                    "AnimalSpawnList": [
+                        {
+                            "AnimalId": "{{modId}}_pokemon_slowbro_galar",
+                            "Id": "{{modId}}_egg_spawn_slowbro_galar_quest"
+                        }
+                    ]
+                },
+                "{{modId}}_item_egg_slowking_galar": {
+                    "AnimalSpawnList": [
+                        {
+                            "AnimalId": "{{modId}}_pokemon_slowbro_galar",
+                            "Id": "{{modId}}_egg_spawn_slowbro_galar_quest"
+                        }
+                    ]
+                },
+                "{{modId}}_item_egg_steelix": {
+                    "AnimalSpawnList": [
+                        {
+                            "AnimalId": "{{modId}}_pokemon_steelix_male",
+                            "Condition": "RANDOM 0.5",
+                            "Id": "{{modId}}_egg_spawn_steelix_male_quest"
+                        },
+                        {
+                            "AnimalId": "{{modId}}_pokemon_steelix_female",
+                            "Id": "{{modId}}_egg_spawn_steelix_female_quest"
                         }
                     ]
                 }

@@ -122,7 +122,8 @@
           "EggItemIds": [
             "{{modId}}_item_egg_horsea",
             "{{modId}}_item_egg_group_water1",
-            "{{modId}}_item_egg_group_dragon"
+            "{{modId}}_item_egg_group_dragon",
+            "{{modId}}_item_egg_kingdra"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
