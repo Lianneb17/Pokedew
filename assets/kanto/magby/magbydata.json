@@ -119,7 +119,8 @@
           "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_magby",
-            "{{modId}}_item_egg_group_humanlike"
+            "{{modId}}_item_egg_group_humanlike",
+            "{{modId}}_item_egg_magmortar"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",

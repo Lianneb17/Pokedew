@@ -80,7 +80,8 @@
           "Gender": "Female",
           "EggItemIds": [
             "{{modId}}_item_egg_happiny",
-            "{{modId}}_item_egg_group_noeggdiscovered"
+            "{{modId}}_item_egg_group_noeggdiscovered",
+            "{{modId}}_item_egg_chansey"
           ],
           "IncubationTime": "45000",
           "BirthText": "{{i18n:egg.all.hatching}}",

@@ -129,7 +129,8 @@
           "Gender": "Male",
           "EggItemIds": [
             "{{modId}}_item_egg_scyther",
-            "{{modId}}_item_egg_group_bug"
+            "{{modId}}_item_egg_group_bug",
+            "{{modId}}_item_egg_scizor"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -169,7 +170,7 @@
           "EggItemIds": [
             "{{modId}}_item_egg_scyther",
             "{{modId}}_item_egg_group_bug",
-            "{{modId}}_item_egg_kleavor"
+            "{{modId}}_item_egg_scizor"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",

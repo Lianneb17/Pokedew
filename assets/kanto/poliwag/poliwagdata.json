@@ -126,7 +126,8 @@
           "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_poliwag",
-            "{{modId}}_item_egg_group_water1"
+            "{{modId}}_item_egg_group_water1",
+            "{{modId}}_item_egg_poliwrath"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",

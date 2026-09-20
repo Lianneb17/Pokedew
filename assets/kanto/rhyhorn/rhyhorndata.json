@@ -200,7 +200,8 @@
           "EggItemIds": [
             "{{modId}}_item_egg_rhyhorn",
             "{{modId}}_item_egg_group_monster",
-            "{{modId}}_item_egg_group_field"
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_rhyperior"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -240,7 +241,8 @@
           "EggItemIds": [
             "{{modId}}_item_egg_rhyhorn",
             "{{modId}}_item_egg_group_monster",
-            "{{modId}}_item_egg_group_field"
+            "{{modId}}_item_egg_group_field",
+            "{{modId}}_item_egg_rhyperior"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",

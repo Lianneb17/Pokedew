@@ -80,7 +80,8 @@
           "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_porygon",
-            "{{modId}}_item_egg_group_mineral"
+            "{{modId}}_item_egg_group_mineral",
+            "{{modId}}_item_egg_porygon2"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -119,7 +120,8 @@
           "Gender": "MaleOrFemale",
           "EggItemIds": [
             "{{modId}}_item_egg_porygon",
-            "{{modId}}_item_egg_group_mineral"
+            "{{modId}}_item_egg_group_mineral",
+            "{{modId}}_item_egg_porygon_z"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",

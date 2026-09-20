@@ -73,7 +73,8 @@
           "Gender": "Male",
           "EggItemIds": [
             "{{modId}}_item_egg_onix",
-            "{{modId}}_item_egg_group_mineral"
+            "{{modId}}_item_egg_group_mineral",
+            "{{modId}}_item_egg_steelix"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
@@ -112,7 +113,8 @@
           "Gender": "Female",
           "EggItemIds": [
             "{{modId}}_item_egg_onix",
-            "{{modId}}_item_egg_group_mineral"
+            "{{modId}}_item_egg_group_mineral",
+            "{{modId}}_item_egg_steelix"
           ],
           "IncubationTime": "27000",
           "BirthText": "{{i18n:egg.all.hatching}}",
